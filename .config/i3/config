@@ -1,9 +1,9 @@
-# Windows key is Mod Key [Mod1 for ALT] [Mod4 for WIN] 
+# Windows key is Mod Key [Mod1 for ALT] [Mod4 for WIN]
 set $mod Mod1
 set $shutdown shutdown now
 set $reboot reboot
 
-for_window [class="^.*"] border pixel 1.1 
+for_window [class="^.*"] border pixel 1.1
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
 font pango:JetBrainsMono Nerd Font 15
@@ -155,7 +155,7 @@ bindsym $mod+r mode "resize"
 # }
 
 # Setting Wallpaper
-exec_always feh --bg-scale $HOME/Media/Pictures/Wallpapers_Desktop/bg.png --no-fehbg
+exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
 
 # Polybar Kill prev instances and create new
 exec_always killall polybar
@@ -182,6 +182,8 @@ bindsym Ctrl+F7 exec --no-startup-id brightnessctl set 0
 bindsym $mod+Escape exec systemctl suspend
 
 ## Clipboard Screenshots
-bindsym Ctrl+Print exec maim | xclip -selection clipboard -t image/png
-bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
-bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipboard -t image/png
+# bindsym Ctrl+F6 exec maim | xclip -selection clipboard -t image/png
+# bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+# bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipAboard -t image/png
+
+bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Self/pictures/Screenshot/$NOW.png && xclip -selection clip -t image/png ~/Self/pictures/Screenshot/$NOW.png

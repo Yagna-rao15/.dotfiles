@@ -96,4 +96,10 @@ require("lspconfig").tsserver.setup {
   },
 }
 
+require("lspconfig").gopls.setup {
+  on_init = M.on_init,
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+}
+
 return M

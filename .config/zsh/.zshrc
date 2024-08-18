@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # For ROS-Humble
 # source /opt/ros/humble/setup.zsh
 
@@ -19,9 +12,6 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
 # Adding zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -31,12 +21,14 @@ zinit light Aloxaf/fzf-tab
 # Adding Snippet
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::aws
+zinit snippet OMZP::command-not-found
 
 # Load Completions
-# autoload -U compinit && compinit
+autoload -U compinit && compinit
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.configs/zsh/.p10k.zsh ]] || source ~/.configs/zsh/.p10k.zsh
+zinit cdreplay -q
 
 # Keybinds
 bindkey -e
@@ -122,14 +114,16 @@ switch() {
     chsh -s /bin/bash
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
 # Changing Node REPL History file location
 export NODE_REPL_HISTORY="$XDG_CONFIG_HOME/node_repl_history"
 export npm_config_cache=/home/yagna/.local/share/npm
 
-#nvim kickstarter
+# Nvim kickstarter
 alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
-alias nvim-chad='NVIM_APPNAME=nvim-chad nvim'
-alias config='/usr/bin/git --git-dir=/home/yagna/.dotfiles/ --work-tree=/home/yagna'
+
+# Go export
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH='/home/yagna/Code/Go'
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+
+eval "$(starship init zsh)"
