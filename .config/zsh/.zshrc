@@ -37,7 +37,7 @@ bindkey '^n' history-search-forward
 
 # History
 HISTSIZE=5000
-HISTFILE=~/.config/zsh/history
+HISTFILE=~/.config/zsh/.history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 
@@ -75,6 +75,10 @@ export TERMINAL="alacritty"
 # Set up fzf
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
+fi
+
+if [[ ! "$PATH" == */.local/bin* ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
 fi
 
 # XDG Base Directory Specification
@@ -126,4 +130,4 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH='/home/yagna/Code/Go'
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
-eval "$(starship init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
