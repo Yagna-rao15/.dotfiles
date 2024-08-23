@@ -1,0 +1,263 @@
+yazi
+ls .config/ohmyposh
+ls .config/ohmyposh/
+curl -s https://ohmyposh.dev/install.sh | bash -s
+oh-my-posh
+ls\\
+
+sudo nautilus
+man ps
+ps -aux
+ps -aux | grep Code
+sudo pacman -Sy testdisk
+man testdisk
+mkdir recovery
+cd recovery
+cat image.dd
+testdisk image.dd
+sudo testdisk
+rm testdisk.log
+sleep 0.5
+sudo pacman -Syu
+ls Downloads
+cd Code/ML
+jupyter notebook
+rm .ipynb_checkpoints
+rm -rf .ipynb_checkpoints
+mkdir CodeForces
+cd CodeForces
+mkdir 967(Div-2)
+mkdir '967(Div-2)'
+cd 967\(Div-2\)
+rm -rf 967\(Div-2\)
+mkdir 967-Div-2
+cd 967-Div-2
+nvim 
+cd Code/CodeForces/967-Div-2
+./2
+gcc 1.c -o 1
+g++ 1.c -o 1
+cat 1.cpp
+g++ 1.cpp -o 1
+./1
+cd ML
+cd lab_2
+..
+jupyter-notebook
+sudo pacman -S texlive-most\
+
+sudo pacman -Sy texlive-most\
+
+sudo pacman -Sy texlive-core
+sudo pacman -S pandoc\
+
+cd Code/ML/lab_2
+jupyter nbconvert --to pdf Lab_2_U22CS104_ML.ipynb
+sudo fmtutil-sys --all\
+
+which xelatex\
+
+jupyter nbconvert --to html Lab_2_U22CS104_ML.ipynb
+./Lab_2_U22CS104_ML.html
+sudo fmtutil-sys --byfmt xelatex\
+
+mv vertopal.com_Lab_2_U22CS104_ML.pdf Lab_2_U22CS104_ML.pdf
+mv Lab_2_U22CS104_ML.pdf ~/Code/ML/lab_2
+ls Code/ML/lab_2
+ls ~Code/ML/lab_2
+ls ~/Code/ML/lab_2
+cd Downloads
+g++ test.cpp -o test
+./test
+g++ -help
+g++ -h
+man g++
+g++ --help
+g++ --v
+g++ --help | grep version
+g++ --version
+lsblk
+ls usb
+ping 172.16.1.1:8090
+cd Code
+mkdir PPA
+cd PPA
+mpirun ./1
+mpirun -np 1 ./1
+mpirun -np 2 ./1
+;w
+mpirun -np 10 ./2
+mpirun -np 7 ./2
+mpirun -np 6 ./2
+mpirun -np ./1
+mpirun -np ./2
+mpirun -np 5 ./2
+mpirun -np 3 ./2
+mpirun -np 4 ./1
+mpirun -np 8 ./1
+cd .config/tmux
+nautilus admin:/
+nvim
+cd Code/PPA/lab_3
+cat 1.c
+mpicc 1.c -o 1
+mpirun -np 5 ./1
+cat 2.c
+mpicc 2.c -o 2
+mpirun -np 8 ./2
+mpirun -np 4 ./2
+mpirun -np 2 ./2
+mpirun -np 1 ./2
+ping 172.16.1.1:8090/
+ping 10.0.2.15/24
+ping 10.0.2.15:24
+ping 10.0.2.15
+ip addr
+sudo pacman -R nautilus
+sudo pacman -Sy nautilus
+neofetch
+fastfetch
+cd .texlive
+./texmf-var
+cd
+rm -rf .texlive
+ls .jupyter
+ls
+starts
+\\
+ping google.com
+exit
+startx
+ping google.com
+zinit
+source ~/.config/zsh/.zshrc
+f
+tmux
+c
+nvim ~/.config/tmux/tmux.conf
+q
+: 1724259701:0;realpath man
+: 1724259708:0;realpath .zshrc
+: 1724259725:0;realpath .config/zsh
+: 1724259741:0;man nproc
+: 1724259755:0;nproc
+: 1724265403:0;ping google.com
+: 1724270579:0;nvim $(fzf)
+: 1724275553:0;cd Code
+: 1724275554:0;ls
+: 1724275564:0;nvim
+: 1724275653:0;cd Code
+: 1724275663:0;gcc temp.c -o temp
+: 1724275666:0;./temp
+: 1724315318:0;c
+: 1724315321:0;fastfetch
+: 1724315323:0;c
+: 1724315324:0;startx
+: 1724315546:0;cd Code/SS/lab_2
+: 1724315547:0;ls
+: 1724315559:0;gcc 1.c 2.c 3.c -o 1 2 3
+: 1724315562:0;c
+: 1724315569:0;gcc 1.c -o 1
+: 1724315580:0;gcc 2.c -o 2
+: 1724315585:0;gcc 3.c -o 3
+: 1724315587:0;./1
+: 1724315589:0;./2
+: 1724315591:0;./3
+: 1724315597:0;..
+: 1724315603:0;mkdir lab_3
+: 1724315609:0;cd lab_3
+: 1724315610:0;ls
+: 1724315938:0;ls 
+: 1724315945:0;nvim 
+: 1724316018:0;nvim $(fzf)
+: 1724316088:0;cd
+: 1724316090:0;nvim $(fzf)
+: 1724316243:0;cd -
+: 1724316244:0;nvim
+: 1724317165:0;cd Code/SS/lab_2
+: 1724317166:0;ls
+: 1724317169:0;..
+: 1724317173:0;cd lab_3
+: 1724317175:0;ls
+: 1724317180:0;gcc 1.c -o 1
+: 1724317182:0;./1
+: 1724318088:0;gcc 1.c -o 1
+: 1724318089:0;./1
+: 1724318478:0;gcc 1.c -o 1
+: 1724318479:0;./1
+: 1724319119:0;gcc 1.c -o 1
+: 1724319120:0;./1
+: 1724319230:0;gcc 1.c -o 1
+: 1724319231:0;./1
+: 1724319362:0;gcc 1.c -o 1
+: 1724319363:0;./1
+: 1724319508:0;gcc 1.c -o 1
+: 1724319509:0;./1
+: 1724319588:0;gcc 1.c -o 1
+: 1724319589:0;./1
+: 1724320220:0;gcc 1.c -o 1
+: 1724320222:0;./1
+: 1724320429:0;gcc 2.c -o 2
+: 1724320430:0;./2
+: 1724320445:0;gcc 2.c -o 2
+: 1724320446:0;./2
+: 1724320550:0;gcc 2.c -o 2
+: 1724320551:0;./2
+: 1724321487:0;gcc 1.c -o 1
+: 1724321490:0;./1
+: 1724321621:0;gcc 2.c -o 2
+: 1724321622:0;./2
+: 1724367580:0;c
+: 1724367583:0;startx
+: 1724369596:0;bluetoothctl pairable on
+: 1724369612:0;bluetoothctl info
+: 0:0;
+: 0:0;
+: 1724369718:0;sudo pacman -Sy bluez
+: 1724369766:0;sudo systemctl enable --now bluetooth.service
+: 1724369778:0;btusb
+: 1724369800:0;sudo lsmod| grep btusb
+: 1724369831:0;sudo pacman -Sy blueman
+: 1724369877:0;bluemoon
+: 1724369955:0;bluetooth-player
+: 1724370017:0;c
+: 1724401497:0;startx
+: 1724404396:0;ping google.com
+: 1724416196:0;c
+: 1724416249:0;fastfetch
+: 1724416997:0;fzf
+: 1724417027:0;cd Self
+: 1724417031:0;cd pictures
+: 1724417033:0;fzf
+: 1724417610:0;jupyter notebook
+: 1724419378:0;startx
+: 1724419394:0;jupyter notebook
+: 1724420059:0;c
+: 1724420182:0;cd .config
+: 1724420183:0;ls
+: 1724420289:0;..\\
+
+: 1724420290:0;ls
+: 1724420296:0;nvim .vimrc
+: 1724420308:0;vim
+: 1724421148:0;c
+: 1724421199:0;vim
+: 1724429422:0;ping google.com
+: 1724429447:0;rm .vimrc
+: 1724429449:0;ls
+: 1724429457:0;rm .viminfo
+: 1724429464:0;rm -rf .vim
+: 1724429465:0;ls
+: 1724429472:0;rm -rf recovery
+: 1724429473:0;ls
+: 1724429480:0;rm downloads
+: 1724429485:0;rm -rf downloads
+: 1724429486:0;ls
+: 1724429491:0;c
+: 1724432335:0;ls .config/zsh/
+: 1724432343:0;cd .dotfiles
+: 1724432345:0;gs
+: 1724432360:0;nvim .gitignore
+: 1724432386:0;ls .config/zsh/
+: 1724432399:0;gs
+: 1724432413:0;git add .
