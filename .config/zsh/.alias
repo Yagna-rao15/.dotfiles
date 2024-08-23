@@ -1,0 +1,32 @@
+# Aliases
+alias ls='ls -la --color'
+alias c='clear'
+alias mkdir='mkdir -pv'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ..='cd ..'
+alias gs='git status'
+alias q='exit'
+
+# Nvim kickstarter
+alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
+
+# fd - cd to selected directory
+# fd() {
+#   local dir
+#   dir=$(find ${1:-.} -path '*/\.*' -prune \
+#                   -o -type d -print 2> /dev/null | fzf +m) &&
+#   cd "$dir"
+# }
+
+# search_history - search in your command history and execute selected command
+fh() {
+  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
+# Always work in a tmux session if Tmux is installed
+# if which tmux 2>&1 >/dev/null; then
+#   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#     tmux attach -t default || tmux new -s default; exit
+#   fi
+# fi
