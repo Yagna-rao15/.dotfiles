@@ -10,6 +10,8 @@ alias q='exit'
 
 # Nvim kickstarter
 alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
+alias nvim-lazy='NVIM_APPNAME=nvim-lazy nvim'
+alias nvim-self='NVIM_APPNAME=nvim-self nvim'
 
 # fd - cd to selected directory
 # fd() {

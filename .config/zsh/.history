@@ -166,23 +166,15 @@ rm -rf .vim
 rm -rf recovery
 rm downloads
 rm -rf downloads
-cd .dotfiles
 nvim .gitignore
 ls .config/zsh/
-git add .
 git commit -m "Checkup Commit"
-gs
 gh status
 gh auth status
 gh auth refresh
 gh auth log
 gh auth login
-git push origin main\
-
-nvim $(fzf)
 sudo pacman -Syu
-stratx
-startx
 cd .dotfiles/.config/zsh
 ls ../bash
 echo PATH
@@ -197,22 +189,93 @@ fh
 fd
 cd
 mv Downloads/tmux-cheatsheet.md ~/.config/tmux/tmux-cheetsheet.md
-ls
 tmux ls
-nvim
-tmux
-c
 source ~/.config/zsh/.zshrc
 qq
+tmux
+cd ~/.dotfiles
+git add .
+gs
+git push origin main\
+
+stratx
+clear
+startx
+nvim $(fzf)
+cd .config/nvim
+nvim-kickstart
+nvim-lazy
+nvim
+man nvim
+cd .dotfiles
+ls
+stow .
+sh -c "$(curl -s https://raw.githubusercontent.com/ibhagwan/fzf-lua/main/scripts/mini.sh)"
+c
+nvim-self
 q
-: 1724443383:0;nvim
-: 1724443431:0;tmux
-: 1724443433:0;nvim
-: 1724443499:0;gs
-: 1724443505:0;git add .
-: 1724443506:0;gs
-: 1724443515:0;git add .
-: 1724443517:0;gs
-: 1724443544:0;cd ~/.dotfiles
-: 1724443546:0;gs
-: 1724443549:0;git add .
+: 1724493034:0;nvim
+: 1724493054:0;ls
+: 1724493068:0;cd
+: 1724493069:0;ls
+: 1724493077:0;pwd
+: 1724493088:0;cd ~/.config
+: 1724493088:0;ls
+: 1724493095:0;cd ~/.dotfiles
+: 1724493096:0;ls
+: 1724493102:0;cd .config
+: 1724493102:0;ls
+: 1724493111:0;gs
+: 1724493281:0;cp ~/.dotfiles ~/.dots
+: 1724493284:0;ls ~
+: 1724493310:0;cd
+: 1724493311:0;ls
+: 1724493324:0;cp .dotfiles .dotfiles
+: 1724493328:0;ls
+: 1724493336:0;cp -r  .dotfiles .dotfiles
+: 1724493345:0;cp -r  .dotfiles .dots
+: 1724493348:0;ls
+: 1724493355:0;ls .dots
+: 1724493356:0;gs
+: 1724493368:0;git status
+: 1724493371:0;cd 
+: 1724493375:0;pwd
+: 1724493382:0;cd .dotfiles
+: 1724493384:0;gs
+: 1724493398:0;git ls-files -z -d | xargs -0 git checkout --
+: 1724493400:0;ls
+: 1724493409:0;ls .dotfiles
+: 1724493416:0;rm -rf .dotfiles
+: 1724493417:0;ls
+: 1724493422:0;ls .config
+: 1724493426:0;gs
+: 1724493433:0;nvim
+: 1724493449:0;c
+: 1724493457:0;nvim-self
+: 1724493461:0;nvim
+: 1724493693:0;nvim-self
+: 1724494115:0;cp ~/.dotfiles/.config/nvim/lua/plugins/lsp.lua ~/.dotfiles/.config/nvim-self/lua/plugins/lsp.lua
+: 1724494147:0;cp ~/.dotfiles/.config/nvim/lua/config/lsp.lua ~/.dotfiles/.config/nvim-self/lua/config/lsp.lua
+: 1724494153:0;nvim-self
+: 1724494292:0;cp ~/.dotfiles/.config/nvim/lua/plugins/mason.lua ~/.dotfiles/.config/nvim-self/lua/plugins/mason.lua
+: 1724494296:0;nvim-self
+: 1724494360:0;cd .local/share/nvim-self/lazy/ui/lua/nvchad
+: 1724494362:0;ls
+: 1724494365:0;nvim
+: 1724494448:0;nvim-self
+: 1724495032:0;ls .dotfiles/.config
+: 1724495044:0;cd .dotfiles/.config
+: 1724495045:0;ls
+: 1724495053:0;rm -rf nvim-self
+: 1724495054:0;ls
+: 1724495057:0;gs
+: 1724495079:0;nvim nvim/lua/config/lsp.lua
+: 1724495099:0;gs
+: 1724495105:0;cd
+: 1724495106:0;ls
+: 1724495116:0;rm -rf .dots
+: 1724495117:0;ls
+: 1724495123:0;c
+: 1724495128:0;cd .dotfiles
+: 1724495129:0;gs
+: 1724495133:0;git add .
