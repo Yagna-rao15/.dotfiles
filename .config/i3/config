@@ -110,6 +110,7 @@ for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
 
 for_window [class="firefox"] border pixel 0
+for_window [class="zen"] border pixel 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
