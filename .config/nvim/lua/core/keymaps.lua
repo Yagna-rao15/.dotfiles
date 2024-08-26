@@ -42,11 +42,11 @@ map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "lsp diagnostic locli
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
 
 map("n", "<tab>", function()
-  require("nvchad.tabufline").next()
+  require("nvchad.tabufline").tabuflineNext()
 end, { desc = "buffer goto next" })
 
 map("n", "<S-tab>", function()
-  require("nvchad.tabufline").prev()
+  require("nvchad.tabufline").tabuflinePrev()
 end, { desc = "buffer goto prev" })
 
 map("n", "<leader>x", function()

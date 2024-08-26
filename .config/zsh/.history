@@ -23,7 +23,6 @@ cd Code/ML
 rm .ipynb_checkpoints
 rm -rf .ipynb_checkpoints
 mkdir CodeForces
-cd CodeForces
 mkdir 967(Div-2)
 mkdir '967(Div-2)'
 cd 967\(Div-2\)
@@ -33,7 +32,6 @@ cd 967-Div-2
 cd Code/CodeForces/967-Div-2
 g++ 1.c -o 1
 cat 1.cpp
-g++ 1.cpp -o 1
 cd ML
 cd lab_2
 jupyter-notebook
@@ -59,7 +57,6 @@ mv Lab_2_U22CS104_ML.pdf ~/Code/ML/lab_2
 ls Code/ML/lab_2
 ls ~Code/ML/lab_2
 ls ~/Code/ML/lab_2
-cd Downloads
 g++ test.cpp -o test
 ./test
 g++ -help
@@ -86,7 +83,6 @@ mpirun -np 5 ./2
 mpirun -np 3 ./2
 mpirun -np 4 ./1
 mpirun -np 8 ./1
-cd .config/tmux
 nautilus admin:/
 cd Code/PPA/lab_3
 cat 1.c
@@ -120,24 +116,17 @@ realpath .zshrc
 realpath .config/zsh
 man nproc
 nproc
-cd Code
 gcc temp.c -o temp
 ./temp
 gcc 1.c 2.c 3.c -o 1 2 3
 gcc 3.c -o 3
-./3
 mkdir lab_3
 ls 
 cd -
 cd Code/SS/lab_2
 cd lab_3
-gcc 1.c -o 1
-./1
-gcc 2.c -o 2
-./2
 bluetoothctl pairable on
 bluetoothctl info
-
 sudo pacman -Sy bluez
 sudo systemctl enable --now bluetooth.service
 btusb
@@ -147,7 +136,6 @@ bluemoon
 bluetooth-player
 cd Self
 cd pictures
-jupyter notebook
 ..\\
 
 nvim .vimrc
@@ -180,8 +168,6 @@ source ~/.config/zsh/.zshrc
 qq
 git push origin main\
 
-stratx
-clear
 nvim $(fzf)
 cd .config/nvim
 nvim-kickstart
@@ -211,7 +197,6 @@ ls .dotfiles/.config
 cd .dotfiles/.config
 rm -rf nvim-self
 nvim nvim/lua/config/lsp.lua
-cd
 rm -rf .dots
 ls i3
 ls .config/i3
@@ -222,36 +207,25 @@ ls ../.bookmarks
 rm -rf ~/.bookmarks
 ls ../
 git log
-git add .
 git commit -m "OOF Added I3, Tries to add GH and NVM but fixed later"
-gs
-git push origin main
-lazygit
 cd .config
 ls /etc/zsh/zprofile
 ls /etc/zsh/
 cd /etc/zsh
 sudo nvim zprofile
 ..
-sudo nvim profile
-echo $ZDOTDIR
 echo $PATH
 fh
-fastfetch
-neofetch
 fd
-fzf
 echo $SHELL
 cd /etc/X11
 cd xinit
 cat xinitrc
 cat xserverrc
-ping google.com
 echo $XINITRC
 echo $XRESOURCES
 echo BASH
 echo $BASH
-man startx
 cat .Xauthority 
 mkdir .dotfiles/x11
 mv .dotfiles/x11 .dotfiles/x
@@ -260,42 +234,217 @@ mv .Xauthority .dotfiles/x/Xauthority
 mv .xinitrc .dotfiles/x/xinitrc
 ;w
 ls gh
-ls .config
 rm -rf gh
 rm .bash_history
-;q
 absh
 bash
-ls
-cd .dotfiles
 tree
 mv README README.md
 man grep
 man grep -r
 git branch --verbose
 nvim ~/.zshenv
-tmux
 cat .config/tmux/tmux-cheetsheet.md
-nvim
+echo $(tty)
+man startx
+git add .
+gs
+git commit -m "Fixed xinitrc and Xauthentication, fixed zsh and bashrc files"
+git push origin main
+man -t startx
+man -t startx | Ip
+man -t startx | lp
+man -t startx | ip
+curl cht.sh/cpp/string
+curl cht.sh/cpp/polymorphism
+curl cht.sh/cpp/int
+clear
+curl google.com
+cd CodeForces
+mkdir 968-Div-2
+cd 968-Div-2
+cd Code/CodeForces/968-Div-2
+abcb
+12
+abcabcabcabc
+gcc 1.c -o 1
+gcc 2.c -o 2
+./q
+g++ 1.cpp -o 1
+./1
+g++ 2.cpp -o 2
+./2
+g++ 3-1.cpp -o 3
+g++ 3-2.cpp -o 3
+./3
+cd .config/zsh
+sudo nvim profile
+cx() { cd "$@" && l; }\
+fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }\
+f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }\
+fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
+cx
+man l
+fcd
+ls .config
+lss nvim
+lss .config
+ff
+xclip -o
+man xclip
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+tmux detach
+fzf
 tmux a
-tmux ls
-nvim 
-c
-startx
-q
+;q
+\
+drwx------ 14 yagna yagna 4096 Aug 25 13:38 .config\
+drwxr-xr-x  2 yagna yagna 4096 Aug 23 18:18 Desktop\
+drwxr-xr-x  2 yagna yagna 4096 Aug 19 13:48 Documents\
+drwxr-xr-x  5 yagna yagna 4096 Aug 25 16:30 .dotfiles\
+drwxr-xr-x  9 yagna yagna 4096 Aug 25 12:10 Downloads\
+drwxr-xr-x  3 yagna yagna 4096 Aug 25 15:54 go\
+drwxr-xr-x  3 yagna yagna 4096 Aug 20 14:11 .ipython\
+drwxr-xr-x  4 yagna yagna 4096 Aug 20 14:11 .jupyter\
+drwx------  6 yagna yagna 4096 Aug 19 14:15 .local\
+drwx------  4 yagna yagna 4096 Aug 19 14:14 .mozilla\
+drwxr-xr-x  2 yagna yagna 4096 Aug 19 13:48 Music\
+drwxr-xr-x  3 yagna yagna 4096 Aug 25 02:11 Pictures\
+drwx------  3 yagna yagna 4096 Aug 23 22:32 .pki\
+drwxr-xr-x  2 yagna yagna 4096 Aug 19 13:48 Public\
+
+iwctl
+chmod 775 ~/.config/tmux/tmux.conf
+w
+man w
+tmux 
+neofetch
+mux ls
+tmux attach-session 2
+tmux attach 2
+fatfetch
+1
+0
+2
+3
+cd .dotfiles
+lazygit
+fastfetch
+cd Code/ML/
+jupyter notebook
+oh-my-posh upgrade
+sudo systemctl enable NetworkManager.service
+lspci -k
+ip link set interface up
+ip link set wlp4s0 up
+tmux d
+tmux l
+tmux kill-session -a
+cd .config/tmux
+stratx
+tmux new -n fuck
+cd Downloads
 exit
-: 1724584424:0;startx
-: 1724584495:0;nvim 
-: 1724584632:0;reboot
-: 1724584689:0;echo $(tty)
-: 1724584691:0;c
-: 1724584695:0;nvim
-: 1724584722:0;reboot
-: 1724584761:0;fastfetch
-: 1724584776:0;startx
-: 1724584791:0;fastfetch
-: 1724584825:0;c
-: 1724584854:0;man startx
-: 1724585202:0;cd .dotfiles
-: 1724585203:0;gs
-: 1724585212:0;git add .
+nvim 
+tmux kill-server
+tmux run
+tmux start-server
+man tmux start
+nvim .dotfiles/.config/tmux
+tmux ls
+tmux start
+reboot
+startx
+sed
+man sed
+tmux run-shell -b 'command -v fzf'
+tmux
+tmux attach
+bluetoothctl advertise
+bluetoothctl advertise on
+bluetoothctl man
+bluetoothctl help
+bluetoothctl list\\
+
+bluetoothctl select 38:D5:7A:13:97:FA
+bluetoothctl power on
+bluetoothctl agent on
+
+bluetoothctl scan on
+bluetoothctl devices
+bluetoothctl
+networkctl
+tracepath 152.59.35.91
+ip help
+ip address
+iproute2
+ip
+ip route 152.59.35.91
+ip route help
+ip route get 152.59.35.91
+ping google.com
+curl icanhzip.com
+curl https://icanhzip.com
+curl https://icanhazip.com
+less $(fzf)
+fzf | cat
+echo "\n\n# Get IP\nalias IPP='curl https://icanhazip.com'"  >> $(fzf) 
+cat $(fzf)
+IPP
+ip addr show
+ip addr show usb0
+ping 127.0.0.1\
+
+hostname -I\
+
+cd
+cd Code
+mkdir test
+cd test
+nvm list-remote
+nvm help
+nvm install node
+c
+nvm -v
+npm
+rm -rf go
+sudo rm -rf go
+ld
+ls
+cat .zshenv
+nvim
+echo $ZDOTDIR
+q\\
+q
+q
+: 1724687102:0;node -v
+: 1724687105:0;npm -v
+: 1724687117:0;cd ~/.config
+: 1724687118:0;ls
+: 1724687124:0;ls nvm
+: 1724687139:0;cat nvm/README.md
+: 1724687161:0;cd Code/test
+: 1724687169:0;nvm list
+: 1724687194:0;nvm list-remote
+: 1724687214:0;nvm list
+: 1724687217:0;nvm list-remote
+: 1724687238:0;nvm install --lts
+: 1724687423:0;nvm list
+: 1724687441:0;npm init -y
+: 1724687444:0;ls
+: 1724687455:0;nvim 
+: 1724687484:0;cd Code/test
+: 1724687502:0;npm install express nodemon
+: 1724687584:0;npm run dev
+: 1724687647:0;ls
+: 1724687674:0;nvim
+: 1724687703:0;cd Code/test
+: 1724687705:0;node index.js
+: 1724688041:0;npm i express
+: 1724688077:0;npm start
+: 1724688087:0;npm run dev
+: 1724688158:0;ip addr show
+: 1724689351:0;ls
+: 1724690733:0;cd .dotfiles
+: 1724690735:0;gs
+: 1724690746:0;git add .

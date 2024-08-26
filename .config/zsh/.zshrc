@@ -35,7 +35,7 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
+# bindkey '^e' edit-command-line
 
 # History
 HISTSIZE=5000
@@ -66,4 +66,8 @@ compinit -d "$ZDOTDIR/.zcompdump"
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
-
+# bindkey '^/' autosuggest-accept
+bindkey '^h' vi-backward-word
+bindkey '^l' vi-forward-word
+bindkey '^k' up-line-or-search
+bindkey '^j' down-line-or-search

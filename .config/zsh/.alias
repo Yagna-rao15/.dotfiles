@@ -7,6 +7,7 @@ alias rm='rm -i'
 alias ..='cd ..'
 alias gs='git status'
 alias q='exit'
+alias cat=bat
 
 # Nvim kickstarter
 alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
@@ -26,9 +27,18 @@ fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
+
 # Always work in a tmux session if Tmux is installed
-# if which tmux 2>&1 >/dev/null; then
-#   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#     tmux attach -t Default || tmux new -s Deault; exit
+# if [[ -n "$SSH_TTY" || "$TERM" == "xterm"* ]]; then
+#   echo "This is an interactive terminal or SSH session"
+#   if which tmux 2>&1 >/dev/null; then
+#     if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#       tmux attach -t Default || tmux new -s Deault; exit
+#     fi
 #   fi
 # fi
+
+
+
+# Get IP
+alias IPP='curl https://icanhazip.com'
