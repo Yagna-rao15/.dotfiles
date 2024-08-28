@@ -18,8 +18,6 @@ testdisk image.dd
 sudo testdisk
 rm testdisk.log
 sleep 0.5
-ls Downloads
-cd Code/ML
 rm .ipynb_checkpoints
 rm -rf .ipynb_checkpoints
 mkdir CodeForces
@@ -32,9 +30,7 @@ cd 967-Div-2
 cd Code/CodeForces/967-Div-2
 g++ 1.c -o 1
 cat 1.cpp
-cd ML
 cd lab_2
-jupyter-notebook
 sudo pacman -S texlive-most\
 
 sudo pacman -Sy texlive-most\
@@ -42,7 +38,6 @@ sudo pacman -Sy texlive-most\
 sudo pacman -Sy texlive-core
 sudo pacman -S pandoc\
 
-cd Code/ML/lab_2
 jupyter nbconvert --to pdf Lab_2_U22CS104_ML.ipynb
 sudo fmtutil-sys --all\
 
@@ -66,14 +61,11 @@ g++ --help
 g++ --v
 g++ --help | grep version
 g++ --version
-lsblk
 ls usb
 ping 172.16.1.1:8090
 mkdir PPA
 cd PPA
 mpirun ./1
-mpirun -np 1 ./1
-mpirun -np 2 ./1
 mpirun -np 10 ./2
 mpirun -np 7 ./2
 mpirun -np 6 ./2
@@ -81,18 +73,13 @@ mpirun -np ./1
 mpirun -np ./2
 mpirun -np 5 ./2
 mpirun -np 3 ./2
-mpirun -np 4 ./1
 mpirun -np 8 ./1
-nautilus admin:/
-cd Code/PPA/lab_3
 cat 1.c
 mpicc 1.c -o 1
-mpirun -np 5 ./1
 cat 2.c
 mpicc 2.c -o 2
 mpirun -np 8 ./2
 mpirun -np 4 ./2
-mpirun -np 2 ./2
 mpirun -np 1 ./2
 ping 172.16.1.1:8090/
 ping 10.0.2.15/24
@@ -120,11 +107,8 @@ gcc temp.c -o temp
 ./temp
 gcc 1.c 2.c 3.c -o 1 2 3
 gcc 3.c -o 3
-mkdir lab_3
 ls 
-cd -
 cd Code/SS/lab_2
-cd lab_3
 bluetoothctl pairable on
 bluetoothctl info
 sudo pacman -Sy bluez
@@ -139,7 +123,6 @@ cd pictures
 ..\\
 
 nvim .vimrc
-vim
 rm .vimrc
 rm .viminfo
 rm -rf .vim
@@ -168,17 +151,14 @@ source ~/.config/zsh/.zshrc
 qq
 git push origin main\
 
-nvim $(fzf)
 cd .config/nvim
 nvim-kickstart
 nvim-lazy
 man nvim
 stow .
 sh -c "$(curl -s https://raw.githubusercontent.com/ibhagwan/fzf-lua/main/scripts/mini.sh)"
-cd ~/.config
 cd ~/.dotfiles
 cp ~/.dotfiles ~/.dots
-ls ~
 cp .dotfiles .dotfiles
 cp -r  .dotfiles .dotfiles
 cp -r  .dotfiles .dots
@@ -208,14 +188,11 @@ rm -rf ~/.bookmarks
 ls ../
 git log
 git commit -m "OOF Added I3, Tries to add GH and NVM but fixed later"
-cd .config
 ls /etc/zsh/zprofile
 ls /etc/zsh/
 cd /etc/zsh
 sudo nvim zprofile
-..
 echo $PATH
-fh
 fd
 echo $SHELL
 cd /etc/X11
@@ -247,10 +224,7 @@ nvim ~/.zshenv
 cat .config/tmux/tmux-cheetsheet.md
 echo $(tty)
 man startx
-git add .
-gs
 git commit -m "Fixed xinitrc and Xauthentication, fixed zsh and bashrc files"
-git push origin main
 man -t startx
 man -t startx | Ip
 man -t startx | lp
@@ -294,9 +268,6 @@ xclip -o
 man xclip
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 tmux detach
-fzf
-tmux a
-;q
 \
 drwx------ 14 yagna yagna 4096 Aug 25 13:38 .config\
 drwxr-xr-x  2 yagna yagna 4096 Aug 23 18:18 Desktop\
@@ -327,11 +298,8 @@ fatfetch
 0
 2
 3
-cd .dotfiles
 lazygit
-fastfetch
 cd Code/ML/
-jupyter notebook
 oh-my-posh upgrade
 sudo systemctl enable NetworkManager.service
 lspci -k
@@ -343,23 +311,16 @@ tmux kill-session -a
 cd .config/tmux
 stratx
 tmux new -n fuck
-cd Downloads
 exit
-nvim 
 tmux kill-server
 tmux run
 tmux start-server
 man tmux start
 nvim .dotfiles/.config/tmux
-tmux ls
 tmux start
-reboot
-startx
 sed
 man sed
 tmux run-shell -b 'command -v fzf'
-tmux
-tmux attach
 bluetoothctl advertise
 bluetoothctl advertise on
 bluetoothctl man
@@ -372,7 +333,6 @@ bluetoothctl agent on
 
 bluetoothctl scan on
 bluetoothctl devices
-bluetoothctl
 networkctl
 tracepath 152.59.35.91
 ip help
@@ -382,7 +342,6 @@ ip
 ip route 152.59.35.91
 ip route help
 ip route get 152.59.35.91
-ping google.com
 curl icanhzip.com
 curl https://icanhzip.com
 curl https://icanhazip.com
@@ -391,60 +350,184 @@ fzf | cat
 echo "\n\n# Get IP\nalias IPP='curl https://icanhazip.com'"  >> $(fzf) 
 cat $(fzf)
 IPP
-ip addr show
 ip addr show usb0
 ping 127.0.0.1\
 
 hostname -I\
 
-cd
-cd Code
 mkdir test
 cd test
-nvm list-remote
 nvm help
 nvm install node
-c
 nvm -v
 npm
 rm -rf go
 sudo rm -rf go
 ld
-ls
-cat .zshenv
-nvim
 echo $ZDOTDIR
 q\\
 q
+node -v
+npm -v
+cd ~/.config
+ls nvm
+cat nvm/README.md
+nvm list-remote
+nvm install --lts
+nvm list
+npm init -y
+npm install express nodemon
+cd Code/test
+node index.js
+npm i express
+npm start
+npm run dev
+ip addr show
+cd .dotfiles
+git add .
+gs
+git commit -m "Tweaked Tmux, an Minor nvim fixes"
+git push origin main
+gcc test.c
+./a.out
+ls ~/Downloads
+ls Documents
+ls .zen
+ls Downloads
+bluetoothctl
+cd Code/ML/\\
+ls
+cd Code/ML
+jupyter-notebook
+ls lab_2
+cp Self/pictures/Wallpapers_Desktop/bg.png
+cp Self/pictures/Wallpapers_Desktop/bg.png Code/ML/lab_1/bg.png
+lsblk
+ls /dev/nvme0n1p3
+cd /dev/nvme0n1p3
+nautilus admin:/
+cd Downloads
+man unzip
+unzip archive\(3\).zip
+mv Linear\ Regression\ -\ Sheet1.csv ~/Code/ML
+cd ~/Code/ML
+mkdir lab_3
+mv Linear\ Regression\ -\ Sheet1.csv lab_3
+cd lab_
+cd lab_3
+nvim i3
+man ls
+ls -A
+ls -Al
+ls -Ab
+ls -Ad
+ls -d
+ls -Af
+ls -AF
+ls -A --format=WORD
+ls -A --format=verbose
+ls -A --format=vertical
+ls -A --format=long
+ls -A --format=commas
+ls -A --format=horizontal
+ls -A --format=across
+ls -A --format=single-column
+ls -Ag
+ls -Ag --group-directories-first
+cd .config
+ls -AgGh --group-directories-first
+ls -AgGLh --group-directories-first
+ls -AgG --group-directories-first
+cd\\
+
+ls -AgGn
+ls -AgGnN
+ls -AgGnNo
+ls -AonN
+ls -AonNG
+ls -AonNg
+ls -AonNGx
+ls -AonNgx
+ls -AonNgX
+ls -lAXZ
+ls -oAXZ
+ls -AXZ
+ls -AX
+ls -AX1
+ls -lAX
+cd  Code
+rm test.c a.out
+mv CodeForces Code-Forces
+ls ~
+cd ML
+ls lab_1
+cd lab_1
+sudo pacman -Sy python-scikit-learn
+cd ../lab_2
+cd Code/ML/c
+mv ../lab_3/Linear-Regression.csv Linear-Refression.csv
+mv Linear-Refression.csv Linear-Regression.csv
+cat csv.h
+cat csv.c
+gcc -o main csv.c
+cd Code/ML/lab_2
+l
+cd ../lab_1
+..
+jupyter notebook
+cd Code/ML/lab_3
+cd ../c
+./main\\
+
+gcc -o main main.c csv.c
+cd ~/Downloads
+fh
+unzip archive\(4\).zip
+mv housing.csv ~/Code/ML/c/Boston-Housing.csv
+cd -
+gcc -o main LR-BH.c csv.c
+./main
+cd Code/PPA/
+mkdir lab_4
+cd lab_4
+firefox
+rofi
+reboot
+fzf
+cd Code/PPA/lab_3
+ls
+mpirun -np 1 ./1
+mpirun -np 2\ ./1
+mpirun -np 2 ./1
+mpirun -np 4 ./1
+mpirun -np 5 ./1
+mpirun -np 2 ./2
+cd
+q;
+cat .zshenv
+vim
+tmux attach
+tmux new-session
+tmux ls
+tmux a
+hi
+bye
+startx
+fastfetch
+sudo pacman -Sy starship
+nvim $(fzf)
+sudo pacman -R starship
+curl -sS https://starship.rs/install.sh | sh
+ping google.com
+# Locate and delete the starship binary
+sh -c 'rm "$(command -v 'starship')"'
+c
 q
-: 1724687102:0;node -v
-: 1724687105:0;npm -v
-: 1724687117:0;cd ~/.config
-: 1724687118:0;ls
-: 1724687124:0;ls nvm
-: 1724687139:0;cat nvm/README.md
-: 1724687161:0;cd Code/test
-: 1724687169:0;nvm list
-: 1724687194:0;nvm list-remote
-: 1724687214:0;nvm list
-: 1724687217:0;nvm list-remote
-: 1724687238:0;nvm install --lts
-: 1724687423:0;nvm list
-: 1724687441:0;npm init -y
-: 1724687444:0;ls
-: 1724687455:0;nvim 
-: 1724687484:0;cd Code/test
-: 1724687502:0;npm install express nodemon
-: 1724687584:0;npm run dev
-: 1724687647:0;ls
-: 1724687674:0;nvim
-: 1724687703:0;cd Code/test
-: 1724687705:0;node index.js
-: 1724688041:0;npm i express
-: 1724688077:0;npm start
-: 1724688087:0;npm run dev
-: 1724688158:0;ip addr show
-: 1724689351:0;ls
-: 1724690733:0;cd .dotfiles
-: 1724690735:0;gs
-: 1724690746:0;git add .
+cd .config/nvim/
+nvim
+tmux
+nvim 
+;q
+: 1724877491:0;cd ~/.dotfiles
+: 1724877492:0;gs
+: 1724877513:0;git add .

@@ -85,24 +85,24 @@ map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
 -- new terminals
 map("n", "<leader>h", function()
-  require("nvchad.term").new { pos = "sp" }
+  require("nvterm.terminal").toggle "horizontal"
 end, { desc = "terminal new horizontal term" })
 
 map("n", "<leader>v", function()
-  require("nvchad.term").new { pos = "vsp" }
+  require("nvterm.terminal").toggle "vertical"
 end, { desc = "terminal new vertical window" })
 
 -- toggleable
 map({ "n", "t" }, "<A-v>", function()
-  require("nvchad.term").toggle { pos = "vsp", id = "vtoggleTerm" }
+  require("nvterm.terminal").toggle "vertical"
 end, { desc = "terminal toggleable vertical term" })
 
 map({ "n", "t" }, "<A-h>", function()
-  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
+  require("nvterm.terminal").toggle "horizontal"
 end, { desc = "terminal new horizontal term" })
 
 map({ "n", "t" }, "<A-i>", function()
-  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+  require("nvterm.terminal").toggle "floating"
 end, { desc = "terminal toggle floating term" })
 
 -- whichkey
