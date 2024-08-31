@@ -15,5 +15,5 @@ export NVM_DIR="$HOME/.config/nvm"
 export NODE_REPL_HISTORY=/home/yagna/.config/node_repl_history
 export npm_config_cache=/home/yagna/.local/share/npm
 
-export HISTFILE=/home/yagna/.config/bash/bash_history
+export HISTFILE=/home/yagna/.config/bash/.bash_history
 

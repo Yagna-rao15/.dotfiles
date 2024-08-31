@@ -154,10 +154,8 @@ git push origin main\
 cd .config/nvim
 nvim-kickstart
 nvim-lazy
-man nvim
 stow .
 sh -c "$(curl -s https://raw.githubusercontent.com/ibhagwan/fzf-lua/main/scripts/mini.sh)"
-cd ~/.dotfiles
 cp ~/.dotfiles ~/.dots
 cp .dotfiles .dotfiles
 cp -r  .dotfiles .dotfiles
@@ -165,7 +163,6 @@ cp -r  .dotfiles .dots
 ls .dots
 git status
 cd 
-pwd
 git ls-files -z -d | xargs -0 git checkout --
 rm -rf .dotfiles
 cp ~/.dotfiles/.config/nvim/lua/plugins/lsp.lua ~/.dotfiles/.config/nvim-self/lua/plugins/lsp.lua
@@ -244,13 +241,8 @@ abcabcabcabc
 gcc 1.c -o 1
 gcc 2.c -o 2
 ./q
-g++ 1.cpp -o 1
-./1
-g++ 2.cpp -o 2
-./2
 g++ 3-1.cpp -o 3
 g++ 3-2.cpp -o 3
-./3
 cd .config/zsh
 sudo nvim profile
 cx() { cd "$@" && l; }\
@@ -384,20 +376,15 @@ npm start
 npm run dev
 ip addr show
 cd .dotfiles
-git add .
-gs
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
-git push origin main
 gcc test.c
 ./a.out
 ls ~/Downloads
 ls Documents
 ls .zen
-ls Downloads
 bluetoothctl
 cd Code/ML/\\
 ls
-cd Code/ML
 jupyter-notebook
 ls lab_2
 cp Self/pictures/Wallpapers_Desktop/bg.png
@@ -406,7 +393,6 @@ lsblk
 ls /dev/nvme0n1p3
 cd /dev/nvme0n1p3
 nautilus admin:/
-cd Downloads
 man unzip
 unzip archive\(3\).zip
 mv Linear\ Regression\ -\ Sheet1.csv ~/Code/ML
@@ -414,7 +400,6 @@ cd ~/Code/ML
 mkdir lab_3
 mv Linear\ Regression\ -\ Sheet1.csv lab_3
 cd lab_
-cd lab_3
 nvim i3
 man ls
 ls -A
@@ -434,7 +419,6 @@ ls -A --format=across
 ls -A --format=single-column
 ls -Ag
 ls -Ag --group-directories-first
-cd .config
 ls -AgGh --group-directories-first
 ls -AgGLh --group-directories-first
 ls -AgG --group-directories-first
@@ -473,8 +457,6 @@ gcc -o main csv.c
 cd Code/ML/lab_2
 l
 cd ../lab_1
-..
-jupyter notebook
 cd Code/ML/lab_3
 cd ../c
 ./main\\
@@ -495,7 +477,6 @@ rofi
 reboot
 fzf
 cd Code/PPA/lab_3
-ls
 mpirun -np 1 ./1
 mpirun -np 2\ ./1
 mpirun -np 2 ./1
@@ -505,29 +486,149 @@ mpirun -np 2 ./2
 cd
 q;
 cat .zshenv
-vim
 tmux attach
 tmux new-session
 tmux ls
 tmux a
 hi
 bye
-startx
-fastfetch
 sudo pacman -Sy starship
-nvim $(fzf)
 sudo pacman -R starship
 curl -sS https://starship.rs/install.sh | sh
-ping google.com
 # Locate and delete the starship binary
 sh -c 'rm "$(command -v 'starship')"'
-c
-q
+gs
+git add .
+git commit -m "Replaced Telescope with fzf(not keybinds), tweaks with nvim and tmux, will fix tomorrow"
+git push origin main
+man vim
+man nvim
+cd Documents
+cd ~/.dotfiles
+cd .config
+nvi
 cd .config/nvim/
-nvim
+nvim\\
+
+sudo pacman -S cmatrix
 tmux
+cmatrix
+~q
+cd Code/SS
+cd lab_3
 nvim 
+cd Code/SS/lab_3
+rm 0.cpp
+nvim $(fzf)
+mv prod prod.txt
+mv prod.txt prod
+pwd
+..
+cd lab-4
+cd ../lab-2
+cd ../lab-3
+cd ../lab-4
+../lab-3/1
+ls Downloads
+vim Self/notes/Nvim.md
+p
+vim $(fzf)
+mv alacritty.toml 11
+mv 11 alacritty.toml
+cd .config/alacritty
+vim
+COLORTERM
+colortest-256
+printf "\033[0;32m_hello_\033[0m\n" 
+colorpicker --short --one-shot --preview\
+
 ;q
-: 1724877491:0;cd ~/.dotfiles
-: 1724877492:0;gs
-: 1724877513:0;git add .
+cd Code/Code-Forces/969-Div-2
+10 21
+2 8
+51 60
+2 15
+10 26
+1 1000
+g++ 1.cpp -o 1
+./1
+g++ 3.cpp -o 3
+./3
+g++ 2.cpp -o 2
+./2
+4 2 3
+1 3 4 6
+4 7 7
+1 1 2 6
+3 15 9
+1 9 5
+3 18 12
+1 4 5
+7 27 36
+33 13 23 12 35 24 41
+10 6 9
+15 5 6 9 8 2 12 15 3 8
+2 1 1000000000
+1 1000000000
+6 336718728 709848696
+552806726 474775724 15129785 371139304 178408298 13106071
+6 335734893 671469786
+138885253 70095920 456876775 9345665 214704906 375508929
+man 1
+g++ 4.cpp -o 4
+./4
+g++ 5.cpp -o 5
+./5
+c
+fastfetch
+ping google.com
+startx
+cd Code/ML
+jupyter notebook
+cd Downloads
+ls
+nvim
+q
+: 1725119817:0;ls
+: 1725119823:0;rm \'
+: 1725119829:0;cat \'
+: 1725119837:0;rm \'
+: 1725119839:0;c
+: 1725119840:0;ls
+: 1725119951:0;cd Code/ML/Amazon
+: 1725119952:0;ls
+: 1725119957:0;unzip archive.zip
+: 1725119985:0;c
+: 1725122277:0;lspci
+: 1725122294:0;lspci | grep Nvdia
+: 1725122337:0;lspci | grep VGA
+: 1725123452:0;sudo pacman -Syu nvidia cuda
+: 1725123612:0;sudo pacman -Syu
+: 1725124158:0;sudo pacman -Sy nvidia cuda
+: 1725125827:0;nvm_version
+: 1725125829:0;c
+: 1725125832:0;node -v
+: 1725125833:0;c
+: 1725126085:0;sudo pacman -Sy cudnn
+: 1725126292:0;cal
+: 1725126299:0;man cal
+: 1725126325:0;cal -3
+: 1725126996:0;sudo pacman -Sy cudnn
+: 1725136447:0;nvim
+: 1725136517:0;fastfetch
+: 1725136528:0;c
+: 1725136602:0;fastfetch
+: 1725136629:0;nvim
+: 1725136687:0;fastfetch
+: 1725136845:0;nvim
+: 1725136852:0;vim
+: 1725137023:0;neofetch
+: 1725137027:0;c
+: 1725137581:0;nvim
+: 1725137810:0;cd Downloads
+: 1725137816:0;cd webi
+: 1725137923:0;cd Downloads/archive
+: 1725137926:0;c
+: 1725137935:0;cd ~/.dotfiles
+: 1725137937:0;gs
+: 1725137944:0;git add .
