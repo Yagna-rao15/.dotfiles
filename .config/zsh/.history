@@ -1,10 +1,7 @@
-yazi
 ls .config/ohmyposh
 ls .config/ohmyposh/
 curl -s https://ohmyposh.dev/install.sh | bash -s
 oh-my-posh
-ls\\
-
 sudo nautilus
 man ps
 ps -aux
@@ -29,7 +26,6 @@ mkdir 967-Div-2
 cd 967-Div-2
 cd Code/CodeForces/967-Div-2
 g++ 1.c -o 1
-cat 1.cpp
 cd lab_2
 sudo pacman -S texlive-most\
 
@@ -137,7 +133,6 @@ gh auth status
 gh auth refresh
 gh auth log
 gh auth login
-sudo pacman -Syu
 cd .dotfiles/.config/zsh
 ls ../bash
 echo PATH
@@ -147,7 +142,6 @@ bat .Xauthority
 bat .xinitrc
 
 mv Downloads/tmux-cheatsheet.md ~/.config/tmux/tmux-cheetsheet.md
-source ~/.config/zsh/.zshrc
 qq
 git push origin main\
 
@@ -162,7 +156,6 @@ cp -r  .dotfiles .dotfiles
 cp -r  .dotfiles .dots
 ls .dots
 git status
-cd 
 git ls-files -z -d | xargs -0 git checkout --
 rm -rf .dotfiles
 cp ~/.dotfiles/.config/nvim/lua/plugins/lsp.lua ~/.dotfiles/.config/nvim-self/lua/plugins/lsp.lua
@@ -280,8 +273,6 @@ iwctl
 chmod 775 ~/.config/tmux/tmux.conf
 w
 man w
-tmux 
-neofetch
 mux ls
 tmux attach-session 2
 tmux attach 2
@@ -290,9 +281,7 @@ fatfetch
 0
 2
 3
-lazygit
 cd Code/ML/
-oh-my-posh upgrade
 sudo systemctl enable NetworkManager.service
 lspci -k
 ip link set interface up
@@ -359,7 +348,6 @@ ld
 echo $ZDOTDIR
 q\\
 q
-node -v
 npm -v
 cd ~/.config
 ls nvm
@@ -386,7 +374,6 @@ bluetoothctl
 cd Code/ML/\\
 ls
 jupyter-notebook
-ls lab_2
 cp Self/pictures/Wallpapers_Desktop/bg.png
 cp Self/pictures/Wallpapers_Desktop/bg.png Code/ML/lab_1/bg.png
 lsblk
@@ -439,16 +426,12 @@ ls -AXZ
 ls -AX
 ls -AX1
 ls -lAX
-cd  Code
 rm test.c a.out
 mv CodeForces Code-Forces
 ls ~
-cd ML
-ls lab_1
 cd lab_1
 sudo pacman -Sy python-scikit-learn
 cd ../lab_2
-cd Code/ML/c
 mv ../lab_3/Linear-Regression.csv Linear-Refression.csv
 mv Linear-Refression.csv Linear-Regression.csv
 cat csv.h
@@ -483,7 +466,6 @@ mpirun -np 2 ./1
 mpirun -np 4 ./1
 mpirun -np 5 ./1
 mpirun -np 2 ./2
-cd
 q;
 cat .zshenv
 tmux attach
@@ -497,14 +479,10 @@ sudo pacman -R starship
 curl -sS https://starship.rs/install.sh | sh
 # Locate and delete the starship binary
 sh -c 'rm "$(command -v 'starship')"'
-gs
-git add .
 git commit -m "Replaced Telescope with fzf(not keybinds), tweaks with nvim and tmux, will fix tomorrow"
-git push origin main
 man vim
 man nvim
 cd Documents
-cd ~/.dotfiles
 cd .config
 nvi
 cd .config/nvim/
@@ -515,15 +493,11 @@ tmux
 cmatrix
 ~q
 cd Code/SS
-cd lab_3
-nvim 
 cd Code/SS/lab_3
 rm 0.cpp
-nvim $(fzf)
 mv prod prod.txt
 mv prod.txt prod
 pwd
-..
 cd lab-4
 cd ../lab-2
 cd ../lab-3
@@ -536,7 +510,6 @@ vim $(fzf)
 mv alacritty.toml 11
 mv 11 alacritty.toml
 cd .config/alacritty
-vim
 COLORTERM
 colortest-256
 printf "\033[0;32m_hello_\033[0m\n" 
@@ -550,12 +523,6 @@ cd Code/Code-Forces/969-Div-2
 2 15
 10 26
 1 1000
-g++ 1.cpp -o 1
-./1
-g++ 3.cpp -o 3
-./3
-g++ 2.cpp -o 2
-./2
 4 2 3
 1 3 4 6
 4 7 7
@@ -575,60 +542,338 @@ g++ 2.cpp -o 2
 6 335734893 671469786
 138885253 70095920 456876775 9345665 214704906 375508929
 man 1
-g++ 4.cpp -o 4
-./4
 g++ 5.cpp -o 5
 ./5
-c
+cat \'
+rm \'
+cd Code/ML/Amazon
+unzip archive.zip
+lspci
+lspci | grep Nvdia
+lspci | grep VGA
+sudo pacman -Syu nvidia cuda
+sudo pacman -Sy nvidia cuda
+nvm_version
+node -v
+cal
+man cal
+cal -3
+sudo pacman -Sy cudnn
+neofetch
+cd webi
+cd Downloads/archive
+git add .
+git commit -m "Check in commit"
+git push origin main
+gs
 fastfetch
-ping google.com
-startx
-cd Code/ML
-jupyter notebook
+nvim $(fzf)
+cd ~/.dotfiles
+lazygit
+cd /mnt
+nvim Self/notes/ComputerNetworking
+nvim Self/notes/Computer-Networking.md
+tmux 
+curl -X POST "https://accounts.spotify.com/api/token" \\
+     -H "Content-Type: application/x-www-form-urlencoded" \\
+     -d "grant_type=client_credentials&client_id=your-client-id&client_secret=your-client-secret"\
+
+curl -X POST "https://accounts.spotify.com/api/token" \\
+     -H "Content-Type: application/x-www-form-urlencoded" \\
+     -d "grant_type=client_credentials&client_id=7f2dbbab2dbf4a39a0198699bc1c16b5&client_secret=7b6485b7550a4430b98f834d29a9b7a4"\
+
+curl "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" \\
+     -H "Authorization: Bearer  BQDBKJ5eo5jxbtpWjVOj7ryS84khybFpP_lTqzV7uV-T_m0cTfwvdn5BnBSKPxKgEb11"\
+
+curl "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" \\
+     -H "Authorization: Bearer  BQAik7aFMnD9elg8IvUEBpWgXFtF7CrAWAsXZNanDU8qDi4T0PSBeWH8y10l0NRIy8QOj_G69xFNAlGok8fTUobelAYRgivTxR5kdfEkUZqX2OMF-qg"
+curl "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" \\
+     -H "Authorization: Bearer  BQAik7aFMnD9elg8IvUEBpWgXFtF7CrAWAsXZNanDU8qDi4T0PSBeWH8y10l0NRIy8QOj_G69xFNAlGok8fTUobelAYRgivTxR5kdfEkUZqX2OMF-qg" >> spotify.json
+cat spotify.json
+cat \\ 
+rm \\ 
+rm spotify.json
+cd ML
+ls lab_1
+ls lab_2
+ls lab_3
+python3 -m venv ml
+source ml/bin/activate
+pip install numpy
+pip remove numpy
+pip uninstall numpy
+ls .config\
+
+g++ 1.cpp -o 1
+./1
+cat 1.cpp
+g++ 3.cpp -o 3
+./3
+g++ 4Test.cpp -o 4
+rm 4Test.cpp
+5\
+1\
+1\
+0\
+5\
+1 2 4 5 3\
+10101\
+5\
+5 4 1 3 2\
+10011\
+6\
+3 5 6 1 2 4\
+010000\
+6\
+1 2 3 4 5 6\
+100110\
+
+5\
+1\
+1\
+0\
+5\
+1 2 4 5 3\
+10101\
+5\
+5 4 1 3 2\
+10011\
+6\
+3 5 6 1 2 4\
+010000\
+6\
+1 2 3 4 5 6\
+100110
+g++ 2.cpp -o 2
+./2
+source ~/.config/zsh/.zshrc
+cat 4.cpp
+rm s
+rm temp temp1 test
+#include <string>
+#include <vector>
+using namespace std;
+int main(int argc, char *argv[]) {
+cd Code/Code-Forces/970-Div-3
+rm s temp test
+g++ 4.cpp -o 4
+./4
+yazi
+cd
+ls Self/notes
+vim
+cat .viminfo
+nvim 
+nvim ~/.dotfiles/.config/nvim
+cd 
+cd Code
+cd CICD
+cd ../
+mv CICD CI-CD
+cd CI-CD
+rm -rf lab-1/ lab-2
+systemctl enable --now docker.socket
+man docker
+systemctl --user start docker-desktop
+docker compose version
+systemctl --user enable docker-desktop
+docker desktop
+docker desktop version --help
+rofi 
+docker desktop run
+docker desktop --help
+docker desktop module ls
+docker desktop module update
+docker desktop version
+sudo systemctl status docker
+sudo systemctl start docker-desktop
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+touch
+touch app.py
+echo 'print("Hello, Microservices!")\n' >> app.py\
+
+cat app.py
+touch Dockerfile
+echo '# Step 1: Specify the base image\
+FROM python:3.10-slim\
+\
+# Step 2: Set the working directory inside the image\
+WORKDIR /usr/src/app\
+\
+# Step 3: Copy the application code into the image\
+COPY app.py .\
+\
+# Step 4: Define the command to run the application\
+CMD ["python", "app.py"]\
+' >> Dockerfile
+docker build -t hello-microservices .
+ls\\
+
+docker run hello-microservices\
+
+docker run hello-world
+docker -v
+docker -h
+sudo pacman -Syu
+docker ps
+sudo pacman -S gnome-terminal
+iptables
+ps
 cd Downloads
+tar xzvf docker-27.2.0.tgz
+sudo cp docker/* /usr/bin/
+sudo dockerd &
+sudo docker run hello-world
+oh-my-posh upgrade
+cd Code/CI-CD
+cat Dockerfile
+sudo docker build -t hello-microservices .
+sudo docker images 
+sudo docker run hello-microservices
+sudo docker images
+sudo docker login 
+docker tag hello-microservices Yagnarao15/hello-microservices:latest
+sudo docker tag hello-microservices Yagnarao15/hello-microservices:latest
+sudo docker push Yagnarao15/hello-microservices:latest
+sudo docker tag hello-microservices yagnarao15/hello-microservices:latest
+sudo docker push yagnarao15/hello-microservices:latest
+mkdir lab-3
+mv Dockerfile lab-3/
+mv app.py lab-3
+mv Lab_3_U22CS104.odt lab-3
+ls lab-3
+rm Lab_3_U22CS104.odt
+cd lab-3
+touch requirements.txt
+docker build -t inventory-app .\
+
+sudo docker build -t inventory-app .\
+
+sudo docker run -p 5000:5000 inventory-app\
+
+nvim Code/CI-CD/lab-3
+sudo docker ps
+startx
+ping google.com
+cd Code/ML
+cd lab_3
 ls
+..
+jupyter notebook
+cd Code/ML/c
 nvim
+c
 q
-: 1725119817:0;ls
-: 1725119823:0;rm \'
-: 1725119829:0;cat \'
-: 1725119837:0;rm \'
-: 1725119839:0;c
-: 1725119840:0;ls
-: 1725119951:0;cd Code/ML/Amazon
-: 1725119952:0;ls
-: 1725119957:0;unzip archive.zip
-: 1725119985:0;c
-: 1725122277:0;lspci
-: 1725122294:0;lspci | grep Nvdia
-: 1725122337:0;lspci | grep VGA
-: 1725123452:0;sudo pacman -Syu nvidia cuda
-: 1725123612:0;sudo pacman -Syu
-: 1725124158:0;sudo pacman -Sy nvidia cuda
-: 1725125827:0;nvm_version
-: 1725125829:0;c
-: 1725125832:0;node -v
-: 1725125833:0;c
-: 1725126085:0;sudo pacman -Sy cudnn
-: 1725126292:0;cal
-: 1725126299:0;man cal
-: 1725126325:0;cal -3
-: 1725126996:0;sudo pacman -Sy cudnn
-: 1725136447:0;nvim
-: 1725136517:0;fastfetch
-: 1725136528:0;c
-: 1725136602:0;fastfetch
-: 1725136629:0;nvim
-: 1725136687:0;fastfetch
-: 1725136845:0;nvim
-: 1725136852:0;vim
-: 1725137023:0;neofetch
-: 1725137027:0;c
-: 1725137581:0;nvim
-: 1725137810:0;cd Downloads
-: 1725137816:0;cd webi
-: 1725137923:0;cd Downloads/archive
-: 1725137926:0;c
-: 1725137935:0;cd ~/.dotfiles
-: 1725137937:0;gs
-: 1725137944:0;git add .
+: 1725352380:0;startx
+: 1725352839:0;cd Code/ML
+: 1725352841:0;jupyter notebook
+: 1725352970:0;ping google.com
+: 1725353014:0;sudo pacman -Syu
+: 1725353017:0;ping google.com
+: 1725353022:0;sudo pacman -Syu
+: 1725353054:0;ping google.com
+: 1725353154:0;yay -Sy pandoc-bin
+: 1725353598:0;sudo pacman -Syu
+: 1725353840:0;ping google.com
+: 1725353881:0;man pandoc
+: 1725354029:0;pandoc -f ipynb -t pdf -o ~/Code/ML/lab-3/Linear-Regression.pdf ~/Code/ML/lab-3/Linear-Regression.ipynb
+: 1725355213:0;cd Code/ML
+: 1725355223:0;ipython nbconvert --to latex --post PDF lab-1/NumPy.ipynb
+: 1725355233:0;man ipython
+: 1725355297:0;pip install nbconvert
+: 1725355307:0;cd Code/ML
+: 1725355313:0;python3 venv ml
+: 1725355318:0;ls
+: 1725355325:0;python3 ml
+: 1725355961:0;sudo pacman -Syu
+: 1725356014:0;cal 2**16
+: 1725356018:0;cal
+: 1725356211:0;sudo pacman -Syu
+: 1725357198:0;nvim
+: 1725357224:0;cd Downloads
+: 1725357225:0;ls
+: 1725357230:0;cat Anaconda3-2024.06-1-Linux-x86_64.sh
+: 1725357234:0;6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6cc
+: 1725357236:0;c
+: 1725357759:0;nvidia-smi
+: 1725358071:0;sudo pacman -Sy python-tensorflow
+: 1725358247:0;tensorboard
+: 1725358267:0;sudo pacman -Sy tensorflow tensorflow-cuda
+: 1725359987:0;c
+: 1725359989:0;fastfetch
+: 1725359992:0;startx
+: 1725361349:0;nvim Code/Code-Forces/970-Div-3
+: 1725375218:0;startx
+: 1725375576:0;cd Code/Code-Forces
+: 1725375598:0;ls
+: 1725375608:0;mkdir 971-Div-4
+: 1725375612:0;cd 971-Div-4
+: 1725375613:0;ls
+: 1725375616:0;nvim
+: 1725375681:0;cd Code/Code-Forces/971-Div-4
+: 1725375682:0;ls
+: 1725375687:0;g++ 1.cpp -o 1
+: 1725375689:0;./1
+: 1725375974:0;cat 1.cpp
+: 1725376159:0;g++ 2.cpp -o 2
+: 1725376161:0;./2
+: 1725376192:0;cat 2.cpp
+: 1725377196:0;cat 1.cpp
+: 1725377230:0;cat 2.cpp
+: 1725378082:0;g++ 4.cpp -o 4
+: 1725378084:0;./4
+: 1725378159:0;g++ 4.cpp -o 4
+: 1725378160:0;./4
+: 1725445970:0;fastfetch
+: 1725445971:0;c
+: 1725445973:0;startx
+: 1725446159:0;cd Code/PPA
+: 1725446161:0;nvim
+: 1725461097:0;startx
+: 1725463039:0;nvim
+: 1725463173:0;mv .local/share/nvim/ .dotfiles/.local/share/nvim/
+: 1725463193:0;mv .local/share/nvim-lazy .dotfiles/.local/share/nvim-lazy/
+: 1725463214:0;mv .local/share/nvim-kickstart .dotfiles/.local/share/nvim-kickstart/
+: 1725463216:0;ls
+: 1725463226:0;ls .local/share
+: 1725463240:0;ls .dotfiles/.local/share
+: 1725463287:0;cd .dotfiles
+: 1725463288:0;gs
+: 1725463295:0;stow .
+: 1725463306:0;gs
+: 1725463310:0;git add .
+: 1725463338:0;gs
+: 1725463344:0;c
+: 1725463349:0;cd
+: 1725463356:0;rm .local/share/nvim
+: 1725463362:0;rm .local/share/nvim-kickstart
+: 1725463367:0;rm .local/share/nvim-lazy
+: 1725463387:0;mv .dotfiles/.local/share/nvim-kickstart .local/share/nvim-kickstart/
+: 1725463408:0;mv .dotfiles/.local/share/nvim-lazy .local/share/nvim-lazy/
+: 1725463416:0;mv .dotfiles/.local/share/nvim .local/share/nvim
+: 1725463417:0;ls
+: 1725463463:0;c
+: 1725463464:0;ls
+: 1725463477:0;rm .x11
+: 1725463480:0;ls
+: 1725463698:0;man rename
+: 1725463920:0;chmod +x ~/.dotfiles/.local/bin/nvim-name.sh
+: 1725463947:0;./.dotfiles/.local/bin/nvim-name.sh
+: 1725464003:0;cd .dotfiles
+: 1725464007:0;stow .
+: 1725464010:0;ls ~
+: 1725464017:0;ls ~/.config
+: 1725464045:0;~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
+: 1725464051:0;ls ~/.config
+: 1725464101:0;rm ~/.config/Fuck-You
+: 1725464129:0;mv .config/Fuck ~/.config
+: 1725464131:0;ls ~/.config
+: 1725464140:0;c
+: 1725464146:0;~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
+: 1725464148:0;c
+: 1725464150:0;ls ~/.config
+: 1725464155:0;c
+: 1725464165:0;gs
+: 1725464171:0;git add .

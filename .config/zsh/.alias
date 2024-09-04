@@ -7,7 +7,7 @@ alias rm='rm -i'
 alias ..='cd ..'
 alias gs='git status'
 alias q='exit'
-alias cat=bat
+# alias cat=bat
 
 # Nvim kickstarter
 alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'

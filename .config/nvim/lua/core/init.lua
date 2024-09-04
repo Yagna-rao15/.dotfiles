@@ -40,6 +40,7 @@ opt.ruler = false
 
 -- disable nvim intro
 opt.shortmess:append "sI"
+opt.spell = true
 
 opt.signcolumn = "yes"
 opt.splitbelow = true
