@@ -156,7 +156,8 @@ bindsym $mod+r mode "resize"
 # }
 
 # Setting Wallpaper
-exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
+# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
+exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
 
 # Polybar Kill prev instances and create new

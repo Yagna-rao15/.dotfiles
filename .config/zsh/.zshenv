@@ -43,3 +43,8 @@ export npm_config_cache=/home/yagna/.local/share/npm
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH='/home/yagna/Code/Go'
 export PATH="$PATH:$(go env GOBIN)$(go env GOPATH)/bin"
+
+# For cuda and GPU
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+

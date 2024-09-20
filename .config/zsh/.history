@@ -70,20 +70,13 @@ mpirun -np ./2
 mpirun -np 5 ./2
 mpirun -np 3 ./2
 mpirun -np 8 ./1
-cat 1.c
-mpicc 1.c -o 1
-cat 2.c
-mpicc 2.c -o 2
 mpirun -np 8 ./2
-mpirun -np 4 ./2
 mpirun -np 1 ./2
 ping 172.16.1.1:8090/
 ping 10.0.2.15/24
 ping 10.0.2.15:24
 ping 10.0.2.15
-ip addr
 sudo pacman -R nautilus
-sudo pacman -Sy nautilus
 cd .texlive
 ./texmf-var
 rm -rf .texlive
@@ -103,7 +96,6 @@ gcc temp.c -o temp
 ./temp
 gcc 1.c 2.c 3.c -o 1 2 3
 gcc 3.c -o 3
-ls 
 cd Code/SS/lab_2
 bluetoothctl pairable on
 bluetoothctl info
@@ -146,9 +138,7 @@ qq
 git push origin main\
 
 cd .config/nvim
-nvim-kickstart
 nvim-lazy
-stow .
 sh -c "$(curl -s https://raw.githubusercontent.com/ibhagwan/fzf-lua/main/scripts/mini.sh)"
 cp ~/.dotfiles ~/.dots
 cp .dotfiles .dotfiles
@@ -164,7 +154,6 @@ cp ~/.dotfiles/.config/nvim/lua/plugins/mason.lua ~/.dotfiles/.config/nvim-self/
 cd .local/share/nvim-self/lazy/ui/lua/nvchad
 nvim-self
 ls .dotfiles/.config
-cd .dotfiles/.config
 rm -rf nvim-self
 nvim nvim/lua/config/lsp.lua
 rm -rf .dots
@@ -199,10 +188,8 @@ mv .dotfiles/x11 .dotfiles/x
 ls .dotfiles
 mv .Xauthority .dotfiles/x/Xauthority
 mv .xinitrc .dotfiles/x/xinitrc
-;w
 ls gh
 rm -rf gh
-rm .bash_history
 absh
 bash
 tree
@@ -231,7 +218,6 @@ cd Code/CodeForces/968-Div-2
 abcb
 12
 abcabcabcabc
-gcc 1.c -o 1
 gcc 2.c -o 2
 ./q
 g++ 3-1.cpp -o 3
@@ -245,7 +231,6 @@ fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 cx
 man l
 fcd
-ls .config
 lss nvim
 lss .config
 ff
@@ -280,7 +265,6 @@ fatfetch
 1
 0
 2
-3
 cd Code/ML/
 sudo systemctl enable NetworkManager.service
 lspci -k
@@ -290,9 +274,7 @@ tmux d
 tmux l
 tmux kill-session -a
 cd .config/tmux
-stratx
 tmux new -n fuck
-exit
 tmux kill-server
 tmux run
 tmux start-server
@@ -300,7 +282,6 @@ man tmux start
 nvim .dotfiles/.config/tmux
 tmux start
 sed
-man sed
 tmux run-shell -b 'command -v fzf'
 bluetoothctl advertise
 bluetoothctl advertise on
@@ -329,7 +310,6 @@ curl https://icanhazip.com
 less $(fzf)
 fzf | cat
 echo "\n\n# Get IP\nalias IPP='curl https://icanhazip.com'"  >> $(fzf) 
-cat $(fzf)
 IPP
 ip addr show usb0
 ping 127.0.0.1\
@@ -363,17 +343,14 @@ npm i express
 npm start
 npm run dev
 ip addr show
-cd .dotfiles
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
 gcc test.c
-./a.out
 ls ~/Downloads
 ls Documents
 ls .zen
 bluetoothctl
 cd Code/ML/\\
 ls
-jupyter-notebook
 cp Self/pictures/Wallpapers_Desktop/bg.png
 cp Self/pictures/Wallpapers_Desktop/bg.png Code/ML/lab_1/bg.png
 lsblk
@@ -428,7 +405,6 @@ ls -AX1
 ls -lAX
 rm test.c a.out
 mv CodeForces Code-Forces
-ls ~
 cd lab_1
 sudo pacman -Sy python-scikit-learn
 cd ../lab_2
@@ -438,7 +414,6 @@ cat csv.h
 cat csv.c
 gcc -o main csv.c
 cd Code/ML/lab_2
-l
 cd ../lab_1
 cd Code/ML/lab_3
 cd ../c
@@ -463,9 +438,7 @@ cd Code/PPA/lab_3
 mpirun -np 1 ./1
 mpirun -np 2\ ./1
 mpirun -np 2 ./1
-mpirun -np 4 ./1
 mpirun -np 5 ./1
-mpirun -np 2 ./2
 q;
 cat .zshenv
 tmux attach
@@ -483,13 +456,11 @@ git commit -m "Replaced Telescope with fzf(not keybinds), tweaks with nvim and t
 man vim
 man nvim
 cd Documents
-cd .config
 nvi
 cd .config/nvim/
 nvim\\
 
 sudo pacman -S cmatrix
-tmux
 cmatrix
 ~q
 cd Code/SS
@@ -497,15 +468,12 @@ cd Code/SS/lab_3
 rm 0.cpp
 mv prod prod.txt
 mv prod.txt prod
-pwd
 cd lab-4
 cd ../lab-2
 cd ../lab-3
-cd ../lab-4
 ../lab-3/1
 ls Downloads
 vim Self/notes/Nvim.md
-p
 vim $(fzf)
 mv alacritty.toml 11
 mv 11 alacritty.toml
@@ -515,7 +483,6 @@ colortest-256
 printf "\033[0;32m_hello_\033[0m\n" 
 colorpicker --short --one-shot --preview\
 
-;q
 cd Code/Code-Forces/969-Div-2
 10 21
 2 8
@@ -555,18 +522,12 @@ sudo pacman -Syu nvidia cuda
 sudo pacman -Sy nvidia cuda
 nvm_version
 node -v
-cal
 man cal
 cal -3
 sudo pacman -Sy cudnn
-neofetch
 cd webi
 cd Downloads/archive
-git add .
 git commit -m "Check in commit"
-git push origin main
-gs
-fastfetch
 nvim $(fzf)
 cd ~/.dotfiles
 lazygit
@@ -598,15 +559,11 @@ ls lab_1
 ls lab_2
 ls lab_3
 python3 -m venv ml
-source ml/bin/activate
 pip install numpy
 pip remove numpy
 pip uninstall numpy
 ls .config\
 
-g++ 1.cpp -o 1
-./1
-cat 1.cpp
 g++ 3.cpp -o 3
 ./3
 g++ 4Test.cpp -o 4
@@ -644,9 +601,6 @@ rm 4Test.cpp
 6\
 1 2 3 4 5 6\
 100110
-g++ 2.cpp -o 2
-./2
-source ~/.config/zsh/.zshrc
 cat 4.cpp
 rm s
 rm temp temp1 test
@@ -656,17 +610,10 @@ using namespace std;
 int main(int argc, char *argv[]) {
 cd Code/Code-Forces/970-Div-3
 rm s temp test
-g++ 4.cpp -o 4
-./4
-yazi
-cd
 ls Self/notes
-vim
 cat .viminfo
-nvim 
 nvim ~/.dotfiles/.config/nvim
 cd 
-cd Code
 cd CICD
 cd ../
 mv CICD CI-CD
@@ -687,9 +634,6 @@ docker desktop module update
 docker desktop version
 sudo systemctl status docker
 sudo systemctl start docker-desktop
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
 touch
 touch app.py
 echo 'print("Hello, Microservices!")\n' >> app.py\
@@ -709,30 +653,19 @@ COPY app.py .\
 CMD ["python", "app.py"]\
 ' >> Dockerfile
 docker build -t hello-microservices .
-ls\\
-
 docker run hello-microservices\
 
-docker run hello-world
-docker -v
 docker -h
-sudo pacman -Syu
-docker ps
 sudo pacman -S gnome-terminal
 iptables
 ps
-cd Downloads
 tar xzvf docker-27.2.0.tgz
 sudo cp docker/* /usr/bin/
 sudo dockerd &
-sudo docker run hello-world
-oh-my-posh upgrade
 cd Code/CI-CD
 cat Dockerfile
 sudo docker build -t hello-microservices .
 sudo docker images 
-sudo docker run hello-microservices
-sudo docker images
 sudo docker login 
 docker tag hello-microservices Yagnarao15/hello-microservices:latest
 sudo docker tag hello-microservices Yagnarao15/hello-microservices:latest
@@ -754,128 +687,615 @@ sudo docker build -t inventory-app .\
 sudo docker run -p 5000:5000 inventory-app\
 
 nvim Code/CI-CD/lab-3
-sudo docker ps
-startx
-ping google.com
-cd Code/ML
 cd lab_3
-ls
-..
-jupyter notebook
 cd Code/ML/c
+yay -Sy pandoc-bin
+man pandoc
+pandoc -f ipynb -t pdf -o ~/Code/ML/lab-3/Linear-Regression.pdf ~/Code/ML/lab-3/Linear-Regression.ipynb
+ipython nbconvert --to latex --post PDF lab-1/NumPy.ipynb
+man ipython
+pip install nbconvert
+python3 venv ml
+cal 2**16
+cat Anaconda3-2024.06-1-Linux-x86_64.sh
+6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6cc
+sudo pacman -Sy python-tensorflow
+tensorboard
+sudo pacman -Sy tensorflow tensorflow-cuda
+nvim Code/Code-Forces/970-Div-3
+mkdir 971-Div-4
+cd 971-Div-4
+cd Code/Code-Forces/971-Div-4
+cat 2.cpp
+mv .local/share/nvim/ .dotfiles/.local/share/nvim/
+mv .local/share/nvim-lazy .dotfiles/.local/share/nvim-lazy/
+mv .local/share/nvim-kickstart .dotfiles/.local/share/nvim-kickstart/
+ls .local/share
+ls .dotfiles/.local/share
+rm .local/share/nvim
+rm .local/share/nvim-kickstart
+rm .local/share/nvim-lazy
+mv .dotfiles/.local/share/nvim-kickstart .local/share/nvim-kickstart/
+mv .dotfiles/.local/share/nvim-lazy .local/share/nvim-lazy/
+mv .dotfiles/.local/share/nvim .local/share/nvim
+man rename
+chmod +x ~/.dotfiles/.local/bin/nvim-name.sh
+./.dotfiles/.local/bin/nvim-name.sh
+ls ~
+rm ~/.config/Fuck-You
+mv .config/Fuck ~/.config
+~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
+git add .
+s
+git commit -m "9/11 2024 LOL"
+git push origin main
+gs
+ls\\
+
+cat .bash_history
+rm .bash_history
+cat $(fzf)
+ls .config/zsh/.history
+cd .dotfiles/.config
+cd .config
+nvim-name.sh
+vim ~/.viminfo
+vim ~/.vim/vimrc
+nvim-kickstart
+ls .config
+stow .
+ls ~/.config
+nvim-own\\
+\\
+
+mv Downloads/wallpaperflare.com_wallpaper.jpg Self/pictures/Wallpapers_Desktop/Black-Venom.jpg
+cd .dotfiles
+git log --graph --pretty=format:'%C(bold blue)%h%Creset %C(cyan)[%cr] %C(magenta)%an%Creset - %Creset%s%C(yellow)%d%Creset' --abbrev-commit \
+}
+export COLOR_RESET=$'\x1b[0m'\
+export COLOR_LACK=$'\x1b[38;2;112;128;144m'\
+export COLOR_LUSTER=$'\x1b[38;2;222;238;237m'\
+export COLOR_ORANGE=$'\x1b[38;2;255;170;136m'\
+export COLOR_GREEN=$'\x1b[38;2;120;153;120m'\
+export COLOR_BLUE=$'\x1b[38;2;119;136;170m'\
+export COLOR_RED=$'\x1b[38;2;215;0;0m'\
+export COLOR_BLACK=$'\x1b[38;2;0;0;0m'\
+export COLOR_GRAY1=$'\x1b[38;2;8;8;8m'\
+export COLOR_GRAY2=$'\x1b[38;2;25;25;25m'\
+export COLOR_GRAY3=$'\x1b[38;2;42;42;42m'\
+export COLOR_GRAY4=$'\x1b[38;2;68;68;68m'\
+export COLOR_GRAY5=$'\x1b[38;2;85;85;85m'\
+export COLOR_GRAY6=$'\x1b[38;2;122;122;122m'\
+export COLOR_GRAY7=$'\x1b[38;2;170;170;170m'\
+export COLOR_GRAY8=$'\x1b[38;2;204;204;204m'\
+export COLOR_GRAY9=$'\x1b[38;2;221;221;221m'\
+\
+log_red() { echo "${COLOR_RED}$@${COLOR_RESET}" }\
+log_luster(){ echo "${COLOR_LUSTER}$@${COLOR_RESET}" }\
+log_orange(){ echo "${COLOR_ORANGE}$@${COLOR_RESET}" }\
+log_green() { echo "${COLOR_GREEN}$@${COLOR_RESET}" }\
+log_blue() { echo "${COLOR_BLUE}$@${COLOR_RESET}" }\
+log_black() { echo "${COLOR_BLACK}$@${COLOR_RESET}" }\
+log_gray1() { echo "${COLOR_GRAY1}$@${COLOR_RESET}" }\
+log_gray2() { echo "${COLOR_GRAY2}$@${COLOR_RESET}" }\
+log_gray3() { echo "${COLOR_GRAY3}$@${COLOR_RESET}" }\
+log_gray4() { echo "${COLOR_GRAY4}$@${COLOR_RESET}" }\
+log_gray5() { echo "${COLOR_GRAY5}$@${COLOR_RESET}" }\
+log_gray6() { echo "${COLOR_GRAY6}$@${COLOR_RESET}" }\
+log_gray7() { echo "${COLOR_GRAY7}$@${COLOR_RESET}" }\
+log_gray8() { echo "${COLOR_GRAY8}$@${COLOR_RESET}" }\
+log_gray9() { echo "${COLOR_GRAY9}$@${COLOR_RESET}" }
+git log --graph --pretty=format:'%C(bold blue)%h%Creset %C(cyan)[%cr] %C(magenta)%an%Creset - %Creset%s%C(yellow)%d%Creset' --abbrev-commit \
+
+$(fortune -s -n 50)
+echo $(fortune -s -n 50)
+g++ test.cpp
+./a.out
+rm a.out test.cpp
+cd Code/SS/lab-4
+touch prod
+g++ -g -o 1 1.cpp
+sudo pacman -Sy gdb
+gdb ./1
+mv ~/Downloads/51.cpp ~/Code/SS/lab-5
+g++ 51.cpp -o 1
+mv ~/Downloads/5.text ~/Code/SS/lab-5/
+cat 5.text
+cat prod.txt
+mv 66e31d6ee96cd_student_resource_3.zip ~/Code/ML/Amazon
+cd ~/Code/ML/Amazon
+unzip 66e31d6ee96cd_student_resource_3.zip
+cd student_resource\ 3
+cd ../../
+p
+ping google.com\\
+\\
+
+sudo pacman -Sy python-tqdm
+cd Code/ML/Amazon/student_resource\ 3
+cat README.md
+sudo pacman -Sy python-pytesseract
+man pytesseract 
+pytesseract en images/1yw53vfQtS.jpg
+pytesseract -l en images/1yw53vfQtS.jpg
+sudo pacman -Sy tesseract-data-eng
+sudo pacman -S tesseract\
+sudo pacman -S tesseract-data-eng\
+
+pytesseract -l en images/1yw53vfQtS.jpg\
+
+cat Code/ML/Amazon/student_resource\ 3/README.md
+cd ../Desktop/\\
+
+curl https://m.media-amazon.com/images/I/71XfHPR36-L.jpg
+curl https://m.media-amazon.com/images/I/71XfHPR36-L.jpg --output 71XfHPR36-L.jpg
+pytesseract -l en 71XfHPR36-L.jpg
+echo TESSDATA_PREFIX
+echo $TESSDATA_PREFIX
+sudo chmod 755 /usr/share/tessdata/\
+sudo chmod 644 /usr/share/tessdata/en.traineddata\
+
+ls /usr/share/tessdata/\
+
+pytesseract -l eng 71XfHPR36-L.jpg
+curl https://m.media-amazon.com/images/I/91LPf6OjV9L.jpg --output 1.jpg
+pytesseract -l eng 1.jpg
+pip install git+https://github.com/faustomorales/keras-ocr.git#egg=keras-ocr
+source ml/bin/activate\
+
+pip install keras-ocr
+pip install tensorflow
+python3 -v
+python3 --version
+pip install keras-ocr tensorflow==2.4 keras==2.4.3\
+
+touch test.py
+echo "import keras_ocr\
+\
+# Initialize the pipeline again\
+pipeline = keras_ocr.pipeline.Pipeline()\
+" >> test.py
+export CUDA_VISIBLE_DEVICES=""\
+
+nvim /home/yagna/Desktop/ml/lib/python3.12/site-packages/keras_ocr/recognition.py
+;w
+pip install IPython.display
+pip install IPython
+nvim test.py
+curl https://m.media-amazon.com/images/I/81e2YtCOKvL.jpg --output 2.jpg
+curl https://m.media-amazon.com/images/I/71mKPQGo8wL.jpg --output 3.jpg
+$((263859 - 234981))
+echo $((263859 - 234981))
+tesseract --help
+sh
+pytesseract -l eng 3.jpg
+pytesseract -l eng 2.jpg
+pytesseract -l eng 2_1.jpg
+pytesseract -l eng 3_1.jpg
+cd Desktop
+tesseract -l eng ./3_1.jpg
+tesseract --version\
+
+tesseract --list_langs
+tesseract --list-langs
+python3 test.py
+sudo pacman -S python-pip\
+pip install torch torchvision torchaudio\
+
+cat .config/zsh/.history
+cat ~/.config/zsh/.history
+pip install torch torchvision torchaudio\
+
+sudo pacman -Syu pytorch\
+
+sudo pacman -Syu python-pytorch-cuda
+tensorflow
+python3
+rm .x11
+rm .python_history
+cat sudo
+python3 ml
+source ml/bin/activate
+pip list --verbose\
+
+rm -rf ~/Code/ML/ml
+pip
+python venv list
+woken
+find ~ -type d -name "bin" -exec test -f "{}/activate" \; -print\
+
+cd Code
+cd ~/.local
+rm -rf anaconda3
+rm -rf ~/.conda ~/.continuum ~/.anaconda_backup\
+
+nvim ~/.config/bash/bash_history
+nvim ~/.config/bash/.bashrc
+conda\
+
+rm -rf anaconda3\
+rm -rf ~/anaconda3\
+sudo rm -rf /opt/anaconda3
+ls ~/.local/share/virtualenvs/\
+
+conda env list\
+
+python-tensorflow
+python3-tensorflow
+python -m venv ml
+pip install --upgrade pip setuptools\
+
+docker -v
+sudo groupadd docker
+sudo usermod -aG docker $USER
+exit
+newgrp docker
+sudo systemctl enable docker.service\
+\
+ sudo systemctl enable containerd.service
+docker run hello-world
+docker pull tensorflow/tensorflow:latest-gpu-jupyter
+sudo docker pull tensorflow/tensorflow:latest-gpu-jupyter
+sudo pacman -Sy nvidia-container-toolkit
+docker run -it --rm tensorflow/tensorflow:latest-gpu-jupyter \\
+   python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+sudo docker run -it --rm tensorflow/tensorflow:latest-gpu-jupyter \\
+   python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+sudo docker run -it --rm tensorflow/tensorflow \\
+   python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+sudo docker run -it --rm tensorflow/tensorflow:latest-gpu-jupyter \\
+   python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+docker run -it tensorflow/tensorflow bash\
+
+sudo docker run -it tensorflow/tensorflow bash\
+
+sudo docker run -it tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+sudo docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+sudo systemctl start docker\
+
+sudo systemctl status docker\
+
+ls -l /var/run/docker.sock\
+
+echo $USER
+sudo usermod -aG docker $USER\
+
+sudo docker run -u $(id -u):$(id -g) -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+sudo docker run -u $(id -u):$(id -g) -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash
+sudo ldconfig\
+
+docker run -u $(id -u):$(id -g) -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+sudo docker run -u root -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+docker ps
+sudo docker logs 7f4518f69e70\
+
+lspci | grep -i nvidia\
+
+docker run --gpus all --rm nvidia/cuda nvidia-smi
+sudo docker run --gpus all --rm nvidia/cuda nvidia-smi
+docker run --gpus all -it tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+V
+sudo docker run --gpus all --rm nvidia/cuda:11.7-base nvidia-smi\
+
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
+systemctl --user restart docker
+sudo systemctl --user restart docker
+sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
+stratx
+sudo docker run --gpus all -it tensorflow/tensorflow:2.14.0-gpu bash\
+
+pip install tensorflow-gpu==2.4.0\
+
+pip show tensorflow keras-ocr\
+
+pip install tensorflow==2.4.0\
+
+pip install jupyter
+pip install ipykernel\
+python -m ipykernel install --user --name=keras-ocr --display-name "Python (myenv)"\
+
+pip remove tensorflow
+source keras-ocr-env/bin/activate
+pip uninstall tensorflow
+pip uninstall jupyter
+pip uninstall
+pip uninstall *
+pip uninstall keras-ocr
+deactivate
+rm -rf keras-ocr-env
+python -m venv keras-ocr-env\
+source keras-ocr-env/bin/activate  # On Windows, use keras-ocr-env\Scripts\activate\
+
+pip lisr
+pip install tensorflow==2.15
+python3 -m pip install tensorflow[and-cuda]
+python3 -m pip install tensorflow-cuda
+python3 -m pip install tensorflow-gpu
+python3 -m pip install tensorflow
+pip install tensorflow\
+\
+
+python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"\
+
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"\
+
+pip install tensorflow-gpu
+cd ~/Desktop
+tesseract -l eng 3_1.jpg
+tesseract -l eng 3.jpg
+tesseract -l eng --oem 3 --psm 6 -3.jpg
+tesseract -l eng --oem 3 --psm 6 3.jpg
+tesseract -l eng 1.jpg
+sudo docker run --gpus all -it tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+sudo docker run --gpus all -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
+
+jupyter-notebook
+mkdir -p ~/.local/miniconda3\
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/.local/miniconda3/miniconda.sh\
+cd ~/.local/miniconda3\
+chmod +x miniconda.sh\
+./miniconda.sh
+./miniconda.sh
+conda --version
+conda activate
+conda create --name ML
+conda env \list
+sudo pacman -Sy inxi
+inxi -G
+sudo pacman -Syu nvidia-driver-supported-branches
+sudo pacman -Syu nvidia-dkms nvidia-utils nvidia-settings
+nvidia-driver-supported-branches
+conda install tensorflow-gpu
+conda install jupyter
+nvim Code/ML
+python3 main.py
+nvim main.py
+sudo pacman R python-jupyter
+sudo pacman -R jupyter-notebook
+sudo pacman -R jupyterlab
+sudo pacman -R jupyterlab-pygments
+sudo pacman -R jupyter-nbconvert
+sudo pacman -R jupyter-server
+sudo pacman -R jupyter-notebook-shim
+sudo pacman -R python-jupyter-client
+sudo pacman -R python-jupyterlab-server
+conda install anaconda::keras-ocr
+pip install keras-ocr\
+
+cat /home/yagna/.keras-ocr/craft_mlt_25k.h5
+lsmod | grep nvidia\
+
+nvidia-settings --version
+sudo pacman -Syu\
+sudo pacman -S nvidia nvidia-utils nvidia-settings\
+
+sudo dkms status\
+
+uname -r\
+
+conda install pandas numpy matplotlib nlyk sklearn
+conda install pandas numpy matplotlib
+conda install anaconda::scikit-learn
+conda install nltk
+conda install csv re
+conda install anaconda::csvkit anaconda::regex
+cp Code/ML/Amazon/images/2198wsIefsL.jpg Desktop
+ls Desktop
+conda install pytesseract
+watch -n 1 nvidia-smi
+conda en
+neofetch
+fastfetch
+htop
+cd Code/ML
+nvidia-smi
+nvim .dotfiles/.config/zsh/.zshenv
+nvcc --version\
+
+yay -Ss cudnn\
+
+yay -S cudnn\
+
+source ~/.config/zsh/.zshrc
+ls /usr/local/cuda/include/cudnn*.h\
+ls /usr/local/cuda/lib64/libcudnn*\
+
+nvidia-smi\
+
+sudo ln -s /usr/lib/cudnn*.h /usr/local/cuda/include/\
+sudo ln -s /usr/lib/libcudnn* /usr/local/cuda/lib64/\
+
+echo $PATH\
+echo $LD_LIBRARY_PATH\
+
+sudo pacman -R cuda cudnn\
+
+yay -S cuda\
+yay -S cudnn\
+
+echo $((22000 / 2))
+cat Downloads/Model.md
+cat Code/ML/Amazon/README.md
+man sed
+man diff
+diff Downloads/notebook807906aa6e\(1\).ipynb
+diff Downloads/notebook807906aa6e\(1\).ipynb Downloads/notebook807906aa6e\(2\).ipynb
+man bc
+cd Code/Archive
+pwd
+oh-my-posh upgrade
+vi
+cal
+Cd Code/PPA
+cd Code/PPA
+l
+cp ../lab-3/Lab_3_U22CS104_PPA.odt ./
+mv Lab_3_U22CS104_PPA.odt Lab_5_U22CS104_PPA.odt
+cd ../../CI-CD
+mkdir lab-5
+cd lab-5
+cp ../lab-4/Lab_4_U22CS104_CICD.odt ./
+conda create --name test
+conda deactivate\
+
+sudo pacman -y python-flask
+pip list
+pip install --upgrade pip\
+
+sudo pacman 
+sudo pacman -S python-flask
+find /var/cache/pacman/pkg/ -iname "*.part" -delete\
+
+sudo find /var/cache/pacman/pkg/ -iname "*.part" -delete\
+
+sudo fuser /var/lib/pacman/db.lck
+rm /var/lib/pacman/db.lck
+sudo rm /var/lib/pacman/db.lck
+sudo pacman -Sy python-flask
+conda activate test
+conda list
+conda env list
+pip install flask\\
+\\
+
+jupyter notebook
+conda activate ML
+pip install flask
+curl http://localhost:5000/greet\
+
+sudo docker images
+python3 app.py
+curl http://localhost:5000/items\
+
+sudo docker run hello-world
+sudo docker run hello-microservices
+sudo docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash
+cat ~/.config/zsh/.history | fzf
+cp ../lab-3/requirements.txt ./
+sudo docker build -t flask-microservice\
+
+sudo docker build -t flask-microservice .\
+ 
+cd Code/CI-CD/lab-5
+nvim ../lab-3/app.py
+sudo docker run -p 5000:5000 inventory-app\\
+
+tmux
+sudo docker run -p 5000:5000 flask-microservice\
+
+sudo docker ps
+ls ../lab-5
+cd Code/PPA/lab-4
+nvim 
+cat 1.cpp
+mpicc 1.cpp -o 1
+mpi++ 1.cpp -o 1
+mpicc -o 1 1.cpp
+mpicc 1.cpp
+mpic++ 1.cpp -o 1
+mpirun -np 2 ./2
+cat 2.c
+yazi
+cd Code/PPA/lab-5
+mpicc 1.c -o 1
+mpirun -np 4 ./1
+cat 1.c
+mpicc 2.c -o 2
+mpirun -np 4 ./2
+nvim ~/.config/zsh/.zshrc
+ip config
+ip addr
+cd Downloads
+..
+mkdir lab-6
+cd lab-6
+gcc 1.c -o 1
+cd Code/SS/lab-5
+cd ../lab-4
+cd ../lab-5
+cd ../lab-6
+nvim-own
+cd Code/SS/lab-6
+ls 
+;q
+vim
+curl https://172.16.1.1:8090
+startx
+flatpak install flathub io.github.zen_browser.zen
+flatpak list
+yay -S zen-browser
+sudo pacman -Rnsc yay
+ya
+ls /tmp
+cd /tmp\
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay
+cd ..
+rm -rf yay\
+
+cd
+yay -S zen-browser-bin 1.0.1.a.2-1
+pacman -Rcns gnome
+sudo pacman -Rcns gnome
+sudo pacman -Rcns gnome gnome-shell gnome-session\
+
+sudo pacman -Rns $(pacman -Qdtq)
+sudo pacman -Syu
+sudo pacman -Sy nautilus
+sudo pacman -R gnome-terminal gnome-tweaks
+sudo pacman -R gnome-tweaks
+ping google.com
+mkdir 973-Div-2
+cxd 973-Div-2
 nvim
+cd Code/Code-Forces
+cd 9
+cd 973-Div-2
+3
+1 2
+6
+100
+4 3
+9
+3 3
 c
+g++ 1.cpp -o 1
+./1
+g++ 2.cpp -o 2
+./2
+ls
+g++ 4.cpp -o 4
+./4
 q
-: 1725352380:0;startx
-: 1725352839:0;cd Code/ML
-: 1725352841:0;jupyter notebook
-: 1725352970:0;ping google.com
-: 1725353014:0;sudo pacman -Syu
-: 1725353017:0;ping google.com
-: 1725353022:0;sudo pacman -Syu
-: 1725353054:0;ping google.com
-: 1725353154:0;yay -Sy pandoc-bin
-: 1725353598:0;sudo pacman -Syu
-: 1725353840:0;ping google.com
-: 1725353881:0;man pandoc
-: 1725354029:0;pandoc -f ipynb -t pdf -o ~/Code/ML/lab-3/Linear-Regression.pdf ~/Code/ML/lab-3/Linear-Regression.ipynb
-: 1725355213:0;cd Code/ML
-: 1725355223:0;ipython nbconvert --to latex --post PDF lab-1/NumPy.ipynb
-: 1725355233:0;man ipython
-: 1725355297:0;pip install nbconvert
-: 1725355307:0;cd Code/ML
-: 1725355313:0;python3 venv ml
-: 1725355318:0;ls
-: 1725355325:0;python3 ml
-: 1725355961:0;sudo pacman -Syu
-: 1725356014:0;cal 2**16
-: 1725356018:0;cal
-: 1725356211:0;sudo pacman -Syu
-: 1725357198:0;nvim
-: 1725357224:0;cd Downloads
-: 1725357225:0;ls
-: 1725357230:0;cat Anaconda3-2024.06-1-Linux-x86_64.sh
-: 1725357234:0;6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6cc
-: 1725357236:0;c
-: 1725357759:0;nvidia-smi
-: 1725358071:0;sudo pacman -Sy python-tensorflow
-: 1725358247:0;tensorboard
-: 1725358267:0;sudo pacman -Sy tensorflow tensorflow-cuda
-: 1725359987:0;c
-: 1725359989:0;fastfetch
-: 1725359992:0;startx
-: 1725361349:0;nvim Code/Code-Forces/970-Div-3
-: 1725375218:0;startx
-: 1725375576:0;cd Code/Code-Forces
-: 1725375598:0;ls
-: 1725375608:0;mkdir 971-Div-4
-: 1725375612:0;cd 971-Div-4
-: 1725375613:0;ls
-: 1725375616:0;nvim
-: 1725375681:0;cd Code/Code-Forces/971-Div-4
-: 1725375682:0;ls
-: 1725375687:0;g++ 1.cpp -o 1
-: 1725375689:0;./1
-: 1725375974:0;cat 1.cpp
-: 1725376159:0;g++ 2.cpp -o 2
-: 1725376161:0;./2
-: 1725376192:0;cat 2.cpp
-: 1725377196:0;cat 1.cpp
-: 1725377230:0;cat 2.cpp
-: 1725378082:0;g++ 4.cpp -o 4
-: 1725378084:0;./4
-: 1725378159:0;g++ 4.cpp -o 4
-: 1725378160:0;./4
-: 1725445970:0;fastfetch
-: 1725445971:0;c
-: 1725445973:0;startx
-: 1725446159:0;cd Code/PPA
-: 1725446161:0;nvim
-: 1725461097:0;startx
-: 1725463039:0;nvim
-: 1725463173:0;mv .local/share/nvim/ .dotfiles/.local/share/nvim/
-: 1725463193:0;mv .local/share/nvim-lazy .dotfiles/.local/share/nvim-lazy/
-: 1725463214:0;mv .local/share/nvim-kickstart .dotfiles/.local/share/nvim-kickstart/
-: 1725463216:0;ls
-: 1725463226:0;ls .local/share
-: 1725463240:0;ls .dotfiles/.local/share
-: 1725463287:0;cd .dotfiles
-: 1725463288:0;gs
-: 1725463295:0;stow .
-: 1725463306:0;gs
-: 1725463310:0;git add .
-: 1725463338:0;gs
-: 1725463344:0;c
-: 1725463349:0;cd
-: 1725463356:0;rm .local/share/nvim
-: 1725463362:0;rm .local/share/nvim-kickstart
-: 1725463367:0;rm .local/share/nvim-lazy
-: 1725463387:0;mv .dotfiles/.local/share/nvim-kickstart .local/share/nvim-kickstart/
-: 1725463408:0;mv .dotfiles/.local/share/nvim-lazy .local/share/nvim-lazy/
-: 1725463416:0;mv .dotfiles/.local/share/nvim .local/share/nvim
-: 1725463417:0;ls
-: 1725463463:0;c
-: 1725463464:0;ls
-: 1725463477:0;rm .x11
-: 1725463480:0;ls
-: 1725463698:0;man rename
-: 1725463920:0;chmod +x ~/.dotfiles/.local/bin/nvim-name.sh
-: 1725463947:0;./.dotfiles/.local/bin/nvim-name.sh
-: 1725464003:0;cd .dotfiles
-: 1725464007:0;stow .
-: 1725464010:0;ls ~
-: 1725464017:0;ls ~/.config
-: 1725464045:0;~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
-: 1725464051:0;ls ~/.config
-: 1725464101:0;rm ~/.config/Fuck-You
-: 1725464129:0;mv .config/Fuck ~/.config
-: 1725464131:0;ls ~/.config
-: 1725464140:0;c
-: 1725464146:0;~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
-: 1725464148:0;c
-: 1725464150:0;ls ~/.config
-: 1725464155:0;c
-: 1725464165:0;gs
-: 1725464171:0;git add .
-: 1726076541:0;gs
-: 1726076560:0;git add .
+: 1726851950:0;ping google.com
+: 1726852014:0;htop
+: 1726858761:0;ping google.com
+: 1726858796:0;nvim
+: 1726858852:0;ping pornhub.com
+: 1726858860:0;ping google.com
+: 1726858875:0;pp
+: 1726862306:0;nvim
+: 1726866559:0;vim
+: 1726866594:0;nvim-own
+: 1726866631:0;nvim
+: 1726867477:0;nvim-own
+: 1726867665:0;git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
+: 1726867679:0;ls .config/nvim-test
+: 1726867685:0;nvim
+: 1726867724:0;nvim-test
+: 1726867807:0;nvim
+: 1726867853:0;cd .dotfiles
+: 1726867854:0;ls
+: 1726867855:0;gs
+: 1726867897:0;git add .
