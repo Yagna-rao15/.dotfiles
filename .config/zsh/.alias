@@ -11,10 +11,10 @@ alias pp='ping google.com'
 # alias cat=bat
 
 # Nvim kickstarter
-alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
-alias nvim-lazy='NVIM_APPNAME=nvim-lazy nvim'
 alias nvim-own='NVIM_APPNAME=nvim-own nvim'
-alias nvim-test='NVIM_APPNAME=nvim-test nvim'
+alias nvim-nv='NVIM_APPNAME=nvim-nv nvim'
+
+alias nvimm='nvim $(fzf)'
 
 # fd - cd to selected directory
 # fd() {
@@ -44,3 +44,4 @@ fh() {
 
 # Get IP
 alias IPP='curl https://icanhazip.com'
+alias nautilus='GTK_THEME=Adwaita:dark nautilus'

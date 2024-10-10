@@ -14,7 +14,7 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec alacritty
 
 bindsym $mod+q kill
-bindsym $mod+x exec --no-startup-id i3lock
+bindsym $mod+x exec --no-startup-id ~/Code/Archive/test.sh
 bindsym $mod+Delete exec $shutdown
 bindsym $mod+Shift+Delete exec $reboot
 
@@ -124,27 +124,27 @@ bindsym $mod+Shift+Escape exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+  # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym h resize shrink width 10 px or 10 ppt
+  bindsym j resize grow height 10 px or 10 ppt
+  bindsym k resize shrink height 10 px or 10 ppt
+  bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+  # same bindings, but for the arrow keys
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+  # back to normal: Enter or Escape or $mod+r
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -156,9 +156,10 @@ bindsym $mod+r mode "resize"
 # }
 
 # Setting Wallpaper
-# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
-exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/Black-Venom.jpg --no-fehbg
+exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
+# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
+# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/miles-morales-in-jacket-spiderman-desktop-wallpaper.jpg --no-fehbg
 
 # Polybar Kill prev instances and create new
 exec_always killall polybar
@@ -178,7 +179,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Scree Brightness
-bindsym Ctrl+F8 exec --no-startup-id brightnessctl set +5%
+bindsym Ctrl+F8 exec --no-startup-id brightnessctl set +20%
 bindsym Ctrl+F7 exec --no-startup-id brightnessctl set 0
 
 # Suspend

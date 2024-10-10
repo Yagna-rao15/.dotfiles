@@ -1,8 +1,7 @@
-# For ROS-Humble
-# source /opt/ros/humble/setup.zsh
-
 # Source zshenv and alias
 source "$XDG_CONFIG_HOME/zsh/.alias"
+
+export COLOR=#00f
 
 # Set zinit Directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -34,8 +33,6 @@ zinit cdreplay -q
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
-autoload edit-command-line; zle -N edit-command-line
-# bindkey '^e' edit-command-line
 
 # History
 HISTSIZE=5000
@@ -62,15 +59,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Load Completions
 autoload -Uz compinit
 compinit -d "$ZDOTDIR/.zcompdump"
-# _comp_options+=(globdots)
+_comp_options+=(globdots)
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
-# bindkey '^/' autosuggest-accept
-bindkey '^h' vi-backward-word
-bindkey '^l' vi-forward-word
-bindkey '^k' up-line-or-search
-bindkey '^j' down-line-or-search
 
 export TESSDATA_PREFIX="/usr/share/tessdata/"
 
@@ -89,3 +80,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# zprof

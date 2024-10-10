@@ -14,3 +14,9 @@ exit
 clear
 ls -la
 gs
+c
+clear
+exit
+exit
+q
+exit

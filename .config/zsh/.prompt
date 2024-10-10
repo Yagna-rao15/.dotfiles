@@ -1,0 +1,97 @@
+# # Function to get the current git branch and status
+# get_git_info() {
+#   local branch dirty
+#   if git rev-parse --is-inside-work-tree &>/dev/null; then
+#     branch=$(git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match 2>/dev/null)
+#     dirty=$(git status --porcelain 2>/dev/null)
+#     if [[ -n $dirty ]]; then
+#       echo "%F{yellow}$branch%f"  # Yellow for dirty branch
+#     else
+#       echo "%F{green}$branch%f"   # Green for clean branch
+#     fi
+#   fi
+# }
+#
+# # Function to show container name if inside a container
+# get_container_name() {
+#   if [ -f /.dockerenv ]; then
+#     echo "%F{cyan}$(cat /etc/hostname)%f"
+#   else
+#     echo "%F{cyan}%m%f"  # Default to hostname
+#   fi
+# }
+#
+# # Function to show the exit code if the previous command failed
+# precmd() {
+#   local exit_code=$?
+#   if [[ $exit_code -ne 0 ]]; then
+#     echo "%F{red}✘ Exit code: $exit_code%f"
+#   fi
+# }
+#
+# # Configure the prompt
+# PROMPT='
+# %F{blue}%n%f at $(get_container_name) in %F{magenta}%~%f $(get_git_info)
+# %F{yellow}%D{%H:%M:%S}%f
+# $(precmd)
+# %F{reset}%# '   # Command input on the next line
+#
+# # Right side prompt to show time
+# RPROMPT='%F{cyan}%*%f'
+#
+# # Colors and formatting
+# autoload -U colors && colors
+# setopt PROMPT_SUBST   # Enables execution of the commands in the prompt
+#
+### Simple transient prompt
+
+[[ -c /dev/null ]]  ||  return
+zmodload zsh/system ||  return
+
+## Set the transient prompt PROMPT here -
+TRANSIENT_PROMPT='%# '   # Sample value
+
+function set_prompt {
+    ## Set the values of PROMPT and RPROMPT here
+    # Sample values given below
+    PROMPT='%~'$'\n''%# '
+    RPROMPT='%(?..%B%F{1}%?%f%b)'
+}
+
+zle -N send-break _transient_prompt_widget-send-break
+function _transient_prompt_widget-send-break {
+    _transient_prompt_widget-zle-line-finish
+    zle .send-break
+}
+
+zle -N zle-line-finish _transient_prompt_widget-zle-line-finish
+function _transient_prompt_widget-zle-line-finish {
+    (( ! _transient_prompt_fd )) && {
+        sysopen -r -o cloexec -u _transient_prompt_fd /dev/null
+        zle -F $_transient_prompt_fd _transient_prompt_restore_prompt
+    }
+    zle && PROMPT=$TRANSIENT_PROMPT RPROMPT= zle reset-prompt && zle -R
+}
+
+function _transient_prompt_restore_prompt {
+    exec {1}>&-
+    (( ${+1} )) && zle -F $1
+    _transient_prompt_fd=0
+    set_prompt
+    zle reset-prompt
+    zle -R
+}
+
+(( ${+precmd_functions} )) || typeset -ga precmd_functions
+(( ${#precmd_functions} )) || {
+    do_nothing() {true}
+    precmd_functions=(do_nothing)
+}
+
+precmd_functions+=_transient_prompt_precmd
+function _transient_prompt_precmd {
+    TRAPINT() { zle && _transient_prompt_widget-zle-line-finish; return $(( 128 + $1 )) }
+}
+
+
+# vim: sw=0 ts=4 sts=4 et

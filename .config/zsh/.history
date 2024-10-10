@@ -1,8 +1,6 @@
 ls .config/ohmyposh
 ls .config/ohmyposh/
-curl -s https://ohmyposh.dev/install.sh | bash -s
 oh-my-posh
-sudo nautilus
 man ps
 ps -aux
 ps -aux | grep Code
@@ -134,11 +132,8 @@ bat .Xauthority
 bat .xinitrc
 
 mv Downloads/tmux-cheatsheet.md ~/.config/tmux/tmux-cheetsheet.md
-qq
 git push origin main\
 
-cd .config/nvim
-nvim-lazy
 sh -c "$(curl -s https://raw.githubusercontent.com/ibhagwan/fzf-lua/main/scripts/mini.sh)"
 cp ~/.dotfiles ~/.dots
 cp .dotfiles .dotfiles
@@ -165,15 +160,12 @@ mv ~/nvm ~/.config/nvm
 ls ../.bookmarks
 rm -rf ~/.bookmarks
 ls ../
-git log
 git commit -m "OOF Added I3, Tries to add GH and NVM but fixed later"
 ls /etc/zsh/zprofile
 ls /etc/zsh/
 cd /etc/zsh
 sudo nvim zprofile
-echo $PATH
 fd
-echo $SHELL
 cd /etc/X11
 cd xinit
 cat xinitrc
@@ -191,8 +183,6 @@ mv .xinitrc .dotfiles/x/xinitrc
 ls gh
 rm -rf gh
 absh
-bash
-tree
 mv README README.md
 man grep
 man grep -r
@@ -209,8 +199,6 @@ man -t startx | ip
 curl cht.sh/cpp/string
 curl cht.sh/cpp/polymorphism
 curl cht.sh/cpp/int
-clear
-curl google.com
 cd CodeForces
 mkdir 968-Div-2
 cd 968-Div-2
@@ -262,10 +250,7 @@ mux ls
 tmux attach-session 2
 tmux attach 2
 fatfetch
-1
 0
-2
-cd Code/ML/
 sudo systemctl enable NetworkManager.service
 lspci -k
 ip link set interface up
@@ -341,12 +326,10 @@ cd Code/test
 node index.js
 npm i express
 npm start
-npm run dev
 ip addr show
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
 gcc test.c
 ls ~/Downloads
-ls Documents
 ls .zen
 bluetoothctl
 cd Code/ML/\\
@@ -356,7 +339,6 @@ cp Self/pictures/Wallpapers_Desktop/bg.png Code/ML/lab_1/bg.png
 lsblk
 ls /dev/nvme0n1p3
 cd /dev/nvme0n1p3
-nautilus admin:/
 man unzip
 unzip archive\(3\).zip
 mv Linear\ Regression\ -\ Sheet1.csv ~/Code/ML
@@ -424,7 +406,6 @@ cd ~/Downloads
 fh
 unzip archive\(4\).zip
 mv housing.csv ~/Code/ML/c/Boston-Housing.csv
-cd -
 gcc -o main LR-BH.c csv.c
 ./main
 cd Code/PPA/
@@ -432,19 +413,13 @@ mkdir lab_4
 cd lab_4
 firefox
 rofi
-reboot
-fzf
 cd Code/PPA/lab_3
 mpirun -np 1 ./1
 mpirun -np 2\ ./1
 mpirun -np 2 ./1
 mpirun -np 5 ./1
 q;
-cat .zshenv
-tmux attach
 tmux new-session
-tmux ls
-tmux a
 hi
 bye
 sudo pacman -Sy starship
@@ -461,18 +436,14 @@ cd .config/nvim/
 nvim\\
 
 sudo pacman -S cmatrix
-cmatrix
 ~q
-cd Code/SS
 cd Code/SS/lab_3
 rm 0.cpp
 mv prod prod.txt
 mv prod.txt prod
-cd lab-4
 cd ../lab-2
 cd ../lab-3
 ../lab-3/1
-ls Downloads
 vim Self/notes/Nvim.md
 vim $(fzf)
 mv alacritty.toml 11
@@ -520,7 +491,6 @@ lspci | grep Nvdia
 lspci | grep VGA
 sudo pacman -Syu nvidia cuda
 sudo pacman -Sy nvidia cuda
-nvm_version
 node -v
 man cal
 cal -3
@@ -528,8 +498,6 @@ sudo pacman -Sy cudnn
 cd webi
 cd Downloads/archive
 git commit -m "Check in commit"
-nvim $(fzf)
-cd ~/.dotfiles
 lazygit
 cd /mnt
 nvim Self/notes/ComputerNetworking
@@ -554,7 +522,6 @@ cat spotify.json
 cat \\ 
 rm \\ 
 rm spotify.json
-cd ML
 ls lab_1
 ls lab_2
 ls lab_3
@@ -564,8 +531,6 @@ pip remove numpy
 pip uninstall numpy
 ls .config\
 
-g++ 3.cpp -o 3
-./3
 g++ 4Test.cpp -o 4
 rm 4Test.cpp
 5\
@@ -613,9 +578,7 @@ rm s temp test
 ls Self/notes
 cat .viminfo
 nvim ~/.dotfiles/.config/nvim
-cd 
 cd CICD
-cd ../
 mv CICD CI-CD
 cd CI-CD
 rm -rf lab-1/ lab-2
@@ -638,7 +601,6 @@ touch
 touch app.py
 echo 'print("Hello, Microservices!")\n' >> app.py\
 
-cat app.py
 touch Dockerfile
 echo '# Step 1: Specify the base image\
 FROM python:3.10-slim\
@@ -662,8 +624,6 @@ ps
 tar xzvf docker-27.2.0.tgz
 sudo cp docker/* /usr/bin/
 sudo dockerd &
-cd Code/CI-CD
-cat Dockerfile
 sudo docker build -t hello-microservices .
 sudo docker images 
 sudo docker login 
@@ -721,35 +681,23 @@ mv .dotfiles/.local/share/nvim .local/share/nvim
 man rename
 chmod +x ~/.dotfiles/.local/bin/nvim-name.sh
 ./.dotfiles/.local/bin/nvim-name.sh
-ls ~
 rm ~/.config/Fuck-You
 mv .config/Fuck ~/.config
 ~/.dotfiles/.local/bin/nvim-name.sh Fuck Fuck-You
-git add .
 s
 git commit -m "9/11 2024 LOL"
-git push origin main
-gs
 ls\\
 
 cat .bash_history
 rm .bash_history
-cat $(fzf)
 ls .config/zsh/.history
-cd .dotfiles/.config
-cd .config
 nvim-name.sh
 vim ~/.viminfo
 vim ~/.vim/vimrc
-nvim-kickstart
-ls .config
-stow .
-ls ~/.config
 nvim-own\\
 \\
 
 mv Downloads/wallpaperflare.com_wallpaper.jpg Self/pictures/Wallpapers_Desktop/Black-Venom.jpg
-cd .dotfiles
 git log --graph --pretty=format:'%C(bold blue)%h%Creset %C(cyan)[%cr] %C(magenta)%an%Creset - %Creset%s%C(yellow)%d%Creset' --abbrev-commit \
 }
 export COLOR_RESET=$'\x1b[0m'\
@@ -807,7 +755,6 @@ cd ~/Code/ML/Amazon
 unzip 66e31d6ee96cd_student_resource_3.zip
 cd student_resource\ 3
 cd ../../
-p
 ping google.com\\
 \\
 
@@ -893,7 +840,6 @@ tensorflow
 python3
 rm .x11
 rm .python_history
-cat sudo
 python3 ml
 source ml/bin/activate
 pip list --verbose\
@@ -904,7 +850,6 @@ python venv list
 woken
 find ~ -type d -name "bin" -exec test -f "{}/activate" \; -print\
 
-cd Code
 cd ~/.local
 rm -rf anaconda3
 rm -rf ~/.conda ~/.continuum ~/.anaconda_backup\
@@ -928,7 +873,6 @@ pip install --upgrade pip setuptools\
 docker -v
 sudo groupadd docker
 sudo usermod -aG docker $USER
-exit
 newgrp docker
 sudo systemctl enable docker.service\
 \
@@ -989,7 +933,6 @@ nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daem
 systemctl --user restart docker
 sudo systemctl --user restart docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
-stratx
 sudo docker run --gpus all -it tensorflow/tensorflow:2.14.0-gpu bash\
 
 pip install tensorflow-gpu==2.4.0\
@@ -1089,15 +1032,10 @@ conda install nltk
 conda install csv re
 conda install anaconda::csvkit anaconda::regex
 cp Code/ML/Amazon/images/2198wsIefsL.jpg Desktop
-ls Desktop
 conda install pytesseract
 watch -n 1 nvidia-smi
 conda en
-neofetch
-fastfetch
-htop
 cd Code/ML
-nvidia-smi
 nvim .dotfiles/.config/zsh/.zshenv
 nvcc --version\
 
@@ -1108,8 +1046,6 @@ yay -S cudnn\
 source ~/.config/zsh/.zshrc
 ls /usr/local/cuda/include/cudnn*.h\
 ls /usr/local/cuda/lib64/libcudnn*\
-
-nvidia-smi\
 
 sudo ln -s /usr/lib/cudnn*.h /usr/local/cuda/include/\
 sudo ln -s /usr/lib/libcudnn* /usr/local/cuda/lib64/\
@@ -1123,7 +1059,6 @@ yay -S cuda\
 yay -S cudnn\
 
 echo $((22000 / 2))
-cat Downloads/Model.md
 cat Code/ML/Amazon/README.md
 man sed
 man diff
@@ -1131,18 +1066,12 @@ diff Downloads/notebook807906aa6e\(1\).ipynb
 diff Downloads/notebook807906aa6e\(1\).ipynb Downloads/notebook807906aa6e\(2\).ipynb
 man bc
 cd Code/Archive
-pwd
-oh-my-posh upgrade
 vi
-cal
 Cd Code/PPA
-cd Code/PPA
-l
 cp ../lab-3/Lab_3_U22CS104_PPA.odt ./
 mv Lab_3_U22CS104_PPA.odt Lab_5_U22CS104_PPA.odt
 cd ../../CI-CD
 mkdir lab-5
-cd lab-5
 cp ../lab-4/Lab_4_U22CS104_CICD.odt ./
 conda create --name test
 conda deactivate\
@@ -1167,13 +1096,9 @@ conda env list
 pip install flask\\
 \\
 
-jupyter notebook
-conda activate ML
 pip install flask
 curl http://localhost:5000/greet\
 
-sudo docker images
-python3 app.py
 curl http://localhost:5000/items\
 
 sudo docker run hello-world
@@ -1183,20 +1108,12 @@ cat ~/.config/zsh/.history | fzf
 cp ../lab-3/requirements.txt ./
 sudo docker build -t flask-microservice\
 
-sudo docker build -t flask-microservice .\
- 
-cd Code/CI-CD/lab-5
 nvim ../lab-3/app.py
 sudo docker run -p 5000:5000 inventory-app\\
 
-tmux
 sudo docker run -p 5000:5000 flask-microservice\
 
-sudo docker ps
-ls ../lab-5
 cd Code/PPA/lab-4
-nvim 
-cat 1.cpp
 mpicc 1.cpp -o 1
 mpi++ 1.cpp -o 1
 mpicc -o 1 1.cpp
@@ -1204,38 +1121,15 @@ mpicc 1.cpp
 mpic++ 1.cpp -o 1
 mpirun -np 2 ./2
 cat 2.c
-yazi
-cd Code/PPA/lab-5
-mpicc 1.c -o 1
-mpirun -np 4 ./1
-cat 1.c
-mpicc 2.c -o 2
-mpirun -np 4 ./2
-nvim ~/.config/zsh/.zshrc
 ip config
-ip addr
-cd Downloads
-..
-mkdir lab-6
-cd lab-6
-gcc 1.c -o 1
 cd Code/SS/lab-5
 cd ../lab-4
-cd ../lab-5
-cd ../lab-6
-nvim-own
 cd Code/SS/lab-6
 ls 
-;q
-vim
 curl https://172.16.1.1:8090
-startx
-flatpak install flathub io.github.zen_browser.zen
-flatpak list
 yay -S zen-browser
 sudo pacman -Rnsc yay
 ya
-ls /tmp
 cd /tmp\
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -1244,23 +1138,17 @@ yay
 cd ..
 rm -rf yay\
 
-cd
 yay -S zen-browser-bin 1.0.1.a.2-1
 pacman -Rcns gnome
 sudo pacman -Rcns gnome
 sudo pacman -Rcns gnome gnome-shell gnome-session\
 
 sudo pacman -Rns $(pacman -Qdtq)
-sudo pacman -Syu
 sudo pacman -Sy nautilus
 sudo pacman -R gnome-terminal gnome-tweaks
 sudo pacman -R gnome-tweaks
-ping google.com
 mkdir 973-Div-2
 cxd 973-Div-2
-nvim
-cd Code/Code-Forces
-cd 9
 cd 973-Div-2
 3
 1 2
@@ -1269,33 +1157,810 @@ cd 973-Div-2
 4 3
 9
 3 3
-c
-g++ 1.cpp -o 1
-./1
-g++ 2.cpp -o 2
-./2
-ls
 g++ 4.cpp -o 4
 ./4
+ping pornhub.com
+git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
+ls .config/nvim-test
+it commit
+git commit
+git push origin main
+p
+dmesg
+sudo dmesg
+aplay -lL
+yay -S aplay
+sudo pacman -Sy alsa-utils
+sudo pacman -Sy pipewire
+~/tmp $ pacman -Q | grep pipew
+pacman -Q | grep pipew
+alsamixer
+cd ~/.config/pulse\
+ls -l\
+
+pulseaudio -k\
+pulseaudio --start\
+
+sudo pacman -S pulseaudio pulseaudio-alsa\
+
+rm -r ~/.config/pulse\
+
+journalctl --user -xe | grep pulse\
+
+pulseaudio -vvv\
+
+killall pulseaudio\
+
+ps aux | grep pulseaudio\
+
+find ~ -type l -lname ~/.config/pulse\
+
+sudo find ~ -type l -lname ~/.config/pulse\
+
+mkdir -p ~/.config/pulse\
+touch ~/.config/pulse/cookie\
+
+pulseaudio --start\
+
+pacmd list-sinks\
+
+mkdir 974-Div-3
+2
+cd 974-Div-3
+g++ 3_1.cpp -o 3
+g++ 3.cpp -o 3
+./3
+sudo pacman -Sy V
+sudo pacman -Sy lxappearance
+find /usr/share/icons -type d -name "cursors"
+nvim .local/share/icons
+ln -s /usr/share/icons/macOS/cursors ~/.local/share/icons/default/cursors
+cat .local/share/nvim-kickstart/lazy/tokyonight.nvim/extras/xresources/tokyonight_day.Xresources
+cd /usr
+nautilus
+sudo nautilus
+nautilus admin:/
+yay -S ninvaders
+yay -S moon-buggy 
+statx
+rm .config/tmux
+sudo pacman list
+cmatrix --bule
+cmatrix --blue
+cmatrix -c
+cmatrix -C blue
+cmatrix -C red
+cmatrix -C black
+cmatrix -C grey
+cmatrix -C white
+cmatrix -C yellow
+cmatrix -C cyan
+starx
+;
+clear
+curl --help
+curl https://jiorockers.kim/files/Telugu%20Movies/Telugu%202024%20Movies/The%20Greatest%20of%20All%20Time%20(2024)%20Telugu%20HDRip%20(HQ%20Line%20Audio)/GOAT%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio)/GOAT%20(2024)%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio).mp4 -o Movie.mp4
+curl "https://jiorockers.kim/files/Telugu%20Movies/Telugu%202024%20Movies/The%20Greatest%20of%20All%20Time%20(2024)%20Telugu%20HDRip%20(HQ%20Line%20Audio)/GOAT%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio)/GOAT%20(2024)%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio).mp4" -o Movie.mp4
+sudo kill -9 <PID>\
+
+sudo kill -9 <PID>
+ps aux | grep pacman\
+
+sudo kill -9 14945
+sudo pacman -S android-tools\
+
+sudo pacman -Sy android-tools\
+
+sudo pacman -Rdd python-protobuf\
+
+sudo pacman -S protobuf\
+
+yay -S android-tools\
+
+adb kill-server\
+adb start-server\
+
+sudo pacman -S python-protobuf\
+
+adb devices\
+
+sudo pacman -S android-udev\
+
+sudo udevadm control --reload-rules\
+sudo udevadm trigger\
+
+sudo adb devices\
+
+adb push ~/Movie.mp4 /storage/emulated/0/Download/Movie.mp4
+rm Movie.mp4
+zprof
+time 
+nvm_version
+compinit -C\
+
+cd /
+chsh yagna
+echo $SHELL
+sudo ./bin/zsh
+cat $(fzf)
+sudo /bin/zsh
+pp\\
+
+pp\
+
+ping google.com
+startx\\
+
+cd Code/CI-CD/
+/bin/zsh-5.9
+/bin/zsh
+cat .zshenv
+echo $PATH
+curl -s https://ohmyposh.dev/install.sh | bash -s
+sudo 
+ls -la
+cd ~/Code/Portal
+sudo pacman -Syu unzip
+sudo pacman -S unzip
+cd-
+yay -S oh-my-posh
+exec zsh
+oh-my-posh print primary --config sample.json --shell uni
+start
+cc
+dc
+time
+zsh
+shjdjh
+skbd
+sdbgdssd
+sdg
+,shbsdh
+cd Code
+cd ML
+mv Amazon ../Archive
+ls Desktop
+ls Documents
+rm Documents
+rm -rf Documents
+rm -rf Music 
+ls Pictures
+ls Pictures/Camera
+rm -rf Pictures
+ls Videos
+rm -rf Videos
+ls Templates
+ls sudo
+cat sudo
+ls Public
+rm -rf Templates Public
+XRDb -merge ~/.Xresourices\
+
+cd Code/Portal/client\\
+
+go mod
+go mod init
+go get github.com/gorilla/mux
+curl -v -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "testuser@svnit.ac.in"}'\
+
+curl -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "testuser@svnit.ac.in"}'\
+
+go get -u github.com/gorilla/handlers\
+
+go get github.com/jub0bs/cors
+curl -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "testuser@coed.svnit.ac.in"}'\
+
+curl -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"Email": "testuser@coed.svnit.ac.in"}'\
+
+air\\
+
+go get github.com/rs/cors
+go mod tidy
+go get -u github.com/gorilla/handlers
+man curl
+man curl -X
+curl "http://[fe80::3%25eth0]/"
+curl google.com
+curl http://www.google.com/
+curl -i http://www.google.com
+curl -I http://localhost:8080/api/check-email
+curl -I http://localhost:8080/api/check-email/
+curl -I http://localhost:8080/login
+curl -I http://localhost:8080/login/
+curl -I https://localhost:8080/login/
+curl -I https://localhost:8080/login
+curl -I https://localhost:8080/api/check-email
+curl -I https://localhost:8080
+curl -I http://localhost:8080
+curl -I http://localhost:8080/
+curl -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@svnit.ac.in"}'\
+
+curl -X POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}'\
+
+curl POST http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}'\
+
+curl POST http://localhost:8080/api/check-email -d '{"email": "your_email@coed.svnit.ac.in"}' -H "Content-Type: application/json"\
+
+curl http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}'\
+
+curl -i http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}' | jq\
+
+curl http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}' | jq\
+
+go get gopkg.in/gomail.v2\
+
+curl -i http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.ac.in"}'\
+
+curl -i http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "your_email@coed.svnit.ac.in"}'\
+
+curl -i http://localhost:8080/api/check-email -H "Content-Type: application/json" -d '{"email": "u22cs104@coed.svnit.ac.in"}'\
+
+sudo pacman -S gparted  # For Arch-based systems\
+
+sudo pacman -S gparted\
+
+sudo gparted\
+
+mkdir 976-Div-2
+cat 1.cpp
+cd Code/Code-Forces
+cd 9
+cd 976-Div-2
+1
+g++ 2.cpp -o 2
+./2
+tldr
+cat man
+man 
+man man
+ls /bin
+ls /usr/bin
+ls /usr/bin | fzf
+cd Code/CI-CD
+ls lab-5
+ls pulse
+cat pulse/cookie
+rm -rf ~/.config/pulse
+cat app.py
+curl https://127.0.0.1:5000/items
+curl http://127.0.0.1:5000/items
+sudo docker build -t flask-microservice .\
+ 
+cd Code/CI-CD/lab-5
+cd Code/CI-CD/lab-5\\
+
+python3 app_2.py
+cp ../lab-5 ../lab-6
+cp -r ../lab-5 ../lab-6
+mv app.py app1
+mv app_2.py app2/app.py
+cp Dockerfile app1/
+cp Dockerfile app2/
+cp requirements.txt app1/
+cp requirements.txt app2/
+ls app1
+ls app2
+cp app1/Dockerfile ../lab-5
+cd Code/CI-CD/lab-6/app2
+docker build -t lab-6-app-1 .
+sudo docker build -t lab-6-app-1 .
+cd app1
+cat Dockerfile
+cd lab-4
+docker compose up
+cd Code/CI-CD/lab-4
+cd backend
+node server.js
+cwd
+sudo docker ps
+l
+python3 app.py
+mkdir ~/Code/ML/lab-5
+mv Untitled.ipynb ~/Code/ML/lab-5
+mv test.csv ~/Code/ML/lab-5
+mv train.csv ~/Code/ML/lab-5
+conda install seabon
+conda install seaborn
+curl https://www.kaggle.com/code/brysonjbanks/an-exploration-of-l1-and-l2-regularization
+stratx
+pulseaudio -v
+rm -rf ~/.config/pulse\
+
+jhb
+whoami
+oh-my-posh get shell
+oh-my-posh upgrade
+sudo oh-my-posh upgrade
+dhbdshb
+cd ~/.dotfiles
+sudo pacman -S flatpak
+flatpak install flathub io.github.zen_browser.zen
+yay -S zen-browser-bin 1.0.1.a.7
+flatpak uninstall io.github.zen_browser.zen org.freedesktop.Platform org.freedesktop.Platform.ffmpeg-full org.freedesktop.Platform.GL.default org.freedesktop.Platform.GL.nvidia-560-35-03 org.freedesktop.Platform.openh264
+flatpak uninstall io.github.zen_browser.zen
+sudo pacman -R flatpak
+zen-browser -v
+cd ~/.config/nvim-own
+cd ~/.config/nvim-test
+mv ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
+cp ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
+cp -r ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
+adb push ~/Downloads/com.google.android.apps.pixel.agent_0.24.302.22.release.661465091-685_minAPI34\(arm64-v8a\)\(nodpi\)_apkmirror.com.apk /storage/emulated/0/Documents/Apk/
+man adb pull
+adb pull /storage/emulated/0/Download/miles-morales-in-jacket-spiderman-desktop-wallpaper.jpg ~/Self/pictures/Wallpapers_Desktop
+tmux new -n Portal
+xev --help
+man xev
+showkey
+man showkey 
+showkey -s
+showkey --scancodes
+showkey -k
+showkey -v
+showkey -a
+xev 
+tmux attach
+sudo pacman -S sqlite\
+
+sqlite3 --version\
+
+go get github.com/mattn/go-sqlite3\
+
+go mod tidy\
+
+sudo pacman -S sqlite3
+yay -S sqlite-utils
+la tmp
+ls tmp
+git add .
+git commit -m "02 Oct,2024: Added DB Integration and REST(JSON) Api calls with CROS"
+git log
+curl -i http://localhost:8080/login -H "Content-Type: application/json" -d '{"email": "u22cs104@coed.svnit.ac.in"}'\
+
+curl -i http://localhost:8080/login -H "Content-Type: application/json" -d '{"email": "u22cs104svnit.ac.in"}'\
+
+go get golang.org/x/crypto/bcrypt
+cd client
+npx shadcn-ui add form input select button textarea\
+
+npm install @tailwindcss/forms\
+
+npx shadcn-ui init\
+
+npx shadcn@latest add form\
+
+npx shadcn@latest add form input select button textarea\
+
+.tables\
+
+npm install zod
+npm install react-hook-form zod @hookform/resolvers\
+
+npm install react-hook-form\
+
+	wd
+pwd
+npx shadcn@latest add separator\
+
+npx shadcn@latest add textarea\
+
+npx shadcn-ui@latest add input\
+npx shadcn-ui@latest add button\
+npx shadcn-ui@latest add command\
+npx shadcn-ui@latest add toast\
+npx shadcn-ui@latest add popover\
+npx shadcn-ui@latest add scroll-area
+npx shadcn@latest add input\
+npx shadcn@latest add button\
+npx shadcn@latest add command\
+npx shadcn@latest add toast\
+npx shadcn@latest add popover\
+npx shadcn@latest add scroll-area
+npm install react-phone-number-input
+npm install --save-dev typescript @types/react @types/react-dom\
+
+npx tsc --init\
+
+[200~curl -X POST -F "email=test@example.com" \\
+             -F "name=Test User" \\
+             -F "room=101" \\
+             -F "mobile=1234567890" \\
+             -F "description=Issue with water supply." \\
+             -F "complainType=Facilities" \\
+             -F "hostel=Hostel A" \\
+             -F "file=@path/to/your/file.txt" \\
+             http://localhost:8080/submitComplaint
+ls Downloads
+cat Downloads/Model.md
+curl -X POST -F "email=test@example.com" \\
+             -F "name=Test User" \\
+             -F "room=101" \\
+             -F "mobile=1234567890" \\
+             -F "description=Issue with water supply." \\
+             -F "complainType=Facilities" \\
+             -F "hostel=Hostel A" \\
+             -F "file=~/Downloads/Model.md" \\
+             http://localhost:8080/submitComplaint\
+
+curl -X POST -F "email=test@example.com" \\
+             -F "name=Test User" \\
+             -F "room=101" \\
+             -F "mobile=1234567890" \\
+             -F "description=Issue with water supply." \\
+             -F "complainType=Facilities" \\
+             -F "hostel=Hostel A" \\
+             -F "file=~/Downloads/Model.md" \\
+             http://localhost:8080/form\
+
+curl -X POST -F "email=test@example.com" \\
+             -F "name=Test User" \\
+             -F "room=101" \\
+             -F "mobile=1234567890" \\
+             -F "description=Issue with water supply." \\
+             -F "complainType=Facilities" \\
+             -F "hostel=Hostel A" \\
+             http://localhost:8080/form\
+
+mkdir uploads
+ls uploads
+cd Code/SS
+ls ../lab-5
+cd ../
+mkdir lab-7
+cd ../lab-7
+c/1
+.1/
+fastf
+cmatrix -C magenta
+gparted
+sudo gparted
+fdisk
+fdisk --help
+/dev/snd
+ls /dev/snd
+sudo pacman -Sy libadwaita
+nvim ~/.config/zsh/.zshrc
+sudo find / -name nautilus.desktop\
+
+sudo nano /usr/share/applications/nautilus.desktop\
+
+sudo nvim /usr/share/applications/nautilus-autorun-software.desktop
+chmod +x $(fzf)
+GTK_THEME=Adwaita:dark nautilus
+nano ~/.local/share/applications/nautilus-dark.desktop\
+\
+
+nvim ~/.config/rofi
+update-desktop-database ~/.local/share/applications\
+
+nvidia-smi\
+
+GTK_THEME="Adwaita:dark" nautilus
+cal
+chmod +x ~/Downloads/i3lock-fancy.sh
+./Downloads/i3lock-fancy.sh
+chmod +x Code/Archive/test.sh
+sudo pacman -S scrot\
+
+sudo pacman -S monitoring-plugins
+echo "Monitor: $monitor_x, $monitor_y, Width: $monitor_width, Height: $monitor_height"\
+echo "Resized Image: Width: $resized_width, Height: $resized_height"\
+
+echo "$monitor_info"\
+echo "$monitor_dimensions"\
+
+[ -f "$custom_image" ] && echo "Custom image found || echo "Custom image not found\!"\
+\
+\
+
+scrot /tmp/screen.png
+yazi /tmp
+magick /tmp/screen.png -blur 0x50 /tmp/screen_blur.png\
+
+monitor_info=$(xrandr --query | grep ' connected')\
+monitor_count=$(echo "$monitor_info" | wc -l)\
+
+xrandr --query | grep ' connected' | wc -l
+monitor_dimensions=$(echo "$monitor_line" | awk '{print $3}')
+monitor_line
+eDP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 344mm x 194mm\
+HDMI-1 connected 1280x1024+1920+0 (normal left inverted right x axis y axis) 376mm x 301mm\
+
+xrandr --query | grep ' connected'
+awk '{print $3}'
+xrandr --query | grep ' connected' | awk '{print $3}'
+rm /tmp/screen_000.png
+xrandr --query | grep ' connected' | awk '{for (i=1; i<=NF; i++) if ($i ~ /[0-9]+x[0-9]+\+/) print $i}'
+xrandr --query | grep ' connected' 
+\
+monitor_info=$(xrandr --query | grep ' connected' | awk '{for (i=1; i<=NF; i++) if ($i ~ /[0-9]+x[0-9]+\+/) print $i}')\
+monitor_width=$(echo $monitor_info | grep -oP '^[0-9]+(?=x)')\
+monitor_height=$(echo $monitor_info | grep -oP '(?<=x)[0-9]+(?=\+)')\
+monitor_x=$(echo $monitor_info | grep -oP '\+\K[0-9]+(?=\+)')\
+monitor_y=$(echo $monitor_info | grep -oP '\+\K[0-9]+$')\
+\
+echo "Monitor: X=$monitor_x, Y=$monitor_y, Width=$monitor_width, Height=$monitor_height"\
+
+./Code/Archive/test.sh
+sudo lsof -i :5000\
+
+sudo docker run -p 5000:5000 flask-microservice
+sudo docker images
+cd app2
+sudo docker build -t lab-6-app-2 .
+sudo docker run -p 5001:5001 lab-6-app-2
+cd lab-6
+sudo docker run -p 5000:5000 lab-6-app-1
+unzip ~/Downloads/lab_6.zip
+mv lab_6 ../lab_6
+cd Code/CI-CD/lab-6
+cd Code/CI-CD/lab_6
+cd ../lab_6
+sudo docker compose up
+cd Downloads
+unzip Blue\ and\ Grey\ Modern\ Simple\ Business\ Proposal\ Cover\ Page.zip
+man xinit
+clear && echo "" && ls | grep
+clear && echo "" && ls | grep Down
+ip addr
+cd Code/ML/
+mkdir lab-6
+mv Downloads/Untitled.ipynb Code/ML/lab-6/KNN.ipynb
+git clone https://github.com/sarrost/dotfiles.git /tmp/
+ls /tmp
+git clone https://github.com/sarrost/dotfiles.git /tmp/Dots
+mv /tmp/Dots/dotfiles/neovim ~/.dotfiles/.config/nvim-test
+cd .dotfiles
+mv ~/.dotfiles/.config/nvim-test ~/.config/nvim-test-1
+mv ~/.config/nvim-test ~/.config/nvim-test-2
+mv ~/.config/nvim-test-1 ~/.config/nvim-test
+cd 
+mv nvim-test/.config/nvim nvim-test
+ls nvim-test
+rm nvim-test/.config
+ls nvim-test/nvim
+mv nvim-test/nvim/ nvim-test/
+mv nvim-test/nvim/ nvim-test
+uname
+echo $COLOR
+export COLOR="#FF5733"  # A bright orange\
+polybar toph &\
+
+export COLOR="#ff5733"  # A bright orange\
+polybar toph &\
+
+echo $COLOR\
+
+polybar-msg cmd restart\
+
+export COLOR="#FF5733"\
+echo "Color is set to $COLOR"\
+polybar toph &\
+
+sudo pacman -S bluez-libs\
+
+yay -S polybar-git\
+
+chmod +x ~/.config/polybar/bluetooth_status.sh\
+
+starrx
+cd Code/PPA
+cd lab-5
+cd Code/PPA/lab-5
+cat 1.c
+cd ../lab-6
+cd ../lab-5
+mpicc 2.c -o 2
+mpirun -np 4 ./2
+mpicc 3.c -o 3
+mpirun -np 4 ./3
+mpicc 1.c -o 1
+mpirun -np 4 ./1
+sudo pacman -Sy speedtest-cli
+speedtest
+c=1
+while true; do echo "Hello $c"; let c=c+1; sleep 1; done
+tmux a
+top
+cd .config/nvim-test
+rm -rf .config
+ls nvim
+mv nvim ../nvimm
+rm -rf nvim-test
+mv nvimm nvim-test
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim\
+
+rm .local/share/nvim/site/pack/packer/start/packer.nvim
+rm ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+rm -rf ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
+~/.local/share/nvim/site/pack/packer/start/packer.nvim\
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
+~/.local/share/nvim-test/site/pack/packer/start/packer.nvim\
+
+\:q
+qq
+rm /var/lib/pacman/db.lck\
+
+sudo rm /var/lib/pacman/db.lck\
+
+bash
+tmux ls
+flatpak
+sudo pacman -Sy flatpak
+sudo pacman -S lutrus
+sudo pacman -S lutris
+flatpak list
+sudo lutris
+flatpak install flathub net.lutris.Lutris
+sudo pacman -R lutris
+nvidia-smi
+lutris
+flatpak uninstall Lutris
+du Games
+du -sh Games
+rm -rf Games
+exit
+nvim 
+ll
+cd Code/PPA/lab-6
+git clone https://github.com/NvChad/starter ~/.config/nvim-test
+cd Code/Portal
+air
+cd Code/Portal/client
+npm run dev
+cd Code/Portal/
+sqlite3 users.db\
+
+cd uploads
+yazi
+cd ../client
+cd src
+python
+sudo pacman -S interception-caps2esc\
+
+touch /etc/udevmon.yaml
+sudo touch /etc/udevmon.yaml
+echo "- JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"\
+  DEVICE:\
+    EVENTS:\
+      EV_KEY: [KEY_CAPSLOCK, KEY_ESC]\
+" >> /etc/udevmon.yaml
+sudo echo "- JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"\
+  DEVICE:\
+    EVENTS:\
+      EV_KEY: [KEY_CAPSLOCK, KEY_ESC]\
+" >> /etc/udevmon.yaml
+sudo nvim /etc/udevmon.yaml
+sudo systemctl enable --now udevmon.service
+sudo systemctl enable --now udevmon.service\
+
+sudo rm /etc/udevmon.yam
+sudo rm -rf /etc/udevmon.yam
+sudo systemctl disable --now udevmon.service\
+
+systemctl status udevmon
+sudo nvim /etc/systemd/system/udevmon.service
+rm /etc/systemd/system/udevmon.service
+sudo rm /etc/systemd/system/udevmon.service
+nvim $(fzf)
+adb devices
+reboot
+pp
+mv ~/Downloads/71.cpp ~/Code/SS/lab-7/1.cpp
+gcc 1.c -o 1
+cat ../lab-5/prod.txt
+sudo ./[A
+g++ 1.cpp -o 1
+./1
+cd -
+fzf
+zf cwd=~
+fzf cwd=~
+fzf --help
+htop
+startx
+cd Code/SS/lab-7
+nvim-kickstart
+nvim-lazy
+tree
+nvim-test
+nvim-test-2
+nvim-exp
+rm -rf .config/nvim-exp
+rm -rf .config/nvim-kickstart
+rm -rf .config/nvim-test
+rm -rf .config/nvim-test-2
+ls .config
+ls ~/.config
+gs
+rm -rf nvim-lazy nvim-own
+nvimm
+ls .config | grep nvim
+rm -rf .config/nvim-lazy
+rm -rf .git
+rm -rf .gitignore
+rm -rf README.md
+rm -rf .x11
+cd .dotfiles/.config
+mv .stow-local-ignore .stow-global-ignore
+cd .config
+cp nvim nvim-own
+cp -r nvim nvim-own
+cd ~/.dotfiles/.config/
+man ln\\
+
+ln -s nvim-own ~/.config/nvim-own
+cd
+rm -rf .config/nvim-own
+ln -s ~/.dotfile/.config/nvim-own ~/.config/nvim-own
+ls ~/.config | grep nvim
+cd ~/.dotfiles/.config/nvim-own
+rm -rf ~/.config/nvim-own
+..
+mv .config/pulse ~/.config/pulse
+stow .
+ls ~
+rm -rf ~/.x11
+cat .config/nvim-own/lua/plugins/init.lua
+cp ~/.config/nvim/lua/plugins/treesitter.lua ~/.config/nvim-own/lua/plugins
+cp ~/.config/nvim/.stylua.toml ~/.config/nvim-own/
+mv ~/Downloads/autex.cpp ~/Code/Archive
+cat lua/colors/ayudark.lua
+cat init.lua
+mv lua/colors /
+mv lua/colors
+mv lua/colors colors
+ls colors
+cat .config/nvim-own/colors/ayudark.lua
+git clone https://github.com/NvChad/starter ~/.config/nvim-nv && nvim-nv
+nvim-nv
+sudo pacman -Syu
+tmux
+neofetch
+x
+time zsh --interactive -c exit
+vim
+rm -rf colors
+cd lua
+cd core
+ls
+cp ~/.config/nvim/lua/plugins/init.lua ~/.config/nvim-own/lua/plugins
+cmatrix
+conda activate ML
+jupyter notebook
+fastfetch
+nvim-own\\
+
+nvim
+cd .config/nvim
+cd ../nvim-own
+;q
+nvim-own
+cd .config/nvim-own
+nvim-own \\
+\\
+
+nvim-own 
+c
 q
-: 1726851950:0;ping google.com
-: 1726852014:0;htop
-: 1726858761:0;ping google.com
-: 1726858796:0;nvim
-: 1726858852:0;ping pornhub.com
-: 1726858860:0;ping google.com
-: 1726858875:0;pp
-: 1726862306:0;nvim
-: 1726866559:0;vim
-: 1726866594:0;nvim-own
-: 1726866631:0;nvim
-: 1726867477:0;nvim-own
-: 1726867665:0;git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
-: 1726867679:0;ls .config/nvim-test
-: 1726867685:0;nvim
-: 1726867724:0;nvim-test
-: 1726867807:0;nvim
-: 1726867853:0;cd .dotfiles
-: 1726867854:0;ls
-: 1726867855:0;gs
-: 1726867897:0;git add .
+: 1728592908:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/default.lua -o ~/.config/nvim-own/lua/config/stl.lua
+: 1728592956:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/utils.lua -o ~/.config/nvim-own/lua/config/utils.lua
+: 1728592964:0;cd .config/nvim-own
+: 1728592968:0;cd lua
+: 1728592970:0;cd config
+: 1728592974:0;nvim-own 
+: 1728593075:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config
+: 1728593098:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config/nvim-own/lua/nvconfig.lua
+: 1728593100:0;c
+: 1728593107:0;nvim-own 
+: 1728593159:0;cd .config/nvim-nv
+: 1728593163:0;nvim-own
+: 1728593236:0;nvim-own 
+: 1728593508:0;c
+: 1728593509:0;nvim-own 
+: 1728593651:0;cd ~/.dotfiles
+: 1728593654:0;gs
+: 1728593661:0;git add .
