@@ -1,24 +1,5 @@
 dofile(vim.g.base46_cache .. "lsp")
-require "nvchad.lsp"
-
 local M = {}
-local utils = require "core.utils"
-
--- export on_attach & capabilities for custom lspconfigs
-M.on_attach = function(client, bufnr)
-  utils.load_mappings("lspconfig", { buffer = bufnr })
-
-  if client.server_capabilities.signatureHelpProvider then
-    require("nvchad.signature").setup(client)
-  end
-end
-
--- disable semantic tokens
-M.on_init = function(client, _)
-  if not utils.load_config().ui.lsp_semantic_tokens and client.supports_method "textDocument/semanticTokens" then
-    client.server_capabilities.semanticTokensProvider = nil
-  end
-end
 
 M.capabilities = vim.lsp.protocol.make_client_capabilities()
 
@@ -73,9 +54,6 @@ require("lspconfig").pyright.setup {
 
 require("lspconfig").clangd.setup {
   on_init = M.on_init,
-  on_attach = function(client, bufnr)
-    client.server_capabilities.signatureHelpProvider = false, utils.load_mappings("lspconfig", { buffer = bufnr })
-  end,
   capabilities = M.capabilities,
 }
 
@@ -87,7 +65,7 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
-require("lspconfig").tsserver.setup {
+require("lspconfig").ts_ls.setup {
   on_init = M.on_init,
   on_attach = M.on_attach,
   capabilities = M.capabilities,

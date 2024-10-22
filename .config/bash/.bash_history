@@ -20,3 +20,14 @@ exit
 exit
 q
 exit
+ls
+cd
+ls
+rm '
+
+rm \'
+ls
+ls -la
+c
+q
+exit

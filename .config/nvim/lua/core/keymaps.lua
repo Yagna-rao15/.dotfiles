@@ -10,88 +10,47 @@ map("n", "<leader>u", function()
   vim.cmd.UndotreeFocus()
 end)
 
+-- fzf
+map("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "FzfLua find files" })
+map("n", "<leader>fa", "<cmd>FzfLua files cwd=~<cr>", { desc = "FzfLua find files" })
+map("n", "<leader>fw", "<cmd>FzfLua live_grep<CR>", { desc = "FzfLua live grep" })
+map("n", "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "FzfLua find buffers" })
+map("n", "<leader>fh", "<cmd>FzfLua help_tags<CR>", { desc = "FzfLua help page" })
+map("n", "<leader>fm", "<cmd>FzfLua marks<CR>", { desc = "FzfLua find marks" })
+map("n", "<leader>fo", "<cmd>FzfLua oldfiles<CR>", { desc = "FzfLua find oldfiles" })
+map("n", "<leader>gc", "<cmd>FzfLua git_commits<CR>", { desc = "FzfLua git commits" })
+map("n", "<leader>gs", "<cmd>FzfLua git_status<CR>", { desc = "FzfLua git status" })
+--map("n", "<leader>ft", "<cmd>FzfLua terms<CR>", { desc = "FzfLua pick hidden term" })
+
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 
 map("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
 map("n", "<C-l>", "<C-w>l", { desc = "switch window right" })
 map("n", "<C-j>", "<C-w>j", { desc = "switch window down" })
 map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
-
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "file save" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "file copy whole" })
 
--- global lsp mappings
-map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "lsp diagnostic loclist" })
+map("n", "1", "010jzz", { desc = "center the cursor while scrolling" })
+map("n", "2", "010kzz", { desc = "center the cursor while scrolling" })
+map("n", "3", "020jzz", { desc = "center the cursor while scrolling" })
+map("n", "4", "020kzz", { desc = "center the cursor while scrolling" })
 
--- tabufline
+-- tabs
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
-
-map("n", "<tab>", function()
-  require("nvchad.tabufline").tabuflineNext()
-end, { desc = "buffer goto next" })
-
-map("n", "<S-tab>", function()
-  require("nvchad.tabufline").tabuflinePrev()
-end, { desc = "buffer goto prev" })
-
-map("n", "<leader>x", function()
-  require("nvchad.tabufline").close_buffer()
-end, { desc = "buffer close" })
+map("n", "<tab>", "<cmd>bnext<CR>", { desc = "buffer goto next" })
+map("n", "<S-tab>", "<cmd>bNext<CR>", { desc = "buffer goto prev" })
+map("n", "<leader>x", "<cmd>bdelete!<CR>", { desc = "buffer close" })
 
 -- Comment
 map("n", "<leader>/", "gcc", { desc = "comment toggle", remap = true })
 map("v", "<leader>/", "gc", { desc = "comment toggle", remap = true })
 
--- telescope
-map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
-map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "telescope find buffers" })
-map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "telescope help page" })
-map("n", "<leader>ma", "<cmd>Telescope marks<CR>", { desc = "telescope find marks" })
-map("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", { desc = "telescope find oldfiles" })
-map("n", "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "telescope find in current buffer" })
-map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
-map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "telescope git status" })
-map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "telescope pick hidden term" })
-map("n", "<leader>th", "<cmd>Telescope themes<CR>", { desc = "telescope nvchad themes" })
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
-map(
-  "n",
-  "<leader>fa",
-  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
-  { desc = "telescope find all files" }
-)
-
 -- terminal
-map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
-
--- new terminals
-map("n", "<leader>h", function()
-  require("nvterm.terminal").toggle "horizontal"
-end, { desc = "terminal new horizontal term" })
-
-map("n", "<leader>v", function()
-  require("nvterm.terminal").toggle "vertical"
-end, { desc = "terminal new vertical window" })
-
--- toggleable
-map({ "n", "t" }, "<A-v>", function()
-  require("nvterm.terminal").toggle "vertical"
-end, { desc = "terminal toggleable vertical term" })
-
-map({ "n", "t" }, "<A-h>", function()
-  require("nvterm.terminal").toggle "horizontal"
-end, { desc = "terminal new horizontal term" })
-
-map({ "n", "t" }, "<A-i>", function()
-  require("nvterm.terminal").toggle "floating"
-end, { desc = "terminal toggle floating term" })
-
--- whichkey
-map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
-
-map("n", "<leader>wk", function()
-  vim.cmd("WhichKey " .. vim.fn.input "WhichKey: ")
-end, { desc = "whichkey query lookup" })
+map("t", "<leader>x", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+map("n", "<leader>t", "<cmd>terminal<CR>", { desc = "terminal new horizontal term" })
+map("n", "<leader>ht", "<cmd>terminal<CR>", { desc = "terminal new horizontal term" })
+map("n", "<leader>vt", "<cmd>terminal<CR>", { desc = "terminal new vertical window" })
 
 -- blankline
 map("n", "<leader>cc", function()

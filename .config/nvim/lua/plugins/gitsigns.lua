@@ -19,9 +19,6 @@ return {
         changedelete = { text = "~" },
         untracked = { text = "│" },
       },
-      on_attach = function(bufnr)
-        require("core.utils").load_mappings("gitsigns", { buffer = bufnr })
-      end,
     }
   end,
   config = function(_, opts)

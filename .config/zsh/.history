@@ -140,7 +140,6 @@ cp .dotfiles .dotfiles
 cp -r  .dotfiles .dotfiles
 cp -r  .dotfiles .dots
 ls .dots
-git status
 git ls-files -z -d | xargs -0 git checkout --
 rm -rf .dotfiles
 cp ~/.dotfiles/.config/nvim/lua/plugins/lsp.lua ~/.dotfiles/.config/nvim-self/lua/plugins/lsp.lua
@@ -331,12 +330,10 @@ git commit -m "Tweaked Tmux, an Minor nvim fixes"
 gcc test.c
 ls ~/Downloads
 ls .zen
-bluetoothctl
 cd Code/ML/\\
 ls
 cp Self/pictures/Wallpapers_Desktop/bg.png
 cp Self/pictures/Wallpapers_Desktop/bg.png Code/ML/lab_1/bg.png
-lsblk
 ls /dev/nvme0n1p3
 cd /dev/nvme0n1p3
 man unzip
@@ -402,7 +399,6 @@ cd ../c
 ./main\\
 
 gcc -o main main.c csv.c
-cd ~/Downloads
 fh
 unzip archive\(4\).zip
 mv housing.csv ~/Code/ML/c/Boston-Housing.csv
@@ -433,8 +429,6 @@ man nvim
 cd Documents
 nvi
 cd .config/nvim/
-nvim\\
-
 sudo pacman -S cmatrix
 ~q
 cd Code/SS/lab_3
@@ -486,14 +480,12 @@ cat \'
 rm \'
 cd Code/ML/Amazon
 unzip archive.zip
-lspci
 lspci | grep Nvdia
 lspci | grep VGA
 sudo pacman -Syu nvidia cuda
 sudo pacman -Sy nvidia cuda
 node -v
 man cal
-cal -3
 sudo pacman -Sy cudnn
 cd webi
 cd Downloads/archive
@@ -625,7 +617,6 @@ tar xzvf docker-27.2.0.tgz
 sudo cp docker/* /usr/bin/
 sudo dockerd &
 sudo docker build -t hello-microservices .
-sudo docker images 
 sudo docker login 
 docker tag hello-microservices Yagnarao15/hello-microservices:latest
 sudo docker tag hello-microservices Yagnarao15/hello-microservices:latest
@@ -656,7 +647,6 @@ ipython nbconvert --to latex --post PDF lab-1/NumPy.ipynb
 man ipython
 pip install nbconvert
 python3 venv ml
-cal 2**16
 cat Anaconda3-2024.06-1-Linux-x86_64.sh
 6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6cc
 sudo pacman -Sy python-tensorflow
@@ -924,7 +914,6 @@ docker run --gpus all --rm nvidia/cuda nvidia-smi
 sudo docker run --gpus all --rm nvidia/cuda nvidia-smi
 docker run --gpus all -it tensorflow/tensorflow:latest-gpu-jupyter bash\
 
-V
 sudo docker run --gpus all --rm nvidia/cuda:11.7-base nvidia-smi\
 
 sudo nvidia-ctk runtime configure --runtime=docker
@@ -1000,7 +989,6 @@ nvidia-driver-supported-branches
 conda install tensorflow-gpu
 conda install jupyter
 nvim Code/ML
-python3 main.py
 nvim main.py
 sudo pacman R python-jupyter
 sudo pacman -R jupyter-notebook
@@ -1035,7 +1023,6 @@ cp Code/ML/Amazon/images/2198wsIefsL.jpg Desktop
 conda install pytesseract
 watch -n 1 nvidia-smi
 conda en
-cd Code/ML
 nvim .dotfiles/.config/zsh/.zshenv
 nvcc --version\
 
@@ -1065,7 +1052,6 @@ man diff
 diff Downloads/notebook807906aa6e\(1\).ipynb
 diff Downloads/notebook807906aa6e\(1\).ipynb Downloads/notebook807906aa6e\(2\).ipynb
 man bc
-cd Code/Archive
 vi
 Cd Code/PPA
 cp ../lab-3/Lab_3_U22CS104_PPA.odt ./
@@ -1104,7 +1090,6 @@ curl http://localhost:5000/items\
 sudo docker run hello-world
 sudo docker run hello-microservices
 sudo docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash
-cat ~/.config/zsh/.history | fzf
 cp ../lab-3/requirements.txt ./
 sudo docker build -t flask-microservice\
 
@@ -1163,8 +1148,6 @@ ping pornhub.com
 git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
 ls .config/nvim-test
 it commit
-git commit
-git push origin main
 p
 dmesg
 sudo dmesg
@@ -1208,8 +1191,6 @@ mkdir 974-Div-3
 2
 cd 974-Div-3
 g++ 3_1.cpp -o 3
-g++ 3.cpp -o 3
-./3
 sudo pacman -Sy V
 sudo pacman -Sy lxappearance
 find /usr/share/icons -type d -name "cursors"
@@ -1278,7 +1259,6 @@ time
 nvm_version
 compinit -C\
 
-cd /
 chsh yagna
 echo $SHELL
 sudo ./bin/zsh
@@ -1299,7 +1279,6 @@ echo $PATH
 curl -s https://ohmyposh.dev/install.sh | bash -s
 sudo 
 ls -la
-cd ~/Code/Portal
 sudo pacman -Syu unzip
 sudo pacman -S unzip
 cd-
@@ -1403,12 +1382,9 @@ sudo gparted\
 
 mkdir 976-Div-2
 cat 1.cpp
-cd Code/Code-Forces
 cd 9
 cd 976-Div-2
 1
-g++ 2.cpp -o 2
-./2
 tldr
 cat man
 man 
@@ -1441,7 +1417,6 @@ cp requirements.txt app2/
 ls app1
 ls app2
 cp app1/Dockerfile ../lab-5
-cd Code/CI-CD/lab-6/app2
 docker build -t lab-6-app-1 .
 sudo docker build -t lab-6-app-1 .
 cd app1
@@ -1453,8 +1428,6 @@ cd backend
 node server.js
 cwd
 sudo docker ps
-l
-python3 app.py
 mkdir ~/Code/ML/lab-5
 mv Untitled.ipynb ~/Code/ML/lab-5
 mv test.csv ~/Code/ML/lab-5
@@ -1472,14 +1445,12 @@ oh-my-posh get shell
 oh-my-posh upgrade
 sudo oh-my-posh upgrade
 dhbdshb
-cd ~/.dotfiles
 sudo pacman -S flatpak
 flatpak install flathub io.github.zen_browser.zen
 yay -S zen-browser-bin 1.0.1.a.7
 flatpak uninstall io.github.zen_browser.zen org.freedesktop.Platform org.freedesktop.Platform.ffmpeg-full org.freedesktop.Platform.GL.default org.freedesktop.Platform.GL.nvidia-560-35-03 org.freedesktop.Platform.openh264
 flatpak uninstall io.github.zen_browser.zen
 sudo pacman -R flatpak
-zen-browser -v
 cd ~/.config/nvim-own
 cd ~/.config/nvim-test
 mv ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
@@ -1512,7 +1483,6 @@ sudo pacman -S sqlite3
 yay -S sqlite-utils
 la tmp
 ls tmp
-git add .
 git commit -m "02 Oct,2024: Added DB Integration and REST(JSON) Api calls with CROS"
 git log
 curl -i http://localhost:8080/login -H "Content-Type: application/json" -d '{"email": "u22cs104@coed.svnit.ac.in"}'\
@@ -1520,7 +1490,6 @@ curl -i http://localhost:8080/login -H "Content-Type: application/json" -d '{"em
 curl -i http://localhost:8080/login -H "Content-Type: application/json" -d '{"email": "u22cs104svnit.ac.in"}'\
 
 go get golang.org/x/crypto/bcrypt
-cd client
 npx shadcn-ui add form input select button textarea\
 
 npm install @tailwindcss/forms\
@@ -1603,7 +1572,6 @@ curl -X POST -F "email=test@example.com" \\
 
 mkdir uploads
 ls uploads
-cd Code/SS
 ls ../lab-5
 cd ../
 mkdir lab-7
@@ -1613,7 +1581,6 @@ c/1
 fastf
 cmatrix -C magenta
 gparted
-sudo gparted
 fdisk
 fdisk --help
 /dev/snd
@@ -1685,7 +1652,6 @@ echo "Monitor: X=$monitor_x, Y=$monitor_y, Width=$monitor_width, Height=$monitor
 sudo lsof -i :5000\
 
 sudo docker run -p 5000:5000 flask-microservice
-sudo docker images
 cd app2
 sudo docker build -t lab-6-app-2 .
 sudo docker run -p 5001:5001 lab-6-app-2
@@ -1697,12 +1663,10 @@ cd Code/CI-CD/lab-6
 cd Code/CI-CD/lab_6
 cd ../lab_6
 sudo docker compose up
-cd Downloads
 unzip Blue\ and\ Grey\ Modern\ Simple\ Business\ Proposal\ Cover\ Page.zip
 man xinit
 clear && echo "" && ls | grep
 clear && echo "" && ls | grep Down
-ip addr
 cd Code/ML/
 mkdir lab-6
 mv Downloads/Untitled.ipynb Code/ML/lab-6/KNN.ipynb
@@ -1714,7 +1678,6 @@ cd .dotfiles
 mv ~/.dotfiles/.config/nvim-test ~/.config/nvim-test-1
 mv ~/.config/nvim-test ~/.config/nvim-test-2
 mv ~/.config/nvim-test-1 ~/.config/nvim-test
-cd 
 mv nvim-test/.config/nvim nvim-test
 ls nvim-test
 rm nvim-test/.config
@@ -1743,7 +1706,6 @@ yay -S polybar-git\
 
 chmod +x ~/.config/polybar/bluetooth_status.sh\
 
-starrx
 cd Code/PPA
 cd lab-5
 cd Code/PPA/lab-5
@@ -1786,7 +1748,6 @@ rm /var/lib/pacman/db.lck\
 
 sudo rm /var/lib/pacman/db.lck\
 
-bash
 tmux ls
 flatpak
 sudo pacman -Sy flatpak
@@ -1796,24 +1757,17 @@ flatpak list
 sudo lutris
 flatpak install flathub net.lutris.Lutris
 sudo pacman -R lutris
-nvidia-smi
 lutris
 flatpak uninstall Lutris
 du Games
 du -sh Games
 rm -rf Games
 exit
-nvim 
 ll
 cd Code/PPA/lab-6
 git clone https://github.com/NvChad/starter ~/.config/nvim-test
-cd Code/Portal
-air
 cd Code/Portal/client
-npm run dev
 cd Code/Portal/
-sqlite3 users.db\
-
 cd uploads
 yazi
 cd ../client
@@ -1845,23 +1799,16 @@ systemctl status udevmon
 sudo nvim /etc/systemd/system/udevmon.service
 rm /etc/systemd/system/udevmon.service
 sudo rm /etc/systemd/system/udevmon.service
-nvim $(fzf)
 adb devices
-reboot
-pp
 mv ~/Downloads/71.cpp ~/Code/SS/lab-7/1.cpp
 gcc 1.c -o 1
 cat ../lab-5/prod.txt
 sudo ./[A
-g++ 1.cpp -o 1
-./1
 cd -
 fzf
 zf cwd=~
 fzf cwd=~
 fzf --help
-htop
-startx
 cd Code/SS/lab-7
 nvim-kickstart
 nvim-lazy
@@ -1875,7 +1822,6 @@ rm -rf .config/nvim-test
 rm -rf .config/nvim-test-2
 ls .config
 ls ~/.config
-gs
 rm -rf nvim-lazy nvim-own
 nvimm
 ls .config | grep nvim
@@ -1884,7 +1830,6 @@ rm -rf .git
 rm -rf .gitignore
 rm -rf README.md
 rm -rf .x11
-cd .dotfiles/.config
 mv .stow-local-ignore .stow-global-ignore
 cd .config
 cp nvim nvim-own
@@ -1893,13 +1838,11 @@ cd ~/.dotfiles/.config/
 man ln\\
 
 ln -s nvim-own ~/.config/nvim-own
-cd
 rm -rf .config/nvim-own
 ln -s ~/.dotfile/.config/nvim-own ~/.config/nvim-own
 ls ~/.config | grep nvim
 cd ~/.dotfiles/.config/nvim-own
 rm -rf ~/.config/nvim-own
-..
 mv .config/pulse ~/.config/pulse
 stow .
 ls ~
@@ -1916,51 +1859,344 @@ mv lua/colors colors
 ls colors
 cat .config/nvim-own/colors/ayudark.lua
 git clone https://github.com/NvChad/starter ~/.config/nvim-nv && nvim-nv
-nvim-nv
-sudo pacman -Syu
-tmux
 neofetch
 x
 time zsh --interactive -c exit
-vim
 rm -rf colors
-cd lua
 cd core
-ls
 cp ~/.config/nvim/lua/plugins/init.lua ~/.config/nvim-own/lua/plugins
 cmatrix
-conda activate ML
-jupyter notebook
 fastfetch
 nvim-own\\
 
-nvim
-cd .config/nvim
 cd ../nvim-own
-;q
-nvim-own
-cd .config/nvim-own
 nvim-own \\
 \\
 
+curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/default.lua -o ~/.config/nvim-own/lua/config/stl.lua
+curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/utils.lua -o ~/.config/nvim-own/lua/config/utils.lua
+cd lua
+cd config
+curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config
+curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config/nvim-own/lua/nvconfig.lua
+cd .config/nvim-nv
 nvim-own 
+git commit
+cd Code/CI-CD/lab-6/app2
+git diff
+date
+base64
+man base64
+base64 "Hello World"
+base64 Hello World
+base64 Hell
+base64 --help
+base64 -
+d
+man gm
+games
+sudo docker ps -a | cut -d ' ' -f1 | sudo xargs docker rm
+sudo docker ps -a
+git clone https://github.com/joshnewans/dockerfile_example.git
+cd dockerfile_example
+sudo docker build -t ros
+cat ~/.config/zsh/.history | fzf
+sudo docker build -t ros .
+sudo docker images 
+sudo docker run -it --user ros --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
+sudo docker run -it --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
+lvmdiskscan
+bash
+cd dev
+cd /
+cd mnt
+ls /dev
+cd /dev
+ls sda1
+cd sda1
+cat sda1
+sudo cat sda1
+sudo cat sda
+yagna
+mnm
+V
+sudo mkdir -p /mnt/ubuntu\
+sudo mount /dev/nvme0n1p3 /mnt/ubuntu  # Adjust this to match your actual Ubuntu partition\
+
+df -h\
+
+sudo apt autoremove\
+sudo apt clean\
+
+blkid /dev/nvme0n1p3\
+
+blkid /dev/nvme0n1p5\
+
+sudo nano /etc/fstab\
+
+sudo mount /dev/nvme0n1p5 /mnt\
+sudo mount --bind /dev /mnt/dev\
+sudo mount --bind /proc /mnt/proc\
+sudo mount --bind /sys /mnt/sys\
+sudo chroot /mnt\
+
+sudo mkdir -p /mnt/ubuntu\
+sudo mkdir -p /mnt/dev\
+sudo mkdir -p /mnt/proc\
+sudo mkdir -p /mnt/sys\
+
+sudo mount /dev/nvme0n1p3 /mnt/ubuntu\
+
+sudo mount --bind /dev /mnt/dev\
+sudo mount --bind /proc /mnt/proc\
+sudo mount --bind /sys /mnt/sys\
+
+sudo umount /mnt/dev\
+sudo umount /mnt/proc\
+sudo umount /mnt/sys\
+sudo umount /mnt/ubuntu\
+
+sudo reboot\
+
+sudo mkdir /mnt/ubuntu\
+sudo mount /dev/nvme0n1p8 /mnt/ubuntu  # Adjust this to your root partition\
+
+sudo mount --bind /dev /mnt/ubuntu/dev\
+sudo mount --bind /proc /mnt/ubuntu/proc\
+sudo mount --bind /sys /mnt/ubuntu/sys\
+sudo chroot /mnt/ubuntu\
+
+sudo chroot /mnt/ubuntu\
+
+sudo chroot /mnt/ubuntu bash\
+
+ls /boot
+sudo rm -rf /mnt/ubuntu\
+sudo mkdir /mnt/ubuntu\
+
+lablk
+ls /mnt/ubuntu/usr/bin\
+
+sudo ls /mnt/ubuntu/yagna[200~sudo umount /mnt/ubuntu
+sudo pacman -S lsof
+sudo lsof +D /mnt/ubuntu\
+
+sudo fuser -m /mnt/ubuntu\
+
+sudo fuser -k /mnt/ubuntu\
+
+mount | grep /mnt/ubuntu\
+
+sudo umount -l /mnt/ubuntu\
+
+sudo sync\
+
+sudo mount /dev/nvme0n1p5 /mnt/ubuntu
+ls /mnt/ubuntu/yagna
+ls /mnt/ubuntu
+sudo umount /mnt/ubuntu\
+
+sudo fsck /dev/nvme0n1p5\
+
+ls /mnt\
+
+rebot
+sudo gparted
+sudo update-grub
+reboot
+lsblk
+sudo mount /dev/nvme0n1p1 /boot
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --boot-loader-id=GRUB
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo efibootmgr
+sudo efibootmgr -o 0003
+sudo reboot
+lscpi
+pacman -Fy lsusb 
+sudo pacman -Fy lsusb 
+sudo pacman -Sy usbutils
+lsusb
+htop
+yay -S zen-browser-bin 1.0.1.a.8
+ctags
+sudo pacman -Sy ctags
+vim 
+cd ~/Code/Portal
+cd ~/Code/Portal/client
+npm run dev\\
+\\
+
+ctags -R
+vim client/src/App.jsx
+ctags -R .
+rm tags
+nvim $(fzf)
+cd 
+cd .vim
+cd .config/nvim-own
+nvim-nv
+l
+cd .dotfiles/.config
+mv nvim nvimmm\\
+
+mv nvim-own nvim
+mv nvimmm nvim-own
+cd .config/nvim
+nvim-own
+nvim\\
+
+cd Code/Code-Forces
+mkdir 978-Div-2
+cd 978-Div-2
+cd Code/Code-Forces/978-Div-2
+4 5
+3 1 1 3
+g++ 1.cpp -o 1
+./1
+g++ 2.cpp -o 2
+g++ 2_.cpp -o 2
+./2
+vim
+nvim test.cpp
+g++ 3.cpp -o 3
+./3
+sudo docker pull vamsi6486/myapp
+sudo docker images
+curl https://127.0.0.1:5000/
+curl https://127.0.0.1:5000/mars
+curl -X POST -F "email=test@example.com" \\
+             -F "name=Test User" \\
+             -F "room=101" \\
+             -F "mobile=1234567890" \\
+             -F "description=Issue with water supply." \\
+             -F "complainType=Facilities" \\
+             -F "hostel=Hostel A" \\
+             http://localhost:5000/mars\
+
+curl -X POST -F "name":"Yagna" /\
+             http://localhost:5000/mars\
+
+curl -X POST -F "name":"Yagna" \\
+
+curl -X POST -F "name":"Yagna" \\
+-F "address":"Fuck" \\
+-F "acres":30 \\
+http:localhost:5000/mars
+curl -X POST -F "name=Yagna" \\
+-F "address=Fuck" \\
+-F "acres=30" \\
+http:localhost:5000/mars
+curl -X POST -F "name=Yagna" \\
+-F "address=Fuck" \\
+-F "acres=30" \\
+ http://localhost:5000/mars
+sudo docker run -p 5000:5000 vamsi6486/myapp
+curl -X POST -F "name_give=Yagna" \\
+-F "address_give=Fuck" \\
+-F "size_give=30" \\
+ http://localhost:5000/mars
+curl http://localhost:5000/mars\
+
+git clone https://github.com/Vamshi6486/marslandsale.git
+cd marslandsale
+cd ~/.dotfiles
+git staus
+cd
+git tatus
+git status
+ls Dockerfile.zip
+mv Dockerfile.zip ~/Code/Archive
+cd ~/Code/Archive
+mkdir temp
+mv Dockerfile.zip temp
+cd temp
+unzip Dockerfile.zip
+conda install pymango
+conda install pymongo
+python3 app.py
+cd Code/Archive
+cd ~/Downloads
+rm -rf marslandsale static templates venv
+cd Code/ML
+mkdir ~/Code/ML/lab-7
+mv Downloads/logistic-regression-classifier-tutorial.ipynb ~/Code/ML/lab-7/Logistic-Regression.ipynb
+mv Downloads/weatherAUS.csv.zip Code/ML/lab-7
+unzip weatherAUS.csv.zip
+rm weatherAUS.csv.zip
+conda install catagorical-encoders
+ruff
+sudo pacman -S ruff
+lspci
+starrx
+cat /proc/swaps
+cd Code/Portal
+cd client
+.
+npm run dev
+sqlite3 users.db\
+
+nvim 
+git add .
+git commit -m "Before Refactoring of Backend"
+git push origin main
+git push
+git remote add origin https://github.com/Yagna-rao15/hostel-section-portal.git\
+git branch -M main\
+git push -u origin main
+gs
+git pull
+go get github.com/Yagna-rao15/hostel-portal/api/handlers
+go run ./main.go
+cp _main.go main.go
+air
+cd ~/.config/nvim
+nvidia-smi
+cd Code/SS
+cd lab-7
+git clone https://github.com/imlegend19/LR-0--Parsing.git
+python3 ma
+conda install pyfiglet
+conda install conda-forge::pyfiglet
+cd LR-0--Parsing
+python3 main.py
+conda install bioconda::perl-term-table
+conda config --add channels conda-forge\
+conda install pytables
+cd Code/SS/lab-7/
+sudo systemctl restart bluetooth\
+
+bluetoothctl
+shutdown
+ss
+ip addr
+sudo docker network ls
+bridge link
+cal 2**16
+cal --help
+cal -3
+cal -5
+cal -y
+sudo pacman -Syu
+yay -S zen-browser-bin
+zen-browser -v
+xxx `c\
 c
+cd Code/ML/lab-7
+pp
+conda activate ML
+..
+jupyter notebook
+cd Downloads
+ls
+ls *.ipynb
+mv an-exploration-of-l1-and-l2-regularization.ipynb ~/Code/ML/lab-5/Regularization.ipynb
+c
+startx
+tmux
+nvim
 q
-: 1728592908:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/default.lua -o ~/.config/nvim-own/lua/config/stl.lua
-: 1728592956:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/utils.lua -o ~/.config/nvim-own/lua/config/utils.lua
-: 1728592964:0;cd .config/nvim-own
-: 1728592968:0;cd lua
-: 1728592970:0;cd config
-: 1728592974:0;nvim-own 
-: 1728593075:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config
-: 1728593098:0;curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config/nvim-own/lua/nvconfig.lua
-: 1728593100:0;c
-: 1728593107:0;nvim-own 
-: 1728593159:0;cd .config/nvim-nv
-: 1728593163:0;nvim-own
-: 1728593236:0;nvim-own 
-: 1728593508:0;c
-: 1728593509:0;nvim-own 
-: 1728593651:0;cd ~/.dotfiles
-: 1728593654:0;gs
-: 1728593661:0;git add .
+;q
+: 1729619743:0;nvim
+: 1729619792:0;gs
+: 1729619803:0;git add .

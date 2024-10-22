@@ -3,7 +3,7 @@ local g = vim.g
 local key = vim.keymap
 
 opt.laststatus = 3 -- global statusline
--- opt.showmode = false
+opt.showmode = false
 
 opt.clipboard = "unnamedplus"
 opt.cursorline = true

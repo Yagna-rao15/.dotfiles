@@ -6,7 +6,7 @@ local options = {
     hl_override = {},
     integrations = {},
     changed_themes = {},
-    transparency = false,
+    transparency = true,
     theme_toggle = { "onedark", "one_light" },
   },
 
