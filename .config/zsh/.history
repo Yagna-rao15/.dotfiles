@@ -1269,8 +1269,6 @@ pp\\
 pp\
 
 ping google.com
-startx\\
-
 cd Code/CI-CD/
 /bin/zsh-5.9
 /bin/zsh
@@ -1574,7 +1572,6 @@ mkdir uploads
 ls uploads
 ls ../lab-5
 cd ../
-mkdir lab-7
 cd ../lab-7
 c/1
 .1/
@@ -1655,7 +1652,6 @@ sudo docker run -p 5000:5000 flask-microservice
 cd app2
 sudo docker build -t lab-6-app-2 .
 sudo docker run -p 5001:5001 lab-6-app-2
-cd lab-6
 sudo docker run -p 5000:5000 lab-6-app-1
 unzip ~/Downloads/lab_6.zip
 mv lab_6 ../lab_6
@@ -1706,7 +1702,6 @@ yay -S polybar-git\
 
 chmod +x ~/.config/polybar/bluetooth_status.sh\
 
-cd Code/PPA
 cd lab-5
 cd Code/PPA/lab-5
 cat 1.c
@@ -2137,14 +2132,11 @@ npm run dev
 sqlite3 users.db\
 
 nvim 
-git add .
 git commit -m "Before Refactoring of Backend"
-git push origin main
 git push
 git remote add origin https://github.com/Yagna-rao15/hostel-section-portal.git\
 git branch -M main\
 git push -u origin main
-gs
 git pull
 go get github.com/Yagna-rao15/hostel-portal/api/handlers
 go run ./main.go
@@ -2153,7 +2145,6 @@ air
 cd ~/.config/nvim
 nvidia-smi
 cd Code/SS
-cd lab-7
 git clone https://github.com/imlegend19/LR-0--Parsing.git
 python3 ma
 conda install pyfiglet
@@ -2185,18 +2176,91 @@ c
 cd Code/ML/lab-7
 pp
 conda activate ML
-..
 jupyter notebook
 cd Downloads
-ls
 ls *.ipynb
 mv an-exploration-of-l1-and-l2-regularization.ipynb ~/Code/ML/lab-5/Regularization.ipynb
-c
-startx
 tmux
-nvim
-q
 ;q
-: 1729619743:0;nvim
-: 1729619792:0;gs
-: 1729619803:0;git add .
+gs
+git add .
+git commit -m "Backup on 22/10/24"
+git push origin main
+startx\\
+
+startx
+cd Code/PPA
+cd lab-6
+gcc --verion
+gcc --v
+gcc -v
+echo |cpp -fopenmp -dM |grep -i open
+export OMP_NUM_THREADS=8
+c
+mkdir lab-7
+nvim
+..
+mv 1.c lab-7/
+cd lab-7
+ls
+gcc -o 1 -fopenmp 1.c
+q
+: 1729673941:0;cd Code/PPA/lab-7
+: 1729673944:0;gcc -o 1 -fopenmp 1.c
+: 1729673993:0;./1
+: 1729674004:0;export OMP_NUM_THREADS=8
+: 1729674005:0;./1
+: 1729674331:0;gcc -o 2 -fopenmp 2.c
+: 1729674332:0;./2
+: 1729674334:0;c
+: 1729674335:0;./2
+: 1729674636:0;gcc -o 3 -fopenmp 3.c
+: 1729674645:0;./3
+: 1729674979:0;..
+: 1729674983:0;cd lab-8
+: 1729674984:0;ls
+: 1729674989:0;mpicc 1.c -o 1
+: 1729674994:0;mpirun -np 4 ./1
+: 1729675516:0;mpicc 2.c -o 2
+: 1729675519:0;ls
+: 1729675524:0;mpicc 2.c -o 2
+: 1729675532:0;mpirun -np 4 ./2
+: 1729678005:0;../
+: 1729678006:0;..
+: 1729678010:0;cd lab-6
+: 1729678011:0;ls
+: 1729678015:0;mpirun -np 4 ./1
+: 1729678021:0;mpirun -np 4 ./2
+: 1729678576:0;..
+: 1729678579:0;cd lab-7
+: 1729678581:0;./1
+: 1729678590:0;cd Code/PPA/lab-7
+: 1729678591:0;./1
+: 1729700123:0;startx
+: 1729700346:0;pp
+: 1729702675:0;ip addr
+: 1729702678:0;c
+: 1729707031:0;startx
+: 1729708067:0;bluetoothctl
+: 1729708180:0;c
+: 1729708492:0;cd .config/nvim
+: 1729708494:0;nvim
+: 1729716805:0;cd .config/nvim
+: 1729716809:0;nvim
+: 1729748134:0;startx
+: 1729748319:0;cd Code
+: 1729748320:0;ls
+: 1729748324:0;git init
+: 1729748328:0;gs
+: 1729748331:0;git add .
+: 1729748358:0;gs
+: 1729748364:0;git add .
+: 1729748461:0;c
+: 1729748463:0;ls
+: 1729748469:0;rm -rf .git
+: 1729748473:0;c
+: 1729749377:0;startx
+: 1729750957:0;cd .dotfiles
+: 1729750958:0;ls
+: 1729750960:0;gs
+: 1729750963:0;git add .

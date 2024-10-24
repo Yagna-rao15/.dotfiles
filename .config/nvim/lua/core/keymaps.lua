@@ -31,10 +31,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "file save" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "file copy whole" })
 
-map("n", "1", "010jzz", { desc = "center the cursor while scrolling" })
-map("n", "2", "010kzz", { desc = "center the cursor while scrolling" })
-map("n", "3", "020jzz", { desc = "center the cursor while scrolling" })
-map("n", "4", "020kzz", { desc = "center the cursor while scrolling" })
+-- map("n", "1", "010jzz", { desc = "center the cursor while scrolling" })
+-- map("n", "2", "010kzz", { desc = "center the cursor while scrolling" })
+-- map("n", "3", "020jzz", { desc = "center the cursor while scrolling" })
+-- map("n", "4", "020kzz", { desc = "center the cursor while scrolling" })
 
 -- tabs
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
