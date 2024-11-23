@@ -1,6 +1,5 @@
 ls .config/ohmyposh
 ls .config/ohmyposh/
-oh-my-posh
 man ps
 ps -aux
 ps -aux | grep Code
@@ -74,7 +73,6 @@ ping 172.16.1.1:8090/
 ping 10.0.2.15/24
 ping 10.0.2.15:24
 ping 10.0.2.15
-sudo pacman -R nautilus
 cd .texlive
 ./texmf-var
 rm -rf .texlive
@@ -97,7 +95,6 @@ gcc 3.c -o 3
 cd Code/SS/lab_2
 bluetoothctl pairable on
 bluetoothctl info
-sudo pacman -Sy bluez
 sudo systemctl enable --now bluetooth.service
 btusb
 sudo lsmod| grep btusb
@@ -183,10 +180,8 @@ ls gh
 rm -rf gh
 absh
 mv README README.md
-man grep
 man grep -r
 git branch --verbose
-nvim ~/.zshenv
 cat .config/tmux/tmux-cheetsheet.md
 echo $(tty)
 man startx
@@ -284,7 +279,6 @@ tracepath 152.59.35.91
 ip help
 ip address
 iproute2
-ip
 ip route 152.59.35.91
 ip route help
 ip route get 152.59.35.91
@@ -294,7 +288,6 @@ curl https://icanhazip.com
 less $(fzf)
 fzf | cat
 echo "\n\n# Get IP\nalias IPP='curl https://icanhazip.com'"  >> $(fzf) 
-IPP
 ip addr show usb0
 ping 127.0.0.1\
 
@@ -304,7 +297,6 @@ mkdir test
 cd test
 nvm help
 nvm install node
-nvm -v
 npm
 rm -rf go
 sudo rm -rf go
@@ -1117,8 +1109,6 @@ sudo pacman -Rnsc yay
 ya
 cd /tmp\
 git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
 yay
 cd ..
 rm -rf yay\
@@ -1129,7 +1119,6 @@ sudo pacman -Rcns gnome
 sudo pacman -Rcns gnome gnome-shell gnome-session\
 
 sudo pacman -Rns $(pacman -Qdtq)
-sudo pacman -Sy nautilus
 sudo pacman -R gnome-terminal gnome-tweaks
 sudo pacman -R gnome-tweaks
 mkdir 973-Div-2
@@ -1153,7 +1142,6 @@ dmesg
 sudo dmesg
 aplay -lL
 yay -S aplay
-sudo pacman -Sy alsa-utils
 sudo pacman -Sy pipewire
 ~/tmp $ pacman -Q | grep pipew
 pacman -Q | grep pipew
@@ -1192,7 +1180,6 @@ mkdir 974-Div-3
 cd 974-Div-3
 g++ 3_1.cpp -o 3
 sudo pacman -Sy V
-sudo pacman -Sy lxappearance
 find /usr/share/icons -type d -name "cursors"
 nvim .local/share/icons
 ln -s /usr/share/icons/macOS/cursors ~/.local/share/icons/default/cursors
@@ -1218,7 +1205,6 @@ cmatrix -C yellow
 cmatrix -C cyan
 starx
 ;
-clear
 curl --help
 curl https://jiorockers.kim/files/Telugu%20Movies/Telugu%202024%20Movies/The%20Greatest%20of%20All%20Time%20(2024)%20Telugu%20HDRip%20(HQ%20Line%20Audio)/GOAT%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio)/GOAT%20(2024)%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio).mp4 -o Movie.mp4
 curl "https://jiorockers.kim/files/Telugu%20Movies/Telugu%202024%20Movies/The%20Greatest%20of%20All%20Time%20(2024)%20Telugu%20HDRip%20(HQ%20Line%20Audio)/GOAT%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio)/GOAT%20(2024)%20Telugu%20HDRip%20Single%20Part%20(HQ%20Line%20Audio).mp4" -o Movie.mp4
@@ -1268,7 +1254,6 @@ pp\\
 
 pp\
 
-ping google.com
 cd Code/CI-CD/
 /bin/zsh-5.9
 /bin/zsh
@@ -1276,15 +1261,12 @@ cat .zshenv
 echo $PATH
 curl -s https://ohmyposh.dev/install.sh | bash -s
 sudo 
-ls -la
 sudo pacman -Syu unzip
 sudo pacman -S unzip
 cd-
-yay -S oh-my-posh
 exec zsh
 oh-my-posh print primary --config sample.json --shell uni
 start
-cc
 dc
 time
 zsh
@@ -1293,7 +1275,6 @@ skbd
 sdbgdssd
 sdg
 ,shbsdh
-cd Code
 cd ML
 mv Amazon ../Archive
 ls Desktop
@@ -1386,7 +1367,6 @@ cd 976-Div-2
 tldr
 cat man
 man 
-man man
 ls /bin
 ls /usr/bin
 ls /usr/bin | fzf
@@ -1440,7 +1420,6 @@ rm -rf ~/.config/pulse\
 jhb
 whoami
 oh-my-posh get shell
-oh-my-posh upgrade
 sudo oh-my-posh upgrade
 dhbdshb
 sudo pacman -S flatpak
@@ -1594,7 +1573,6 @@ GTK_THEME=Adwaita:dark nautilus
 nano ~/.local/share/applications/nautilus-dark.desktop\
 \
 
-nvim ~/.config/rofi
 update-desktop-database ~/.local/share/applications\
 
 nvidia-smi\
@@ -1670,7 +1648,6 @@ git clone https://github.com/sarrost/dotfiles.git /tmp/
 ls /tmp
 git clone https://github.com/sarrost/dotfiles.git /tmp/Dots
 mv /tmp/Dots/dotfiles/neovim ~/.dotfiles/.config/nvim-test
-cd .dotfiles
 mv ~/.dotfiles/.config/nvim-test ~/.config/nvim-test-1
 mv ~/.config/nvim-test ~/.config/nvim-test-2
 mv ~/.config/nvim-test-1 ~/.config/nvim-test
@@ -1707,12 +1684,8 @@ cd Code/PPA/lab-5
 cat 1.c
 cd ../lab-6
 cd ../lab-5
-mpicc 2.c -o 2
-mpirun -np 4 ./2
 mpicc 3.c -o 3
 mpirun -np 4 ./3
-mpicc 1.c -o 1
-mpirun -np 4 ./1
 sudo pacman -Sy speedtest-cli
 speedtest
 c=1
@@ -1757,17 +1730,14 @@ flatpak uninstall Lutris
 du Games
 du -sh Games
 rm -rf Games
-exit
 ll
 cd Code/PPA/lab-6
 git clone https://github.com/NvChad/starter ~/.config/nvim-test
 cd Code/Portal/client
 cd Code/Portal/
 cd uploads
-yazi
 cd ../client
 cd src
-python
 sudo pacman -S interception-caps2esc\
 
 touch /etc/udevmon.yaml
@@ -1815,13 +1785,11 @@ rm -rf .config/nvim-exp
 rm -rf .config/nvim-kickstart
 rm -rf .config/nvim-test
 rm -rf .config/nvim-test-2
-ls .config
 ls ~/.config
 rm -rf nvim-lazy nvim-own
 nvimm
 ls .config | grep nvim
 rm -rf .config/nvim-lazy
-rm -rf .git
 rm -rf .gitignore
 rm -rf README.md
 rm -rf .x11
@@ -1914,7 +1882,6 @@ sudo cat sda1
 sudo cat sda
 yagna
 mnm
-V
 sudo mkdir -p /mnt/ubuntu\
 sudo mount /dev/nvme0n1p3 /mnt/ubuntu  # Adjust this to match your actual Ubuntu partition\
 
@@ -1998,7 +1965,6 @@ ls /mnt\
 rebot
 sudo gparted
 sudo update-grub
-reboot
 lsblk
 sudo mount /dev/nvme0n1p1 /boot
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --boot-loader-id=GRUB
@@ -2037,7 +2003,6 @@ mv nvim nvimmm\\
 
 mv nvim-own nvim
 mv nvimmm nvim-own
-cd .config/nvim
 nvim-own
 nvim\\
 
@@ -2048,14 +2013,10 @@ cd Code/Code-Forces/978-Div-2
 4 5
 3 1 1 3
 g++ 1.cpp -o 1
-./1
 g++ 2.cpp -o 2
 g++ 2_.cpp -o 2
-./2
-vim
 nvim test.cpp
 g++ 3.cpp -o 3
-./3
 sudo docker pull vamsi6486/myapp
 sudo docker images
 curl https://127.0.0.1:5000/
@@ -2097,7 +2058,6 @@ git clone https://github.com/Vamshi6486/marslandsale.git
 cd marslandsale
 cd ~/.dotfiles
 git staus
-cd
 git tatus
 git status
 ls Dockerfile.zip
@@ -2122,7 +2082,6 @@ rm weatherAUS.csv.zip
 conda install catagorical-encoders
 ruff
 sudo pacman -S ruff
-lspci
 starrx
 cat /proc/swaps
 cd Code/Portal
@@ -2131,7 +2090,6 @@ cd client
 npm run dev
 sqlite3 users.db\
 
-nvim 
 git commit -m "Before Refactoring of Backend"
 git push
 git remote add origin https://github.com/Yagna-rao15/hostel-section-portal.git\
@@ -2155,12 +2113,8 @@ conda install bioconda::perl-term-table
 conda config --add channels conda-forge\
 conda install pytables
 cd Code/SS/lab-7/
-sudo systemctl restart bluetooth\
-
-bluetoothctl
 shutdown
 ss
-ip addr
 sudo docker network ls
 bridge link
 cal 2**16
@@ -2168,113 +2122,624 @@ cal --help
 cal -3
 cal -5
 cal -y
-sudo pacman -Syu
-yay -S zen-browser-bin
 zen-browser -v
 xxx `c\
 c
 cd Code/ML/lab-7
-pp
 conda activate ML
 jupyter notebook
 cd Downloads
 ls *.ipynb
 mv an-exploration-of-l1-and-l2-regularization.ipynb ~/Code/ML/lab-5/Regularization.ipynb
-tmux
 ;q
-gs
-git add .
 git commit -m "Backup on 22/10/24"
-git push origin main
 startx\\
 
-startx
 cd Code/PPA
-cd lab-6
 gcc --verion
 gcc --v
 gcc -v
 echo |cpp -fopenmp -dM |grep -i open
-export OMP_NUM_THREADS=8
-c
 mkdir lab-7
-nvim
-..
 mv 1.c lab-7/
-cd lab-7
-ls
 gcc -o 1 -fopenmp 1.c
+export OMP_NUM_THREADS=8
+gcc -o 2 -fopenmp 2.c
+./2
+gcc -o 3 -fopenmp 3.c
+./3
+cd lab-8
+mpicc 1.c -o 1
+mpicc 2.c -o 2
+../
+cd lab-6
+mpirun -np 4 ./1
+mpirun -np 4 ./2
+..
+cd lab-7
+cd Code/PPA/lab-7
+./1
+ip addr
+cd .config/nvim
+cd Code
+git init
+rm -rf .git
+git commit -m "Backup before repair"
+git push origin main
+ls .vim
+.dotfiles
+ls .comfig
+ls .config
+cd
+cd .dotfiles
+gs
+git add .
+sudo pacman -Sy ttf-font-awesome
+nvim ~/.config/rofi
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+sudo pacman -Sy ttf-jetbrains-mono
+fc-list ':' jetbrain
+fc-list ':'
+nvim ~/.zshenv
+ping google.com
+yay -S zen-browser-bin
+alacritty migrate
+sudo pacman -Sy poly bar
+sudo pacman -Sy polybar
+ls /usr/local/share/fonts
+nvim .config/alacritty/alacritty.toml
+yay -S ttf-jetbrains-mono-nerd 3.3.0-1
+. .config/zsh/.zsh
+. .config/zsh/.zshrc
+oh-my-posh upgrade
+oh-my-posh
+yay -R oh-my-posh
+cd clear
+yay -S oh-my-posh
+rm -rf .cache/yay/oh-my-posh
+sudo pacman -Sy xclip brightnessctl pulseaudio
+xinput
+yay -S oh-my-posh-bin  # or using pacman if available\
+
+sudo pacman -S xclip\
+
+rm ~/.zcompdump\
+compinit\
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+clear
+sudo pacman -Sy nautilus
+sudo pacman -Sy yazi
+yazi
+sudo pacman -Sy feh
+vim
+pacman -Qs libinput\
+
+nvim /etc/X11/xorg.conf.d/40-libinput.conf
+sudo -e /etc/X11/xorg.conf.d/40-libinput.conf
+xinput list\
+
+xinput list-props 9
+sudo pacman -S libinput-tools\
+sudo libinput list-devices\
+
+V
+lsmod | grep psmouse\
+
+sudo modprobe psmouse\
+
+echo "psmouse" | sudo tee -a /etc/modules-load.d/psmouse.conf\
+
+sudo pacman -Syu\
+
+sudo pacman -Sy bluez
+sudo pacman -Sy bluez-utils
+yay -S bluetui
+cat .Xauthority
+cc
+pp
+i[
+ip
+IPP
+nvim 
+tmux
+cargo
+sudo pacman -Sy nix
+systemctl enable --now nix-daemon.service
+getent group nix-users\
+
+sudo usermod -aG nix-users yagna
+groups yagna
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
+sudo nix-channel --update
+exiut
+exit
+nix-env -iA nixpkgs.hello
+nix-channel --list\
+
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs\
+nix-channel --update\
+
+nix-env -iA nixpkgs.hello\
+
+hello
+yay -S zsh-nix-shell
+nix-shell -p python3Packages.numpy\
+
+ls
+nix-shell -p python3Packages.numpy --run "zsh"\
+
+pyhton
+python
+nvm -v
+lspci
+bluectl
+sudo systemctl restart bluetooth\
+
+bluetoothctl
+sudo pacman -Sy alsa-utils
+sudo pacman -S pavucontrol\
+
+aplay -l\
+
+pulseaudio --check\
+
+pavucontrol
+alsamixer\
+
+lsmod | grep snd\
+
+dmesg | grep snd\
+
+sudo dmesg | grep snd\
+
+sudo pacman -S sof-firmware\
+
+sudo modprobe snd-sof-pci\
+sudo modprobe snd_hda_intel\
+
+systemctl --user status pulseaudio\
+
+sudo pacman -S pavucontrol\
+pavucontrol\
+
+lsmod | grep snd_hda_intel\
+
+lspci | grep -i audio
+sudo modprobe -r snd_hda_intel\
+sudo modprobe snd_hda_intel\
+
+dmesg | grep sof\
+
+sudo dmesg | grep sof\
+
+pacman -Qs sof-firmware\
+
+sudo alsactl init\
+
+sudo systemctl restart pulseaudio\
+
+sudo pacman -S linux-headers\
+
+reboot
+startx
+nix --version
+nix repl
+sudo pacman -R nautilus
+hwclock --show
+hwclock --show --verbose
+sudo hwclock --show --verbose
+timedatectl status\
+
+sudo timedatectl set-timezone UTC\
+
+sudo timedatectl set-ntp true\
+
+date\
+
+sudo timedatectl set-timezone IST
+sudo timedatectl set-timezone Asia/Kolkata\
+
+sudo pacman -Syu
+export MANPAGER='nvim+Man!'
+man man
+export MANPAGER='nvim +Man!'
+nvim .config/zsh
+man grep
+nvim
+sudo pacman tealdeer
+sudo pacman -Sy tealdeer
+tldr --update
+tldr grep
+sudo pacman -R tealdeer
+sudo pacman -Sy tmux
+sudo pacman -Sy code
+code
+sudo pacman -Sy lxappearance
+nvim ~/.config/gtk-3.0/settings.ini
+ls -la'\
+
+ls -la
+c
 q
-: 1729673941:0;cd Code/PPA/lab-7
-: 1729673944:0;gcc -o 1 -fopenmp 1.c
-: 1729673993:0;./1
-: 1729674004:0;export OMP_NUM_THREADS=8
-: 1729674005:0;./1
-: 1729674331:0;gcc -o 2 -fopenmp 2.c
-: 1729674332:0;./2
-: 1729674334:0;c
-: 1729674335:0;./2
-: 1729674636:0;gcc -o 3 -fopenmp 3.c
-: 1729674645:0;./3
-: 1729674979:0;..
-: 1729674983:0;cd lab-8
-: 1729674984:0;ls
-: 1729674989:0;mpicc 1.c -o 1
-: 1729674994:0;mpirun -np 4 ./1
-: 1729675516:0;mpicc 2.c -o 2
-: 1729675519:0;ls
-: 1729675524:0;mpicc 2.c -o 2
-: 1729675532:0;mpirun -np 4 ./2
-: 1729678005:0;../
-: 1729678006:0;..
-: 1729678010:0;cd lab-6
-: 1729678011:0;ls
-: 1729678015:0;mpirun -np 4 ./1
-: 1729678021:0;mpirun -np 4 ./2
-: 1729678576:0;..
-: 1729678579:0;cd lab-7
-: 1729678581:0;./1
-: 1729678590:0;cd Code/PPA/lab-7
-: 1729678591:0;./1
-: 1729700123:0;startx
-: 1729700346:0;pp
-: 1729702675:0;ip addr
-: 1729702678:0;c
-: 1729707031:0;startx
-: 1729708067:0;bluetoothctl
-: 1729708180:0;c
-: 1729708492:0;cd .config/nvim
-: 1729708494:0;nvim
-: 1729716805:0;cd .config/nvim
-: 1729716809:0;nvim
-: 1729748134:0;startx
-: 1729748319:0;cd Code
-: 1729748320:0;ls
-: 1729748324:0;git init
-: 1729748328:0;gs
-: 1729748331:0;git add .
-: 1729748358:0;gs
-: 1729748364:0;git add .
-: 1729748461:0;c
-: 1729748463:0;ls
-: 1729748469:0;rm -rf .git
-: 1729748473:0;c
-: 1729749377:0;startx
-: 1729750957:0;cd .dotfiles
-: 1729750958:0;ls
-: 1729750960:0;gs
-: 1729750963:0;git add .
-: 1729750974:0;git commit -m "Backup before repair"
-: 1729750978:0;git push origin main
-: 1729750985:0;cd
-: 1729750986:0;ls
-: 1729750998:0;ls .vim
-: 1729751008:0;.dotfiles
-: 1729751013:0;cd .dotfiles
-: 1729751013:0;ls
-: 1729751018:0;ls .comfig
-: 1729751023:0;ls .config
-: 1729751031:0;cd
-: 1729751041:0;cd .dotfiles
-: 1729751042:0;gs
-: 1729751045:0;git add .
+: 1732311875:0;neofetch
+: 1732350196:0;startx
+: 1732351864:0;nvim
+: 1732353058:0;cd ~/.vscode/extensions\
+git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
+
+: 1732353064:0;ls
+: 1732353075:0;rm -rf vscode-pitch-black-theme
+: 1732353076:0;ls
+: 1732353109:0;cd ~/.vscode-oss/extensions\
+git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
+
+: 1732353214:0;cd 
+: 1732353216:0;c
+: 1732353360:0;sudo pacman -R code
+: 1732353417:0;yay -S visual-studio-code-bin
+: 1732353531:0;c
+: 1732353533:0;code
+: 1732353643:0;yay -R visual-studio-code-bin
+: 1732353647:0;c
+: 1732353656:0;sudo pacman -Sy code
+: 1732353668:0;c
+: 1732353778:0;yay -S apple_cursor
+: 1732353831:0;c
+: 1732353832:0;startx
+: 1732354135:0;nvim 
+: 1732354263:0;nvim Downloads/test.jsx
+: 1732354936:0;nvim
+: 1732355135:0;vim
+: 1732355288:0;nvim
+: 1732355308:0;c
+: 1732355491:0;finger
+: 1732355492:0;c
+: 1732356889:0;time zsh --interactive -c exit
+: 1732356906:0;c
+: 1732356939:0;cat Downloads/test.jsx
+: 1732356950:0;cat Downloads/test.jsx | button
+: 1732356954:0;cat cat Downloads/test.jsx | button
+: 1732356959:0;grep cat cat Downloads/test.jsx | button
+: 1732356964:0;c
+: 1732356980:0;grep button Downloads/test.jsx
+: 1732356984:0;c
+: 1732356989:0;button Downloads/test.jsx
+: 1732356994:0;grep button Downloads/test.jsx
+: 1732356996:0;c
+: 1732357003:0;nvimm
+: 1732357015:0;sudo nvimm
+: 1732357019:0;c
+: 1732357039:0;cd .dotfiles
+: 1732357041:0;ls
+: 1732357050:0;nvim README.md
+: 1732357316:0;cd .dotfiles
+: 1732357320:0;sudo nvimm
+: 1732357326:0;c
+: 1732357421:0;cd
+: 1732357461:0;ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua//core
+: 1732357468:0;ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua/core
+: 1732357475:0;c
+: 1732357495:0;ls Downloads ls Downloads 
+: 1732357540:0;c\\
+c
+: 1732357541:0;c
+: 1732357552:0;cd Downloads 
+: 1732357554:0;c
+: 1732360348:0;poweroff
+: 1732362458:0;sstartx
+: 1732362460:0;startx
+: 1732363433:0;time zsh --interactive -c exit
+: 1732363442:0;c
+: 1732363446:0;time zsh --interactive -c exit
+: 1732363951:0;c
+: 1732363956:0;lsblk
+: 1732363978:0;c
+: 1732364154:0;sudo pacman -Sy polkit
+: 1732364168:0;nautilus
+: 1732364176:0;sudo pacman -Sy nautilus
+: 1732364181:0;c
+: 1732364247:0;pgrep -af polkit-gnome
+: 1732364266:0;sudo pacman -Sy lxsession
+: 1732364271:0;c
+: 1732364404:0;sudo pacman -R lxsession
+: 1732364408:0;c
+: 1732364433:0;sudo pacman -Sy polkit-gnome gvfs gvfs-gphoto2
+: 1732364453:0;c
+: 1732365072:0;sudo pacman -Sy dmenu xautolock i3lock
+: 1732365089:0;nvim
+: 1732365176:0;dmenu
+: 1732365186:0;dmenu --help
+: 1732365199:0;dmenu -v
+: 1732365202:0;dmenu -h
+: 1732365223:0;dmenu_run
+: 1732365377:0;man dmenu
+: 1732365599:0;dmenu_run -nb #000 -nf #74c7ec
+: 1732365657:0;dmenu_run -nb #000 -nf #000 -sb #74c7ec -sf #000
+: 1732365667:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000
+: 1732365704:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: "
+: 1732365722:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
+: 1732365804:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -fn "JetBrainsMono" -h 12
+: 1732365810:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -h 12
+: 1732365815:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
+: 1732365827:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -h 24
+: 1732365880:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
+: 1732366039:0;dmenu -v
+: 1732366075:0;sudo pacman -R dmenu
+: 1732366090:0;cd /temp
+: 1732366095:0;cd /tmp
+: 1732366185:0;echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
+From: pskry <peter@skrypalle.dk>\
+Date: Sun, 8 Nov 2020 22:04:22 +0100\
+Subject: [PATCH] Add an option which defines the lineheight\
+\
+Despite both the panel and dmenu using the same font (a Terminus 12),\
+dmenu is shorter and the panel is visible from under the dmenu bar.\
+The appearance can be even more distracting when using similar colors\
+for background and selections. With the option added by this patch,\
+dmenu can be launched with a '-h 24', thus completely covering the panel.\
+---\
+ config.def.h |  3 +++\
+ dmenu.1      |  5 +++++\
+ dmenu.c      | 11 ++++++++---\
+ 3 files changed, 16 insertions(+), 3 deletions(-)\
+\
+diff --git a/config.def.h b/config.def.h\
+index 1edb647..4394dec 100644\
+--- a/config.def.h\
++++ b/config.def.h\
+@@ -15,6 +15,9 @@ static const char *colors[SchemeLast][2] = {\
+ };\
+ /* -l option; if nonzero, dmenu uses vertical list with given number of lines */\
+ static unsigned int lines      = 0;\
++/* -h option; minimum height of a menu line */\
++static unsigned int lineheight = 0;\
++static unsigned int min_lineheight = 8;\
+ \
+ /*\
+  * Characters not considered part of a word while deleting words\
+diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..f2a82b4 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -6,6 +6,8 @@ dmenu \- dynamic menu\
+ .RB [ \-bfiv ]\
+ .RB [ \-l\
+ .IR lines ]\
++.RB [ \-h\
++.IR height ]\
+ .RB [ \-m\
+ .IR monitor ]\
+ .RB [ \-p\
+@@ -50,6 +52,9 @@ dmenu matches menu items case insensitively.\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+ .TP\
++.BI \-h " height"\
++dmenu uses a menu line of at least 'height' pixels tall, but no less than 8.\
++.TP\
+ .BI \-m " monitor"\
+ dmenu is displayed on the monitor number supplied. Monitor numbers are starting\
+ from 0.\
+diff --git a/dmenu.c b/dmenu.c\
+index e7be8af..82b204b 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -148,7 +148,7 @@ drawmenu(void)\
+ {\
+ 	unsigned int curpos;\
+ 	struct item *item;\
+-	int x = 0, y = 0, w;\
++	int x = 0, y = 0, fh = drw->fonts->h, w;\
+ \
+ 	drw_setscheme(drw, scheme[SchemeNorm]);\
+ 	drw_rect(drw, 0, 0, mw, mh, 1, 1);\
+@@ -165,7 +165,7 @@ drawmenu(void)\
+ 	curpos = TEXTW(text) - TEXTW(&text[cursor]);\
+ 	if ((curpos += lrpad / 2 - 1) < w) {\
+ 		drw_setscheme(drw, scheme[SchemeNorm]);\
+-		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);\
++		drw_rect(drw, x + curpos, 2 + (bh - fh) / 2, 2, fh - 4, 1, 0);\
+ 	}\
+ \
+ 	if (lines > 0) {\
+@@ -630,6 +630,7 @@ setup(void)\
+ \
+ 	/* calculate menu geometry */\
+ 	bh = drw->fonts->h + 2;\
++	bh = MAX(bh,lineheight);	/* make a menu line AT LEAST 'lineheight' tall */\
+ 	lines = MAX(lines, 0);\
+ 	mh = (lines + 1) * bh;\
+ #ifdef XINERAMA\
+@@ -710,7 +711,7 @@ setup(void)\
+ static void\
+ usage(void)\
+ {\
+-	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"\
++	die("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"\
+ 	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");\
+ }\
+ \
+@@ -737,6 +738,10 @@ main(int argc, char *argv[])\
+ 		/* these options take one argument */\
+ 		else if ("-l"))   /* number of lines in vertical list */\
+ 			lines = atoi(argv[++i]);\
++		else if (!strcmp(argv[i], "-h")) { /* minimum height of one menu line */\
++			lineheight = atoi(argv[++i]);\
++			lineheight = MAX(lineheight, min_lineheight);\
++		}\
+ 		else if (!strcmp(argv[i], "-m"))\
+ 			mon = atoi(argv[++i]);\
+ 		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */\
+-- \
+2.38.1\
+\
+" >> dmenu-lineheight-5.2.diff\
+
+: 1732366189:0;sudo echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
+From: pskry <peter@skrypalle.dk>\
+Date: Sun, 8 Nov 2020 22:04:22 +0100\
+Subject: [PATCH] Add an option which defines the lineheight\
+\
+Despite both the panel and dmenu using the same font (a Terminus 12),\
+dmenu is shorter and the panel is visible from under the dmenu bar.\
+The appearance can be even more distracting when using similar colors\
+for background and selections. With the option added by this patch,\
+dmenu can be launched with a '-h 24', thus completely covering the panel.\
+---\
+ config.def.h |  3 +++\
+ dmenu.1      |  5 +++++\
+ dmenu.c      | 11 ++++++++---\
+ 3 files changed, 16 insertions(+), 3 deletions(-)\
+\
+diff --git a/config.def.h b/config.def.h\
+index 1edb647..4394dec 100644\
+--- a/config.def.h\
++++ b/config.def.h\
+@@ -15,6 +15,9 @@ static const char *colors[SchemeLast][2] = {\
+ };\
+ /* -l option; if nonzero, dmenu uses vertical list with given number of lines */\
+ static unsigned int lines      = 0;\
++/* -h option; minimum height of a menu line */\
++static unsigned int lineheight = 0;\
++static unsigned int min_lineheight = 8;\
+ \
+ /*\
+  * Characters not considered part of a word while deleting words\
+diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..f2a82b4 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -6,6 +6,8 @@ dmenu \- dynamic menu\
+ .RB [ \-bfiv ]\
+ .RB [ \-l\
+ .IR lines ]\
++.RB [ \-h\
++.IR height ]\
+ .RB [ \-m\
+ .IR monitor ]\
+ .RB [ \-p\
+@@ -50,6 +52,9 @@ dmenu matches menu items case insensitively.\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+ .TP\
++.BI \-h " height"\
++dmenu uses a menu line of at least 'height' pixels tall, but no less than 8.\
++.TP\
+ .BI \-m " monitor"\
+ dmenu is displayed on the monitor number supplied. Monitor numbers are starting\
+ from 0.\
+diff --git a/dmenu.c b/dmenu.c\
+index e7be8af..82b204b 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -148,7 +148,7 @@ drawmenu(void)\
+ {\
+ 	unsigned int curpos;\
+ 	struct item *item;\
+-	int x = 0, y = 0, w;\
++	int x = 0, y = 0, fh = drw->fonts->h, w;\
+ \
+ 	drw_setscheme(drw, scheme[SchemeNorm]);\
+ 	drw_rect(drw, 0, 0, mw, mh, 1, 1);\
+@@ -165,7 +165,7 @@ drawmenu(void)\
+ 	curpos = TEXTW(text) - TEXTW(&text[cursor]);\
+ 	if ((curpos += lrpad / 2 - 1) < w) {\
+ 		drw_setscheme(drw, scheme[SchemeNorm]);\
+-		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);\
++		drw_rect(drw, x + curpos, 2 + (bh - fh) / 2, 2, fh - 4, 1, 0);\
+ 	}\
+ \
+ 	if (lines > 0) {\
+@@ -630,6 +630,7 @@ setup(void)\
+ \
+ 	/* calculate menu geometry */\
+ 	bh = drw->fonts->h + 2;\
++	bh = MAX(bh,lineheight);	/* make a menu line AT LEAST 'lineheight' tall */\
+ 	lines = MAX(lines, 0);\
+ 	mh = (lines + 1) * bh;\
+ #ifdef XINERAMA\
+@@ -710,7 +711,7 @@ setup(void)\
+ static void\
+ usage(void)\
+ {\
+-	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"\
++	die("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"\
+ 	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");\
+ }\
+ \
+@@ -737,6 +738,10 @@ main(int argc, char *argv[])\
+ 		/* these options take one argument */\
+ 		else if ("-l"))   /* number of lines in vertical list */\
+ 			lines = atoi(argv[++i]);\
++		else if ("-h")) { /* minimum height of one menu line */\
++			lineheight = atoi(argv[++i]);\
++			lineheight = MAX(lineheight, min_lineheight);\
++		}\
+ 		else if (!strcmp(argv[i], "-m"))\
+ 			mon = atoi(argv[++i]);\
+ 		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */\
+-- \
+2.38.1\
+\
+" >> dmenu-lineheight-5.2.diff\
+
+: 1732366200:0;nvim dmenu-lineheight-5.2.diff
+: 1732366215:0;ls
+: 1732366226:0;git clone https://git.suckless.org/dmenu\
+cd dmenu\
+
+: 1732366246:0;patch -p1 < ../dmenu-lineheight-5.2.diff\
+
+: 1732366252:0;sudo make clean install\
+
+: 1732366267:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 24
+: 1732366273:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 26
+: 1732366277:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+: 1732366297:0;sudo dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
+: 1732366299:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
+: 1732366304:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+: 1732366350:0;c
+: 1732366351:0;cd
+: 1732366354:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+: 1732366538:0;sudo pacman -R rofi
+: 1732366540:0;c
+: 1732366555:0;nvim
+: 1732366573:0;cd .dotfile
+: 1732366574:0;cd .dotfiles
+: 1732366575:0;ls
+: 1732366576:0;gs
+: 1732366592:0;nvim
+: 1732366855:0;gs
+: 1732366877:0;git add .config/ohmyposh/zen.toml.bak
+: 1732366879:0;gs
+: 1732366897:0;ls
+: 1732366900:0;yazi
+: 1732366921:0;nvim
+: 1732366992:0;cd .dotfiles
+: 1732366994:0;gs
+: 1732367028:0;nvim
+: 1732367049:0;cd
+: 1732367049:0;ls
+: 1732367056:0;nvim
+: 1732367127:0;ls
+: 1732367131:0;vim
+: 1732367135:0;nvim 
+: 1732367154:0;cd .dotfiles
+: 1732367156:0;gs
+: 1732367173:0;nvim-own
+: 1732367245:0;gs
+: 1732367294:0;git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes"
+: 1732367299:0;git push origin main
+: 1732367303:0;gh
+: 1732367317:0;sudo pacman -Sy github-cli
+: 1732367325:0;git push origin main
+: 1732367330:0;gh auth login
+: 1732367376:0;c
+: 1732367378:0;git push origin main
+: 1732367443:0;gs
+: 1732367447:0;git add .

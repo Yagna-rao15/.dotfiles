@@ -7,6 +7,7 @@ export VISUAL="nvim"
 export SHELL="zsh"
 export TERMINAL="alacritty"
 export TERM="xterm-256color"
+export MANPAGER='nvim +Man!'
 
 # XDG Base Directory Specification
 export XDG_DATA_HOME="${HOME}/.local/share"

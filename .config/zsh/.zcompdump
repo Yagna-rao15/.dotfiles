@@ -1,4 +1,4 @@
-#files: 841	version: 5.9
+#files: 811	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -81,7 +81,6 @@ _comps=(
 'basename' '_basename'
 'basenc' '_basenc'
 'bash' '_bash'
-'bat' '_bat'
 'batch' '_at'
 'baz' '_baz'
 'beep' '_beep'
@@ -136,6 +135,7 @@ _comps=(
 'cabal' '_cabal'
 'cal' '_cal'
 'calendar' '_calendar'
+'cargo' '_cargo'
 'cat' '_cat'
 'catchsegv' '_precommand'
 'cc' '_gcc'
@@ -149,12 +149,10 @@ _comps=(
 'ceilometer' '_openstack'
 'certtool' '_gnutls'
 'cftp' '_twisted'
-'chafa' '_chafa'
 'chage' '_users'
 'chattr' '_chattr'
 'chcon' '_chcon'
 'chdir' '_cd'
-'checkupdates' '_checkupdates'
 'chfn' '_users'
 'chgrp' '_chown'
 'chimera' '_webbrowser'
@@ -181,6 +179,7 @@ _comps=(
 'cmp' '_cmp'
 'co' '_rcs'
 'code' '_code'
+'code-oss' '_code-oss'
 'column' '_column'
 'comb' '_sccs'
 'combine' '_imagemagick'
@@ -220,7 +219,6 @@ _comps=(
 'ctags' '_ctags'
 'ctags-exuberant' '_ctags'
 'ctags-universal' '_ctags'
-'ctr' '_ctr'
 'curl' '_curl'
 'cut' '_cut'
 'cvs' '_cvs'
@@ -265,7 +263,6 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
-'docker' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
 'drill' '_drill'
@@ -324,11 +321,9 @@ _comps=(
 'extractres' '_psutils'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
-'fastfetch' '_fastfetch'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
-'fd' '_fd'
 'feh' '_feh'
 'fetchmail' '_fetchmail'
 'ffmpeg' '_ffmpeg'
@@ -353,7 +348,6 @@ _comps=(
 'fixwpps' '_psutils'
 'fixwwps' '_psutils'
 'flac' '_flac'
-'flatpak' '_flatpak'
 'flex' '_flex'
 'flex++' '_flex'
 'flipdiff' '_patchutils'
@@ -429,7 +423,6 @@ _comps=(
 'ggetopt' '_getopt'
 'ggrep' '_grep'
 'ggv' '_gnome-gv'
-'gh' '_gh'
 'ghead' '_head'
 'ghostscript' '_ghostscript'
 'ghostview' '_pspdf'
@@ -476,7 +469,6 @@ _comps=(
 'gofmt' '_go'
 'gpasswd' '_gpasswd'
 'gpaste' '_paste'
-'gpaste-client' '_gpaste-client'
 'gpatch' '_patch'
 'gpg' '_gpg'
 'gpg2' '_gpg'
@@ -600,7 +592,6 @@ _comps=(
 'iftop' '_iftop'
 'ifup' '_net_interfaces'
 'ijoin' '_ispell'
-'img2sixel' '_img2sixel'
 'import' '_imagemagick'
 'inc' '_mh'
 'includeres' '_psutils'
@@ -801,7 +792,6 @@ _comps=(
 'mpc' '_mpc'
 'mplayer' '_mplayer'
 'mpstat' '_sysstat'
-'mpv' '_mpv'
 'mr' '_myrepos'
 'mrd' '_mtools'
 'mread' '_mtools'
@@ -848,6 +838,7 @@ _comps=(
 'nginx' '_nginx'
 'ngrep' '_ngrep'
 'nice' '_nice'
+'nix' '_nix'
 'nkf' '_nkf'
 'nl' '_nl'
 'nm' '_nm'
@@ -871,7 +862,6 @@ _comps=(
 'oggdec' '_vorbis'
 'oggenc' '_vorbis'
 'ogginfo' '_vorbis'
-'oh-my-posh' '_oh-my-posh'
 'oksh' '_sh'
 'okular' '_okular'
 'oomctl' '_oomctl'
@@ -885,29 +875,20 @@ _comps=(
 'p4' '_perforce'
 'p4d' '_perforce'
 'pacat' '_pulseaudio'
-'paccache' '_paccache'
-'pacdiff' '_pacdiff'
 'pack' '_pack'
 'packf' '_mh'
-'paclist' '_paclist'
-'paclog-pkglist' '_paclog-pkglist'
 'pacman' '_pacman'
 'pacman-conf' '_pacman'
 'pacman-key' '_pacman'
 'pacman.static' '_pacman'
 'pacmd' '_pulseaudio'
-'pacscripts' '_pacscripts'
-'pacsearch' '_pacsearch'
-'pacsort' '_pacsort'
 'pactl' '_pulseaudio'
-'pactree' '_pactree'
 'padsp' '_pulseaudio'
 'pandoc' '_pandoc'
 'paplay' '_pulseaudio'
 '-parameter-' '_parameter'
 'parec' '_pulseaudio'
 'parecord' '_pulseaudio'
-'pass' '_pass'
 'passwd' '_users'
 'paste' '_paste'
 'pasuspender' '_pulseaudio'
@@ -1035,7 +1016,6 @@ _comps=(
 'quilt' '_quilt'
 'r' '_fc'
 'rake' '_rake'
-'rankmirrors' '_rankmirrors'
 'ranlib' '_ranlib'
 'rar' '_rar'
 'rc' '_sh'
@@ -1098,7 +1078,6 @@ _comps=(
 'rubber-pipe' '_rubber'
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
-'ruff' '_ruff'
 'run0' '_run0'
 'run-help' '_run-help'
 'rup' '_hosts'
@@ -1291,11 +1270,6 @@ _comps=(
 'traceroute' '_hosts'
 'transmission-remote' '_transmission'
 'trap' '_trap'
-'trash' '_trash'
-'trash-empty' '_trash-empty'
-'trash-list' '_trash-list'
-'trash-put' '_trash-put'
-'trash-restore' '_trash-restore'
 'tree' '_tree'
 'trial' '_twisted'
 'trove' '_openstack'
@@ -1347,7 +1321,6 @@ _comps=(
 'unwrapdiff' '_patchutils'
 'unxz' '_xz'
 'unzip' '_zip'
-'updpkgsums' '_updpkgsums'
 'uptime' '_uptime'
 'urxvt' '_urxvt'
 'urxvt256c' '_urxvt'
@@ -1456,8 +1429,6 @@ _comps=(
 'wipefs' '_wipefs'
 'wodim' '_cdrecord'
 'wpa_cli' '_wpa_cli'
-'wpctl' '_wpctl'
-'wpg' '_wpg'
 'write' '_users_on'
 'www' '_webbrowser'
 'xargs' '_xargs'
@@ -1562,7 +1533,6 @@ _comps=(
 'zmodload' '_zmodload'
 'zmv' '_zmv'
 'zone' '_hosts'
-'zoxide' '_zoxide'
 'zparseopts' '_zparseopts'
 'zpool' '_zfs'
 'zpty' '_zpty'
@@ -1690,22 +1660,16 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _alacritty _bat _bluetoothctl _bootctl _busctl \
-            _bwrap _chafa _checkupdates _coredumpctl _ctr \
-            _curl _docker _fastfetch _fd _flatpak \
-            _gh _gpaste-client _hostnamectl _img2sixel _journalctl \
-            _kernel-install _libinput _localectl _loginctl _machinectl \
-            _mkinitcpio _mpv _networkctl _oh-my-posh _oomctl \
-            _paccache _pacdiff _paclist _paclog-pkglist _pacman \
-            _pacscripts _pacsearch _pacsort _pactree _pass \
-            _pip _polybar _polybar_msg _pulseaudio _rankmirrors \
-            _resolvectl _rg _ruff _run0 _sd_hosts_or_user_at_host \
-            _sd_machines _sd_outputmodes _sd_unit_files _systemctl _systemd \
-            _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path \
-            _systemd-run _systemd-tmpfiles _timedatectl _trash _trash-empty \
-            _trash-list _trash-put _trash-restore _udevadm _udisks2 \
-            _updpkgsums _varlinkctl _wpctl _wpg _yay \
-            _yazi _zoxide _cdr _all_labels _all_matches \
+autoload -Uz _alacritty _bluetoothctl _bootctl _busctl _bwrap \
+            _cargo _code _code-oss _coredumpctl _curl \
+            _hostnamectl _journalctl _kernel-install _libinput _localectl \
+            _loginctl _machinectl _mkinitcpio _networkctl _nix \
+            _oomctl _pacman _polybar _polybar_msg _pulseaudio \
+            _resolvectl _rg _run0 _sd_hosts_or_user_at_host _sd_machines \
+            _sd_outputmodes _sd_unit_files _systemctl _systemd _systemd-analyze \
+            _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run \
+            _systemd-tmpfiles _timedatectl _udevadm _udisks2 _varlinkctl \
+            _yay _yazi _cdr _all_labels _all_matches \
             _alternative _approximate _arg_compile _arguments _bash_completions \
             _cache_invalid _call_function _combination _complete _complete_debug \
             _complete_help _complete_help_generic _complete_tag _comp_locale _correct \

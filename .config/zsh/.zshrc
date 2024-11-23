@@ -1,5 +1,5 @@
 # Source zshenv and alias
-source "$XDG_CONFIG_HOME/zsh/.alias"
+source "$HOME/.config/zsh/.alias"
 
 export COLOR=#00f
 

@@ -44,7 +44,8 @@ bindsym $mod+Shift+a focus child
 bindsym $mod+Shift+space floating toggle
 
 # enabling rofi
-bindsym $mod+space exec rofi -show drun
+# bindsym $mod+space exec rofi -show drun
+bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono' -h 32
 
 # change focus
 bindsym $mod+h focus left
@@ -156,7 +157,7 @@ bindsym $mod+r mode "resize"
 # }
 
 # Setting Wallpaper
-exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/bg.png --no-fehbg
+exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
 # exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/miles-morales-in-jacket-spiderman-desktop-wallpaper.jpg --no-fehbg
