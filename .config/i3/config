@@ -4,7 +4,7 @@ set $shutdown shutdown now
 set $reboot reboot
 
 for_window [class="^.*"] border pixel 1.1
-for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
+for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4 #285577
 
 font pango:JetBrainsMono Nerd Font 15
 floating_modifier $mod
@@ -45,7 +45,8 @@ bindsym $mod+Shift+space floating toggle
 
 # enabling rofi
 # bindsym $mod+space exec rofi -show drun
-bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+bindsym $mod+space exec ~/.dotfiles/.local/bin/apps.sh
+# bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono' -h 32
 
 # change focus
 bindsym $mod+h focus left

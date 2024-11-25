@@ -1,7 +1,7 @@
 This is my personal Dotfiles Repo
 
 # Prerequisites:
-- i3 alacritty git nano neovim vim nautulus yazi neofetch htop sudo feh zsh ttf-jetbrains-mono
+- i3 alacritty git nano neovim vim nautulus yazi neofetch htop sudo feh zsh ttf-jetbrains-mono networkmanager pulseaudio
 - yay for AUR, nvm,
 - dmenu( with height patch )
 

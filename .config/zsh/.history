@@ -119,7 +119,6 @@ gh status
 gh auth status
 gh auth refresh
 gh auth log
-gh auth login
 cd .dotfiles/.config/zsh
 ls ../bash
 echo PATH
@@ -1185,7 +1184,6 @@ nvim .local/share/icons
 ln -s /usr/share/icons/macOS/cursors ~/.local/share/icons/default/cursors
 cat .local/share/nvim-kickstart/lazy/tokyonight.nvim/extras/xresources/tokyonight_day.Xresources
 cd /usr
-nautilus
 sudo nautilus
 nautilus admin:/
 yay -S ninvaders
@@ -1711,7 +1709,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
 ~/.local/share/nvim-test/site/pack/packer/start/packer.nvim\
 
 \:q
-qq
 rm /var/lib/pacman/db.lck\
 
 sudo rm /var/lib/pacman/db.lck\
@@ -1787,7 +1784,6 @@ rm -rf .config/nvim-test
 rm -rf .config/nvim-test-2
 ls ~/.config
 rm -rf nvim-lazy nvim-own
-nvimm
 ls .config | grep nvim
 rm -rf .config/nvim-lazy
 rm -rf .gitignore
@@ -1822,13 +1818,10 @@ mv lua/colors colors
 ls colors
 cat .config/nvim-own/colors/ayudark.lua
 git clone https://github.com/NvChad/starter ~/.config/nvim-nv && nvim-nv
-neofetch
 x
-time zsh --interactive -c exit
 rm -rf colors
 cd core
 cp ~/.config/nvim/lua/plugins/init.lua ~/.config/nvim-own/lua/plugins
-cmatrix
 fastfetch
 nvim-own\\
 
@@ -1965,7 +1958,6 @@ ls /mnt\
 rebot
 sudo gparted
 sudo update-grub
-lsblk
 sudo mount /dev/nvme0n1p1 /boot
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --boot-loader-id=GRUB
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
@@ -1993,7 +1985,6 @@ vim client/src/App.jsx
 ctags -R .
 rm tags
 nvim $(fzf)
-cd 
 cd .vim
 cd .config/nvim-own
 nvim-nv
@@ -2003,7 +1994,6 @@ mv nvim nvimmm\\
 
 mv nvim-own nvim
 mv nvimmm nvim-own
-nvim-own
 nvim\\
 
 cd Code/Code-Forces
@@ -2056,7 +2046,6 @@ curl http://localhost:5000/mars\
 
 git clone https://github.com/Vamshi6486/marslandsale.git
 cd marslandsale
-cd ~/.dotfiles
 git staus
 git tatus
 git status
@@ -2165,15 +2154,10 @@ cd Code
 git init
 rm -rf .git
 git commit -m "Backup before repair"
-git push origin main
 ls .vim
 .dotfiles
 ls .comfig
 ls .config
-cd
-cd .dotfiles
-gs
-git add .
 sudo pacman -Sy ttf-font-awesome
 nvim ~/.config/rofi
 sudo pacman -S --needed git base-devel
@@ -2211,11 +2195,8 @@ compinit\
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 clear
-sudo pacman -Sy nautilus
 sudo pacman -Sy yazi
-yazi
 sudo pacman -Sy feh
-vim
 pacman -Qs libinput\
 
 nvim /etc/X11/xorg.conf.d/40-libinput.conf
@@ -2244,8 +2225,6 @@ pp
 i[
 ip
 IPP
-nvim 
-tmux
 cargo
 sudo pacman -Sy nix
 systemctl enable --now nix-daemon.service
@@ -2270,7 +2249,6 @@ hello
 yay -S zsh-nix-shell
 nix-shell -p python3Packages.numpy\
 
-ls
 nix-shell -p python3Packages.numpy --run "zsh"\
 
 pyhton
@@ -2326,7 +2304,6 @@ sudo systemctl restart pulseaudio\
 sudo pacman -S linux-headers\
 
 reboot
-startx
 nix --version
 nix repl
 sudo pacman -R nautilus
@@ -2344,135 +2321,82 @@ date\
 sudo timedatectl set-timezone IST
 sudo timedatectl set-timezone Asia/Kolkata\
 
-sudo pacman -Syu
 export MANPAGER='nvim+Man!'
 man man
 export MANPAGER='nvim +Man!'
 nvim .config/zsh
 man grep
-nvim
 sudo pacman tealdeer
 sudo pacman -Sy tealdeer
 tldr --update
 tldr grep
 sudo pacman -R tealdeer
-sudo pacman -Sy tmux
-sudo pacman -Sy code
-code
 sudo pacman -Sy lxappearance
 nvim ~/.config/gtk-3.0/settings.ini
 ls -la'\
 
 ls -la
-c
-q
-: 1732311875:0;neofetch
-: 1732350196:0;startx
-: 1732351864:0;nvim
-: 1732353058:0;cd ~/.vscode/extensions\
+cd ~/.vscode/extensions\
 git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
 
-: 1732353064:0;ls
-: 1732353075:0;rm -rf vscode-pitch-black-theme
-: 1732353076:0;ls
-: 1732353109:0;cd ~/.vscode-oss/extensions\
+rm -rf vscode-pitch-black-theme
+cd ~/.vscode-oss/extensions\
 git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
 
-: 1732353214:0;cd 
-: 1732353216:0;c
-: 1732353360:0;sudo pacman -R code
-: 1732353417:0;yay -S visual-studio-code-bin
-: 1732353531:0;c
-: 1732353533:0;code
-: 1732353643:0;yay -R visual-studio-code-bin
-: 1732353647:0;c
-: 1732353656:0;sudo pacman -Sy code
-: 1732353668:0;c
-: 1732353778:0;yay -S apple_cursor
-: 1732353831:0;c
-: 1732353832:0;startx
-: 1732354135:0;nvim 
-: 1732354263:0;nvim Downloads/test.jsx
-: 1732354936:0;nvim
-: 1732355135:0;vim
-: 1732355288:0;nvim
-: 1732355308:0;c
-: 1732355491:0;finger
-: 1732355492:0;c
-: 1732356889:0;time zsh --interactive -c exit
-: 1732356906:0;c
-: 1732356939:0;cat Downloads/test.jsx
-: 1732356950:0;cat Downloads/test.jsx | button
-: 1732356954:0;cat cat Downloads/test.jsx | button
-: 1732356959:0;grep cat cat Downloads/test.jsx | button
-: 1732356964:0;c
-: 1732356980:0;grep button Downloads/test.jsx
-: 1732356984:0;c
-: 1732356989:0;button Downloads/test.jsx
-: 1732356994:0;grep button Downloads/test.jsx
-: 1732356996:0;c
-: 1732357003:0;nvimm
-: 1732357015:0;sudo nvimm
-: 1732357019:0;c
-: 1732357039:0;cd .dotfiles
-: 1732357041:0;ls
-: 1732357050:0;nvim README.md
-: 1732357316:0;cd .dotfiles
-: 1732357320:0;sudo nvimm
-: 1732357326:0;c
-: 1732357421:0;cd
-: 1732357461:0;ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua//core
-: 1732357468:0;ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua/core
-: 1732357475:0;c
-: 1732357495:0;ls Downloads ls Downloads 
-: 1732357540:0;c\\
+cd 
+sudo pacman -R code
+yay -S visual-studio-code-bin
+code
+yay -R visual-studio-code-bin
+sudo pacman -Sy code
+yay -S apple_cursor
+nvim Downloads/test.jsx
+finger
+cat Downloads/test.jsx
+cat Downloads/test.jsx | button
+cat cat Downloads/test.jsx | button
+grep cat cat Downloads/test.jsx | button
+button Downloads/test.jsx
+grep button Downloads/test.jsx
+nvimm
+sudo nvimm
+ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua//core
+ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua/core
+ls Downloads ls Downloads 
+c\\
 c
-: 1732357541:0;c
-: 1732357552:0;cd Downloads 
-: 1732357554:0;c
-: 1732360348:0;poweroff
-: 1732362458:0;sstartx
-: 1732362460:0;startx
-: 1732363433:0;time zsh --interactive -c exit
-: 1732363442:0;c
-: 1732363446:0;time zsh --interactive -c exit
-: 1732363951:0;c
-: 1732363956:0;lsblk
-: 1732363978:0;c
-: 1732364154:0;sudo pacman -Sy polkit
-: 1732364168:0;nautilus
-: 1732364176:0;sudo pacman -Sy nautilus
-: 1732364181:0;c
-: 1732364247:0;pgrep -af polkit-gnome
-: 1732364266:0;sudo pacman -Sy lxsession
-: 1732364271:0;c
-: 1732364404:0;sudo pacman -R lxsession
-: 1732364408:0;c
-: 1732364433:0;sudo pacman -Sy polkit-gnome gvfs gvfs-gphoto2
-: 1732364453:0;c
-: 1732365072:0;sudo pacman -Sy dmenu xautolock i3lock
-: 1732365089:0;nvim
-: 1732365176:0;dmenu
-: 1732365186:0;dmenu --help
-: 1732365199:0;dmenu -v
-: 1732365202:0;dmenu -h
-: 1732365223:0;dmenu_run
-: 1732365377:0;man dmenu
-: 1732365599:0;dmenu_run -nb #000 -nf #74c7ec
-: 1732365657:0;dmenu_run -nb #000 -nf #000 -sb #74c7ec -sf #000
-: 1732365667:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000
-: 1732365704:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: "
-: 1732365722:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
-: 1732365804:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -fn "JetBrainsMono" -h 12
-: 1732365810:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -h 12
-: 1732365815:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
-: 1732365827:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -h 24
-: 1732365880:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
-: 1732366039:0;dmenu -v
-: 1732366075:0;sudo pacman -R dmenu
-: 1732366090:0;cd /temp
-: 1732366095:0;cd /tmp
-: 1732366185:0;echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
+cd Downloads 
+poweroff
+sstartx
+time zsh --interactive -c exit
+lsblk
+sudo pacman -Sy polkit
+nautilus
+sudo pacman -Sy nautilus
+pgrep -af polkit-gnome
+sudo pacman -Sy lxsession
+sudo pacman -R lxsession
+sudo pacman -Sy polkit-gnome gvfs gvfs-gphoto2
+sudo pacman -Sy dmenu xautolock i3lock
+dmenu
+dmenu --help
+dmenu -h
+dmenu_run
+man dmenu
+dmenu_run -nb #000 -nf #74c7ec
+dmenu_run -nb #000 -nf #000 -sb #74c7ec -sf #000
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: "
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -fn "JetBrainsMono" -h 12
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -h 12
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -h 24
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
+dmenu -v
+sudo pacman -R dmenu
+cd /temp
+cd /tmp
+echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
 From: pskry <peter@skrypalle.dk>\
 Date: Sun, 8 Nov 2020 22:04:22 +0100\
 Subject: [PATCH] Add an option which defines the lineheight\
@@ -2580,7 +2504,7 @@ index e7be8af..82b204b 100644\
 \
 " >> dmenu-lineheight-5.2.diff\
 
-: 1732366189:0;sudo echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
+sudo echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
 From: pskry <peter@skrypalle.dk>\
 Date: Sun, 8 Nov 2020 22:04:22 +0100\
 Subject: [PATCH] Add an option which defines the lineheight\
@@ -2688,58 +2612,127 @@ index e7be8af..82b204b 100644\
 \
 " >> dmenu-lineheight-5.2.diff\
 
-: 1732366200:0;nvim dmenu-lineheight-5.2.diff
-: 1732366215:0;ls
-: 1732366226:0;git clone https://git.suckless.org/dmenu\
+nvim dmenu-lineheight-5.2.diff
+git clone https://git.suckless.org/dmenu\
 cd dmenu\
 
-: 1732366246:0;patch -p1 < ../dmenu-lineheight-5.2.diff\
+patch -p1 < ../dmenu-lineheight-5.2.diff\
 
-: 1732366252:0;sudo make clean install\
+sudo make clean install\
 
-: 1732366267:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 24
-: 1732366273:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 26
-: 1732366277:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
-: 1732366297:0;sudo dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
-: 1732366299:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
-: 1732366304:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
-: 1732366350:0;c
-: 1732366351:0;cd
-: 1732366354:0;dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
-: 1732366538:0;sudo pacman -R rofi
-: 1732366540:0;c
-: 1732366555:0;nvim
-: 1732366573:0;cd .dotfile
-: 1732366574:0;cd .dotfiles
-: 1732366575:0;ls
-: 1732366576:0;gs
-: 1732366592:0;nvim
-: 1732366855:0;gs
-: 1732366877:0;git add .config/ohmyposh/zen.toml.bak
-: 1732366879:0;gs
-: 1732366897:0;ls
-: 1732366900:0;yazi
-: 1732366921:0;nvim
-: 1732366992:0;cd .dotfiles
-: 1732366994:0;gs
-: 1732367028:0;nvim
-: 1732367049:0;cd
-: 1732367049:0;ls
-: 1732367056:0;nvim
-: 1732367127:0;ls
-: 1732367131:0;vim
-: 1732367135:0;nvim 
-: 1732367154:0;cd .dotfiles
-: 1732367156:0;gs
-: 1732367173:0;nvim-own
-: 1732367245:0;gs
-: 1732367294:0;git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes"
-: 1732367299:0;git push origin main
-: 1732367303:0;gh
-: 1732367317:0;sudo pacman -Sy github-cli
-: 1732367325:0;git push origin main
-: 1732367330:0;gh auth login
-: 1732367376:0;c
-: 1732367378:0;git push origin main
-: 1732367443:0;gs
-: 1732367447:0;git add .
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 24
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 26
+sudo dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+sudo pacman -R rofi
+cd .dotfile
+git add .config/ohmyposh/zen.toml.bak
+yazi
+cd
+vim
+nvim 
+nvim-own
+git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes"
+gh
+sudo pacman -Sy github-cli
+gh auth login
+git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes (now its done)"
+git push origin main
+grep -h "^Name=" /usr/share/applications/*.desktop ~/.local/share/applications/*.desktop | cut -d '=' -f 2\
+
+compgen -c\
+
+grep -h "^Exec=" /usr/share/applications/*.desktop ~/.local/share/applications/*.desktop | \\
+cut -d '=' -f 2 | \\
+sed 's/ .*$//' | \\
+sort -u | \\
+dmenu -i -p "Applications: "\
+
+find /usr/share/applications ~/.local/share/applications -name "*.desktop"\
+
+cd .config/scripts
+nvim apps.sh
+chmod +x apps.sh
+./apps.sh
+cd ~/.dotfiles
+git add .
+gs
+nvim README.md
+sudo pacman -Sy firefox
+sudo pacman -S firefox
+sudo pacman -R firefox
+sudo pacman -Syu
+cd .dotfiles
+ls
+mv .config/scripts/* .local/bin/
+nvim
+df -h /home
+echo $$
+startx
+neofetch
+sudo pacman -Sy cmatrix
+cmatrix
+sudo pacman -Sy tmux
+tmux
+c
+1q
+qq
+q
+: 1732419538:0;startx
+: 1732447211:0;sudo pacman -Sy bluez bluez-utils blueman
+: 1732447248:0;lsmod | grep btusb
+: 1732447259:0;sudo vim /etc/bluetooth/main.conf
+: 1732447309:0;sudo systemctl start bluetooth.service\
+
+: 1732447314:0;sudo systemctl enable bluetooth.service
+: 1732447640:0;sudo pacman -S pulseaudio-bluetooth
+: 1732447648:0;sudo systemctl pulseaudio start
+: 1732447665:0;sudo systemctl start pulseaudio
+: 1732447692:0;sudo pacman -S pulseaudio
+: 1732447699:0;sudo systemctl start pulseaudio
+: 1732447743:0;sudo pacman -S pulseaudio\
+sudo pacman -S pulseaudio-bluetooth\
+
+: 1732447755:0;sudo systemctl pulseaudio start
+: 1732447762:0;sudo systemctl start pulseaudio
+: 1732447768:0;sudo pacman -S pavucontrol\
+pavucontrol
+: 1732447914:0;sudo systemctl status bluetooth.service
+: 1732447925:0;bluetoothctl
+: 1732448231:0;blueman-applet
+: 1732448243:0;c
+: 1732448262:0;blueman-manager
+: 1732448312:0;c
+: 1732448317:0;blueman-applet
+: 1732448323:0;blueman-manager
+: 1732448395:0;systemctl status bluetooth\
+
+: 1732448414:0;sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
+
+: 1732448427:0;pulseaudio --kill\
+pulseaudio --start\
+
+: 1732448432:0;sudo nano /etc/bluetooth/main.conf\
+
+: 1732448487:0;sudo systemctl restart bluetooth\
+
+: 1732448511:0;blueman-applet
+: 1732448518:0;blueman-manager
+: 1732453401:0;iw
+: 1732455691:0;blueman-manager
+: 1732455709:0;blueman-applet
+: 1732455718:0;blueman-manager
+: 1732582682:0;starts
+: 1732582684:0;startx
+: 1732582708:0;blueman-applet
+: 1732563102:0;mv ML\ LAB ML
+: 1732563103:0;ls
+: 1732563111:0;cd ML
+: 1732563115:0;nvim
+: 1732563124:0;ls
+: 1732563137:0;nvim shell.nix
+: 1732563157:0;nix-shell
+: 1732569098:0;cd .dotfiles
+: 1732569100:0;gs
+: 1732569120:0;git add .
