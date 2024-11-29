@@ -181,3 +181,9 @@ set showcmd
 " highlight Normal guibg=NONE
 " highlight NormalFloat guibg=NONE
 
+set runtimepath^=~/.config/vim
+set directory=~/.cache/vim/swap
+set backupdir=~/.cache/vim/backup
+set undodir=~/.cache/vim/undo
+set viminfofile=~/.local/state/vim/viminfo
+

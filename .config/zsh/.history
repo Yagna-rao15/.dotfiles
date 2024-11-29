@@ -77,7 +77,6 @@ cd .texlive
 ./texmf-var
 rm -rf .texlive
 ls .jupyter
-starts
 \\
 ping google.com
 zinit
@@ -107,7 +106,6 @@ cd pictures
 
 nvim .vimrc
 rm .vimrc
-rm .viminfo
 rm -rf .vim
 rm -rf recovery
 rm downloads
@@ -172,7 +170,6 @@ echo $BASH
 cat .Xauthority 
 mkdir .dotfiles/x11
 mv .dotfiles/x11 .dotfiles/x
-ls .dotfiles
 mv .Xauthority .dotfiles/x/Xauthority
 mv .xinitrc .dotfiles/x/xinitrc
 ls gh
@@ -183,7 +180,6 @@ man grep -r
 git branch --verbose
 cat .config/tmux/tmux-cheetsheet.md
 echo $(tty)
-man startx
 git commit -m "Fixed xinitrc and Xauthentication, fixed zsh and bashrc files"
 man -t startx
 man -t startx | Ip
@@ -299,7 +295,6 @@ nvm install node
 npm
 rm -rf go
 sudo rm -rf go
-ld
 echo $ZDOTDIR
 q\\
 q
@@ -670,7 +665,6 @@ git commit -m "9/11 2024 LOL"
 ls\\
 
 cat .bash_history
-rm .bash_history
 ls .config/zsh/.history
 nvim-name.sh
 vim ~/.viminfo
@@ -1184,7 +1178,6 @@ nvim .local/share/icons
 ln -s /usr/share/icons/macOS/cursors ~/.local/share/icons/default/cursors
 cat .local/share/nvim-kickstart/lazy/tokyonight.nvim/extras/xresources/tokyonight_day.Xresources
 cd /usr
-sudo nautilus
 nautilus admin:/
 yay -S ninvaders
 yay -S moon-buggy 
@@ -1273,7 +1266,6 @@ skbd
 sdbgdssd
 sdg
 ,shbsdh
-cd ML
 mv Amazon ../Archive
 ls Desktop
 ls Documents
@@ -1708,7 +1700,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
 git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
 ~/.local/share/nvim-test/site/pack/packer/start/packer.nvim\
 
-\:q
 rm /var/lib/pacman/db.lck\
 
 sudo rm /var/lib/pacman/db.lck\
@@ -1763,7 +1754,6 @@ rm /etc/systemd/system/udevmon.service
 sudo rm /etc/systemd/system/udevmon.service
 adb devices
 mv ~/Downloads/71.cpp ~/Code/SS/lab-7/1.cpp
-gcc 1.c -o 1
 cat ../lab-5/prod.txt
 sudo ./[A
 cd -
@@ -1803,8 +1793,6 @@ ls ~/.config | grep nvim
 cd ~/.dotfiles/.config/nvim-own
 rm -rf ~/.config/nvim-own
 mv .config/pulse ~/.config/pulse
-stow .
-ls ~
 rm -rf ~/.x11
 cat .config/nvim-own/lua/plugins/init.lua
 cp ~/.config/nvim/lua/plugins/treesitter.lua ~/.config/nvim-own/lua/plugins
@@ -1818,7 +1806,6 @@ mv lua/colors colors
 ls colors
 cat .config/nvim-own/colors/ayudark.lua
 git clone https://github.com/NvChad/starter ~/.config/nvim-nv && nvim-nv
-x
 rm -rf colors
 cd core
 cp ~/.config/nvim/lua/plugins/init.lua ~/.config/nvim-own/lua/plugins
@@ -2120,7 +2107,6 @@ jupyter notebook
 cd Downloads
 ls *.ipynb
 mv an-exploration-of-l1-and-l2-regularization.ipynb ~/Code/ML/lab-5/Regularization.ipynb
-;q
 git commit -m "Backup on 22/10/24"
 startx\\
 
@@ -2134,7 +2120,6 @@ mv 1.c lab-7/
 gcc -o 1 -fopenmp 1.c
 export OMP_NUM_THREADS=8
 gcc -o 2 -fopenmp 2.c
-./2
 gcc -o 3 -fopenmp 3.c
 ./3
 cd lab-8
@@ -2147,17 +2132,13 @@ mpirun -np 4 ./2
 ..
 cd lab-7
 cd Code/PPA/lab-7
-./1
 ip addr
 cd .config/nvim
-cd Code
 git init
 rm -rf .git
 git commit -m "Backup before repair"
-ls .vim
 .dotfiles
 ls .comfig
-ls .config
 sudo pacman -Sy ttf-font-awesome
 nvim ~/.config/rofi
 sudo pacman -S --needed git base-devel
@@ -2221,7 +2202,6 @@ sudo pacman -Sy bluez-utils
 yay -S bluetui
 cat .Xauthority
 cc
-pp
 i[
 ip
 IPP
@@ -2236,7 +2216,6 @@ nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 nix-channel --update
 sudo nix-channel --update
 exiut
-exit
 nix-env -iA nixpkgs.hello
 nix-channel --list\
 
@@ -2256,9 +2235,6 @@ python
 nvm -v
 lspci
 bluectl
-sudo systemctl restart bluetooth\
-
-bluetoothctl
 sudo pacman -Sy alsa-utils
 sudo pacman -S pavucontrol\
 
@@ -2303,7 +2279,6 @@ sudo systemctl restart pulseaudio\
 
 sudo pacman -S linux-headers\
 
-reboot
 nix --version
 nix repl
 sudo pacman -R nautilus
@@ -2371,7 +2346,6 @@ sstartx
 time zsh --interactive -c exit
 lsblk
 sudo pacman -Sy polkit
-nautilus
 sudo pacman -Sy nautilus
 pgrep -af polkit-gnome
 sudo pacman -Sy lxsession
@@ -2628,17 +2602,12 @@ dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'Jet
 sudo pacman -R rofi
 cd .dotfile
 git add .config/ohmyposh/zen.toml.bak
-yazi
-cd
-vim
-nvim 
 nvim-own
 git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes"
 gh
 sudo pacman -Sy github-cli
 gh auth login
 git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes (now its done)"
-git push origin main
 grep -h "^Name=" /usr/share/applications/*.desktop ~/.local/share/applications/*.desktop | cut -d '=' -f 2\
 
 compgen -c\
@@ -2656,83 +2625,164 @@ nvim apps.sh
 chmod +x apps.sh
 ./apps.sh
 cd ~/.dotfiles
-git add .
-gs
 nvim README.md
 sudo pacman -Sy firefox
 sudo pacman -S firefox
 sudo pacman -R firefox
-sudo pacman -Syu
-cd .dotfiles
-ls
 mv .config/scripts/* .local/bin/
-nvim
 df -h /home
 echo $$
-startx
-neofetch
 sudo pacman -Sy cmatrix
 cmatrix
-sudo pacman -Sy tmux
-tmux
-c
 1q
 qq
-q
-: 1732419538:0;startx
-: 1732447211:0;sudo pacman -Sy bluez bluez-utils blueman
-: 1732447248:0;lsmod | grep btusb
-: 1732447259:0;sudo vim /etc/bluetooth/main.conf
-: 1732447309:0;sudo systemctl start bluetooth.service\
+sudo pacman -Sy bluez bluez-utils blueman
+lsmod | grep btusb
+sudo vim /etc/bluetooth/main.conf
+sudo systemctl start bluetooth.service\
 
-: 1732447314:0;sudo systemctl enable bluetooth.service
-: 1732447640:0;sudo pacman -S pulseaudio-bluetooth
-: 1732447648:0;sudo systemctl pulseaudio start
-: 1732447665:0;sudo systemctl start pulseaudio
-: 1732447692:0;sudo pacman -S pulseaudio
-: 1732447699:0;sudo systemctl start pulseaudio
-: 1732447743:0;sudo pacman -S pulseaudio\
+sudo systemctl enable bluetooth.service
+sudo pacman -S pulseaudio-bluetooth
+sudo pacman -S pulseaudio
+sudo pacman -S pulseaudio\
 sudo pacman -S pulseaudio-bluetooth\
 
-: 1732447755:0;sudo systemctl pulseaudio start
-: 1732447762:0;sudo systemctl start pulseaudio
-: 1732447768:0;sudo pacman -S pavucontrol\
+sudo systemctl pulseaudio start
+sudo systemctl start pulseaudio
+sudo pacman -S pavucontrol\
 pavucontrol
-: 1732447914:0;sudo systemctl status bluetooth.service
-: 1732447925:0;bluetoothctl
-: 1732448231:0;blueman-applet
-: 1732448243:0;c
-: 1732448262:0;blueman-manager
-: 1732448312:0;c
-: 1732448317:0;blueman-applet
-: 1732448323:0;blueman-manager
-: 1732448395:0;systemctl status bluetooth\
+sudo systemctl status bluetooth.service
+bluetoothctl
+systemctl status bluetooth\
 
-: 1732448414:0;sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
+sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
 
-: 1732448427:0;pulseaudio --kill\
+pulseaudio --kill\
 pulseaudio --start\
 
-: 1732448432:0;sudo nano /etc/bluetooth/main.conf\
+sudo nano /etc/bluetooth/main.conf\
 
-: 1732448487:0;sudo systemctl restart bluetooth\
+sudo systemctl restart bluetooth\
 
-: 1732448511:0;blueman-applet
-: 1732448518:0;blueman-manager
-: 1732453401:0;iw
-: 1732455691:0;blueman-manager
-: 1732455709:0;blueman-applet
-: 1732455718:0;blueman-manager
-: 1732582682:0;starts
-: 1732582684:0;startx
-: 1732582708:0;blueman-applet
-: 1732563102:0;mv ML\ LAB ML
-: 1732563103:0;ls
-: 1732563111:0;cd ML
-: 1732563115:0;nvim
-: 1732563124:0;ls
-: 1732563137:0;nvim shell.nix
-: 1732563157:0;nix-shell
-: 1732569098:0;cd .dotfiles
-: 1732569100:0;gs
-: 1732569120:0;git add .
+iw
+starts
+mv ML\ LAB ML
+cd ML
+nvim shell.nix
+nix-shell
+git add .
+git commit -m "Arranged Scripts, planning to do more after end sem\
+"
+gs
+git push origin main
+passwd
+x
+mkdir Code
+cd Coq
+cd Code
+mkdir AoC-2023
+./1\\
+
+gcc 1.c -o 1
+./1
+./1.1
+nvim AoC-2023
+cp 1.1.c 1.2.c
+gcc 1.1.c -o 1.1
+gcc 1.2.c -o 1.2
+./1.2
+rm 1.1
+mv 1.2 1
+blueman-manager
+nvim input-2
+cp 2.1.c 2.2.c
+gcc 2.1.c -o 2
+gcc 2.2.c -o 2
+./2
+neofetch
+cd Code/AoC-2023
+ld
+gcc 3.1.c -o 3
+touch input-3
+lds
+nau
+;3A
+nautilus
+sudo nautilus
+man starxt
+man startx
+rm .bash_history
+cat .gtkrc-2.0
+ls .cargo
+ls .ipython
+nvim 
+mv .ipython ~/.dotfiles/.config/ipython
+la
+mv .jupyter .dotfiles/.config/jupyter
+ls .mozilla
+mv ~/.cargo ~/.jupyter ~/.vscode-oss ~/.config/
+mv ~/.cargo ~/.vscode-oss ~/.config/
+mkdir -p ~/.local/state
+mv ~/.viminfo ~/.gtkrc-2.0 ~/.local/state/\
+
+mkdir -p ~/.config/nix\
+mv ~/.nix-channels ~/.nix-defexpr ~/.config/nix/\
+
+mv ~/.xinitrc ~/.config/
+rm .nix-profile .vim .x11 
+mv ~/.pki ~/.cache/pki\
+
+mkdir -p ~/.local/state/X11
+mv ~/.Xauthority ~/.local/state/X11/Xauthority\
+
+. ~/.zshenv
+echo $XAUTHORITY\
+
+reboot
+pp
+pacman -Syu
+sudo pacman -Syu
+startx
+blueman-applet
+mv ~/.zshenv ./
+sudo pacman -Sy tmux
+\:q
+exit
+ls .dotfiles
+nvim .stow-local-ignore
+rm ~/.x11
+ls .vim
+cat .vim/vimrc
+ls ~
+rm ~/.viminfo
+yazi
+mv .vim .config/vim
+ls .config
+cat .zshenv 
+ls .x11
+nvim .zshenv
+rm .vim
+cd .dotfiles
+stow .
+cd
+vim --cmd 'echo &runtimepath'\
+
+;q
+vim
+mkdir -p ~/.local/state/vim\
+
+nvim .config/vim/vimrc
+rm .viminfo
+vim --cmd 'echo &viminfofile'\
+
+ls
+ls .local/state/vim
+cat cat 
+cat cat cat 
+c
+nvim
+tmux
+q
+: 1732923397:0;cd .dotfiles
+: 1732923398:0;gs
+: 1732923405:0;git add .
