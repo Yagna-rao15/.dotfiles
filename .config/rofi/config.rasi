@@ -1,13 +1,17 @@
-configuration{
-    modi: [ "drun" ];
-    icon-theme: "Oranchelo";
-    show-icons: true;
-    terminal: "alacritty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    hide-scrollbar: true;
-    display-drun: "Applications: ";
-    sidebar-mode: true;
+* {
+    background: #1d1f21;
+    foreground: #c5c8c6;
+    border-color: #1d1f21;
+    padding: 2px 5px;
+    border: 1px solid;
+    border-radius: 3px;
 }
 
-@theme "catppuccin-mocha"
+element {
+
+}
+
+listview {
+    lines: 10;
+    fixed-height: 1;
+}

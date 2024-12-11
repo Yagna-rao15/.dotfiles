@@ -211,7 +211,6 @@ fcd
 lss nvim
 lss .config
 ff
-xclip -o
 man xclip
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 tmux detach
@@ -298,12 +297,10 @@ sudo rm -rf go
 echo $ZDOTDIR
 q\\
 q
-npm -v
 cd ~/.config
 ls nvm
 cat nvm/README.md
 nvm list-remote
-nvm install --lts
 nvm list
 npm init -y
 npm install express nodemon
@@ -394,7 +391,6 @@ cd Code/PPA/
 mkdir lab_4
 cd lab_4
 firefox
-rofi
 cd Code/PPA/lab_3
 mpirun -np 1 ./1
 mpirun -np 2\ ./1
@@ -461,7 +457,6 @@ cd Code/Code-Forces/969-Div-2
 138885253 70095920 456876775 9345665 214704906 375508929
 man 1
 g++ 5.cpp -o 5
-./5
 cat \'
 rm \'
 cd Code/ML/Amazon
@@ -498,7 +493,6 @@ curl "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" \\
      -H "Authorization: Bearer  BQAik7aFMnD9elg8IvUEBpWgXFtF7CrAWAsXZNanDU8qDi4T0PSBeWH8y10l0NRIy8QOj_G69xFNAlGok8fTUobelAYRgivTxR5kdfEkUZqX2OMF-qg" >> spotify.json
 cat spotify.json
 cat \\ 
-rm \\ 
 rm spotify.json
 ls lab_1
 ls lab_2
@@ -664,7 +658,6 @@ s
 git commit -m "9/11 2024 LOL"
 ls\\
 
-cat .bash_history
 ls .config/zsh/.history
 nvim-name.sh
 vim ~/.viminfo
@@ -713,7 +706,6 @@ git log --graph --pretty=format:'%C(bold blue)%h%Creset %C(cyan)[%cr] %C(magenta
 $(fortune -s -n 50)
 echo $(fortune -s -n 50)
 g++ test.cpp
-./a.out
 rm a.out test.cpp
 cd Code/SS/lab-4
 touch prod
@@ -800,7 +792,6 @@ tesseract --version\
 
 tesseract --list_langs
 tesseract --list-langs
-python3 test.py
 sudo pacman -S python-pip\
 pip install torch torchvision torchaudio\
 
@@ -847,7 +838,6 @@ pip install --upgrade pip setuptools\
 
 docker -v
 sudo groupadd docker
-sudo usermod -aG docker $USER
 newgrp docker
 sudo systemctl enable docker.service\
 \
@@ -890,7 +880,6 @@ docker run -u $(id -u):$(id -g) -it -p 8888:8888 tensorflow/tensorflow:latest-gp
 
 sudo docker run -u root -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter bash\
 
-docker ps
 sudo docker logs 7f4518f69e70\
 
 lspci | grep -i nvidia\
@@ -1124,8 +1113,6 @@ cd 973-Div-2
 4 3
 9
 3 3
-g++ 4.cpp -o 4
-./4
 ping pornhub.com
 git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
 ls .config/nvim-test
@@ -1239,7 +1226,6 @@ compinit -C\
 chsh yagna
 echo $SHELL
 sudo ./bin/zsh
-cat $(fzf)
 sudo /bin/zsh
 pp\\
 
@@ -1475,7 +1461,6 @@ npm install react-hook-form zod @hookform/resolvers\
 npm install react-hook-form\
 
 	wd
-pwd
 npx shadcn@latest add separator\
 
 npx shadcn@latest add textarea\
@@ -1506,7 +1491,6 @@ npx tsc --init\
              -F "hostel=Hostel A" \\
              -F "file=@path/to/your/file.txt" \\
              http://localhost:8080/submitComplaint
-ls Downloads
 cat Downloads/Model.md
 curl -X POST -F "email=test@example.com" \\
              -F "name=Test User" \\
@@ -1546,7 +1530,6 @@ c/1
 .1/
 fastf
 cmatrix -C magenta
-gparted
 fdisk
 fdisk --help
 /dev/snd
@@ -1680,7 +1663,6 @@ sudo pacman -Sy speedtest-cli
 speedtest
 c=1
 while true; do echo "Hello $c"; let c=c+1; sleep 1; done
-tmux a
 top
 cd .config/nvim-test
 rm -rf .config
@@ -1757,7 +1739,6 @@ mv ~/Downloads/71.cpp ~/Code/SS/lab-7/1.cpp
 cat ../lab-5/prod.txt
 sudo ./[A
 cd -
-fzf
 zf cwd=~
 fzf cwd=~
 fzf --help
@@ -1826,7 +1807,6 @@ cd .config/nvim-nv
 nvim-own 
 git commit
 cd Code/CI-CD/lab-6/app2
-git diff
 date
 base64
 man base64
@@ -1843,7 +1823,6 @@ sudo docker ps -a
 git clone https://github.com/joshnewans/dockerfile_example.git
 cd dockerfile_example
 sudo docker build -t ros
-cat ~/.config/zsh/.history | fzf
 sudo docker build -t ros .
 sudo docker images 
 sudo docker run -it --user ros --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
@@ -1948,7 +1927,6 @@ sudo update-grub
 sudo mount /dev/nvme0n1p1 /boot
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --boot-loader-id=GRUB
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo efibootmgr
 sudo efibootmgr -o 0003
 sudo reboot
@@ -1956,7 +1934,6 @@ lscpi
 pacman -Fy lsusb 
 sudo pacman -Fy lsusb 
 sudo pacman -Sy usbutils
-lsusb
 htop
 yay -S zen-browser-bin 1.0.1.a.8
 ctags
@@ -1971,11 +1948,9 @@ ctags -R
 vim client/src/App.jsx
 ctags -R .
 rm tags
-nvim $(fzf)
 cd .vim
 cd .config/nvim-own
 nvim-nv
-l
 cd .dotfiles/.config
 mv nvim nvimmm\\
 
@@ -2047,7 +2022,6 @@ conda install pymango
 conda install pymongo
 python3 app.py
 cd Code/Archive
-cd ~/Downloads
 rm -rf marslandsale static templates venv
 cd Code/ML
 mkdir ~/Code/ML/lab-7
@@ -2077,7 +2051,6 @@ go run ./main.go
 cp _main.go main.go
 air
 cd ~/.config/nvim
-nvidia-smi
 cd Code/SS
 git clone https://github.com/imlegend19/LR-0--Parsing.git
 python3 ma
@@ -2104,7 +2077,6 @@ c
 cd Code/ML/lab-7
 conda activate ML
 jupyter notebook
-cd Downloads
 ls *.ipynb
 mv an-exploration-of-l1-and-l2-regularization.ipynb ~/Code/ML/lab-5/Regularization.ipynb
 git commit -m "Backup on 22/10/24"
@@ -2129,10 +2101,8 @@ mpicc 2.c -o 2
 cd lab-6
 mpirun -np 4 ./1
 mpirun -np 4 ./2
-..
 cd lab-7
 cd Code/PPA/lab-7
-ip addr
 cd .config/nvim
 git init
 rm -rf .git
@@ -2141,16 +2111,10 @@ git commit -m "Backup before repair"
 ls .comfig
 sudo pacman -Sy ttf-font-awesome
 nvim ~/.config/rofi
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-sudo pacman -Sy ttf-jetbrains-mono
 fc-list ':' jetbrain
 fc-list ':'
 nvim ~/.zshenv
 ping google.com
-yay -S zen-browser-bin
 alacritty migrate
 sudo pacman -Sy poly bar
 sudo pacman -Sy polybar
@@ -2163,7 +2127,6 @@ oh-my-posh upgrade
 oh-my-posh
 yay -R oh-my-posh
 cd clear
-yay -S oh-my-posh
 rm -rf .cache/yay/oh-my-posh
 sudo pacman -Sy xclip brightnessctl pulseaudio
 xinput
@@ -2174,21 +2137,15 @@ sudo pacman -S xclip\
 rm ~/.zcompdump\
 compinit\
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-clear
 sudo pacman -Sy yazi
 sudo pacman -Sy feh
 pacman -Qs libinput\
 
 nvim /etc/X11/xorg.conf.d/40-libinput.conf
 sudo -e /etc/X11/xorg.conf.d/40-libinput.conf
-xinput list\
-
-xinput list-props 9
 sudo pacman -S libinput-tools\
 sudo libinput list-devices\
 
-V
 lsmod | grep psmouse\
 
 sudo modprobe psmouse\
@@ -2211,7 +2168,6 @@ systemctl enable --now nix-daemon.service
 getent group nix-users\
 
 sudo usermod -aG nix-users yagna
-groups yagna
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 nix-channel --update
 sudo nix-channel --update
@@ -2232,7 +2188,6 @@ nix-shell -p python3Packages.numpy --run "zsh"\
 
 pyhton
 python
-nvm -v
 lspci
 bluectl
 sudo pacman -Sy alsa-utils
@@ -2297,7 +2252,6 @@ sudo timedatectl set-timezone IST
 sudo timedatectl set-timezone Asia/Kolkata\
 
 export MANPAGER='nvim+Man!'
-man man
 export MANPAGER='nvim +Man!'
 nvim .config/zsh
 man grep
@@ -2319,11 +2273,7 @@ cd ~/.vscode-oss/extensions\
 git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
 
 cd 
-sudo pacman -R code
-yay -S visual-studio-code-bin
-code
 yay -R visual-studio-code-bin
-sudo pacman -Sy code
 yay -S apple_cursor
 nvim Downloads/test.jsx
 finger
@@ -2343,33 +2293,23 @@ c
 cd Downloads 
 poweroff
 sstartx
-time zsh --interactive -c exit
-lsblk
 sudo pacman -Sy polkit
-sudo pacman -Sy nautilus
 pgrep -af polkit-gnome
 sudo pacman -Sy lxsession
 sudo pacman -R lxsession
 sudo pacman -Sy polkit-gnome gvfs gvfs-gphoto2
 sudo pacman -Sy dmenu xautolock i3lock
-dmenu
 dmenu --help
 dmenu -h
-dmenu_run
-man dmenu
 dmenu_run -nb #000 -nf #74c7ec
 dmenu_run -nb #000 -nf #000 -sb #74c7ec -sf #000
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000
-dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: "
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -fn "JetBrainsMono" -h 12
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i -h 12
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -b -i
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -h 24
-dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
 dmenu -v
-sudo pacman -R dmenu
 cd /temp
-cd /tmp
 echo "From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
 From: pskry <peter@skrypalle.dk>\
 Date: Sun, 8 Nov 2020 22:04:22 +0100\
@@ -2592,13 +2532,10 @@ cd dmenu\
 
 patch -p1 < ../dmenu-lineheight-5.2.diff\
 
-sudo make clean install\
-
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 24
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 26
 sudo dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32[A
-dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
 sudo pacman -R rofi
 cd .dotfile
 git add .config/ohmyposh/zen.toml.bak
@@ -2622,11 +2559,7 @@ find /usr/share/applications ~/.local/share/applications -name "*.desktop"\
 
 cd .config/scripts
 nvim apps.sh
-chmod +x apps.sh
-./apps.sh
 cd ~/.dotfiles
-nvim README.md
-sudo pacman -Sy firefox
 sudo pacman -S firefox
 sudo pacman -R firefox
 mv .config/scripts/* .local/bin/
@@ -2635,7 +2568,6 @@ echo $$
 sudo pacman -Sy cmatrix
 cmatrix
 1q
-qq
 sudo pacman -Sy bluez bluez-utils blueman
 lsmod | grep btusb
 sudo vim /etc/bluetooth/main.conf
@@ -2655,8 +2587,6 @@ sudo systemctl status bluetooth.service
 bluetoothctl
 systemctl status bluetooth\
 
-sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
-
 pulseaudio --kill\
 pulseaudio --start\
 
@@ -2670,21 +2600,16 @@ mv ML\ LAB ML
 cd ML
 nvim shell.nix
 nix-shell
-git add .
 git commit -m "Arranged Scripts, planning to do more after end sem\
 "
-gs
 git push origin main
 passwd
-x
 mkdir Code
 cd Coq
-cd Code
 mkdir AoC-2023
 ./1\\
 
 gcc 1.c -o 1
-./1
 ./1.1
 nvim AoC-2023
 cp 1.1.c 1.2.c
@@ -2699,7 +2624,6 @@ cp 2.1.c 2.2.c
 gcc 2.1.c -o 2
 gcc 2.2.c -o 2
 ./2
-neofetch
 cd Code/AoC-2023
 ld
 gcc 3.1.c -o 3
@@ -2707,7 +2631,6 @@ touch input-3
 lds
 nau
 ;3A
-nautilus
 sudo nautilus
 man starxt
 man startx
@@ -2715,7 +2638,6 @@ rm .bash_history
 cat .gtkrc-2.0
 ls .cargo
 ls .ipython
-nvim 
 mv .ipython ~/.dotfiles/.config/ipython
 la
 mv .jupyter .dotfiles/.config/jupyter
@@ -2738,16 +2660,11 @@ mv ~/.Xauthority ~/.local/state/X11/Xauthority\
 . ~/.zshenv
 echo $XAUTHORITY\
 
-reboot
 pp
 pacman -Syu
-sudo pacman -Syu
-startx
 blueman-applet
 mv ~/.zshenv ./
-sudo pacman -Sy tmux
 \:q
-exit
 ls .dotfiles
 nvim .stow-local-ignore
 rm ~/.x11
@@ -2762,12 +2679,9 @@ cat .zshenv
 ls .x11
 nvim .zshenv
 rm .vim
-cd .dotfiles
 stow .
-cd
 vim --cmd 'echo &runtimepath'\
 
-;q
 vim
 mkdir -p ~/.local/state/vim\
 
@@ -2775,14 +2689,848 @@ nvim .config/vim/vimrc
 rm .viminfo
 vim --cmd 'echo &viminfofile'\
 
-ls
 ls .local/state/vim
 cat cat 
 cat cat cat 
-c
-nvim
+git add .
+sudo pacman -Sy xorg-xinit
+sudo pacman -Sy dmenu xautolock i3lock polybar picom alacritty
+sudo pacman -Sy os-prober
+vim /etc/default/grub
+sudo vim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+reboot
+sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
+
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -S apple_cursor 
+yay -S zen-browser-bin
+zen
+sudo pacman -Sy ttf-jetbrains-mono
+sudo pacman -S fzf
+cd ~/.dotfiles/.local/bin
+chmod +x apps.sh
+yay -S oh-my-posh
+sudo pacman -S brightnessctl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+ezit
+rm -rf yay
+rm .bash_logout .bashrc .bash_profile
+rm .config .local
+zen-browser
+git clone git://git.suckless.org/dmenu
+sudo make clean install\
+
+echo 1 > /sys/class/leds/<led-name>/brightness\
+
+ls /sys/class/leds
+echo 1 > /sys/class/leds/asus::kbd_backlight/brightness\
+
+sudo echo 1 > /sys/class/leds/kbd_backlight/brightness\
+
+sudo pacman -S usbutils
+for led in $(ls -1 /sys/class/leds/); do echo "LED Name:- $led Device Id:- $(cat /sys/class/leds/$led/device/id/vendor):$(cat /sys/class/leds/$led/device/id/product)"; done | grep 0b05:19b7
+for led in $(ls -1 /sys/class/leds/); do echo "LED Name:- $led Device Id:- $(cat /sys/class/leds/$led/device/id/vendor):$(cat /sys/class/leds/$led/device/id/product)"; done | grep 0b05:19b6
+cat .bash_history
+sudo echo 1 > /sys/class/leds/asus::kbd_backlight/brightness\
+
+brightnessctl
+brightnessctl set 0
+brightnessctl set +20%
+pacman -Sy xorg-xinput
+sudo pacman -Sy xorg-xinput
+sudo nano /etc/X11/xorg.conf.d/90-libinput.conf
+sudo nvim /etc/X11/xorg.conf.d/90-libinput.conf
+sudo systemctl restart display-manager\
+
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1\
+
+xinput list
+time zsh --interactive -c exit
+sudo pacman -Sy tmux
+sudo pacman -Sy nautilus
+man man
+sudo pacman -Sy  lxappearance-gtk3
+nvim .dotfiles/.config/gtk-3.0/settings.ini
+cd .dotfiles && stow .
+cd .config/gtk-3.0
+sudo pacman -Sy gtk3
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita
+mount /dev/sda4 /mnt
+sudo mount /dev/sda4 /mnt
+sudo mount /dev/sda2 /mnt/boot && sudo mount /dev/sda1 /mnt/boot/efi
+sudo chroot /mnt /bin/zsh
+cd Code/AdventOfCode
+cd 2024-CC
+sudo pacman -Sy python
+nvm -v
+nvm --help
+nvm install --lts
+cd Code
+cd AdventOfCode
+nvim .dotfiles/.local/bin
+cd .dotfiles/.local/bin
+chmod +x keyboard_backlight.sh
+./keyboard_backlight.sh
+yay -S rogauracore-git
+sudo rogauracore single_static 0000ff
+sudo rogauracore single_static 00ff00
+sudo rogauracore multi_static ff0000 ffff00 00ff00 00ffff
+sudo rogauracore single_colorcycle 1
+sudo rogauracore brightness 1
+sudo rogauracore brightness 2
+sudo rogauracore brightness 5
+sudo rogauracore brightness 0
+sudo rogauracore brightness 3
+rm \\ 
+sudo pacman -Sy iw
+iw list
+iw list | grep AP
+sudo pacman -Sy nm-connection-editor
+cat .config/zsh/.history | fzf
+xinput list-props 9
+xinput list-props 14
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1\
+libinput Tapping Enabled Default
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1
+sudo xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1
+sudo pacman -Sy libinput
+V
+xinput list\
+
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled" 1\
+
+xinput list-props "ASUE120D:00 04F3:31FB Touchpad"\
+
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1\
+
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Natural Scrolling Enabled" 1\
+
+sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
+
+gparted
+systemctl enable --now networkmanager
+systemctl enable --now NetworkManager
+nmcli device wifi connect PAVAN\ 3265 password "1234567890"
+nmcli device wifi connect PAVAN\ 3265 password 1234567890
+nmcli device wifi connect PAVAN 3265 password 1234567890
+nmcli device wifi connect "PAVAN 3265" password "1234567890"
+grub-mkconfig -o /boot/grub/grub.cfg
+su
+sudo pacman -Sy --needed git base-devel
+sudo pacman -Sy pulseaudio
+nvim .dotfiles/.config/zsh/.zprofile
+dmenu 
+clear
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: "
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -fn 'JetBrainsMono'
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -fn 'JetBrainsMono:16'
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -f 'JetBrainsMono:'
+curl https://fast.com
+ls .local/share/icons
+ls /usr/share/icons
+nvim .config/gtk-3.0/settings.ini
+gsettings set org.gnome.desktop.interface cursor-theme "macOS-White"
+gsettings set org.gnome.desktop.interface cursor-size 24
+gsettings set org.gnome.desktop.interface cursor-size 48
+exit
+nvim .dotfiles/.x11/xinitrc
+dmenu-run
+cd .local/bin
+./apps.sh
+sudo dmenu_path
+sudo pacman -Ry dmenu-run
+pacman -Qm
+sudo pacman -Rsn
+sudo pacman -Rsn dmenu
+sudo pacman -Rsn dmenu_run
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i
+ip addr
+sudo pacman -Sy firefox
+sudo pacman -Sy clang
+g++ 4.cpp -o 4
+sudo pacman -Sy xclip
+sudo pacman -Sy unzip
+sudo pacman -Sy wget
+sudo pacman -Sy python-pip
+sudo pacman -Sy ripgrep
+cat 4.cc
+g++ 4.cc -o 4
+./4
+g++ 5.cc -o 5
+./5
+g++ test.cc
+g++ testgpt.cc
+timedatectl set-ntp true\
+
+nmcli device list
+nmcli device show
+nmcli device wifi
+mkdir -p Self/pictures/Screenshot
+xclip -o
+xclip
+sudo pacman -Sy maim
+man maim
+xrandr --dpi\
+
+dmenu run
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -h 16
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 24px
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 16px
+sudo pacman -Sy rofi
+sudo pacman -R dmenu-run
+sudo pacman -R dmenu
+drun
+rofi drun
+cat ($fzf)
+cat (fzf)
+cat $(fzf)
+rofi
+rofi -show 
+rofi -dmenu -theme ~/.config/rofi/app-launcher.rasi -p "Applications: " -i
+rofi -dmenu -theme ~/.config/rofi/config.rasi -p "Applications: " -i
+rofi -dmenu -show -theme ~/.config/rofi/config.rasi -p "Applications: " -i
+rofi -shiw -theme ~/.config/rofi/config.rasi -p "Applications: " -i
+rofi -show -theme ~/.config/rofi/config.rasi -p "Applications: " -i
+chmod +x Downloads/rofi-file-browser.sh
+./Downloads/rofi-file-browser.sh
+.3
+git clone https://git.suckless.org/dmenu /tmp/
+echo "diff --git a/config.def.h b/config.def.h\
+index 1edb647..5c79628 100644\
+--- a/config.def.h\
++++ b/config.def.h\
+@@ -3,6 +3,8 @@\
+\
+ static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */\
+ /* -fn option overrides fonts[0]; default X11 font or font set */\
++static const int user_bh = 0;               /* add an defined amount of pixels to the bar height */\
++\
+ static const char *fonts[] = {\
+ 	"monospace:size=10"\
+ };\
+diff --git a/dmenu.c b/dmenu.c\
+index 27b7a30..7be0dc3 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -629,7 +629,8 @@ setup(void)\
+ 	utf8 = XInternAtom(dpy, "UTF8_STRING", False);\
+\
+ 	/* calculate menu geometry */\
+-	bh = drw->fonts->h + 2;\
++	bh = drw->fonts->h;\
++	bh = user_bh ? bh + user_bh : bh + 2;\
+ 	lines = MAX(lines, 0);\
+ 	mh = (lines + 1) * bh;\
+ #ifdef XINERAMA\
+" >> patch.diff
+echo "diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..3e3b31b 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -3,7 +3,7 @@\
+ dmenu \- dynamic menu\
+ .SH SYNOPSIS\
+ .B dmenu\
+-.RB [ \-bfiv ]\
++.RB [ \-bfsv ]\
+ .RB [ \-l\
+ .IR lines ]\
+ .RB [ \-m\
+@@ -44,8 +44,8 @@ dmenu appears at the bottom of the screen.\
+ dmenu grabs the keyboard before reading stdin if not reading from a tty. This\
+ is faster, but will lock up X until stdin reaches end\-of\-file.\
+ .TP\
+-.B \-i\
+-dmenu matches menu items case insensitively.\
++.B \-s\
++dmenu matches menu items case sensitively.\
+ .TP\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+diff --git a/dmenu.c b/dmenu.c\
+index 65f25ce..855df59 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -55,8 +55,9 @@ static Clr *scheme[SchemeLast];\
+ \
+ #include "config.h"\
+ \
+-static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;\
+-static char *(*fstrstr)(const char *, const char *) = strstr;\
++static char * cistrstr(const char *s, const char *sub);\
++static int (*fstrncmp)(const char *, const char *, size_t) = strncasecmp;\
++static char *(*fstrstr)(const char *, const char *) = cistrstr;\
+ \
+ static void\
+ appenditem(struct item *item, struct item **list, struct item **last)\
+@@ -709,9 +710,9 @@ main(int argc, char *argv[])\
+ 			topbar = 0;\
+ 		else if ("-f"))   /* grabs keyboard before reading stdin */\
+ 			fast = 1;\
+-		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */\
+-			fstrncmp = strncasecmp;\
+-			fstrstr = cistrstr;\
++		else if (!strcmp(argv[i], "-s")) { /* case-sensitive item matching */\
++			fstrncmp = strncmp;\
++			fstrstr = strstr;\
+ 		} else if (i + 1 == argc)\
+ 			usage();\
+ 		/* these options take one argument */" >> patch.diff
+echo "diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..3e3b31b 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -3,7 +3,7 @@\
+ dmenu \- dynamic menu\
+ .SH SYNOPSIS\
+ .B dmenu\
+-.RB [ \-bfiv ]\
++.RB [ \-bfsv ]\
+ .RB [ \-l\
+ .IR lines ]\
+ .RB [ \-m\
+@@ -44,8 +44,8 @@ dmenu appears at the bottom of the screen.\
+ dmenu grabs the keyboard before reading stdin if not reading from a tty. This\
+ is faster, but will lock up X until stdin reaches end\-of\-file.\
+ .TP\
+-.B \-i\
+-dmenu matches menu items case insensitively.\
++.B \-s\
++dmenu matches menu items case sensitively.\
+ .TP\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+diff --git a/dmenu.c b/dmenu.c\
+index 65f25ce..855df59 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -55,8 +55,9 @@ static Clr *scheme[SchemeLast];\
+ \
+ #include "config.h"\
+ \
+-static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;\
+-static char *(*fstrstr)(const char *, const char *) = strstr;\
++static char * cistrstr(const char *s, const char *sub);\
++static int (*fstrncmp)(const char *, const char *, size_t) = strncasecmp;\
++static char *(*fstrstr)(const char *, const char *) = cistrstr;\
+ \
+ static void\
+ appenditem(struct item *item, struct item **list, struct item **last)\
+@@ -709,9 +710,9 @@ main(int argc, char *argv[])\
+ 			topbar = 0;\
+ 		else if ("-f"))   /* grabs keyboard before reading stdin */\
+ 			fast = 1;\
+-		else if ("-i")) { /* case-insensitive item matching */\
+-			fstrncmp = strncasecmp;\
+-			fstrstr = cistrstr;\
++		else if (!strcmp(argv[i], "-s")) { /* case-sensitive item matching */\
++			fstrncmp = strncmp;\
++			fstrstr = strstr;\
+ 		} else if (i + 1 == argc)\
+ 			usage();\
+ 		/* these options take one argument */" >> patch.diff
+echo "diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..3e3b31b 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -3,7 +3,7 @@\
+ dmenu \- dynamic menu\
+ .SH SYNOPSIS\
+ .B dmenu\
+-.RB [ \-bfiv ]\
++.RB [ \-bfsv ]\
+ .RB [ \-l\
+ .IR lines ]\
+ .RB [ \-m\
+@@ -44,8 +44,8 @@ dmenu appears at the bottom of the screen.\
+ dmenu grabs the keyboard before reading stdin if not reading from a tty. This\
+ is faster, but will lock up X until stdin reaches end\-of\-file.\
+ .TP\
+-.B \-i\
+-dmenu matches menu items case insensitively.\
++.B \-s\
++dmenu matches menu items case sensitively.\
+ .TP\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+diff --git a/dmenu.c b/dmenu.c\
+index 65f25ce..855df59 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -55,8 +55,9 @@ static Clr *scheme[SchemeLast];\
+ \
+ #include "config.h"\
+ \
+-static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;\
+-static char *(*fstrstr)(const char *, const char *) = strstr;\
++static char * cistrstr(const char *s, const char *sub);\
++static int (*fstrncmp)(const char *, const char *, size_t) = strncasecmp;\
++static char *(*fstrstr)(const char *, const char *) = cistrstr;\
+ \
+ static void\
+ appenditem(struct item *item, struct item **list, struct item **last)\
+@@ -709,9 +710,9 @@ main(int argc, char *argv[])\
+ 			topbar = 0;\
+ 		else if ("-f"))   /* grabs keyboard before reading stdin */\
+ 			fast = 1;\
+-		else if ("-i")) { /* case-insensitive item matching */\
+-			fstrncmp = strncasecmp;\
+-			fstrstr = cistrstr;\
++		else if ("-s")) { /* case-sensitive item matching */\
++			fstrncmp = strncmp;\
++			fstrstr = strstr;\
+ 		} else if (i + 1 == argc)\
+ 			usage();\
+ 		/* these options take one argument */" > patch.diff
+cat patch.diff
+make
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 16
+dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono Nerd Font'
+fc-list | grep "JetBrainsMono Nerd Font"\
+
+fc-list | grep "JetBrains"\
+
+fc-list | grep "JetBrainsMono-Regular.ttf: JetBrains Mono:style=Regular" 
+ld Downloads
+sudo dd if=~/Downloads/ubuntu-22.04-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
+
+sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
+
+sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
+ubuntu-22.04.5-desktop-amd64.is;q
+ls Downloads
+sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync
+nautilus
+sudo dd if=ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
+
+sudo umount /mnt
+ls /mnt
+sudo mount /dev/sda1 /mnt
+chroot /mnt /bin/bash
+sudo chroot /mnt /bin/bash
+sudo chroot /mnt
+umount -R /mnt
+sudo umount -R /mnt
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 24\
+
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono Nerd Font'\
+
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000'
+git clone https://git.suckless.org/dmenu /tmp/dmenu\\
+
+pwd
+rm -rf ../dmenu
+mkdir Temp
+cd Temp
+From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
+From: pskry <peter@skrypalle.dk>\
+Date: Sun, 8 Nov 2020 22:04:22 +0100\
+Subject: [PATCH] Add an option which defines the lineheight\
+\
+Despite both the panel and dmenu using the same font (a Terminus 12),\
+dmenu is shorter and the panel is visible from under the dmenu bar.\
+The appearance can be even more distracting when using similar colors\
+for background and selections. With the option added by this patch,\
+dmenu can be launched with a '-h 24', thus completely covering the panel.\
+---\
+ config.def.h |  3 +++\
+ dmenu.1      |  5 +++++\
+ dmenu.c      | 11 ++++++++---\
+ 3 files changed, 16 insertions(+), 3 deletions(-)\
+\
+diff --git a/config.def.h b/config.def.h\
+index 1edb647..4394dec 100644\
+--- a/config.def.h\
++++ b/config.def.h\
+@@ -15,6 +15,9 @@ static const char *colors[SchemeLast][2] = {\
+ };\
+ /* -l option; if nonzero, dmenu uses vertical list with given number of lines */\
+ static unsigned int lines      = 0;\
++/* -h option; minimum height of a menu line */\
++static unsigned int lineheight = 0;\
++static unsigned int min_lineheight = 8;\
+ \
+ /*\
+  * Characters not considered part of a word while deleting words\
+diff --git a/dmenu.1 b/dmenu.1\
+index 323f93c..f2a82b4 100644\
+--- a/dmenu.1\
++++ b/dmenu.1\
+@@ -6,6 +6,8 @@ dmenu \- dynamic menu\
+ .RB [ \-bfiv ]\
+ .RB [ \-l\
+ .IR lines ]\
++.RB [ \-h\
++.IR height ]\
+ .RB [ \-m\
+ .IR monitor ]\
+ .RB [ \-p\
+@@ -50,6 +52,9 @@ dmenu matches menu items case insensitively.\
+ .BI \-l " lines"\
+ dmenu lists items vertically, with the given number of lines.\
+ .TP\
++.BI \-h " height"\
++dmenu uses a menu line of at least 'height' pixels tall, but no less than 8.\
++.TP\
+ .BI \-m " monitor"\
+ dmenu is displayed on the monitor number supplied. Monitor numbers are starting\
+ from 0.\
+diff --git a/dmenu.c b/dmenu.c\
+index e7be8af..82b204b 100644\
+--- a/dmenu.c\
++++ b/dmenu.c\
+@@ -148,7 +148,7 @@ drawmenu(void)\
+ {\
+ 	unsigned int curpos;\
+ 	struct item *item;\
+-	int x = 0, y = 0, w;\
++	int x = 0, y = 0, fh = drw->fonts->h, w;\
+ \
+ 	drw_setscheme(drw, scheme[SchemeNorm]);\
+ 	drw_rect(drw, 0, 0, mw, mh, 1, 1);\
+@@ -165,7 +165,7 @@ drawmenu(void)\
+ 	curpos = TEXTW(text) - TEXTW(&text[cursor]);\
+ 	if ((curpos += lrpad / 2 - 1) < w) {\
+ 		drw_setscheme(drw, scheme[SchemeNorm]);\
+-		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);\
++		drw_rect(drw, x + curpos, 2 + (bh - fh) / 2, 2, fh - 4, 1, 0);\
+ 	}\
+ \
+ 	if (lines > 0) {\
+@@ -630,6 +630,7 @@ setup(void)\
+ \
+ 	/* calculate menu geometry */\
+ 	bh = drw->fonts->h + 2;\
++	bh = MAX(bh,lineheight);	/* make a menu line AT LEAST 'lineheight' tall */\
+ 	lines = MAX(lines, 0);\
+ 	mh = (lines + 1) * bh;\
+ #ifdef XINERAMA\
+@@ -710,7 +711,7 @@ setup(void)\
+ static void\
+ usage(void)\
+ {\
+-	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"\
++	die("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"\
+ 	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");\
+ }\
+ \
+@@ -737,6 +738,10 @@ main(int argc, char *argv[])\
+ 		/* these options take one argument */\
+ 		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */\
+ 			lines = atoi(argv[++i]);\
++		else if (!strcmp(argv[i], "-h")) { /* minimum height of one menu line */\
++			lineheight = atoi(argv[++i]);\
++			lineheight = MAX(lineheight, min_lineheight);\
++		}\
+ 		else if (!strcmp(argv[i], "-m"))\
+ 			mon = atoi(argv[++i]);\
+ 		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */\
+-- \
+2.38.1\
+\
+
+git clone https://git.suckless.org/dmenu
+a
+make clean install\\
+
+mv patch.diff dmenu
+sudo fdisk /dev/sdX
+sudo umount /dev/sda1\
+
+sudo fdisk /dev/sdX\
+
+sudo fdisk /dev/sda
+rm -rf Temp
+unzip balenaEtcher-linux-x64-1.19.25.zip
+./balenaEtcher-linux-x64
+sudo ./balenaEtcher-linux-x64
+sudo ./balenaEtcher-linux-x64/balena-etcher
+man patch
+patch -p2 < patch.diff
+..
+rm -rf dmenu
+l
+make clean install
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 16
+man dmenu
+qq
+rm -rf balenaEtcher-linux-x64 balenaEtcher-linux-x64-1.19.25
+rm balenaEtcher-linux-x64-1.19.25.zip
+./rofi-file-browser.sh
+ls | dmenu
+ls | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
+ls | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font:size 24'
+ls | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font'
+cd /tmp
+git clone https://git.suckless.org/dmenu /tmp/dmenu
+cd dmenu
+nvim patch.diff
+patch -p1 < patch.diff
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
+echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
+gs
+git diff
+echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 32
+find ~ -type d -name "dmenu*" 2>/dev/null\
+
+sudo make clean\
+
+dmenu_run
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font'
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono'
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono' -h 
+sudo rm /usr/local/bin/dmenu\
+sudo rm /usr/local/bin/dmenu_path\
+sudo rm /usr/local/bin/stest\
+sudo rm /usr/local/share/man/man1/dmenu.1\
+
+sudo pacman -R dmenu dmenu
+dmenu_run 
+sudo make clean install
+rofi -combi-modi window,drun,ssh -theme solarized -font "hack 10" -show combi
+sudo pacman -Sy ttf-jetbrains-mono-nerd
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono' -h 24
+dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000'  -h 24
+rofi -show run \\
+     -theme-str '* { background: #000000; foreground: #ffffff; }' \\
+     -theme-str 'listview { border-color: #74c7ec; }' \\
+     -theme-str 'element { background: #000000; border: 1px solid #74c7ec; }' \\
+     -theme-str 'inputbar { background: #74c7ec; foreground: #000000; }' \\
+     -theme-str 'window { border: 1px solid #74c7ec; }' \\
+     -p "Applications: " \\
+     -i \\
+     -font "JetBrainsMono 12"\
+
+sudo rofi -show run -theme dmenu\n[A
+rofi -show run -font "JetBrainsMono 12" -case-sensitive false -p "Applications: " -theme ~/.config/rofi/config.rasi\
+
+rofi -show run -theme ~/.config/rofi/config.rasi\
+
+rofi -show run -theme dmenu\
+
+echo "Hello" "World" | rofi 
+echo "Hello World" | rofi 
+echo "Hello World" | rofi -show
+echo "Hello World" | rofi -show run
+echo "Hello World" | rofi -show run theme dmenu
+rofi -show run theme dmenu
+echo "Hello World" | rofi -show run -theme dmenu
+man rofi
+rofi -dmenu
+rofi -dmenu -show
+echo "Hello" | rofi -dmenu -theme dmenu
+echo "Hello", "World" | rofi -dmenu -theme dmenu
+echo "Hello" "World" | rofi -dmenu -theme dmenu
+ls | rofi -show -theme dmenu
+ls | rofi -dmenu -theme dmenu
+./.local/bin/apps.sh
+echo "Hello" "World" | dmenu
+echo "Hello" "World" | dmenu -fn 'JetbrainMono;
+echo "Hello" "World" | dmenu -fn 'JetbrainMono'
+sudo echo "Hello" "World" | dmenu -fn 'JetBrainMono'[D
+echo "Hello" "World" | dmenu -fn 'JetBrainMono'
+echo "Hello" "World" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono'\
+
+echo "Hello" "World" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -fn 'JetBrainsMono'\
+
+echo "Hello" "World" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -i -fn 'JetBrainsMono'\
+
+echo "Hello" "World" | dmenu -i -fn 'JetBrainsMono'\
+
+cd /tmp/dmenu
+sudo make clean
+nvim $(fzf)
+sudo rm /usr/local/bin/dmenu\\
+sudo rm /usr/local/bin/dmenu_path\\
+sudo rm /usr/local/bin/stest\\
+sudo rm /usr/local/share/man/man1/dmenu.1\\
+
+sudo rm /usr/local/bin/dmenu\
+
+which dmenu\
+
+dmenu
+sudo pacman -Sy dmenu
+xrdb -merge ~/.Xresources\
+
+xrdb -merge ~/.dotfiles/.x11/Xresources\
+
+fc-list | grep "JetBrainsMono"\
+
+dmenu_run -fn "JetBrainsMono-12"\
+
+sudo dmenu_run -fn "JetBrainsMono-12" -h 24
+dmenu_run -fn "JetBrainsMono-12" -h 24
+dmenu_run -fn "JetBrainsMono:12"
+dmenu_run -fn "JetBrainsMono Nerd Font"
+sudo dmenu_run -fn "JetBrainsMono Nerd Font"[A
+sudo pacman -Sy nvidia
+suspend
+systemctl status
+systemctl suspend
+startx
+neofetch
+rm a.out test.cc testgpt.cc
+python3 test.py
+python3 
+nvim day06.cpp
+cd ~/Downloads
+g++ day06.cpp
+./a.out
+fzf
+find
+cd .dotfiles
+nvim README.md
+sudo pacman -S jdk-openjdk android-studio\
+
+cd Downloads
+rm a.out
+unzip android-studio-2024.2.1.12-linux.tar.gz
+mv android-studio-2024.2.1.12-linux /usr/local
+sudo mv android-studio-2024.2.1.12-linux /usr/local
+/usr/local/android-studio-2024.2.1.12-linux/android-studio/bin/studio.sh
+sudo pacman -S jdk-openjdk android-studio android-tools
+man du
+du -sh /
+sudo du -sh / 
+sudo pacman -Sy code
+sudo pacman -R code
+sudo pacman -Sy docker
+sudo systemctl enable docker.socket
+sudo systemctl enable --now docker.socket
+docker info
+sudo docker info
+sudo docker run -it --rm archlinux bash -c "echo hello world"
+yay -S visual-studio-code-bin
+code
+sudo usermod -aG docker $USER
+groups yagna
+docker run -it --rm archlinux bash -c "echo hello world"
+sudo pacman -Sy docker-buildx
+sudo pacman -Sy docker-compose
+cat ~/.config/zsh/.history | fzf
+sudo rm -rf /usr/local/android-studio-2024.2.1.12-linux/
+sudo pacman -S nvidia-utils
+curl -fsSL https://ollama.com/install.sh | sh
+ollama -v
+sudo pacman -S nvidia-container-toolkit
+du -sh / 
+du -sh /home/yagna
+nvidia-smi
+docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama\
+
+docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webUI --restart always ghcr.io/open-webui/open-webui:ollama\
+
+docker run --help
+docker stop 648a38617bf1de2b5e110fd69d3082dcf1eb8cbf95f3eca609de709b3650e673
+docker rm 648a38617bf1de2b5e110fd69d3082dcf1eb8cbf95f3eca609de709b3650e673
+docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webUI --restart always ghcr.io/open-webui/open-webui:ollama
+curl http://localhost:3000
+curl -v http://localhost:3000
+curl http://127.0.0.1:3000\
+
+curl http://[::1]:3000\
+
+docker inspect e30a66820355 | grep -i "port"
+docker exec -it e30a66820355 /bin/bash\
+
+docker stop e30a66820355
+docker rm e30a66820355
+ollama run llama3.3
+sudo pacman -Syu
+ls .cache
+rm -rf .cache/Google .cache/Microsoft 
+ollama list
+ollama
+ollama os
+ollama ps
+cd Code/AdventOfCode/2024-CC
+make 
+code .
+x
+cd
+ls Android
+rm -rf Android
+rm -rf .android
+rm -rf .java
+nvim .gtkrc-2.0
+rm .gtkrc-2.0
+;s
+rm -rf .mozilla
+rm -rf .pki
+ls
+xdg-mime query default inode/directory
+npm -v
+sudo pacman -Sy typescript
+man  tsc 
+man tsc
+tsc
+g++ 6.cc -o 6
+./6
+lsusb
+lsblk
+camera
+sudo pacman -S gvfs-mtp gvfs-gphoto2 libmtp android-udev\
+
+sudo udevadm control --reload\
+sudo udevadm trigger\
+
+nmcli device wifi connect "YagnaRao" password "micromax"
+nmcli device wifi list
+10;rgb:cccc/cccc/cccc11;rgb:1818/1818/1818c
 tmux
+tmux a
+10;rgb:cccc/cccc/cccc11;rgb:1818/1818/1818:q
 q
-: 1732923397:0;cd .dotfiles
-: 1732923398:0;gs
-: 1732923405:0;git add .
+i3-msg reload\
+
+xprop | grep WM_CLASS\
+
+nvim
+nvim 
+\:w
+nvim 1.cc
+g++ 1.cc -o 1
+./1
+docker ps
+docker imagegs
+docker images
+c
+;q
+: 1733951519:0;cd .dotfiles
+: 1733951520:0;ls
+: 1733951526:0;gs
+: 1733951551:0;git add .
+: 1733951563:0;c
+: 1733951565:0;gs
+: 1733951578:0;rm ~/.config
+: 1733951604:0;mkdir .config
+: 1733951616:0;mkdir ~/.config
+: 1733951634:0;mv .config/nvm ~/.config/nvm
+: 1733951673:0;rm -rf ~/.config/Code
+: 1733951675:0;ls ~/.config
+: 1733951679:0;stow .
+: 1733951680:0;c
+: 1733951688:0;ls
+: 1733951691:0;gs 
+: 1733951725:0;rm .config/zsh/.zcompdump.archlinux.7589
+: 1733951729:0;rm .config/zsh/.zcompdump.archlinux.7682
+: 1733951736:0;gs
+: 1733951753:0;cat .config/user-dirs.locale
+: 1733951756:0;cat .config/user-dirs.dirs
+: 1733951773:0;nvim .config/pulse
+: 1733951781:0;gs
+: 1733951785:0;git add .
+: 1733951892:0;gs
+: 1733951905:0;git add .
+: 1733951907:0;gs
+: 1733952077:0;gs add .
+: 1733952083:0;git add .
