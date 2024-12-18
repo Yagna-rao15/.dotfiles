@@ -94,13 +94,11 @@ gcc 3.c -o 3
 cd Code/SS/lab_2
 bluetoothctl pairable on
 bluetoothctl info
-sudo systemctl enable --now bluetooth.service
 btusb
 sudo lsmod| grep btusb
 sudo pacman -Sy blueman
 bluemoon
 bluetooth-player
-cd Self
 cd pictures
 ..\\
 
@@ -114,7 +112,6 @@ nvim .gitignore
 ls .config/zsh/
 git commit -m "Checkup Commit"
 gh status
-gh auth status
 gh auth refresh
 gh auth log
 cd .dotfiles/.config/zsh
@@ -382,7 +379,6 @@ cd ../c
 ./main\\
 
 gcc -o main main.c csv.c
-fh
 unzip archive\(4\).zip
 mv housing.csv ~/Code/ML/c/Boston-Housing.csv
 gcc -o main LR-BH.c csv.c
@@ -457,8 +453,6 @@ cd Code/Code-Forces/969-Div-2
 138885253 70095920 456876775 9345665 214704906 375508929
 man 1
 g++ 5.cpp -o 5
-cat \'
-rm \'
 cd Code/ML/Amazon
 unzip archive.zip
 lspci | grep Nvdia
@@ -1084,7 +1078,6 @@ ip config
 cd Code/SS/lab-5
 cd ../lab-4
 cd Code/SS/lab-6
-ls 
 curl https://172.16.1.1:8090
 yay -S zen-browser
 sudo pacman -Rnsc yay
@@ -1132,8 +1125,6 @@ ls -l\
 pulseaudio -k\
 pulseaudio --start\
 
-sudo pacman -S pulseaudio pulseaudio-alsa\
-
 rm -r ~/.config/pulse\
 
 journalctl --user -xe | grep pulse\
@@ -1141,8 +1132,6 @@ journalctl --user -xe | grep pulse\
 pulseaudio -vvv\
 
 killall pulseaudio\
-
-ps aux | grep pulseaudio\
 
 find ~ -type l -lname ~/.config/pulse\
 
@@ -1160,7 +1149,6 @@ mkdir 974-Div-3
 cd 974-Div-3
 g++ 3_1.cpp -o 3
 sudo pacman -Sy V
-find /usr/share/icons -type d -name "cursors"
 nvim .local/share/icons
 ln -s /usr/share/icons/macOS/cursors ~/.local/share/icons/default/cursors
 cat .local/share/nvim-kickstart/lazy/tokyonight.nvim/extras/xresources/tokyonight_day.Xresources
@@ -1530,8 +1518,6 @@ c/1
 .1/
 fastf
 cmatrix -C magenta
-fdisk
-fdisk --help
 /dev/snd
 ls /dev/snd
 sudo pacman -Sy libadwaita
@@ -1551,7 +1537,6 @@ update-desktop-database ~/.local/share/applications\
 nvidia-smi\
 
 GTK_THEME="Adwaita:dark" nautilus
-cal
 chmod +x ~/Downloads/i3lock-fancy.sh
 ./Downloads/i3lock-fancy.sh
 chmod +x Code/Archive/test.sh
@@ -1686,7 +1671,6 @@ rm /var/lib/pacman/db.lck\
 
 sudo rm /var/lib/pacman/db.lck\
 
-tmux ls
 flatpak
 sudo pacman -Sy flatpak
 sudo pacman -S lutrus
@@ -1745,7 +1729,6 @@ fzf --help
 cd Code/SS/lab-7
 nvim-kickstart
 nvim-lazy
-tree
 nvim-test
 nvim-test-2
 nvim-exp
@@ -1753,7 +1736,6 @@ rm -rf .config/nvim-exp
 rm -rf .config/nvim-kickstart
 rm -rf .config/nvim-test
 rm -rf .config/nvim-test-2
-ls ~/.config
 rm -rf nvim-lazy nvim-own
 ls .config | grep nvim
 rm -rf .config/nvim-lazy
@@ -1790,7 +1772,6 @@ git clone https://github.com/NvChad/starter ~/.config/nvim-nv && nvim-nv
 rm -rf colors
 cd core
 cp ~/.config/nvim/lua/plugins/init.lua ~/.config/nvim-own/lua/plugins
-fastfetch
 nvim-own\\
 
 cd ../nvim-own
@@ -1828,7 +1809,6 @@ sudo docker images
 sudo docker run -it --user ros --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
 sudo docker run -it --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
 lvmdiskscan
-bash
 cd dev
 cd /
 cd mnt
@@ -1934,7 +1914,6 @@ lscpi
 pacman -Fy lsusb 
 sudo pacman -Fy lsusb 
 sudo pacman -Sy usbutils
-htop
 yay -S zen-browser-bin 1.0.1.a.8
 ctags
 sudo pacman -Sy ctags
@@ -2103,7 +2082,6 @@ mpirun -np 4 ./1
 mpirun -np 4 ./2
 cd lab-7
 cd Code/PPA/lab-7
-cd .config/nvim
 git init
 rm -rf .git
 git commit -m "Backup before repair"
@@ -2137,7 +2115,6 @@ sudo pacman -S xclip\
 rm ~/.zcompdump\
 compinit\
 
-sudo pacman -Sy yazi
 sudo pacman -Sy feh
 pacman -Qs libinput\
 
@@ -2151,8 +2128,6 @@ lsmod | grep psmouse\
 sudo modprobe psmouse\
 
 echo "psmouse" | sudo tee -a /etc/modules-load.d/psmouse.conf\
-
-sudo pacman -Syu\
 
 sudo pacman -Sy bluez
 sudo pacman -Sy bluez-utils
@@ -2200,8 +2175,6 @@ pulseaudio --check\
 pavucontrol
 alsamixer\
 
-lsmod | grep snd\
-
 dmesg | grep snd\
 
 sudo dmesg | grep snd\
@@ -2210,8 +2183,6 @@ sudo pacman -S sof-firmware\
 
 sudo modprobe snd-sof-pci\
 sudo modprobe snd_hda_intel\
-
-systemctl --user status pulseaudio\
 
 sudo pacman -S pavucontrol\
 pavucontrol\
@@ -2273,7 +2244,6 @@ cd ~/.vscode-oss/extensions\
 git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
 
 cd 
-yay -R visual-studio-code-bin
 yay -S apple_cursor
 nvim Downloads/test.jsx
 finger
@@ -2541,9 +2511,6 @@ cd .dotfile
 git add .config/ohmyposh/zen.toml.bak
 nvim-own
 git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes"
-gh
-sudo pacman -Sy github-cli
-gh auth login
 git commit -m "Replaced Rofi with Beautiful Dmenu also Minor changes (now its done)"
 grep -h "^Name=" /usr/share/applications/*.desktop ~/.local/share/applications/*.desktop | cut -d '=' -f 2\
 
@@ -2568,7 +2535,6 @@ echo $$
 sudo pacman -Sy cmatrix
 cmatrix
 1q
-sudo pacman -Sy bluez bluez-utils blueman
 lsmod | grep btusb
 sudo vim /etc/bluetooth/main.conf
 sudo systemctl start bluetooth.service\
@@ -2584,11 +2550,7 @@ sudo systemctl start pulseaudio
 sudo pacman -S pavucontrol\
 pavucontrol
 sudo systemctl status bluetooth.service
-bluetoothctl
 systemctl status bluetooth\
-
-pulseaudio --kill\
-pulseaudio --start\
 
 sudo nano /etc/bluetooth/main.conf\
 
@@ -2602,7 +2564,6 @@ nvim shell.nix
 nix-shell
 git commit -m "Arranged Scripts, planning to do more after end sem\
 "
-git push origin main
 passwd
 mkdir Code
 cd Coq
@@ -2618,7 +2579,6 @@ gcc 1.2.c -o 1.2
 ./1.2
 rm 1.1
 mv 1.2 1
-blueman-manager
 nvim input-2
 cp 2.1.c 2.2.c
 gcc 2.1.c -o 2
@@ -2634,8 +2594,6 @@ nau
 sudo nautilus
 man starxt
 man startx
-rm .bash_history
-cat .gtkrc-2.0
 ls .cargo
 ls .ipython
 mv .ipython ~/.dotfiles/.config/ipython
@@ -2660,9 +2618,7 @@ mv ~/.Xauthority ~/.local/state/X11/Xauthority\
 . ~/.zshenv
 echo $XAUTHORITY\
 
-pp
 pacman -Syu
-blueman-applet
 mv ~/.zshenv ./
 \:q
 ls .dotfiles
@@ -2672,17 +2628,13 @@ ls .vim
 cat .vim/vimrc
 ls ~
 rm ~/.viminfo
-yazi
 mv .vim .config/vim
-ls .config
 cat .zshenv 
 ls .x11
 nvim .zshenv
 rm .vim
-stow .
 vim --cmd 'echo &runtimepath'\
 
-vim
 mkdir -p ~/.local/state/vim\
 
 nvim .config/vim/vimrc
@@ -2692,7 +2644,6 @@ vim --cmd 'echo &viminfofile'\
 ls .local/state/vim
 cat cat 
 cat cat cat 
-git add .
 sudo pacman -Sy xorg-xinit
 sudo pacman -Sy dmenu xautolock i3lock polybar picom alacritty
 sudo pacman -Sy os-prober
@@ -2759,8 +2710,6 @@ cd .dotfiles && stow .
 cd .config/gtk-3.0
 sudo pacman -Sy gtk3
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita
-mount /dev/sda4 /mnt
-sudo mount /dev/sda4 /mnt
 sudo mount /dev/sda2 /mnt/boot && sudo mount /dev/sda1 /mnt/boot/efi
 sudo chroot /mnt /bin/zsh
 cd Code/AdventOfCode
@@ -2769,7 +2718,6 @@ sudo pacman -Sy python
 nvm -v
 nvm --help
 nvm install --lts
-cd Code
 cd AdventOfCode
 nvim .dotfiles/.local/bin
 cd .dotfiles/.local/bin
@@ -2834,7 +2782,6 @@ dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -fn 'JetBra
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -f 'JetBrainsMono:'
 curl https://fast.com
 ls .local/share/icons
-ls /usr/share/icons
 nvim .config/gtk-3.0/settings.ini
 gsettings set org.gnome.desktop.interface cursor-theme "macOS-White"
 gsettings set org.gnome.desktop.interface cursor-size 24
@@ -2851,7 +2798,6 @@ sudo pacman -Rsn
 sudo pacman -Rsn dmenu
 sudo pacman -Rsn dmenu_run
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i
-ip addr
 sudo pacman -Sy firefox
 sudo pacman -Sy clang
 g++ 4.cpp -o 4
@@ -3107,17 +3053,12 @@ sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status
 ubuntu-22.04.5-desktop-amd64.is;q
 ls Downloads
 sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync
-nautilus
 sudo dd if=ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
 
 sudo umount /mnt
 ls /mnt
 sudo mount /dev/sda1 /mnt
-chroot /mnt /bin/bash
-sudo chroot /mnt /bin/bash
 sudo chroot /mnt
-umount -R /mnt
-sudo umount -R /mnt
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 24\
 
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono Nerd Font'\
@@ -3247,7 +3188,6 @@ sudo umount /dev/sda1\
 
 sudo fdisk /dev/sdX\
 
-sudo fdisk /dev/sda
 rm -rf Temp
 unzip balenaEtcher-linux-x64-1.19.25.zip
 ./balenaEtcher-linux-x64
@@ -3255,9 +3195,7 @@ sudo ./balenaEtcher-linux-x64
 sudo ./balenaEtcher-linux-x64/balena-etcher
 man patch
 patch -p2 < patch.diff
-..
 rm -rf dmenu
-l
 make clean install
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 16
 man dmenu
@@ -3276,7 +3214,6 @@ nvim patch.diff
 patch -p1 < patch.diff
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
 echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
-gs
 git diff
 echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 32
 find ~ -type d -name "dmenu*" 2>/dev/null\
@@ -3361,8 +3298,6 @@ dmenu
 sudo pacman -Sy dmenu
 xrdb -merge ~/.Xresources\
 
-xrdb -merge ~/.dotfiles/.x11/Xresources\
-
 fc-list | grep "JetBrainsMono"\
 
 dmenu_run -fn "JetBrainsMono-12"\
@@ -3377,7 +3312,6 @@ suspend
 systemctl status
 systemctl suspend
 startx
-neofetch
 rm a.out test.cc testgpt.cc
 python3 test.py
 python3 
@@ -3387,7 +3321,6 @@ g++ day06.cpp
 ./a.out
 fzf
 find
-cd .dotfiles
 nvim README.md
 sudo pacman -S jdk-openjdk android-studio\
 
@@ -3409,8 +3342,6 @@ sudo systemctl enable --now docker.socket
 docker info
 sudo docker info
 sudo docker run -it --rm archlinux bash -c "echo hello world"
-yay -S visual-studio-code-bin
-code
 sudo usermod -aG docker $USER
 groups yagna
 docker run -it --rm archlinux bash -c "echo hello world"
@@ -3421,12 +3352,7 @@ sudo rm -rf /usr/local/android-studio-2024.2.1.12-linux/
 sudo pacman -S nvidia-utils
 curl -fsSL https://ollama.com/install.sh | sh
 ollama -v
-sudo pacman -S nvidia-container-toolkit
 du -sh / 
-du -sh /home/yagna
-nvidia-smi
-docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama\
-
 docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webUI --restart always ghcr.io/open-webui/open-webui:ollama\
 
 docker run --help
@@ -3445,28 +3371,20 @@ docker exec -it e30a66820355 /bin/bash\
 docker stop e30a66820355
 docker rm e30a66820355
 ollama run llama3.3
-sudo pacman -Syu
 ls .cache
 rm -rf .cache/Google .cache/Microsoft 
-ollama list
-ollama
 ollama os
-ollama ps
-cd Code/AdventOfCode/2024-CC
 make 
 code .
 x
-cd
 ls Android
 rm -rf Android
 rm -rf .android
 rm -rf .java
 nvim .gtkrc-2.0
-rm .gtkrc-2.0
 ;s
 rm -rf .mozilla
 rm -rf .pki
-ls
 xdg-mime query default inode/directory
 npm -v
 sudo pacman -Sy typescript
@@ -3476,61 +3394,335 @@ tsc
 g++ 6.cc -o 6
 ./6
 lsusb
-lsblk
 camera
 sudo pacman -S gvfs-mtp gvfs-gphoto2 libmtp android-udev\
 
 sudo udevadm control --reload\
 sudo udevadm trigger\
 
-nmcli device wifi connect "YagnaRao" password "micromax"
-nmcli device wifi list
 10;rgb:cccc/cccc/cccc11;rgb:1818/1818/1818c
-tmux
 tmux a
 10;rgb:cccc/cccc/cccc11;rgb:1818/1818/1818:q
-q
 i3-msg reload\
 
 xprop | grep WM_CLASS\
 
-nvim
-nvim 
 \:w
 nvim 1.cc
 g++ 1.cc -o 1
 ./1
-docker ps
 docker imagegs
-docker images
-c
+rm ~/.config
+mkdir .config
+mkdir ~/.config
+mv .config/nvm ~/.config/nvm
+rm -rf ~/.config/Code
+stow .
+gs 
+rm .config/zsh/.zcompdump.archlinux.7589
+rm .config/zsh/.zcompdump.archlinux.7682
+cat .config/user-dirs.locale
+cat .config/user-dirs.dirs
+nvim .config/pulse
+gs add .
+git add .
+gh
+sudo pacman -Sy github-cli
+gh auth status
+gh auth login
+git push origin main
+compinit
+rm -f ~/.config/zsh/zcompdump*\
+
+rm -f ~/.config/zsh/.zcompdump*\
+
+zinit ice from"gh" atload"_zsh_autoload -U compinit && compinit"\
+zinit light zdharma-continuum/fast-syntax-highlighting\
+zinit light zsh-users/zsh-autosuggestions\
+
+autoload -U compinit\
+compinit -i\
+
+find ~/.local/share/zinit/completions/ -type l -exec test ! -e {} \; -delete\
+
+exec zsh\
+
+sudo pacman -Syu 
+ls ~/.config
+[200~lsmod | grep snd
+sudo alsactl restore\
+pulseaudio --kill\
+pulseaudio --start\
+
+sudo pacman -S alsa-utils  # For Arch-based systems\
+
+sudo pacman -S alsa-utils\
+
+sudo alsactl restore\
+
+sudo pacman -S pulseaudio pulseaudio-alsa\
+
+pulseaudio --kill\
+pulseaudio --start\
+
+systemctl --user status pulseaudio\
+
+systemctl --user enable pulseaudio\
+systemctl --user start pulseaudio\
+
+journalctl --user -xeu pulseaudio.service\
+
+ps aux | grep pulseaudio\
+
+killall -9 pulseaudio\
+
+rm -rf ~/.config/pulse\
+pulseaudio --start\
+
+sudo cp -r /etc/pulse/default.pa /etc/pulse/default.pa.bak\
+sudo cp -r /etc/pulse/system.pa /etc/pulse/system.pa.bak\
+
+lsmod | grep snd\
+
+sudo modprobe snd_hda_intel\
+sudo modprobe snd_pcm\
+
+ls ~/Code
+mv pictures Pictures
+mkdir Notes
+g++ 7.cc -o 7
+./7
+g++ 8.cc -o 8
+./8
+python3 9.py
+python3 9.py < input-9
+echo $(6400828038148 - 6401092019345)
+echo $((6400828038148 - 6401092019345))
+$((999999999999999999999999999999999999999899989998999899979997111111119997999699969996999699969996999599952222222229995999599959994999499949994999433333999499949993999399939993999399934999399939992999299929992999199915555555666669991999199919991777999199919990999099909990999088889999999990999099909990101010109989998999899989998911119989998999891212121212998899881399889988998899889988141414141499889988998799879987151515151515159987998699869986161616161616161616998699869986998617171717171799859984998499849984998399831818181818998399839983998399829982998299821919 - 000000099999999999999999999999999999999111111119999999899989998999899979997999799962222222229996999699969996999699959995999533333999599959994999499949994999499944999499939993999399939993999399935555555666669993999299929992777999299919991999199919991999188889999999991999199909990101010109990999099909990999011119990999099891212121212998999891399899989998999899989141414141499889988998899889988151515151515159988998899889988161616161616161616998799879987998717171717171799869986998699869986998699861818181818998599849984998499849983998399831919))
+echo $((999999999999999999999999999999999999999899989998999899979997111111119997999699969996999699969996999599952222222229995999599959994999499949994999433333999499949993999399939993999399934999399939992999299929992999199915555555666669991999199919991777999199919990999099909990999088889999999990999099909990101010109989998999899989998911119989998999891212121212998899881399889988998899889988141414141499889988998799879987151515151515159987998699869986161616161616161616998699869986998617171717171799859984998499849984998399831818181818998399839983998399829982998299821919 - 000000099999999999999999999999999999999111111119999999899989998999899979997999799962222222229996999699969996999699959995999533333999599959994999499949994999499944999499939993999399939993999399935555555666669993999299929992777999299919991999199919991999188889999999991999199909990101010109990999099909990999011119990999099891212121212998999891399899989998999899989141414141499889988998899889988151515151515159988998899889988161616161616161616998799879987998717171717171799869986998699869986998699861818181818998599849984998499849983998399831919))
+g++ 9.cc -o 9
+sudo pacman -S xclip
+./9
+cat \'
+rm \'
+sudo pacman -S fastfetch
+nmcli device wifi l
+tmux
+cat /sys/class/power_supply/BAT0/capacity\
+
+cat /sys/class/power_supply/BAT1/capacity
+cat /sys/class/power_supply/ACAD/online
+cat /sys/class/power_supply/ACAD/type
+yay -R visual-studio-code-bin
+yay -S visual-studio-code-bin
+cod e
+rm .config/Code
+ls .config
+nautilus
+fh
+cd .dotfiles
+code
+find /usr/share/icons -type d -name "cursors"
+sudo nvim /etc/pacman.conf
+bash
+sudo pacman -Sy unrar tar rsync exfat-utils ntfs-3g flac
+sudo pacman -S jdk-openjdk
+uname -a
+yay -S preload
+ls /usr/share/icons/default/index.theme
+nvim ls /usr/share/icons/default/index.theme
+sudo systemctl enable --now preload.service
+ls /usr/share/icons
+xrdb -merge ~/.dotfiles/.x11/Xresources\
+
+sudo -e /usr/share/icons/default/index.theme
+nvim 
+sudo pacman -S papirus-icon-theme
+lxappearance
+sudo pacman -Sy yazi
+cd Self/Pictures/Wallpapers_Desktop/Gruvebox
+ls _.git
+ls .git
+gs
+ga
+ls .git/branches
+sudo pacman -S yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
+mount /dev/sda4 /mnt
+sudo mount /dev/sda4 /mnt
+mount /dev/sda2 /mnt/boot
+sudo mount /dev/sda2 /mnt/boot
+sudo mount /dev/sda1 /mnt/boot/efi
+chroot /mnt /bin/bash
+sudo chroot /mnt /bin/bash
+umount -R /mnt
+sudo umount -R /mnt
+fdisk
+fdisk --help
+fdisk /dev/sda
+sudo fdisk /dev/sda
+sudo mkfs.exfat /dev/sda1
+clang Code/AdventOfCode/2024-CC/1.cc
+g++ 10.cc -o 10
+./10
+sudo pacman -S htop
+du -sh /home/yagna
+g++ 11.cc -o 11
+./11
+cd Code
+mv Code-Forces CodeForces
+./screen_combined.png
+man feh
+feh screen_combined.png
+lsblk
+sudo pacman -Sy linux-lts linux-lts-headers
+docker compose -v
+docker compose --version
+cd Self
+mkdir Immich
+wget -O docker-compose.yml https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
+wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
+wget -O hwaccel.transcoding.yml https://github.com/immich-app/immich/releases/latest/download/hwaccel.transcoding.yml
+wget -O hwaccel.ml.yml https://github.com/immich-app/immich/releases/latest/download/hwaccel.ml.yml
+sudo pacman -S nvidia-container-toolkit
+..
+du ./Immich
+sudo du ./Immich
+sudo du 
+yazi
+du ./Self/Immich
+docker logs immich_machine_learning\
+
+docker run --gpus all nvidia/cuda:11.0-base nvidia-smi\
+
+docker exec -it immich_machine_learning /bin/bash\
+
+export MIMALLOC_DISABLE=1\
+
+docker run --gpus all nvidia/cuda:12.7-base nvidia-smi\
+
+sudo pacman -S netstat-nat
+sudo pacman -R netstat-nat
+docker run -p 3004:3003 --gpus all ghcr.io/immich-app/immich-machine-learning:release-cuda\
+
+hyop
+docker restart immich_machine_learning\
+docker logs -f immich_machine_learning\
+
+docker stop recursing_cohen
+docker rm recursing_cohen
+nvim docker-compose.yml
+sudo pacman -S net-tools
+sudo netstat -tuln | grep 3003\
+
+lsof -i :3003\
+
+kill -9 <pid>\
+
+docker run --name immich_machine_learning -p 3004:3003 --gpus all ghcr.io/immich-app/immich-machine-learning:release-cuda\
+
+curl http://localhost:3003
+docker rm immich_machine_learning
+rm .bash_history
+cat .gtkrc-2.0
+rm .gtkrc-2.0
+sudo pacman -R lxappearance-gtk3
+java -v
+java --version
+nmcli device wifi show-password
+nmcli device wifi connect "YagnaRao" password "micromax" --ask\
+
+nmcli device wifi connect "YagnaRao" password "micromax" 802-11-wireless-security.key-mgmt wpa-psk\
+
+nmcli device wifi connect list
+bluetoothctl
+sudo pacman -Sy bluez bluez-utils blueman
+blueman-applet
+blueman-adapters
+sudo systemctl enable --now bluetooth.service
+blueman-manager
+\:
+man :
+docker p
+cd Self/Immich
+docker compose down
+docker stop immich_machine_learning
+docker stop immich_postgres
+docker stop immich_server
+docker stop immich_redis
+cd
+rm -rf Self
+sudo rm -rf Self
+cd Immich
+docker compose up -d
+pp
+nmcli device wifi connect "Sada_5G" password "CHRS24182217"
+nmcli device wifi list
+nmcli device wifi connect "Sada_4G" password "CHRS24182217"
+l
+sudo pacman -S tree
+man tree
+tree
+nmcli device wifi connect "YagnaRao" password "micromax"
+ip addr
+htop
+sudo pacman -Syu
+vim
+cd Code/AdventOfCode/2024-CC\\
+
+cd Code/AdventOfCode/2024-CC
+fastfetch
+neofetch
+cd Code/AdventOfCode/2024-CC 
+g++ 12.cc -o 12
+./12
+ls
+g++ 13.cc -o 13
+./13
 ;q
-: 1733951519:0;cd .dotfiles
-: 1733951520:0;ls
-: 1733951526:0;gs
-: 1733951551:0;git add .
-: 1733951563:0;c
-: 1733951565:0;gs
-: 1733951578:0;rm ~/.config
-: 1733951604:0;mkdir .config
-: 1733951616:0;mkdir ~/.config
-: 1733951634:0;mv .config/nvm ~/.config/nvm
-: 1733951673:0;rm -rf ~/.config/Code
-: 1733951675:0;ls ~/.config
-: 1733951679:0;stow .
-: 1733951680:0;c
-: 1733951688:0;ls
-: 1733951691:0;gs 
-: 1733951725:0;rm .config/zsh/.zcompdump.archlinux.7589
-: 1733951729:0;rm .config/zsh/.zcompdump.archlinux.7682
-: 1733951736:0;gs
-: 1733951753:0;cat .config/user-dirs.locale
-: 1733951756:0;cat .config/user-dirs.dirs
-: 1733951773:0;nvim .config/pulse
-: 1733951781:0;gs
-: 1733951785:0;git add .
-: 1733951892:0;gs
-: 1733951905:0;git add .
-: 1733951907:0;gs
-: 1733952077:0;gs add .
-: 1733952083:0;git add .
+ollama ps
+du -h ./Self/Immich
+ls 
+ls Code
+ollama run llama3.3:70b
+ollama
+ollama rm llama3.3:70b
+ollama list
+docker
+docker run --rm -it -p 3000:3000 ghcr.io/open-webui/open-webui\
+
+docker iames
+docker images
+docker run --rm -it -p 3000:3000 ghcr.io/open-webui/open-webui:ollama
+docker stop dde865622047
+docker rm dde865622047
+docker ps
+docker rm 5a9cf85d611a2035bd0a0d407ded28f2af6a5539c8e5d2c6a3b2ad0590ad701c
+docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama\
+\
+
+nvidia-smi
+ollama run llama3.1:8b
+fzf manpages
+fzf-tab-complete
+fzf-tmux
+tmux ls
+sudo pacman -S luarocks\
+
+luarocks --version\
+
+pip install --user hererocks\
+
+hererocks /home/yagna/.local/share/nvim/lazy-rocks --lua=5.1\
+
+/home/yagna/.local/share/nvim/lazy-rocks/hererocks/bin/luarocks --version\
+
+cal
+c
+cd .config/nvim
+nvim
+q
+: 1734521952:0;cd ~/.dotfiles
+: 1734521953:0;ls
+: 1734521967:0;gs
+: 1734522067:0;sudo g[200~git add . ':!**/nvim/**'
+: 1734522071:0;git add . ':!**/nvim/**'

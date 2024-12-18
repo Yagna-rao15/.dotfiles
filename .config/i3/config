@@ -159,10 +159,9 @@ bindsym $mod+r mode "resize"
 # }
 
 # Setting Wallpaper
-exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
-# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/Black-Venom.jpg --no-fehbg
+# exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
+exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
-# exec_always feh --bg-scale $HOME/Self/pictures/Wallpapers_Desktop/miles-morales-in-jacket-spiderman-desktop-wallpaper.jpg --no-fehbg
 
 # Polybar Kill prev instances and create new
 exec_always killall polybar

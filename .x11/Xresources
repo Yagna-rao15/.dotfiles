@@ -1,12 +1,11 @@
-Xcursor.size: 48
-dmenu.font: JetBrainsMono-12
+Xcursor.size: 40
 ! vi:ft=xdefaults
 !
 ! Cursor theme
-Xcursor.theme: macOS-White
+Xcursor.theme: macOS
 
 /* st.font: SauceCodePro Nerd Font Mono:pixelsize=22:antialias=true:autohint=true; */
-! st.termname: st-256color
+st.termname: st-256color
 
 ! padding
 st.borderpx: 10

@@ -19,7 +19,7 @@ set nowrap " Display long lines as one line
 set linebreak " Don't break words when wrapping
 set scrolloff=2 " Keep 8 lines above/below cursor
 set sidescrolloff=8 " Keep 8 columns to the left/right of cursor
-set numberwidth=4 " Number column width
+set numberwidth=2 " Number column width
 set shiftwidth=2 " Spaces per indentation
 set tabstop=2 " Spaces per tab
 set softtabstop=2 " Spaces per tab during editing ops
@@ -27,9 +27,9 @@ set expandtab " Convert tabs to spaces
 set nocursorline " Don't highlight the current line
 set splitbelow " Horizontal splits below current window
 set splitright " Vertical splits to the right
-" set noswapfile " Don't use a swap file
+set noswapfile " Don't use a swap file
 set smartindent " Smart indentation
-" set showtabline=2 " Always show tab line
+set showtabline=2 " Always show tab line
 set backspace=indent,eol,start " Configurable backspace behavior
 set pumheight=10 " Popup menu height
 set conceallevel=0 " Make `` visible in markdown

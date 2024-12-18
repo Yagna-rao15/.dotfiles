@@ -2,8 +2,12 @@ This is my personal Dotfiles Repo
 
 # Prerequisites:
 - i3 alacritty git nano neovim vim nautulus yazi neofetch htop sudo feh zsh ttf-jetbrains-mono networkmanager pulseaudio
-- yay for AUR, nvm,
+- yay for AUR, nvm, yazi from github.
 - dmenu( with height patch )
+
+- YT Link : https://youtu.be/odgD_RdJjCU?si=FjLXyps7iP2yI0fT
+- Cursor Theme Select in Xresources
+- for GTK edit gtk-3.0/setting.ini file. (40 for Personal Laptop)
 
 # Cheatsheets:
 ## Shell:
