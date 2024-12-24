@@ -44,4 +44,4 @@ fh() {
 
 # Get IP
 alias IPP='curl https://icanhazip.com'
-alias nautilus='GTK_THEME=Adwaita:dark nautilus'
+# alias nautilus='GTK_THEME=Adwaita:dark nautilus'

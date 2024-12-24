@@ -10,6 +10,11 @@ map("n", "<leader>u", function()
   vim.cmd.UndotreeFocus()
 end)
 
+-- Add undo break-points
+map("i", ",", ",<c-g>u")
+map("i", ".", ".<c-g>u")
+map("i", ";", ";<c-g>u")
+
 -- fzf
 map("n", "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "FzfLua find files" })
 map("n", "<leader>fa", "<cmd>FzfLua files cwd=~<cr>", { desc = "FzfLua find files" })
@@ -37,16 +42,17 @@ map("n", "<C-u>", "<C-u>zz")
 map("v", ">", ">gv")
 map("v", "<", "<gv")
 
--- map("n", "1", "010jzz", { desc = "center the cursor while scrolling" })
--- map("n", "2", "010kzz", { desc = "center the cursor while scrolling" })
--- map("n", "3", "020jzz", { desc = "center the cursor while scrolling" })
--- map("n", "4", "020kzz", { desc = "center the cursor while scrolling" })
-
--- tabs
+-- buffers
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
 map("n", "<tab>", "<cmd>bnext<CR>", { desc = "buffer goto next" })
 map("n", "<S-tab>", "<cmd>bNext<CR>", { desc = "buffer goto prev" })
 map("n", "<leader>x", "<cmd>bdelete!<CR>", { desc = "buffer close" })
+
+-- windows
+map("n", "<leader>w", "<c-w>", { desc = "Windows", remap = true })
+map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
+map("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
+map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
 
 -- Comment
 map("n", "<leader>/", "gcc", { desc = "comment toggle", remap = true })
@@ -55,21 +61,21 @@ map("v", "<leader>/", "gc", { desc = "comment toggle", remap = true })
 -- terminal
 map("t", "<leader>x", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 map("n", "<leader>t", "<cmd>terminal<CR>", { desc = "terminal new horizontal term" })
-map("n", "<leader>ht", "<cmd>terminal<CR>", { desc = "terminal new horizontal term" })
-map("n", "<leader>vt", "<cmd>terminal<CR>", { desc = "terminal new vertical window" })
+map("n", "<leader>ht", "<cmd>split<CR><cmd>terminal<CR>", { desc = "terminal new horizontal term" })
+map("n", "<leader>vt", "<cmd>vsplit<CR><cmd>terminal<CR>", { desc = "terminal new vertical window" })
 
--- blankline
-map("n", "<leader>cc", function()
-  local config = { scope = {} }
-  config.scope.exclude = { language = {}, node_type = {} }
-  config.scope.include = { node_type = {} }
-  local node = require("ibl.scope").get(vim.api.nvim_get_current_buf(), config)
-
-  if node then
-    local start_row, _, end_row, _ = node:range()
-    if start_row ~= end_row then
-      vim.api.nvim_win_set_cursor(vim.api.nvim_get_current_win(), { start_row + 1, 0 })
-      vim.api.nvim_feedkeys("_", "n", true)
-    end
+-- diagnostic
+local diagnostic_goto = function(next, severity)
+  local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+  severity = severity and vim.diagnostic.severity[severity] or nil
+  return function()
+    go({ severity = severity })
   end
-end, { desc = "blankline jump to current context" })
+end
+map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
+map("n", "]d", diagnostic_goto(true), { desc = "Next Diagnostic" })
+map("n", "[d", diagnostic_goto(false), { desc = "Prev Diagnostic" })
+map("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
+map("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
+map("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
+map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })

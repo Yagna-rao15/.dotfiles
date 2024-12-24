@@ -8,14 +8,6 @@ local M = {
     theme = "ayu_dark", -- or whatever theme you prefer
     hl_add = {},
     hl_override = {
-      -- -- Override or add the specific highlight groups here
-      -- luaTSField = { fg = "#F07174" }, -- example override
-      -- ["@tag.delimiter"] = { fg = "#95E6CB" },
-      -- ["@function"] = { fg = "#FFA455" },
-      -- ["@variable.parameter"] = { fg = "#CBA6F7" },
-      -- ["@constructor"] = { fg = "#56c3f9" },
-      -- ["@tag.attribute"] = { fg = "#FFA455" },
-
       Comment = { italic = true },
       ["@comment"] = { italic = true },
     },

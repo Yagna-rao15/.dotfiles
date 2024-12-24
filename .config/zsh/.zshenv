@@ -50,3 +50,10 @@ export PATH="$PATH:$(go env GOBIN)$(go env GOPATH)/bin"
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
+# Theming
+export GTK_ICON_THEME="Papirus-Dark"
+export GTK_CURSOR_THEME="macOS"
+export GTK_CURSOR_SIZE=40
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=Adwaita-Dark

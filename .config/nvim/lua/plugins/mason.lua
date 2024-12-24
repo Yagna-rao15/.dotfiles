@@ -4,9 +4,67 @@ return {
     "williamboman/mason-lspconfig.nvim",
   },
   cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
-  opts = function()
-    return require "config.mason"
-  end,
+  opts = {
+    ensure_installed = {
+      -- LSP
+      "lua-language-server",
+      "typescript-language-server",
+      "clangd",
+      "pyright",
+      "tailwindcss-language-server",
+      "stylua",
+      "dockerfile-language-server",
+      "docker-compose-language-service",
+      "cmakelang",
+
+      -- Go
+      "gopls",
+      "goimports",
+      "gofumpt",
+      "gomodifytags",
+      "impl",
+
+      -- Markdown
+      "markdownlint-cli2",
+      "markdown-toc",
+
+      -- Linters
+      "eslint_d",
+      "cmakelint",
+      -- "ruff",
+      -- "autopep8",
+      -- "mypy",
+      -- "flake8",
+      "htmlhint",
+      "stylelint",
+      "shellcheck",
+      "hadolint",
+      "sqlfluff",
+    },
+
+    PATH = "skip",
+
+    ui = {
+      icons = {
+        package_pending = " ",
+        package_installed = "󰄳 ",
+        package_uninstalled = " 󰚌",
+      },
+
+      keymaps = {
+        toggle_server_expand = "<CR>",
+        install_server = "i",
+        update_server = "u",
+        check_server_version = "c",
+        update_all_servers = "U",
+        check_outdated_servers = "C",
+        uninstall_server = "X",
+        cancel_installation = "<C-c>",
+      },
+    },
+
+    max_concurrent_installers = 10,
+  },
   config = function(_, opts)
     dofile(vim.g.base46_cache .. "mason")
     require("mason").setup(opts)

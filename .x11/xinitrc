@@ -1,3 +1,4 @@
 xrandr --dpi 140
+xsettingsd &
 xrdb /home/yagna/.dotfiles/.x11/Xresources
 exec i3

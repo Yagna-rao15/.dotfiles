@@ -16,6 +16,8 @@ return {
         sh = { "shfmt" },
         python = { "isort", "black" },
         go = { "goimports", "gofmt" },
+        ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+        ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
         ["*"] = { "codespell" },
         ["_"] = { "trim_whitespace" },
         -- rust = { "rustfmt", lsp_format = "fallback" },
@@ -33,6 +35,13 @@ return {
       notify_on_error = true,
       notify_no_formatters = true,
     }
+
+    sql_ft = sql_ft or {}
+    for _, ft in ipairs(sql_ft) do
+      opts.formatters_by_ft[ft] = opts.formatters_by_ft[ft] or {}
+      table.insert(opts.formatters_by_ft[ft], "sqlfluff")
+    end
+
     return opts
   end,
 }

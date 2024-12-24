@@ -12,11 +12,11 @@ local options = {
 
   ui = {
     cmp = {
-      icons_left = false, -- only for non-atom styles!
+      icons_left = true, -- only for non-atom styles!
       lspkind_text = true,
       style = "default", -- default/flat_light/flat_dark/atom/atom_colored
       format_colors = {
-        tailwind = false, -- will work for css lsp too
+        tailwind = true, -- will work for css lsp too
         icon = "󱓻",
       },
     },
@@ -28,7 +28,7 @@ local options = {
       theme = "default", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
-      separator_style = "default",
+      separator_style = "block",
       order = nil,
       modules = nil,
     },
@@ -43,20 +43,18 @@ local options = {
   },
 
   nvdash = {
-    load_on_startup = false,
+    load_on_startup = true,
     header = {
-      "                            ",
-      "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
-      "   ▄▀███▄     ▄██ █████▀    ",
-      "   ██▄▀███▄   ███           ",
-      "   ███  ▀███▄ ███           ",
-      "   ███    ▀██ ███           ",
-      "   ███      ▀ ███           ",
-      "   ▀██ █████▄▀█▀▄██████▄    ",
-      "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
-      "                            ",
-      "     Powered By  eovim    ",
-      "                            ",
+      "                                                                       ",
+      "                                                                     ",
+      "       ████ ██████           █████      ██                     ",
+      "      ███████████             █████                             ",
+      "      █████████ ███████████████████ ███   ███████████   ",
+      "     █████████  ███    █████████████ █████ ██████████████   ",
+      "    █████████ ██████████ █████████ █████ █████ ████ █████   ",
+      "  ███████████ ███    ███ █████████ █████ █████ ████ █████  ",
+      " ██████  █████████████████████ ████ █████ █████ ████ ██████ ",
+      "                                                                       ",
     },
 
     buttons = {
@@ -98,7 +96,7 @@ local options = {
   lsp = { signature = true },
 
   cheatsheet = {
-    theme = "grid", -- simple/grid
+    theme = "grid",                                                     -- simple/grid
     excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
   },
 

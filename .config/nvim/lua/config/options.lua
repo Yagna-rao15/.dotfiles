@@ -6,6 +6,8 @@ opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
 opt.clipboard = "unnamedplus"
+opt.completeopt = "menu,menuone,noselect"
+-- opt.conceallevel = 2
 opt.cursorline = true
 opt.scrolloff = 5
 
@@ -16,8 +18,20 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
+opt.virtualedit = "block"
+
+-- Latest for version 10.x.x
+opt.smoothscroll = true
+-- opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
+-- opt.foldmethod = "expr"
+-- opt.foldtext = ""
+g.markdown_recommended_style = 0
+
 
 -- opt.fillchars = { eob = " " }
+-- opt.fillchars = { foldopen = "", foldclose = "", fold = " ", foldsep = " ", diff = "╱", }
+opt.foldlevel = 99
+opt.list = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
@@ -135,4 +149,49 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
+vim.api.nvim_create_augroup("CreateDirs", { clear = true })
+vim.api.nvim_create_autocmd("BufWritePre", {
+  group = "CreateDirs",
+  pattern = "*",
+  callback = function()
+    local file_path = vim.fn.expand("<afile>:p:h")
+    if vim.fn.isdirectory(file_path) == 0 then
+      vim.fn.mkdir(file_path, "p")
+    end
+  end,
+})
+
+
+-- wrap and check for spell in text filetypes
+vim.api.nvim_create_augroup("WrapShell", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = "WrapShell",
+  pattern = { "text", "plaintex", "typst", "gitcommit", "markdown" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = true
+  end,
+})
+
+-- Fix conceallevel for json files
+vim.api.nvim_create_augroup("JSON", { clear = true })
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  group = "JSON",
+  pattern = { "json", "jsonc", "json5" },
+  callback = function()
+    vim.opt_local.conceallevel = 0
+  end,
+})
+
+-- Codelens
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "InsertLeave" }, {
+  callback = function()
+    vim.lsp.codelens.refresh()
+  end,
+})
+
 local new_cmd = vim.api.nvim_create_user_command
+
+new_cmd("Setwd", function()
+  vim.cmd("cd " .. vim.fn.expand("%:p:h"))
+end, {})
