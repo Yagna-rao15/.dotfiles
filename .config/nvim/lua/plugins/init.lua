@@ -14,6 +14,12 @@ return {
     },
     config = function(_, opts)
       require("Comment").setup(opts)
+
+      vim.api.nvim_create_autocmd("BufEnter", {
+        callback = function()
+          vim.opt.formatoptions:remove { "c", "r" }
+        end,
+      })
     end,
   },
 

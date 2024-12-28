@@ -1,8 +1,6 @@
 # Source zshenv and alias
 source "$HOME/.config/zsh/.alias"
 
-export COLOR=#00f
-
 # Set zinit Directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -62,22 +60,3 @@ compinit -d "$ZDOTDIR/.zcompdump"
 _comp_options+=(globdots)
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
-export TESSDATA_PREFIX="/usr/share/tessdata/"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/yagna/.local/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/yagna/.local/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/yagna/.local/miniconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/yagna/.local/miniconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# zprof

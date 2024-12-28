@@ -282,7 +282,6 @@ mkdir test
 cd test
 nvm help
 nvm install node
-npm
 rm -rf go
 sudo rm -rf go
 echo $ZDOTDIR
@@ -299,7 +298,6 @@ cd Code/test
 node index.js
 npm i express
 npm start
-ip addr show
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
 gcc test.c
 ls ~/Downloads
@@ -530,9 +528,6 @@ cat 4.cpp
 rm s
 rm temp temp1 test
 #include <string>
-#include <vector>
-using namespace std;
-int main(int argc, char *argv[]) {
 cd Code/Code-Forces/970-Div-3
 rm s temp test
 ls Self/notes
@@ -810,8 +805,6 @@ rm -rf ~/.conda ~/.continuum ~/.anaconda_backup\
 
 nvim ~/.config/bash/bash_history
 nvim ~/.config/bash/.bashrc
-conda\
-
 rm -rf anaconda3\
 rm -rf ~/anaconda3\
 sudo rm -rf /opt/anaconda3
@@ -1170,8 +1163,6 @@ curl "https://jiorockers.kim/files/Telugu%20Movies/Telugu%202024%20Movies/The%20
 sudo kill -9 <PID>\
 
 sudo kill -9 <PID>
-ps aux | grep pacman\
-
 sudo kill -9 14945
 sudo pacman -S android-tools\
 
@@ -1634,7 +1625,6 @@ sudo pacman -Sy speedtest-cli
 speedtest
 c=1
 while true; do echo "Hello $c"; let c=c+1; sleep 1; done
-top
 cd .config/nvim-test
 rm -rf .config
 ls nvim
@@ -1654,8 +1644,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
 ~/.local/share/nvim-test/site/pack/packer/start/packer.nvim\
 
 rm /var/lib/pacman/db.lck\
-
-sudo rm /var/lib/pacman/db.lck\
 
 flatpak
 sudo pacman -Sy flatpak
@@ -1677,7 +1665,6 @@ cd Code/Portal/client
 cd Code/Portal/
 cd uploads
 cd ../client
-cd src
 sudo pacman -S interception-caps2esc\
 
 touch /etc/udevmon.yaml
@@ -1795,7 +1782,6 @@ sudo docker run -it --user ros --network=host --ipc=host -v=$PWD/source:/my_sour
 sudo docker run -it --network=host --ipc=host -v=$PWD/source:/my_source_code -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --env=DISPLAY ros
 lvmdiskscan
 cd dev
-cd /
 cd mnt
 ls /dev
 cd /dev
@@ -2109,7 +2095,6 @@ cat .Xauthority
 cc
 i[
 ip
-IPP
 cargo
 sudo pacman -Sy nix
 systemctl enable --now nix-daemon.service
@@ -2216,7 +2201,6 @@ rm -rf vscode-pitch-black-theme
 cd ~/.vscode-oss/extensions\
 git clone https://github.com/ViktorQvarfordt/vscode-pitch-black-theme.git\
 
-cd 
 yay -S apple_cursor
 nvim Downloads/test.jsx
 finger
@@ -2566,7 +2550,6 @@ man startx
 ls .cargo
 ls .ipython
 mv .ipython ~/.dotfiles/.config/ipython
-la
 mv .jupyter .dotfiles/.config/jupyter
 ls .mozilla
 mv ~/.cargo ~/.jupyter ~/.vscode-oss ~/.config/
@@ -2598,7 +2581,6 @@ cat .vim/vimrc
 rm ~/.viminfo
 mv .vim .config/vim
 cat .zshenv 
-ls .x11
 nvim .zshenv
 rm .vim
 vim --cmd 'echo &runtimepath'\
@@ -2638,7 +2620,6 @@ ezit
 rm -rf yay
 rm .bash_logout .bashrc .bash_profile
 rm .config .local
-zen-browser
 git clone git://git.suckless.org/dmenu
 sudo make clean install\
 
@@ -2667,7 +2648,6 @@ sudo systemctl restart display-manager\
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1\
 
 xinput list
-time zsh --interactive -c exit
 sudo pacman -Sy tmux
 sudo pacman -Sy nautilus
 man man
@@ -2687,7 +2667,6 @@ nvm --help
 nvm install --lts
 cd AdventOfCode
 nvim .dotfiles/.local/bin
-cd .dotfiles/.local/bin
 chmod +x keyboard_backlight.sh
 ./keyboard_backlight.sh
 yay -S rogauracore-git
@@ -2726,7 +2705,6 @@ xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Natural Scrolling Ena
 
 sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
 
-gparted
 systemctl enable --now networkmanager
 systemctl enable --now NetworkManager
 nmcli device wifi connect PAVAN\ 3265 password "1234567890"
@@ -3018,7 +2996,6 @@ sudo dd if=~/Downloads/ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status
 sudo dd if=ubuntu-22.04.5-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync\
 
 sudo umount /mnt
-ls /mnt
 sudo mount /dev/sda1 /mnt
 sudo chroot /mnt
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono Nerd Font' -h 24\
@@ -3270,7 +3247,6 @@ dmenu_run -fn "JetBrainsMono Nerd Font"
 sudo dmenu_run -fn "JetBrainsMono Nerd Font"[A
 sudo pacman -Sy nvidia
 suspend
-systemctl status
 systemctl suspend
 startx
 rm a.out test.cc testgpt.cc
@@ -3279,7 +3255,6 @@ python3
 nvim day06.cpp
 cd ~/Downloads
 g++ day06.cpp
-fzf
 find
 nvim README.md
 sudo pacman -S jdk-openjdk android-studio\
@@ -3333,7 +3308,6 @@ ls .cache
 rm -rf .cache/Google .cache/Microsoft 
 ollama os
 make 
-code .
 x
 ls Android
 rm -rf Android
@@ -3465,7 +3439,6 @@ cat /sys/class/power_supply/ACAD/type
 yay -R visual-studio-code-bin
 cod e
 rm .config/Code
-fh
 code
 find /usr/share/icons -type d -name "cursors"
 sudo nvim /etc/pacman.conf
@@ -3497,11 +3470,9 @@ sudo mount /dev/sda1 /mnt/boot/efi
 chroot /mnt /bin/bash
 sudo chroot /mnt /bin/bash
 umount -R /mnt
-sudo umount -R /mnt
 fdisk
 fdisk --help
 fdisk /dev/sda
-sudo fdisk /dev/sda
 sudo mkfs.exfat /dev/sda1
 clang Code/AdventOfCode/2024-CC/1.cc
 g++ 10.cc -o 10
@@ -3514,7 +3485,6 @@ mv Code-Forces CodeForces
 ./screen_combined.png
 man feh
 feh screen_combined.png
-lsblk
 sudo pacman -Sy linux-lts linux-lts-headers
 docker compose -v
 docker compose --version
@@ -3528,7 +3498,6 @@ sudo pacman -S nvidia-container-toolkit
 du ./Immich
 sudo du ./Immich
 sudo du 
-yazi
 du ./Self/Immich
 docker logs immich_machine_learning\
 
@@ -3550,7 +3519,6 @@ docker logs -f immich_machine_learning\
 
 docker stop recursing_cohen
 docker rm recursing_cohen
-nvim docker-compose.yml
 sudo pacman -S net-tools
 sudo netstat -tuln | grep 3003\
 
@@ -3576,7 +3544,6 @@ nmcli device wifi connect "YagnaRao" password "micromax" 802-11-wireless-securit
 nmcli device wifi connect list
 bluetoothctl
 sudo pacman -Sy bluez bluez-utils blueman
-blueman-applet
 blueman-adapters
 sudo systemctl enable --now bluetooth.service
 blueman-manager
@@ -3588,10 +3555,8 @@ docker stop immich_machine_learning
 docker stop immich_postgres
 docker stop immich_server
 docker stop immich_redis
-cd
 rm -rf Self
 sudo rm -rf Self
-docker compose up -d
 nmcli device wifi connect "Sada_4G" password "CHRS24182217"
 sudo pacman -S tree
 man tree
@@ -3604,7 +3569,6 @@ g++ 13.cc -o 13
 ./13
 du -h ./Self/Immich
 ls 
-ls Code
 ollama run llama3.3:70b
 ollama rm llama3.3:70b
 docker
@@ -3633,7 +3597,6 @@ hererocks /home/yagna/.local/share/nvim/lazy-rocks --lua=5.1\
 /home/yagna/.local/share/nvim/lazy-rocks/hererocks/bin/luarocks --version\
 
 cal
-cd ~/.dotfiles
 sudo g[200~git add . ':!**/nvim/**'
 git add . ':!**/nvim/**'
 git commit -m "Changes before Changing nvim"
@@ -3650,9 +3613,6 @@ mv Portal\ \(copy\) Portal
 ls LR\(0\)
 ls Desktop
 f
-cd Code/Portal
-nvim package.json
-..
 curl -X POST http://localhost:8080/check-email \\
 -H "Content-Type: application/json" \\
 -d '{"email": "example@example.com"}'\
@@ -3662,14 +3622,10 @@ curl -X POST http://localhost:8080/check-email \\
 -d '{"email": "u22cs104@coed.svnit.ac.in"}'\
 
 mv Portal _Portal
-git clone https://github.com/Yagna-rao15/hostel-portal.git
 cat _main.go
 cd P
-cd hostel-portal
 nvim main.go
 air
-go mod tidy\
-
 go mod init
 nvim go.mod
 mv main.go _.go
@@ -3677,17 +3633,12 @@ mv _main.go main.go
 nvim verify.go
 go modq
 cd Code/hostel-portal/client
-npm install
 git checkout 91bd9ab1e380a2e40d5b244617dc8288abbae5a8
 git stash\
 
 git checkout 91bd9ab1e380a2e40d5b244617dc8288abbae5a8\
 
-ls ../
-cd ../
 go run ./main.go
-cd client
-npm run dev
 rm -rf hostel-portal _Portal
 mkdir Portal
 cd Portal
@@ -3719,26 +3670,20 @@ rm -rf lua/core
 ls lua
 cd ~/.config/nvim
 nvim lua/options.lua
-sudo pacman -Syu
-cd Immich
-docker compose down
 docker compose pull && docker compose up -d
 nmcli device show
-nmcli device wifi list
 cd Code/AdventOfCode/2024-CC
 docker info
 systemctl disable --now docker.socket
 systemctl enable --now docker.service
 docker image
 docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
-ip addr
 docker image rm ghcr.io/open-webui/open-webui:ollama
 nvim lua/plugins/blink.lua
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ollama l
 ollama ps
 rm -rf .ollama
-l
 export OLLAMA_HOST=0.0.0.0\
 
 echo $OLLAMA_HOST\
@@ -3777,12 +3722,8 @@ hostname -I\
 
 docker stop open-webui
 docker rm open-webui
-docker ps
-docker container ls
 docker iamges
 docker image rm ghcr.io/open-webui/open-webui:cuda ghcr.io/open-webui/open-webui:main
-docker images
-git log
 git restore .\
 
 git clean -n\
@@ -3794,12 +3735,9 @@ git clean -fd
 tree
 cd .config/nvim\\
 
-pp
 vim
-du -sh
 root
 su 
-exit
 yay -S visual-studio-code-bin
 1
 vim init.lua
@@ -3816,10 +3754,7 @@ sudo cd /usr/share/themes
 cd /usr/share/themes
 ls Emacs
 lxappearance
-nmcli device wifi connect "YagnaRao" password "micromax"
-ls ~
 ls ~/.config
-nautilus
 cat ~/.config/gtk-3.0/settings.ini\
 
 chown $USER:$USER ~/.config/gtk-3.0/settings.ini\
@@ -3864,15 +3799,10 @@ xrdb ~/.dotfiles/.x11/Xresources\
 
 sudo rm -rf /usr/share/themes/Kripton-v40
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita:Dark
-nvim 
 gsettings set org.gnome.desktop.interface cursor-theme "macOS"
 ls .config
-rm test.sh
 yay -S zen-browser-bin
-ping fast.com
-cd Code
 mkdir NextJS
-cd NextJS
 npm install -g pnpm
 npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
 cd nextjs-dashboard
@@ -3883,9 +3813,7 @@ git inti
 git init
 git commit -m "Initial Commit"
 git remote add origin https://github.com/Yagna-rao15/next-dashboard-learn.git
-git branch -M main
 mv .env.example .env
-pnpm i @vercel/postgres
 nvim .gitignore
 rm app/seed/route.ts
 git commit -m "Added PostgreSQL Database"
@@ -3899,8 +3827,6 @@ pnpm dev
 pnpm i use-debounce
 git status
 git commit -a
-git push -u origin main
-;q
 curl -X POST http://localhost:11434/api/chat \\
   -H "Content-Type: application/json" \\
   -d '{\
@@ -3916,8 +3842,6 @@ curl -X POST http://localhost:11434/api/chat \\
   }'\
 
 kill -9 4219
-ollama serve\
-
 lsof -i :11434\
 
 curl -X GET http://localhost:11434/api/models\
@@ -3926,7 +3850,6 @@ curl http://localhost:11434/api/generate -d '{\
   "model": "llama3.2",\
   "prompt":"Why is the sky blue?"\
 }'
-ollama list
 curl http://localhost:11434/api/generate -d '{\
   "model": "llama3.1:8b",\
   "prompt":"Why is the sky blue?"\
@@ -3947,7 +3870,6 @@ curl http://localhost:11434/api/generate -d '{\
   "model": "llama3.1:8b",\
   "prompt":"Generate a 25 word sentance about you"\
 }'
-chmod +x test.sh
 curl http://localhost:11434/api/generate -d '{\
   "model": "llama3.2",\
   "prompt":"Hello"\
@@ -3962,47 +3884,25 @@ curl http://localhost:11434/api/generate -d '{\
 }'
 man echo -n
 man echo
-nvim test.sh
-./test.sh
-tmux
 cd ~/Code
 cd CodeForces/
 mkdir EDU-173-Div-2
 mv EDU-173-Div-2 Edu-173-Div2
 cd Edu-173-Div2
-g++ 1.cc -o 1
-./1
 cd Code/CodeForces/Edu-173-Div2
-ollama run llama3.1:8b
 python3 6.py
 g++ 3.cc -o 3\
 
 ./3\\
 
-./3
-g++ 3.cc -o 3
 g++ 6.cc -o 6
 ./6
-g++ 4.cc -o 4
-./4
-g++ 2.cc -o 2
-./2
-nvidia-smi
-neofetch
-fastfetch
-htop
-cd .config/nvim
-git add .
-gs
-nvim
 nvim\\
 
 mv test.py ~/test.sh
 mv ~/test.sh test.py
 ./.local/share/nvim/mason/packages/flake8/venv/bin/flake8
-ls
 mv test.py ~/test.py
-c
 ./.local/share/nvim/mason/packages/flake8/venv/bin/flake8 test.py
 ./.local/share/nvim/mason/packages/autopep8/venv/bin/autopep8 test.py
 ./.local/share/nvim/mason/packages/black test.py
@@ -4015,24 +3915,423 @@ ls .local/share/nvim/mason/packages/black/venv/bin/black
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff --help
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff check test.py
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff check test.py --fix
-nvim ~/test.py
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff analyse test.py --fix
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff analyze test.py --fix
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff analyze test.py
 ./.local/share/nvim/mason/packages/ruff/venv/bin/ruff analyze $(cat test.py )
 c\\ 
+nvim ~/test.py
+rm main.go
+cd ../
+cd ~/.dotfiles
+ls .x11
+git commit -m "NVIM Config Week"
+cd 
+rm response.md test.py
+rm Responce.md
+ls Code
+mkdir 995-Div-3
+nvim 995-Div-3
+cd Code/CodeForces
+g++ 1.cc -o 1
+./1
+mv 2.cc 995-Div-3
+cd 995-Div-3
+g++ 2.cc -o 2
+./2
+fzf
+#include <vector>
+using namespace std;
+int main(int argc, char *argv[]) {
+rm t
+g++ 3.cc -o 3
+./3
+g++ 4.cc -o 4
+./4
+chmod +x test.sh
+nvim test.sh
+./test.sh
+rm test.sh
+ls .dotfiles/.local/bin
+ls ~
+l
+chmod +x llama-3.1.sh
+curl http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Why is the sky blue?",\
+  "stream": false\
+}'
+curl http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Why is the sky blue?",\
+}'
+curl http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Why is the sky blue?"\
+}'
+jq --help
+echo {"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}
+echo "{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}"
+nvim test.json
+cat test.json| jq -r '.response'
+echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq
+echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq -r '.response'
+echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq -r 'response'
+echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq -r ".response" | echo
+response=$(echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq -r ".response")\
+echo "$response"\
+
+echo '{"model":"llama3.1:8b","created_at":"2024-12-25T13:34:15.886039408Z","response":".","done":false}' | jq -r ".response"
+response=$(curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Why is the sky blue?",\
+  "stream": false\
+}' | jq -r ".response")
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Why is the sky blue?",\
+  "stream": false\
+}' 
+ollama serve\
+
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello",\
+}' 
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello"\
+}' 
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello",\
+}' | while read -r line; do\
+  response=$(echo "$line" | jq -r ".response")\
+  echo "$response"\
+done
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello",\
+}' | while read -r line; do\
+  echo $line\
+done
+curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello"\
+}' | jq -r '.response'
+\
+response=$(curl -s http://localhost:11434/api/generate -d '{\
+  "model": "llama3.1:8b",\
+  "prompt": "Hello"\
+}' | jq -r '.response')\
+\
+single_line_response=$(echo "$response" | tr '\n' ' ')\
+echo "## Output"\
+echo "$single_line_response"\
+
+nvim llama-3.1.sh
+cd .dotfiles/.local/bin
+./llama-3.1.sh
+cd .config/nvim
+top
+ollama list
+nvidia-smi
+sudo pacman -S openssh
+sudo systemctl start sshd
+sudo ufw allow 22/tcp
+ip addr show
+sudo pacman -syu
+sudo kill 655224\
+sudo kill 655223\
+sudo kill 655221\
+
+sudo kill 27324
+sudo rm /var/lib/pacman/db.lck\
+
+ps aux | grep pacman\
+
+docker container ls
+neofetch
+zen-browser
+exit
+docker images
+docker pull ghcr.io/open-webui/open-webui:main
+ping fast.com
+sudo pacman -S nvtop
+docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://localhost:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+tmux
+\:Hello
+cd Notes
+rm CodeForces.md
+du
+cd
+fastfetch
+conda 
+docker run --rm --gpus all archlinux:latest nvidia-smi
+systemctl restart NetworkManager
+pp
+IPP
+hop
+code .
+yay -S python-pillow python-ueberzugpp\
+
+sudo pacman -S chafa\
+
+nvim ~/.config/yazi/config.yml
+man chafa
+sudo pacman -S python python-pillow\
+
+git clone https://github.com/jstkdng/ueberzugpp.git\
+cd ueberzugpp\
+
+pip install .\
+
+sudo pip install .\
+
+rm -rf ueberzugpp
+docker compose down
+docker compose up -d
+docker ps
+ls library/library
+ls library
+cat library/library/.immich
+;q
+systemctl status
+cd Code/NextJS
+mv nextjs-dashboard
+mv nextjs-dashboard ../
+cd NextJS
+node --version
+npx create-next-app@latest
+mv NextJS next-portal
+mv next-portal nextjs-portal
+cd nextjs-portal
+npx create-next-app@latest ./
+ls Code/nextjs-portal
+ls Code/nextjs-portal/app
+cd Code/Portal
+rm ../Portal
+rm -rf ../Portal
+ls ../
+cd Code
+git clone https://github.com/Yagna-rao15/hostel-portal.git
+cd hostel-portal
+go mod tidy\
+
+cd client
+npm install
+nvim tailwind.config.js
+cd src
+cp ../hostel-portal/client/src/components/ui
+mkdir components
+cp ../hostel-portal/client/src/components/ui ./components/ui
+cp -r ../hostel-portal/client/src/components/ui ./components/ui
+ls components
+ls components/ui
+cp ../hostel-portal/client/src/assets/svnit-logo.png ./public/svnit-logo.png
+npx shadcn@latest init
+yazi
+rm components.json
+pnpm dlx shadcn@latest init -d\
+
+pnpm dlx shadcn@latest add button\
+
+pnpm dlx shadcn@latest add input\
+
+ls dashboard
+ls login
+nvim layout.tsx
+mv app/auth
+mv app/auth/page.tsx app/auth/login/
+ls app/auth
+ls app/auth/login
+mv app/auth app/(auth)
+cd app
+ls auth
+mv auth "(auth)"
+pnpm --help
+ls app
+la
+pnpm add zod
+pnpm add next-auth@beta
+npx auth secret
+..
+git remote add origin https://github.com/Yagna-rao15/nextjs-portal.git
+git branch -M main
+npm
+git commit -m "Added OAuth and Mannual Authentication Support"
+git log
+cd Code/hostel-portal
+pnpm add bcrypt
+npm install @vercel/postgres\
+
+npm install bcrypt
+npm install --save-dev @types/webpack\
+
+mv app/initdb ../
+rm .env
+nvim .env.local
+mv .env .env.local
+mv .env.local .env
+import { sql } from '@vercel/postgres';\
+
+pnpm i @vercel/postgres
+cd Code/nextjs-dashboard
+cd ../nextjs-portal
+nvim .env
+mv .env .env.development.local
+nvim package
+npm build
+npm i -g vercel
+Vercel Link
+vercel link
+vercel env pull .env.development.local
+mv .env.development.local .env
+vercel dev
+nvim package.json
+npm run start
+pnpm add next@latest
+cat .env
+cat app/actions/signup.tsx
+npm run dev
+openssl rand -base64 32
+ollama run llama3.1:8b
+git commit -m "Removed OAuth and Connected DB for JWT"
+git push -u origin main
+nvim 
+ls .nv
+cd Code/nextjs-portal
+npm run build
+pnpm add jose
+git add .
+gs
+git commit --amend\
+
+git push --force\
+
+nmcli device wifi list
+nmcli device wifi connect "YagnaRao" password "micromax"
+nautilus
+sudo pacman -S vlc
+man vlc
+blueman-applet
+sudo pacman -Syu
+cd Immich
+nvim docker-compose.yml
+cd library/upload
+rm -rf f62fac28-f5a7-4ce0-b2f3-bbf38b493462
+sudo rm -rf f62fac28-f5a7-4ce0-b2f3-bbf38b493462
+ip addr
+time zsh --interactive -c exit
+htop
+nvtop
+du -sh
+gparted
+sudo fdisk /dev/sda
+sudo mkfs.btrfs /dev/sda\
+
+sudo pacman -S btrfs-progs
+sudo mkfs.btrfs /dev/sda1\
+
+sudo btrfs filesystem label /dev/sda1 Backup
+sudo mkdir -p /mnt/backup
+ls /mnt/backup
+sudo umount -R /mnt
+sudo umount /mnt/backup
+sudo pacman -S rsync\
+
+ls /var/lib/docker
+sudo ls /var/lib/docker
+cd /var/lib/docker
+sudo cd /var/lib/docker
+cd /
+cd var/lib
+cd docker
+sudo cd docker
+ls /mnt
+mv /mnt/backup /mnt backup-ssd
+mv /mnt/backup /mnt/backup-ssd
+sudo mv /mnt/backup /mnt/backup-ssd
+sudo nvim /etc/udev/rules.d/99-backup-ssd.rules
+udevadm info -a -n /dev/sda
+blkid /dev/sda1
+blkid /dev/sda
+sudo parted /dev/sda mklabel gpt
+sudo parted /dev/sda mkpart primary btrfs 0% 100%
+sudo mkfs.btrfs /dev/sda1
+sudo mkfs.btrfs /dev/sda1 -f
+sudo blkid /dev/sda1
+sudo -e /etc/udev/rules.d/99-backup-ssd.rules
+sudo -e /etc/systemd/system/backup-ssd.mount
+nvim ~/.dotfiles/.local/bin
+fh
+nvim
+sudo -e /etc/systemd/system/backup-immich.service
+ls /mnt/backup-ssd
+du -sh /mnt/backup-ssd/Immich
+sudo mount /dev/sda1 /mnt/backup
+ls /mnt/backup-ssd/Immich
+cd / && nautilus
+cd mnt/backup-ssd
+ls
+c
+mkdir /mnt/backup-ssd/Immich
+sudo mkdir /mnt/backup-ssd/Immich
+lsblk
+sudo mount /dev/sda1 /mnt/backup-ssd
 q
-: 1735066712:0;cd
-: 1735066715:0;nvim ~/test.py
-: 1735066783:0;cd .config/nvim
-: 1735066785:0;nvim
-: 1735072231:0;c
-: 1735072240:0;gs
-: 1735072251:0;rm main.go
-: 1735072259:0;cd ../
-: 1735072260:0;ls
-: 1735072265:0;cd ~/.dotfiles
-: 1735072266:0;ls
-: 1735072273:0;ls .x11
-: 1735072276:0;gs
-: 1735072311:0;git add .
+: 1735335693:0;lsblk
+: 1735335709:0;ls /mnt/backup-ssd/Immich
+: 1735335716:0;ls /mnt
+: 1735335720:0;ls /mnt/backup-ssd
+: 1735335737:0;sudo file -s /dev/sdb1
+: 1735335746:0;sudo blkid /dev/sdb1
+: 1735335752:0;cat /etc/systemd/system/backup-ssd.mount
+: 1735335759:0;dmesg | tail -n 30
+: 1735335800:0;sudo -e /etc/systemd/system/backup-ssd.mount
+: 1735335820:0;sudo umount -l /mnt/backup-ssd
+: 1735335825:0;sudo systemctl daemon-reload
+: 1735335833:0;sudo systemctl start backup-ssd.mount
+: 1735335849:0;c
+: 1735335851:0;sudo systemctl start backup-ssd.mount
+: 1735335857:0;lsblk
+: 1735335865:0;sudo systemctl start backup-ssd.mount
+: 1735335871:0;sudo systemctl status backup-ssd.mount
+: 1735335881:0;ls /mnt/backup-ssd
+: 1735335898:0;rm -rf /mnt/backup-ssd/Immich
+: 1735335901:0;sudo rm -rf /mnt/backup-ssd/Immich
+: 1735335903:0;ls /mnt/backup-ssd
+: 1735335905:0;c
+: 1735335915:0;sudo systemctl start backup-ssd.mount
+: 1735335940:0;lsblk
+: 1735335944:0;sudo mount /dev/sda1 /mnt/backup-ssd
+: 1735335947:0;ls /mnt/backup-ssd
+: 1735335952:0;mkdir /mnt/backup-ssd/Immich
+: 1735335954:0;sudo mkdir /mnt/backup-ssd/Immich
+: 1735335956:0;umount -R /mnt
+: 1735335959:0;umount -R /mnt/backup-ssd
+: 1735335961:0;sudo umount -R /mnt/backup-ssd
+: 1735335964:0;lsblk
+: 1735335969:0;ls /mnt/backup-ssd
+: 1735335974:0;sudo mount /dev/sda1 /mnt/backup-ssd
+: 1735335978:0;ls /mnt/backup-ssd
+: 1735335990:0;backup-immich.sh
+: 1735335992:0;sudo backup-immich.sh
+: 1735336016:0;nvim ~/.dotfiles/.local/bin
+: 1735336032:0;chmod +x .dotfiles/.local/bin/backup-immich.sh
+: 1735336035:0;backup-immich.sh
+: 1735336084:0;c
+: 1735372877:0;nvim
+: 1735372907:0;cd .config/nvim
+: 1735372908:0;ls
+: 1735372911:0;nvim
+: 1735373036:0;man git checkout
+: 1735373070:0;gs
+: 1735373091:0;git add .
+: 1735373092:0;gs
+: 1735373097:0;git add .
+: 1735373099:0;gs
+: 1735373175:0;..
+: 1735373179:0;cd .dotfiles
+: 1735373181:0;gs
+: 1735373184:0;git add .
