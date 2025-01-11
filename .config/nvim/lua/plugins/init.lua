@@ -53,32 +53,32 @@ return {
     opts = {},
   },
 
-  -- {
-  --   "lukas-reineke/indent-blankline.nvim",
-  --   version = "2.20.7",
-  --   event = "User FilePost",
-  --   opts = {
-  --     indentLine_enabled = 1,
-  --     filetype_exclude = {
-  --       "help",
-  --       "terminal",
-  --       "lazy",
-  --       "lspinfo",
-  --       "TelescopePrompt",
-  --       "TelescopeResults",
-  --       "mason",
-  --       "nvdash",
-  --       "nvcheatsheet",
-  --     },
-  --     buftype_exclude = { "terminal" },
-  --     show_trailing_blankline_indent = true,
-  --     show_first_indent_level = true,
-  --     show_current_context = true,
-  --     show_current_context_start = true,
-  --   },
-  --   config = function(_, opts)
-  --     dofile(vim.g.base46_cache .. "blankline")
-  --     require("indent_blankline").setup(opts)
-  --   end,
-  -- },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    version = "2.20.7",
+    event = "User FilePost",
+    opts = {
+      indentLine_enabled = 1,
+      filetype_exclude = {
+        "help",
+        "terminal",
+        "lazy",
+        "lspinfo",
+        "TelescopePrompt",
+        "TelescopeResults",
+        "mason",
+        "nvdash",
+        "nvcheatsheet",
+      },
+      buftype_exclude = { "terminal" },
+      show_trailing_blankline_indent = true,
+      show_first_indent_level = true,
+      show_current_context = false,
+      show_current_context_start = false,
+    },
+    config = function(_, opts)
+      dofile(vim.g.base46_cache .. "blankline")
+      require("indent_blankline").setup(opts)
+    end,
+  },
 }

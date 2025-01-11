@@ -1,0 +1,32 @@
+2025-01-11 18:08:47.476 [info] (Client) Pylance async client (2024.12.1) started with python extension (2024.22.2)
+2025-01-11 18:08:47.948 [info] [Info  - 6:08:47 PM] (58209) Server root directory: file:///home/yagna/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2025-01-11 18:08:47.948 [info] [Info  - 6:08:47 PM] (58209) Pylance language server 2024.12.1 (pyright version 1.1.389, commit ce1325fc) starting
+2025-01-11 18:08:47.948 [info] [Info  - 6:08:47 PM] (58209) Starting service instance "ML"
+2025-01-11 18:08:48.000 [info] [Info  - 6:08:48 PM] (58209) Setting environmentName for service "ML": "3.13.1 (global)"
+2025-01-11 18:08:48.000 [info] [Info  - 6:08:48 PM] (58209) Setting pythonPath for service "ML": "/usr/sbin/python"
+2025-01-11 18:08:48.000 [info] [Info  - 6:08:48 PM] (58209) No include entries specified; assuming /home/yagna/Code/ML
+2025-01-11 18:08:48.000 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/node_modules
+2025-01-11 18:08:48.001 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/__pycache__
+2025-01-11 18:08:48.001 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/.*
+2025-01-11 18:08:48.024 [info] [Info  - 6:08:48 PM] (58209) Assuming Python version 3.13.1.final.0
+2025-01-11 18:08:48.138 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding /home/yagna/Code/ML/venv
+2025-01-11 18:08:48.142 [info] [Info  - 6:08:48 PM] (58209) Found 2 source files
+2025-01-11 18:08:48.144 [info] [Info  - 6:08:48 PM] (58209) Starting service instance "ML"
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) Setting environmentName for service "ML": "3.13.1 (global)"
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) Setting pythonPath for service "ML": "/bin/python"
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) No include entries specified; assuming /home/yagna/Code/ML
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/node_modules
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/__pycache__
+2025-01-11 18:08:48.177 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding **/.*
+2025-01-11 18:08:48.201 [info] [Info  - 6:08:48 PM] (58209) Assuming Python version 3.13.1.final.0
+2025-01-11 18:08:48.239 [info] [Info  - 6:08:48 PM] (58209) Auto-excluding /home/yagna/Code/ML/venv
+2025-01-11 18:08:48.240 [info] [Info  - 6:08:48 PM] (58209) Found 2 source files
+2025-01-11 18:08:48.470 [info] [Info  - 6:08:48 PM] (58209) Background analysis(1) root directory: file:///home/yagna/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2025-01-11 18:08:48.472 [info] [Info  - 6:08:48 PM] (58209) Background analysis(1) started
+2025-01-11 18:08:48.643 [info] [Info  - 6:08:48 PM] (58209) Background analysis(2) root directory: file:///home/yagna/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2025-01-11 18:08:48.645 [info] [Info  - 6:08:48 PM] (58209) Background analysis(2) started
+2025-01-11 18:08:48.687 [info] [Info  - 6:08:48 PM] (58209) Indexer background runner(3) root directory: file:///home/yagna/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist (index)
+2025-01-11 18:08:48.687 [info] [Info  - 6:08:48 PM] (58209) Indexing(3) started
+2025-01-11 18:08:49.337 [info] [Info  - 6:08:49 PM] (58209) scanned(3) 278 files over 1 exec env
+2025-01-11 18:08:49.621 [info] [Info  - 6:08:49 PM] (58209) indexed(3) 278 files over 1 exec env
+2025-01-11 18:08:49.683 [info] [Info  - 6:08:49 PM] (58209) Indexing finished(3).

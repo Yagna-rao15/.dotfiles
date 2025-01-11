@@ -10,6 +10,13 @@ map("n", "<leader>u", function()
   vim.cmd.UndotreeFocus()
 end)
 
+map("n", "x", "_x", { desc = "Delete single char without copying" })
+map("n", "n", "nzzzv", { desc = "Center the search word " })
+map("n", "N", "Nzzzv", { desc = "Center the search word " })
+map("n", "<leader>lw", "<cmd>:set wrap!<CR>", { desc = "Toggle Line Wrap" })
+
+map("v", "p", "_dP", { desc = "Paste without cut in visual mode" })
+
 -- Add undo break-points
 map("i", ",", ",<c-g>u")
 map("i", ".", ".<c-g>u")
@@ -44,8 +51,9 @@ map("v", "<", "<gv")
 
 -- buffers
 map("n", "<leader>b", "<cmd>enew<CR>", { desc = "buffer new" })
-map("n", "<tab>", "<cmd>bnext<CR>", { desc = "buffer goto next" })
-map("n", "<S-tab>", "<cmd>bNext<CR>", { desc = "buffer goto prev" })
+-- TODO: Add such that when pressing C-tab, a window with a open buffers show to select between them.
+map("n", "<C-tab>", "<cmd>bnext<CR>", { desc = "buffer goto next" })
+-- map("n", "<S-tab>", "<cmd>bNext<CR>", { desc = "buffer goto prev" })
 map("n", "<leader>x", "<cmd>bdelete!<CR>", { desc = "buffer close" })
 
 -- windows
@@ -69,7 +77,7 @@ local diagnostic_goto = function(next, severity)
   local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
   severity = severity and vim.diagnostic.severity[severity] or nil
   return function()
-    go({ severity = severity })
+    go { severity = severity }
   end
 end
 map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })

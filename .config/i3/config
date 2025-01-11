@@ -11,10 +11,10 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym Mod1+Return exec i3-sensible-terminal
 
 bindsym $mod+q kill
-bindsym $mod+x exec --no-startup-id ~/Code/Archive/test.sh
+bindsym $mod+x exec --no-startup-id ~/Code/test.sh
 bindsym $mod+Delete exec $shutdown
 bindsym $mod+Shift+Delete exec $reboot
 
@@ -44,8 +44,8 @@ bindsym $mod+Shift+a focus child
 bindsym $mod+Shift+space floating toggle
 
 # enabling rofi
-bindsym $mod+space exec rofi -show drun
-# bindsym $mod+space exec ~/.dotfiles/.local/bin/apps.sh
+# bindsym $mod+space exec rofi -show drun
+bindsym $mod+space exec ~/.dotfiles/.local/bin/apps.sh
 # bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono'
 
 # change focus
@@ -113,7 +113,10 @@ for_window [window_role="GtkFileChooserDialog"] move position center
 
 for_window [class="firefox"] border pixel 0
 for_window [class="zen"] border pixel 0
+assign [class="zen"] 1
 for_window [class="Code"] border pixel 0
+
+exec --no-startup-id ~/.config/i3/launch_zen.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -192,4 +195,4 @@ bindsym $mod+Escape exec systemctl suspend
 # bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 # bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipAboard -t image/png
 
-bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Self/pictures/Screenshot/$NOW.png && xclip -selection clip -t image/png ~/Self/pictures/Screenshot/$NOW.png
+bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Pictures/Screenshots/$NOW.png && xclip -selection clip -t image/png ~/Pictures/Screenshots/$NOW.png

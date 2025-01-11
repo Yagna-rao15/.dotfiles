@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 mv ~/.config/$1 ~/.config/$2
 mv ~/.local/share/$1 ~/.local/share/$2

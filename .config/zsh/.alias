@@ -8,6 +8,9 @@ alias ..='cd ..'
 alias gs='git status'
 alias q='exit'
 alias pp='ping google.com'
+alias ba='blueman-applet'
+alias bm='blueman-manager'
+alias h="history | grep "
 # alias cat=bat
 
 # Nvim kickstarter

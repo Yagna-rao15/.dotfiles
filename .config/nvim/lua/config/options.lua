@@ -6,7 +6,7 @@ opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
 opt.clipboard = "unnamedplus"
-opt.completeopt = "menu,menuone,noselect"
+-- opt.completeopt = "menu,menuone,noselect"
 -- opt.conceallevel = 2
 opt.cursorline = true
 opt.scrolloff = 5
@@ -21,17 +21,16 @@ opt.softtabstop = 2
 opt.virtualedit = "block"
 
 -- Latest for version 10.x.x
-opt.smoothscroll = true
+-- opt.smoothscroll = true
 -- opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
 -- opt.foldmethod = "expr"
 -- opt.foldtext = ""
 g.markdown_recommended_style = 0
 
-
 -- opt.fillchars = { eob = " " }
 -- opt.fillchars = { foldopen = "", foldclose = "", fold = " ", foldsep = " ", diff = "╱", }
-opt.foldlevel = 99
-opt.list = true
+-- opt.foldlevel = 99
+-- opt.list = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
@@ -154,13 +153,12 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   group = "CreateDirs",
   pattern = "*",
   callback = function()
-    local file_path = vim.fn.expand("<afile>:p:h")
+    local file_path = vim.fn.expand "<afile>:p:h"
     if vim.fn.isdirectory(file_path) == 0 then
       vim.fn.mkdir(file_path, "p")
     end
   end,
 })
-
 
 -- wrap and check for spell in text filetypes
 vim.api.nvim_create_augroup("WrapShell", { clear = true })
@@ -193,5 +191,5 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "InsertLeave" }, {
 local new_cmd = vim.api.nvim_create_user_command
 
 new_cmd("Setwd", function()
-  vim.cmd("cd " .. vim.fn.expand("%:p:h"))
+  vim.cmd("cd " .. vim.fn.expand "%:p:h")
 end, {})

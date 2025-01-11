@@ -1,4 +1,6 @@
+xrandr --output DP-2 --mode 2560x1440 --rate 240
 xrandr --dpi 140
 xsettingsd &
 xrdb /home/yagna/.dotfiles/.x11/Xresources
 exec i3
+

@@ -1,0 +1,41 @@
+2025-01-11 18:08:46.466 [info] [auth] GitHub login failed
+2025-01-11 18:08:47.347 [warning] [certificates] Failed to parse certificate # ACCVRAIZ1
+ Error: error:0900006e:PEM routines:OPENSSL_internal:NO_START_LINE
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:79:36
+    at Array.filter (<anonymous>)
+    at Sae.removeExpiredCertificates (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:77:32)
+    at Sae.getAllRootCAs (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:68:38)
+    at pme.createSecureContext (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificates.ts:47:23)
+    at pme.applyToRequestOptions (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificates.ts:65:23)
+    at dme.fetch (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/helix.ts:91:9)
+    at Oj.fetchExperiments (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/experiments/fetchExperiments.ts:91:20) {
+  opensslErrorStack: [
+    'error:0c00006d:ASN.1 encoding routines:OPENSSL_internal:DECODE_ERROR'
+  ],
+  library: 'PEM routines',
+  function: 'OPENSSL_internal',
+  reason: 'NO_START_LINE',
+  code: 'ERR_OSSL_PEM_NO_START_LINE'
+}
+2025-01-11 18:08:47.348 [warning] [certificates] Failed to parse certificate # ACCVRAIZ1
+ Error: error:0900006e:PEM routines:OPENSSL_internal:NO_START_LINE
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:79:36
+    at Array.filter (<anonymous>)
+    at Sae.removeExpiredCertificates (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:77:32)
+    at Sae.getAllRootCAs (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificateReaders.ts:68:38)
+    at pme.createSecureContext (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificates.ts:47:23)
+    at pme.applyToRequestOptions (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/certificates.ts:65:23)
+    at dme.fetch (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/network/helix.ts:91:9)
+    at Oj.fetchExperiments (/home/yagna/.vscode/extensions/github.copilot-1.256.0/lib/src/experiments/fetchExperiments.ts:91:20) {
+  opensslErrorStack: [
+    'error:0c00006d:ASN.1 encoding routines:OPENSSL_internal:DECODE_ERROR'
+  ],
+  library: 'PEM routines',
+  function: 'OPENSSL_internal',
+  reason: 'NO_START_LINE',
+  code: 'ERR_OSSL_PEM_NO_START_LINE'
+}
+2025-01-11 18:08:47.348 [info] [certificates] Removed 2 expired certificates
+2025-01-11 18:08:47.554 [info] [auth] GitHub login failed

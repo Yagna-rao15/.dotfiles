@@ -3,6 +3,8 @@ Xcursor.size: 40
 !
 ! Cursor theme
 Xcursor.theme: macOS
+! Xft.dpi: 240
+
 
 /* st.font: SauceCodePro Nerd Font Mono:pixelsize=22:antialias=true:autohint=true; */
 st.termname: st-256color

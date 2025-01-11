@@ -1,0 +1,13 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "cmake.showOptionsMovedNotification": false,
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "1mm - Dark+",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "window.customTitleBarVisibility": "auto",
+    "window.menuBarVisibility": "visible",
+    "window.titleBarStyle": "custom",
+    "vsicons.dontShowNewVersionMessage": true,
+}

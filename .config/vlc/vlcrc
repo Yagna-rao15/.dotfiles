@@ -3575,7 +3575,7 @@ qt-privacy-ask=0
 #grayscale=0
 
 # Fullscreen video output (boolean)
-#fullscreen=0
+fullscreen=1
 
 # Embedded video (boolean)
 #embedded-video=1
@@ -3692,7 +3692,7 @@ qt-privacy-ask=0
 #deinterlace-mode=auto
 
 # Video output module (string)
-#vout=
+vout=any
 
 # Video filter module (string)
 #video-filter=
