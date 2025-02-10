@@ -3,7 +3,7 @@ set $mod Mod1
 set $shutdown shutdown now
 set $reboot reboot
 
-for_window [class="^.*"] border pixel 1.1
+for_window [class="^.*"] border pixel 1
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4 #285577
 
 font pango:JetBrainsMono Nerd Font 8
@@ -108,15 +108,29 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
+for_window [class="python3"] floating enable, move position center
 
 for_window [class="firefox"] border pixel 0
 for_window [class="zen"] border pixel 0
-assign [class="zen"] 1
+for_window [class="obsidian"] border pixel 0
 for_window [class="Code"] border pixel 0
+assign [class="zen"] 1
 
-exec --no-startup-id ~/.config/i3/launch_zen.sh
+# Launch ZEN-BROWSER
+exec_always --no-startup-id ~/.dotfiles/.local/bin/launch_zen.sh
+
+# Polybar Kill prev instances and create new
+exec_always killall polybar
+exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
+
+# Dunst
+exec --no-startup-id dunst
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -166,13 +180,10 @@ bindsym $mod+r mode "resize"
 exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
 
-# Polybar Kill prev instances and create new
-exec_always killall polybar
-exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-
 # Start XDG autostart .desktop files using dex. See also see [[https://wiki.archlinux.org/index.php/XDG_Autostart]]
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock -- i3lock -n
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 

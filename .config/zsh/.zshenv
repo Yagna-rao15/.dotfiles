@@ -51,6 +51,8 @@ export PATH="$PATH:$(go env GOBIN)$(go env GOPATH)/bin"
 
 # For cuda and GPU
 export PATH=/usr/local/cuda/bin:$PATH
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 # Nvidia Drivers
@@ -69,4 +71,7 @@ export VSCODE_PORTABLE="$XDG_DATA_HOME/Code" # Force extensions and user data to
 
 # PKI for Zen or Firefox
 export PKI_DIR="$XDG_CACHE_HOME/pki"
+
+# Nix
+# export NIX_PATH=nixpkgs=https://nixos.org/channels/nixos-23.05
 

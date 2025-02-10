@@ -11,6 +11,7 @@ alias pp='ping google.com'
 alias ba='blueman-applet'
 alias bm='blueman-manager'
 alias h="history | grep "
+alias nano="-e"
 # alias cat=bat
 
 # Nvim kickstarter

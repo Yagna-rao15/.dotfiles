@@ -11,7 +11,9 @@ declare -A apps=(
     ["GIMP"]="gimp"
     ["Eclipse"]="eclipse"
     ["Libre"]='libreoffice'
+    ["Obsidian"]='obsidian'
     # ["Tmux"]="tmux"
+    ["Chatgpt"]='chatgpt'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')

@@ -1,9 +1,0 @@
-2025-01-11 15:58:37.662 [info] Experiment 'pythonRecommendTensorboardExt' is active
-2025-01-11 15:58:37.662 [info] Experiment 'pythonTerminalEnvVarActivation' is active
-2025-01-11 15:58:37.662 [info] Experiment 'pythonTestAdapter' is active
-2025-01-11 15:58:37.662 [warning] Dir "/home/yagna/Code/ML/.pixi/envs" is not watchable (directory does not exist)
-2025-01-11 15:58:37.673 [info] > pyenv which python
-2025-01-11 15:58:37.673 [info] cwd: .
-2025-01-11 15:58:37.974 [info] > ./venv/bin/python -I ~/.vscode/extensions/ms-python.python-2024.22.2-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.22.2-linux-x64/python_files/interpreterInfo.py
-2025-01-11 15:58:38.022 [info] Python interpreter path: ./venv/bin/python
-2025-01-11 15:58:38.879 [info] Starting Pylance language server.

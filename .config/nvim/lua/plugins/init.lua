@@ -81,4 +81,16 @@ return {
       require("indent_blankline").setup(opts)
     end,
   },
+
+  {
+    "alexghergh/nvim-tmux-navigation",
+    lazy = false,
+  },
+
+  {
+    "nvzone/typr",
+    cmd = "TyprStats",
+    dependencies = "nvzone/volt",
+    opts = {},
+  },
 }

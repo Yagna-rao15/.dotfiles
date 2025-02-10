@@ -10,7 +10,6 @@ return {
       cmake = { "cmakelint" },
       typescript = { "eslint_d" },
       go = { "gomodifytags", "impl" },
-      markdown = { "markdownlint-cli2" },
       html = { "htmlhint" },
       css = { "stylelint" },
       sh = { "shellcheck" },
