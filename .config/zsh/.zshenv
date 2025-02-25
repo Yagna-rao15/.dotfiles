@@ -21,6 +21,7 @@ if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
 fi
 export FZF_DEFAULT_COMMAND='rg --hidden -l ""' # Include hidden files
 export FZF_CTRL_T_OPTS=" --preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+export FZF_DEFAULT_OPTS="--layout=reverse --border=bold --border=rounded --margin=3% --color=dark"
 
 # GnuPG XCursor path
 export GNUPGHOME="${XDG_DATA_HOME}/gnupg"
@@ -75,3 +76,6 @@ export PKI_DIR="$XDG_CACHE_HOME/pki"
 # Nix
 # export NIX_PATH=nixpkgs=https://nixos.org/channels/nixos-23.05
 
+# Googl Android
+export ANDROID_HOME=$HOME/Code/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

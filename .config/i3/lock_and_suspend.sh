@@ -1,3 +1,3 @@
 #!/bin/bash
-i3lock && systemctl suspend
+/home/yagna/Code/test.sh && systemctl suspend
 

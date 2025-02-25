@@ -48,7 +48,6 @@ g++ test.cpp -o test
 ./test
 g++ -help
 g++ -h
-man g++
 g++ --help
 g++ --v
 g++ --help | grep version
@@ -113,7 +112,6 @@ gh auth refresh
 gh auth log
 cd .dotfiles/.config/zsh
 ls ../bash
-echo PATH
 mv .config/zsh/.zshenv ~/.zshenv
 mv .zshenv .config/zsh/.zshenv
 bat .Xauthority
@@ -191,7 +189,6 @@ gcc 2.c -o 2
 ./q
 g++ 3-1.cpp -o 3
 g++ 3-2.cpp -o 3
-cd .config/zsh
 sudo nvim profile
 cx() { cd "$@" && l; }\
 fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }\
@@ -277,14 +274,11 @@ ip addr show usb0
 ping 127.0.0.1\
 
 mkdir test
-cd test
 nvm help
 nvm install node
 rm -rf go
 sudo rm -rf go
 echo $ZDOTDIR
-q\\
-q
 cd ~/.config
 ls nvm
 cat nvm/README.md
@@ -298,7 +292,6 @@ npm i express
 npm start
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
 gcc test.c
-ls ~/Downloads
 ls .zen
 cd Code/ML/\\
 ls
@@ -588,7 +581,6 @@ mv app.py lab-3
 mv Lab_3_U22CS104.odt lab-3
 ls lab-3
 rm Lab_3_U22CS104.odt
-cd lab-3
 touch requirements.txt
 docker build -t inventory-app .\
 
@@ -750,7 +742,6 @@ export CUDA_VISIBLE_DEVICES=""\
 nvim /home/yagna/Desktop/ml/lib/python3.12/site-packages/keras_ocr/recognition.py
 pip install IPython.display
 pip install IPython
-nvim test.py
 curl https://m.media-amazon.com/images/I/81e2YtCOKvL.jpg --output 2.jpg
 curl https://m.media-amazon.com/images/I/71mKPQGo8wL.jpg --output 3.jpg
 $((263859 - 234981))
@@ -1067,7 +1058,6 @@ cxd 973-Div-2
 cd 973-Div-2
 3
 1 2
-6
 100
 4 3
 9
@@ -1095,8 +1085,6 @@ rm -r ~/.config/pulse\
 
 journalctl --user -xe | grep pulse\
 
-pulseaudio -vvv\
-
 killall pulseaudio\
 
 find ~ -type l -lname ~/.config/pulse\
@@ -1106,12 +1094,9 @@ sudo find ~ -type l -lname ~/.config/pulse\
 mkdir -p ~/.config/pulse\
 touch ~/.config/pulse/cookie\
 
-pulseaudio --start\
-
 pacmd list-sinks\
 
 mkdir 974-Div-3
-2
 cd 974-Div-3
 g++ 3_1.cpp -o 3
 sudo pacman -Sy V
@@ -1134,7 +1119,6 @@ cmatrix -C black
 cmatrix -C grey
 cmatrix -C white
 cmatrix -C yellow
-cmatrix -C cyan
 starx
 ;
 curl --help
@@ -1158,8 +1142,6 @@ adb kill-server\
 adb start-server\
 
 sudo pacman -S python-protobuf\
-
-adb devices\
 
 sudo pacman -S android-udev\
 
@@ -1186,7 +1168,6 @@ pp\
 cd Code/CI-CD/
 /bin/zsh-5.9
 /bin/zsh
-echo $PATH
 curl -s https://ohmyposh.dev/install.sh | bash -s
 sudo 
 sudo pacman -Syu unzip
@@ -1323,7 +1304,6 @@ docker build -t lab-6-app-1 .
 sudo docker build -t lab-6-app-1 .
 cd app1
 cat Dockerfile
-cd lab-4
 docker compose up
 cd backend
 node server.js
@@ -1337,7 +1317,6 @@ conda install seabon
 conda install seaborn
 curl https://www.kaggle.com/code/brysonjbanks/an-exploration-of-l1-and-l2-regularization
 stratx
-pulseaudio -v
 rm -rf ~/.config/pulse\
 
 jhb
@@ -1470,7 +1449,6 @@ cd ../lab-7
 c/1
 .1/
 fastf
-cmatrix -C magenta
 /dev/snd
 ls /dev/snd
 sudo pacman -Sy libadwaita
@@ -1591,8 +1569,6 @@ chmod +x ~/.config/polybar/bluetooth_status.sh\
 cd lab-5
 cd Code/PPA/lab-5
 cat 1.c
-cd ../lab-6
-cd ../lab-5
 mpicc 3.c -o 3
 mpirun -np 4 ./3
 sudo pacman -Sy speedtest-cli
@@ -1664,7 +1640,6 @@ systemctl status udevmon
 sudo nvim /etc/systemd/system/udevmon.service
 rm /etc/systemd/system/udevmon.service
 sudo rm /etc/systemd/system/udevmon.service
-adb devices
 mv ~/Downloads/71.cpp ~/Code/SS/lab-7/1.cpp
 cat ../lab-5/prod.txt
 sudo ./[A
@@ -2018,7 +1993,6 @@ nvim ~/.config/rofi
 fc-list ':' jetbrain
 fc-list ':'
 nvim ~/.zshenv
-ping google.com
 alacritty migrate
 sudo pacman -Sy poly bar
 sudo pacman -Sy polybar
@@ -2088,13 +2062,9 @@ bluectl
 sudo pacman -Sy alsa-utils
 sudo pacman -S pavucontrol\
 
-aplay -l\
-
 pulseaudio --check\
 
 pavucontrol
-alsamixer\
-
 dmesg | grep snd\
 
 sudo dmesg | grep snd\
@@ -2171,7 +2141,6 @@ cat cat Downloads/test.jsx | button
 grep cat cat Downloads/test.jsx | button
 button Downloads/test.jsx
 grep button Downloads/test.jsx
-nvimm
 sudo nvimm
 ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua//core
 ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua/core
@@ -2459,7 +2428,6 @@ sudo systemctl pulseaudio start
 sudo systemctl start pulseaudio
 sudo pacman -S pavucontrol\
 pavucontrol
-sudo systemctl status bluetooth.service
 systemctl status bluetooth\
 
 sudo nano /etc/bluetooth/main.conf\
@@ -2628,7 +2596,6 @@ sudo pacman -Sy iw
 iw list
 iw list | grep AP
 sudo pacman -Sy nm-connection-editor
-cat .config/zsh/.history | fzf
 xinput list-props 9
 xinput list-props 14
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1\
@@ -2661,7 +2628,6 @@ sudo pacman -Sy --needed git base-devel
 sudo pacman -Sy pulseaudio
 nvim .dotfiles/.config/zsh/.zprofile
 dmenu 
-clear
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono' -h 32
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -fn 'JetBrainsMono'
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p
@@ -2697,7 +2663,6 @@ g++ 5.cc -o 5
 g++ testgpt.cc
 timedatectl set-ntp true\
 
-nmcli device wifi
 mkdir -p Self/pictures/Screenshot
 xclip -o
 xclip
@@ -2947,8 +2912,6 @@ git clone https://git.suckless.org/dmenu /tmp/dmenu\\
 
 pwd
 rm -rf ../dmenu
-mkdir Temp
-cd Temp
 From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
 From: pskry <peter@skrypalle.dk>\
 Date: Sun, 8 Nov 2020 22:04:22 +0100\
@@ -3184,7 +3147,6 @@ sudo dmenu_run -fn "JetBrainsMono Nerd Font"[A
 sudo pacman -Sy nvidia
 suspend
 rm a.out test.cc testgpt.cc
-python3 test.py
 python3 
 nvim day06.cpp
 g++ day06.cpp
@@ -3238,7 +3200,6 @@ ls .cache
 rm -rf .cache/Google .cache/Microsoft 
 ollama os
 make 
-ls Android
 rm -rf Android
 rm -rf .android
 rm -rf .java
@@ -3279,7 +3240,6 @@ gs add .
 gh
 sudo pacman -Sy github-cli
 gh auth status
-gh auth login
 compinit
 rm -f ~/.config/zsh/zcompdump*\
 
@@ -3307,21 +3267,12 @@ sudo pacman -S alsa-utils\
 
 sudo alsactl restore\
 
-sudo pacman -S pulseaudio pulseaudio-alsa\
-
-pulseaudio --kill\
-pulseaudio --start\
-
 systemctl --user status pulseaudio\
 
 systemctl --user enable pulseaudio\
 systemctl --user start pulseaudio\
 
 journalctl --user -xeu pulseaudio.service\
-
-ps aux | grep pulseaudio\
-
-killall -9 pulseaudio\
 
 rm -rf ~/.config/pulse\
 pulseaudio --start\
@@ -3364,7 +3315,6 @@ cod e
 rm .config/Code
 find /usr/share/icons -type d -name "cursors"
 sudo nvim /etc/pacman.conf
-bash
 sudo pacman -Sy unrar tar rsync exfat-utils ntfs-3g flac
 uname -a
 yay -S preload
@@ -3380,7 +3330,6 @@ sudo pacman -Sy yazi
 cd Self/Pictures/Wallpapers_Desktop/Gruvebox
 ls _.git
 ls .git
-ga
 ls .git/branches
 sudo pacman -S yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
 mount /dev/sda4 /mnt
@@ -3537,7 +3486,6 @@ curl -X POST http://localhost:8080/check-email \\
 mv Portal _Portal
 cat _main.go
 cd P
-nvim main.go
 air
 go mod init
 nvim go.mod
@@ -3550,7 +3498,6 @@ git stash\
 
 git checkout 91bd9ab1e380a2e40d5b244617dc8288abbae5a8\
 
-go run ./main.go
 rm -rf hostel-portal _Portal
 mkdir Portal
 cd Portal
@@ -3639,7 +3586,6 @@ cd .config/nvim\\
 root
 su 
 vim init.lua
-rm -rf Test
 unzip Kripton-v40.tar.xz
 tar x Kripton-v40.tar.xz
 tar -xf Kripton-v40.tar.xz
@@ -3650,8 +3596,6 @@ sudo mv Kripton-v40/ /usr/share/themes
 sudo cd /usr/share/themes
 cd /usr/share/themes
 ls Emacs
-lxappearance
-ls ~/.config
 cat ~/.config/gtk-3.0/settings.ini\
 
 chown $USER:$USER ~/.config/gtk-3.0/settings.ini\
@@ -3699,7 +3643,6 @@ mkdir NextJS
 npm install -g pnpm
 npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
 cd nextjs-dashboard
-pnpm run dev
 pnpm i
 git commit -m "Initial Commit"
 git remote add origin https://github.com/Yagna-rao15/next-dashboard-learn.git
@@ -3806,7 +3749,6 @@ ls .local/share/nvim/mason/packages/black/venv/bin/black
 c\\ 
 nvim ~/test.py
 rm main.go
-cd ../
 ls .x11
 git commit -m "NVIM Config Week"
 rm response.md test.py
@@ -3815,13 +3757,10 @@ mkdir 995-Div-3
 nvim 995-Div-3
 mv 2.cc 995-Div-3
 cd 995-Div-3
-g++ 2.cc -o 2
 #include <vector>
 using namespace std;
 int main(int argc, char *argv[]) {
 rm t
-g++ 3.cc -o 3
-./3
 g++ 4.cc -o 4
 ./4
 rm test.sh
@@ -3862,8 +3801,6 @@ curl -s http://localhost:11434/api/generate -d '{\
   "prompt": "Why is the sky blue?",\
   "stream": false\
 }' 
-ollama serve\
-
 curl -s http://localhost:11434/api/generate -d '{\
   "model": "llama3.1:8b",\
   "prompt": "Hello",\
@@ -3909,8 +3846,6 @@ sudo kill 655223\
 sudo kill 655221\
 
 sudo kill 27324
-sudo rm /var/lib/pacman/db.lck\
-
 docker pull ghcr.io/open-webui/open-webui:main
 ping fast.com
 sudo pacman -S nvtop
@@ -3933,8 +3868,6 @@ sudo pacman -S python python-pillow\
 git clone https://github.com/jstkdng/ueberzugpp.git\
 cd ueberzugpp\
 
-pip install .\
-
 sudo pip install .\
 
 rm -rf ueberzugpp
@@ -3956,7 +3889,6 @@ ls Code/nextjs-portal/app
 cd Code/Portal
 rm ../Portal
 rm -rf ../Portal
-ls ../
 git clone https://github.com/Yagna-rao15/hostel-portal.git
 go mod tidy\
 
@@ -4025,7 +3957,6 @@ cat app/actions/signup.tsx
 openssl rand -base64 32
 git commit -m "Removed OAuth and Connected DB for JWT"
 pnpm add jose
-sudo pacman -S vlc
 man vlc
 cd library/upload
 rm -rf f62fac28-f5a7-4ce0-b2f3-bbf38b493462
@@ -4142,7 +4073,6 @@ pnpm dlx shadcn@latest add select\
 
 pnpm dlx shadcn@latest add textarea\
 
-pnpm install
 q\
 
 mkdir components/ui/extension
@@ -4158,7 +4088,6 @@ rm test.cc a.out 9.py
 g++ 6_1.cc -o 6
 g++ 6.cc -o 6
 ./6
-nautilus
 sudo pacman -S obsidian
 blueman-applet && blueman-manager
 sudo pacman -S paprefs
@@ -4172,8 +4101,6 @@ pactl unload-module module-combine-sink\
 
 [200~pactl list modules
 pactl list modules\
-
-pactl list short sinks\
 
 pactl unload-module 31  # or the correct module IDs if they differ\
 pactl unload-module 32
@@ -4306,7 +4233,6 @@ curl -s -X GET "https://svnit.ac.in/images/namehindi.png" -o public/namehindi.pn
 ls public
 curl -s -X GET "https://svnit.ac.in/images/sardar_vallabhbhai_patel.png" -o public/patelji.png\
 
-blueman-applet
 blueman-manager
 nvimq
 ls Code/nextjs-portal/public
@@ -4381,7 +4307,6 @@ nmcli connection show\
 
 nmcli connection delete YagnaRao
 nmcli connection delete YagnaRao 1
-nmcli connection delete YagnaRao\ 1
 nmcli connection modify Hotspot ipv4.addresses 192.168.8.1/24\
 nmcli connection modify Hotspot ipv4.method shared\
 nmcli connection up Hotspot\
@@ -4407,14 +4332,11 @@ ls actions
 ls app
 ls lib
 cd Code/nextjs-portal
-python3
-node
 npx shadcn add login-01
 pnpm dlx shadcn@latest add alert\
 
 vercel 
 git commit -m "Polished UI of Form and Login"
-1
 git clone https://github.com/Axenide/StartPage.git
 cd StartPage
 cat img
@@ -4450,7 +4372,6 @@ nvim README.dataset.txt
 rm -rf .ipython .jupyter .nv .pki .gk
 mv ~/Backup/Code/ML ./
 ls ML
-ls Backup
 ls Backup/Code
 sudo pacman -S jdk-openjdk
 echo $JAVA_HOME
@@ -4475,7 +4396,6 @@ cd cloudsim
 mvn build -X
 rm -rf cloudsim-7.0
 cd D
-cd Downloads
 unzip cloudsim-5.0.zip
 mv cloudsim-5.0 ~/Code/Cloud
 cd cloudsim-5.0
@@ -4506,9 +4426,7 @@ ls\
 
 mvn compile exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1"\
 
-yay -S eclipse-java-bin
 sudo pacman -S openjdk-doc
-eclipse
 sudo pacman -S libreoffice-fresh
 libreoffice
 cd Pictures
@@ -4529,10 +4447,7 @@ cd Cloud
 rm -rf .eclipse .gk .ipython .jupyter .m2 .nv .pki .swt 
 C
 rm -rf .mozilla
-fzf 
-cd Code/SNA
 cd Code/CI-CD/lab-4
-code .
 cd ~/Code/ML/c
 rm -rf .ipynb_checkpoints
 cd ../../AdventOfCode/2024-CC/
@@ -4567,7 +4482,6 @@ sudo iptables-save > /etc/iptables/iptables.rules\
 sudo systemctl enable iptables\
 
 nvim .zen/8ogoku33.Default (alpha)/userChrome.css
-fzf
 nvim 8ogoku33.Default\ \(alpha\)
 ./.local/share/nvim/mason/packages/stylelint/node_modules/.bin/stylelint /home/yagna/.zen/8ogoku33.Default\ \(alpha\)/userChrome.css
 yay -R zen-twilight-bin
@@ -4586,7 +4500,6 @@ zen-browser -v
 sudo systemctl disable --now docker.service
 sudo systemctl enable --now docker.socket
 yay -S brave-bin
-brave
 sudo pacman -S python-scipy
 sudo pacman -S python-statsmodels
 sudo pacman -S python-pandas
@@ -4656,7 +4569,6 @@ mv ~/.jupyter/* ~/.config/jupyter/\
 ls .config/jupyter
 cd .dotfiles/.config/jupyter
 ls lab
-..
 stow .
 cd main
 mkdir -p ~/.config/Code\
@@ -4734,7 +4646,6 @@ mv Obsidian/Notes/VSCode Obsidian/Notes/VSCode.md
 mv Downloads/test Code/Arrow
 mv Downloads/train Code/Arrow
 mv Downloads/valid Code/Arrow
-git init
 sudo pacman -S python-opencv
 ;w
 python src/annotator.py --image_dir ./data/test --output_csv annotations_test.csv
@@ -4779,7 +4690,6 @@ sudo rm -rf /media /srv
 rm -rf JellyFin
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:2.21.5
-cd .dotfiles
 sudo sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf\
 sudo sysctl -p\
@@ -4850,7 +4760,6 @@ sudo systemctl enable --now docker.service
 file
 sudo -e /etc/sysctl.conf
 [200~sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE
-~
 sudo iptables-save -t nat -A POSTROUTING -o eno1 -j MASQUERADE\
 sudo iptables-save -A FORWARD -i wlp4s0 -o eno1 -j ACCEPT\
 sudo iptables-save -A FORWARD -i eno1 -o wlp4s0 -m state --state RELATED,ESTABLISHED -j ACCEPT\
@@ -4877,7 +4786,6 @@ sudo iptables-save > /etc/iptables/rules
 sudo iptables-save > /etc/iptables/rules.v4\
 
 sudo hotspot.sh
-cd .dotfiles/.local/bin
 ./hotspot.sh 
 chmod +x hotspot.sh
 docker network create pihole_net\
@@ -4885,8 +4793,6 @@ docker network create pihole_net\
 cd Code/Docker
 mkdir pihole
 cd pihole
-nvim\\
-
 mkdir -p etc-pihole etc-dnsmasq.d\
 
 nvim docker-compose.yml
@@ -4954,7 +4860,6 @@ ip neigh\
 ping 10.42.0.74\
 ping 10.42.0.200\
 
-sudo pacman -S nmap
 sudo nmap -sn 10.42.0.0/24\
 
 q\\
@@ -5001,7 +4906,6 @@ sudo mount /dev/sda1 /mnt/backup-ssd
 sudo ls /mnt/backup-ssd
 docker ls'
 du -sh ~/Immich
-du -sh /mnt/backup-ssd/Immich
 sudo pacman -S udisks2 udiskie
 mkdir -p ~/.config/systemd/user\
 
@@ -5020,7 +4924,6 @@ systemctl --user start udiskie.service\
 rm -rf .config/udiskie
 systemctl --user restart udiskie.service
 ls /mnt/backup-ssd/Immich
-ls /mnt/backup-ssd/
 ls /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/Immich
 sudo pacman -S dunst\\
 
@@ -5031,7 +4934,6 @@ notify-send --help
 notify-send -a "Test" -p "Hello"
 pgrep -x 
 pgrep -x "zen"
-yay -S zen-browser-bin
 which zen-browser\
 
 pgrep -x "zen-browser"\
@@ -5148,10 +5050,8 @@ rm .vamshi.txt
 touch .vamshi.txt
 . ~/.config/zsh/.alias
 yazi /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/Immich/library/library/admin/2025/January
-backup-immich.sh
 cd Code/Cloud/cloudsim-7.0;q
 cd Java
-cd Code/CodeForces
 mkdir 951-Div-2
 nvim 951-Div-2
 sudo nano /etc/systemd/logind.conf\
@@ -5262,7 +5162,6 @@ sudo pacman -S wl-clipboard\
 
 wlr-randr
 hyprctl reload
-Hyprland
 polybar
 sudo pacman -S waybar
 waybar
@@ -5278,8 +5177,6 @@ sudo systemctl stop redraw-display.service
 sudo rm /etc/systemd/system/sleep.target.wants/redraw-display.service\
 sudo rm /etc/systemd/system/redraw-display.service\
 
-exit
-startx
 systemctl suspend
 cat /proc/acpi/wakeup
 sudo systemctl restart systemd-logind\
@@ -5289,7 +5186,6 @@ rm -rf .eclipse
 rm -rf .nv
 rm -rf .ollama
 sudo pacman -S linux
-fastfetch
 systemd-inhibit
 tee /sys/power/state <<!\
 mem\
@@ -5341,12 +5237,10 @@ systemctl suspend\
 
 llama-3.1.sh Is DWM an xorg or wayland
 as
-qq
 mv ~/Downloads/hospital_data_sampleee.csv ./
 sudo pacman -S python-dateutil
 sudo pacman -S python-scikit-learn
 cd ~/Backup
-ls Code
 rm -rf .gk .ipython a.out .pki 
 mv Code/DataScience/1.ipynb Code/ML/DataScience
 mv Code/DataScience/hospital_data_sampleee.csv Code/ML/DataScience
@@ -5397,7 +5291,6 @@ nix-channel --update
 sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs\
 sudo nix-channel --update
 sh <(curl -L https://nixos.org/nix/install) --daemon
-ls ~
 export NIX_BUILD_GROUP_ID=964\
 sh <(curl -L https://nixos.org/nix/install) --daemon
 sudo systemctl stop nix-daemon.service\
@@ -5451,7 +5344,6 @@ export NIX_FIRST_BUILD_UID=801\
 sh <(curl -L https://nixos.org/nix/install) --daemon
 nix --version
 cd Code/ML
-nix-shell
 rm -rf .venv .vscode shell.nix
 rm -rf /nix
 sudo rm -rf /nix
@@ -5479,23 +5371,17 @@ if [ -d "/etc/nix" ]; then\
 fi
 du- sh
 du -sh Code/Arrow
-git status
 cd Code/Arrow
 /usr/sbin/python /home/yagna/Code/Arrow/src/main.py
 oll
 cd Code/CodeForces/951-Div-2
 gcc 1.cc -o 1
-./1
 chmod +x test.sh
-g++ 1.cc -o 1
 ./test.sh
-ollama list
 git stash
 git checkout 77b6dcf
-git log
 docker images
 fh
-nmcli device wifi rescan
 git branch -a --contains @77b6dcf\
 
 git pull
@@ -5507,7 +5393,6 @@ mv .config/BraveSoftware ~/.config/
 mv .config/Code ~/.config
 ls .config
 obsidian
-ls 
 rm -rf .bash_history .nix-channels .ipython .python_history .venv
 nvim test.cc
 g++ test.cc
@@ -5528,12 +5413,7 @@ pnpm dlx shadcn@latest add dropdown-menu\
 npm install motion
 npx shadcn@latest add login-03
 npx shadcn@latest add login-01
-git add .
 git commit -m "Added Dark Mode and Improved UI"
-git push -u origin main
-gs
-npm run build
-npm run start
 yay -S  ttf-times-new-roman
 nmcli dev wifi show-password
 nmcli device status
@@ -5541,13 +5421,9 @@ cd Code/NextJS-Portal
 ls components
 cat components/ThemeProvider.tsx
 cat app/layout.tsx
-npm run dev
 ls ~/Code/SNA/
 cd cd 
 nvim 
-arp -a\
-
-ls Downloads
 ls Downloads | grep *.jpg
 ls Downloads | grep .jpg
 tmux a
@@ -5562,7 +5438,6 @@ sudo pacman -S python-pipx
 pipx install snap-stanford
 sudo pacman -R python-pipx
 python pip install
-cd ~/Downloads
 mv facebook_combined.txt.gz ~/Code/SNA
 mv facebook.tar.gz ~/Code/SNA
 cd ~/Code/SNA
@@ -5578,27 +5453,21 @@ cd Test
 git clone git@github.com:snap-stanford/snap-python.git\
  git clone git@github.com:snap-stanford/snap.git
 mv ~/Downloads/snap_stanford-6.0.0-cp39-cp39-manylinux1_x86_64.whl ./
-s
 ls snap_stanford-6.0.0-cp39-cp39-manylinux1_x86_64
 mv snap_stanford-6.0.0-cp39-cp39-manylinux1_x86_64/snap ~/Code/SNA
-sudo pacman -S python-sympy
-nivm
 python 2.py
 nmcli device wifi connect "Balaji" password balaji123
 yay -S visual-studio-code-bin
 ;3A
 python 3.py
 python 2_1.py
-cd Code/ISC
 cat input
 python 3_1.py
-cat output
 nvidia-smi\
 
 sudo -e /sys/class/leds/asus::kbd_backlight/brightness
 sudo -e /sys/class/leds/asus::kbd_backlight/kbd_rgb_mode
 nmcli device wifi hotspot ifname wlp4s0 ssid YagnaRao password micromax
-cal
 sudo dmesg | grep -i error
 lsusb
 sudo pacman -S lshw dmidecode
@@ -5644,13 +5513,10 @@ sudo systemctl enable fwupd\
 sudo systemctl start fwupd
 sudo systemctl status fwupd
 sudo journalctl -xe
-htop
-btop
 mvn exec:java -Dexec.mainClass=
 mvn exec:java -Dexec.mainClass=yagna/1_1.java
 ls src
 cd src/main/java/org/cloudbus/cloudsim/examples
-tree
 cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples\
 
 cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples\
@@ -5660,7 +5526,6 @@ cd ~/Code/Cloud/cloudsim-7.0\
 mvn clean install\
 
 cd modules/cloudsim-examples
-cd -
 mvn clean compile -Drelease=21\
 
 cd Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
@@ -5672,46 +5537,24 @@ ls src/main/java/org/cloudbus/cloudsim/allocationpolicies\
 ls src/main/java/org/cloudbus/cloudsim/brokers\
 ls src/main/java/org/cloudbus/cloudsim/datacenters\
 
-mvn clean install\
-
-mvn clean compile\
-
 python
 rm .python_history
 ls DataScience
 rm -rf DataScience
-hotspot.sh
 sudo kill -9 189479
 sudo kill -9 189644
-ps aux | grep pacman\
-
 sudo rm -f /var/lib/pacman/db.lck\
-
-sudo pacman -Syu\
 
 yay -S scala scala-docs scala-sources
 sudo pacman -S python-shapely
 scala -version
 nmcli device wifi L
-cmatrix
-nvtop
-reboot
 nmcli device wifi connect "Tenda_817450"
 whoami
-nvidia-smi
-xrandr
-cd Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples
-cd Code/Cloud
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1"
-l
-mvn build
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample121
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample10"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample12"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.HomogeneousCloudSim_Lab2"
-yay -Syu
-cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"
 olla
 cd Code/ML/DataScience/lab-3
 scala 1
@@ -5721,46 +5564,30 @@ rm CheckNumber.class CheckNumber\$.class
 scalac 1.scala -deprecation
 scalac 1.scala
 rm NumTypeChecker\$.class NumTypeChecker.class
-scala 1.scala
-scala 2.scala
-scala 3.scala
-scala 4.scala
-scala 5.scala
 scala 6.scala -deprecation
 scalac 6.scala -deprecation
 rm MulTable\$.class MulTable.class
-scala 6.scala
-scala 7.scala
-scala 8.scala
 pip install mrjob
-cd Code/ML/DataScience
 git clone https://github.com/Yelp/mrjob.git
-cd mrjob
 cd ..
 python setup.py test && python setup.py install
 python setup.py install
-ollama run llama3.1:8b
 cd Code/ML/DataScience/mrjob
 pip install -r requirements.txt
 python setup.py develop
 
-yazi
-sudo pacman -Syu
 nmcli device wifi connect "Balaji" password "balaji123"
 nmcli device wifi connect "Balaji" password "balaji1234"
 hq
 tmux]
 tmux\\
 
-cd Code
 cq
-pp
 nix-shell -p python3Packages.numpy --run "zsh"\
 
 ls .dotfiles/.local/bin
 nvim .dotfiles/.local/bin
 network_check.sh
-syncthing
 cd ../Code
 cd Assets
 cd Backup
@@ -5768,14 +5595,10 @@ mkdir obsidian
 mv Obsidian Obsidian
 mv Obsidian obsidian
 cd obsidian
-cd
 mv obsidian Obsidian
 cd Obsidian
 project.sh
-docker compose up -d
 docker pull
-docker compose pull && docker compose up -d
-du -sh
 pwgen
 du -sh /
 keyboard_backlight.sh
@@ -5787,18 +5610,11 @@ i3-msg workspace next\
 
 cmake --version
 1q
-nmcli device wifi connect "YagnaRao" password "micromax"
 cat .dotfiles/.config/zsh/.history| fzf
 x11vnc -display :0
-ip addr
 cd Code/Advent-of-Code
 ./c
 cd 2024-CC
-./2
-nmcli radio wifi off
-nmcli radio wifi on
-;q
-ls
 drwxr-xr-x 1 yagna users    342 Dec 31 01:05 Backup\
 drwxr-xr-x 1 yagna users    224 Jan 23 20:45 Code\
 drwxr-xr-x 1 yagna users      0 Dec 31 01:04 Documents\
@@ -5814,20 +5630,1003 @@ drwxr-xr-x 1 yagna users    130 Jan  3 12:45 .dotfiles\
 drwxr-xr-x 1 yagna users    238 Jan 23 14:30 .eclipse\
 drwxr-xr-x 1 yagna users     30 Jan 21 14:22 q
 tmux
-nvim
-docker ps
-c
-cd Immich
-docker compose down
+ls ~/.config
+rm ~/.config/libreoffice
+mv .config/libreoffice ~/.config/
+git commit -m "Clean Up on 10-02-25 Happy new Year"
+git push -u origin main
+cd .dotfiles
+nvidia-smi
+nvim test.c
+rm test.c
+ls Test/e
+ls Test
+rm -rf Test
+cd Code/S
+mv ~/Downloads/Lab_3.ipynb ~/Code/SNA/Lab_3_U22CS104_SNA.ipynb
+ls ~/Downloads | grep web
+cal
+mv Downloads/web-Stanford\ \(2\).txt Code/SNA
+mv Code/SNA/web-Stanford\ \(2\).txt Code/SNA/web-Stanford.txt
+sudo pacman -S python-responses
+sudo pacman -S python-beautifulsoup4
+mv Downloads/web-Google.txt.gz Code/SNA
+nix-shell
+arp -a\
+
+cd Code/CodeForces
+mkdir 1004-Div-2
+cd 1004-Div-2
+cd Code/CodeForces/1004-Div-2
+nmcli device wifi rescan
+g++ 1.cc -o 1
+./1
+2
+2 1
+1 1 4 4
+3 4 3 3
+4
+2 3 4 4
+3 3 4 5 3 3
+6
+2 2 2 4 4 4
+8
+1 1 1 1 1 1 1 4
+10
+9 9 9 10 10 10 10 10 10 10
+g++ 2.cc -o 2
+./2
+g++ 3.cc -o 3
+./3
+cmatrix
+cmatrix -C magenta
+sudo pacman -S python-sympy
+python3 5_1.py
+python3 5_3.py
+clear
+python3 5_4.py\\
+
+python3 5_4.py\
+
+python3 5_4.py
+python3 5_5.py
+python3 6
+python3 3_1.py
+python3 4.py
+cmatrix -C cyan
+man ga
+ga
+sudo apt-get remove --purge blueman\
+sudo apt-get install blueman\
+
+sudo pacman -R blueman
+sudo pacman -S blueman
+blueman-applet
+sudo pacman -S dnsmasq iproute2 networkmanager pulseaudio-bluetooth\
+
+sudo pacman -Syu\
+
+journalctl -xe | grep blueman\
+
+sudo systemctl status bluetooth.service
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"
+mvn clean install\
+
+mvn --help
+mvn build
+nvimm
+cd Pictures/Wallpapers
+nm Earth\ Wallpaper.jpg Earth-Wallpaper.jpg
+nm "Earth Wallpaper.jpg" Earth-Wallpaper.jpg
+cd lab-3
+rm -rf lab-4
+mv lab-3 lab-4
+cd lab-4
+scala 1.scala
+scala 2.scala
+scala 3.scala
+scala 4.scala
+scala 5.scala
+scala 6.scala
+scala 7.scala
+scala 8.scala
+cd Code/ML/DataScience
+ls 
+tree
+cd mrjob
+pip install .\
+
+nvim mrjob/util.py
+cd ../lab-5
+mv ~/Downloads/data.csv.zip
+mv ~/Downloads/data.csv.zip ./
+unzip data.csv.zip
+cd Code/ML/DataScience/lab-5
+ls ../lab-4
+mkdir ../lab-6
+cd ../lab-6
+mv ~/Downloads/data1\ -\ data1.csv ./data.csv
+python3 1.py data.csv > output.json
+cat output
+python3 2.py data.csv > output
+yay -Syu
+sudo pacman -S zoxide
+z add .dotfiles
+z add ./.\dotfiles
+z add ./.dotfiles
+cd ~/Code/ML/DataScience/lab-6/
+z .dotfiles
+c\\
 q
+blueberry
+yay -Sy flutter
+yay -Sy flutter-bin
+yay -Sy android-sdk android-sdk-build-tools android-sdk-cmdline-tools-latest android-platform android-sdk-platform-tools
+yay -R flutter-bin
+ip addr
+sudo pacman -S xdotool
+xdotool search --name "Zen Browser" windowsize 1200 900
+XRDB="Xft.dpi: 144" zen-browser\
+
+XRDB="Xft.dpi: 256" zen-browser\
+
+XRDB="Xft.dpi: 512" zen-browser\
+
+zen-browser --force-device-scale-factor=1.5\
+
+docker compose pull && docker compose up -d
+docker compose down
+co
+man git remote
+z ~/Code/NextJS-BusApp
+z nextjs-bu
+yay -S android-studio
+archlinux-java status
+ls Android
+z Backup
+export ANDROID_HOME=$HOME/Android/Sdk
+ls ~/Android
+z bus
+mv Android Code
+npm install @react-google-maps/api
+mv ~/Downloads/env ./.env
+expo install expo-location\
+
+npx expo install expo-location
+npx expo install react-native-maps
+npx expo install expo-task-manager expo-background-fetch
+npx expo install expo-device
+\
+echo $ANDROID_HOME
+npx expo prebuild\
+npx expo run:android
+cd test
+rm -rf test
+npx expo start --tunnel
+vc
+z ~/Code/SNA
+nmcli device
+sudo pacman -S i3lock-color ffmpeg
+sudo pacman -S i3lock-color ffmpeg mpv xdotool\
+
+sudo pacman -S yt-dlp\
+
+yt-dlp -o "Video.mp4" "https://rr3---sn-cvh7kn6z.googlevideo.com/videoplayback?expire=1739835345&ei=cXOzZ-nEB7ahhcIPn83cmQg&ip=152.115.197.189&id=o-AHJTCKqKHMpvEFPioE-lCq96zL6vCT-mjyTcDpRBy_QD&itag=401&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401%2C597%2C598&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AUWDL3yUxZCRezsFbsl4LIeAtz4c8ycorOTprKVkZ7cO-l5g5zoeGpl7rCyircdtJxVv2lD2j4ObHpiJ&spc=RjZbSRn73FQHxVH_DpU9_F32xd8_zxBQ0Fj5EP_n7KNNCTIm4CTKELPkaJmcU-o&vprv=1&svpuc=1&mime=video%2Fmp4&ns=hbo3lC6UeszswN0_I9Bm9N8Q&rqh=1&gir=yes&clen=75712223&dur=98.333&lmt=1733486398567113&keepalive=yes&fexp=24350590,24350737,24350827,24350961,24350977,24350978,24351082,24351132,24351184,51326932,51331020&c=MWEB&sefc=1&txp=4532434&n=07UWqFq7sdtT6A&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhALDDwsxG0QQ57NcwH0RiVJHRWsK_yXc_ihPHeOdLTODDAiBQZmE23bAM0fQsf7Xo7nHeqP4gO0kJMpm03nyUmp5IHw%3D%3D&rm=sn-bavc5ajvooxju-j2il7l,sn-i5hed7z&rrc=79,104&req_id=7a0817dffe3aa3ee&cmsv=e&rms=rdu,au&redirect_counter=2&cms_redirect=yes&ipbypass=yes&met=1739827742,&mh=Rw&mip=160.202.10.68&mm=29&mn=sn-cvh7kn6z&ms=rdu&mt=1739827245&mv=m&mvi=3&pl=24&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=AGluJ3MwRAIgUoLFuxBsVz6j7H9NZHyFsejHj-FfcyQwj6WUUAXS64MCIG8Jb0xG906mEzjhZWuilzhmpgcSczepTUqurt5oq05s"
+yt-dlp "https://rr5---sn-cvh76ner.googlevideo.com/videoplayback?expire=1739835345&ei=cXOzZ-nEB7ahhcIPn83cmQg&ip=152.115.197.189&id=o-AHJTCKqKHMpvEFPioE-lCq96zL6vCT-mjyTcDpRBy_QD&itag=400&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401%2C597%2C598&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AUWDL3yUxZCRezsFbsl4LIeAtz4c8ycorOTprKVkZ7cO-l5g5zoeGpl7rCyircdtJxVv2lD2j4ObHpiJ&spc=RjZbSRn73FQHxVH_DpU9_F32xd8_zxBQ0Fj5EP_n7KNNCTIm4CTKELPkaJmcU-o&vprv=1&svpuc=1&mime=video%2Fmp4&ns=hbo3lC6UeszswN0_I9Bm9N8Q&rqh=1&gir=yes&clen=39351906&dur=98.333&lmt=1733486360269507&keepalive=yes&fexp=24350590,24350737,24350827,24350961,24350977,24350978,24351082,24351132,24351184,51326932,51331020&c=MWEB&sefc=1&txp=4532434&n=07UWqFq7sdtT6A&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAIfIWDl3IbVUBM5uCFtqoy86BPhmRQbH-x4rACmnG8SCAiB2FZGjoFYu6II0EA9_VBbd1MPfu0U7BDe03HsKhbZgeA%3D%3D&rm=sn-bavc5ajvooxju-j2il7l,sn-i5hed7z&rrc=79,104&req_id=82e6df03b5a7a3ee&cmsv=e&rms=rdu,au&redirect_counter=2&cms_redirect=yes&ipbypass=yes&met=1739827325,&mh=Rw&mip=160.202.10.68&mm=29&mn=sn-cvh76ner&ms=rdu&mt=1739827007&mv=m&mvi=5&pl=24&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=AGluJ3MwRAIgKgbfEXvi4pkq2cW90-r2qJD6VzTal0TgxVOtsVGNil0CIAlXRSo10vRF80qpmPfX8RqvQSuOVq9G2lMq5nIurRAJ"
+yt-dlp "https://youtu.be/04TsqI1lUV8?si=C3n_rBCEomYtr83y"
+./SF-24\ Car\ Launch\ \[04TsqI1lUV8\].webm
+sudo pacman -S vlc
+ffmpeg -i Ferrari-Live-Wallpaper.webm -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k Ferrari-Live-Wallpaper.mp4\
+
+du -sh Ferrari-Live-Wallpaper.webm
+du -sh Ferrari-Live-Wallpaper.mp4
+vlc Ferrari-Live-Wallpaper.mp4
+mkdir Temp
+mv Ferrari-Live-Wallpaper.mp4 Temp
+mv Ferrari-Live-Wallpaper.webm Temp
+cd Temp
+ffmpeg -i Ferrari-Live-Wallpaper.mp4 frame_%04d.png\
+
+ls temp
+ls Temp
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock") Ferrari-Live-Wallpaper.mp4 &
+i3lock &\
+
+xdotool search --name "i3lock"\
+
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock" | head -n 1) Ferrari-Live-Wallpaper.mp4 &\
+
+i3lock &  # Start i3lock in the background\
+sleep 0.5  # Wait for the i3lock window to initialize\
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock" | head -n 1) Ferrari-Live-Wallpaper.mp4 &\
+
+i3lock &\
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock" | head -n 1) Ferrari-Live-Wallpaper.mp4 &\
+
+i3lock &\\
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock" | head -n 1) Ferrari-Live-Wallpaper.mp4 &\
+
+i3lock &\
+sleep 0.1\
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$(xdotool search --name "i3lock" | head -n 1) Ferrari-Live-Wallpaper.mp4 &\
+
+i3lock --no-verify &\
+\
+# Wait for i3lock to initialize\
+sleep 0.5\
+\
+# Create a dummy window using `wmctrl`\
+dummy_window_id=$(xdotool search --name "i3lock" | head -n 1)\
+\
+# Attach mpv to the dummy window\
+mpv --loop --fs --geometry=100%x100% --no-input-default-bindings --wid=$dummy_window_id Ferrari-Live-Wallpaper.mp4 &\
+
+yay -S xwinwrap-git
+i3lock --no-verify &\
+sleep 0.5\
+xwinwrap -g 1920x1080+0+0 -ni -un -fdt -fs -- mpv --loop --fs --geometry=100%x100% --no-input-default-bindings Ferrari-Live-Wallpaper.mp4 &\
+
+z sna
+npm run android
+cd ../
+mv NextJS-BusApp Archive
+npx create-expo-app@latest
+npx create-expo-app@latest .
+z sn
+cd sitation-network
+Aspects of Computing - ICTAC 2004, First International Colloquium, Guiyang, China, September 20-24, 2004, Revised
+Selected Papers (Lecture Notes in Computer Science, Vol. 3407), Zhiming Liu and Keijiro Araki (Eds.). Springer, 341â€ƒ³355.
+https://doi.org/10.1007/978-3-540-31862-0_25
+[12] FastCheck 2022. fast-check: Property based testing for JavaScript and TypeScript.
+https://dubzzz.github.io/fast-check.github.com/
+[13] Burke Fetscher, Koen Claessen, Michal H. Palka, John Hughes, and Robert Bruce Findler. 2015. Making Random Judg-
+ments: Automatically Generating Well-Typed Terms from the Definition of a Type-System. In Programming Languages
+and Systems - 24th European Symposium on Programming, ESOP 2015, Held as Part of the European Joint Conferences
+on Theory and Practice of Software, ETAPS 2015, London, UK, April 11-18, 2015. Proceedings (Lecture Notes in Computer\
+Science, Vol. 9032), Jan Vitek (Ed.). Springer, 383â€ƒ³405. https://doi.org/10.1007/978-3-662-46669-8_16
+[14] Cormac Flanagan, Amr Sabry, Bruce F. Duba, and Matthias Felleisen. 1993. The Essence of Compiling with Contin-
+uations. In Proceedings of the ACM SIGPLAN 1993 Conference on Programming Language Design and Implementation
+(Albuquerque, New Mexico, USA) (PLDI â€ƒ¹93). Association for Computing Machinery, New York, NY, USA, 237â€ƒ³247.
+https://doi.org/10.1145/155090.155113
+[15] Kimball Germane and Jay McCarthy. 2021. Newly-single and Loving It: Improving Higher-Order Must-Alias Analysis
+with Heap Fragments. Proc. ACM Program. Lang. 5, ICFP (2021), 1â€ƒ³28. https://doi.org/10.1145/3473601
+[16] Patrice Godefroid, Aditya V. Nori, Sriram K. Rajamani, and Sai Deep Tetali. 2010. Compositional May-Must Program
+Analysis: Unleashing the Power of Alternation. In Proceedings of the 37th Annual ACM SIGPLAN-SIGACT Symposium
+on Principles of Programming Languages (Madrid, Spain) (POPL â€ƒ¹10). Association for Computing Machinery, New York,
+NY, USA, 43â€ƒ³56. https://doi.org/10.1145/1706299.1706307
+[17] John Hatcliff and Olivier Danvy. 1994. A Generic Account of Continuation-Passing Styles. In Proceedings of the
+21st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (Portland, Oregon, USA) (POPL â€ƒ¹94).
+Association for Computing Machinery, New York, NY, USA, 458â€ƒ³471. https://doi.org/10.1145/174675.178053
+[18] C. A. R. Hoare. 1969. An Axiomatic Basis for Computer Programming. Commun. ACM 12, 10 (oct 1969), 576â€ƒ³580.
+https://doi.org/10.1145/363235.363259
+[19] Hypothesis 2022. Hypothesis. https://github.com/HypothesisWorks/hypothesis/tree/master/hypothesis-python[B
+ani, and Sai Deep Tetali. 2010. Compositional May-Must Progra  File "/home/yagna/Code/SNA/sitation-network/data-cleanign.py", line 24, in save_references_to_csv
+337â€ƒ³340. https://doi.org/10.1007/978-3-540-78800-3_24
+[7] Edsko de Vries and Vasileios Koutavas. 2011. Reverse Hoare Logic. In Software Engineering and Formal Methods,
+Gilles Barthe, Alberto Pardo, and Gerardo Schneider (Eds.). Springer Berlin Heidelberg, Berlin, Heidelberg, 155â€ƒ³171.
+https://doi.org/10.1007/978-3-642-24690-6_12
+[8] Stephen Dolan. 2022. Crowbar. https://github.com/stedolan/crowbar
+[9] Jana Dunfield and Neel Krishnaswami. 2021. Bidirectional Typing. ACM Comput. Surv. 54, 5, Article 98 (may 2021),
+38 pages. https://doi.org/10.1145/3450952
+[10] Peter Dybjer, Qiao Haiyan, and Makoto Takeyama. 2003. Combining Testing and Proving in Dependent Type Theory.
+In Theorem Proving in Higher Order Logics, 16th International Conference, TPHOLs 2003, Rom, Italy, September 8-12,
+2003, Proceedings (Lecture Notes in Computer Science, Vol. 2758), David A. Basin and Burkhart Wolff (Eds.). Springer,
+188â€ƒ³203. https://doi.org/10.1007/10930755_12
+[11] Peter Dybjer, Qiao Haiyan, and Makoto Takeyama. 2004. Random Generators for Dependent Types. In Theoretical
+[6] Leonardo de Moura and Nikolaj BjÃ¸rner. 2008. Z3: An Efficient SMT Solver. In Tools and Algorithms for the Construction
+and Analysis of Systems, C. R. Ramakrishnan and Jakob Rehof (Eds.). Springer Berlin Heidelberg, Berlin, Heidelberg,
+[1] Aws Albarghouthi, Loris Dâ€ƒ¹Antoni, Samuel Drews, and Aditya V. Nori. 2017. FairSquare: Probabilistic Ver-
+ification of Program Fairness. Proc. ACM Program. Lang. 1, OOPSLA, Article 80 (oct 2017), 30 pages.
+https://doi.org/10.1145/3133904
+[2] Osbert Bastani, Xin Zhang, and Armando Solar-Lezama. 2019. Probabilistic Verification of Fairness Properties via Con-
+centration. Proc. ACM Program. Lang. 3, OOPSLA, Article 118 (Oct 2019), 27 pages. https://doi.org/10.1145/3360544
+[3] Koen Claessen. 2020. QuickCheck. https://hackage.haskell.org/package/QuickCheck
+[4] Koen Claessen, Jonas DuregÃ¥rd, and MichaÅ‚ H. PaÅ‚ka. 2014. Generating Constrained Random Data with Uniform
+Distribution. Journal of Functional Programming 25. https://doi.org/10.1007/978-3-319-07151-0_2
+[5] Koen Claessen and John Hughes. 2000. QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs.
+In Proceedings of the Fifth ACM SIGPLAN International Conference on Functional Programming (ICFP â€ƒ¹00). Association
+for Computing Machinery, New York, NY, USA, 268â€ƒ³279. https://doi.org/10.1145/351240.351266
+python3 data-cleanign.py
+node
+unzip ecommerce_customer_data_large.csv.zip
+npm install expo
+npx expo install react-native-background-geolocation
+curl -X POST https://node-server-bus.vercel.app/update-location \\
+-H "Content-Type: application/json" \\
+-d '{"latitude": 12.345678, "longitude": 98.765432}'\
+
+npm install react-native-background-geolocation\
+
+console.log(BackgroundGeolocation);\
+
+npx react-native doctor\
+
+npm install @react-native-community/cli --save-dev\
+
+npm start --reset-cache\
+
+npm install --save react-native-background-geolocation\
+
+curl -X POST https://node-server-bus.vercel.app/update-location \\
+-H "Content-Type: application/json" \\
+-d '{"latitude": 99.345678, "longitude": 99.765432}'\
+
+expo install react-native-maps expo-location\
+
+npx expo install react-native-maps expo-location
+curl -X POST https://node-server-bus.vercel.app/update-location \\
+-H "Content-Type: application/json" \\
+-d '{"latitude": 99.345678, "longitude": 100.765432}'\
+
+curl -X POST https://node-server-bus.vercel.app/update-location \\
+-H "Content-Type: application/json" \\
+-d '{"latitude": 21.160279, "longitude": 72.7884758}'\
+
+npm install expo-location expo-task-manager
+npx expo start
+npx expo install expo-dev-client
+eas build --profile development --platform android
+npm install -g expo-cli\
+
+cp NextJS-BusApp NextJs-BusApp-Copy
+cp -r  NextJS-BusApp NextJs-BusApp-Copy
+z bu
+expo prebuild
+npx expo prebuild\
+
+com.yagna.WhereismyBus
+npm install -g eas-cli\
+
+curl -X POST https://node-server-bus.vercel.app/update-location \\
+-H "Content-Type: application/json" \\
+-d '{"latitude": 21.160279, "longitude": 73.7884758}'\
+
+npx expo start --dev-client --tunnel
+npx expo start -c --dev-client --lan\
+
+npx expo start --dev-client\
+
+eas build --platform android --profile development\
+
+eas build:configure\
+
+eas build
+eas build --profile production --platform android\
+
+curl https://node-server-bus.vercel.com
+curl https://node-server-bus.vercel.com/get-location
+mkdir build
+mv ~/Downloads/application-b168d034-1150-4852-98e2-b07f9a91e5e6.aab ./build
+yay -S bundletool
+. ~/.config/zsh/.zshrc
+bundletool build-apks --bundle=/MyApp/my_app.aab --output=/MyApp/my_app.apks --mode=universal
+bundletool build-apks --bundle=application-b168d034-1150-4852-98e2-b07f9a91e5e6.aab --output=NextJS-BusApp.apks --mode=universal
+eas credentials\
+
+bundletool build-apks \\
+  --bundle=application-b168d034-1150-4852-98e2-b07f9a91e5e6.aab \\
+  --output=NextJS-BusApp.apks \\
+  --mode=universal \\
+  --ks=@yagna-rao15__NextJS-BusApp.jks \\
+  --ks-key-alias=631f5ec2d1811c4946d1a5c365f47c1 \\
+  --key-password=1acbe28f4d46b4f476e4b9afd1136fa9 \\
+  --ks-pass=pass:7c09879b7d3b53199965ed34c83b844f\
+
+bundletool build-apks \\
+  --bundle=application-b168d034-1150-4852-98e2-b07f9a91e5e6.aab \\
+  --output=NextJS-BusApp.apks \\
+  --mode=universal \\
+  --ks=@yagna-rao15__NextJS-BusApp.jks \\
+  --ks-key-alias=631f5ec2d1811c4946d1a5c365f47c12 \\
+  --key-password=1acbe28f4d46b4f476e4b9afd1136fa9 \\
+  --ks-pass=pass:7c09879b7d3b53199965ed34c83b844f\
+
+cd build
+mv ../@yagna-rao15__NextJS-BusApp.jks ./
+bundletool build-apks \\
+  --bundle=application-b168d034-1150-4852-98e2-b07f9a91e5e6.aab \\
+  --output=NextJS-BusApp.apks \\
+  --mode=universal \\
+  --ks=@yagna-rao15__NextJS-BusApp.jks \\
+  --ks-key-alias=631f5ec2d1811c4946d1a5c365f47c12 \\
+  --ks-pass=pass:7c09879b7d3b53199965ed34c83b844f \\
+  --key-pass=pass:1acbe28f4d46b4f476e4b9afd1136fa9\
+
+rm universal.apk toc.pb NextJS-BusApp.zip
+mv NextJS-BusApp.apks NextJS-BusApp.zip
+unzip NextJS-BusApp.zip
+du -sh universal.apk
+adb devices\
+
+adb install universal.apk
+curl https://node-server-bus.vercel.app/get-location
+cd Immich
+docker compose up -d
+iwconfig
+nmcli device wifi connect "YagnaRao 69" password "micromax"q
+ls ~/Dow
+ls ~/Downloads
+rm ~/Downloads/3\(1\).py
+mv ~/Downloads/1.py ./6_1.py
+mv ~/Downloads/2.py ./6_2\.py
+mv ~/Downloads/3.py ./6_3\.py
+mv ~/Downloads/4.py ./6_4\.py
+python3 6_1.py
+python3 6_3.py
+python3 6_2.py
+nivm
+openssl genrsa -out private.key 512
+openssl rsa -in private.key -pubout -out public.key
+rm private.key public.key
+openssl -v
+openssl genrsa -out private.key 512\
+openssl rsa -in private.key -pubout -out public.key
+ls | grep private
+ls | grep public
+touch file.txt
+echo "Please Encrypt the follwoing text file" > file.txt
+cat file.txt
+openssl rsautl -encrypt -inkey public.key -pubin -in file.txt -out file.enc
+openssl pkeyutl -encrypt -inkey public.key -pubin -in file.txt -out file.enc
+cat file.enc
+openssl pkeyutl -decrypt -inkey private.key -in file.enc -out file.dec
+ls | grep file
+cat file.dec
+openssl dhparam -out dhparam.pem 2048
+ls | grep dhparam
+openssl genpkey -paramfile dhparam.pem -out privateA.pem\
+openssl pkey -in privateA.pem -pubout -out publicA.pem
+ls | grep privateA
+ls | grep publicA
+cat privateA.pem
+cat publicA.pem
+openssl genpkey -paramfile dhparam.pem -out privateB.pem\
+openssl pkey -in privateB.pem -pubout -out publicB.pem
+openssl pkeyutl -derive -inkey privateA.pem -peerkey publicB.pem -out shared_secret_A.bin
+openssl pkeyutl -derive -inkey privateB.pem -peerkey publicA.pem -out shared_secret_B.bin
+ls | grep shared
+cat shared_secret_A.bin
+cat shared_secret_B.bin
+python3 6_4.py
+nvim 6_4.py
+python3 6_4\.py
+man cat
+man gcc
+man g++
+cd Code/ISC
+cd Code/NextJs-BusApp
+cd Code/NextJS-BusApp
+git status
+git log
+git add .
+git commit -m "Added Location and build for APK"
+git remote -v
+git remote add origin https://github.com/Yagna-rao15/nextjs-busapp.git\
+git branch -M main\
+git push -u origin main
+cd Code/Android
+ls .android
+du -sh
+android-studio
+android-studio\\
+
+nvim\\
+
+du -sh Code/Android
+du -sh Code/TestApp
+du -sh Android
+htop
+docke rps
+docker ps
 nmcli device wifi list
-: 1739207736:0;sudo pacman -Syu
-: 1739207934:0;cd .dotfiles
-: 1739207936:0;gs
-: 1739207981:0;mv .config/libreoffice ~/.config/
-: 1739207994:0;ls ~/.config
-: 1739208005:0;rm ~/.config/libreoffice
-: 1739208014:0;mv .config/libreoffice ~/.config/
-: 1739208019:0;c
-: 1739208020:0;gs
-: 1739208047:0;git add .
+nmcli device wifi connect "YagnaRao" password "micromax"
+rm -rf Code/TestApp
+rm -rf Code/MyApplication
+rm -rf Code/BusApp
+nvim build.gradle.kts
+yay -S eclipse-java-bin
+cd Downloads
+tar -xf eclipse-inst-jre-linux64.tar.gz
+cd eclipse-installer
+cd Downloads/eclipse-installer
+./eclipse-inst
+cd -
+rm -rf eclipse-inst
+rm eclipse-installer -rf
+rm eclipse-inst-jre-linux64.tar.gz
+cd Code/Cloud
+cd Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples
+cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples
+mvn clean compile\
+
+cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"\
+
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample12"\
+
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"\
+
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample10"
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"
+yay -S eclipse-platform\\
+\\
+
+yay -S eclipse-platform
+ping google.com
+yay -R eclipse-java-bin
+eclipse
+adb install app-debug.apk
+git init
+vlc Downloads/Silicon.Valley.S01E02.720p.BRRip.MkvCage.mkv
+pip install numpu
+ls Downloads
+cd Code/BusApp
+fzf 
+cd app/build
+cd outputs
+..
+cd ~/Downloads
+cd
+adb install app-release-1.apk
+adb install app-release-2.apk
+adb devices
+adb install app-release.apk
+sudo -e /etc/hosts
+s
+/home/yagna/Code/ML/.venv/bin/python /home/yagna/Code/ML/DataScience/lab-6/1.py
+python3 DataScience/lab-6/1.py
+cd Code/ML/DataScience/lab-6/
+nvim data.csv
+python3 1.py data.csv > output
+tree ../mrjob
+python script.py input.txt --n 2
+nvim inout.txt
+python 1.py input.txt --n 2
+sudo pacman -S python-pipes
+sudo pacman -S python-nltk
+python3 1.py input.txt --n 2\\
+
+ls ../
+ls ../../
+python3 ../../1.py
+ls ~
+python -m nltk.downloader wordnet\
+
+wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/wordnet.zip\
+
+unzip wordnet.zip -d ./nltk-data/corpora
+ls -l ~/nltk_data/corpora/wordnet\
+
+ls -l ~/Code/ML/DataScience/nltk_data/corpora/wordnet\
+
+ls -l ~/Code/ML/DataScience/lab-6/nltk_data/corpora/wordnet\
+
+ls nltk-data/corpora/wordnet
+ls -l ./nltk-data/corpora/wordnet\
+
+cat 1.py
+ls -l /home/yagna/Code/ML/DataScience/lab-6/nltk_data/corpora/stopwords\
+
+yazi
+wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/stopwords.zip\
+
+unzip stopwords.zip -d ./nltk-data/corpora
+NLTK_DATA=/home/yagna/Code/ML/DataScience/lab-6/nltk_data python3 1.py\
+
+pyhton3
+python3
+cd .dotfiles/.local/bin
+echo PATH
+echo $PATH
+wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/ngrams.zip\
+
+sudo pacman -Sy python-nltk
+python3 1.py input.txt --n 2
+1
+pacman -S xcursor-themes
+pacman -S xcursor-themes\
+
+sudo pacman -S xcursor-themes\
+
+ls /usr/share/icons/ | grep -i cursor\
+
+ls /usr/share/icons/\\
+
+ob
+ollama serve\
+
+ollama pull qwen2.5-coder:1.5b-base
+python3 DataScience/lab-6/test.py
+ollama 
+ollama run qwen2.5-coder:1.5b-base
+ollama rm qwen2.5-coder:1.5b-base
+ping 10.129.149.29
+brave
+ollama run deepseek-coder-v2
+man smbclient
+ssh yagnarao15@htb-hdhvzplfry.htb-cloud.com
+ssh -L 8080:127.0.0.1:80 yagnarao15@htb-hdhvzplfry.htb-cloud.com\
+
+ping -c 4 10.129.219.49
+ping -c 4 htb-hdhvzplfry.htb-cloud.com
+nmap -p- 209.151.153.185\
+
+nmap -p- --min-rate=1000 209.151.153.185\
+
+nmap -p 22 209.151.153.185\
+
+nmap -p 5900 209.151.153.185\
+
+nmap -p 3389 209.151.153.185\
+
+sudo pacman -S openvpn
+openvpn ~/Downloads/starting_point_yagnarao15.ovpn
+nmcli device wifi 
+openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
+nmap -p 80 10.129.146.120
+curl http://10.129.146.120
+curl http://10.129.146.120/index.php
+sudo pacman -S nmap
+sudo nmap -sV 10.129.95.232
+sudo nmap -sV -T5 10.129.95.232\
+
+sudo nmap -sV -T5 10.129.95.232 --max-retries 5\
+
+echo "This ran for 3minutes 2.381seconds"
+ping 10.129.146.120
+sudo nmap -sV --host-timeout 5m --max-retries 10 --min-rate 50 10.129.95.232\
+
+sudo nmap -sV --top-ports 100 --max-retries 2 -T4 10.129.95.232\
+
+traceroute 10.129.95.232
+nc -zv 10.129.95.232 22 80 443\
+
+rm Downloads/starting_point_yagnarao15\(1\).ovpn
+rm Downloads/starting_point_yagnarao15.ovpn
+openvpn Downloads/starting_point_yagnarao15.ovpn
+sudo nmap -sV --top-ports 500 --max-retries 2 -T4 10.129.95.232\
+
+sudo nmap -sV -T4 -Pn -n --max-retries 3 --min-rate 50 --host-timeout 5m --unprivileged 10.129.95.232\
+
+sudo pacman -S mysql
+mysql --help
+mysql --protocol=tcp --user=admin --password= --host=10.129.95.232 --port=3306\
+
+sudo nmap -sV -p 3306 <target-ip>\
+
+sudo nmap -sV -p 3306 <target-ip>
+sudo openvpn Downloads/starting_point_yagnarao15.ovpn
+sudo nmap -sV -p 3306 10.129.95.232
+ping 10.129.95.232
+sudo nmap -p 3306 --min-rate=1000 -T5 10.129.95.232
+sudo nmap -sV --script=mysql-info -p 3306 --max-retries=2 10.129.95.232\
+
+mysql -u root -h 10.129.95.232
+mysql -u anonymous -h 10.129.95.232\\
+
+nmcli device wifi
+nmcli device wifi connect "YagnaRao 69" password "micromax"
+nmcli connection delete YagnaRao\ 69
+nmcli connection delete YagnaRao\ 1
+nmcli connection delete YagnaRao\ 2
+nmcli connection delete Balaji
+nmcli connection delete Hotspot\ 1\
+
+nmcli connection delete Hotspot-1\
+
+ls Code
+ls Backup
+du -sh Immich
+du -sh /mnt/backup-ssd/Immich
+ls /mnt/backup-ssd/
+c\\
+\c
+nvtop
+pnpm create vite
+cd Test-Vite-Leaflet
+pnpm install
+code .
+pnpm install leaflet react-leaflet\
+
+pnpm run dev
+git clone https://github.com/Koushik2906ajet/client-bus.git
+gh auth login
+mv Downloads/client-bus-main.zip Code/
+unzip client-bus-main.zip
+cd client-bus-main
+cd Code/client-bus-main
+npm install leaflet react-leaflet\
+
+npm run dev
+npm run
+npm run build
+npm install leaflet\
+
+npm run start
+ip a
+g
+gs
+cd coq
+;s BusApp
+ls BusApp
+ls Archive
+rm -rf Archive
+rm -rf client-bus-main
+ls Docker
+rm Main.java
+rm client-bus-main.zip
+rm -rf Test-Vite-Leaflet
+ls NextJs-BusApp
+ls NextJS-BusApp
+du -sh NextJS-BusApp
+rm -rf NextJS-BusApp NextJs-BusApp-Copy
+mkdir NextJS-BusApp
+cd NextJS-BusApp
+mkdir go-bus
+cd go-bus
+go mod init github.com/Yagna-rao15/go-bus
+bash
+ollama run deepseek-r1:32b
+ollama rm deepseek-r1:32b
+cd Code
+git clone https://github.com/diegodlh/Local-Citation-Network.git
+ls Local-Citation-Network
+nvim Local-Citation-Network/index.html
+curl -H "Accept: application/json" "https://opencitations.net/index/api/v1/citations/10.1109/CVPR.2016.90"\
+
+curl -H "Accept: application/json" "https://api.crossref.org/works/10.1109/CVPR.2016.90"\
+
+qq
+zen-browser --essential https://chat.openai.com\
+
+sudo pacman -S gnome
+nautilus
+backup-immich.sh
+gdm
+lxappearance
+sudo pacman -R gdm
+sudo pacman -S gdm\
+
+sudo systemctl enable gdm\
+sudo systemctl start gdm\
+
+xrand
+startx
+xrandr
+sudo systemctl disable gdm.service
+q\\
+q
+curl https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4
+curl "https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4"
+pp
+yay -R brave-bin
+syncthing
+hotspot.sh
+sudo pacman -S chromium
+ps aux | grep pacman\
+
+sudo killall pacman\
+
+sudo rm /var/lib/pacman/db.lck\
+
+sudo pacman -S chromium\
+
+pulseaudio -k\\
+pulseaudio --start
+pulseaudio -K
+cat .config/zsh/.history | fzf
+$ pulseaudio -v
+pulseaudio -v
+pulseaudio --kill\
+pulseaudio --start\
+
+ps aux | grep pulseaudio\
+
+killall -9 pulseaudio\
+
+rm -rf ~/.config/pulse ~/.pulse ~/.cache/pulse\
+
+systemctl --user enable --now pulseaudio\
+
+sudo pacman -R pulseaudio
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack\
+
+sudo pacman -Rdd pulseaudio pulseaudio-bluetooth\
+
+sudo pacman -Rdd gnome-settings-daemon\
+
+systemctl --user enable --now pipewire pipewire-pulse\
+
+[200~sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack --needed
+~
+zsh: bad pattern: ^[[200~sudo\
+âƒ½¯ ~\
+zsh: permission denied: /home/yagna\
+âƒ½¯ sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack --needed\
+\
+warning: pipewire-1:1.2.7-1 is up to date -- skipping\
+warning: pipewire-jack-1:1.2.7-1 is up to date -- skipping\
+resolving dependencies...\
+looking for conflicting packages...\
+:: pipewire-pulse-1:1.2.7-1 and pulseaudio-17.0+r43+g3e2bb8a1e-1 are in conflict. Remove pulseaudio? [y/N]\
+error: unresolvable package conflicts detected\
+error: failed to prepare transaction (conflicting dependencies)\
+:: pipewire-pulse-1:1.2.7-1 and pulseaudio-17.0+r43+g3e2bb8a1e-1 are in conflict\
+\
+~ âƒ½¯      
+sudo pacman -Rdd pulseaudio pulseaudio-alsa pulseaudio-bluetooth\
+
+sudo pacman -Rns gnome gnome-extra\
+
+sudo pacman -Rns gnome
+sudo systemctl disable --now gdm
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack --needed\
+
+sudo pacman -S pulseaudio pulseaudio-alsa\
+
+pulseaudio -vvv\
+
+pulseaudio --start\
+
+fastfetch
+amixer
+alsamixer -c 0
+pulseaudio -k
+pulseaudio --start
+systemctl --user restart pulseaudio\
+
+systemctl --user restart pipewire pipewire-pulse wireplumber\
+
+pactl list short sinks\
+
+aplay -l\
+
+rm -rf ~/.config/pulse\
+systemctl --user restart pulseaudio\
+
+rm -rf ~/.config/pipewire\
+systemctl --user restart pipewire pipewire-pulse wireplumber\
+
+sudo pacman -S alsa-ucm-conf pulseaudio-alsa\
+
+sudo pacman -S pipewire-alsa pipewire-pulse pipewire-jack wireplumber\
+
+alsamixer\
+
+pactl info
+pactl info\
+
+vlc Downloads/@CC.Silicon.Valley.S01E03.720p.BRRip.x265.mkv
+mv Downloads/IIT_Dhanbad.ipynb Code/SNA/Sitaion-Netwrok-SNA.ipynb
+sudo pacman -S python-seaborn
+wifi
+cd Code/SNA
+code . && exit
+yay -S zen-browser-bin
+xdg-open "https://chatgpt.com/?oai-dm=1" &>/dev/null &\
+    sleep 0.5\
+    i3-msg "workspace 1"
+go run ./main.go
+nvim main.go
+curl -X POST http://localhost:8080/location \\
+     -H "Content-Type: application/json" \\
+     -d '{"latitude": 12.9716, "longitude": 77.5946}'\
+
+cd Code/go-bus
+sudo pacman -S nautilus
+ollama list]
+nmcli radio wifi on
+ollama list
+ollama run deepseek-coder-v2:latest
+ollama run codegemma
+python3 test.py
+;q
+nmcli connection show
+nmcli connection delete iQOO Z9 5G
+nmcli general status
+nmcli radio wifi off
+fzf
+cd .config/zsh
+nvim
+nvim Obsidian/Notes/Hello-World.md 
+chmod +x test.py
+nvim test.py
+./test.py
+chmod +x test.js
+cat test.js
+./test.js
+nvim test.js
+sudo pacman -Syu
+vlc
+yay -S asusctl
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+wget "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x8b15a6b0e9a3fa35" -O g14.sec\
+sudo pacman-key -a g14.sec
+sudo -e /etc/pacman.conf
+ls .cache/yay
+du -sh .cache/yay
+rm -rf .config/yay
+pacman -Suy
+sudo pacman -Suy
+sudo pacman -S asusctl power-profiles-daemon
+sudo systemctl enable --now power-profiles-daemon.service
+pacman -S supergfxctl switcheroo-control
+sudo pacman -S supergfxctl switcheroo-control
+systemctl enable --now supergfxd\
+systemctl enable --now switcheroo-control
+pacman -S rog-control-center
+sudo pacman -S rog-control-center
+export RUST_BACKTRACE=1
+echo $XDG_SESSION_TYPE\
+
+export DISPLAY=:0\
+rog-control-center\
+
+ps aux | grep X\
+
+export DISPLAY=:0\
+export XDG_SESSION_TYPE=x11\
+rog-control-center\
+
+nvim .dotfiles/.x11/xinitrc 
+dbus-launch rog-control-center\
+
+echo $XDG_SESSION_TYPE
+export RUST_BACKTRACE=full
+sudo pacman -S xorg-xrandr xorg-xinput libxkbcommon-x11\
+
+export WINIT_UNIX_BACKEND=x11\
+rog-control-center\
+
+RUST_BACKTRACE=full WINIT_UNIX_BACKEND=x11 rog-control-center\
+
+WINIT_UNIX_BACKEND=x11 rog-control-center\
+
+sudo pacman -S xorg-xwayland xorg-xrandr xorg-xinput libxkbcommon-x11\
+
+sudo rog-control-center\
+
+journalctl -xe | grep rog-control-center\
+
+pacman -Qi rog-control-center\
+
+sudo systemctl restart rog-control-center\
+sudo systemctl status rog-control-center\
+
+systemctl --user status rog-control-center\
+
+busctl list | grep rog\
+
+sudo pacman -Syu rog-control-center\
+
+ROG_DEBUG=1 rog-control-center\
+
+Hyprland
+l
+ls
+btop
+logout
+sudo logout
+ollama run llama3.1:8b
+hyprctl dispatch exit
+exit
+reboot
+rog-control-center
+c
+q
+: 1740513903:0;ls .config/rog
+: 1740513917:0;mv .config/rog .dotfiles
+: 1740513919:0;ls .config/rog
+: 1740513929:0;ls .dotfiles/.config/rog
+: 1740513932:0;ls
+: 1740513962:0;cd .dotfiles
+: 1740513963:0;gs
+: 1740514018:0;git add .config/rog/ .config/gtk-3.0/bookmarks
+: 1740514019:0;gs
+: 1740514063:0;git add .

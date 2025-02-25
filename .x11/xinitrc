@@ -3,5 +3,7 @@ xrandr --dpi 140
 xsettingsd &
 xrdb /home/yagna/.dotfiles/.x11/Xresources
 xset s off -dpms
+export DISPLAY=:0
+export XDG_SESSION_TYPE=x11
 exec i3
 

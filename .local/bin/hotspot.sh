@@ -6,6 +6,9 @@ ETHERNET_INTERFACE="eno1"
 SSID="YagnaRao"
 PASSWORD="micromax"
 
+echo "Starting wifi"
+nmcli radio wifi on
+
 echo "Enabling IP forwarding..."
 sudo sysctl -w net.ipv4.ip_forward=1
 
