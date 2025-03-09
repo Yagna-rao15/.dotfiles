@@ -14,6 +14,10 @@ declare -A apps=(
     ["Android Studio"]='android-studio'
     # ["Tmux"]="tmux"
     ["GPT"]='chatgpt'
+    ["Gemini"]='gemini'
+    ["Chrome"]='chromium'
+    ["Kitty"]='kitty'
+    ["Bluetooth"]='blueberry'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')
@@ -21,6 +25,10 @@ selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '
 if [[ -n "$selected" && -n "${apps[$selected]}" ]]; then
   if [ "$selected" == 'GPT' ]; then
     xdg-open "https://chatgpt.com/?oai-dm=1" &>/dev/null &
+    sleep 0.5
+    i3-msg "workspace 1"
+  elif [ "$selected" == 'Gemini' ]; then
+    xdg-open "https://gemini.google.com/app/8e75bac7a97603d4?hl=en-IN" &>/dev/null &
     sleep 0.5
     i3-msg "workspace 1"
   else

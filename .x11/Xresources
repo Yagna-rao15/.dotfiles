@@ -1,9 +1,8 @@
-Xcursor.size: 40
-! vi:ft=xdefaults
-!
 ! Cursor theme
 Xcursor.theme: macOS
-! Xft.dpi: 240
+Xcursor.size: 40
+Xft.dpi: 144
+! vi:ft=xdefaults
 
 
 /* st.font: SauceCodePro Nerd Font Mono:pixelsize=22:antialias=true:autohint=true; */

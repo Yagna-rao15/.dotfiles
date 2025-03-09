@@ -37,10 +37,10 @@ map("n", "<leader>gs", "<cmd>FzfLua git_status<CR>", { desc = "FzfLua git status
 
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 
-map("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
-map("n", "<C-l>", "<C-w>l", { desc = "switch window right" })
-map("n", "<C-j>", "<C-w>j", { desc = "switch window down" })
-map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
+map("n", "<C-h>", "<cmd>lua require('config.window').cycle_window_left()<CR>", { desc = "Cycle window left" })
+map("n", "<C-l>", "<cmd>lua require('config.window').cycle_window_right()<CR>", { desc = "Cycle window right" })
+map("n", "<C-j>", "<cmd>lua require('config.window').cycle_window_down()<CR>", { desc = "Cycle window down" })
+map("n", "<C-k>", "<cmd>lua require('config.window').cycle_window_up()<CR>", { desc = "Cycle window up" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "file save" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "file copy whole" })
 
@@ -88,3 +88,7 @@ map("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
 map("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
 map("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
 map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
+
+vim.keymap.set("n", "<leader>co", function()
+  vim.cmd "!xdg-open 'obsidian://open?vault=notes&file=%'"
+end, { desc = "Open in Obsidian", noremap = true, silent = true })

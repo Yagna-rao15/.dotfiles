@@ -11,7 +11,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+# bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec alacritty
 
 bindsym $mod+q kill
 bindsym $mod+x exec --no-startup-id ~/Code/test.sh
@@ -46,6 +47,7 @@ bindsym $mod+Shift+space floating toggle
 # enabling rofi
 # bindsym $mod+space exec rofi -show drun
 bindsym $mod+space exec ~/.dotfiles/.local/bin/apps.sh
+bindsym Mod4+space exec ~/.dotfiles/.local/bin/dmenu-shell.sh
 # bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono'
 
 # change focus
@@ -108,8 +110,8 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+# bindsym $mod+Tab workspace next
+# bindsym $mod+Shift+Tab workspace prev
 
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
@@ -196,8 +198,27 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Scree Brightness
-bindsym $mod+F8 exec --no-startup-id brightnessctl set +20%
-bindsym $mod+F7 exec --no-startup-id brightnessctl set 0
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# Playback Control
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+# Keyboard Backligth
+bindsym XF86KbdBrightnessUp exec --no-startup-id brightnessctl -d 'asus::kbd_backlight' set +1
+bindsym XF86KbdBrightnessDown exec --no-startup-id brightnessctl -d 'asus::kbd_backlight' set 1-
+
+# Aura Control
+bindsym XF86Launch3 exec "asusctl aura -n"
+
+# Power profile Control
+bindsym XF86Launch4 exec --no-startup-id sh -c "asusctl profile --next && killall -SIGUSR1 i3status"
+
+# Screenshot tool
+bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Pictures/Screenshots/$NOW.png && xclip -selection clip -t image/png ~/Pictures/Screenshots/$NOW.png
 
 # Suspend
 bindsym $mod+Escape exec /home/yagna/Code/test.sh
@@ -206,5 +227,3 @@ bindsym $mod+Escape exec /home/yagna/Code/test.sh
 # bindsym Ctrl+F6 exec maim | xclip -selection clipboard -t image/png
 # bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 # bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipAboard -t image/png
-
-bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Pictures/Screenshots/$NOW.png && xclip -selection clip -t image/png ~/Pictures/Screenshots/$NOW.png

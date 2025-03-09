@@ -79,3 +79,6 @@ export PKI_DIR="$XDG_CACHE_HOME/pki"
 # Googl Android
 export ANDROID_HOME=$HOME/Code/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# Podman
+export PODMAN_COMPOSE_PROVIDER="podman-compose"

@@ -12,6 +12,7 @@ alias ba='blueman-applet'
 alias bm='blueman-manager'
 alias h="history | grep "
 alias nano="-e"
+alias cd='z'
 # alias cat=bat
 
 # Nvim kickstarter

@@ -6,7 +6,7 @@ local options = {
     hl_override = {},
     integrations = {},
     changed_themes = {},
-    transparency = true,
+    transparency = false,
     theme_toggle = { "onedark", "one_light" },
   },
 
@@ -96,7 +96,7 @@ local options = {
   lsp = { signature = true },
 
   cheatsheet = {
-    theme = "grid",                                                     -- simple/grid
+    theme = "grid", -- simple/grid
     excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
   },
 
