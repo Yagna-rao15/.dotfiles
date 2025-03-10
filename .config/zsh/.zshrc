@@ -12,6 +12,11 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Load Completions
+autoload -Uz compinit
+compinit -d "$ZDOTDIR/.zcompdump"
+_comp_options+=(globdots)
+
 # Adding zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -53,11 +58,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-
-# Load Completions
-autoload -Uz compinit
-compinit -d "$ZDOTDIR/.zcompdump"
-_comp_options+=(globdots)
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 eval "$(zoxide init zsh)"

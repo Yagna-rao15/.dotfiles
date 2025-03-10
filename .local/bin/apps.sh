@@ -5,7 +5,7 @@ declare -A apps=(
     ["Zen Browser"]="zen-browser"
     ["Brave"]="brave"
     # ["Twilight"]="zen-twilight"
-    ["Terminal"]="alacritty"
+    ["Alacritty"]="alacritty"
     ["VS Code"]="env XDG_CONFIG_HOME=$HOME/.config XDG_CACHE_HOME=$HOME/.cache XDG_DATA_HOME=$HOME/.local/share code"
     ["File Manager"]="nautilus"
     ["GIMP"]="gimp"

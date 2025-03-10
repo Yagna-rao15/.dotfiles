@@ -2066,7 +2066,6 @@ sudo systemctl restart pulseaudio\
 sudo pacman -S linux-headers\
 
 nix repl
-sudo pacman -R nautilus
 hwclock --show
 hwclock --show --verbose
 sudo hwclock --show --verbose
@@ -2422,7 +2421,6 @@ cd Code/AoC-2023
 gcc 3.1.c -o 3
 touch input-3
 lds
-nau
 sudo nautilus
 man starxt
 man startx
@@ -4087,7 +4085,6 @@ sudo mkdir -p /etc/systemd/system-sleep\
 sudo -e /etc/systemd/system-sleep/nvidia
 sudo chmod +x /etc/systemd/system-sleep/nvidia
 cat .local/share/xorg/Xorg.0.log
-nvim .local/share/xorg/Xorg.0.log
 sudo pacman -S xorg i3
 nvim /etc/default/grub
 sudo
@@ -4186,7 +4183,6 @@ xdpyinfo | grep -B2 resolution
 sudo pacman -S xrandr
 sudo pacman -S xorg-xrandr
 nvim ~/.dotfiles/README.md
-nvm
 fatsfetch
 echo "$((0x56))"
 date "+%Y-%m-%d %A %T %Z"
@@ -4199,7 +4195,6 @@ tar x st-0.9.2.tar.gz
 tar -xf st-0.9.2.tar.gz
 cd st-0.9.2
 sudo make install
-alacritty
 st
 sudo make uninstall
 ls st
@@ -4411,8 +4406,6 @@ yay -R zen-twilight-bin
 cd .zen
 ls /usr/share/icons/ /usr/local/share/icons/ ~/.icons/\
 
-xrandr --output DP-2 --mode 2560x1440 --rate 240\
-
 xrandr --dpi 140 --rate 240\
 
 cat .dotfiles/.x11/xinitrc
@@ -4498,7 +4491,6 @@ chmod +x code.sh
 ./code.sh
 rm -rf .vscode
 nvim ~/.local/share/applications/code.desktop
-code
 rm ~/.local/share/applications/code.desktop
 cd .local/share/Code
 mv .local/share/Code .vscode
@@ -4800,7 +4792,6 @@ sudo pacman -R fbida
 sudo pacman -S loupe
 sudo pacman -R loupe
 sudo pacman -S celluloid
-celluloid
 rm -rf .trash .stfolder .stfolder\ \(1\) .stversions
 find ~/Obsidian -type f -name "*.md" -exec chmod 644 {} \;\
 
@@ -5045,7 +5036,6 @@ sudo -u yagna env DISPLAY=:0 XAUTHORITY=/home/yagna/.Xauthority i3-msg restart\
 
 ls -l /home/yagna/.Xauthority\
 
-cat .zshenv
 rm -f $HOME/.dotfiles/.x11/Xauthority\
 
 ls .dotfiles/.x11/Xauthority
@@ -6067,7 +6057,6 @@ pyhton3
 python3
 cd .dotfiles/.local/bin
 echo PATH
-echo $PATH
 wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/ngrams.zip\
 
 sudo pacman -Sy python-nltk
@@ -6221,10 +6210,6 @@ sudo systemctl enable gdm\
 sudo systemctl start gdm\
 
 xrand
-xrandr
-sudo systemctl disable gdm.service
-q\\
-q
 curl https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4
 curl "https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4"
 yay -R brave-bin
@@ -6328,7 +6313,6 @@ curl -X POST http://localhost:8080/location \\
      -H "Content-Type: application/json" \\
      -d '{"latitude": 12.9716, "longitude": 77.5946}'\
 
-sudo pacman -S nautilus
 ollama list]
 ollama run codegemma
 nmcli connection show
@@ -6414,8 +6398,6 @@ ROG_DEBUG=1 rog-control-center\
 
 logout
 sudo logout
-exit
-reboot
 mv .config/rog .dotfiles
 ls .config/rog
 ls .dotfiles/.config/rog
@@ -6459,9 +6441,6 @@ asusctl mux --integrated\
 
 ollama run llama3.1:8b
 nvtop
-Hyprland
-hyprctl dispatch exit
-startx
 cmatrix -C cyan
 adb install art-of-rally-v1.0.7b200-unlocked-apkvision.apk
 go run ./main.go
@@ -6559,7 +6538,6 @@ chmod +x .dotfiles/.local/bin/dmenu-shell.sh
 dmenu-shell.sh
 yay -S ulauncher
 ulauncher
-qq
 ulauncher\\
 
 cd NextJS-BusApp
@@ -6571,7 +6549,6 @@ cd icons/default
 nvim index.theme
 cd -
 cd gtk-4.0
-nvim 
 cd .config
 cd ~/.config
 cd xsettingsd
@@ -6606,12 +6583,10 @@ sudo systemctl start tlp\
 
 nmcli device wifi connect "NIVASN 6309" password "12345678"
 lscpu -ae
-time zsh --interactive -c exit
 mv lua/plugins/window.lua lua
 mv lua/window.lua lua/config/
 nvimm
 sudo pacman -S papers
-papers
 ssh git@ssh.gitlab.gnome.org:GNOME/Incubator/papers.git
 git clone git@ssh.gitlab.gnome.org:GNOME/Incubator/papers.git
 git clone https://gitlab.gnome.org/GNOME/Incubator/papers.git
@@ -6797,7 +6772,6 @@ cp .config/alacritty alacritty
 cp -r .config/alacritty alacritty
 rm alacritty
 cp -r .dotfiles/.config/alacritty alacritty
-cd .dotfiles
 stow .
 kitty @ set-colors -c ~/.dotfiles/.config/kitty/kitty.conf\
 
@@ -6850,7 +6824,6 @@ kitten
 kiq
 man kitten
 man kitten icat
-kitty
 kitten icat screen_combined.png
 kitten icat Pictures/Earth\ Wallpaper.jpg
 kitten icat Pictures/Wallpaper\ Main.jpg
@@ -6969,10 +6942,7 @@ git branch -M main\
 git push -u origin main
 mv Code/BusApp/app/release/app-release.apk ./app-release.apk
 adb install app-release.apk
-gs
-git add .
 git commit -m "Added Time Interval Support for Sending Location"
-git push -u origin main
 chmod +x .config/polybar/hotspot.sh
 nmcli connection show --active
 cd polybar
@@ -7004,8 +6974,6 @@ sudo podman compose up
 echo $PODMAN_COMPOSE_PROVIDER
 w
 sudo pacman -R podman
-spf
-yazi
 cd bus
 cd 
 cd Obsidian
@@ -7062,7 +7030,6 @@ curl -O ftp://172.21.5.65/SparkVM-001.ova\
 oq
 vi
 vim
-btop
 ftp 172.21.5.65
 nvi
 cd nvim
@@ -7090,18 +7057,13 @@ adb devices
 adb connect 10.42.0.105:41867
 adb install Downloads/whatsapp-cleaner-v1.0.3.apk
 ks
-rog-control-center
 ./target/release/rog-control-center
 feh Downloads/my-notion-face-transparent.png
 blueberry
-nautilus
 ls code
 ls Code
 ls Code/Start-Page
-sudo pacman -Syu
-hotspot.sh
 yay 
-yay -Syu
 xrdb ~/.dotfiles/.x11/Xresources\
 
 Hello
@@ -7109,25 +7071,145 @@ nvim .config/kitty\
 
 xprop | grep WM_CLASS
 kitty +list-fonts | grep -i jetbrains
-fastfetch
 neofetch
 q 
 cd rof
 cd rog
 q;
 echo "1"
-cd code
-code . && exit
 yay -R obsidian
 yay -S obsidian
 obsidian
-l
 libreoffice
+gs
+git add .
+git commit 
+git push -u origin main
+code
+yazi
+spf
+nau
+gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'\
+
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\
+
+sudo pacman -R nautilus
+sudo pacman -S nautilus
+gnome
+sudo pacman -S gdm
+btop
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+ccccccccccc
+rog-control-center
+sudo pacman -S gnome-tweaks\
+\
+
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gnome-extensions list | grep -i panel
+gnome-extensions prefs dash-to-panel
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'\
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\
+gsettings set org.gnome.shell.extensions.user-theme name 'Adwaita-dark'
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+gnome-extensions list --enabled
+gnome-extensions list | grep -i dock
+gnome-extensions disable window-list@gnome-shell-extensions.gcampax.github.com\
+gnome-extensions enable window-list@gnome-shell-extensions.gcampax.github.com
+gnome-extensions prefs window-list@gnome-shell-extensions.gcampax.github.com
+mkdir -p ~/.config/systemd/user\
+nvim ~/.config/systemd/user/xinit.service\
+
+systemctl --user enable xinit.service\
+systemctl --user start xinit.service\
+
+gnome-session
+Hyprland
+ls .zshenv
+cat .zshenv
+;q
+hyprctl dispatch exit
+systemctl --user disable --now xinit.service
+rm .config/systemd/user/xinit.service
+sudo systemctl disable gdm.service
+sudo systemctl enable gdm.service
+chmod +x ~/.xprofile\
+
+l
+nvim .local/share/xorg/Xorg.0.log
+mv .xprofile xprofileee
+reboot
+mv xprofileee .xprofile
+nvim .xprofile
+xrandr
+xrandr --output DP-2 --mode 2560x1440 --rate 240
+startx
+rm .xprofile
+exit
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+xrandr --dpi 140\
+xsettingsd &\
+xset s off -dpms\
+
+nvim script.sh
+man xset
+âƒ½¯ xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+xrandr --dpi 140\
+xsettingsd &\
+xset s off -dpms
+nvim 
+xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
+
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+
+xrandr --dpi 140\
+
+xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+xrandr --dpi 140\
+xsettingsd &\
+xset s off -dpms\
+
+chmod +x script.sh
+nautilus
+papers
+gnome-shell-extension-tool
+gnome-calculator
+./script.sh
+echo $PATH
+source .zshenv
+hotspot.sh
+./.dotfiles/.local/bin/hotspot.sh
+qq
+cd code
+cd SNA/sitation-network
+cd sna
+code . && exit
+q\\
+q
+sudo pacman -Syu
+yay -Syu
+cd .dotfiles
+fastfetch
+nvm
+kitty
+alacritty
+time zsh --interactive -c exit
+echo $((96 * 1.25)) 
+sudo echo $((96 * 1.25)) [200~exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"
+exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"\
+
+xrdb -merge <<< "Xft.dpi: 120"
+mpv Downloads/@CS_Files\ -Squid\ Game\ S02E07\ Friend\ or\ Foe\ 1080p\ HQ\ NF\ WEB-D.mkvv 
+celluloid
+xsettingsd &\
+
 c
 ls
-q
 nvim
-;q
-: 1741556067:0;cd .dotfiles
-: 1741556070:0;gs
-: 1741556098:0;git add .
+q
+: 1741631558:0;nvim
+: 1741631564:0;cd .dotfiles
+: 1741631565:0;gs
+: 1741631574:0;git add .
