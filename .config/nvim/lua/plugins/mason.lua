@@ -35,6 +35,7 @@ return {
       -- "autopep8",
       -- "mypy",
       -- "flake8",
+      "blake",
       "htmlhint",
       "stylelint",
       "shellcheck",
@@ -79,3 +80,37 @@ return {
     vim.g.mason_binaries_list = opts.ensure_installed
   end,
 }
+
+-- This is list of Mason:
+-- 󰄳  autopep8
+-- 󰄳  black
+-- 󰄳  blackd-client
+-- 󰄳  clangd
+-- 󰄳  cmakelang
+-- 󰄳  cmakelint
+-- 󰄳  codelldb
+-- 󰄳  docker-compose-language-service
+-- 󰄳  dockerfile-language-server
+-- 󰄳  eslint-lsp
+-- 󰄳  eslint_d
+-- 󰄳  flake8
+-- 󰄳  gofumpt
+-- 󰄳  goimports
+-- 󰄳  golangci-lint
+-- 󰄳  gomodifytags
+-- 󰄳  gopls
+-- 󰄳  hadolint
+-- 󰄳  htmlhint
+-- 󰄳  impl
+-- 󰄳  lua-language-server
+-- 󰄳  markdown-toc
+-- 󰄳  markdownlint-cli2
+-- 󰄳  mypy
+-- 󰄳  pyright
+-- 󰄳  ruff
+-- 󰄳  shellcheck
+-- 󰄳  sqlfluff
+-- 󰄳  stylelint
+-- 󰄳  stylua
+-- 󰄳  tailwindcss-language-server
+-- 󰄳  typescript-language-server

@@ -7,4 +7,11 @@ return {
       require("base46").load_all_highlights()
     end,
   },
+  -- {
+  --   "nvchad/ui",
+  --   config = function()
+  --     require "nvchad"
+  --   end,
+  -- },
+  -- "nvchad/volt",
 }

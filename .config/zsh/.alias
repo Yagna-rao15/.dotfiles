@@ -1,4 +1,5 @@
 # Aliases
+alias la='ls'
 alias ls='ls -lAX --color'
 alias c='clear'
 alias mkdir='mkdir -pv'
@@ -17,7 +18,7 @@ alias cd='z'
 
 # Nvim kickstarter
 alias nvim-own='NVIM_APPNAME=nvim-own nvim'
-alias nvim-nv='NVIM_APPNAME=nvim-nv nvim'
+alias nvim-test='NVIM_APPNAME=nvim-test nvim'
 
 alias nvimm='nvim $(fzf)'
 

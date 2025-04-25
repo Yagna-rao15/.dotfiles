@@ -70,7 +70,6 @@ mpirun -np 1 ./2
 ping 172.16.1.1:8090/
 ping 10.0.2.15/24
 ping 10.0.2.15:24
-ping 10.0.2.15
 cd .texlive
 ./texmf-var
 rm -rf .texlive
@@ -85,7 +84,6 @@ realpath .config/zsh
 man nproc
 nproc
 gcc temp.c -o temp
-./temp
 gcc 1.c 2.c 3.c -o 1 2 3
 gcc 3.c -o 3
 cd Code/SS/lab_2
@@ -583,7 +581,6 @@ yay -Sy pandoc-bin
 man pandoc
 pandoc -f ipynb -t pdf -o ~/Code/ML/lab-3/Linear-Regression.pdf ~/Code/ML/lab-3/Linear-Regression.ipynb
 ipython nbconvert --to latex --post PDF lab-1/NumPy.ipynb
-man ipython
 pip install nbconvert
 python3 venv ml
 cat Anaconda3-2024.06-1-Linux-x86_64.sh
@@ -599,7 +596,6 @@ cat 2.cpp
 mv .local/share/nvim/ .dotfiles/.local/share/nvim/
 mv .local/share/nvim-lazy .dotfiles/.local/share/nvim-lazy/
 mv .local/share/nvim-kickstart .dotfiles/.local/share/nvim-kickstart/
-ls .local/share
 ls .dotfiles/.local/share
 rm .local/share/nvim
 rm .local/share/nvim-kickstart
@@ -740,7 +736,6 @@ pytesseract -l eng 3.jpg
 pytesseract -l eng 2.jpg
 pytesseract -l eng 2_1.jpg
 pytesseract -l eng 3_1.jpg
-cd Desktop
 tesseract -l eng ./3_1.jpg
 tesseract --version\
 
@@ -837,7 +832,6 @@ docker run --gpus all -it tensorflow/tensorflow:latest-gpu-jupyter bash\
 sudo docker run --gpus all --rm nvidia/cuda:11.7-base nvidia-smi\
 
 sudo nvidia-ctk runtime configure --runtime=docker
-sudo systemctl restart docker
 nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
 systemctl --user restart docker
 sudo systemctl --user restart docker
@@ -987,8 +981,6 @@ find /var/cache/pacman/pkg/ -iname "*.part" -delete\
 sudo find /var/cache/pacman/pkg/ -iname "*.part" -delete\
 
 sudo fuser /var/lib/pacman/db.lck
-rm /var/lib/pacman/db.lck
-sudo rm /var/lib/pacman/db.lck
 sudo pacman -Sy python-flask
 conda activate test
 conda list
@@ -1029,7 +1021,6 @@ sudo pacman -Rnsc yay
 ya
 cd /tmp\
 git clone https://aur.archlinux.org/yay.git
-yay
 rm -rf yay\
 
 yay -S zen-browser-bin 1.0.1.a.2-1
@@ -1037,7 +1028,6 @@ pacman -Rcns gnome
 sudo pacman -Rcns gnome
 sudo pacman -Rcns gnome gnome-shell gnome-session\
 
-sudo pacman -Rns $(pacman -Qdtq)
 sudo pacman -R gnome-terminal gnome-tweaks
 sudo pacman -R gnome-tweaks
 mkdir 973-Div-2
@@ -1053,7 +1043,6 @@ ping pornhub.com
 git clone https://github.com/gabsdotco/init.lua.git ~/.config/nvim-test
 ls .config/nvim-test
 it commit
-p
 dmesg
 sudo dmesg
 aplay -lL
@@ -1167,15 +1156,12 @@ sdbgdssd
 sdg
 ,shbsdh
 mv Amazon ../Archive
-ls Documents
 rm Documents
 rm -rf Documents
 rm -rf Music
 ls Pictures
 ls Pictures/Camera
 rm -rf Pictures
-ls Videos
-rm -rf Videos
 ls Templates
 ls sudo
 cat sudo
@@ -1286,7 +1272,6 @@ docker build -t lab-6-app-1 .
 sudo docker build -t lab-6-app-1 .
 cd app1
 cat Dockerfile
-docker compose up
 cd backend
 node server.js
 cwd
@@ -1311,7 +1296,6 @@ flatpak uninstall io.github.zen_browser.zen org.freedesktop.Platform org.freedes
 flatpak uninstall io.github.zen_browser.zen
 sudo pacman -R flatpak
 cd ~/.config/nvim-own
-cd ~/.config/nvim-test
 mv ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
 cp ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
 cp -r ~/.config/nvim-test/lua/custom ~/.config/nvim-own/lua
@@ -1553,7 +1537,6 @@ sudo pacman -Sy speedtest-cli
 speedtest
 c=1
 while true; do echo "Hello $c"; let c=c+1; sleep 1; done
-cd .config/nvim-test
 rm -rf .config
 ls nvim
 mv nvim ../nvimm
@@ -1573,11 +1556,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \\
 
 rm /var/lib/pacman/db.lck\
 
-flatpak
 sudo pacman -Sy flatpak
 sudo pacman -S lutrus
 sudo pacman -S lutris
-flatpak list
 sudo lutris
 flatpak install flathub net.lutris.Lutris
 sudo pacman -R lutris
@@ -1627,7 +1608,6 @@ fzf --help
 cd Code/SS/lab-7
 nvim-kickstart
 nvim-lazy
-nvim-test
 nvim-test-2
 nvim-exp
 rm -rf .config/nvim-exp
@@ -1639,7 +1619,6 @@ ls .config | grep nvim
 rm -rf .config/nvim-lazy
 rm -rf .gitignore
 rm -rf README.md
-rm -rf .x11
 mv .stow-local-ignore .stow-global-ignore
 cp nvim nvim-own
 cp -r nvim nvim-own
@@ -1681,7 +1660,6 @@ cd lua
 curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config
 curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config/nvim-own/lua/nvconfig.lua
 cd .config/nvim-nv
-git commit
 cd Code/CI-CD/lab-6/app2
 date
 base64
@@ -1767,7 +1745,6 @@ ls /boot
 sudo rm -rf /mnt/ubuntu\
 sudo mkdir /mnt/ubuntu\
 
-lablk
 ls /mnt/ubuntu/usr/bin\
 
 sudo ls /mnt/ubuntu/yagna[200~sudo umount /mnt/ubuntu
@@ -1794,7 +1771,6 @@ sudo fsck /dev/nvme0n1p5\
 ls /mnt\
 
 rebot
-sudo gparted
 sudo update-grub
 sudo mount /dev/nvme0n1p1 /boot
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --boot-loader-id=GRUB
@@ -1820,7 +1796,6 @@ rm tags
 cd .vim
 cd .config/nvim-own
 nvim-nv
-cd .dotfiles/.config
 mv nvim nvimmm\\
 
 mv nvim-own nvim
@@ -1899,7 +1874,6 @@ ruff
 sudo pacman -S ruff
 starrx
 cat /proc/swaps
-.
 sqlite3 users.db\
 
 git commit -m "Before Refactoring of Backend"
@@ -1928,7 +1902,6 @@ cal 2**16
 cal --help
 cal -3
 cal -5
-cal -y
 xxx `c\
 c
 cd Code/ML/lab-7
@@ -1939,9 +1912,7 @@ git commit -m "Backup on 22/10/24"
 startx\\
 
 cd Code/PPA
-gcc --verion
 gcc --v
-gcc -v
 echo |cpp -fopenmp -dM |grep -i open
 mkdir lab-7
 mv 1.c lab-7/
@@ -1949,7 +1920,6 @@ gcc -o 1 -fopenmp 1.c
 export OMP_NUM_THREADS=8
 gcc -o 2 -fopenmp 2.c
 gcc -o 3 -fopenmp 3.c
-cd lab-8
 mpicc 1.c -o 1
 mpicc 2.c -o 2
 ../
@@ -1964,7 +1934,6 @@ sudo pacman -Sy ttf-font-awesome
 nvim ~/.config/rofi
 fc-list ':' jetbrain
 fc-list ':'
-nvim ~/.zshenv
 alacritty migrate
 sudo pacman -Sy poly bar
 sudo pacman -Sy polybar
@@ -2002,8 +1971,6 @@ echo "psmouse" | sudo tee -a /etc/modules-load.d/psmouse.conf\
 sudo pacman -Sy bluez
 sudo pacman -Sy bluez-utils
 yay -S bluetui
-cat .Xauthority
-cc
 i[
 sudo pacman -Sy nix
 systemctl enable --now nix-daemon.service
@@ -2022,7 +1989,6 @@ nix-channel --update\
 
 nix-env -iA nixpkgs.hello\
 
-hello
 yay -S zsh-nix-shell
 nix-shell -p python3Packages.numpy\
 
@@ -2113,8 +2079,6 @@ sudo nvimm
 ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua//core
 ls .dotfiles/.config/nvim/lua/ .dotfiles/.config/nvim/lua/core
 ls Downloads ls Downloads
-c\\
-c
 poweroff
 sstartx
 sudo pacman -Sy polkit
@@ -2379,7 +2343,6 @@ find /usr/share/applications ~/.local/share/applications -name "*.desktop"\
 
 cd .config/scripts
 mv .config/scripts/* .local/bin/
-df -h /home
 echo $$
 sudo vim /etc/bluetooth/main.conf
 sudo systemctl start bluetooth.service\
@@ -2518,10 +2481,8 @@ sudo systemctl restart display-manager\
 
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1\
 
-xinput list
 sudo pacman -Sy tmux
 sudo pacman -Sy nautilus
-man man
 sudo pacman -Sy  lxappearance-gtk3
 nvim .dotfiles/.config/gtk-3.0/settings.ini
 cd .dotfiles && stow .
@@ -2549,7 +2510,6 @@ sudo rogauracore brightness 0
 sudo rogauracore brightness 3
 rm \\
 sudo pacman -Sy iw
-iw list
 iw list | grep AP
 sudo pacman -Sy nm-connection-editor
 xinput list-props 9
@@ -2559,7 +2519,6 @@ libinput Tapping Enabled Default
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1
 sudo xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1
 sudo pacman -Sy libinput
-V
 xinput list\
 
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled" 1\
@@ -2591,7 +2550,6 @@ dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -fn 'JetBra
 dmenu_run -nb #000 -nf #fff -sb #74c7ec -sf #000 -p "Applications: " -i -f 'JetBrainsMono:'
 curl https://fast.com
 ls .local/share/icons
-nvim .config/gtk-3.0/settings.ini
 gsettings set org.gnome.desktop.interface cursor-theme "macOS-White"
 gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface cursor-size 48
@@ -2863,7 +2821,6 @@ dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applicatio
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000'
 git clone https://git.suckless.org/dmenu /tmp/dmenu\\
 
-pwd
 rm -rf ../dmenu
 From ba103e38ea4ab07f9a3ee90627714b9bea17c329 Mon Sep 17 00:00:00 2001\
 From: pskry <peter@skrypalle.dk>\
@@ -2982,7 +2939,6 @@ sudo umount /dev/sda1\
 
 sudo fdisk /dev/sdX\
 
-rm -rf Temp
 unzip balenaEtcher-linux-x64-1.19.25.zip
 ./balenaEtcher-linux-x64
 sudo ./balenaEtcher-linux-x64
@@ -3021,7 +2977,6 @@ sudo rm /usr/local/bin/stest\
 sudo rm /usr/local/share/man/man1/dmenu.1\
 
 sudo pacman -R dmenu dmenu
-dmenu_run
 sudo make clean install
 rofi -combi-modi window,drun,ssh -theme solarized -font "hack 10" -show combi
 sudo pacman -Sy ttf-jetbrains-mono-nerd
@@ -3086,8 +3041,6 @@ sudo rm /usr/local/bin/dmenu\
 which dmenu\
 
 sudo pacman -Sy dmenu
-xrdb -merge ~/.Xresources\
-
 fc-list | grep "JetBrainsMono"\
 
 dmenu_run -fn "JetBrainsMono-12"\
@@ -3118,7 +3071,6 @@ sudo systemctl enable docker.socket
 sudo docker info
 sudo docker run -it --rm archlinux bash -c "echo hello world"
 sudo usermod -aG docker $USER
-groups yagna
 docker run -it --rm archlinux bash -c "echo hello world"
 sudo pacman -Sy docker-buildx
 sudo pacman -Sy docker-compose
@@ -3149,8 +3101,6 @@ ls .cache
 rm -rf .cache/Google .cache/Microsoft
 ollama os
 make
-rm -rf Android
-rm -rf .android
 rm -rf .java
 nvim .gtkrc-2.0
 xdg-mime query default inode/directory
@@ -3170,7 +3120,6 @@ i3-msg reload\
 
 xprop | grep WM_CLASS\
 
-\:w
 nvim 1.cc
 docker imagegs
 rm ~/.config
@@ -3234,7 +3183,6 @@ sudo modprobe snd_pcm\
 
 ls ~/Code
 mv pictures Pictures
-mkdir Notes
 g++ 7.cc -o 7
 ./7
 g++ 8.cc -o 8
@@ -3269,8 +3217,6 @@ ls /usr/share/icons/default/index.theme
 nvim ls /usr/share/icons/default/index.theme
 sudo systemctl enable --now preload.service
 ls /usr/share/icons
-xrdb -merge ~/.dotfiles/.x11/Xresources\
-
 sudo -e /usr/share/icons/default/index.theme
 sudo pacman -S papirus-icon-theme
 sudo pacman -Sy yazi
@@ -3294,7 +3240,6 @@ clang Code/AdventOfCode/2024-CC/1.cc
 g++ 10.cc -o 10
 ./10
 sudo pacman -S htop
-du -sh /home/yagna
 g++ 11.cc -o 11
 ./11
 mv Code-Forces CodeForces
@@ -3350,8 +3295,6 @@ rm .bash_history
 cat .gtkrc-2.0
 sudo pacman -R lxappearance-gtk3
 java -v
-java --version
-nmcli device wifi show-password
 nmcli device wifi connect "YagnaRao" password "micromax" --ask\
 
 nmcli device wifi connect "YagnaRao" password "micromax" 802-11-wireless-security.key-mgmt wpa-psk\
@@ -3393,8 +3336,6 @@ docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app
 fzf manpages
 fzf-tab-complete
 fzf-tmux
-sudo pacman -S luarocks\
-
 luarocks --version\
 
 pip install --user hererocks\
@@ -3471,7 +3412,6 @@ docker image
 docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
 docker image rm ghcr.io/open-webui/open-webui:ollama
 nvim lua/plugins/blink.lua
-docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ollama l
 ollama ps
 export OLLAMA_HOST=0.0.0.0\
@@ -3485,7 +3425,6 @@ pkill -f /tmp/ollama2250045963/runners/cuda_v12/ollama_llama_server\ --model\ /u
 sudo pkill -f /tmp/ollama2250045963/runners/cuda_v12/ollama_llama_server\ --model\ /usr/share/ollama/.ollama/models/blobs/sha256-667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29\ --ctx-size\ 8192\ --batch-size\ 512\ --n-gpu-layers\ 33\ --threads\ 8\ --parallel\ 4\ --port\ 38889
 pkill -f /usr/local/bin/ollama\ serve
 sudo pkill -f /usr/local/bin/ollama\ serve
-ollama serve
 sudo kill -9 302412
 sudo kill -9 302789
 sudo lsof -i :11434\
@@ -3686,7 +3625,6 @@ ls .local/share/nvim/mason/packages/black/venv/bin/black
 c\\
 nvim ~/test.py
 rm main.go
-ls .x11
 git commit -m "NVIM Config Week"
 rm response.md test.py
 rm Responce.md
@@ -3789,7 +3727,6 @@ sudo pacman -S nvtop
 docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://localhost:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 \:Hello
 rm CodeForces.md
-du
 docker run --rm --gpus all archlinux:latest nvidia-smi
 systemctl restart NetworkManager
 hop
@@ -3828,7 +3765,6 @@ go mod tidy\
 
 npm install
 nvim tailwind.config.js
-cd src
 cp ../hostel-portal/client/src/components/ui
 mkdir components
 cp ../hostel-portal/client/src/components/ui ./components/ui
@@ -3854,7 +3790,6 @@ mv app/auth app/(auth)
 ls auth
 mv auth "(auth)"
 pnpm --help
-la
 pnpm add zod
 pnpm add next-auth@beta
 npx auth secret
@@ -3875,7 +3810,6 @@ import { sql } from '@vercel/postgres';\
 
 pnpm i @vercel/postgres
 cd Code/nextjs-dashboard
-nvim .env
 mv .env .env.development.local
 nvim package
 npm build
@@ -3884,7 +3818,6 @@ Vercel Link
 vercel link
 vercel env pull .env.development.local
 mv .env.development.local .env
-nvim package.json
 pnpm add next@latest
 cat .env
 cat app/actions/signup.tsx
@@ -3895,7 +3828,6 @@ man vlc
 cd library/upload
 rm -rf f62fac28-f5a7-4ce0-b2f3-bbf38b493462
 sudo rm -rf f62fac28-f5a7-4ce0-b2f3-bbf38b493462
-gparted
 sudo fdisk /dev/sda
 sudo mkfs.btrfs /dev/sda\
 
@@ -3913,9 +3845,7 @@ ls /var/lib/docker
 sudo ls /var/lib/docker
 cd /var/lib/docker
 sudo cd /var/lib/docker
-cd /
 cd var/lib
-cd docker
 sudo cd docker
 mv /mnt/backup /mnt backup-ssd
 mv /mnt/backup /mnt/backup-ssd
@@ -3957,9 +3887,6 @@ cat ~/.dotfiles/.local/bin/backup-immich.sh
 Yes My data is there /home/yagna/Immich
 nvim backup-immich.sh
 sudo ./backup-immich.sh
-ls /mnt/backup-ssd
-umount -R /mnt/backup-ssd
-sudo umount -R /mnt/backup-ssd
 man rsync
 pnpm add redis nodemailer crypto\
 
@@ -4020,7 +3947,6 @@ rm test.cc a.out 9.py
 g++ 6_1.cc -o 6
 g++ 6.cc -o 6
 ./6
-sudo pacman -S obsidian
 blueman-applet && blueman-manager
 sudo pacman -S paprefs
 paprefs --help
@@ -4046,7 +3972,6 @@ nvim Obsidian/Kitty.md
 cat Obsidian/Kitty.md
 sudo pacman -R kitty-shell-integration
 sudo pacman -R kitty-terminfo
-dmenu
 mkdir Music
 ls Music
 mkdir Documents
@@ -4069,7 +3994,6 @@ mv TODO.md ~/Obsidian
 nvim Code/nextjs-portal/
 ps
 oh-my-posh
-oh-my-posh upgrade
 sudo oh-my-posh upgrade
 cat /etc/modprobe.d/nvidia.conf
 echo "Iam using ASUS Zephyrus G15 Laptop with 3070Ti Graphic Card,I am not using external monitor, just the inbuilt laptop monitor, I have a keymap in i3 set to suspend it and it gtting stck while using that and closing lid, Not when i leave it untouched for 5 min"
@@ -4136,11 +4060,9 @@ ls .gk
 rm .gk
 rm -rf .gk
 sudo pacman -S picom
-picom
 nvicm
 llll
 ll
-dmenu_run -fn "JetBrainsMono Nerd Font"
 pgrep -x "zen" > /dev/null
 chmod +x .dotfiles/.local/bin/launch_zen.sh
 nvmi
@@ -4159,7 +4081,6 @@ curl -s -X GET "https://svnit.ac.in/images/namehindi.png" -o public/namehindi.pn
 ls public
 curl -s -X GET "https://svnit.ac.in/images/sardar_vallabhbhai_patel.png" -o public/patelji.png\
 
-nvimq
 ls Code/nextjs-portal/public
 cd nextjs-portal
 cd .local/share/nvim/mason/packages/stylelint/node_modules/stylelint/bin
@@ -4183,12 +4104,10 @@ xdpyinfo | grep -B2 resolution
 sudo pacman -S xrandr
 sudo pacman -S xorg-xrandr
 nvim ~/.dotfiles/README.md
-fatsfetch
 echo "$((0x56))"
 date "+%Y-%m-%d %A %T %Z"
 systemd-analyze
 cd .dotfiles/.local
-cd  bin
 nvim llama-3.1.sh
 llama-3.1.sh
 tar x st-0.9.2.tar.gz
@@ -4212,7 +4131,6 @@ sudo pacman -S python-networkx
 mkdir SNA
 cd SNA
 A
-python3 1.py
 mv Downloads/Davis-Southern-Women-Social-Network-1-0-0-examples.nb Code/SNA
 mv Downloads/lab1.sna.u22cs087.ipynb Code/SNA
 rm lab1.sna.u22cs087.ipynb
@@ -4308,7 +4226,6 @@ mv apache-maven-3.9.9 ~/Code
 cd ~/Code
 mkdir Java
 mv apache-maven-3.9.9 Java
-mvn -v
 git clo
 git clone https://github.com/Cloudslab/cloudsim.git
 ls cloudsim
@@ -4341,17 +4258,11 @@ mvn package\
 cd modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples\
 ls\
 
-cd modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples\
-ls\
-
 mvn compile exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1"\
 
 sudo pacman -S openjdk-doc
 sudo pacman -S libreoffice-fresh
-cd Pictures
 mkdir Screenshots
-cd cloudsim-7.0
-;s
 java modules.cloudsim-examples.target.classes.org.cloudbus.cloudsim.examples.CloudSimExample1
 mvn compile exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1"
 mvn compile exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1" -eX
@@ -4367,12 +4278,10 @@ C
 rm -rf .mozilla
 cd Code/CI-CD/lab-4
 cd ~/Code/ML/c
-rm -rf .ipynb_checkpoints
 cd ../../AdventOfCode/2024-CC/
 cd lab-1
 code ./
 cd ../Cloud
-cd cloudsim-7.0/modules/cloudsim-examples
 mvn install
 yay -S zen-browser
 yay -S zen-twilight-bin
@@ -4411,7 +4320,6 @@ xrandr --dpi 140 --rate 240\
 cat .dotfiles/.x11/xinitrc
 sudo pacman -S firefox
 sudo pacman -R firefox
-zen-browser -v
 sudo systemctl disable --now docker.service
 sudo systemctl enable --now docker.socket
 yay -S brave-bin
@@ -4437,7 +4345,6 @@ conda create --name DataScience
 conda install pip
 conda install jupyter
 conda install jupyter-notebook
-jupyter notebook
 mv Downloads/ml-100k.zip Code/ML/
 unzip ml-100k.zip
 cd ml-100k
@@ -4470,7 +4377,6 @@ nvim st.py
 python st.py st.txt out.txt
 rm -rf .cache/yay/anaconda
 conda
-x
 python word_count.py data.txt\
 
 conda activate DataScience
@@ -4489,7 +4395,6 @@ mv ~/.vscode/extensions ~/.local/share/Code/extensions\
 mv ~/.vscode/settings.json ~/.config/Code/User/settings.json
 chmod +x code.sh
 ./code.sh
-rm -rf .vscode
 nvim ~/.local/share/applications/code.desktop
 rm ~/.local/share/applications/code.desktop
 cd .local/share/Code
@@ -4501,7 +4406,6 @@ mv ~/.nv ~/.cache/nv\
 du -sh .ollama
 rm -rf .conda .gk .ipython .jupyter .m2 .minikube
 sudo pacman -S polkit
-nvim .zshenv
 yay -S hyprland-meta-git
 sudo -e /etc/modprobe.d/nvidia.conf
 sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils egl-wayland
@@ -4515,15 +4419,12 @@ nvim ~/.config/hypr/hyprland.conf
 sudo pacman -R kitty
 git commit -m "Just a Backup Before using HYprland :)"
 sudo dd if=/dev/zero of=/swapfile bs=1G count=24 status=progress
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
 sudo btrfs subvolume create /swap
 sudo chown root:root /swap
 sudo chmod 700 /swap
 sudo mv /swapfile /swap/
 echo '/swap/swapfile none swap defaults 0 0' | sudo tee -a /etc/fstab
 sudo -e /etc/sysctl.d/99-swappiness.conf
-sudo rm /swapfile
 sudo chattr +C /swap/swapfile
 sudo btrfs filesystem mkswapfile --size 24g /swap/swapfile
 sudo swapon /swap/swapfile
@@ -4537,12 +4438,9 @@ sudo chattr +C /swapfile\
 sudo fallocate -l 24G /swapfile\
 sudo chmod 600 /swapfile\
 sudo mkswap /swapfile
-sudo swapon /swapfile
 # Check BTRFS features\
 sudo btrfs filesystem show /
-free -h
 swapon --show
-sudo -e /etc/fstab
 sudo blkid | grep nvme0n1p7
 sudo filefrag -v /swapfile | awk '$1=="0:" {print $4}' | tr -d '.'
 sudo -e /etc/default/grub
@@ -4554,7 +4452,6 @@ mv Downloads/test Code/Arrow
 mv Downloads/train Code/Arrow
 mv Downloads/valid Code/Arrow
 sudo pacman -S python-opencv
-;w
 python src/annotator.py --image_dir ./data/test --output_csv annotations_test.csv
 python src/annotator.py --image_dir ./data/train --output_csv annotations_train.csv
 python src/annotator.py --image_dir ./data/valid --output_csv annotations_valid.csv
@@ -4573,7 +4470,6 @@ python src/annotator.py --image_dir data/test \\
                     --right_template data/right.jpg \\
                     --left_template data/left.jpg \\
                     --threshold 0.5
-xprop
 python src/annotator.py --image_dir ./data --output_csv annotations.csv
 i3-msg reload && i3-msg restart
 python src/annotator.py --image_dir ./data/temp --output_csv annotations.csv
@@ -4597,13 +4493,11 @@ sudo rm -rf /media /srv
 rm -rf JellyFin
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:2.21.5
-sudo sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf\
 sudo sysctl -p\
 
 cd Notes/\\
 c
-cd Notes
 rm -rf Notes
 mkdir Docker
 cd Docker
@@ -4672,11 +4566,6 @@ sudo iptables-save -A FORWARD -i eno1 -o wlp4s0 -m state --state RELATED,ESTABLI
 
 sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE\
 
-sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE \
-sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE\
-sudo iptables -A FORWARD -i wlp4s0 -o eno1 -j ACCEPT\
-sudo iptables -A FORWARD -i eno1 -o wlp4s0 -m state --state RELATED,ESTABLISHED -j ACCEPT\
-
 sudo iptables-save > /etc/iptables/rules.v4
 mkdir /etc/iptables
 sudo -e /etc/iptables/
@@ -4695,12 +4584,10 @@ sudo hotspot.sh
 chmod +x hotspot.sh
 docker network create pihole_net\
 
-cd Code/Docker
 mkdir pihole
 cd pihole
 mkdir -p etc-pihole etc-dnsmasq.d\
 
-nvim docker-compose.yml
 docker-compose up -d\
 
 docker run -d \\
@@ -4773,12 +4660,10 @@ echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  
 echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  - 150 - 30 - 937 - 25 - 2600 + 48000 - 62000 + 62000 + 250 - 50 - 19500 - 100 - 366 - 60 - 250 ))
 echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  - 150 - 30 - 937 - 25 - 26000 + 48000 - 62000 + 62000 + 250 - 50 - 19500 - 100 - 366 - 60 - 250 ))
 ping -c 10 google.com
-sudo pacman -Sc
 sudo pacman -S syncthing
 sync\\
 
 rm -rf Sync
-top
 chmod +x project.sh
 ./project.sh
 chmod +x on.sh
@@ -4786,7 +4671,6 @@ chmod +x on.sh
 ./on.sh Hello World
 lq
 nvim;
-sudo pacman -R vlc
 sudo pacman -S fbida
 sudo pacman -R fbida
 sudo pacman -S loupe
@@ -4799,14 +4683,11 @@ ls o
 ls Notes
 ls -l ~/Obsidian/**/*.md\
 
-rm -rf .git
 systemctl list-units -t mount\
 
 lsblk -o NAME,MOUNTPOINT\
 
 ls blk
-mount /dev/sda1 /mnt/backup-ssd
-sudo mount /dev/sda1 /mnt/backup-ssd
 sudo ls /mnt/backup-ssd
 docker ls'
 du -sh ~/Immich
@@ -4851,7 +4732,6 @@ pgrep "zen"\
 ps -eo comm | grep zen\
 
 launch_zen.sh
-lsblk
 dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
 sudo systemctl status dbus
 netstat -tlnp | grep 5566
@@ -4893,7 +4773,6 @@ chmod +x network_check.sh
 ./network_check.sh
 nmcli device show wlp4s0
 nmap -sn 192.168.43.0/24
-nmap -sn 10.42.0.1/24
 systemctl --user enable --now network-check.timer\
 
 sudo nano /etc/NetworkManager/dispatcher.d/99-device-connect
@@ -4904,7 +4783,6 @@ nvim ~/.config/systemd/user/network-check.service\
 sudo -e /etc/NetworkManager/dispatcher.d/99-device-connect
 alias nano='-e'
 sudo nano /etc/udev/rules.d/99-hotspot-connect.rules
-cd .local/bin
 chmod +x hotspot-handler.sh
 sudo udevadm control --reload-rules \
 sudo udevadm control --reload-rules
@@ -5082,9 +4960,7 @@ sudo systemctl restart systemd-logind\
 
 rm -rf .xlog .swt .pki screen_combined.png .mozilla .m2 .minikube .john .ipython .gk
 rm -rf .eclipse
-rm -rf .nv
 rm -rf .ollama
-sudo pacman -S linux
 systemd-inhibit
 tee /sys/power/state <<!\
 mem\
@@ -5117,8 +4993,6 @@ lsmod | grep acpi\
 
 sudo modprobe acpi_cpufreq\
 sudo modprobe acpi_call\
-
-sudo -e /etc/default/grub\
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg\
 
@@ -5235,7 +5109,6 @@ export NIX_BUILD_GROUP_ID=800\
 export NIX_FIRST_BUILD_UID=801\
 sh <(curl -L https://nixos.org/nix/install) --daemon
 nix --version
-cd Code/ML
 rm -rf .venv .vscode shell.nix
 rm -rf /nix
 sudo rm -rf /nix
@@ -5275,14 +5148,12 @@ git checkout 77b6dcf
 fh
 git branch -a --contains @77b6dcf\
 
-git pull
 git branch main
 git switch main
 git branch
 cd ~/.dotfiles
 mv .config/BraveSoftware ~/.config/
 mv .config/Code ~/.config
-ls .config
 rm -rf .bash_history .nix-channels .ipython .python_history .venv
 rm test.cc a.out
 rm -rf .ollama .pki
@@ -5292,7 +5163,6 @@ npm ls react react-dom next\
 npm install react react-dom next\
 
 xtrem
-xev
 pnpm add next-themes\
 
 pnpm dlx shadcn@latest add dropdown-menu\
@@ -5312,8 +5182,6 @@ ls ~/Code/SNA/
 cd cd
 ls Downloads | grep *.jpg
 ls Downloads | grep .jpg
-tmux a
-tmux ls
 sudo pacman -S x11vnc
 x11vnc
 x11vnc -display :0 -interface usb0
@@ -5333,7 +5201,6 @@ cat facebook.tar.gz
 python venv list
 python -m venv venv
 source venv/bin/activate
-cd /tmp
 mkdir -p Test
 cd Test
 git clone git@github.com:snap-stanford/snap-python.git\
@@ -5346,13 +5213,10 @@ nmcli device wifi connect "Balaji" password balaji123
 ;3A
 python 3.py
 python 2_1.py
-cat input
 python 3_1.py
 sudo -e /sys/class/leds/asus::kbd_backlight/brightness
 sudo -e /sys/class/leds/asus::kbd_backlight/kbd_rgb_mode
-nmcli device wifi hotspot ifname wlp4s0 ssid YagnaRao password micromax
 sudo dmesg | grep -i error
-lsusb
 sudo pacman -S lshw dmidecode
 sudo lshw
 sudo dmidecode
@@ -5361,7 +5225,6 @@ free -h
 ip addr\
 nmcli device status\
 sudo systemctl status NetworkManager
-cat /etc/resolv.conf
 sudo rm /etc/NetworkManager/NetworkManager.conf\
 sudo systemctl restart NetworkManager
 timedatectl status
@@ -5376,7 +5239,6 @@ nvidia-smi\
 lspci | grep -i nvidia
 sudo pacman -S memtest86+
 sudo memtest86+
-sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo dmidecode | grep -A 5 "System Information"
 sudo dmidecode -t memory
 lspci -vv
@@ -5432,10 +5294,8 @@ sudo pacman -S python-shapely
 scala -version
 nmcli device wifi L
 nmcli device wifi connect "Tenda_817450"
-whoami
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample1"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample121
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample12"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.HomogeneousCloudSim_Lab2"
 olla
 cd Code/ML/DataScience/lab-3
@@ -5456,9 +5316,7 @@ python setup.py install
 cd Code/ML/DataScience/mrjob
 pip install -r requirements.txt
 python setup.py develop
-
 nmcli device wifi connect "Balaji" password "balaji123"
-nmcli device wifi connect "Balaji" password "balaji1234"
 hq
 tmux]
 tmux\\
@@ -5466,14 +5324,11 @@ tmux\\
 nix-shell -p python3Packages.numpy --run "zsh"\
 
 ls .dotfiles/.local/bin
-nvim .dotfiles/.local/bin
 network_check.sh
 cd ../Code
 cd Assets
-cd Backup
 mkdir obsidian
 mv Obsidian Obsidian
-mv Obsidian obsidian
 cd obsidian
 mv obsidian Obsidian
 project.sh
@@ -5487,7 +5342,6 @@ i3-msg workspace 1
 i3-msg workspace next\
 
 cmake --version
-1q
 cat .dotfiles/.config/zsh/.history| fzf
 x11vnc -display :0
 cd Code/Advent-of-Code
@@ -5507,7 +5361,6 @@ drwxr-xr-x 1 yagna users    794 Jan 18 02:02 .config\
 drwxr-xr-x 1 yagna users    130 Jan  3 12:45 .dotfiles\
 drwxr-xr-x 1 yagna users    238 Jan 23 14:30 .eclipse\
 drwxr-xr-x 1 yagna users     30 Jan 21 14:22 q
-tmux
 ls ~/.config
 rm ~/.config/libreoffice
 mv .config/libreoffice ~/.config/
@@ -5520,7 +5373,6 @@ rm -rf Test
 cd Code/S
 mv ~/Downloads/Lab_3.ipynb ~/Code/SNA/Lab_3_U22CS104_SNA.ipynb
 ls ~/Downloads | grep web
-cal
 mv Downloads/web-Stanford\ \(2\).txt Code/SNA
 mv Code/SNA/web-Stanford\ \(2\).txt Code/SNA/web-Stanford.txt
 sudo pacman -S python-responses
@@ -5556,7 +5408,6 @@ cmatrix -C magenta
 sudo pacman -S python-sympy
 python3 5_1.py
 python3 5_3.py
-clear
 python3 5_4.py\\
 
 python3 5_4.py\
@@ -5577,7 +5428,6 @@ sudo pacman -S dnsmasq iproute2 networkmanager pulseaudio-bluetooth\
 journalctl -xe | grep blueman\
 
 sudo systemctl status bluetooth.service
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"
 mvn clean install\
 
 mvn --help
@@ -5597,8 +5447,6 @@ scala 5.scala
 scala 6.scala
 scala 7.scala
 scala 8.scala
-cd Code/ML/DataScience
-tree
 cd mrjob
 pip install .\
 
@@ -5613,8 +5461,6 @@ mkdir ../lab-6
 cd ../lab-6
 mv ~/Downloads/data1\ -\ data1.csv ./data.csv
 python3 1.py data.csv > output.json
-cat output
-python3 2.py data.csv > output
 sudo pacman -S zoxide
 z add .dotfiles
 z add ./.\dotfiles
@@ -5627,7 +5473,6 @@ yay -Sy flutter
 yay -Sy flutter-bin
 yay -Sy android-sdk android-sdk-build-tools android-sdk-cmdline-tools-latest android-platform android-sdk-platform-tools
 yay -R flutter-bin
-sudo pacman -S xdotool
 xdotool search --name "Zen Browser" windowsize 1200 900
 XRDB="Xft.dpi: 144" zen-browser\
 
@@ -5642,7 +5487,6 @@ man git remote
 z ~/Code/NextJS-BusApp
 z nextjs-bu
 yay -S android-studio
-archlinux-java status
 ls Android
 z Backup
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -5685,7 +5529,6 @@ vlc Ferrari-Live-Wallpaper.mp4
 mkdir Temp
 mv Ferrari-Live-Wallpaper.mp4 Temp
 mv Ferrari-Live-Wallpaper.webm Temp
-cd Temp
 ffmpeg -i Ferrari-Live-Wallpaper.mp4 frame_%04d.png\
 
 ls temp
@@ -5899,7 +5742,6 @@ adb devices\
 
 adb install universal.apk
 curl https://node-server-bus.vercel.app/get-location
-docker compose up -d
 iwconfig
 nmcli device wifi connect "YagnaRao 69" password "micromax"q
 ls ~/Dow
@@ -5947,14 +5789,10 @@ cat shared_secret_B.bin
 python3 6_4.py
 nvim 6_4.py
 python3 6_4\.py
-man cat
 man gcc
 man g++
-cd Code/ISC
 cd Code/NextJs-BusApp
 cd Code/NextJS-BusApp
-git status
-git log
 git commit -m "Added Location and build for APK"
 git remote -v
 git remote add origin https://github.com/Yagna-rao15/nextjs-busapp.git\
@@ -5964,8 +5802,6 @@ cd Code/Android
 ls .android
 android-studio
 android-studio\\
-
-nvim\\
 
 du -sh Code/Android
 du -sh Code/TestApp
@@ -5986,28 +5822,20 @@ rm eclipse-installer -rf
 rm eclipse-inst-jre-linux64.tar.gz
 cd Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples
 cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples
-mvn clean compile\
-
-cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"\
 
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample12"\
 
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"\
 
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample10"
-mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"
 yay -S eclipse-platform\\
 \\
 
-yay -S eclipse-platform
 ping google.com
 yay -R eclipse-java-bin
-eclipse
 adb install app-debug.apk
 vlc Downloads/Silicon.Valley.S01E02.720p.BRRip.MkvCage.mkv
 pip install numpu
-ls Downloads
 cd Code/BusApp
 cd app/build
 cd outputs
@@ -6015,11 +5843,9 @@ cd ~/Downloads
 adb install app-release-1.apk
 adb install app-release-2.apk
 sudo -e /etc/hosts
-s
 /home/yagna/Code/ML/.venv/bin/python /home/yagna/Code/ML/DataScience/lab-6/1.py
 python3 DataScience/lab-6/1.py
 nvim data.csv
-python3 1.py data.csv > output
 tree ../mrjob
 python script.py input.txt --n 2
 nvim inout.txt
@@ -6027,7 +5853,6 @@ python 1.py input.txt --n 2
 sudo pacman -S python-pipes
 python3 1.py input.txt --n 2\\
 
-ls ../
 ls ../../
 python3 ../../1.py
 ls ~
@@ -6054,7 +5879,6 @@ unzip stopwords.zip -d ./nltk-data/corpora
 NLTK_DATA=/home/yagna/Code/ML/DataScience/lab-6/nltk_data python3 1.py\
 
 pyhton3
-python3
 cd .dotfiles/.local/bin
 echo PATH
 wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/ngrams.zip\
@@ -6098,7 +5922,6 @@ nmap -p 3389 209.151.153.185\
 
 sudo pacman -S openvpn
 openvpn ~/Downloads/starting_point_yagnarao15.ovpn
-openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
 curl http://10.129.146.120
 curl http://10.129.146.120/index.php
 sudo pacman -S nmap
@@ -6148,17 +5971,13 @@ nmcli connection delete Hotspot\ 1\
 nmcli connection delete Hotspot-1\
 
 ls Backup
-du -sh Immich
-du -sh /mnt/backup-ssd/Immich
 ls /mnt/backup-ssd/
 c\\
 \c
 pnpm create vite
 cd Test-Vite-Leaflet
-pnpm install
 pnpm install leaflet react-leaflet\
 
-pnpm run dev
 git clone https://github.com/Koushik2906ajet/client-bus.git
 gh auth login
 mv Downloads/client-bus-main.zip Code/
@@ -6171,13 +5990,10 @@ npm run
 npm run build
 npm run start
 g
-cd coq
 ;s BusApp
 ls BusApp
-ls Archive
 rm -rf Archive
 rm -rf client-bus-main
-ls Docker
 rm Main.java
 rm client-bus-main.zip
 rm -rf Test-Vite-Leaflet
@@ -6189,7 +6005,6 @@ mkdir NextJS-BusApp
 mkdir go-bus
 cd go-bus
 go mod init github.com/Yagna-rao15/go-bus
-bash
 ollama run deepseek-r1:32b
 ollama rm deepseek-r1:32b
 git clone https://github.com/diegodlh/Local-Citation-Network.git
@@ -6201,7 +6016,6 @@ curl -H "Accept: application/json" "https://api.crossref.org/works/10.1109/CVPR.
 
 zen-browser --essential https://chat.openai.com\
 
-backup-immich.sh
 gdm
 sudo pacman -R gdm
 sudo pacman -S gdm\
@@ -6248,7 +6062,6 @@ sudo pacman -Rdd gnome-settings-daemon\
 systemctl --user enable --now pipewire pipewire-pulse\
 
 [200~sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack --needed
-~
 zsh: bad pattern: ^[[200~sudo\
 âƒ½¯ ~\
 zsh: permission denied: /home/yagna\
@@ -6303,7 +6116,6 @@ vlc Downloads/@CC.Silicon.Valley.S01E03.720p.BRRip.x265.mkv
 mv Downloads/IIT_Dhanbad.ipynb Code/SNA/Sitaion-Netwrok-SNA.ipynb
 sudo pacman -S python-seaborn
 wifi
-cd Code/SNA
 yay -S zen-browser-bin
 xdg-open "https://chatgpt.com/?oai-dm=1" &>/dev/null &\
     sleep 0.5\
@@ -6315,14 +6127,10 @@ curl -X POST http://localhost:8080/location \\
 
 ollama list]
 ollama run codegemma
-nmcli connection show
 nmcli connection delete iQOO Z9 5G
 nmcli general status
-fzf
 cd .config/zsh
 nvim Obsidian/Notes/Hello-World.md
-chmod +x test.py
-nvim test.py
 chmod +x test.js
 cat test.js
 ./test.js
@@ -6337,7 +6145,6 @@ sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 wget "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x8b15a6b0e9a3fa35" -O g14.sec\
 sudo pacman-key -a g14.sec
-sudo -e /etc/pacman.conf
 ls .cache/yay
 du -sh .cache/yay
 rm -rf .config/yay
@@ -6441,10 +6248,8 @@ asusctl mux --integrated\
 
 ollama run llama3.1:8b
 nvtop
-cmatrix -C cyan
 adb install art-of-rally-v1.0.7b200-unlocked-apkvision.apk
 go run ./main.go
-./test.py
 yay -S visual-studio-code-bin
 sudo 
 node -v
@@ -6476,10 +6281,8 @@ alias alert='notify-send --urgency=low -i \"\$( [ \$? -eq 0 ] && echo terminal |
 ls; alert
 ls ~/code;alert
 nvim .bash
-cd ../../
 cd backup
 rm -rf Dotfiles
-cd ..
 rm -rf backup
 git clone https://github.com/Yagna-rao15/Home.git
 cd Home
@@ -6488,9 +6291,6 @@ rm class\ 11th\ chem\'PDF.js\ viewer.pdf
 nmcli device wifi connect "YagnaRao 69" password "micromax"
 nmcli device wifi connect
 nmcli device wifi connect list
-cd Code/Cloud
-sudo pacman -S chromium
-chromium
 arp -a\
 
 ping 10.42.0.232
@@ -6498,10 +6298,8 @@ ping 10.42.0.17
 cd ML/DataScience
 /sbin/python /home/yagna/Code/ML/DataScience/lab-6/1.py
 python3 lab-6/1.py lab-6/data.csv > output
-cd lab-6
 python3 1.py input.txt --n 2
 python3 1.py input.txt > output
-python3 1.py input.txt > output.txt
 yay -S python-itertools-len
 yay -S python-linear-operator
 cd Code/ML/DataScience/lab-6/
@@ -6525,32 +6323,23 @@ unzip ~/nltk_data/wordnet.zip -d ~/nltk_data/corpora/\
 mv ~/Downloads/nodes.00-of-99.gz ./00-99.gz
 rm wordnet.zip stopwords.zip
 python3 2.py
-python3 2.py input.txt > output.txt
-python3 2_.py input.txt > output.txt
 cat input.txt
-python3 3.py input.txt > output.txt
-cat output.txt
 cd Code/go-bus
 cd ../
 rm -rf go-bus
-v
 chmod +x .dotfiles/.local/bin/dmenu-shell.sh
 dmenu-shell.sh
 yay -S ulauncher
 ulauncher
 ulauncher\\
 
-cd NextJS-BusApp
 gtk2_prefs\
 
 cd .local/share/
 cd /usr/share
 cd icons/default
 nvim index.theme
-cd -
 cd gtk-4.0
-cd .config
-cd ~/.config
 cd xsettingsd
 nvim xsettingsd.conf
 nvidia-smi
@@ -6567,8 +6356,6 @@ rm -rf SNA
 npx create-next-app@latest
 npx create-next-app@latest ./
 curl http://localhost:3000/location
-ip a
-npm run dev
 curl -X POST http://localhost:3000/location \\
      -H "Content-Type: application/json" \\
      -d '{"latitude": 12.9716, "longitude": 77.5946}'\
@@ -6595,10 +6382,6 @@ nmcli device wifi connect "YagnaRao" password "micromax"
 sudo pacman -S python-schemdraw
 python3 
 rm test.py
-rm .emulator_console_auth_token
-rm .python_history
-ollama list
-ollama run deepseek-coder-v2:latest
 sudo python3 test.py[A
 sudo python3 test.py
 code test.py
@@ -6612,7 +6395,6 @@ python3 verify.py
 python3 solution.py
 python3 test.py\\
 
-python3 test.py
 nmcli device wifi connect "Nspira" password "vamsi648603"
 nmcli device wifi connect "YagnaRao" agnaRao" password "micromax"\
 q\
@@ -6621,8 +6403,6 @@ q\
 rm test.py tle.py verify.py solution.py edge.py
 nls
 nvim test.cc
-g++ test.cc
-./a.out
 3*156*4
 ((3*156*4))
 echo ((3*156*4))
@@ -6655,9 +6435,7 @@ mv sna SNA
 mv startpage Startpage
 mv Startpage Start-Page
 nmcli device wifi connect "CHETAN1" password "chetanteja"
-nmcli device wifi 
 nmcli device wifi connect "CHETAN"
-nq
 sudo pacman -R blueberry
 rfkill list\
 
@@ -6670,7 +6448,6 @@ sudo nmcli radio bluetooth off\
 
 sudo usermod -aG bluetooth $USER\
 
-sudo pacman -S blueberry
 sudo pacman -S bluez
 sudo pacman -S bluez-utils bluez-deprecated-tools
 btusb
@@ -6685,7 +6462,6 @@ pkill blueman-applet\
 blueman-applet &\
 
 blueman-manager
-cq
 blueman-applet --no-plugin DhcpClient --no-plugin PPPSupport\
 
 blueman-manager\
@@ -6733,7 +6509,6 @@ sudo pacman -S playerctl\
 playerctl play-pause\
 
 playerctl --help
-vlc
 playerctl pause
 q;q
 sudo pacman -S lxappearance
@@ -6744,27 +6519,17 @@ sudo pacman -S lxappearance-gtk3
 lxappearance
 gtk-menu-popup-delay = 0
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-sudo ls /var/cache/pacman/pkg/ | wc -l
 paccache -r
 du -sh 
 cd .config/nvim
 sudo pacman -S pacman-contrib
-sudo paccache -r
 du -sh /var/cache/pacman/pkg/
-sudo pacman -Qtdq | sudo pacman -Rns -
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
-pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
-sudo pacman -Qdtq
 sudo pacman -Rns $(pacman -Qdtq)\
 
-sudo du -sh ~/.cache
 rm -rf ~/.cache/*\
 
-journalctl --disk-usage
-sudo journalctl --vacuum-time=7d\
-
 spr
-sudo pacman -S kitty
 cp .config/alacritty ala
 cp .config/alacritty ala -r
 rm ala
@@ -6772,7 +6537,6 @@ cp .config/alacritty alacritty
 cp -r .config/alacritty alacritty
 rm alacritty
 cp -r .dotfiles/.config/alacritty alacritty
-stow .
 kitty @ set-colors -c ~/.dotfiles/.config/kitty/kitty.conf\
 
 kitty @ set-colors -c ~/.config/kitty/kitty.conf\
@@ -6796,9 +6560,7 @@ rm Downloads/Wicked.Minds.2003.1080p.WEBRip.x264-RARBG.mp4
 cd .con
 cd nvim-own
 nvim-own
-cd
 cvfwwdwd
-1
 1212
 mv Downloads/EN-Ethical\ Hacking.zip ./
 rm B.Tech\ 3\ -\ Sem\ 6\ -\ CS326\ High\ Performance\ Computing\ -\ End\ Sem\ -\ April\ 2024.pdf
@@ -6810,7 +6572,6 @@ rm a.out
 rm test.cc
 ls Temp
 rm .gtkrc-2.0
-rm -rf __pycache__
 rm -rf go
 sudo rm -rf go
 rm -rf echoapi_for_vscode
@@ -6841,9 +6602,7 @@ rm -rf FZFM
 asusctl
 GDK_BACKEND=x11 rog-control-center
 RUST_BACKTRACE=1 GDK_BACKEND=x11 rog-control-center
-cd Code
 git clone https://gitlab.com/asus-linux/asusctl.git ./ROG
-cd ROG
 sudo pacman -S rust
 cargo
 cargo build --release --features winit/x11
@@ -6856,13 +6615,11 @@ ls target/release
 find ~/Code/ROG -name "Cargo.toml" | grep -i control
 nvim /home/yagna/Code/ROG/rog-control-center/Cargo.toml
 cargo build --release --features x11
-syncthing
 sudo pacman -S networkmanager-openvpn
 sudo pacman -S openresolv
 sudo wget "https://raw.githubusercontent.com/ProtonVPN/scripts/master/update-resolv-conf.sh" -O "/etc/openvpn/update-resolv-conf"
 sudo chmod +x "/etc/openvpn/update-resolv-conf"
 sudo openvpn us-free-7.protonvpn.udp.ovpn
-IPP
 cd Code/ROG
 ollama run hengwen/DeepSeek-R1-Distill-Qwen-32B:q4_k_m
 docker info | grep -i runtime\
@@ -6870,7 +6627,6 @@ docker info | grep -i runtime\
 sudo pacman -S nvidia-container-toolkit\
 
 sudo mkdir /etc/docker 
-sudo -e /etc/docker/daemon.json
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.2.0-base nvidia-smi\
 
 pacman -Q nvidia-container-toolkit\
@@ -6878,8 +6634,6 @@ pacman -Q nvidia-container-toolkit\
 sudo systemctl restart docker\
 
 docker pull nvidia/cuda:12.2.0-runtime\
-
-nvidia-smi\
 
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.8.0-base nvidia-smi\
 
@@ -6905,12 +6659,8 @@ docker run --runtime nvidia --gpus all \\
 	--model deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
 docker image rm tensorchord/pgvecto-rs
 docker image rm 2e2cb40c55b8
-docker compose down
 socker ps
-docker ps
 docker container stop portainer
-docker container ls
-htop
 docker container rm dozzle-dozzle-1
 docker container rm pihole
 docker container rm portainer
@@ -6926,15 +6676,10 @@ dr c3f389368806
 dr 0035726506de
 dr 5cd40b07cc69 afffa29d1eb8
 dr 15fec0d45286 8ef62f2f8c91 37973ea0d058 a65eb60f28b4 422e2308c5a4 cc844640f75e
-docker images
-du -sh
-du -sh /
 rm 'EN-Ethical Hacking.zip' 'EN-Ethical Hacking.pdf'
 rm 'B.Tech 4 - Sem 7 - EC447 Speech Processing and Human Machine Communication - Mid Sem - Oct 2023.pdf'
 feh mpv-shot0001.jpg
 rm mpv-shot0001.jpg
-cd BusApp
-git init
 git commit -m "Initial Commit: POC"
 nvim README.md
 git remote add origin https://github.com/Yagna-rao15/BusApp.git\
@@ -6944,14 +6689,10 @@ mv Code/BusApp/app/release/app-release.apk ./app-release.apk
 adb install app-release.apk
 git commit -m "Added Time Interval Support for Sending Location"
 chmod +x .config/polybar/hotspot.sh
-nmcli connection show --active
-cd polybar
-./hotspot.sh
 pkill polybar && polybar example &\
 
 pkill polybar && polybar toph &\
 
-polybar
 polybar-msg cmd restart\
 
 ~/.config/polybar/hotspot.sh\
@@ -6966,17 +6707,13 @@ sudo -e /etc/containers/registries.conf.d/shortnames.conf
 podman pull hello-world
 podman image rm  5dd467fce50b
 podman images
-cd Immich
 podman compose up
 man podman compose
 . ~/.config/zsh/.zshenv
 sudo podman compose up
 echo $PODMAN_COMPOSE_PROVIDER
-w
 sudo pacman -R podman
 cd bus
-cd 
-cd Obsidian
 cd Obsidian/Notes
 mv HandTextToSpeech TTS.md
 nvim TTS.md
@@ -6988,8 +6725,6 @@ nmap -p 80 172.21.1.16
 nmap -sn 172.21.2.0/24\
 
 ssh 172.21.2.7
-nmcli radio wifi off
-nmcli radio wifi on
 cd config
 nmcli device wifi connect "Nothing Phone (2)_6407" password "123123123"
 nmcli device wifi connect "computing lab 2"
@@ -6998,24 +6733,15 @@ nmcli device wifi connect "YagnaRao" password "micromax"\
 
 nmcli device wifi connect "lab1" password "basapur123"
 yay -S apache-spark
-nmcli device wifi
-cd ml
-cd ML
-cd DataScience
 mkdir spark
 cd spark
-..
 rm -rf spark
 yay -G apache-spark
-cd apache-spark
 nvim PKGBUILD
 makepkg -si
 cd /opt
 sudo wget https://dlcdn.apache.org/spark/latest-version/spark-X.X.X-bin-hadoop3.tgz  # Use the correct URL
-pp
 rm lua/plugins/oil.lua
-nvim init.lua
-cd Downloads
 unzip deliveries.csv.zip
 code hadoopsparkex.ipynb
 ping 172.21.5.65
@@ -7031,8 +6757,6 @@ oq
 vi
 vim
 ftp 172.21.5.65
-nvi
-cd nvim
 cd busapp
 cd Advent-of-Code
 xdg-open "https://chatgpt.com/?oai-dm=1" &>/dev/null &\
@@ -7040,7 +6764,6 @@ xdg-open "https://chatgpt.com/?oai-dm=1" &>/dev/null &\
     i3-msg "workspaceopen 'obsidian://open?vault=notes&file=~/Obsidian/Notes/SQL.md'\
 
 xdg-open 'obsidian://open?vault=notes&file=~/Obsidian/Notes/SQL.md'
-bluetoothctl
 ip addr
 adb
 adb pair 10.42.0.105:33079
@@ -7057,9 +6780,7 @@ adb devices
 adb connect 10.42.0.105:41867
 adb install Downloads/whatsapp-cleaner-v1.0.3.apk
 ks
-./target/release/rog-control-center
 feh Downloads/my-notion-face-transparent.png
-blueberry
 ls code
 ls Code
 ls Code/Start-Page
@@ -7069,38 +6790,23 @@ xrdb ~/.dotfiles/.x11/Xresources\
 Hello
 nvim .config/kitty\
 
-xprop | grep WM_CLASS
 kitty +list-fonts | grep -i jetbrains
-neofetch
 q 
 cd rof
-cd rog
 q;
 echo "1"
-yay -R obsidian
-yay -S obsidian
-obsidian
-libreoffice
-gs
-git add .
 git commit 
-git push -u origin main
 code
-yazi
 spf
 nau
 gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'\
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\
 
-sudo pacman -R nautilus
-sudo pacman -S nautilus
 gnome
 sudo pacman -S gdm
-btop
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
 ccccccccccc
-rog-control-center
 sudo pacman -S gnome-tweaks\
 \
 
@@ -7127,25 +6833,18 @@ gnome-session
 Hyprland
 ls .zshenv
 cat .zshenv
-;q
 hyprctl dispatch exit
 systemctl --user disable --now xinit.service
 rm .config/systemd/user/xinit.service
-sudo systemctl disable gdm.service
 sudo systemctl enable gdm.service
 chmod +x ~/.xprofile\
 
-l
 nvim .local/share/xorg/Xorg.0.log
 mv .xprofile xprofileee
-reboot
 mv xprofileee .xprofile
 nvim .xprofile
-xrandr
 xrandr --output DP-2 --mode 2560x1440 --rate 240
-startx
 rm .xprofile
-exit
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
 xrandr --dpi 140\
 xsettingsd &\
@@ -7158,12 +6857,9 @@ xrandr --output DP-2 --mode 2560x1440 --rate 240\
 xrandr --dpi 140\
 xsettingsd &\
 xset s off -dpms
-nvim 
 xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
 
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
-
-xrandr --dpi 140\
 
 xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
@@ -7172,30 +6868,15 @@ xsettingsd &\
 xset s off -dpms\
 
 chmod +x script.sh
-nautilus
 papers
 gnome-shell-extension-tool
-gnome-calculator
 ./script.sh
-echo $PATH
 source .zshenv
-hotspot.sh
 ./.dotfiles/.local/bin/hotspot.sh
-qq
-cd code
 cd SNA/sitation-network
-cd sna
-code . && exit
 q\\
 q
-sudo pacman -Syu
-yay -Syu
-cd .dotfiles
-fastfetch
-nvm
-kitty
 alacritty
-time zsh --interactive -c exit
 echo $((96 * 1.25)) 
 sudo echo $((96 * 1.25)) [200~exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"
 exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"\
@@ -7205,11 +6886,2327 @@ mpv Downloads/@CS_Files\ -Squid\ Game\ S02E07\ Friend\ or\ Foe\ 1080p\ HQ\ NF\ W
 celluloid
 xsettingsd &\
 
-c
-ls
-nvim
+git rm .config/zsh/.zcompdump.archlinux.1038140
+git rm .config/zsh/.zcompdump.archlinux.3025518
+git rm .config/zsh/.zcompdump.archlinux.3025518 -f
+git commit -m "Messy Commit, I Deeply regret it"
+echo -->
+echo --> ll
+echo "-->"
+yay -S davinci-resolve
+cd /tmp
+git clone https://aur.archlinux.org/davinci-resolve.git\
+cd davinci-resolve\
+
+mv ~/Downloads/DaVinci_Resolve_19.1.3_Linux.zip ./
+ls -lh\
+
+sha256sum DaVinci_Resolve_19.1.3_Linux.zip
+unzip DaVinci_Resolve_*.zip -d resolve_installer\
+
+mv davinci-resolve ~/Temp
+cd davinci-resolve
+cd Temp/davinci-resolve
+resolve
+makepkg -si\
+
+resolve\
+
+ls /opt/resolve/bin/\
+
+sudo pacman -Rns davinci-resolve\
+
+/opt/resolve/bin/resolve\
+
+rm -rf ~/Temp/davinci-resolve  # Or wherever you cloned the AUR repo\
+
+pwd
+du -sh
+export PATH="${PATH:+${PATH}:}$HOME/.local/bin"\
+
+syncthing
+ls Obsidian
+printf "\e]66;s=2;Double sized text\a\n\n"
+kitty
+sudo pacman -S figlet
+man figlet
+echo "Big Text" | figlet\
+
+allow_remote_control yes\
+
+echo "Normal text"\
+echo "ï¼·ï½ƒ©ï½ƒ¤ï½ƒ¥ï½ƒ®ï½ƒ¥ï½ƒ¤ ï¼´ï½ƒ¥ï½ƒ¸ï½ƒ´"\
+echo "ðƒ½ƒ³ƒ‚ðƒ½ƒ³¬ðƒ½ƒ³»ðƒ½ƒ³²ðƒ½ƒ³¹ðƒ½ƒ³½ðƒ½ƒ³®ðƒ½ƒ³­ ðƒ½ƒ³£ðƒ½ƒ³®ðƒ½ƒ´ðƒ½ƒ³½"\
+echo "âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨âƒ¶ƒ¨"  # Full-block wide characters\
+
+printf "%-20s%-40s\n" "Short" "Longer text example"\
+printf "%20s\n" "Right Aligned"\
+printf "%-20s\n" "Left Aligned"\
+printf "%*s\n" 50 "Centered"\
+
+echo -e "First Line\n\n\n\nSecond Line"\
+
+echo -e "\e[2m Dimmed Text \e[0m"\
+echo -e "\e[1m Bold Text \e[0m"\
+echo -e "\e[3m Italic Text \e[0m"\
+echo -e "\e[4m Underlined Text \e[0m"\
+echo -e "\e[5m Blinking Text (Not all terminals) \e[0m"\
+
+figlet "Big Text"\
+toilet -f mono12 "Huge"\
+
+sudo pacman -S kitty-shell-integration
+sudo systemctl disable gdm.service
+rm script.sh
+rm BlackmagicDesign
+rm BlackmagicDesign -rf
+cd $HOME/.dotfiles/.x11/xinitrc
+vlc km_20250311_1080p_30f_20250311_015533.mp4
+vlc
+rm km_20250311_1080p_30f_20250311_015533.mp4
+;s
+rm -rf .gallery
+rm 20250311.kine
+rm .emulator_console_auth_token
+LC_ALL=C pacman -V|sed -r "s#[0-9]+#$(date -u +%m)#g"|base32|head -1
+lsusb
+mount /dev/sda1 /mnt/backup-ssd
+umount -R /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
+sudo umount -R /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
+sudo mount /dev/sda1 /mnt/backup-ssd
+ls /mnt/backup-ssd
+umount -R /mnt/backup-ssd
+sudo umount -R /mnt/backup-ssd
+du -sh /mnt/backup-ssd/Immich
+du -sh /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/
+gnome-disk-image-mounter
+cd Code/Hostel-Portal
+cd Code/SNA
+nvim''
+dmenu
+dmenu_run
+dmenu_run -fn "JetBrainsMono Nerd Font"
+dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '$ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
+dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
+yay -R superfile-bin-debug superfile-bin
+yay -S kitty-git
+printf "Hello World
+printf "Hello World\
+
+printf "Hello World\!"\
+
+printf "\Hello e]66;s=2;W\aorld\n"
+printf "\Hello e]66;s=2;W\aorld\nHello "
+printf "Hello \e]66;s=2;W\aorld\nHello "
+printf "Hello \e]66;s=2;v=2;W\aorld\nHello "
+printf "Hello \e]66;s=2, v=2;W\aorld\nHello "
+printf "Hello \e]66;s=2, v=2;W\aorld\n"
+printf "Hello \e]66;s=2, v=2;W\aorld\n\n"
+printf "Hello \e]66;s=2:v=2;W\a1orld\n\n"
+printf "Hello \e]66;s=2:v=2;W\aorld\n\n"
+printf "Hello \e]66;s=2:v=1;W\aorld\n\n"
+printf "Hello \e]66;s=2;W\aorld\n\n"
+printf "Hello \e]66;s=2;W\aorld\nHello \e]66;s=0;W\aorld\n"
+printf "Hello \e]66;s=2;W\aorld\nHello \aorld\n"
+printf "\e]66;s=1:w=2;A\a"
+ó°ƒµ¾
+printf "\e]66;s=1:w=2;ó°ƒµ¾\a"
+printf "ó°ƒµ¾"
+printf "\e]66;n=1:d=20;crashing text\a\n"
+printf "\e]66;h=2:s=3;Î£\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a\n\n"
+printf "\e]66;h=2:s=3;Î£\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a"
+printf "\e]66;h=2:s=3;Î£\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a Hello"
+printf "\e]66;h=2:s=3;Î£\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a\n Hello"
+printf "\e]66;h=2:s=3;Î£\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a\n"
+mkdir NeoVim
+git clone https://github.com/neovim/neovim.git ./NeoVim
+cd neovim
+make CMAKE_BUILD_TYPE=Debug\
+
+sudo pacman -S gdb
+gdb --args ./build/bin/nvim\
+
+.
+make clean\
+make CMAKE_BUILD_TYPE=Debug
+./build/bin/nvim
+openssl man
+openssl ciphers
+echo "Erripuk Sai"
+tmux a
+mkdir lab-8
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048\
+
+openssl rsa -pubout -in private_key.pem -out public_key.pem\
+
+echo "Hello, RSA with OpenSSL > message.txt\
+openssl rsautl -encrypt -pubin -inkey public_key.pem -in message.txt -out encrypted_message.bin\
+\
+\
+\
+
+rm -rf Code/ISC/lab-8
+1q
+exec gnome-settings-daemon
+sudo pacman -S gnome-settings-daemon
+nvim ll
+rm ll
+echo "export XSETTINGS_CONFIG_FILE="$HOME/.config/xsettingsd/xsettingsd.conf" >> ~/.zshenv
+cat ~/.zshenv
+ls .x11
+mkdir ~/.dotfiles/.config/x11
+nvim ~/.zshenv
+nvim ~/.config/kitty/kitty.conf
+nvim .config/kitty
+mv .config/kitty/kitty.conf .dotfiles/.config/kitty/kitty.conf
+cd .dot
+cd .config/x11
+nvim Xauthority
+rm Xauthority
+mv .x11/Xauthority ./
+mv .x11/xinitrc ./
+mv .x11/Xresources ./
+rm -rf .x11
+xrandr --dpi 140\
+
+xrandr\\
+
+xrandr --dpi
+xrandr --help
+xrandr --current
+xrandr --dpi 140
+nvim .zshenv
+./.local/bin/hotspot.sh
+ls .dotfiles/.x11/xinitrc
+xrandr --dpi 144\
+
+xrdb -merge ~/.Xresources\
+
+mkdir Notes
+cd Notes
+obsidian ./
+mkdir penpot
+curl -o docker-compose.yaml https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
+mv docker-compose.yaml ./penpot
+docker compose -p penpot -f docker-compose.yaml up -d
+nvim docker-compose.yaml
+cd Code/Docker
+cd penpot
+oh-my-posh upgrade
+xrdb -merge ~/.dotfiles/.x11/Xresources\
+
+xrdb -merge ~/.dotfiles/.x11/Xresources\
 q
-: 1741631558:0;nvim
-: 1741631564:0;cd .dotfiles
-: 1741631565:0;gs
-: 1741631574:0;git add .
+yay -S obsidian
+~/Downloads/Obsidian-1.8.9.AppImage
+rm Downloads/Obsidian-1.8.9.AppImage
+yay -S obsidian 
+sudo pacman -R nautilus
+tmux
+tmux ls
+s
+ls .config/kitty
+rm -rf .config/kitty
+zen-browser -v
+rm .\~lock.Lab_7_U22CS104_ISC.odt\#
+nvimc
+man openssl
+touch u22cs104.txt
+echo "1" > u22cs104.txt
+echo "Hello, Iam Yagna Rao Neelagiri. Welcome to Computer Science Department of Saradar Vallabhbhai National Institute of Technology, Surat" >> u22cs104.txt
+echo "1" >> u22cs104.txt
+openssl dgst -md5 u22cs104.txt | awk '{print $2}'
+openssl dgst -sha1 u22cs104.txt | awk '{print $2}'
+openssl dgst -sha256 u22cs104.txt | awk '{print $2}'
+touch msg1
+touch msg2
+echo "d131dd02c5e6eec4693d9a0698aff95c 2fcab58712467eab4004583eb8fb7f89\
+55ad340609f4b30283e488832571415a 085125e8f7cdc99fd91dbdf280373c5b\
+d8823e3156348f5bae6dacd436c919c6 dd53e2b487da03fd02396306d248cda0\
+e99f33420f577ee8ce54b67080a80d1e c69821bcb6a8839396f9652b6ff72a70" >> msg1
+echo "d131dd02c5e6eec4693d9a0698aff95c 2fcab50712467eab4004583eb8fb7f89\
+55ad340609f4b30283e4888325f1415a 085125e8f7cdc99fd91dbd7280373c5b\
+d8823e3156348f5bae6dacd436c919c6 dd53e23487da03fd02396306d248cda0\
+e99f33420f577ee8ce54b67080280d1e c69821bcb6a8839396f965ab6ff72a70" >> msg2
+openssl dgst -md5 msg1 | awk '{print $2}'
+openssl dgst -md5 msg2 | awk '{print $2}'
+openssl dgst -md5 msg1
+openssl dgst -sha256 msg1 | awk '{print $2}'
+openssl dgst -sha256 msg2 | awk '{print $2}'
+diff msg1 msg2
+diff msg1 msg1
+diff msg2 msg2
+nvim mine.py
+python3 mine.py
+cd yagna
+fzf
+obsidian -v
+yay -S obsidian 1.8.8
+yay -R obsidian
+sudo pacman -S xorg-xwayland
+OBSIDIAN_USE_WAYLAND=1 obsidian -enable-features=UseOzonePlatform -ozone-platform=wayland \
+
+flatpak
+flatpak install flathub md.obsidian.Obsidian
+sudo pacman -R obsidian
+flatpak run md.obsidian.Obsidian
+flatpak uninstall md.obsidian.Obsidian org.freedesktop.Platform org.freedesktop.Platform.GL.default org.freedesktop.Platform.GL.nvidia-570-124-04 org.freedesktop.Platform.openh264 org.gtk.Gtk3theme.Adwaita-dark
+obsidian\
+
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
+
+echo $XDG_CURRENT_DESKTOP\
+
+XDG_CURRENT_DESKTOP=gnome obsidian\
+
+XDG_CURRENT_DESKTOP=KDE obsidian\
+
+obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland\
+
+obsidian --disable-gpu\
+
+export GTK_USE_PORTAL=1\
+obsidian\
+
+rm -rf ~/.config/obsidian\
+sudo pacman -Rns obsidian\
+yay -Rns obsidian\
+flatpak uninstall md.obsidian.Obsidian\
+
+sudo pacman -S obsidian
+touch ~/.config/obsidian/obsidian.json\
+
+systemctl --user status xdg-desktop-portal\
+
+sudo pacman -S xdg-desktop-portal-gtk\
+
+ELECTRON_ENABLE_LOGGING=1 ELECTRON_DEBUG=1 obsidian\
+
+electron34\
+
+export GTK_USE_PORTAL=0\
+obsidian\
+
+chmod +x Downloads/Obsidian-1.8.9.AppImage
+Downloads/Obsidian-1.8.9.AppImage --no-sandbox
+[200~pacman -Qs electron
+pacman -Qs electron\
+
+obsidian --disable-gpu --enable-features=UseOzonePlatform --ozone-platform=x11\
+
+xdg-settings set default-url-scheme-handler file kde-open5\
+
+systemctl --user restart xdg-desktop-portal\
+
+rm ~/.config/obsidian/obsidian.json\
+obsidian\
+
+echo "{}" > ~/.config/obsidian/obsidian.json\
+obsidian\
+
+ELECTRON_ENABLE_LOGGING=1 Downloads/Obsidian-1.8.9.AppImage --no-sandbox\
+
+ELECTRON_ENABLE_LOGGING=1 Downloads/Obsidian-1.8.9.AppImage --no-sandbox --disable-gpu\
+
+sudo pacman -S xdg-desktop-portal-wlr
+sudo pacman -S xdg-desktop-portal-kde
+sudo pacman -S xdg-desktop-portal-gtk
+export ELECTRON_OZONE_PLATFORM_HINT=auto\
+# Then launch Obsidian
+obsidian --no-sandbox --disable-gpu --use-gl=desktop
+xdg-mime default org.gnome.Nautilus.desktop inode/directory\
+# Replace org.gnome.Nautilus.desktop with your file manager if different
+rm -rf ~/.config/obsidian
+git clone https://github.com/rameshchandra8520/greenhouse-AutoApply.git
+nvim .env
+yay -S python-selenium
+yay -S python-pyautogui
+yay -S python-fake-useragent
+yay -S python-google-generativeai
+chrome
+yay -S google-chrome
+nvim apply.py
+yay -S chromedriver
+chromedriver --version\
+
+curl 'https://developer.chrome.com/docs/chromedriver/downloads#chromedriver_1140573590' -o chromeDriver
+mv chromeDriver chromecriver
+mv chromecriver chromedriver
+chmod +x chromedriver
+google-chrome --version\
+chromedriver --version\
+
+./chromedriver
+rm ./chromedriver\
+
+chromium --version\
+google-chrome-stable --version\
+
+sudo pacman -S chromium
+sudo pacman -R chromedriver\
+sudo pacman -S chromium\
+
+chromium --version\
+chromedriver --version\
+
+ls Documents
+cp Documents/Neelagiri_Yagna_CV.pdf Code/greenhouse-AutoApply
+cd greenhouse-AutoApply
+python3 apply.py
+cd -\\
+
+picom --experimental-backends &\
+
+nvim +PackerSync +qall
+git restore --source=HEAD --staged --worktree init.lua lazy-lock.json lua/\
+
+rm -rf ~/.local/share/nvim/base46/\
+nvim\
+
+mv Obsidian\ Vault Notes
+rm Notes
+rm Notes -rf
+mv Obsidian obsidian
+mkdir Obsidian
+obsidian
+gimp
+yay -S marimo 0.11.22-1
+yay -S python-pycrdt
+python -m venv marimo-env
+pip install --upgrade pip
+pip install "python-pycrdt<0.12.0"
+touch marimo.py
+source marimo-env/bin/activate
+rm Test.py
+cd Code/Cloud
+eclipse
+mvn clean compile -e
+yay -S eclipse-platform
+cd cloudsim-7.0/modules/cloudsim-examples
+mvn clean compile\
+
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.HeterogeneousCloudSimulation"
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"
+cd cloudsim-7.0
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample10"
+yay
+openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
+sudo openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
+nmap https://sappy-web.2024.ctfcompetition.com/
+ping https://sappy-web.2024.ctfcompetition.com/
+ping http://sappy-web.2024.ctfcompetition.com/
+curl -I https://sappy-web.2024.ctfcompetition.com\
+
+curl -v https://sappy-web.2024.ctfcompetition.com\
+
+curl -X POST -d "url=http://example.com" https://sappy-web.2024.ctfcompetition.com/share\
+
+console.log(window);\
+
+nvin
+cd Immich/library/library/admin/2009
+sudo pacman -S xorg-xeyes
+xeyes
+sudo pacman -R xorg-xeyes
+ollama run deepseek-coder-v2:latest
+cd ds
+cd ml
+unzip 00-99.gz
+tar -xf 00-99.gz
+curl https://www.gutenberg.org/cache/epub/84/pg84.txt > input.txt
+curl https://www.gutenberg.org/cache/epub/84/pg84.txt -o input.txt
+python3 2.py input.txt > output.txt
+python3 2_.py input.txt > output.txt
+python3 3.py input.txt > output.txt
+nvim output
+cd lab
+python3 2.py data.csv > output
+mv lab lab-7
+cd apache-spark
+sudo pacman -S virtualbox
+sudo touch /etc/modules-load.d/virtualbox-host-modules-lts.conf
+nvim /usr/lib/modules-load.d/virtualbox-host-modules-lts.conf
+chmod +x ~/.dotfiles/.local/bin/load_modules.sh
+sudo usermod -aG vboxusers yagna
+cd .local/share
+cd nvim/lazy/base46/lua/base46/integrations/statusline
+sudo pacman -S vsftpd
+sudo useradd -m ftpuser\
+sudo passwd ftpuser\
+
+sudo systemctl start vsftpd\
+
+cp Downloads/SVNIT-CTF-S1-TARGET.ova /home/ftpuser
+sudo cp Downloads/SVNIT-CTF-S1-TARGET.ova /home/ftpuser
+ls /home/ftpuser
+sudo ls /home/ftpuser
+sudo systemctl enable vsftpd
+sudo systemctl start vsftpd
+sudo mkdir /home/ftpuser/upload
+sudo chown ftpuser /home/ftpuser/upload
+sudo -e /etc/vsftpd.conf\
+
+sudo systemctl restart vsftpd
+startx
+nmap -sn 10.42.0.1/24
+ping 10.0.2.15
+ping 172.32.3.45
+nmap -sS 172.32.3.45
+sudo nmap -sS 172.32.3.45
+sudo nmap -sS 172.32.3.59
+sudo nmap -sS -sV \172.32.3.45
+sudo nmap -sS -sV 172.32.3.45
+c\\
+c
+yay -S gobuster
+ssh svnit-ctf-s1-target@172.32.3.45
+yay -S nikto
+sudo pacman -S wordlists
+sudo pacman -S seclists
+yay -S seclists
+searchsploit apache 2.4.58
+nmap -sV --script vuln 172.32.3.45
+git clone https://github.com/mrmtwoj/apache-vulnerability-testing.git\
+cd apache-vulnerability-testing
+python3 poc_vulnerability_testing.py --target http://172.32.3.45
+nvim poc_vulnerability_testing.py
+curl -v -H 'HTTP/1.1 200 OK' -H 'Content-Type: text/html; charset=UTF-8' -H 'X-Bad-Header: (); system("uname -a");' http://172.32.3.45/
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt ssh://172.32.3.45
+gobuster dir -u http://172.32.3.45 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+curl -v 172.32.3.45
+curl -i http://172.32.3.45/uddiexplorer/SearchPublicRegistries.jsp
+curl -i "http://172.32.3.45/uddiexplorer/SearchPublicRegistries.jsp?operator=http://example.com"\
+
+curl -i "http://172.32.3.45/uddiexplorer/SearchPublicRegistries.jsp?operator=http://127.0.0.1:22"\
+
+nikto -h http://your-vm-ip\
+
+nikto -h http://172.32.3.45
+curl http://172.32.3.45/%2e%2e%2fetc/passwd\
+curl http://172.32.3.45//..//..//..//..//etc/passwd\
+
+curl -i http://172.32.3.45/username.txt
+wget -qO- http://172.32.3.45/\
+
+curl -s "http://172.32.3.45:80/?C=N%3BO%3DD%27%20OR%20sqlspider" | grep -i "error"\
+
+yay -S sqlmap
+sqlmap -u "http://172.32.3.45:80/?C=N%3BO%3DD'" --dbs --batch\
+
+curl -s -o /dev/null -w "%{http_code}\n" "http://172.32.3.45:80/?C=N%3BO%3DD%27%20OR%20sqlspider"\
+
+curl -s "http://172.32.3.45:80/?C=N;O=A" > normal.html\
+curl -s "http://172.32.3.45:80/?C=N%3BO%3DD%27%20OR%20sqlspider" > injected.html\
+diff normal.html injected.html\
+
+sqlmap -u "http://172.32.3.45:80/?C=N;O=D" --dbs --batch\
+
+sqlmap -u "http://172.32.3.45:80/?C=N&O=D" --dbs --batch\
+
+diff -u normal.html injected.html\
+
+curl -s "http://172.32.3.45:80/?C=N;O=D' AND '1'='1" | grep -i "error"\
+curl -s "http://172.32.3.45:80/?C=N;O=D' AND '1'='2" | grep -i "error"\
+
+rm injected.html normal.html
+sudo systemctl enable vsftpd\
+sudo systemctl start vsftpd\
+sudo systemctl status vsftpd
+yay -S gnome-disk-utility
+gnome-disks
+nmap -sS 172.21.1.0/24
+nmap -sn 192.168.1.0/24\
+
+mkdir CTF
+cd cft\\
+
+cd CTF
+git clone https://github.com/CyberGyan25/SVNIT_CTF_S1_CHELLENGES.git ./
+cd SVNIT_CTF_Round\ 1
+cd Challenge\ 1
+git clone https://github.com/CyberGyan25/Folder-Locker.git
+cd Folder-Locker/Folder\ Locker\ Ubuntu/dist
+chmod +x Folder_Locker
+./Folder_Locker
+./Folder-Locker/Folder\ Locker\ Ubuntu/dist/Folder_Locker
+python3 temp.py >> out
+cat out
+mv out out.txt
+nvim out.txt
+python3 temp.py
+cp ancient.txt ancient.html
+nmap -sn 172.21.1.0/20
+sudo nmap -sP 172.21.0.0/16 | grep -B 2 "Virtual"\
+
+touch pass.txt
+nvim pass
+nvim pass.txt
+virtualbox
+load_modules.sh
+nmap -sS -sV 172.21.3.106
+sudo nmap -sS -sV 172.21.3.106
+sudo nmap -sS -sV 172.21.3.0/24
+sudo ssh svnit-ctf-s1-target@172.21.3.106
+sudo nmap -sS -sV 172.32.3.18
+nmap -sS -sV 172.32.3.18
+nmap -sn 172.32.3.0/24
+ping 172.32.3.18
+nmcli connection show
+nmcli connection delete Nothing Phone (2)_6407
+nmcli connection delete 189d71bd-4e05-4dba-9f25-a12ceae8b424
+yay -R google-chrome
+google-chrome-stable
+google-oauthlib-tool
+google-oauthlib-tool --help
+chromium
+printf "\e]66;s=2;Double sized text\a\n\n"\
+printf "\e]66;s=3;Triple sized text\a\n\n\n"\
+printf "\e]66;n=1:d=2;Half sized text\a\n"
+sudo pacman -S kitty
+kitty --version
+rog-control-center
+code ancient.txt
+sudo pacman 0Syu
+mv Colored\ Sidebar\ Items.css CSI.css
+nvim Colored\ Sidebar\ Items.css
+gnome-calculator
+sudo pacman -Syu\\
+
+rm -rf NextJS-Dashboard
+sudo ls /var/cache/pacman/pkg/ | wc -l
+sudo paccache -r\
+
+du -sh /var/cache/pacman/pkg/ 
+sudo pacman -Qdtq
+[200~pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
+~
+pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h\
+
+pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
+sudo du -sh ~/.cache
+rm -rf ~/.cache/*
+journalctl --disk-usage
+sudo journalctl --vacuum-time=7d\
+
+cd Code/ISC
+openssl dgst --help
+man man
+man openssl dgst
+nvim 9_1.py
+python3 9_1.py input encrypt decrypt 3
+echo "Test" >> input
+python3 9_2.py input encrypt decrypt "[1,2,3w]" 3
+python3 9_2.py input encrypt decrypt "[1,2,3]" 3
+python3 9_2.py input encrypt decrypt "[2,0,1]" 3
+python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,7]" 7
+python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,0]" 7
+g++ test.cc
+./a.out
+w
+yay -S marimo
+/usr/sbin/python -m marimo --yes edit /home/yagna/Code/ISC --host=localhost --port=2818 --headless --no-token --watch
+/usr/sbin/python
+sudo pacman -S neovim
+cd modules/cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples\
+ls\
+
+cd ../../
+cd ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample11"
+mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample12"
+cd docker
+mkdir nextcloud
+docker container rm f1f2a0f1cbcf
+sudo docker container stop f1f2a0f1cbcf
+sudo docker container rm f1f2a0f1cbcf
+ping nextcloud.com
+nslookup nextcloud.com
+systemctl status docker.service
+jq . /etc/docker/daemon.json\
+\
+
+# For Linux and without a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare Tunnel and else) already in place:\
+sudo docker run \\
+--init \\
+--sig-proxy=false \\
+--name nextcloud-aio-mastercontainer \\
+--restart always \\
+--publish 80:80 \\
+--publish 8080:8080 \\
+--publish 8443:8443 \\
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \\
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \\
+nextcloud/all-in-one:latest
+sudo netstat -tulpn | grep :443
+sudo ss -tulpn | grep :443
+cd immich
+sudo netstat -tulpn
+sudo lsof -i :443
+docker inspect nextcloud-aio-mastercontainer | grep DNS
+sudo nano /etc/docker/daemon.json
+sudo -e /etc/docker/daemon.json
+jq . /etc/docker/daemon.json
+docker restart nextcloud-aio-mastercontainer
+sudo docker container stop nextcloud-aio-mastercontainer
+sudo docker container rm nextcloud-aio-domaincheck
+sudo docker container rm nextcloud-aio-mastercontainer
+sudo docker container rm 
+version: "3.8"\
+\
+services:\
+  nextcloud-aio-mastercontainer:\
+    image: nextcloud/all-in-one:latest\
+    container_name: nextcloud-aio-mastercontainer\
+    restart: always\
+    ports:\
+      - "80:80"\
+      - "8080:8080"\
+      - "8443:8443"\
+    volumes:\
+      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config\
+      - /var/run/docker.sock:/var/run/docker.sock:ro\
+    init: true\
+    deploy:\
+      resources:\
+        limits:\
+          memory: 4G # optional memory limit, can be adjusted\
+        reservations:\
+          memory: 1G # optional memory reservation, can be adjusted\
+\
+volumes:\
+  nextcloud_aio_mastercontainer:\
+
+docker inspect nextcloud-aio-mastercontainer
+sudo -e /etc/NetworkManager/NetworkManager.conf
+sudo systemctl restart NetworkManager
+cat /etc/resolv.conf
+sudo docker run \\
+--init \\
+--sig-proxy=false \\
+--name nextcloud-aio-mastercontainer \\
+--restart always \\
+--publish 80:80 \\
+--publish 8080:8080 \\
+--publish 443:443 \\
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \\
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \\
+nextcloud/all-in-one:latest
+docker container rm nextcloud-aio-
+docker container rm nextcloud-aio-mastercontainer nextcloud-aio-domaincheck
+sudo docker run \\
+--init \\
+--sig-proxy=false \\
+--name nextcloud-aio-mastercontainer \\
+--restart always \\
+--publish 80:80 \\
+--publish 8080:8080 \\
+--publish 8443:8443 \\
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \\
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \\
+nextcloud/all-in-one:latest
+nvim te
+cd nextcloud
+docker inspect nextcloud-aio-mastercontainer > test
+docker network prune
+docker compose down'\
+
+docker network inspect nextcloud_default
+docker logs nextcloud-aio-mastercontainer
+yay -S python-pyspark
+mvn -v
+gcc -v
+gcc --verion
+gcc --version
+python3 1.py data.csv > output
+python3 1.py input.txt > output.txt
+cat output.txt
+yay -S gcc
+yay -S gcc12
+yay -R python-google-generativeai python-google-ai-generativelanguage
+yay -S hadoop
+nvim .dotfiles/.local/bin
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE \
+sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE\
+sudo iptables -A FORWARD -i wlp4s0 -o eno1 -j ACCEPT\
+sudo iptables -A FORWARD -i eno1 -o wlp4s0 -m state --state RELATED,ESTABLISHED -j ACCEPT\
+
+nmcli device wifi hotspot ifname wlp4s0 ssid YagnaRao password micromax
+nmcli connection add type wifi ifname wlp4s0 con-name Hotspot ssid YagnaRao autoconnect yes\
+nmcli connection modify Hotspot wifi-sec.key-mgmt wpa-psk wifi-sec.psk micromax\
+nmcli connection modify Hotspot ipv4.method shared\
+nmcli connection up Hotspot
+nmcli dev wifi connect "YagnaRao" password "micromax"
+nmcli device wifi connect "YagnaRao" password "micromax" security wpa-psk
+nmcli connection add type wifi con-name "YagnaRaoConnection" ssid "YagnaRao" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "micromax"
+nmcli connection up "YagnaRaoConnection"
+nmcli dev wifi 
+neofetch
+nvim .config/gtk-3.0/settings.ini
+sudo pacman -R chromedriver\
+sudo pacman -R chromium\
+
+gdisks
+sudo pacman -S gparted
+lablk
+sudo swapoff -v /swapfile
+sudo rm /swapfile
+sudo fallocate -l 8G /swapfile
+sudo nano /etc/fstab
+swapon -s\
+free -h
+sudo chattr +C /swapfile
+sudo btrfs check /dev/nvme0n1p7
+sudo btrfs check --check-data-csum /dev/nvme0n1p7
+sudo pacman -R transmission-gtk 
+libinput list-devices
+docker container rm nextcloud-aio-domaincheck
+docker container stop nextcloud-aio-mastercontainer
+docker container rm nextcloud-aio-mastercontainer
+docker container
+# For Linux and without a web server or reverse proxy (like Apache, Nginx, Caddy, Cloudflare Tunnel and else) already in place:\
+sudo docker run \\
+--init \\
+--sig-proxy=false \\
+--name nextcloud-aio-mastercontainer \\
+--restart always \\
+--publish 80:80 \\
+--publish 8080:8080 \\
+--publish 8443:8443 \\
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \\
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \\
+ghcr.io/nextcloud-releases/all-in-one:latest
+sudo pacman -S tailscale\ 
+sudo pacman -S tailscale
+docker stop nextcloud-aio-domaincheck nextcloud-aio-mastercontainer
+docker rm nextcloud-aio-domaincheck nextcloud-aio-mastercontainer
+tailscale
+tldr 
+man tailscale 
+tailscale --help
+sudo systemctl start tailscaled
+tailscale up
+sudo tailscale up
+ping 100.72.67.58
+cd Code/Docker/nextcloud
+docker compose logs --follow
+docker network rm nextcloud-aio nextcloud_default none
+docker compose down\
+docker kill $(docker ps -q)\
+docker remove $(docker ps -q -a)\
+docker rmi $(docker image ls -q)\
+docker volume remove $(docker volume ls -q)\
+docker network remove $(docker network ls -q)\
+docker system prune -a --volumes\
+\
+sudo systemctl daemon-reload\
+sudo systemctl restart NetworkManager\
+sudo systemctl restart network\
+sudo systemctl restart docker\\
+
+âƒ½¯ docker ps\
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\
+âƒ½¯ docker compose up --build --wait\
+[+] Running 24/24\
+ âƒ¼ƒ´ nextcloud-aio-tailscale Pulled                                                                                                      120.4s \
+   âƒ¼ƒ´ 44cf07d57ee4 Pull complete                                                                                                         73.8s \
+   âƒ¼ƒ´ d7d3bb4f18ee Pull complete                                                                                                         83.8s \
+   âƒ¼ƒ´ 45dbde944e9a Pull complete                                                                                                         90.4s \
+ âƒ¼ƒ´ nextcloud-aio-mastercontainer Pulled                                                                                                102.5s \
+   âƒ¼ƒ´ f18232174bc9 Pull complete                                                                                                         11.5s \
+   âƒ¼ƒ´ 3eaec181b0f1 Pull complete                                                                                                         11.9s \
+   âƒ¼ƒ´ 86b4b33fb554 Pull complete                                                                                                         11.9s \
+   âƒ¼ƒ´ dbbfcd04425c Pull complete                                                                                                         21.9s \
+   âƒ¼ƒ´ e09a85f28a19 Pull complete                                                                                                         23.2s \
+   âƒ¼ƒ´ b01e66fffa8f Pull complete                                                                                                         23.2s \
+   âƒ¼ƒ´ 7e431cb59fd7 Pull complete                                                                                                         34.9s \
+   âƒ¼ƒ´ 6686168fc986 Pull complete                                                                                                         35.0s \
+   âƒ¼ƒ´ d3e66c8a3bd8 Pull complete                                                                                                         35.0s \
+   âƒ¼ƒ´ 4f4fb700ef54 Pull complete                                                                                                         43.7s \
+   âƒ¼ƒ´ 58d22d9973f6 Pull complete                                                                                                         43.7s \
+   âƒ¼ƒ´ 5d48cb106f50 Pull complete                                                                                                         45.2s \
+   âƒ¼ƒ´ 486e87e4832d Pull complete                                                                                                         60.1s \
+   âƒ¼ƒ´ abf19eb193ff Pull complete                                                                                                         60.2s \
+   âƒ¼ƒ´ 1edfd85c0fed Pull complete                                                                                                         63.1s \
+   âƒ¼ƒ´ 682b6262b85b Pull complete                                                                                                         66.1s \
+   âƒ¼ƒ´ a64250809cdf Pull complete                                                                                                         66.1s \
+   âƒ¼ƒ´ a0c93a985aee Pull complete                                                                                                         72.6s \
+   âƒ¼ƒ´ e0eb778e5778 Pull complete                                                                                                         72.6s \
+Compose can now delegate builds to bake for better performance.\
+ To do so, set COMPOSE_BAKE=true.\
+[+] Building 241.7s (10/10) FINISHED                                                                                           docker:default\
+ => [nextcloud-aio-caddy internal] load build definition from Caddy.Dockerfile                                                           0.0s\
+ => => transferring dockerfile: 254B                                                                                                     0.0s\
+ => [nextcloud-aio-caddy internal] load metadata for docker.io/library/caddy:2.9.1-alpine                                               24.4s\
+ => [nextcloud-aio-caddy internal] load metadata for docker.io/library/caddy:2.9.1-builder-alpine                                       24.4s\
+ => [nextcloud-aio-caddy internal] load .dockerignore                                                                                    0.1s\
+ => => transferring context: 2B                                                                                                          0.0s\
+ => [nextcloud-aio-caddy builder 1/2] FROM docker.io/library/caddy:2.9.1-builder-alpine@sha256:11739cd86542d9e2e371e7d093065fe42a7b852  20.4s\
+ => => resolve docker.io/library/caddy:2.9.1-builder-alpine@sha256:11739cd86542d9e2e371e7d093065fe42a7b852d124220812f3a782f1b56132b      0.1s\
+ => => sha256:71c158d3005d5a113d748855c3f24a7059b9898cbdc03718afd866649f756efd 5.18kB / 5.18kB                                           0.0s\
+ => => sha256:11739cd86542d9e2e371e7d093065fe42a7b852d124220812f3a782f1b56132b 9.11kB / 9.11kB                                           0.0s\
+ => => sha256:a2f67a2ac2fbd3ffdb2484c9453ac0c249c8f704ef7f017ccd4a399fe64dc6ef 2.69kB / 2.69kB                                           0.0s\
+ => => sha256:0a9a5dfd008f05ebc27e4790db0709a29e527690c21bcbcd01481eaeb6bb49dc 3.63MB / 3.63MB                                           6.4s\
+ => => sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B                                                 6.5s\
+ => => sha256:8833042f23b55b241bbb6352d36795dec58ceae053fa5e7f68b7da568ede5a71 294.38kB / 294.38kB                                       8.4s\
+ => => extracting sha256:0a9a5dfd008f05ebc27e4790db0709a29e527690c21bcbcd01481eaeb6bb49dc                                                0.1s\
+ => => sha256:6ca661eb024f09b95cfdf77781effc26400df52d97566fbd0fd4d45a67c3a3e6 74.06MB / 74.06MB                                        16.1s\
+ => => extracting sha256:8833042f23b55b241bbb6352d36795dec58ceae053fa5e7f68b7da568ede5a71                                                0.1s\
+ => => sha256:b5acb76e968064ef973541dc9568ddcc77a62715cc268ca0282004a1349897d8 126B / 126B                                               8.6s\
+ => => sha256:6ec853fc7b6998e009b618593e9e453c8705042bba4f8be9ec7b69436fd1138e 5.94MB / 5.94MB                                          10.1s\
+ => => sha256:836e6b44f0011f60d37d379ae6d4cd14d260bb1c0d59b2f78872dc4ce422dc8c 1.84MB / 1.84MB                                          11.6s\
+ => => sha256:27240b2158b54e9a1c7399976b5ecf43f84ecee5fa358bbdbd9e33ab5376df16 402B / 402B                                              11.1s\
+ => => extracting sha256:6ca661eb024f09b95cfdf77781effc26400df52d97566fbd0fd4d45a67c3a3e6                                                3.3s\
+ => => extracting sha256:b5acb76e968064ef973541dc9568ddcc77a62715cc268ca0282004a1349897d8                                                0.0s\
+ => => extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1                                                0.0s\
+ => => extracting sha256:6ec853fc7b6998e009b618593e9e453c8705042bba4f8be9ec7b69436fd1138e                                                0.1s\
+ => => extracting sha256:836e6b44f0011f60d37d379ae6d4cd14d260bb1c0d59b2f78872dc4ce422dc8c                                                0.0s\
+ => => extracting sha256:27240b2158b54e9a1c7399976b5ecf43f84ecee5fa358bbdbd9e33ab5376df16                                                0.0s\
+ => [nextcloud-aio-caddy stage-1 1/2] FROM docker.io/library/caddy:2.9.1-alpine@sha256:b4e3952384eb9524a887633ce65c752dd7c71314d2c2acf9  9.0s\
+ => => resolve docker.io/library/caddy:2.9.1-alpine@sha256:b4e3952384eb9524a887633ce65c752dd7c71314d2c2acf98cd5c715aaa534f0              0.1s\
+ => => sha256:6fd3ccaa8d5edd218ae72a9d5b10d99a1bbc199ae1bc7a6973e2627558db54a5 7.49kB / 7.49kB                                           5.7s\
+ => => sha256:b4e3952384eb9524a887633ce65c752dd7c71314d2c2acf98cd5c715aaa534f0 8.97kB / 8.97kB                                           0.0s\
+ => => sha256:cf1bd22f2415bc99b785ece1df2c49d32985ac4ac42d84df335be17350593693 1.91kB / 1.91kB                                           0.0s\
+ => => sha256:51f0c496a59a692cbf86a9973f1ecdc68ac444c1b97ac0b87e0ea90f0597fe69 6.68kB / 6.68kB                                           0.0s\
+ => => sha256:0a9a5dfd008f05ebc27e4790db0709a29e527690c21bcbcd01481eaeb6bb49dc 3.63MB / 3.63MB                                           6.4s\
+ => => sha256:9c63ec053486e151235fc0a8df56f704fb01beec9cbd3d5d8ead48a7cf9cec56 359.23kB / 359.23kB                                       6.2s\
+ => => sha256:b8a5ec3997960cd1a012bd930deed7c259404b2549954aba8b2d00b051d21992 14.38MB / 14.38MB                                         8.4s\
+ => => sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B                                                 6.5s\
+ => => extracting sha256:0a9a5dfd008f05ebc27e4790db0709a29e527690c21bcbcd01481eaeb6bb49dc                                                0.1s\
+ => => extracting sha256:9c63ec053486e151235fc0a8df56f704fb01beec9cbd3d5d8ead48a7cf9cec56                                                0.1s\
+ => => extracting sha256:6fd3ccaa8d5edd218ae72a9d5b10d99a1bbc199ae1bc7a6973e2627558db54a5                                                0.0s\
+ => => extracting sha256:b8a5ec3997960cd1a012bd930deed7c259404b2549954aba8b2d00b051d21992                                                0.3s\
+ => => extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1                                                0.0s\
+ => [nextcloud-aio-caddy builder 2/2] RUN xcaddy build --with github.com/mholt/caddy-l4@87e3e5e2c7f986b34c0df373a5799670d7b8ca03       196.1s\
+ => [nextcloud-aio-caddy stage-1 2/2] COPY --from=builder /usr/bin/caddy /usr/bin/caddy                                                  0.1s\
+ => [nextcloud-aio-caddy] exporting to image                                                                                             0.5s\
+ => => exporting layers                                                                                                                  0.4s\
+ => => writing image sha256:c9d48caa181f4888bd0db1d781a1fd66eb6d5c870f3b13435e6eefb8fff1a778                                             0.0s\
+ => => naming to docker.io/library/nextcloud-nextcloud-aio-caddy                                                                         0.0s\
+ => [nextcloud-aio-caddy] resolving provenance for metadata file                                                                         0.0s\
+[+] Running 11/11\
+ âƒ¼ƒ´ nextcloud-aio-caddy                            Built                                                                                  0.0s \
+ âƒ¼ƒ´ Network nextcloud-aio                          Created                                                                                0.1s \
+ âƒ¼ƒ´ Volume "caddy_config"                          Created                                                                                0.0s \
+ âƒ¼ƒ´ Volume "tailscale"                             Created                                                                                0.0s \
+ âƒ¼ƒ´ Volume "tailscale_sock"                        Created                                                                                0.0s \
+ âƒ¼ƒ´ Volume "nextcloud_aio_mastercontainer"         Created                                                                                0.0s \
+ âƒ¼ƒ´ Volume "caddy_certs"                           Created                                                                                0.0s \
+ âƒ¼ƒ´ Volume "caddy_data"                            Created                                                                                0.0s \
+ âƒ¼ƒ´ Container nextcloud-aio-mastercontainer        Started                                                                                0.3s \
+ âƒ¼ƒ¸ Container nextcloud-nextcloud-aio-tailscale-1  Error                                                                                  7.8s \
+ âƒ¼ƒ´ Container nextcloud-nextcloud-aio-caddy-1      Created                                                                                0.0s \
+dependency failed to start: container nextcloud-nextcloud-aio-tailscale-1 is unhealthy\
+\
+~/Code/Docker/nextcloud âƒ½¯    
+docker logs nextcloud-nextcloud-aio-tailscale-1
+v
+lookup log.tailscale.com on 127.0.0.11:53: read udp 127.0.0.1:53799->127.0.0.11:53: i/o timeout
+sudo systemctl restart docker
+docker network ls
+docker compose up --build --wait
+docker compose down && docker compose up --build --wait
+nslookup controlplane.tailscale.com
+docker network inspect nextcloud-aio
+cat docker-compose.yml
+docker exec -it nextcloud-nextcloud-aio-tailscale-1 sh
+mv docker-compose.yml compose
+docker container stop nextcloud-aio-mastercontainer nextcloud-nextcloud-aio-tailscale-1
+docker container rm nextcloud-aio-mastercontainer nextcloud-nextcloud-aio-caddy-1 nextcloud-nextcloud-aio-tailscale-1
+nvim docker-compose.yml
+docker container stop nextcloud-app-1 nextcloud-db-1
+docker container rm nextcloud-app-1 nextcloud-db-1
+docker image rm mariadb:10.5 nextcloud/all-in-one:latest nextcloud:latest nextcloud-nextcloud-aio-caddy:latest tailscale/tailscale:v1.80.3
+xinput list
+sudo systemctl restart libinput
+sudo systemctl restart xf86-input-synaptics
+journalctl -b | grep -i touchpad
+journalctl -b | grep -i synaptics
+Failed to restart xf86-input-synaptics.service: Unit xf86-input-synaptics.service not found.\
+âƒ½¯ journalctl -b | grep -i touchpad\
+Mar 31 16:17:31 archlinux kernel: input: ASUE120D:00 04F3:31FB Touchpad as /devices/platform/AMDI0010:01/i2c-0/i2c-ASUE120D:00/0018:04F3:31FB.0005/input/input20\
+Mar 31 16:17:32 archlinux kernel: input: ASUE120D:00 04F3:31FB Touchpad as /devices/platfore not found.\
+âƒ½¯ sudo systemctl restart xf86-input-synaptics\
+Failed to restart xf86-input-synaptics.service: Unit xf86-input-synaptics.service not found.\
+âƒ½¯ journalctl -b | grep -i touchpadc\
+Mar 31 16:17:31 archlinux kernel: input: ASUE120D:00 04F3:31FB Touchpad as /devices/platform/AMDI0010:01/i2c-0/i2c-ASUE120D:00/0018:04F3:31FB.0005/input/input20\
+Mar 31 16:17:32 archlinux kernel: input: ASUE120D:00 04F3:31FB Touchpad as /devices/platform/AMDI0010:01/i2c-0/i2c-ASUE120D:00/0018:04F3:31FB.0005/input/input27\
+âƒ½¯ journalctl -b | grep -i synaptics\
+Apr 01 00:37:53 archlinux sudo[1232105]:    yagna : TTY=pts/1 ; PWD=/home/
+
+sudo archlinux-java status
+ls | .jar
+ls | grep .jar
+chmod +x SKlauncher-3.2.12.jar
+sudo java -jar SKlauncher-3.2.12.jar
+rm SKlauncher-3.2.12.jar
+sudo archlinux-java set java-24-openjdk
+sudo pacman -R jdk21-openjdk jdk8-openjdk
+flatpak install flathub com.mojang.Minecraft
+flatpak run com.mojang.Minecraft
+flatpak --help
+flatpak uninstall com.mojang.Minecraft org.freedesktop.Platform org.freedesktop.Platform.GL.nvidia-570-133-07 org.freedesktop.Platform.GL.default org.freedesktop.Platform.openh264 org.gtk.Gtk3theme.Adwaita-dark
+flatpak list
+sudo -e /etc/pacman.conf
+sudo pacman -Sy
+pacman -Sl multilib
+sudo pacman -S steam
+sudo pacman -S ttf-liberation
+ls .local/share
+nmcli device wifi 
+cd sn
+nvim Lab_2
+nvim Lab_2_U22CS104_SNA.ipynb
+true
+curl https:fast.com
+curl http:fast.com
+curl http:fast.com:80
+cd ~/Temp/
+mkdir Archive
+rm -rf Papers
+cd NeoVim
+git pull origin master\
+
+rm -rf greenhouse-AutoApply
+cd ctf
+rm -rf CTF
+cd Movie-Recommendation/
+nvim 9_3.py
+python3 9_3.py input encrypt decrypt "[2,0,4,1,3]\
+\
+"
+nvim key
+python3 9_3.py input encrypt decrypt key
+python3 9_3.py input encrypt decrypt [2,0,4,1,3]
+python3 9_3.py
+python3 9_3.py input encrypt decrypt "[2,0,4,1,3]"
+python3 9_4.py
+python3 9_4.py input encrypt decrypt "[[3, 3], [2, 5]]"
+python3 9_5.py
+python3 9_6.py input encrypt decrypt "[[3, 2, 5], [10, 11, 1], [11, 15, 7]"
+python3 9_6.py input encrypt decrypt "[[3, 2, 5], [10, 11, 1], [11, 15, 7]]"
+python3
+truncate -s 0 encrypt\
+truncate -s 0 decrypt
+python3 9_6.py input encrypt decrypt "[[3, 3], [2, 5]]"
+python3 9_0.py 3
+python3 9_6.py input encrypt decrypt "[[7, 0, 1], [4, 1, 21], [9, 1, 21]]"
+python3 9_0.py 4
+python3 9_6.py input encrypt decrypt "[[21, 11, 3, 7], [15, 8, 7, 3], [24, 7, 3, 14], [2, 6, 14, 11]]"
+vnim 
+flatpak install flathub app.drey.Warp
+wrap
+app.drey.Wrap
+flatpak run app.drey.Warp
+flatpak uninstall app.drey.Warp org.freedesktop.Platform.GL.default org.freedesktop.Platform.GL.nvidia-570-133-07 org.freedesktop.Platform.openh264 org.gnome.Platform org.gtk.Gtk3theme.Adwaita-dark
+man journalctl
+journalctl
+journalctl -b -1
+sudo pacman -S lm_sensors\
+  sudo sensors-detect\
+  sensors
+journalctl -p err
+sudo pacman -S timeshift
+timeshift
+timeshift --list
+sudo timeshift
+sudo timeshift --list
+btrfs filesystem usage /
+sudo btrfs filesystem usage /
+kdeconnect-app
+man kdeconnect-cli 
+kdeconnect-cli --hellp
+kdeconnect-cli --help
+kdeconnect-indicator
+cq
+archlinux-java status
+sudo pacman -S jdk21-openjdk
+sudo archlinux-java set java-21-openjdk
+java --version
+code --version
+chmod +x run_analysis.sh
+./run_analysis.sh
+docker build -t amazon-sales-analysis .
+docker run --name amazon-sales-container -v "$(pwd)/output:/app/output" amazon-sales-analysis
+sudo docker run --name amazon-sales-container -v "$(pwd)/output:/app/output" amazon-sales-analysis
+sudo docker rm amazon-sales-container
+chmod -R 777 output
+sudo docker run --name amazon-sales-container --user $(id -u):$(id -g) -v "$(pwd)/output:/app/output" amazon-sales-analysis
+mv ~/Downloads/pyspark-docker.zip ./
+rm -rf output
+mkdir output
+unzip pyspark-docker.zip
+docker rm amazon-sales-container
+sudo docker run --name amazon-sales-container --user $(id -u):$(id -g) -v "$(pwd)/output:/app/output" amazon-sales-analysis\
+
+jupyter notebook -ip 0.0.0.0 --port 8888 --no-browser --allow-root
+docker rm amazon-sales-container pyspark-instance
+docker run -it --name pyspark-instance -p 8888:8888 -v "$(pwd):/app" pyspark-container
+docker rm pyspark-instance pyspark-instance
+docker rm pyspark-instance
+docker ps\\
+
+docker images rm bfbb9082ccc7 af8be3aff606 04469697420a
+docker image rm bfbb9082ccc7 af8be3aff606 04469697420a
+sudo docker build -t amazon-sales-analysis .
+docker run -it --name pyspark-instance -p 8888:8888 -v "$(pwd):/app" amazon-sales-analysis:latest
+docker cp assignment7_pyspark.ipynb pyspark-instance:/app/
+docker cp assignment7_pyspark.ipynb pyspark-instance:/workspace/
+docker cp OnlineRetail.csv pyspark-instance:/workspace/
+/sbin/python -m marimo --yes edit /home/yagna/Code/ML/DataScience/lab-8 --host=localhost --port=2818 --headless --no-token --watch
+cd pyspark-docker
+nvim TestNotebook.py
+nvim assignment7_pyspark.ipynb
+python3 TestNotebook.py
+sudo pacman -Syuu
+nvim wifihotspot.sh
+chmod +x wifihotspot.sh
+./wifihotspot.sh
+nmcli -t -f NAME,TYPE con show --active | grep ":ap$" >/dev/null\
+  return $?
+is_hotspot_active() {\
+  # Check if NetworkManager is managing any access point\
+  nmcli -t -f NAME,TYPE con show --active | grep ":ap$" >/dev/null\
+  return $?\
+}
+is_hotspot_active()\
+
+nmcli -t -f NAME,TYPE con show --active | grep ":ap$" >/dev/null
+nmcli -t -f NAME,TYPE con show --active 
+nmcli -t -f NAME,TYPE con show --active | grep Hotspot
+cd ~/.config/polybar
+nmcli -t -f NAME connection show --active 
+nmcli device wifi | grep *
+nmcli device wifi | grep "*"
+nmcli device wifi | grep "*" | awk $3
+nmcli device wifi | grep "*" |  awk -F: '{print $3}'
+nmcli device wifi | grep "*" | awk -F: '{print $2}'
+nmcli device wifi | grep "*" | awk -F: '{print $7}'
+nmcli device wifi | grep "*" | awk -F: '{print $6}'
+nmcli device wifi | grep "*" | awk '{print $6}'
+ip link
+nmcli connection show --active
+nmcli device wifi | grep "*" 
+cd .config/polybar
+nvim modules.ini
+marimo tutorial --help
+marimo tutorial intro
+rm -rf .vscode
+jupyter notebook
+mkdir Observable
+npx @observablehq/framework@latest create
+npm run dev
+cd Observable
+rm -rf Observable
+nvim hotspot.sh
+fatsfetch
+nmcli radio wifi offq
+nmcli device wifi show-password
+nq
+cd nvimm
+cd /home/yagna/Obsidian/.obsidian/
+ls ../
+mv ../Syntax.css ./
+nvim Syntax.css
+cd /home/yagna/Obsidian/.obsidian/snippets/
+rm Syntax.css
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+yay -S open-webui
+mkdir Docker/OpenwebUI
+git clone https://github.com/open-webui/open-webui.git ./
+ls | grep docker
+cd Docker/OpenwebUI
+yay -Scc
+yay -Sc
+curl http://localhost:11434/api/list
+curl http://localhost:11434
+curl http://localhost:11434/v1/models
+curl -X POST -d '{"prompt": "What is the capital of India?", "model": "llama3.1:8b"}' -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions
+curl http://127.0.0.1:11434~
+curl http://127.0.0.1:11434
+curl http://127.0.0.1:11434/v1/models
+docker-compose up -d
+docker compose down
+docker compose up --add-host=host.docker.internal:host-gateway
+docker compose run --add-host=host.docker.internal:host-gateway open-webui
+docker compose up
+rm -rf Docker/OpenwebUI
+ls Docker
+cd coq
+rm -rf .ipynb_checkpoints
+rm marimo.py
+mkdir WebUI
+npm i ai
+pnpm i ai
+pnpm setup
+source /home/yagna/.config/zsh/.zshrc
+pnpm add -g pnpm
+pnpm create next-app@latest ./
+mv WebUI
+mv WebUI webui
+rm -rf webui
+pnpm create next-app@latest WebUI
+pnpm create next-app@latest webui
+mv webui WebUI
+pnpm config set store-dir /home/yagna/.local/share/pnpm/store/v10 --global
+pnpm install
+nvim app/api/chat/route.ts
+ls app/api/chat/route.ts
+nvim app/page.tsx
+pnpm add ai @ai-sdk/react @ai-sdk/openai zod
+pnpm add ollama-ai-provider
+pnpm update ai --latest\
+
+pnpm list ai\
+
+curl http://127.0.0.1:11434/api/tags
+curl http://127.0.0.1:11434/v1/chat
+curl http://127.0.0.1:11434/v1/
+curl -X POST -d '{"prompt": "Tell me a short story.", "model": "llama3.1"}' -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions
+curl -X POST -d '{"model": "llama3.1", "messages": [{"role": "user", "content": "Tell me a short story."}]}' -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions
+curl -X POST -d '{"model": "llama3.1:8b", "messages": [{"role": "user", "content": "Tell me a short story."}]}' -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions
+nvim ollama.html
+ollama --help
+ollama stop
+ollama serve --cors "*"
+cd Code/WebUI
+mv ~/ollama.html ./public
+nvim public/ollama.html
+ls WebUI
+pnpm run dev
+nmcli dev wifi connect "Balaji" password "balaji1234"
+nmcli dev wifi connect "Balaji" password 'balaji1234'
+nmcli dev wfif
+nmcli dev wifi connect "Yagnarao" password "micromax"
+nmcli device wifi | grep "*" | awk '{print $3}'
+ACTIVE_SSID=$(nmcli device wifi | grep "*" | awk '{print $3}')\
+
+echo $ACTIVE_SSID
+if [[ -n "$ACTIVE_SSID" ]]; then\
+    if nmcli connection show --active | grep -q "Hotspot"; then\
+        echo "${primary_color}ó°ƒ¶ƒ¿${reset_color} ${text_color}$ACTIVE_SSID${reset_color}"\
+    else\
+        echo "${primary_color}ó°ƒ¶©${reset_color} ${text_color}$ACTIVE_SSID${reset_color}"\
+    fi\
+else\
+    echo "${primary_color}ó°ƒ¶ª${reset_color}"\
+fi
+steam
+nmcli device wifi\\
+
+sudo pacman -S xdotool
+sudo pacman -S xbindkeys xdotool
+cd .dotfiles/.config
+mkdir xbindkeys
+nvim xbindkeys/xbindkeysrc
+2q
+bash
+ls | awk "print($1)\
+\
+"
+man awk
+sudo pacman -S tldr
+tldr awk
+man tldr
+awk --help
+ls | awk -F: '{ print $1 }'
+ls | awk -F: '{print $2}'
+ls | awk -F: '{print $3}'
+ls | awk -F: '{print $0}'
+ls | awk '{print $0}'
+ls | awk '{print $1}'
+ls | awk '{print $2}'
+ls | awk '{print $3}'
+ls | awk '{print $4}'
+ls | awk '{print $5}'
+ls | awk '{print $6}'
+ls | awk '{print $7}'
+ls | awk '{print $8}'
+ls | awk '{print $9}'
+ls .vscode
+man cat
+xkbcomp $DISPLAY -
+xkbcomp $DISPLAY - > keyboard.xkb
+cat keyboard.xkb
+cp keyboard.xkb caps.xkb
+nvim caps.xkb
+mkdir -p ~/.config/xkb/symbols
+rm -rf .config/xkb
+mkdir .dotfiles/.config/xkb/symbols
+nvim ~/.config/xkb/symbols/capslock_mod
+setxkbmap -query
+cat .config/xkb/symbols/capslock_mod
+setxkbmap -layout us -symbols "us(pc101)+capslock_esc_ctrl"
+setxkbmap -layout us -symbols "+capslock_esc_ctrl"
+exec --no-startup-id "setxkbmap -layout us -symbols '+capslock_esc_ctrl'"
+Q
+setxkbmap -rules evdev -layout us -symbols "+capslock_esc_ctrl"
+setxkbmap -symbols capslock_esc_ctrl
+ls -l ~/.config/xkb/symbols/capslock_mod
+chmod 644 ~/.config/xkb/symbols/capslock_mod\
+chown "$USER":"$USER" ~/.config/xkb/symbols/capslock_mod
+setxkbmap -rules evdev -layout us -symbols "us+capslock_esc_ctrl"
+setxkbmap -rules evdev -layout us -symbols "us(basic)+capslock_esc_ctrl"
+rm -rf .dotfiles/.config/xkb
+rm .config/xkb
+sudo pacman -S xcape
+ls .dotfiles/.x11
+touch .dotfiles/.x11/Xmodmap
+nvim .dotfiles/.x11/Xmodmap
+yay -S python-ueberzug-git python-pnglatex
+yay -S python-termplotlib
+xprop | grep WM_CLASS
+xprop WM_CLASS
+xprop WM_WINDOW_ROLE
+xprop
+python3 test.py
+ls /nix
+du -sh /
+nvim temp.py
+mv temp.py testt
+chmod +x testt
+cp test.py testt
+./testt
+nvim testt
+nvim temp
+ls | grep temp
+cat temp
+chmod +x temp
+./temp
+mv temp temp.py
+nvim test
+mv test test.py
+chmod +x test.py
+./test.py
+nvim test.py
+docker compose up -d
+sudo pacman -Rns hyperland wlroots wayland-protocols # Core Hyperland and dependencies
+sudo pacman -Rns hyperland wlroots wayland-protocols
+sudo pacman -Rns hyprland-meta-git
+sudo pacman -Rns hyprland-git
+sudo pacman -Rns wlroots wayland-protocols
+sudo pacman -Rns swaybg swaylock bemenu foot # Example - adjust as needed
+sudo pacman -Rns swaybg swaylock bemenu foot
+rm -rf ~/.config/hyperland
+pacman -Q | grep gnome
+pacman -Q | grep wayland
+sudo pacman -Rns gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-control-center gnome-disks gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-photos gnome-screenshot gnome-settings-daemon gnome-shell gnome-system-monitor gnome-terminal gnome-text-editor gnome-video-viewer # Example list - be selective
+sudo pacman -Rns gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-control-center gnome-disks gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-photos gnome-screenshot gnome-settings-daemon gnome-shell gnome-system-monitor gnome-terminal gnome-text-editor gnome-video-viewer
+sudo pacman -Rns gnome-desktop gnome-session
+sudo pacman -Rns libwayland-client libwayland-server wayland-protocols
+sudo pacman -Rns gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-control-center gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-shell gnome-system-monitor gnome-text-editor gnome-tour gnome-tweaks gnome-user-docs gnome-user-share gnome-weather gnome-console gnome-connections gnome-remote-desktop gnome-app-list gnome-autoar gnome-backgrounds gnome-bluetooth gnome-bluetooth-3.0 gnome-keybindings gnome-menus gnome-mimeapps gnome-online-accounts gnome-software
+sudo pacman -Rns wayland egl-wayland
+sudo pacman -Rns blueberry
+sudo pacman -Rns gnome-bluetooth
+sudo pacman -Rns gdm
+sudo pacman -Rns gnome-control-center
+sudo pacman -Rns gnome-shell gnome-shell-extensions
+sudo pacman -Rns gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-control-center gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-system-monitor gnome-text-editor gnome-tour gnome-tweaks gnome-user-docs gnome-user-share gnome-weather gnome-console gnome-connections gnome-remote-desktop gnome-app-list gnome-backgrounds gnome-keybindings gnome-menus gnome-online-accounts gnome-software
+sudo pacman -Rns gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts gnome-disk-utility gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-system-monitor gnome-text-editor gnome-tour gnome-tweaks gnome-user-docs gnome-user-share gnome-weather gnome-console gnome-connections gnome-remote-desktop gnome-app-list gnome-backgrounds gnome-menus gnome-online-accounts gnome-software
+sudo pacman -Qdtq | sudo pacman -Rns
+sudo pacman -Qdtq | sudo pacman -Rns - gnome
+sudo pacman -Qdtq | sudo pacman -Rns -gnome
+sudo pacman -Qdtq | sudo pacman -Rns -
+sudo pacman -Rns $(pacman -Qdtq)
+pacman -Qdtq
+pacman -Q | grep -i gnome\
+pacman -Q | grep -i hyperland\
+pacman -Q | grep -i wayland
+sudo pacman -Rns xdg-desktop-portal-gnome gnome-color-manager libgnomekbd gnome-autoar gnome-desktop-4 gnome-desktop-common egl-wayland lib32-wayland qt6-wayland xorg-xwayland
+sudo pacman -Rns gnome-desktop
+sudo pacman -Rns gnome-settings-daemon
+sudo pacman -Rns gnome-keyring
+sudo pacman -Rns gnome-mimeapps
+sudo pacman -Rns gnome-session
+sudo pacman -Rns wayland
+sudo pacman -Rns nautilus
+pacman -Qi gnome-session
+sudo pacman -Rns kdeconnect kguiaddons kwindowsystem
+sudo pacman -Rns lib32-libva lib32-mesa
+sudo pacman -Rns evince totem
+sudo pacman -Rns evince totem sushi
+sudo pacman -Rns xdg-desktop-portal-gnome
+sudo pacman -Rns nautilus gnome-autoar gnome-desktop-4
+sudo pacman -Rns gnome-desktop gnome-color-manager libgnomekbd egl-wayland lib32-wayland qt6-wayland xorg-xwayland wayland gnome-desktop-common
+sudo pacman -Rns gnome-color-manager libgnomekbd egl-wayland lib32-wayland xorg-xwayland wayland
+pacman -Qi wayland | grep "Installed Size"
+sudo paccache -r
+pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{size=$4$5; gsub(/M/, "*1024"); gsub(/K/, "*1"); gsub(/G/, "*1024*1024"); total += int(size); print size, name}' | sort -h | awk '{sum += $1} END {print "Total Installed Size:", sum}'
+pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{size=$4; unit=$5; if (unit == "K") { size *= 1024 } else if (unit == "M") { size *= 1024 * 1024 } else if (unit == "G") { size *= 1024 * 1024 * 1024 }; total += size} END {printf "Total Installed Size: %.2f GiB\n", total / (1024 * 1024 * 1024)}'
+1c
+du -sh /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
+df -h /home
+df -h /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
+df -h /home/yagna/Immich
+df -h ~/Immich
+man df
+tldr df
+backup-immich.sh
+du -sh /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/Immich
+du -sh Immich
+rm keyboard.xkb caps.xkb
+cat .Xauthority
+rm .Xauthority
+ls .va
+ls .var
+rm out.txt pass.txt
+rm temp.py test1.cc test.cc test.md test.py testt
+ls -al ~/.var
+ls .var/app
+rm .var
+rm .var -rf
+bluetoothctl
+sudo pacman -S blueberry
+blueberry
+yay -S sklauncher-bin
+sklauncher
+yay -R sklauncher-bin
+sudo yay -S [200~minecraft-legacy-launcher ~
+yay -S minecraft-legacy-launcher
+minecraft-legacy-launcher
+java -jar LegacyLauncher_legacy.jar
+nvim level.dat
+sudo pacman -S jq
+nbt2json level.dat | jq -r '.Data.RandomSeed'
+yay -S nbtexplorer
+nbtexplorer --help
+java -jar LegacyLauncher_legacy.jarq
+sudo pacman -S nautilus
+sudo pacman -S ntfs-3g
+sudo mkdir /mnt/windows
+sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/windows
+cd /mnt/windows
+nautilus
+umount -R /mnt/windows
+cd Minecraft
+ls mods
+sudo pacman -Su
+git clone https://github.com/Yagna-rao15/obsidian.git ./obs
+cd obs
+git commit
+/bin/python -m marimo --yes edit /home/yagna/Code/SNA --host=localhost --port=2818 --headless --no-token --watch
+/sbin/python -m marimo --yes edit /home/yagna/Code/ML/DataScience --host=localhost --port=2818 --headless --no-token --watch
+sudo pacman -S python-altair
+/sbin/python -m marimo --yes run TestNotebook.py --host=localhost --port=2828 --headless --no-token
+yay -S motheme
+uv
+pip install marimo
+motheme
+cd Code/ML/DataScience
+marimo edit TestNotebook.py
+git clone https://github.com/SylvanFranklin/.config.git .conf
+ls .config
+mv .conf/nvim .config/nvim-test
+c dnvim
+c\c
+\:w
+git init
+git statsu
+git commit -m "Intial Commit"
+git remote add origin https://github.com/Yagna-rao15/Obsidian.git\
+git branch -M main\
+git push -u origin main
+git commit -m "Just Checking"
+git push -u origin main
+ls tinyMediaManager-5.1.4-linux-amd64.tar.xz
+tar -xf tinyMediaManager-5.1.4-linux-amd64.tar.xz
+ls | grep .mv
+ls | grep .mkv
+nautilus ./
+cd tinyMediaManager
+./tinyMediaManager
+sudo pacman -S libmediainfo
+sudo pacman -S libmediaart
+mv Silicon.Valley.S01E02.720p.BRRip.MkvCage.mkv Silicon_Valley_S01E02_720p_BRRip_MkvCage.mkv
+cd Videos
+rm tinyMediaManager-5.1.4-linux-amd64.tar.xz
+rm -rf tinyMediaManager
+sudo pacman -S transmission-cli
+transmission-cli
+transmission-cli Mini\ Airways\ \[FitGirl\ Repack\].torrent
+sudo pacman -S rtorrent
+rtorrent --help
+rtorrent -help
+rtorrent
+yay -S Stig
+yay -S stig
+stig -h
+ps aux | grep transmission-daemon
+ls ~/.config/transmission-daemon
+ls ~/.config/transmission-daemon/settings.json
+cat ~/.config/transmission-daemon/settings.json
+nvim ~/.config/transmission-daemon/settings.json
+transmission-daemon
+stig add Mini\ Airways\ \[FitGirl\ Repack\].torrent
+stig
+sudo pacman -S transmission-gtk
+transmission-gtk
+yay -R stig
+nmcli device wifi connect "Yagnarao" password "micromax"
+nmcli device wifi connect "Yagnarao" passwonmcli device wifi connect "Yagnarao" password "micromax" key-mgmt wpa-pskrd "micromax"
+rm -rf NeoVim
+curl https://www.svnit.ac.in/web/department/Electronics/\\
+\\
+
+curl https://www.svnit.ac.in/web/department/Electronics
+curl https://www.svnit.ac.in/web/department/Electronics/
+curl https://www.svnit.ac.in/web/department/Electronics/ >> ECE.html
+ls ECE.html
+nvim ECE.html
+cp ECE.html ece.txt
+mkdir ECE
+cd ece
+cd ECE
+nvim index.css
+nvim index.html
+cp index.html index.txt
+nvim style.css
+cdc code
+cd Code/ECE
+nvim ece.html
+hot
+cp Obsidian Obsi
+cp Obsidian Obsi -r
+cd Obsi
+git reset --soft HEAD^
+git add .
+git status
+git commit -m "13-04-25 Inbox, Movies"
+git stattus
+git push origin main --force
+docker images
+docker ps
+docker comtainer list
+docker container ls
+docker image rm amazon-sales-analysis:latest
+docker container list
+docker container rm a1ab56c04fb1
+docker container rm 9ffea9ced354
+docker image rm ghcr.io/open-webui/open-webui:main amazon-sales-analysis:latest
+sudo pacman -S emacs
+emac
+emaca
+emacs -nw
+polybar
+wget https://raw.githubusercontent.com/IreneKnapp/direct-sqlite/a74cc50c735053c7c49c487a66e7756b524db883/cbits/sqlite3.c
+nvim sqlite3.c
+vim sqlite3.c
+tasklist /v
+journalctl -b -1 -p err
+dmesg | grep -i error
+free -h
+vmstat 1
+sudo pacman -S smartmontools\
+sudo smartctl -a /dev/nvme0n1
+sudo pacman -Sc
+sudo pacman -Qtdq | sudo pacman -Rns -
+cat /var/log/Xorg.0.log | grep EE
+sudo du -h --max-depth=1 /var | sort -hr\
+sudo du -h --max-depth=1 /home | sort -hr\
+sudo du -h --max-depth=1 / | sort -hr
+sudo pacman -Scc
+sudo pacman -Rns $(pacman -Qtdq)
+sudo rm -rf /var/log/journal/*
+sudo pacman -S thermald\
+sudo systemctl enable --now thermald
+sudo touch /forcefsck
+sudo smartctl -t long /dev/nvme0n1
+sudo smartctl -a /dev/nvme0n1
+journalctl -p 3 -xb
+sudo btrfs filesystem usage /\
+sudo btrfs filesystem du -s /home /var /usr
+du -sh /home
+du -h --max-depth=1 ~/. | sort -hr
+du -h --max-depth=2 ~/.cache | sort -hr \
+find ~/ -type f -size +100M | xargs ls -lh
+du -sh ./local
+du -sh ./.local
+cd VirtualBox\ VMs
+rm -rf VirtualBox\ VMs
+ls Videos
+ls Downloads
+rm -rf Videos
+du -sh ./
+cd chromium
+rm -rf chromium
+ls chromium
+cd .config
+cd .config/Code
+cd ~/.vscode
+rm -rf ~/.config/Code/CachedExtensionVSIXs
+du -sh ~/.config/Code/User/globalStorage/* | sort -hr
+rm -rf ~/.config/Code/User/globalStorage/
+rm -rf ~/.config/Code/Cache/*\
+rm -rf ~/.config/Code/CachedData/*
+rm -rf ~/.config/Code/WebStorage/*
+cd -
+cp Code cooode
+cp Code cooode -r
+ls User
+cd User
+rm -rf workspaceStorage
+cd workspaceStorage
+rm -rf cooode
+cd avd
+cd Medium_Phone.avd
+nvim sdcard.img
+cd .android
+cd cache
+cd avd/Pixel_7_Virtual.avd
+rm -rf .android
+rm -rf Android
+cd ROG
+cd ./target
+cd release
+cd deps
+rm node_modules
+rm node_modules -rf
+du
+ls Archive
+ls Client-Bus-Main
+cd Client-Bus-Main
+cd src
+nvim LocationTracker.js
+cd WebUI
+rm -rf WebUI
+cd NextJS-BusApp
+rm -rf node_modules
+cd Arrow
+ls data
+git log
+rm -rf .git
+cd data
+cd train
+cd Rover
+cd BusApp
+cd ../BusApp
+cd .next
+rm -rf cache
+cd ML
+cd DataScience
+cd lab-6
+rm 00-99
+rm 00-99.gz
+cd Temp
+mv Ferrari-Live-Wallpaper.mp4 ../
+rm -rf Temp
+cd Steam
+rm tinyMediaManager
+rm tinyMediaManager -rf
+cd npm
+cd ..
+rm -rf npm
+cd code
+cd NextJS-Portal
+nvim package.json
+pnpm store path
+cd mason
+cd packages
+cd Backup
+cd Code
+cd Desktop
+cd .local
+cd share
+..
+rm -rf .gradle
+rm -rf .cargo
+rm -rf .sbt .continue
+rm -rf nltk_data
+rm -rf .tlauncher/
+ls obs
+rm -rf .openjfx .m2 .marimo 
+rm -rf .metals .eclipse
+rm -rf .expo .emacs .emacs.d .emacs\~
+rm -rf .ipynb_checkpoints .ipython 
+rm -rf .dotnet .docker .java .pki .twinny 
+rm -rf .jupyter .swt __pycache__ .p2 .mono .minikube .kube .ivy2 .app-store
+cd nv
+cd .nv
+rm -rf .nv
+rm ECE.html ece.txt
+rm .python_history
+rm test.py marimo.py .pulse-cookie screen_combined.png C1.pdf C2_username_file.pdf passphrase.pdf
+rm a.out .observablehq \#ls\# \#\*message\*-20250413-042340\# \#sqlite3.c\#
+rm app-debug.apk app-release-1.apk app-release-2.apk app-release-3.apk app-release-4.apk app-release-5.apk app-release.apk
+rm .bash_history sqlite3.c
+du -sh /home/yagna
+nvidia-smi\
+
+du -h --max-depth=1 ./ | sort -hr
+df -h
+emacs
+cd ~/.config/nvim-test
+fastfetch
+sudo pacman -S ttf-liberation lib32-systemd
+sudo pacman -S mangohud lib32-mangohud
+MANGOHUD=1 vkcube
+vkcube
+mangohud nautilus
+uname -r
+sudo pacman -S linux
+reboot
+sudo -e /etc/default/grub\
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo -e /etc/sysctl.d/80-gamecompatability.conf
+sudo pacman -S gamemode lib32-gamemode
+sudo usermod -aG gamemode yagna
+groups yagna
+nvim Downloads/gamemode.ini
+sudo mkdir /usr/share/gamemode
+sudo mv Downloads/gamemode.ini /usr/share/gamemode/
+sudo systemctl --user enable --now gamemoded
+systemctl --user enable --now gamemoded
+gamemode
+gamemode -t
+sudo mv /usr/share/gamemode/gamemode.ini .dotfiles/.config
+stow .
+cd ~/.conf
+cd ~/.config
+picom
+ps aux | grep picom
+nvim .config/gamemode.ini
+systemctl --user restart --now gamemoded
+df -h /
+sudo pacman -S corectrl
+sudo corectrl
+sudo pacman -S lib32-fontconfig
+sudo pacman -S nvidia nvidia-settings nvidia-utils lib32-nvidia-utils lib32-opencl-nvidia opencl-nvidia libvdpau libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader
+sudo pacman -S supertuxkart
+gamemoderun supertuxkart
+journalctl -p 3 -b -0
+dmesg | grep -i 'error\|warn\|fail'
+cat ~/.local/share/xorg/Xorg.0.log | grep -i 'error\|warn\|fail'\
+
+grep . /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq
+glxinfo | grep -i 'renderer\|version'
+systemctl --failed\
+systemctl status
+sudo pacman -S mesa mesa-utils
+sudo pacman -S tlp\
+sudo systemctl enable --now tlp.service
+sudo dmidecode -t bios
+sudo pacman -S nvidia nvidia-utils
+sudo pacman -S xf86-input-libinput
+sudo -e /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo pacman -S tlp\
+sudo systemctl enable tlp\
+sudo systemctl start tlp\\
+
+sudo pacman -S thermald\
+sudo systemctl enable thermald\
+sudo systemctl start thermald
+yay -S auto-cpufreq\
+sudo systemctl enable auto-cpufreq\
+sudo systemctl start auto-cpufreq
+powerprofilesctl list\
+powerprofilesctl set performance\
+powerprofilesctl set balanced\
+powerprofilesctl set power-saver
+sudo systemctl enable --now auto-cpufreq
+watch -n 2 sensors
+sensors
+auto-cpufreq --stats
+sudo dmesg | grep -i 'error\|warn\|fail'
+nmcli 
+ip q
+./steam.desktop
+nvim steam.desktop
+sudo pacman -S kdeconnect
+sudo systemctl enable --now kde
+sudo pacman -S kdeconnect\\
+
+ls ~/.config/systemd/user/kdeconnectd.service\
+ls /usr/lib/systemd/user/kdeconnectd.service
+systemctl --user daemon-reload
+systemctl --user enable --now kdeconnectd.service
+systemctl --user list-units --all | grep kdeconnect
+sudo ls /usr/lib/systemd/system/kdeconnectd.service
+kdeconnect-handler
+kdeconnectd
+sudo pacman -S hostapd
+iw list
+iw list | grep HT40
+iw list | grep VHT80
+iw list | grep VHT160
+cd bin
+chmod +x fastspot.sh
+nvim fastspot.sh
+fastspot.sh
+iw list | grep "valid interface combinations:" -A 10\
+iw list | grep "5 GHz" -A 20
+sudo iw list
+sudo pacman -S python-typing_extensions
+yay -S python-powerlaw
+cal -y
+mv Downloads/Lab_8_U22CS104_SNA.ipynb Code/SNA/
+cal -m
+cal -2m
+qq
+ls 
+yay -S sdl2-controller-server
+sudo pacman -S mono mono-msbuild\
+
+ls notices
+rm -rf notices
+unzip mobile-gamepad-1-0-es-en-fr-de-it-win.zip
+chmod +x server.exe
+./server.exe
+mono server.exe
+sudo pacman -S wine
+clear
+wine server.exe
+wine
+wine --help
+cd /
+cd run
+pkill 105856 105865105889
+pkill 105856
+pkill 105865
+sudo pkill 105865
+kill 105856\
+kill 105865\
+kill 105889
+kill 105889
+ps aux | grep wine\
+
+wine .wine/drive_c/Program\ Files\ \(x86\)/Mobile\ Gamepad\ Server/Mobile\ Gamepad.exe
+rm -rf .wine
+sudo pacman -R wine
+la
+rm remotegamepad remotegamepad_amd64.tar.gz README.txt
+rm 60-remotegamepad.rules
+rm mobile-gamepad-1-0-es-en-fr-de-it-win.zip
+rm server.exe
+tar -xf remotegamepad_amd64.tar.gz
+sudo cp 60-remotegamepad.rules /lib/udev/rules.d/\
+
+nvim README.txt
+rm notices -rf
+rm 60-remotegamepad.rules README.txt
+./remotegamepad
+sudo pacman -S wev\
+wev
+wev
+sudo pacman -R wev
+sudo pacman -S xorg-xev
+sudo udevadm control --reload-rules\
+sudo udevadm trigger
+xev
+nvim remotegamepad
+rm remotegamepad remotegamepad_amd64.tar.gz
+nvim rofi-file-browser.sh
+sudo pacman -R virtualbox virtualbox-host-modules-lts
+mvn --version
+mpv $(fzf)
+yai
+sudo pacman -R vlc
+mpv Ferrari-Live-Wallpaper.mp4
+nvim 10.py
+nvim 10_1.py
+python3 9_1.py input encrypt decrypt 7
+python3 9_1.py input encrypt decrypt 2
+python3 10_3.py input encrypt decrypt
+python3 10_3.py input encrypt decrypt key\\
+
+cat key
+cat output
+nvim input
+python3 10_1.py input encrypt decrypt
+ho
+ollama serve
+ollama list
+marimo edit marimo.py
+rm -rf .ipython
+rm -rf __pycache__
+man ipython
+ipython
+nvim ~/marimo.py
+hello
+exit
+sudo pacman -S imagemagick
+luarocks --lua-version=5.1 install magick
+sudo luarocks --lua-version=5.1 install magick
+sudo luarocks install magick
+sudo luarocks install magick --check-lua-versions
+yay -S lua-magick
+luarocks install magick --local
+ls .luarocks
+cd 
+magick --version
+luarocks install magick\
+
+luarocks install --local magick\
+
+luarocks config local_by_default true\
+
+nvim --version | grep -i lua\
+
+cat .config/nvim/init.lua
+luarocks --lua-version=5.1 install --local magick\
+
+luarocks list --local\
+
+1sudo pacman -S lua51\
+
+sudo pacman -S lua51\
+
+V
+sudo pacman -S imagemagick graphicsmagick libjpeg-turbo libpng libtiff\
+sudo pacman -S base-devel  # For make, gcc, etc. if not already installed\
+
+sudo pacman -S imagemagick6 imagemagick6-libmagick  # needed for magick rock\
+
+sudo pacman -S imagemagick6 imagemagick6-libmagick
+luarocks --lua-version=5.1 install --local --force magick\
+
+ls ~/.luarocks/lib/lua/5.1/magick.so\
+
+yay -S imagemagick6 imagemagick6-libmagick\
+
+LUA_LIBDIR=/usr/lib \\
+LUA_INCDIR=/usr/include \\
+MAGICK_CFLAGS="-I/opt/imagemagick6/include/ImageMagick-6" \\
+MAGICK_LIBS="-L/opt/imagemagick6/lib -lMagickCore-6.Q16HDRI" \\
+luarocks --lua-version=5.1 install --local --force magick\
+
+cd nvim && nvim
+cat lua/plugins/image.lua
+magick convert Pictures/Wukong\ Ultrawide.png Ultra.jpg
+ls Ultra.jpg
+[200~luarocks remove magick
+luarocks remove magick\
+
+sudo pacman -S imagemagick graphicsmagick\
+
+magick -version\
+\\
+\\
+
+rm test.md
+cp rickMortyLock.png test.png
+nvim rickMortyLock.png
+rm rickMortyLock.png test.jpg test.png test.md
+nvim Lab_8.ipynb
+cal
+cd Pictures
+cp Joker\ Wallpaper.jpg test.jpg
+mv Joker\ Wallpaper.jpg Jocker-Wallpaper.jpg
+nvim test.md
+sudo pacman -S wine winetricks
+winecfg
+wine PCRemoteReceiverSetup_7_7_2.exe
+sudo pacman -R wine winetricks
+rm .wine
+rm .wine -rf
+rm Downloads/PCRemoteReceiverSetup_7_7_2.exe
+rm Mobile\ Gamepad\ Server.desktop PC\ Remote\ Receiver.desktop steam.desktop
+nmcli radio wifi o
+nvim --version | grep python\
+
+pip install --user pynvim\
+
+/usr/bin/python3 -m pip show pynvim\
+
+sudo pacman -S luarocks\
+
+luarocks install molten\
+
+rm ~/.local/share/nvim/rplugin.vim\
+
+nvim --headless -c ":UpdateRemotePlugins" -c ":q"
+printf "HELLO"
+nvim --headless -c ":UpdateRemotePlugins" -c ":q"\
+
+nvim --headless -c ":lua require("molten")" -c ":q"
+nvim\\
+
+pip install --user 'jupyter-client>=7.0.0'\
+pip install --user ipykernel
+sudo pacman -S python-pynvim python-jupyter-client python-pillow python-cairosvg python-plotly
+nvim --headless "+UpdateRemotePlugins" +q\
+
+sudo pacman -S python-pipx\
+
+sudo pip install pipdeptree\
+
+which python\
+
+pip show pynvim ipykernel jupyter-client\
+
+cat .config/nvim/lua/plugins/molten.lua
+nvim --log\\
+
+nvim -V3logfile\
+
+cat ~/.local/share/nvim/rplugin.vim | grep molten
+nvim --version
+cat .config/nvim/lua/plugins/misc.lua
+nvm
+vim Code/ML/gpu.ipynb
+nvim Code/ML/gpu.ipynb
+yay -S jupytext
+pacman -S python-jupytext
+sudo pacman -S python-jupytext
+df -Th
+yay -S python-jupytext
+sudo pacman -S base-devel nodejs npm yarn python-pip\
+
+git clone https://aur.archlinux.org/python-jupytext.git\
+cd python-jupytext\
+makepkg -si\
+
+/usr/bin/jlpm install\
+
+cd src/jupytext-1.16.4b
+cd jupyterlab
+yarn install --network-timeout 1000000\
+
+yay -Rns python-jupytext\
+yay -Scc
+cd python-jupytext
+cd src/jupytext-1.16.4b/jupyterlab
+cd ../../../
+makepkg -Csi\
+
+sudo reflector --country India --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist\
+
+pip install jupytext\
+
+pipx ensurepath
+pipx install jupytext\
+
+jupytext
+echo $PATH
+echo $PATH grep .dotfiles
+cd .dotfiles
+cd .local/bin
+l
+cd Code/ML
+cat .config/nvim/lua/plugins/treesitter.lua
+mv after/queries ./
+nvim queries/markdown/textobjects.scm
+cat queries/markdown/textobjects.scm
+cat lua/plugins/treesitter.lua
+cat lua/plugins/mini.lua
+nvim init.lua
+$(( 899/90 ))
+echo $(( 899/90 ))
+gamemoded -t
+sudo pacman -S wireguard-tools systemd-resolvconf
+sudo pacman -S proton-vpn-gtk-app
+openvpn jp-free-16.protonvpn.udp.ovpn
+openvpn /etc/openvpn/client/client_config_file.ovpn
+sudo openvpn /etc/openvpn/client/client_config_file.ovpn
+ls /etc/openvpn/client
+sudo ls /etc/openvpn/client
+cp Downloads/jp-free-16.protonvpn.udp.ovpn /etc/openvpn/client
+sudo cp Downloads/jp-free-16.protonvpn.udp.ovpn /etc/openvpn/client
+sudo chmod +x /etc/openvpn/client/
+cd /etc/openvpn/client
+sudo ls 
+PP
+rm Downloads/jp-free-16.protonvpn.udp.ovpn
+IPP
+p
+cd Immich
+hard
+rm /var/lib/pacman/db.lck
+sudo rm /var/lib/pacman/db.lck
+cd Obsidian
+cmatrix -C cyan
+nmcli device wifi connect "bhAAi" password "raviteja"
+unzip balenaEtcher-linux-x64-2.1.0.zip
+cd balenaEtcher-linux-x64
+./balena-etcher
+cd Downloads
+sudo dd if=ubuntu-24.04.2-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync
+cd cloud
+nmcli dev wifi connect "iQOO Z9 5G" password "123456789"
+nmcli device wifi connect "Yagnarao" password "micromax" key-mgmt wpa-psk
+ip a
+nvimq
+basename -s .git https://github.com/Yagna-rao15/Obsidian.git
+nvim-test
+cd .config/nvim-test
+cd ../.config
+cd .conf
+git pull
+gs
+cd nvim
+1
+lsblk -f
+sudo mkdir -p /mnt/windows\
+
+sudo mount -t ntfs3 /dev/nvme0n1p4 /mnt/windows\
+
+ln -s /mnt/windows ~/Windows\
+
+sudo umount -R /mnt/windows
+sudo mount -t ntfs3 /dev/nvme0n1p3 /mnt/windows\
+
+cd Games
+cd GTA\ -\ The\ Trilogy\ -\ DE
+tree
+sudo pacman -S lutris wine winetricks\
+
+cd games
+mv ~/Downloads/wp10151632-gta-trilogy-wallpapers.jpg ./GTA\ -\ The\ Trilogy\ -\ DE/GTA_Logo.jpg
+mv ~/Downloads/wp10151664-gta-trilogy-wallpapers.png ./GTA\ -\ The\ Trilogy\ -\ DE/GTA_BG.png
+nvim decrypt 
+man openssl dss
+man openssl ecdsa
+sudo pacman -S python-cryptography
+man openssl rsa
+cc
+cat u22cs104.txt
+cs isc
+openssl genpkey -algorithm RSA -out rsa_private.pem -pkeyopt rsa_keygen_bits:2048
+openssl rsa -in rsa_private.pem -pubout -out rsa_public.pem
+openssl dgst -sha256 -sign rsa_private.pem -out rsa_signature.bin u22cs104.txt\
+
+echo "DSS"
+openssl dsaparam -out dsa_param.pem 2048
+openssl gendsa -out dsa_private.pem dsa_param.pem\
+
+openssl dsa -in dsa_private.pem -pubout -out dsa_public.pem\
+
+openssl dgst -sha256 -sign dsa_private.pem -out dsa_signature.bin u22cs104.txt
+echo "ECDSA"
+openssl ecparam -name secp256r1 -genkey -noout -out ecdsa_private.pem
+openssl ec -in ecdsa_private.pem -pubout -out ecdsa_public.pem
+openssl dgst -sha256 -sign ecdsa_private.pem -out ecdsa_signature.bin u22cs104.txt
+openssl dgst -sha256 -verify rsa_public.pem -signature rsa_signature.bin youradmissionno.txt\
+openssl dgst -sha256 -verify dsa_public.pem -signature dsa_signature.bin youradmissionno.txt\
+openssl dgst -sha256 -verify ecdsa_public.pem -signature ecdsa_signature.bin youradmissionno.txt\
+
+openssl dgst -sha256 -verify rsa_public.pem -signature rsa_signature.bin u22cs104.txt\
+openssl dgst -sha256 -verify dsa_public.pem -signature dsa_signature.bin u22cs104.txt\
+openssl dgst -sha256 -verify ecdsa_public.pem -signature ecdsa_signature.bin u22cs104.txt\
+
+cp u22cs104.txt u22cs140.txt\
+sed -i 's/12345678/87654321/' u22cs140.txt\
+\
+openssl dgst -sha256 -verify rsa_public.pem -signature rsa_signature.bin u22cs140.txt\
+openssl dgst -sha256 -verify dsa_public.pem -signature dsa_signature.bin u22cs140.txt\
+openssl dgst -sha256 -verify ecdsa_public.pem -signature ecdsa_signature.bin u22cs140.txt\
+
+nvim u22cs140.txt
+cat u22cs140.txt
+openssl dgst -sha256 -verify rsa_public.pem -signature rsa_signature.bin u22cs140.txt\
+openssl dgst -sha256 -verify dsa_public.pem -signature dsa_signature.bin u22cs140.txt\
+openssl dgst -sha256 -verify ecdsa_public.pem -signature ecdsa_signature.bin u22cs140.txt\
+
+ls | grep dss
+ls | grep rsa
+ls | grep dsa
+nvim 11.py
+python3 11.py
+echo "Confidential message from Yagna Rao" > message.txt\
+
+openssl enc -des -in message.txt -out message.enc -k secret123\
+
+openssl enc -des -in message.txt -out message.enc -iter secret123\
+
+openssl enc -des -in message.txt -out message.enc -iter 69143\
+
+cat decrypted.txt\
+
+nvim 12 
+mv 12 12.md
+nvim 12.md
+man openssl enc -des
+man openssl des
+openssl enc -des -in message.txt -out message.enc
+openssl enc -des -in message.txt -out message.enc -iter
+openssl enc -des -in message.txt -out message.enc -iter 16
+sudo pacman -S python-pycryptodome
+python3 12.py\\
+
+python3 12.py
+cat message.txt
+openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in message.txt -out message.enc -pass pass:secret123 
+openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -salt -in message.enc -out decrypted.txt -pass pass:secret123\
+
+nvim 12.py
+openssl enc -d -des-256-cbc -pbkdf2 -iter 100000 -salt -in message.enc -out decrypted.txt -pass pass:secret123\
+
+openssl enc -d -des -in message.enc -out decrypted.txt -pass pass:secret123\
+
+openssl enc -des-cbc -pbkdf2 -iter 100000 -salt -in message.txt -out message.enc -pass pass:secret123\
+
+nvim message.enc
+openssl enc -des -in message.txt -out message.enc -k secret123
+cat message.enc
+openssl enc -d -des -in message.enc -out decrypted.txt -k secret123\
+
+cat decrypted.txt
+cd isc
+nvim 10_2.py
+python3 10_2.py input encrypt decrypt
+nvim decrypt
+nvim encrypt
+x
+cat input
+python3 10_3.py input encrypt decrypt key
+cat encrypt
+cat decrypt
+mv 10_3.py 10_4.py
+supertuxkart
+nmcli dev wifi
+nmcli dev wifi\\
+
+nmcli dev wifi\\
+\\
+
+nmcli device wifi connect "BALAJI 8552" password "1234512345"
+nmcli device wifi connect "BALAJI 8552" --ask
+nvim test.txt
+mv Downloads/stock_price_prediction.ipynb Code/SNA
+mv Downloads/twitter_sentiment_analysis.ipynb Code/SNA
+time zsh --interactive -c exit
+sudo pacman -S audacious
+mpv Downloads/Tom\ Odell\ -\ Another\ Love.flac
+mpv Downloads/youtube_MwpMEbgC7DA_audio.mp3
+nmcli radio wifi off
+nmcli radio wifi on
+cd polybar
+./hotspot.sh
+whoami
+yay -Syu
+yay -S python-mplfinance
+mkdir lab-11
+yay -S python-mmh3
+yay -S python-blackbox
+pipx install blackbox
+yay -Ss blackbox\
+
+mv ~/Downloads/users.txt ./
+nvim output.csv
+pp
+disks
+gparted
+sudo gparted
+sudo umount /dev/sda1\
+sudo umount /dev/sda4\
+
+sudo fdisk /dev/sda\
+
+sudo mkfs.vfat -F 32 /dev/sda\
+
+lsblk
+cd /run/media/yagna/CD90-4E67
+cd lab-11
+python3 1.py
+cat output.csv
+cd rog
+./target/release/rog-control-center
+sudo pacman -Syu
+sudo pacman -S sysstat lsof lm_sensors htop iotop nvtop glances\
+
+sudo systemctl enable --now systemd-journald\
+
+chmod +x lag.sh
+nvi
+nvim 
+hotspot.sh
+nvim lag_logs/lag_report_2025-04-25_02-19-19.log
+rm lag_report_2025-04-25_02-19-19.log
+nvim lag_report_2025-04-25_02-35-36.log
+lspci -k | grep -EA3 'VGA|3D'\
+
+cd .x11
+nvim xinitrc
+xrandr
+sudo fallocate -l 16G /swapfile
+[200~sudo chmod 600 /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile\
+
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+free -h\
+
+df -T /\
+
+sudo dd if=/dev/zero of=/swapfile bs=1M count=16384 status=progress
+sudo swapoff /swapfile 2>/dev/null\
+sudo rm /swapfile\
+sudo sed -i '/\/swapfile/d' /etc/fstab\
+
+sudo truncate -s 16G /swapfile
+sudo chattr +C /swapfile\
+
+sudo chmod 600 /swapfile\
+
+sudo mkswap /swapfile
+sudo swapon /swapfile
+cd
+sudo mkdir -p /var/swap\
+sudo chattr +C /var/swap\
+
+sudo dd if=/dev/zero of=/var/swap/swapfile bs=1M count=16384 status=progress\
+sudo chmod 600 /var/swap/swapfile\
+sudo mkswap /var/swap/swapfile\
+sudo swapon /var/swap/swapfile\
+
+sudo -e /etc/fstab
+echo '/var/swap/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab\
+
+free -h\
+cat /proc/swaps\
+
+nvim
+;w
+;q
+nvim lag.sh
+top
+top -b -n 1
+htop
+btop
+cd lag_logs
+cat /var/log/Xorg.0.log | grep -iE "(EE|error|fail)"\
+
+journalctl -b -p err | grep -iE 'nvidia|amdgpu|mesa|gpu|xorg'\
+
+glxinfo | grep -i vendor\
+lspci | grep -i vga\
+
+sudo libinput list-devices\
+
+lsmod | grep -i i2c\
+dmesg | grep -i asue\
+
+lsmod | grep -i i2c\
+sudo dmesg | grep -i asue\
+
+sudo pacman -Rdd libglvnd\
+sudo pacman -S nvidia-utils\
+
+sudo pacman -Qs nvidia\
+
+protonvpn-app
+yazi
+nmcli device wifi connect "Balaji" password "balaji1234"
+nmcli device wifi connect "Balaji" --ask
+nmcli device wifi connect "Yagnarao" --ask
+c
+cd lab-8
+cd ../lab-9
+cd lab-10
+nvim bloom_filter_assignment.py
+cd ../lab-11
+nvim 1.py
+cd sna
+/bin/python /home/yagna/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /home/yagna/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+cd ../lab-8
+ls
+code . && exit
+cd datascience
+libreoffice
+nmcli device wifi
+q
+: 1745585267:0;cd .dotfiles
+: 1745585268:0;c
+: 1745585269:0;ls
+: 1745585270:0;gs
+: 1745585303:0;git add .

@@ -153,12 +153,12 @@ M.diagnostics = function()
   local hints = #vim.diagnostic.get(M.stbufnr(), { severity = vim.diagnostic.severity.HINT })
   local info = #vim.diagnostic.get(M.stbufnr(), { severity = vim.diagnostic.severity.INFO })
 
-  err = (err and err > 0) and ("%#St_lspError#" .. " " .. err .. " ") or ""
-  warn = (warn and warn > 0) and ("%#St_lspWarning#" .. " " .. warn .. " ") or ""
-  hints = (hints and hints > 0) and ("%#St_lspHints#" .. "󰛩 " .. hints .. " ") or ""
-  info = (info and info > 0) and ("%#St_lspInfo#" .. "󰋼 " .. info .. " ") or ""
+  local err_ = (err and err > 0) and ("%#St_lspError#" .. " " .. err .. " ") or ""
+  local warn_ = (warn and warn > 0) and ("%#St_lspWarning#" .. " " .. warn .. " ") or ""
+  local hints_ = (hints and hints > 0) and ("%#St_lspHints#" .. "󰛩 " .. hints .. " ") or ""
+  local info_ = (info and info > 0) and ("%#St_lspInfo#" .. "󰋼 " .. info .. " ") or ""
 
-  return " " .. err .. warn .. hints .. info
+  return " " .. err_ .. warn_ .. hints_ .. info_
 end
 
 M.separators = {

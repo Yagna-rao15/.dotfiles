@@ -163,6 +163,9 @@ return {
     },
     config = function()
       M.defaults()
+      vim.diagnostic.config {
+        float = { border = "rounded" },
+      }
     end,
   },
 }

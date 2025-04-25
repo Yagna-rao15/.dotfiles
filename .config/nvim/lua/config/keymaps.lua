@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "//"
+vim.g.maplocalleader = "\\"
 
 map("n", "<leader>pp", vim.cmd.Ex)
 map("n", ";", ":")

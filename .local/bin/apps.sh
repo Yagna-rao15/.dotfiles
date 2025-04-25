@@ -1,7 +1,7 @@
 #!/bin/bash
 
 declare -A apps=(
-    # ["Firefox"]="firefox"
+    ["Firefox"]="firefox"
     ["Zen Browser"]="zen-browser"
     ["Brave"]="brave"
     # ["Twilight"]="zen-twilight"
@@ -18,6 +18,10 @@ declare -A apps=(
     ["Chrome"]='chromium'
     ["Kitty"]='kitty'
     ["Bluetooth"]='blueberry'
+    ["Eclipse"]='eclipse'
+    ["Minecraft"]='minecraft'
+    ["KDE Connect"]='kdeconnect-app'
+    ["Steam"]='steam'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')
@@ -31,6 +35,8 @@ if [[ -n "$selected" && -n "${apps[$selected]}" ]]; then
     xdg-open "https://gemini.google.com/app/8e75bac7a97603d4?hl=en-IN" &>/dev/null &
     sleep 0.5
     i3-msg "workspace 1"
+  elif [ "$selected" == 'Minecraft' ]; then
+    $(cd ~/Downloads && java -jar LegacyLauncher_legacy.jar)
   else
     eval "${apps[$selected]}" &>/dev/null &
   fi

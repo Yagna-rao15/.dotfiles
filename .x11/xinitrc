@@ -1,9 +1,8 @@
 xrandr --output DP-2 --mode 2560x1440 --rate 240
-xrandr --dpi 140
+xrdb -merge ~/.dotfiles/.x11/Xresources
 xsettingsd &
-xrdb /home/yagna/.dotfiles/.x11/Xresources
 xset s off -dpms
 export DISPLAY=:0
 export XDG_SESSION_TYPE=x11
+kdeconnectd &
 exec i3
-

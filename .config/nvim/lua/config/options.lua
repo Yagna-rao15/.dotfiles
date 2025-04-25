@@ -4,6 +4,7 @@ local key = vim.keymap
 
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 
 opt.clipboard = "unnamedplus"
 -- opt.completeopt = "menu,menuone,noselect"
@@ -33,7 +34,7 @@ g.markdown_recommended_style = 0
 -- opt.list = true
 opt.ignorecase = true
 opt.smartcase = true
-opt.mouse = "a"
+-- opt.mouse = "a"
 opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
@@ -55,15 +56,18 @@ opt.timeoutlen = 400
 opt.undofile = true
 
 -- interval for writing swap file to disk, also used by gitsigns
+opt.swapfile = false
 opt.updatetime = 250
 
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
+opt.incsearch = true
 opt.hlsearch = true
 key.set("n", "<Esc", "<cmd>nohlsearch<CR>")
 
 g.have_nerd_font = true
+opt.foldopen = "mark,percent,quickfix,search,tag,undo"
 
 -- Event Listner and Callbacks
 -- Highlight yanked text

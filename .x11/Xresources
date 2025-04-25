@@ -1,31 +1,39 @@
 ! Cursor theme
 Xcursor.theme: macOS
 Xcursor.size: 40
-! Xft.dpi: 140
-! vi:ft=xdefaults
+Xft.dpi: 140
 
+! Font settings
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintmedium
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+Xft.autohint: false
+Xft.embolden: true
 
-! /* st.font: SauceCodePro Nerd Font Mono:pixelsize=22:antialias=true:autohint=true; */
+! JetBrains Mono font
+st.font: JetBrainsMonoNL Nerd Font:pixelsize=22:antialias=true:autohint=true
 st.termname: st-256color
 
-! padding
+! Padding
 st.borderpx: 10
 
-!! map ctrl-i to F7
+!! Map Ctrl+I to F7
 !st.keysym.Control-i: \033[18~
 
-!		Colors
+! Colors
 
-!Normal      Bright
-!--------    -------
-!0 Black      8 Black
-!1 Red        9 Red
-!2 Yellow    10 Yellow
-!3 Green     11 Green
-!4 Blue      12 Blue
-!5 Magenta   13 Magenta
-!6 Cyan      14 Cyan
-!7 White     15 White
+! Normal      Bright
+! --------    -------
+! 0 Black      8 Black
+! 1 Red        9 Red
+! 2 Yellow    10 Yellow
+! 3 Green     11 Green
+! 4 Blue      12 Blue
+! 5 Magenta   13 Magenta
+! 6 Cyan      14 Cyan
+! 7 White     15 White
 
 *.background: black
 *.foreground: white
@@ -54,3 +62,6 @@ st.borderpx: 10
 
 *.color7: #d8d8d8
 *.color15: #f8f8f8
+
+! vi:ft=xdefaults
+

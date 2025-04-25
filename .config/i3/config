@@ -1,14 +1,8 @@
-# Windows key is Mod Key [Mod1 for ALT] [Mod4 for WIN]
 set $mod Mod1
 set $shutdown shutdown now
 set $reboot reboot
 
-exec --no-startup-id xrdb -merge "$HOME/.dotfiles/.x11/Xresources"
-exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 240
-# exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"
-exec --no-startup-id xset s off -dpms
-
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4 #285577
 
 font pango:JetBrainsMono Nerd Font 8
@@ -17,7 +11,6 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym Mod1+Return exec i3-sensible-terminal
-# bindsym Mod1+Return exec alacritty
 
 bindsym $mod+q kill
 bindsym $mod+x exec --no-startup-id ~/Code/test.sh
@@ -68,10 +61,10 @@ bindsym $mod+l focus right
 # bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+# bindsym $mod+Shift+h move left
+# bindsym $mod+Shift+j move down
+# bindsym $mod+Shift+k move up
+# bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 # bindsym $mod+Shift+Left move left
@@ -118,14 +111,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # bindsym $mod+Tab workspace next
 # bindsym $mod+Shift+Tab workspace prev
 
-for_window [window_role="GtkFileChooserDialog"] resize set 800 600
-for_window [window_role="GtkFileChooserDialog"] move position center
-for_window [class="python3"] floating enable, move position center
+for_window [window_role="GtkFileChooserDialog"] resize set 800 600, move position center
+for_window [class="python3"] floating enable, move position center, resize set 800 600
+# for_window [app_id="org.matplotlib.Matplotlib3"] floating enable, move position center, resize set 800 600
 
-for_window [class="firefox"] border pixel 0
-for_window [class="zen"] border pixel 0
-for_window [class="obsidian"] border pixel 0
-for_window [class="Code"] border pixel 0
+
+for_window [class="kitty"] border pixel 1
 assign [class="zen"] 1
 
 # Launch ZEN-BROWSER
@@ -138,12 +129,15 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 # Dunst
 exec --no-startup-id dunst
 
-
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# restart polybar
+bindsym $mod+Shift+p exec --no-startup-id ~/.config/polybar/launch_polybar.sh
+
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
@@ -176,15 +170,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
-# bar {
-#         status_command i3status
-#         tray_output primary
-# }
-
 # Setting Wallpaper
 # exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
+# exec_always feh --bg-scale $HOME/Pengiun.jpg --no-fehbg
 exec_always feh --bg-scale $HOME/Pictures/Wallpapers/Earth-Wallpaper.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
 
@@ -193,7 +182,11 @@ exec --no-startup-id dex --autostart --environment i3
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xss-lock -- i3lock -n
 exec --no-startup-id nm-applet
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backends --backend glx --vsync
+exec_always --no-startup-id xmodmap ~/.dotfiles/.x11/Xmodmap
+# exec_always --no-startup-id xcape -e 'Control_L=Escape'
+exec_always --no-startup-id xcape -e 'Control_L=Control_L'
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -232,3 +225,10 @@ bindsym $mod+Escape exec /home/yagna/Code/test.sh
 # bindsym Ctrl+F6 exec maim | xclip -selection clipboard -t image/png
 # bindsym Ctrl+$mod+Print exec maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 # bindsym Ctrl+Shift+Print exec maim --select | xclip -selection clipAboard -t image/png
+
+# Logging lag stats
+bindsym $mod+Shift+l exec --no-startup-id ~/lag.sh
+
+# Turn off pcom while gaming
+bindsym $mod+Shift+c exec "pkill picom || picom --config ~/.config/picom/picom.conf"
+
