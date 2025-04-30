@@ -1,0 +1,51 @@
+# Aliases
+alias la='/usr/bin/ls -1AX --color'
+alias ls='/usr/bin/ls -lAX --color'
+alias c='clear'
+alias mkdir='mkdir -pv'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ..='cd ..'
+alias q='exit'
+alias pp='ping google.com'
+alias ba='blueman-applet'
+alias bm='blueman-manager'
+alias h="history | grep "
+alias nano="-e"
+alias cd='z'
+
+# Git
+alias gs='git status --short'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gi='git init'
+alias gcl='git clone'
+alias gl="git log --all --graph --pretty=\
+  format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%S%n'"
+
+# Nvim
+alias nvim-own='NVIM_APPNAME=nvim-own nvim'
+alias nvim-test='NVIM_APPNAME=nvim-test nvim'
+alias nvimm='nvim $(fzf)'
+
+# Get IP
+alias IPP='curl https://icanhazip.com'
+
+# Human Readable
+alias du='du --human-readable'
+alias free='free --human'
+
+# Ripgrep
+alias rg="rg --hidden --smart-case --glob='!.git/' --no-search-zip --trim --colors=line:fg:black --colors=line:style:bold --colors=path:fg:magenta --colors=match:style:nobold"
+
+# Always work in a tmux session if Tmux is installed
+# if [[ -n "$SSH_TTY" || "$TERM" == "xterm"* ]]; then
+#   echo "This is an interactive terminal or SSH session"
+#   if which tmux 2>&1 >/dev/null; then
+#     if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#       tmux attach -t Default || tmux new -s Deault; exit
+#     fi
+#   fi
+# fi

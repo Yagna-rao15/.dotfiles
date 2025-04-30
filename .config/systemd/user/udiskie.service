@@ -1,0 +1,11 @@
+[Unit]
+Description=Automount external drives
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/udiskie --tray --no-config
+Restart=always
+
+[Install]
+WantedBy=default.target
+

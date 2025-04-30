@@ -1,35 +1,93 @@
 [user]
 	name = Yagna rao
   email = 146085640+Yagna-rao15@users.noreply.github.com
-  username = Yagna-rao15 
 
 [init]
-  defaultBranch = master
+  defaultBranch = main
+
+[url "https://github.com/Yagna-rao15"]
+  insteadOf = "y:"
+
+[url "https://github.com/"]
+  insteadOf = "gh:"
+
+[status]
+  branch = true
+  showStash = true
+  showUntrackedFiles = true
+
+[diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
+
+[push]
+  autoSetupRemote = true
+  default = current
+  followTags = true
+
+[pull]
+  default = current
+  rebase = true
+
+[rebase]
+  autoStash = true
+  missingCommitsCheck = warn
+
+[log]
+  abbrevCommit = true
+  graphColors = blue,yellow,cyan,magenta,green,red
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = -taggerdate
+
+[pager]
+  branch = false
+  tag = false
 
 [color]
-	ui = auto
+  ui = auto
+
 [color "branch"]
-	current = yellow bold
-	local = green bold
-	remote = cyan bold
+  current = magenta
+  local = default
+  remote = yellow
+  upstream = green
+  plain = blue
+
+; [color "branch"]
+; 	current = yellow bold
+; 	local = green bold
+;   remote = cyan bold
+
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
+  meta = yellow bold
+  frag = magenta bold
 	old = red bold
 	new = green bold
-	whitespace = red reverse
+  whitespace = red reverse
+
 [color "status"]
 	added = green bold
 	changed = yellow bold
-	untracked = red bold
+  untracked = red bold
+
+[color "decorate"]
+  HEAD = red
+  branch = blue
+  tag = yellow
+  remoteBranch = magenta
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-	required = true
+  required = true
+
 [credential "https://github.com"]
-	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+  helper = !/usr/bin/gh auth git-credential

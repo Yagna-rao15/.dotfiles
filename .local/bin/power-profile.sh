@@ -16,8 +16,8 @@ fi
 
 # Display appropriate icon based on profile
 case "$profile" in
-    "Quiet")      echo "󰭟" ;;  # Silent Mode
-    "Balanced")   echo "󰶐" ;;  # Balanced Mode
-    "Performance") echo "󰓅" ;; # Performance Mode
-    *)           echo "󰒮" ;;  # Unknown Profile
+    "Quiet")      echo "";;
+    "Balanced")   echo "";;
+    "Performance") echo "󱐋";;
+    *)           echo "";;
 esac

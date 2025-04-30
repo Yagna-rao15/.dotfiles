@@ -1,8 +1,0 @@
-xrandr --output DP-2 --mode 2560x1440 --rate 240
-xrdb -merge ~/.dotfiles/.x11/Xresources
-xsettingsd &
-xset s off -dpms
-export DISPLAY=:0
-export XDG_SESSION_TYPE=x11
-kdeconnectd &
-exec i3

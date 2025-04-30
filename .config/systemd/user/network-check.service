@@ -1,0 +1,9 @@
+[Unit]
+Description=Check if mobile and laptop are on the same network and control services
+
+[Service]
+ExecStart=/home/yagna/.dotfiles/.local/bin/network_check.sh
+
+[Install]
+WantedBy=default.target
+

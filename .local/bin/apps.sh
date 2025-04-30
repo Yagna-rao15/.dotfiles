@@ -22,6 +22,8 @@ declare -A apps=(
     ["Minecraft"]='minecraft'
     ["KDE Connect"]='kdeconnect-app'
     ["Steam"]='steam'
+    ["Proton VPN"]='protonvpn-app'
+    ["Virtual Box"]='virtualbox'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')
