@@ -67,7 +67,9 @@ return {
     max_concurrent_installers = 10,
   },
   config = function(_, opts)
-    dofile(vim.g.base46_cache .. "mason")
+    if Nvchad then
+      dofile(vim.g.base46_cache .. "mason")
+    end
     require("mason").setup(opts)
 
     -- custom nvchad cmd to install all mason binaries listed

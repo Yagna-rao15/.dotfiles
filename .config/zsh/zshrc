@@ -13,8 +13,9 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Load Completions
+export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"
 autoload -Uz compinit
-compinit -d "$ZDOTDIR/zcompdump"
+compinit -d "$ZSH_COMPDUMP"
 _comp_options+=(globdots)
 
 # Adding zsh plugins
@@ -34,14 +35,14 @@ zinit cdreplay -q
 
 # Keybinds
 bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
+# bindkey '^p' history-search-backward
+# bindkey '^n' history-search-forward
 
 # History
-HISTSIZE=100000
-HISTFILE=~/.config/zsh/zshistory
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
+export HISTSIZE=100000
+export HISTFILE="$XDG_CONFIG_HOME/zsh/zshistory"
+export SAVEHIST=$HISTSIZE
+export HISTDUP=erase
 
 setopt appendhistory
 setopt share_history
@@ -70,3 +71,16 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# To remove unwanted loat cache
+rm -rf ~/.nv ~/.pki ~/.pulse-cookie 2>/dev/null

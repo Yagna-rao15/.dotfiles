@@ -1,0 +1,11 @@
+[Unit]
+Description=Lock screen and suspend on lid close
+After=graphical.target
+
+[Service]
+ExecStart=/home/yagna/.local/bin/lock.sh
+Type=oneshot
+
+[Install]
+WantedBy=default.target
+

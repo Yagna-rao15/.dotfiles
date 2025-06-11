@@ -24,6 +24,9 @@ declare -A apps=(
     ["Steam"]='steam'
     ["Proton VPN"]='protonvpn-app'
     ["Virtual Box"]='virtualbox'
+    ["Anki"]='anki'
+    ["Transmission"]='transmission-gtk'
+    ["Lutris"]='lutris'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')
@@ -38,7 +41,7 @@ if [[ -n "$selected" && -n "${apps[$selected]}" ]]; then
     sleep 0.5
     i3-msg "workspace 1"
   elif [ "$selected" == 'Minecraft' ]; then
-    $(cd ~/Downloads && java -jar LegacyLauncher_legacy.jar)
+    $(java -jar ~/Games/Minecraft/LegacyLauncher.jar)
   else
     eval "${apps[$selected]}" &>/dev/null &
   fi

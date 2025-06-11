@@ -1,7 +1,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    event = { "BufReadPost", "BufNewFile" },
+    event = { "BufReadPre", "BufNewFile" },
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     build = ":TSUpdate",
     opts = {
@@ -47,26 +47,7 @@ return {
         use_languagetree = true,
       },
       indent = { enable = true },
-      textobjects = {
-        select = {
-          enable = true,
-          lookahead = true,
-          keymaps = {
-            ["ac"] = "@code_block.outer",
-            ["ic"] = "@code_block.inner",
-          },
-        },
-        move = {
-          enable = true,
-          set_jumps = false,
-          goto_next_start = {
-            ["]c"] = "@code_block.outer",
-          },
-          goto_previous_start = {
-            ["[c"] = "@code_block.outer",
-          },
-        },
-      },
+      additional_vim_regex_highlighting = false,
     },
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)

@@ -5,3 +5,6 @@ export XRESOURCES="$HOME/.dotfiles/.config/x11/Xresources"
 source $HOME/.config/zsh/zprofile
 source $HOME/.config/zsh/zshenv
 source $HOME/.config/zsh/zshrc
+
+# bun completions
+[ -s "/home/yagna/.bun/_bun" ] && source "/home/yagna/.bun/_bun"

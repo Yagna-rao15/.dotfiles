@@ -1,171 +1,168 @@
--- This is LSP CONFIG
-
-local M = {}
-local map = vim.keymap.set
-
--- export on_attach & capabilities
-M.on_attach = function(_, bufnr)
-  local function opts(desc)
-    return { buffer = bufnr, desc = "LSP " .. desc }
-  end
-
-  map("n", "gD", vim.lsp.buf.declaration, opts "Go to declaration")
-  map("n", "gd", vim.lsp.buf.definition, opts "Go to definition")
-  map("n", "gi", vim.lsp.buf.implementation, opts "Go to implementation")
-  map("n", "<leader>sh", vim.lsp.buf.signature_help, opts "Show signature help")
-  map("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts "Add workspace folder")
-  map("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts "Remove workspace folder")
-
-  map("n", "<leader>wl", function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, opts "List workspace folders")
-
-  map("n", "<leader>D", vim.lsp.buf.type_definition, opts "Go to type definition")
-  -- map("n", "<leader>ra", require "nvchad.lsp.renamer", opts "NvRenamer")
-
-  map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts "Code action")
-  map("n", "gr", vim.lsp.buf.references, opts "Show references")
-end
-
--- disable semanticTokens
-M.on_init = function(client, _)
-  if client.supports_method "textDocument/semanticTokens" then
-    client.server_capabilities.semanticTokensProvider = nil
-  end
-
-  vim.diagnostic.config {
-    virtual_text = {
-      prefix = "●", -- Could use "⚠", "●", or any symbol.
-      spacing = 4,
-    },
-    signs = true,
-    underline = true,
-    update_in_insert = false,
-    severity_sort = true,
-  }
-
-  local signs = { Error = "", Warn = "", Hint = "", Info = "" }
-  for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-  end
-end
-
-M.capabilities = vim.lsp.protocol.make_client_capabilities()
-
-M.capabilities.textDocument.completion.completionItem = {
-  documentationFormat = { "markdown", "plaintext" },
-  snippetSupport = true,
-  preselectSupport = true,
-  insertReplaceSupport = true,
-  labelDetailsSupport = true,
-  deprecatedSupport = true,
-  commitCharactersSupport = true,
-  tagSupport = { valueSet = { 1 } },
-  resolveSupport = {
-    properties = {
-      "documentation",
-      "detail",
-      "additionalTextEdits",
-    },
-  },
-}
-
-M.defaults = function()
-  dofile(vim.g.base46_cache .. "lsp")
-  -- require("nvchad.lsp").diagnostic_config()
-
-  require("lspconfig").lua_ls.setup {
-    on_init = M.on_init,
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-
-    settings = {
-      Lua = {
-        diagnostics = {
-          globals = { "vim" },
-        },
-        workspace = {
-          library = {
-            [vim.fn.expand "$VIMRUNTIME/lua"] = true,
-            [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
-            [vim.fn.stdpath "data" .. "/lazy/ui/nvchad_types"] = true,
-            [vim.fn.stdpath "data" .. "/lazy/lazy.nvim/lua/lazy"] = true,
-          },
-          maxPreload = 100000,
-          preloadFileSize = 10000,
-        },
-      },
-    },
-  }
-
-  require("lspconfig").pyright.setup {
-    on_init = M.on_init,
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-    filetypes = { "python" },
-  }
-
-  require("lspconfig").clangd.setup {
-    on_init = M.on_init,
-    capabilities = M.capabilities,
-  }
-
-  local function organize_imports()
-    local params = {
-      command = "_typescript.organizeImports",
-      arguments = { vim.api.nvim_buf_get_name(0) },
-    }
-    vim.lsp.buf.execute_command(params)
-  end
-
-  require("lspconfig").ts_ls.setup {
-    on_init = M.on_init,
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-    commands = {
-      OrganizeImports = { organize_imports, description = "Organize Imports" },
-    },
-  }
-
-  require("lspconfig").gopls.setup {
-    on_init = M.on_init,
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-  }
-end
-
 return {
-  {
-    "neovim/nvim-lspconfig",
-    event = "User FilePost",
-    dependencies = {
-      "mason.nvim",
-      { "williamboman/mason-lspconfig.nvim", config = function() end },
-      { "antosha417/nvim-lsp-file-operations", config = true },
-    },
-    opts = {
-      servers = { eslint = {} },
-      setup = {
-        clangd = function(_, opts)
-          opts.capabilities.offsetEncoding = { "utf-16" }
+  "neovim/nvim-lspconfig",
+  dependencies = {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+  },
+  config = function()
+    vim.diagnostic.config {
+      float = { border = "rounded" },
+    }
+
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+
+    -- Capabilities of nvim cmp
+    local has_cmp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+    if has_cmp then
+      capabilities = vim.tbl_deep_extend("force", capabilities, cmp_nvim_lsp.default_capabilities())
+    end
+
+    -- Optional: Blink (or other cmp) integration
+    -- local has_blink, blink = pcall(require, "blink.cmp")
+    -- if has_blink then
+    --   capabilities = vim.tbl_deep_extend("force", capabilities, blink.get_lsp_capabilities())
+    -- end
+
+    -- Add completion and workspace capabilities
+    capabilities.textDocument.completion.completionItem = {
+      documentationFormat = { "markdown", "plaintext" },
+      snippetSupport = true,
+      preselectSupport = true,
+      insertReplaceSupport = true,
+      labelDetailsSupport = true,
+      deprecatedSupport = true,
+      commitCharactersSupport = true,
+      tagSupport = { valueSet = { 1 } },
+      resolveSupport = {
+        properties = {
+          "documentation",
+          "detail",
+          "additionalTextEdits",
+        },
+      },
+    }
+    capabilities.workspace = {
+      fileOperations = {
+        didRename = true,
+        willRename = true,
+      },
+    }
+
+    ---@diagnostic disable-next-line: unused-local
+    local on_attach = function(client, bufnr)
+      local function map(mode, lhs, rhs, desc)
+        vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
+      end
+
+      map("n", "gd", vim.lsp.buf.definition, "Goto Definition")
+      map("n", "gD", vim.lsp.buf.declaration, "Goto Declaration")
+      map("n", "gi", vim.lsp.buf.implementation, "Goto Implementation")
+      map("n", "gr", vim.lsp.buf.references, "Find References")
+      map("n", "K", vim.lsp.buf.hover, "Hover Documentation")
+      map("n", "<leader>rn", vim.lsp.buf.rename, "Rename Symbol")
+      map("n", "<leader>ca", vim.lsp.buf.code_action, "Code Action")
+      map("n", "<leader>f", function()
+        vim.lsp.buf.format { async = true }
+      end, "Format Buffer")
+      -- map("n", "[d", vim.diagnostic.goto_prev, "Previous Diagnostic")
+      -- map("n", "]d", vim.diagnostic.goto_next, "Next Diagnostic")
+      map("n", "<leader>e", vim.diagnostic.open_float, "Line Diagnostic")
+      map("n", "<leader>q", vim.diagnostic.setloclist, "Quickfix Diagnostics")
+    end
+
+    require("mason").setup()
+
+    require("mason-lspconfig").setup {
+      ensure_installed = {
+        "lua_ls",
+        "ts_ls",
+        "pyright",
+        "clangd",
+        "dockerls",
+        "docker_compose_language_service",
+        "eslint",
+        "gopls",
+        "html",
+        "marksman",
+        "tailwindcss",
+        "stylelint_lsp",
+      },
+      handlers = {
+        function(server)
+          require("lspconfig")[server].setup {
+            capabilities = capabilities,
+            on_attach = on_attach,
+          }
         end,
-        eslint = function()
-          require("lazyvim.util").lsp.on_attach(function(client)
-            if client.name == "eslint" then
-              client.server_capabilities.documentFormattingProvider = true
-            elseif client.name == "tsserver" then
-              client.server_capabilities.documentFormattingProvider = false
-            end
-          end)
+
+        ["lua_ls"] = function()
+          require("lspconfig").lua_ls.setup {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+              Lua = {
+                runtime = { version = "LuaJIT" },
+                diagnostics = { globals = { "vim" } },
+                workspace = {
+                  checkThirdParty = false,
+                  library = {
+                    vim.fn.expand "$VIMRUNTIME/lua",
+                    vim.fn.stdpath "data" .. "/lazy/ui/nvchad_types",
+                    vim.fn.stdpath "data" .. "/lazy/lazy.nvim/lua/lazy",
+                  },
+                },
+                telemetry = { enable = false },
+              },
+            },
+          }
+        end,
+
+        ["ts_ls"] = function()
+          require("lspconfig").tsserver.setup {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            commands = {
+              OrganizeImports = {
+                function()
+                  vim.lsp.buf.code_action {
+                    context = {
+                      only = { "source.organizeImports" },
+                      diagnostics = {},
+                    },
+                  }
+                end,
+                description = "Organize Imports",
+              },
+            },
+          }
+        end,
+
+        ["clangd"] = function()
+          require("lspconfig").clangd.setup {
+            capabilities = vim.tbl_deep_extend("force", capabilities, {
+              offsetEncoding = { "utf-16" },
+            }),
+            on_attach = on_attach,
+          }
+        end,
+
+        ["gopls"] = function()
+          require("lspconfig").gopls.setup {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+              gopls = {
+                gofumpt = true,
+                usePlaceholders = true,
+                analyses = {
+                  unusedparams = true,
+                  shadow = true,
+                },
+              },
+            },
+          }
         end,
       },
-    },
-    config = function()
-      M.defaults()
-      vim.diagnostic.config {
-        float = { border = "rounded" },
-      }
-    end,
-  },
+    }
+  end,
 }

@@ -1,0 +1,100 @@
+for (HostEntity host : getHostList()) {
+int totalPes = host.getNumberOfPes();
+int index = getHostList().indexOf(host);
+int free = getFreePes().get(index);
+double utilization = 1.0 - ((double) free / totalPes);
+if (utilization < UNDERLOAD_THRESHOLD) {
+return (Host) host;
+}
+}
+return null;
+}
+// Getters and setters
+public Map<String, Host> getVmTable() {
+return vmTable;
+}
+protected void setVmTable(Map<String, Host> vmTable) {
+this.vmTable = vmTable;
+}
+public Map<String, Integer> getUsedPes() {
+return usedPes;
+}
+protected void setUsedPes(Map<String, Integer> usedPes) {
+this.usedPes = usedPes;
+}
+public List<Integer> getFreePes() {
+return freePes;
+}
+protected void setFreePes(List<Integer> freePes) {
+this.freePes = freePes;
+}
+@Override
+public HostEntity findHostForGuest(GuestEntity guest) {
+// TODO Auto-generated method stub
+throw new UnsupportedOperationException("Unimplemented method 'findHostForGuest'");
+}
+}
+hello
+explain this picture in detail, what is HMCA home = /usr
+include-system-site-packages = false
+version = 3.13.3
+executable = /home/yagna/Code/Flower/.venv/bin/python3.13
+explain this picture in detail, what is HMCA: /home/yagna/Pictures/Screenshots/03-May-2025_22-49-30.png
+/bye
+answer this question /home/yagna/Pictures/Screenshots/08-May-2025_01-50-30.png
+answer this question /home/yagna/Pictures/Screenshots/08-May-2025_02-11-11.png
+answer this question /home/yagna/Pictur08-May-2025_02-14-52.png
+answer this question /home/yagna/Pictur08-May-2025_02-14-52.png
+answer this question /home/yagna/Pictures/Screenshots/08-May-2025_02-14-52.png
+answer this question /home/yagna/Pictures/Screenshots/08-May-2025_02-18-25.png
+/bye
+explain graph representation learnign in detail
+fix this drwxr-xr-x 1 yagna users      822 Feb 27 03:39 Waves-Mobile
+drwxr-xr-x 1 yagna users      678 Feb 27 03:39 Oceans-Mobile
+drwxrwxrwx 1 yagna users      556 Feb 14 01:36 Wallpapers
+-rw-r--r-- 1 yagna users     5860 Apr 11 17:34 Pengiun.jpg
+-rw-r--r-- 1 yagna users  7380187 Feb 27 03:39 Wallpaper-Main.jpg
+-rw-r--r-- 1 yagna users  4130779 Feb 27 03:39 Wallpaper.jpg
+-rw-r--r-- 1 yagna users       28 Apr 17 20:39 test.md
+❯ chmod drwxr-xr-x Pictures/Wallpapers
+chmod: invalid mode: ‘drwxr-xr-x’
+Try 'chmod --help' for more information.
+~ ❯ 
+fix this ❯ chmod -rw-r--r-- Pictures/Wallpapers
+chmod: Pictures/Wallpapers: new permissions are --x-wx-wx, not --x--x--x
+q
+fix this to recursive apply/ remove executable  permission on all pictures ❯ chmod 644 Pictures/* -r
+chmod: cannot access '644': No such file or directory
+~ ❯ 
+fix this and get bac to original permissions ❯ ls Oceans-Mobile
+ls: cannot open directory 'Oceans-Mobile': Permission denied
+❯ ls
+total 75308
+d-w------- 1 yagna users      384 Feb 27 03:39 Oceans-Special-Editions
+d-w------- 1 yagna users      288 Feb 27 03:39 Ocenas-Desktop
+d-w------- 1 yagna users       56 Dec 14 00:20 Random
+d-w------- 1 yagna users     5904 May 13 23:53 Screenshots
+d-w------- 1 yagna users       84 May 16 03:21 Steam-Wallpapers
+d-w------- 1 yagna users      556 Feb 14 01:36 Wallpapers
+d-w------- 1 yagna users      168 Dec 14 00:20 Wallpapers-Desktop
+d-w------- 1 yagna users      114 Oct 12  2024 Wallpapers-Mobile
+d-w------- 1 yagna users      582 Feb 27 03:39 Waves-Desktop
+d-w------- 1 yagna users      822 Feb 27 03:39 Waves-Mobile
+d-w------- 1 yagna users      678 Feb 27 03:39 Oceans-Mobile
+--w------- 1 yagna users  1677492 Feb 27 03:39 Earth-Wallpaper.jpg
+--w------- 1 yagna users   153478 Feb 27 03:39 Jocker-Wallpaper.jpg
+--w------- 1 yagna users     5860 Apr 11 17:34 Pengiun.jpg
+--w------- 1 yagna users   144070 Feb 27 03:39 ROG-Wallpaper.jpg
+--w------- 1 yagna users  2276849 Feb 27 03:39 Spideman-wallpaper.jpg
+--w------- 1 yagna users  5099896 Feb 27 03:39 Spidey-dark-Wallpaper.jpg
+--w------- 1 yagna users  7380187 Feb 27 03:39 Wallpaper-Main.jpg
+--w------- 1 yagna users  4130779 Feb 27 03:39 Wallpaper.jpg
+--w------- 1 yagna users 10260118 Oct 13  2024 Wukong-Ultrawide.png
+--w------- 1 yagna users    24695 Feb 27 03:39 Yagna-Rao-Profile.jpg
+--w------- 1 yagna users    28587 Feb 27 03:39 Yagna-Rao.jpg
+--w------- 1 yagna users 12515061 Oct 13  2024 japan.jpg
+--w------- 1 yagna users   153478 Apr 17 20:39 test.jpg
+--w------- 1 yagna users       28 Apr 17 20:39 test.md
+--w------- 1 yagna users 33233857 Oct 13  2024 wukong.png
+~/Pictures ❯ 
+/bye

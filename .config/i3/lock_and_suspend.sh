@@ -1,3 +1,3 @@
 #!/bin/bash
-/home/yagna/Code/test.sh && systemctl suspend
+$HOME/.local/ && systemctl suspend
 

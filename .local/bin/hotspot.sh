@@ -6,6 +6,17 @@ ETHERNET_INTERFACE="eno1"
 SSID="YagnaRao"
 PASSWORD="micromax"
 
+if [[ "$1" == "off" ]]; then
+  nmcli radio wifi off
+  exit 0
+fi
+
+if [[ "$1" == "wifi" ]]; then
+  nmcli radio wifi off
+  nmcli radio wifi on
+  exit 0
+fi
+
 echo "Starting wifi"
 nmcli radio wifi on
 

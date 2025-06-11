@@ -1,6 +1,6 @@
 return {
   "folke/todo-comments.nvim",
-  event = "VeryLazy",
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
@@ -48,7 +48,6 @@ return {
     merge_keywords = true,
   },
 }
-
 
 -- FIX:
 -- TODO:

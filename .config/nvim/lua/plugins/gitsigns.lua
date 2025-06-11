@@ -22,7 +22,9 @@ return {
     }
   end,
   config = function(_, opts)
-    dofile(vim.g.base46_cache .. "git")
+    if Nvchad then
+      dofile(vim.g.base46_cache .. "git")
+    end
     require("gitsigns").setup(opts)
   end,
 }

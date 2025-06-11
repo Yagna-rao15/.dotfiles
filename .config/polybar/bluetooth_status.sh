@@ -1,30 +1,43 @@
 #!/bin/bash
 
-# Function to get the current Bluetooth status
-get_bluetooth_status() {
-    bluetoothctl show | grep -q "Powered: yes"
-    [ $? -eq 0 ] && echo "on" || echo "off"
+primary_color="%{F#74c7ec}"
+text_color="%{F#cdd6f4}"
+reset_color="%{F-}"
+
+ICON_ON=""
+ICON_OFF="󰂲"
+
+get_bluetooth_powered() {
+  bluetoothctl show | grep -q "Powered: yes"
 }
 
-# Function to toggle Bluetooth
-toggle_bluetooth() {
-    if [ "$(get_bluetooth_status)" == "on" ]; then
-        bluetoothctl power off
-        echo "󰂲 Bluetooth: Off"  # Change icon for off state
-    else
-        bluetoothctl power on
-        echo " Bluetooth: On"    # Change icon for on state
-    fi
+get_connected_devices() {
+  bluetoothctl devices Connected | cut -d ' ' -f 3- | paste -sd ", " -
 }
 
-# Check if the script was called with an argument
-if [ "$1" == "toggle" ]; then
-    toggle_bluetooth
-else
-    if [ "$(get_bluetooth_status)" == "on" ]; then
-        echo "%{F$COLOR}%{F-}" # Active state with color
+if [[ "$1" == "notify" ]]; then
+  if get_bluetooth_powered; then
+    devices=$(get_connected_devices)
+    if [[ -n "$devices" ]]; then
+      notify-send "Bluetooth Status" "Connected to: $devices"
     else
-        echo "%{F#f38ba8}󰂲%{F-}" # Inactive state with a red color
+      notify-send "Bluetooth Status" "Bluetooth is ON\nNo devices connected"
     fi
+  else
+    notify-send "Bluetooth Status" "Bluetooth is OFF"
+  fi
+  exit 0
 fi
 
+if get_bluetooth_powered; then
+  devices=$(get_connected_devices)
+  if [[ -n "$devices" ]]; then
+    # echo "${primary_color}${ICON_ON}${reset_color} ${text_color}${devices}${reset_color}"
+    echo "${primary_color}${ICON_ON}${reset_color}"
+  else
+    # echo "${primary_color}${ICON_OFF}${reset_color} ${text_color}On${reset_color}"
+    echo "${primary_color}${ICON_OFF}${reset_color}"
+  fi
+else
+  echo "${primary_color}${ICON_OFF}${reset_color}"
+fi

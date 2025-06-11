@@ -1,18 +1,25 @@
 # Aliases
-alias la='/usr/bin/ls -1AX --color'
-alias ls='/usr/bin/ls -lAX --color'
+# alias la='/usr/bin/ls -1AX --color | sort'
+# alias ls='ls -lAX --color=always | awk '\''{print $0 | "sort -k9"}'\'''
+# alias ls='ls -lAX --color=always'
+ls() { command ls -lAX --color=always "$@" | LC_ALL=C sort -k9 }
+la() { command /usr/bin/ls -1AX --color=always "$@" | LC_ALL=C sort -k9 }
 alias c='clear'
+alias cls='c && ls'
 alias mkdir='mkdir -pv'
 alias mv='mv -i'
 alias rm='rm -i'
 alias ..='cd ..'
 alias q='exit'
+alias cat='bat'
 alias pp='ping google.com'
 alias ba='blueman-applet'
 alias bm='blueman-manager'
 alias h="history | grep "
 alias nano="-e"
 alias cd='z'
+alias fuck='$(thefuck $(fc -ln -1))'
+
 
 # Git
 alias gs='git status --short'
@@ -22,12 +29,18 @@ alias gc='git commit'
 alias gb='git branch'
 alias gi='git init'
 alias gcl='git clone'
-alias gl="git log --all --graph --pretty=\
-  format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%S%n'"
+alias log="git log --all --graph --pretty=format:'%C(magenta)%h %C(white)%an %C(cyan)%ar %C(yellow)%d%n  %C(white)%s%C(reset)'"
 
-# Nvim
-alias nvim-own='NVIM_APPNAME=nvim-own nvim'
-alias nvim-test='NVIM_APPNAME=nvim-test nvim'
+# Nvim App Switcher Aliases
+# Im proud of myself
+for var in ~/.config/nvim-*; do
+  [ -d "$var" ] || continue
+  name=$(basename "$var")
+  alias "$name"="NVIM_APPNAME=$name nvim"
+done
+
+# alias nvim-own='NVIM_APPNAME=nvim-own nvim'
+# alias nvim-test='NVIM_APPNAME=nvim-test nvim'
 alias nvimm='nvim $(fzf)'
 
 # Get IP
@@ -38,7 +51,15 @@ alias du='du --human-readable'
 alias free='free --human'
 
 # Ripgrep
-alias rg="rg --hidden --smart-case --glob='!.git/' --no-search-zip --trim --colors=line:fg:black --colors=line:style:bold --colors=path:fg:magenta --colors=match:style:nobold"
+alias rg="rg --hidden --smart-case --glob='!.git/' --no-search-zip --trim \
+--colors=line:fg:black \
+--colors=line:style:bold \
+--colors=path:fg:cyan \
+--colors=match:fg:yellow \
+--colors=match:style:bold"
+
+# Webcam Test
+alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 
 # Always work in a tmux session if Tmux is installed
 # if [[ -n "$SSH_TTY" || "$TERM" == "xterm"* ]]; then

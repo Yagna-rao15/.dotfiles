@@ -114,8 +114,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600, move position center
 for_window [class="python3"] floating enable, move position center, resize set 800 600
-# for_window [app_id="org.matplotlib.Matplotlib3"] floating enable, move position center, resize set 800 600
-
+for_window [class="protonvpn-app"] floating enable; move position center; resize set 600 800
 
 for_window [class="kitty"] border pixel 1
 assign [class="zen"] 1
@@ -175,7 +174,7 @@ bindsym $mod+r mode "resize"
 # exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Pengiun.jpg --no-fehbg
-exec_always feh --bg-scale $HOME/Pictures/Wallpapers/Earth-Wallpaper.jpg --no-fehbg
+exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Earth-Wallpaper.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
 
 # Start XDG autostart .desktop files using dex. See also see [[https://wiki.archlinux.org/index.php/XDG_Autostart]]
@@ -184,16 +183,19 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock -- i3lock -n
 exec --no-startup-id nm-applet
 exec --no-startup-id picom --experimental-backends --backend glx --vsync
-exec_always --no-startup-id xmodmap ~/.dotfiles/.x11/Xmodmap
+exec_always --no-startup-id xmodmap ~/.dotfiles/.config/x11/Xmodmap
 # exec_always --no-startup-id xcape -e 'Control_L=Escape'
 exec_always --no-startup-id xcape -e 'Control_L=Control_L'
 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id bash -c 'pactl set-sink-volume @DEFAULT_SINK@ +5% && v=$(pactl get-sink-volume @DEFAULT_SINK@ | awk "{print \$5}" | tr -d "%") && [ $v -gt 100 ] && pactl set-sink-volume @DEFAULT_SINK@ 100%' && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym $mod+Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id bash -c 'pactl set-source-volume @DEFAULT_SOURCE@ +5% && v=$(pactl get-source-volume @DEFAULT_SOURCE@ | awk "{print \$5}" | tr -d "%") && [ $v -gt 100 ] && pactl set-source-volume @DEFAULT_SOURCE@ 100%' && $refresh_i3status
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id pactl set-source-volume @DEFAULT_SOURCE@ -5% && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Scree Brightness
@@ -214,7 +216,7 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id brightnessctl -d 'asus::kbd_b
 bindsym XF86Launch3 exec "asusctl aura -n"
 
 # Power profile Control
-bindsym XF86Launch4 exec --no-startup-id sh -c "asusctl profile --next && killall -SIGUSR1 i3status"
+bindsym XF86Launch4 exec --no-startup-id sh -c "asusctl profile --next && killall -SIGUSR1 i3status" && $refresh_i3status
 
 # Screenshot tool
 bindsym Ctrl+F6 exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Pictures/Screenshots/$NOW.png && xclip -selection clip -t image/png ~/Pictures/Screenshots/$NOW.png
