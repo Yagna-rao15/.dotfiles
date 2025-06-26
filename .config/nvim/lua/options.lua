@@ -16,7 +16,7 @@ g.netrw_banner = 0 -- netrw banner mode
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 opt.cursorline = true -- highlight current line
 opt.cursorcolumn = false -- highlight current column
-opt.colorcolumn = "80" -- highlight column at 80 chars
+-- opt.colorcolumn = "80" -- highlight column at 80 chars
 opt.signcolumn = "yes" -- always show sign column
 opt.termguicolors = true -- enable 24-bit RGB colors
 

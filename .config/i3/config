@@ -3,7 +3,9 @@ set $mod Mod1
 set $shutdown shutdown now
 set $reboot reboot
 
+smart_borders on
 for_window [class="^.*"] border pixel 0
+for_window [class="kitty"] border pixel 1
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4 #285577
 
 font pango:JetBrainsMono Nerd Font 8
@@ -46,7 +48,6 @@ bindsym $mod+Shift+space floating toggle
 # enabling rofi
 # bindsym $mod+space exec rofi -show drun
 bindsym $mod+space exec ~/.dotfiles/.local/bin/apps.sh
-bindsym Mod4+space exec ~/.dotfiles/.local/bin/dmenu-shell.sh
 # bindsym $mod+space exec dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono'
 
 # change focus
@@ -116,7 +117,6 @@ for_window [window_role="GtkFileChooserDialog"] resize set 800 600, move positio
 for_window [class="python3"] floating enable, move position center, resize set 800 600
 for_window [class="protonvpn-app"] floating enable; move position center; resize set 600 800
 
-for_window [class="kitty"] border pixel 1
 assign [class="zen"] 1
 
 # Launch ZEN-BROWSER
@@ -128,6 +128,13 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 # Dunst
 exec --no-startup-id dunst
+
+# Gnome
+exec --no-startup-id /usr/lib/gsd-xsettings
+exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-flashback
+exec --no-startup-id /usr/bin/gnome-screensaver
 
 # reload the configuration file
 # bindsym $mod+Shift+c reload
@@ -173,9 +180,9 @@ bindsym $mod+r mode "resize"
 # Setting Wallpaper
 # exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
-# exec_always feh --bg-scale $HOME/Pengiun.jpg --no-fehbg
-exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Earth-Wallpaper.jpg --no-fehbg
-# exec_always feh --bg-scale $HOME/Downloads/383783.jpg --no-fehbg
+exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Blue-Scenery.png --no-fehbg
+# exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Earth-Wallpaper.jpg --no-fehbg
+# exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Wallpaper-Blue-Black-Gradient.png --no-fehbg
 
 # Start XDG autostart .desktop files using dex. See also see [[https://wiki.archlinux.org/index.php/XDG_Autostart]]
 exec --no-startup-id dex --autostart --environment i3

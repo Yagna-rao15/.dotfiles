@@ -8,6 +8,9 @@ local M = {
     theme = "ayu_dark", -- or whatever theme you prefer
     hl_add = {},
     hl_override = {
+      ZenBg = {
+        bg = "NONE", -- remove grey background
+      },
       Comment = { italic = true },
       ["@comment"] = { italic = true },
     },

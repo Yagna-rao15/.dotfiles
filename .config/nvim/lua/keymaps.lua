@@ -80,10 +80,10 @@ map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 -- ============================================================================
 
 -- Window navigation
-map("n", "<C-h>", "<cmd>lua require('config.window').cycle_window_left()<CR>", { desc = "Go to left window" })
-map("n", "<C-l>", "<cmd>lua require('config.window').cycle_window_right()<CR>", { desc = "Go to right window" })
-map("n", "<C-j>", "<cmd>lua require('config.window').cycle_window_down()<CR>", { desc = "Go to lower window" })
-map("n", "<C-k>", "<cmd>lua require('config.window').cycle_window_up()<CR>", { desc = "Go to upper window" })
+map("n", "<M-h>", "<cmd>lua require('config.window').cycle_window_left()<CR>", { desc = "Go to left window" })
+map("n", "<M-l>", "<cmd>lua require('config.window').cycle_window_right()<CR>", { desc = "Go to right window" })
+map("n", "<M-j>", "<cmd>lua require('config.window').cycle_window_down()<CR>", { desc = "Go to lower window" })
+map("n", "<M-k>", "<cmd>lua require('config.window').cycle_window_up()<CR>", { desc = "Go to upper window" })
 
 -- Alternative window navigation (fallback)
 -- map("n", "<C-h>", "<C-w>h", { desc = "Go to left window" })

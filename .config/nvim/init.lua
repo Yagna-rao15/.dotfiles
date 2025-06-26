@@ -1,6 +1,7 @@
 require "keymaps"
 require "options"
 require "autocmds"
+require("game").setup()
 
 Nvchad = true
 if Nvchad then

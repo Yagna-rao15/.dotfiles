@@ -120,3 +120,61 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "InsertLeave" }, {
 vim.api.nvim_create_user_command("Setwd", function()
   vim.cmd("cd " .. vim.fn.expand "%:p:h")
 end, {})
+
+-- Toggle flag
+vim.g.markdown_zen_enabled = false
+
+-- Custom :ZenMode command
+vim.api.nvim_create_user_command("ZenMode", function()
+  local ft = vim.bo.filetype
+  if ft ~= "markdown" then
+    vim.notify("ZenMode is only for Markdown files ✍️", vim.log.levels.WARN)
+    return
+  end
+
+  local o = vim.opt
+  local bufnr = vim.api.nvim_get_current_buf()
+
+  if not vim.g.markdown_zen_enabled then
+    vim.cmd [[
+      highlight NormalNC guibg=NONE ctermbg=NONE
+      highlight NormalFloat guibg=NONE ctermbg=NONE
+    ]]
+    -- Enable Zen Mode
+    require("zen-mode").open()
+
+    -- Visual settings
+    o.wrap = true
+    o.linebreak = true
+    o.breakindent = true
+    o.colorcolumn = ""
+    o.number = false
+    o.relativenumber = false
+    o.textwidth = 80
+    vim.cmd "hi ZenBg guibg=NONE ctermbg=NONE"
+
+    -- Smart j/k keymaps (buffer-local)
+    local opts = { buffer = bufnr, noremap = true, silent = true }
+    vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, unpack(opts) })
+    vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, unpack(opts) })
+    vim.keymap.set("v", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, unpack(opts) })
+    vim.keymap.set("v", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, unpack(opts) })
+
+    vim.g.markdown_zen_enabled = true
+    vim.notify "ZenMode enabled 🎧"
+  else
+    -- Disable Zen Mode
+    require("zen-mode").close()
+
+    -- Reset settings
+    o.wrap = false
+    o.linebreak = false
+    o.breakindent = false
+    o.colorcolumn = "80"
+    o.number = true
+    o.relativenumber = true
+
+    vim.g.markdown_zen_enabled = false
+    vim.notify "ZenMode disabled 🧯"
+  end
+end, {})

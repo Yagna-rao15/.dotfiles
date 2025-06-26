@@ -276,7 +276,6 @@ node index.js
 npm i express
 npm start
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
-gcc test.c
 ls .zen
 cd Code/ML/\\
 ls
@@ -881,7 +880,6 @@ sudo pacman -Syu nvidia-dkms nvidia-utils nvidia-settings
 nvidia-driver-supported-branches
 conda install tensorflow-gpu
 nvim Code/ML
-nvim main.py
 sudo pacman R python-jupyter
 sudo pacman -R jupyter-notebook
 sudo pacman -R jupyterlab
@@ -922,7 +920,6 @@ yay -Ss cudnn\
 
 yay -S cudnn\
 
-source ~/.config/zsh/.zshrc
 ls /usr/local/cuda/include/cudnn*.h\
 ls /usr/local/cuda/lib64/libcudnn*\
 
@@ -1398,7 +1395,6 @@ sudo nano /usr/share/applications/nautilus.desktop\
 
 sudo nvim /usr/share/applications/nautilus-autorun-software.desktop
 chmod +x $(fzf)
-GTK_THEME=Adwaita:dark nautilus
 nano ~/.local/share/applications/nautilus-dark.desktop\
 \
 
@@ -2920,7 +2916,6 @@ nvim patch.diff
 patch -p1 < patch.diff
 dmenu_run -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
 echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 24
-git diff
 echo "APP GAME MUSIC PICTURES VIDEOS" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -fn 'JetBrainsMono Nerd Font' -h 32
 find ~ -type d -name "dmenu*" 2>/dev/null\
 
@@ -3397,11 +3392,9 @@ git clean -n\
 ls lua/core
 git clean -f\
 
-git clean -fd
 cd .config/nvim\\
 
 root
-su
 vim init.lua
 unzip Kripton-v40.tar.xz
 tar x Kripton-v40.tar.xz
@@ -3838,7 +3831,6 @@ rm app/api/page.tsx
 mv app/test/page.tsx app/test/session
 mv app/test/delete/page.tsx app/test
 rm -rf app/test/delete app/test/session
-cd app
 mkdir pages
 mv app/test pages
 cp pages/test app
@@ -3896,7 +3888,6 @@ cat Obsidian/Kitty.md
 sudo pacman -R kitty-shell-integration
 sudo pacman -R kitty-terminfo
 mkdir Music
-ls Music
 mkdir Documents
 cd ../Backup
 cd Obsidian_
@@ -3987,7 +3978,6 @@ nvim apps.sh
 cd Immich/library/library/admin/
 ls Code/initdb
 rm -rf Code/initdb
-ip
 git commit -m "Changes for Prod Email Fix"
 nvim TODO.md
 curl -s GET https://svnit.ac.in/images/namehindi.png -o public/namehindi.png
@@ -4371,7 +4361,6 @@ python src/annotator.py --image_dir ./data/temp --output_csv annotations.csv
 docker pull jellyfin/jellyfin:latest  # or docker pull ghcr.io/jellyfin/jellyfin:latest
 docker pull jellyfin/jellyfin:latest
 mkdir JellyFin
-cd JellyFin
 mkdir -p /srv/jellyfin/{config,cache}
 sudo mkdir -p /srv/jellyfin/{config,cache}
 docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest
@@ -4438,7 +4427,6 @@ john passwd
 rm test_jtr.sh passwd
 sudo pacman -R john
 sudo pacman -S dig
-sudo pacman -S bind
 dig A example.com
 dig help +short  @dns.toys
 dig ip @dns.toys
@@ -5235,11 +5223,8 @@ ls ~/.config
 rm ~/.config/libreoffice
 mv .config/libreoffice ~/.config/
 git commit -m "Clean Up on 10-02-25 Happy new Year"
-nvim test.c
 rm test.c
 ls Test/e
-ls Test
-rm -rf Test
 cd Code/S
 mv ~/Downloads/Lab_3.ipynb ~/Code/SNA/Lab_3_U22CS104_SNA.ipynb
 ls ~/Downloads | grep web
@@ -5387,7 +5372,6 @@ yt-dlp -o "Video.mp4" "https://rr3---sn-cvh7kn6z.googlevideo.com/videoplayback?e
 yt-dlp "https://rr5---sn-cvh76ner.googlevideo.com/videoplayback?expire=1739835345&ei=cXOzZ-nEB7ahhcIPn83cmQg&ip=152.115.197.189&id=o-AHJTCKqKHMpvEFPioE-lCq96zL6vCT-mjyTcDpRBy_QD&itag=400&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401%2C597%2C598&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AUWDL3yUxZCRezsFbsl4LIeAtz4c8ycorOTprKVkZ7cO-l5g5zoeGpl7rCyircdtJxVv2lD2j4ObHpiJ&spc=RjZbSRn73FQHxVH_DpU9_F32xd8_zxBQ0Fj5EP_n7KNNCTIm4CTKELPkaJmcU-o&vprv=1&svpuc=1&mime=video%2Fmp4&ns=hbo3lC6UeszswN0_I9Bm9N8Q&rqh=1&gir=yes&clen=39351906&dur=98.333&lmt=1733486360269507&keepalive=yes&fexp=24350590,24350737,24350827,24350961,24350977,24350978,24351082,24351132,24351184,51326932,51331020&c=MWEB&sefc=1&txp=4532434&n=07UWqFq7sdtT6A&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAIfIWDl3IbVUBM5uCFtqoy86BPhmRQbH-x4rACmnG8SCAiB2FZGjoFYu6II0EA9_VBbd1MPfu0U7BDe03HsKhbZgeA%3D%3D&rm=sn-bavc5ajvooxju-j2il7l,sn-i5hed7z&rrc=79,104&req_id=82e6df03b5a7a3ee&cmsv=e&rms=rdu,au&redirect_counter=2&cms_redirect=yes&ipbypass=yes&met=1739827325,&mh=Rw&mip=160.202.10.68&mm=29&mn=sn-cvh76ner&ms=rdu&mt=1739827007&mv=m&mvi=5&pl=24&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=AGluJ3MwRAIgKgbfEXvi4pkq2cW90-r2qJD6VzTal0TgxVOtsVGNil0CIAlXRSo10vRF80qpmPfX8RqvQSuOVq9G2lMq5nIurRAJ"
 yt-dlp "https://youtu.be/04TsqI1lUV8?si=C3n_rBCEomYtr83y"
 ./SF-24\ Car\ Launch\ \[04TsqI1lUV8\].webm
-sudo pacman -S vlc
 ffmpeg -i Ferrari-Live-Wallpaper.webm -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k Ferrari-Live-Wallpaper.mp4\
 
 du -sh Ferrari-Live-Wallpaper.webm
@@ -5600,14 +5584,11 @@ rm universal.apk toc.pb NextJS-BusApp.zip
 mv NextJS-BusApp.apks NextJS-BusApp.zip
 unzip NextJS-BusApp.zip
 du -sh universal.apk
-adb devices\
-
 adb install universal.apk
 curl https://node-server-bus.vercel.app/get-location
 iwconfig
 nmcli device wifi connect "YagnaRao 69" password "micromax"q
 ls ~/Dow
-ls ~/Downloads
 rm ~/Downloads/3\(1\).py
 mv ~/Downloads/1.py ./6_1.py
 mv ~/Downloads/2.py ./6_2\.py
@@ -5667,7 +5648,6 @@ android-studio\\
 du -sh Code/Android
 du -sh Code/TestApp
 du -sh Android
-docke rps
 nmcli device wifi list
 rm -rf Code/TestApp
 rm -rf Code/MyApplication
@@ -6087,8 +6067,6 @@ supergfxctl -m hybrid\
 supergfxctl -m discrete
 supergfxctl -m dedicated\
 
-sudo nvidia-settings\
-
 asusctl profile --help\
 
 asusctl mux --integrated\
@@ -6182,7 +6160,6 @@ cd /usr/share
 cd icons/default
 nvim index.theme
 cd gtk-4.0
-nvidia-smi
 cod
 nvim \\
 
@@ -6356,8 +6333,6 @@ paccache -r
 du -sh 
 cd .config/nvim
 sudo pacman -S pacman-contrib
-sudo pacman -Rns $(pacman -Qdtq)\
-
 spr
 cp .config/alacritty ala
 cp .config/alacritty ala -r
@@ -6421,7 +6396,6 @@ mpv Downloads/@CS_Files\ -Squid\ Game\ S02E07\ Friend\ or\ Foe\ 1080p\ HQ\ NF\ W
 git clone https://github.com/jdpedersen1/fzfm.git ./FZFM
 cd FZFM
 chmod +x *.sh
-sxiv
 sudo pacman -S bat
 ./fzfm.sh
 rm -rf FZFM
@@ -6489,7 +6463,6 @@ docker container stop portainer
 docker container rm dozzle-dozzle-1
 docker container rm pihole
 docker container rm portainer
-docker iamges
 docker image rm 7e2c1211ec99
 docker image rm archlinux:latest
 docker image rm amir20/dozzle
@@ -6549,7 +6522,6 @@ nmap -p 80 172.21.1.16
 nmap -sn 172.21.2.0/24\
 
 ssh 172.21.2.7
-cd config
 nmcli device wifi connect "Nothing Phone (2)_6407" password "123123123"
 nmcli device wifi connect "computing lab 2"
 nmcli device wifi connect "iQOO Z9 5G" password "123456789"
@@ -6577,7 +6549,6 @@ echo ftp://172.21.5.65\\
 curl ftp://172.21.5.65
 curl -O ftp://172.21.5.65/SparkVM-001.ova\
 
-oq
 vi
 ftp 172.21.5.65
 cd busapp
@@ -6600,7 +6571,6 @@ adb pair 10.42.0.105:33631
 adb connect 10.42.0.105:33631
 adb connect 10.42.0.105:41867
 adb install Downloads/whatsapp-cleaner-v1.0.3.apk
-ks
 feh Downloads/my-notion-face-transparent.png
 ls code
 ls Code/Start-Page
@@ -6614,7 +6584,6 @@ cd rof
 echo "1"
 git commit 
 spf
-nau
 gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'\
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\
@@ -6665,7 +6634,6 @@ xrandr --dpi 140\
 xsettingsd &\
 xset s off -dpms\
 
-nvim script.sh
 man xset
 ⃽� xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
@@ -6682,7 +6650,6 @@ xrandr --dpi 140\
 xsettingsd &\
 xset s off -dpms\
 
-chmod +x script.sh
 gnome-shell-extension-tool
 ./script.sh
 source .zshenv
@@ -6825,7 +6792,6 @@ printf "\e]66;h=2:s=3;Σ\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]6
 printf "\e]66;h=2:s=3;Σ\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a\n Hello"
 printf "\e]66;h=2:s=3;Σ\a\e]66;n=1:d=2:v=0;n\a\n(S\e]66;n=1:d=2:v=1;i\a + S\e]66;n=1:d=2:v=1;i+1\a)\n\e]66;n=1:d=2:v=1;i=1\a\n"
 mkdir NeoVim
-cd neovim
 make CMAKE_BUILD_TYPE=Debug\
 
 sudo pacman -S gdb
@@ -6849,7 +6815,6 @@ openssl rsautl -encrypt -pubin -inkey public_key.pem -in message.txt -out encryp
 \
 
 rm -rf Code/ISC/lab-8
-1q
 exec gnome-settings-daemon
 sudo pacman -S gnome-settings-daemon
 nvim ll
@@ -6900,7 +6865,6 @@ yay -S obsidian
 ~/Downloads/Obsidian-1.8.9.AppImage
 rm Downloads/Obsidian-1.8.9.AppImage
 yay -S obsidian 
-sudo pacman -R nautilus
 ls .config/kitty
 rm -rf .config/kitty
 rm .\~lock.Lab_7_U22CS104_ISC.odt\#
@@ -6945,8 +6909,6 @@ sudo pacman -R obsidian
 flatpak run md.obsidian.Obsidian
 flatpak uninstall md.obsidian.Obsidian org.freedesktop.Platform org.freedesktop.Platform.GL.default org.freedesktop.Platform.GL.nvidia-570-124-04 org.freedesktop.Platform.openh264 org.gtk.Gtk3theme.Adwaita-dark
 obsidian\
-
-sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
 
 echo $XDG_CURRENT_DESKTOP\
 
@@ -7256,7 +7218,6 @@ sudo pacman -Syu\\
 
 rm -rf NextJS-Dashboard
 du -sh /var/cache/pacman/pkg/ 
-sudo pacman -Qdtq
 [200~pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 ~
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h\
@@ -7276,7 +7237,6 @@ python3 9_2.py input encrypt decrypt "[2,0,1]" 3
 python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,7]" 7
 python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,0]" 7
 g++ test.cc
-./a.out
 yay -S marimo
 /usr/sbin/python -m marimo --yes edit /home/yagna/Code/ISC --host=localhost --port=2818 --headless --no-token --watch
 /usr/sbin/python
@@ -7573,7 +7533,6 @@ docker exec -it nextcloud-nextcloud-aio-tailscale-1 sh
 mv docker-compose.yml compose
 docker container stop nextcloud-aio-mastercontainer nextcloud-nextcloud-aio-tailscale-1
 docker container rm nextcloud-aio-mastercontainer nextcloud-nextcloud-aio-caddy-1 nextcloud-nextcloud-aio-tailscale-1
-nvim docker-compose.yml
 docker container stop nextcloud-app-1 nextcloud-db-1
 docker container rm nextcloud-app-1 nextcloud-db-1
 docker image rm mariadb:10.5 nextcloud/all-in-one:latest nextcloud:latest nextcloud-nextcloud-aio-caddy:latest tailscale/tailscale:v1.80.3
@@ -7906,7 +7865,6 @@ cat temp
 chmod +x temp
 ./temp
 mv temp temp.py
-nvim test
 mv test test.py
 chmod +x test.py
 ./test.py
@@ -7959,7 +7917,6 @@ sudo pacman -Rns nautilus gnome-autoar gnome-desktop-4
 sudo pacman -Rns gnome-desktop gnome-color-manager libgnomekbd egl-wayland lib32-wayland qt6-wayland xorg-xwayland wayland gnome-desktop-common
 sudo pacman -Rns gnome-color-manager libgnomekbd egl-wayland lib32-wayland xorg-xwayland wayland
 pacman -Qi wayland | grep "Installed Size"
-sudo paccache -r
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{size=$4$5; gsub(/M/, "*1024"); gsub(/K/, "*1"); gsub(/G/, "*1024*1024"); total += int(size); print size, name}' | sort -h | awk '{sum += $1} END {print "Total Installed Size:", sum}'
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{size=$4; unit=$5; if (unit == "K") { size *= 1024 } else if (unit == "M") { size *= 1024 * 1024 } else if (unit == "G") { size *= 1024 * 1024 * 1024 }; total += size} END {printf "Total Installed Size: %.2f GiB\n", total / (1024 * 1024 * 1024)}'
 du -sh /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
@@ -7997,7 +7954,6 @@ nbt2json level.dat | jq -r '.Data.RandomSeed'
 yay -S nbtexplorer
 nbtexplorer --help
 java -jar LegacyLauncher_legacy.jarq
-sudo pacman -S nautilus
 sudo pacman -S ntfs-3g
 sudo mkdir /mnt/windows
 sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/windows
@@ -8218,7 +8174,6 @@ rm test.py marimo.py .pulse-cookie screen_combined.png C1.pdf C2_username_file.p
 rm a.out .observablehq \#ls\# \#\*message\*-20250413-042340\# \#sqlite3.c\#
 rm app-debug.apk app-release-1.apk app-release-2.apk app-release-3.apk app-release-4.apk app-release-5.apk app-release.apk
 rm .bash_history sqlite3.c
-df -h
 emacs
 sudo pacman -S ttf-liberation lib32-systemd
 sudo pacman -S mangohud lib32-mangohud
@@ -8726,8 +8681,6 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile\
 
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-free -h\
-
 sudo dd if=/dev/zero of=/swapfile bs=1M count=16384 status=progress
 sudo swapoff /swapfile 2>/dev/null\
 sudo rm /swapfile\
@@ -8799,7 +8752,6 @@ rm twitter.py
 cd temp
 mkdir Test
 cd test
-code
 jupytext 1.py -o 2.ipynb
 jupytext 2.ipynb -o 1.py
 jupytext 1.ipynb -o 1.py
@@ -8956,7 +8908,6 @@ df -T /\
 ollama rm gemma3:27b
 ollama rm gemma3:12b
 cd Android\ Open\ Source\ Project
-vlc
 cd celluloid
 ls watch_later
 ls watch_later/
@@ -9108,7 +9059,6 @@ rm ~/.ipython -rf\\
 ls ~/.config/ipython
 rm ~/.config/ipython -r
 nvim .ipython/ipython_config.py
-cd 
 ipython
 sudo cd /usr/bin/
 cd /usr/bin/
@@ -9152,7 +9102,6 @@ nvim .dotfiles/.config/zsh
 cd .config/zsh
 mv .history zshistory
 cat zshistory
-ga .
 gc
 gp
 nvim .conf
@@ -9169,7 +9118,6 @@ cp .conf/nvim_old .config/nvim-test -r
 cp .conf/nvim .config/nvim-test2
 cp .conf/nvim .config/nvim-test2 -r
 rm -rf .conf
-ls .config
 ls .config | grep nvim
 la .config | grep nvim
 la .config | grep nvim-
@@ -9207,9 +9155,7 @@ cd lab-exam
 nvim output.txt
 sudo pacman -Syu\\
 m
-nvim main.c
 gcc main.c -o main
-./main
 file ./main
 rm main.c main
 vi main.c
@@ -9381,24 +9327,17 @@ sudo nano /etc/X11/xorg.conf.d/10-amd-nvidia.conf\
 
 sudo -e /etc/X11/xorg.conf.d/10-amd-nvidia.conf\
 
-lspci | grep -E "VGA|3D"\
-
 yay -S nvidia nvidia-utils nvidia-prime bbswitch-dkms\
 
 la | sort
 cat .bash_history 
 cat .zsh_history
 rm .bash_history
-rm .zsh_history
 rm B.Tech\ 3\ -\ Sem\ 6\ -\ CS322\ Data\ Science\ -\ End\ Sem\ -\ April\ 2024.pdf zcompdump .zcompdump
 rm marimo.md marimo.py .pulse-cookie .python_history .jupyter -r
 rm -rf .pki .nv .emacs.d .dotnet .flwr venvs .keras .m2 .marimo
 rm -rf .java .gradle __pycache__ .cargo 
 man sort
-rm \;w
-exit
-nvidia-smi\
-
 cat Windows
 ls Windows
 sudo ls Windows
@@ -9425,7 +9364,6 @@ chmod +x *
 chmod +x * -r
 find . -type d -exec chmod +x {} \;\
 
-\ls
 sudo ls
 sudo -e Inbox.md
 sudo nvim
@@ -9445,7 +9383,6 @@ yay -S resvg
 cd yazi
 touch keymap.toml yazi.toml theme.toml
 rm config.yml
-cd zsh
 z
 nmcli device wifi\\
 
@@ -9478,7 +9415,6 @@ nmcli device wifi\
 
 nmcli device wifi connect \
 
-nvtop
 yay -S anki-bin
 unzip anki-25.02.4-linux-qt6.tar.zst
 cd anki
@@ -9488,7 +9424,6 @@ chmod +x anki-25.02.4-linux-qt6
 sudo ./anki-25.02.4-linux-qt6
 cd anki-25.02.4-linux-qt6
 ./anki
-anki
 rm -rf anki-25.02.4-linux-qt6
 rm anki-25.02.4-linux-qt6.tar.zst
 cd Code-Verse
@@ -9523,7 +9458,6 @@ cd My\ Games
 minecraft-legacy-launcher
 yay -Syi
 rm -rf MLAnalysisApp
-cd code 
 cd Super-Market-Analyzer
 rg @drawable/logo2
 rg supermarket
@@ -9617,7 +9551,6 @@ lablk
 yay 
 neofetch
 ffmpeg -i http://10.223.0.1:8080/video -vf format=yuv420p -f v4l2 /dev/video0
-df
 ls | awk '{print $0 | "sort -k9"}'
 ls Dendron
 ls Dendron-1
@@ -9638,9 +9571,7 @@ rm -rf .mozilla
 cd $XDG_DATA_HOME
 ls Co
 ls Code
-ls .android
 mv ~/.android ~/.dotfiles/.config/android
-stow .
 rm -rf .android
 mkdir $XDG_DATA_HOME/Code
 ls .vscode/extensions | grep kuber
@@ -9668,7 +9599,6 @@ mkdir -p ~/.cache/zsh
 [ -s ~/.zcompdump ] && mv ~/.zcompdump ~/.cache/zsh/zcompdump
 rm -f ~/.zsh_history ~/.zcompdump\
 
-time zsh --interactive -c exit
 ls Downloads/balenaEtcher-linux-x64
 vim Downloads/balenaEtcher-linux-x64
 nvim Downloads/balenaEtcher-linux-x64
@@ -9799,13 +9729,10 @@ mpv av://v4l2:/dev/video5 --profile=low-latency --untimed
 mpv av://v4l2:/dev/video1 --profile=low-latency --untimed
 mpv av://v4l2:/dev/video0 --profile=low-latency --untimed
 mpv av://v4l2:/dev/video4 --profile=low-latency --untimed
-webcam
 rg ls
 rg lock
 cd .local/bin
-rg hot
 nvim test.py
-tree
 git restore .config/nvim\
 
 cd ~/.config/nvim-test
@@ -9835,10 +9762,8 @@ mkdir NextJS-FileSystem
 cd NextJS-FileSystem
 rm -rf my-app
 git clone https://github.com/immich-app/immich.git Immich
-cd Immich
 cd server
 bui;d
-npm run start
 rm -rf Immich
 mv Cloud Archive
 ls Cloud
@@ -9861,8 +9786,6 @@ rm stream\(1\).ts
 nvim stream.ts
 vlc 
 celluloid
-cd .cache
-rm -rf .cache
 sudo cd /
 ls dev
 ls home
@@ -9871,34 +9794,23 @@ du -h --max-depth=3 ./ | sort -hr
 cd var
 ls cache
 cd cache
-sudo ls /var/cache/pacman/pkg/ | wc -l
 sudo paccache -r\
 
 paccache --help
-sudo paccache -r --keep 1\
-
-du -sh /var/cache/pacman/pkg/
 sudo pacman -Qdtq\
 
-pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 sudo pacman -R texlive-fontsextra python-pyspark mariadb eclipse-platform python-sympy
 sudo pacman -R texlive-fontsextra python-pyspark mariadb eclipse-platform
-pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 yay -R scala scala-docs scala-sources nix-docs nix nix-busybox python-selenium ulauncher python-fake-useragent
 sudo pacman -Qtdq | sudo pacman -Rns -
 sudo pacman -Rns $(pacman -Qdtq)\\
 
-sudo du -sh ~/.cache
 rm -rf ~/.cache/*\
 
-sudo journalctl --vacuum-time=1d\
-
-journalctl --disk-usage
 cd usr
 cd opt
 cd home/yagna
 cd Trash
-cd files
 nautilus ./
 cd ../Hostel
 cd c
@@ -9925,8 +9837,6 @@ journalctl -xeu tailscaled.service\
 sudo tailscaled --state=mem: --verbose=1
 sudo rm -f /var/run/tailscale/tailscaled.sock\
 sudo systemctl restart tailscaled\
-
-tailscale status\
 
 which tailscale\
 which tailscaled\
@@ -9971,7 +9881,6 @@ sudo swapon /dev/nvme0n1p8
 sudo -e /etc/fstab\
 	
 sudo blkid /dev/nvme0n1p8
-fastfetch
 nvim test.html
 mpv Downloads/Final\ Destination\ Bloodlines\ 2025\ 1080p\ HDRip\ HEVC\ x265-RMTeam.mkv
 ps
@@ -10005,7 +9914,6 @@ WINEPREFIX=~/Games/rdr2prefix wine Launcher.exe
 pavucontrol\
 
 music
-cd Music
 chmod 644 Recordings .thumbnails
 bash <(curl -sL https://mierak.github.io/rmpc/run-rmpc)
 pacman -S rmpc
@@ -10066,7 +9974,6 @@ pnpm install express --save
 pnpm config set store-dir /home/yagna/.local/share/pnpm/store/v10 --global
 pnpm install nodemon
 pnpm install nodemon --save
-fg
 cd backend
 nvim index.js
 pnpm install bcrypt jsonwebtoken sqlite3 --save
@@ -10093,24 +10000,20 @@ git switch test
 git switch main
 git branch -d test
 2q
-w
 tmux ~/Obsidian
 sudo pacman -S lazygit
-cd .dotfiles
 2;q
 nvim .local/bin/tmux-sessionizer.sh
 tmu
 cd "/home/yagna/.config"
 cd "/home/yagna/Obsidian/"
 cd "/home/yagna/Code/"
-lazygit
 rm tsconfig.json package.json pnpm-lock.yaml
 ls ML
 rm -rf .metals .scala-build .scalafmt.conf
 ls Sales-App
 rm -rf Sales-App
 rm -rf Archive/*
-l
 ls c
 nvim 1.py
 rm 1.py
@@ -10126,7 +10029,6 @@ lc
 ls Archive
 mv ML-C/ MLibC
 printf '\e]66;s=5;Heading 1\a\n\n\n'
-printf '\e]66;s=5;Heading 1\a\n\n\n\n'
 printf '\e]66;s=5;Heading 1\a\n\n\nHello'
 set stl = "%^<settings>^<affected font>%$<normal font>"
 printf '\e]66;s=5;Heading;s=3; 1\a\n\n\nHello'
@@ -10145,7 +10047,6 @@ python3 gpu.py
 cd NeoVim
 nvim BUILD.md
 chmod +x gpu.py
-./gpu.py
 mv NextJS-Portal Archive
 mkdir NextJS-Portal
 npx create-next-app@latest
@@ -10160,12 +10061,10 @@ sudo systemctl restart docker.service
 sudo systemctl disable docker.socket
 sudo docker compose up -d
 cd ../../NextJS-Portal
-cd ~/Downloads
 unzip dvdrental.zip
 docker exec -it pg-postgres-1 pg_restore -U postgres --dbname=dvdrental --verbose dvdrental.tar
 tmux a
 docker exec -it pg-postgres-1 pg_restore -U postgres --dbname=dvdrental --verbose ./dvdrental.tar
-ls 
 docker cp ~/Downloads/dvdrental.tar pg-postgres-1:/tmp/dvdrental.tar\
 docker exec -it pg-postgres-1 \\
   pg_restore -U postgres -d dvdrental --verbose /tmp/dvdrental.tar\
@@ -10182,7 +10081,6 @@ sudo pacman -S dust
 dust
 yay -S fselect
 sudo systemctl enable --now docker.service
-btop
 ncdu
 sudo pacman -R docker
 sudo pacman -S docker
@@ -10190,10 +10088,8 @@ sudo systemctl disable --now docker.service
 docker info\
 
 sudo docker run -it --rm archlinux bash -c "echo hello world"
-history
 cat .config/zsh/zshistory | grep docker
 cd immich
-docker compose pull && docker compose up -d
 rm dvdrental.tar dvdrental.zip
 pnpm install bcrypt jsonwebtoken
 cp ../Archive/NextJS-Portal/app/\(auth\) ./app
@@ -10262,7 +10158,6 @@ rm components.json
 pnpm dlx shadcn@latest init\
 
 cd portal
-1
 c code
 cp Portal/app/favicon.ico NextJS-Portal/app/favicon.ico
 pnpm add tls
@@ -10293,21 +10188,13 @@ cp ../Portal/.git ./ -r
 rm -rf ._git
 git checkout -b feature/auth-improvements
 git commit -m "Add authentication improvements and UI updates"
-systemd-analyze
-systemd-analyze blame
 lq
-adb devices
 yay -syu
 rm -rf .keras .dotnet .emacs.d .ollama 
-ls .vscode
-ls .vscode/extensions
-code .
 cp .vscode Code
 cp .vscode Code -r
 ls -l
-code . && exit
 ls -la
-cd NextJS-Portal
 gcl https://github.com/Yagna-rao15/.dotfiles.git Dots
 mv ~/Downloads/dotfiles-main.zip ./
 unzip dotfiles-main.zip
@@ -10317,7 +10204,6 @@ rm .dotfiles-main
 rm .dotfiles-main -rf
 sudo cd MFE
 whoami
-ls ~
 cd GoldenLap
 cd ../MFE
 chmod +x MFE
@@ -10333,7 +10219,6 @@ cd games
 xrandr --verbose\
 
 cp .dotfiles Code/Dots -r
-cd .config
 cd cargo
 mv cargo ~/.config/cargo
 mv maven ~/.config/maven
@@ -10353,12 +10238,9 @@ llama-3.1.sh how to set ctab to cycle through tabs in nvim map("n", "<leader>tab
 
 llama-3.1.sh
 vim
-qq
 tmux
-;q
 nvim-own
 haskel
-cd nextjs
 cat init.lua
 nvim init.lua
 cat ~/.zshenv
@@ -10379,7 +10261,6 @@ yay -R   fselect  marimo  python-mouseinfo  python-pyscreeze python-pyautogui
 yay -R fselect-debug python-mplfinance
 unzip CosmicByteSentinel\ V1.1.2.zip
 wine CosmicByteSentinel\ V1.1.2.exe
-cd Games
 cd Prefixes
 rm -rf Art-of-Rally
 mkdir Default
@@ -10397,7 +10278,6 @@ wine "C:/Program Files(x86)/Cosmic Byte/Sentinel/CosmicByteSentinel.exe"\
 wine ~/Games/Prefixes/Default/drive_c/Program\ Files\ \(x86\)/Cosmic\ Byte/Sentinel/CosmicByteSentinel.exe
 rm -rf .wine
 rm -rf .ssh .ollama 
-rm .zcompdump
 cd Code
 cd .dotfiles/.config/tmux
 awk '/[a-zA-z]/{++t}END{print 100 - t}' tmux.conf
@@ -10424,14 +10304,12 @@ java -jar Downloads/LegacyLauncher.jar
 pnpm add nodemailer
 next build
 nvim package
-nvim package.json
 npm install nodemailer
 rm -rf node_modules
 npm ci --legacy-peer-deps\
 
 npm install --force
 npm install nodemailer --force
-tmux copy-mode 
 npm install --save-dev @types/nodemailer\
 
 npm uninstall lucid\
@@ -10446,8 +10324,6 @@ nvim eslint.config.mjs
 npm i bcrypt
 npm i bcryptjs
 cameractrls -c brightness=128
-cd nvim
-cd -
 cd nvim && nvim
 notify-send --urgency=low -i \"\$( [ \$? -eq 0 ] && echo terminal || echo error )\" \"\$(history | tail -n1 | sed -e \"s/^\s*[0-9]\+\s*//\" -e \"s/[;&|]\s*alert\$//\")\"'
 notify-send --urgency=low -i \"\$( [ \$? -eq 0 ] && echo terminal || echo error )\" \"\$(history | tail -n1
@@ -10485,8 +10361,6 @@ rm -rf AnythingLLMDesktop
 docker exec -it pg-postgres-1 psql -U postgres
 docker exec -it pg-postgres-1
 docker exec -it pg-postgres-1 bash
-cd pg
-nvim docker-compose.yaml
 docker cp pg-postgres-1:/dump.sql ./dump.sql
 sudo pacman -S pgcli
 psql "postgres://neondb_owner:GxZtVn9yD8hi@ep-blue-lab-a1je7zcr-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require" < dump.sql
@@ -10533,7 +10407,6 @@ pnpm dlx shadcn@latest add checkbox
 pnpm dlx shadcn@latest add calendar
 pnpm dlx shadcn@latest add popover
 obsidian
-htop
 npm uninstall -g pnpm\
 
 sudo pacman -Rns pnpm\
@@ -10570,9 +10443,6 @@ sudo systemctl enable --now docker.socket
 npm install js-cookie\
 
 pnpm dlx shadcn@latest add skeleton
-y
-npm run build
-nvim README.md
 git add .
 git commit -m "Added Complain support"
 git push -u origin feature/auth-improvements
@@ -10586,7 +10456,6 @@ git pull origin main\
 
 git push --force-with-lease\
 
-git checkout main
 git checkout feature/auth-improvements\
 
 git rebase main\
@@ -10595,20 +10464,16 @@ git fetch origin\
 
 git rebase origin/main\
 
-yc
 git log origin/main..HEAD --oneline
 git checkout main\
 
 git merge feature/auth-improvements\
-
-git push origin main\
 
 git branch -d feature/auth-improvements\
 
 git push origin --delete feature/auth-improvements\
 
 1c
-git log
 printf 'Hello World'
 $(( 899/90 ))
 echo $(( 899/90 ))
@@ -10616,8 +10481,6 @@ echo $EDITOR
 echo $HONEY
 bat .zshenv
 cat .zshenv
-cd cdoe
-fzf
 cd Code-Forces/968-Div-2
 clang 1.c -o 1
 ./1
@@ -10627,8 +10490,6 @@ nmcli device wifi connect Yagnarao password "micromax"
 nmcli device wifi connect KAVITHA password naninani
 df -Th /\
 
-lutris
-nautilus
 cq
 hotspot.sh
 nvim P
@@ -10636,10 +10497,7 @@ nvim Page.tsx
 rm Page.tsx
 dmenu
 dmenu run
-dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
 uname -a
-uname -r
-cd Downloads
 ls 683ae117f0c6c_HackOn_-_Season_5
 man unzip
 tldr unzip
@@ -10648,30 +10506,21 @@ echo $(( 1,71,58,440/20 ))
 echo $(( 17158440/20 ))
 gcl https://github.com/Rahuletto/ClassPro.git --depth=1 Test
 cd Test
-npm install
 cat package.json
 V
-npm install --legacy-peer-deps\
-
 nmcli radio wifi off
 sudo pa
 fs
 cd coe
-cd code
 ls ../
-nvim 
 sudo pacman -Sy ninja ccache
-make
 cd build
 ls bin
 ./bin/nvim
-./build/bin/nvim
 git pull origin main\
 
 git
 tmux ls
-tmux.sh
-npm run dev
 git stash push -m "partial change" app/student/complaints/page.tsx
 git stash show -p stash@{0} -- path/to/file > /tmp/stash.diff\
 
@@ -10684,7 +10533,6 @@ git stash show -p stash@{0} | grep -A1000 "+++ b/app/student/complaints/page.tsx
 nvim -d app/student/complaints/page.tsx /tmp/stash.diff\
 
 git stash pop
-gs
 git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%S%n'
 gl
 gl --help
@@ -10729,7 +10577,6 @@ mkdir /data/shows
 mkdir -p downloads/qbittorrent/{completed,incomplete,torrents} && mkdir -p downloads/nzbget/{completed,intermediate,nzb,queue,tmp}
 mkdir servaar
 wget https://github.com/TechHutTV/homelab/raw/refs/heads/main/media/compose.yaml && wget https://github.com/TechHutTV/homelab/raw/refs/heads/main/media/.env
-nvim .env
 docker logs gluetun
 curl ifconfig.io\
 
@@ -10777,7 +10624,6 @@ sudo dnsmasq -C /etc/dnsmasq.conf\
 
 sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE\
 
-nmcli device wifi connect Yagnarao --ask
 sudo sysctl -w net.ipv4.ip_forward=1\
 
 sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE\
@@ -10800,7 +10646,6 @@ curl -v --tls-max 1.2 --user-agent "Mozilla/5.0" https://badasstorrents.com\
 
 curl -v --tls-max 1.2 --user-agent "Mozilla/5.0" https://www.torlock.com\
 
-ls Downloads
 cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4 /data/movies/Thunderbolts- (2025)/
 cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4 /data/movies/Thunderbolts-\ (2025)/
 mkdir /data/movies/Thunderbolts-\ (2025)
@@ -10810,8 +10655,6 @@ cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700M
 sudo cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4 /data/movies/Thunderbolts-\ \(2025\)/
 rm Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
 ls downloads
-cd downloads
-du -h --max-depth=1 ./ | sort -hr
 rm nzbget
 rm nzbget -rf
 mkdir /data/shows/Squid\ Game/Season \02/
@@ -10825,22 +10668,15 @@ ls downloads/qbittorrent/completed
 mv downloads/qbittorrent/completed/Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG movies
 cd servaar
 docker image rm lscr.io/linuxserver/prowlarr lscr.io/linuxserver/nzbget lscr.io/linuxserver/bazarr lscr.io/linuxserver/radarr lscr.io/linuxserver/lidarr lscr.io/linuxserver/sonarr qmcgaw/gluetun qmcgaw/deunhealth 
-docker images
 rm servaar
 rm servaar -rf
 sudo rm servaar -rf
-cd qbittorrent
-cd /data
-ls movies
 rm movies/Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG -rf
 ls shows
 mpv Squid.Game.S02E02.Halloween.Party.1080p.NF.WEB-DL.MULTi.AAC5.1.AV1-\[MoviesUp\].mkv
-ls\\
-
 q 
 mkdir /data/music
 docker logs qbittorrent
-nmcli device wifi
 cd /data/downloads/qbittorrent/incomplete
 ld ../completed
 ls ../completed
@@ -10848,26 +10684,19 @@ ls ../../../shows
 ls ../../../shows/Squid\ Game/Season\ 02
 cd /data/downloads/qbittorrent/completed
 ls Squid.Game.S02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA
-pwd
-ls /data/shows/Squid\ Game/Season\ 02
 mv Squid.Game.S02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA ../../../shows/Squid\ Game
 cd ../../../
-cd shows
-cd Squid\ Game
 rm -rf Season\ 02
 cd /data/shows/Squid\ Game/Squid.Game.S02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA
-..
 mv Squid.Game.S02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA Season\ 02
 sudo pacman -S ffmpeg\
 
-cd
 yay -S jellyfin-ffmpeg
 /usr/lib/jellyfin-ffmpeg/ffmpeg -filters | grep tonemapx\
 /usr/lib/jellyfin-ffmpeg/ffmpeg -codecs | grep fdk\
 
 sudo systemctl cat jellyfin\
 
-docker exec -it jellyfin bash
 docker compose down\
 docker compose up -d\
 
@@ -10883,18 +10712,14 @@ apt update && apt install -y libdrm2\
 
 mpv /data/shows/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
 celluloid /data/shows/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
-lsblk
 cp /data/shows/Squid\ Game/Season\ 02 /run/media/yagna/7CCD-1A0B
 cp /data/shows/Squid\ Game/Season\ 02 /run/media/yagna/7CCD-1A0B -r
 cd docekr
-cd docker
 rm -rf /data/downloads/nzbget
 mkdir nextcloud
 docker compose logs --follow
 tailscale down
-sudo tailscale down
 docker container ls
-sudo tailscale up
 docker compose up --build --pull always --wait
 docker exec -it nextcloud-aio-mastercontainer bash
 docker-compose exec --user www-data nextcloud php occ user:list\
@@ -10921,31 +10746,1059 @@ docker pull nvidia/cuda:latest
 docker pull nvidia/cuda:11.8.0-base-ubuntu22.04\
 
 docker run --rm --gpus all nvidia/cuda:11.8.0-base-ubuntu22.04 nvidia-smi
-nvim compose.yaml
 cd nextcloud
-docker compose down
 docker container stop nextcloud-aio-calcardbackup nextcloud-aio-facerecognition nextcloud-aio-jellyfin
 docker container rm nextcloud-aio-calcardbackup nextcloud-aio-domaincheck nextcloud-aio-facerecognition nextcloud-aio-jellyfin
-c
-cd jellyfin
-docker compose up -d
-docker exec -it jellyfin usermod -a -G video jellyfin
 docker exec jellyfin ffmpeg -encoders | grep nvenc
-nvidia-smi -q | grep -A 5 "Encoder Stats"
-docker ps
-ip a
-sudo pacman -Syu
-yay -Syu
 lsa
-ls
-la
-cls
 pp
 yay -S lmstudio
-nvim
+rm -rf .config/cargo
+git clean -fd
+ks
+ls\\
+
+sl
+lazygit
+sudo pacman -R lazygit
+sudo pacman -S libinput-gestures xdotool wmctrl\
+
+sudo pacman -S libinput xdotool wmctrl
+man wmctrl
+yay -S libinput-gestures
+nvim .dotfiles/.config/libinput-gestures.conf
+stow .
+libinput-gestures-setup autostart\
+libinput-gestures-setup start\
+
+oq
+opencode -v
+opencode -p "Hello"
+ls ~
+nvim ~/.opencode.json
+cd ls /data/shows/Squid\ Game/Season\ 02
+cd cd 
+ls /data/shows/Squid\ Game/Season\ 02
+mkdir -p converted\
+\
+for f in *.mkv; do\
+  echo "Converting $f"\
+  ffmpeg -i "$f" \\
+    -vf "scale=1920:1080" \\
+    -color_primaries bt709 -color_trc bt709 -colorspace bt709 \\
+    -c:v libx264 -crf 23 -preset slow \\
+    -c:a copy -c:s copy \\
+    "converted/${f%.mkv}.1080p.x264-TVCompatible.mkv"\
+done\
+
+ffmpeg -encoders | grep nvenc\
+
+mkdir -p converted\
+\
+for f in *.mkv; do\
+  echo "Converting $f"\
+  ffmpeg -hwaccel cuda -i "$f" \\
+    -vf "scale_npp=1920:1080" \\
+    -c:v h264_nvenc -preset slow -b:v 5M \\
+    -c:a copy -c:s copy \\
+    "converted/${f%.mkv}.1080p.NVENC.mkv"\
+done\
+
+mkdir -p converted\
+\
+for f in *.mkv; do\
+  echo "Converting $f"\
+  ffmpeg -hwaccel cuda -i "$f" \\
+    -vf "scale=1920:1080" \\
+    -color_primaries bt709 -color_trc bt709 -colorspace bt709 \\
+    -c:v libx264 -crf 23 -preset slow \\
+    -c:a copy -c:s copy \\
+    "converted/${f%.mkv}.1080p.x264-TVCompatible.mkv"\
+done\
+
+nvtop
+cd /data/shows/Squid\ Game/Season\ 02
+ls converted
+mpv converted/Squid.Game.S02E01.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.1080p.x264-TVCompatible.mkv
+celluloid converted/Squid.Game.S02E01.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.1080p.x264-TVCompatible.mkv
+cd cdoe
+cp .vscode Code/.vscode -r
+ls ~/.vscode
+ls .vscode/.vscode
+rm .vscode
+rm .vscode -rf
+ls .vscode/extensions
+ls .config/Code
+cd .vscode
+code --list-extensions > extensions.txt
+nvim extensions.txt
+rm extensions.txt
+rm .opencode.json
+ls .android
+ls .config/Android\ Open\ Source\ Project
+ls .config
+code
+ls .vscode
+cd 
+cd Movie-Recommendation
+docker run --rm georift/install-jellyfin-tizen 10.145.229.81
+xq
+chmod +x web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+./web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+nvim web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+package-manager-cli show-pkgs
+ls ~/Tizen-Studio
+cd ~/Tizen-Studio
+nvim sdk.info
+cd package-manager
+./package-manager.bin
+qcc
+rm ~/Downloads/web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+ls ~/Downloads
+chmod +x ~/Downloads/web-ide_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+yay -S rpmextract
+yay -S cpio
+sudo pacman -S gnome-keyring
+~/Downloads/web-ide_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+gcl https://github.com/Toxblh/tizen-studio-arch.git
+rm web-ide_Tizen_Studio_6.1_singapore_ubuntu-64.bin
+rm -rf ~/Tizen-Studio ~/Tizen-Studio-data 
+ls platforms
+cd ide
+./TizenStudio.sh
+cd tizen-studio
+ls tools
+ls ide
+cd tizen-studio-arch
+nvim install.sh
+PATH=$(pwd):$PATH ./tizen_studio.bin
+./install.sh
+rm -rf tizen-studio tizen-studio-data
+rm workspace/ -rf
+ls tizen-studio
+docker exec jellyfin -i bash
+docker exec jellyfin bash
+docker exec -i jellyfin bash
+cat ~/.dotfiles/.config/zsh/zshistory
+nvim ~/.dotfiles/.config/zsh/zshistory
+docker exec -it jellyfin bash
+git clone -b release-10.10.7.0 https://github.com/jellyfin/jellyfin-web.git
+git clone -b release-10.10.z https://github.com/jellyfin/jellyfin-web.git
+git clone https://github.com/jellyfin/jellyfin-tizen.git
+cd jellyfin-web\
+npm ci --no-audit\
+USE_SYSTEM_FONTS=1 npm run build:production
+cd jellyfin-tizen\
+JELLYFIN_WEB_DIR=../jellyfin-web/dist npm ci --no-audit
+source ~/.config/zsh/.zshrc
+source ~/.config/zsh/zshrc
+cd www
+cd jellyfin-tizen
+cat ~/tizen-studio-data/cli/logs/cli.log
+cd SamsungCertificate
+cs JellyFin
+cd JellyFin
+tizen security-profiles add \\
+    --name JellyFinProfile \\
+    --author ~/SamsungCertificate/JellyFin/author.p12 \\
+    --author-password YOUR_PASSWORD \\
+    --distributor ~/SamsungCertificate/JellyFin/distributor.p12 \\
+    --distributor-password mnm
+tizen security-profiles add \\
+    --name JellyFinProfile \\
+    --author ~/SamsungCertificate/JellyFin/author.p12 \\
+    --author-password YOUR_PASSWORD \\
+    --distributor ~/SamsungCertificate/JellyFin/distributor.p12 \\
+    --distributor-password Yagnaraorm .ipynb_checkpoints
+tizen security-profiles add \\
+    --name JellyFinProfile \\
+    --author ~/SamsungCertificate/JellyFin/author.p12 \\
+    --author-password Yagnaraorm .ipynb_checkpoints \\
+    --distributor ~/SamsungCertificate/JellyFin/distributor.p12 \\
+    --distributor-password Yagnaraorm .ipynb_checkpoints
+tizen security-profiles add \\
+    --name JellyFinProfile \\
+    --author ~/SamsungCertificate/JellyFin/author.p12 \\
+    --password Yagnaraorm .ipynb_checkpoints \\
+    --dist ~/SamsungCertificate/JellyFin/distributor.p12 \\
+    --dist-password Yagnaraorm .ipynb_checkpoints
+tizen security-profiles add \\
+  --name JellyFinProfile \\
+  --author ~/SamsungCertificate/JellyFin/author.p12 \\
+  --password Yagnaraorm .ipynb_checkpoints \\
+  --dist ~/SamsungCertificate/JellyFin/distributor.p12 \\
+  --dist-password Yagnaraorm .ipynb_checkpoints\
+
+command tizen security-profiles add --name JellyFinProfile --author "$HOME/SamsungCertificate/JellyFin/author.p12" --password "Yagnaraorm .ipynb_checkpoints" --dist "$HOME/SamsungCertificate/JellyFin/distributor.p12" --dist-password "Yagnaraorm .ipynb_checkpoints"\
+
+command tizen security-profiles add --name JellyFinProfile --author "$HOME/SamsungCertificate/JellyFin/author.p12" --password Yagnaraorm .ipynb_checkpoints --dist "$HOME/SamsungCertificate/JellyFin/distributor.p12" --dist-password Yagnaraorm .ipynb_checkpoints\
+
+command tizen security-profiles add --name JellyFinProfile --author "$HOME/SamsungCertificate/JellyFin/author.p12" --password Yagnaraorm .ipynb_checkpoints --dist "$HOME/SamsungCertificate/JellyFin/distributor.p12" --dist-password Yagnaraorm .ipynb_checkpoints\
 q
-: 1749662268:0;cd .dotfiles
-: 1749662269:0;gs
-: 1749662306:0;ga .
-: 1749662325:0;rm -rf .config/cargo
-: 1749662329:0;ga .
+pkill -f tizen\
+pkill -f java\
+
+rm -rf ~/.config/java\
+
+JAVA_TOOL_OPTIONS="" tizen security-profiles list\
+
+tizen package -t wgt -o . -- .buildResult --sign <your_profile_name>\
+
+tizen package -t wgt -o . -- .buildResult --sign Yagnaraorm .ipynb_checkpoints
+tizen package -t wgt -o . -- .buildResult --sign "Yagnaraorm .ipynb_checkpoints"
+tizen --help
+tizen security-profiles --help
+tizen build-web -e ".*" -e gulpfile.babel.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"\
+tizen package -t wgt -o . -- .buildResult --sign Jelly
+tizen build-web -e ".*" -e gulpfile.babel.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"\
+tizen package -t wgt -o . -- .buildResult --sign JellyFin
+rm -rf ~/.tizen-sdk-data/profiles.xml\
+rm -rf ~/.tizen-sdk-data/*\
+
+tizen security-profiles add \\
+  --name JellyFin \\
+  --author ~/SamsungCertificate/JellyFin/author.p12 \\
+  --password 'Yagnarao!15' \\
+  --dist ~/SamsungCertificate/JellyFin/distributor.p12 \\
+  --dist-password 'Yagnarao!15' \\
+  --active \\
+  --force\
+
+tizen
+tizen certificate-manager\
+
+~/tizen-studio/ide/TizenStudio.sh\
+
+nvim ~/tizen-studio-data/cli/logs/cli.log
+tizen package -t wgt -o . -- .buildResult --sign JellyFin\
+
+tizen security-profiles list\
+
+kill -9 15646
+kill -9 13620
+kill -9 14743
+tizen security-profiles remove -n JellyFin\
+
+rm -rf ~/.tizen-sdk-data\
+rm -rf ~/.tizen-studio-data\
+
+ps aux | grep java\
+
+rm -rf ~/.config/java/.userPrefs/tizen\
+
+rm -rf ~/.tizen-studio-data/profile/.metadata\
+
+~/tizen-studio/tools/certificate-manager/certificate-manager\
+
+nvim Downloads/jellyfin-tizen/.project
+~/tizen-studio/tools/certificate-manager/certificate-manager\
+\\
+
+nvim DUID
+~/tizen-studio/tools/certificate-manager/certificate-manager
+tizen install-permit -t UE65NU7400
+tizen cli-config --set default.profiles.path=$HOME/tizen-studio-data/profile/profiles.xml\
+tizen cli-config --set default.profile.name=Yagna\
+
+tizen package -t wgt -s jellyfinCert -o . -- .buildResult\
+
+tizen device list\
+
+export PATH="$HOME/tizen-studio/tools/ide/bin:$PATH"\
+
+tizen cli-config "default.profiles.path=$HOME/tizen-studio-data/profile/profiles.xml"\
+tizen cli-config "default.profile.name=Yagna"\
+
+btop
+kill -9 12463
+kill -9 7602 13899 7084
+kill -9 7602 7084
+kill -9 7602
+1q
+unset _JAVA_OPTIONS\
+
+free -h\
+
+tizen package -t wgt -o . -- .buildResult -v
+tizen package -t wgt -o . -- .buildResult --
+tizen package -t wgt -o . -- .buildResult -- -v\
+
+rm -rf .buildResult .build .cache *.wgt\
+
+tizen build-web -e ".*" -e gulpfile.babel.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"\
+
+tizen package -v -t wgt -s Yagna -o . -- .buildResult\
+
+unset _JAVA_OPTIONS\
+export _JAVA_OPTIONS="-Xmx1024m"\
+
+export _JAVA_OPTIONS="-Xmx2048m"\
+
+tizen package -t wgt -s Yagna -o . -- .buildResult\
+
+tizen package -t wgt -s Yagna -o "$PWD/output" -- "$PWD/.buildResult"\
+
+ls output/*.wgt\
+
+mkdir freshBuild\
+cp -r .buildResult/www/* freshBuild/\
+cp .buildResult/config.xml freshBuild/\
+cp .buildResult/icon.png freshBuild/\
+cp .buildResult/index.html freshBuild/\
+cp .buildResult/tizen.js freshBuild/\
+\
+tizen package -t wgt -s Yagna -o . -- freshBuild\
+
+ls freshBuild/*.wgt
+ls freshBuild
+ls | wc
+cd ~/tizen-studio/package-manager\
+./package-manager-cli install "Tizen Web IDE"\
+
+./package-manager-cli.bin install "Tizen Web IDE"
+./package-manager-cli.bin list
+./package-manager-cli.bin list ""Tizen Web IDE"
+./package-manager-cli.bin list "Tizen Web IDE"
+./package-manager-cli.bin show-pkgs
+pkill -9 javaE~/tizen-studio/tizen-studioE
+cd Downloads/jellyfin-tizen
+tizen build-web -- ./
+tizen version\
+
+./package-manager-cli.bin install --accept-license TIZEN-9.0-WebAppDevelopment\
+
+./package-manager-cli.bin install --accept-license TIZEN-5.5-WebAppDevelopment\
+
+./package-manager-cli.bin install --accept-license TIZEN-5.0-WebAppDevelopment\
+
+./package-manager-cli.bin show-pkgs | grep WebAppDevelopment\
+
+tizen package -t wgt -o . -- .buildResult\
+
+jps -l\
+
+cd ~/Downloads/jellyfin-tizen
+ls .buildResult
+nvim .buildResult/README.md
+ls 
+ls www
+ls -la .buildResult/
+tizen build-web -e ".*" -e gulpfile.babel.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"\
+tizen package -t wgt -o . -- .buildResult
+echo "This took 52 seconds andk i stopped"
+tizen package -t wgt -o . -- .buildResult --verbose
+# Clean package cache\
+sudo pacman -Sc\
+\
+# Check largest directories\
+du -sh * | sort -hr | head -10\
+\
+# Clean up downloads, temp files, etc.
+cat > .tizen-cli-config << 'EOF'\
+{\
+  "profiles": [{\
+    "name": "default",\
+    "excludes": [\
+      "node_modules/**",\
+      ".git/**",\
+      "workspace/**",\
+      "freshBuild/**",\
+      "*.log",\
+      "*.tmp",\
+      ".github/**"\
+    ]\
+  }]\
+}\
+EOF
+nvim .tizen-cli-config
+# Make sure you're only packaging .buildResult\
+tizen package -t wgt -o . -- .buildResult\
+\
+
+tizen package -t wgt -o . -- .buildResult
+du -sh .buildResult/*\
+ls -la .buildResult/
+tizen clean
+tizen build-web -- .
+df -h\
+iostat 1 5  # if available
+cd qbittorrent
+ls incomplete
+cd incomplete
+rm Squid.Game.S02.1080p.NF.WEB-DL.DUAL.DDP5.1.Atmos.H.264-FLUX/ Squid.Game.S02E02.Halloween.Party.1080p.NF.WEB-DL.MULTi.AAC5.1.AV1-\[MoviesUp\].mkv -rf
+cd .buildResult\
+rm -rf freshBuild workspace\
+ls -la  # Should now only show: config.xml, icon.png, index.html, tizen.js, www/\
+cd ..
+mkdir -p dist
+tizen package -t wgt -o ./dist -- .buildResult
+cat gulpfile.babel.js | grep -A5 -B5 "buildResult\|freshBuild"
+# Rebuild properly\
+rm -rf .buildResult\
+tizen build-web -- .\
+# Remove unnecessary dirs from build result\
+rm -rf .buildResult/freshBuild .buildResult/workspace\
+# Package\
+mkdir -p dist\
+tizen package -t wgt -o ./dist -- .buildResult
+tizen package -t wgt -o /tmp -- .buildResult
+tizen manual package
+tizen package -t wgt -o ./dist -- .buildResult --verbose
+# Check current Java processes\
+ps aux | grep java\
+\
+# Try with limited heap size\
+export JAVA_OPTIONS="-Xmx512m -Djava.util.prefs.userRoot=/home/yagna/.config/java"\
+tizen package -t wgt -o ./dist -- .buildResult
+cd .buildResult\
+zip -r ../dist/jellyfin-tizen.wgt .\
+cd ..
+cd .buildResult
+cd dist
+sdb
+yay -S tizen-sdb
+sdb devices 
+sdb push jellyfin-tizen.wgt /tmp/
+lsblk
+cp jellyfin-tizen.wgt /run/media/yagna/7CCD-1A0B
+ls /run/media/yagna/7CCD-1A0B
+sdb shell cat /etc/config/model-config.xml | grep -i "developerMode\|sideload"
+yay -S tizen-studio-certificate-manager
+sdb kill-server
+sdb start-server
+sdb shell "uname -a"
+sdb shell "cat /etc/config/model-config.xml" | grep -i "developerMode\|sideload"
+sdb shell 'cat /etc/config/model-config.xml | grep -i "developerMode\|sideload"'
+telnet 10.145.229.81 23
+sudo pacman -S inetutils
+curl -I http://10.145.229.81:8001/api/v2/
+ls ~/SamsungCertificate/Yagna
+# Create security profile using your existing certificate\
+tizen security-profiles add -n SamsungProfile \\
+  -a ~/SamsungCertificate/Yagna/author.p12 \\
+  -p Yagnarao15 \\
+  -d ~/SamsungCertificate/Yagna/distributor.p12 \\
+  -dp Yagnarao15
+echo "This Hangs"
+tizen security-profiles list
+echo "This took 52 seconds and i stopped it"
+cd ~/Downloads/jellyfin-tizen\
+\
+# Clean previous builds\
+rm -rf dist/*\
+\
+# Package with your certificate\
+tizen package -t wgt -s SamsungProfile -o ./dist -- .buildResult
+tizen package -t wgt -s SamsungProfile -o ./dist -- .buildResult
+grep -A5 -B5 "tizen:application" config.xml
+# Install with device profile\
+tizen install -n jellyfin-tizen.wgt -t UA55M5570 --device-profile ~/SamsungCertificate/Yagna/device-profile.xml
+# List installed apps\
+sdb shell "pkgcmd -l"
+# Check if developer mode is active by trying to list apps\
+sdb shell "ls /opt/usr/apps/" 2>/dev/null || echo "Developer mode check failed"
+cd ~/Downloads/jellyfin-tizen/dist
+tizen install -n jellyfin-tizen.wgt -t UA55M5570
+sdb shell "pkgcmd -i -t wgt -p /tmp/jellyfin-tizen.wgt"
+# Try with different installation flags\
+tizen install -n jellyfin-tizen.wgt -t UA55M5570 --force
+ls -la dist/\
+file dist/jellyfin-tizen.wgt
+cd ..  # Go back to main project directory\
+cp config.xml config.xml.backup\
+\
+# Edit the config.xml to use a simpler app ID\
+sed -i 's/AprZAARz4r\.Jellyfin/com.jellyfin.tizen/g' config.xml\
+sed -i 's/AprZAARz4r/com.jellyfin/g' config.xml\
+\
+# Rebuild\
+rm -rf .buildResult\
+tizen build-web -- .\
+cd .buildResult\
+zip -r ../dist/jellyfin-fixed.wgt .\
+cd ../dist
+tizen install -n jellyfin-fixed.wgt -t UA55M5570
+# Disconnect and reconnect\
+sdb disconnect 10.145.229.81:26101\
+sdb connect 10.145.229.81:26101\
+\
+# Try installation again\
+tizen install -n jellyfin-tizen.wgt -t UA55M5570
+cd ..\
+cat config.xml | grep -A2 -B2 "tizen:application"
+nvim config.xml
+# Clean and rebuild\
+rm -rf .buildResult\
+tizen build-web -- .\
+\
+# Check that the new config was copied\
+grep "com.jellyfin" .buildResult/config.xml\
+\
+# Package manually\
+cd .buildResult\
+zip -r ../dist/jellyfin-new.wgt .\
+cd ../dist
+tizen install -n jellyfin-new.wgt -t UA55M5570
+cd .. && head -10 config.xml
+sdb connect 192.168.1.100:26101\
+\
+# Verify connection\
+sdb devices
+sdb shell
+sdb version
+sdb kill-server\
+sdb start-server
+sdb connect 192.168.1.100:26101
+sdb connect 10.145.229.53:26101
+sdb -s 10.145.229.81:26101 shell
+tizen build-web -e ".*" -e "node_modules/*" -- .
+tizen package -t wgt -s Yagna -- .
+sdb connect 10.145.229.81:26101
+sdb devices
+tizen install-permit -t UA55M5570
+cp ../Jellyfin.wgt ./
+tizen install -n Jellyfin.wgt -t UE65NU7400
+tizen install -n Jellyfin.wgt -t UA55M5570
+~/tizen-studio/ide/TizenStudio.sh
+cd config
+nvim ../compose.yaml
+docker exec -it jellyfin bash\
+ls /config/plugins\
+
+mkdir plugins
+wget https://github.com/jellyfin/jellyfin-plugin-dlna/releases/latest/download/Jellyfin.Plugin.Dlna.dll -O ./plugins/Jellyfin.Plugin.Dlna.dll\
+
+cp ~/Downloads/dlna_8.0.0.0.zip ./plugins
+rm Jellyfin.Plugin.Dlna.dll
+unzip dlna_8.0.0.0.zip
+rm dlna_8.0.0.0.zip
+cd plugins
+docker compose restart jellyfin\
+
+cd ~/Downloads
+rm -rf Jellyfin.wgt jellyfin-tizen jellyfin-web tizen-studio-arch 683ae117f0c6c_HackOn_-_Season_5 683ae117f0c6c_HackOn_-_Season_5.zip Arch_Linux-JP-FREE-11.conf Architechture.png art\ of\ rally\ \[FitGirl\ Repack\] author.p12 dlna_8.0.0.0.zip unstopsmarthire-1.0.17.deb
+ip aq
+rm -rf .package-manager .sdb .swt .tizen .tlauncher SamsungCertificate tizen-studio tizen-studio-data workspace .bashrc DUID
+sudo ls /var/cache/pacman/pkg/ | wc -l
+du -sh /var/cache/pacman/pkg/
+sudo pacman -Sy pacman-contrib
+sudo paccache -r
+sudo paccache -r --keep 1\
+
+sudo paccache -r --keep 1
+sudo pacman -Qdtq
+sudo pacman -Qtdq | sudo pacman -Rns -\
+
+pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
+pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
+sudo pacman -Rns $(pacman -Qdtq)\
+\
+
+sudo du -sh ~/.cache
+rm -rf .cache
+cd .cache
+sudo journalctl --vacuum-time=1d\
+
+journalctl --disk-usage
+df -h /tmp
+df -h / 
+docker exec -it jellyfin usermod -a -G video jellyfin
+docker compose pull && docker compose up -d
+docker s
+nvim compose.yaml
+nvim docker-compose.yaml
+nvim .env
+docker exec -it immich_server
+docker exec -it immich_server bash
+docker compose up -d
+cd Games
+nmcli con --help
+nmcli con delete c7b9753a-8400-4b7a-97db-80651d048e1e e600b3bb-a481-40a6-9933-05733324d2ff a31a9487-bb2b-4492-8034-d74ec1650d7f 989a62b6-6c6c-4bd9-b7f7-025db5c42a5a 945e583b-6fa8-3a28-96ab-783d438dbedc cf3861f5-ca08-4bf9-9bb7-05b711a0e07d cbea545c-0407-4720-9f87-60921161acfc 138d2c51-4cc6-4a28-9a37-5572f510dde4 bb31ee6a-b660-4a7c-aa7b-86c71a64ccb4 3f27fa1e-6eb4-4581-9fef-10203ef69e4b bef87cae-64a1-4b31-85d0-8db013db1e70 a41b112d-320e-47d3-934e-7cfe70af6e90
+nmcli con show
+su
+nvim /etc/resolv.conf
+exit
+sudo -e /etc/resolv.conf.bak
+sudo -e /etc/resolv.conf
+/etc/init.d/networking restart
+sudo systemctl restart NetworkManager.service
+ip route show
+docke rps
+nmcli device wifi
+npm install\
+npm run build
+cd nvim && nvim\\
+
+cd -
+rm -rf .opencode
+rm \;w
+git stash push -m "my progress"\
+
+git log --online
+git log
+curl -X POST http://localhost:3000/student/complaints \\
+  -H "Content-Type: text/plain;charset=UTF-8" \\
+  -H "Accept: text/x-component" \\
+  -H "Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InUyMmNzMTA0QGNvZWQuc3ZuaXQuYWMuaW4iLCJ1c2VySWQiOjEsInJvbGUiOiJTdHVkZW50IiwiaWF0IjoxNzQ5OTMwNTI3LCJleHAiOjE3NDk5MzE0Mjd9.scaDZag6srIlrkXNhWbPT7cZVbXxKqIDo-7i8NQn_pM; refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInRva2VuVmVyc2lvbiI6MSwiaWF0IjoxNzQ5OTMwNTI3LCJleHAiOjE3NTA1MzUzMjd9.IGHZbZxrXQ-W4karrp2uz7KSKA7dozbaVNkfbLk-F60;" \\
+  --data "u22cs104@coed.svnit.ac.in"\
+
+git checkout e04b2a2
+git checkout main
+git stash apply stash@\{0\}
+ga .
+git stash clear\
+
+git stash list
+npm run start
+nvidia-smi -q | grep -A 5 "Encoder Stats"
+nvidia-smi
+uname -r
+lspci | grep -E "VGA|3D"\
+
+nvidia-smi\
+
+nvidia-settings\
+
+sudo -e /etc/X11/xorg.conf
+sudo nvidia-settings\
+
+__GL_SYNC_TO_VBLANK=1 glxgears\
+
+xrandr --props\
+
+sudo pacman -S lib32-gtk2 lib32-libpng lib32-libjpeg6-turbo lib32-nss lib32-openal lib32-vulkan-icd-loader\
+
+STEAM_FORCE_DESKTOPUI=1 steam\
+
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
+
+ip
+tldr ip
+ip a
+systemd-analyze blame
+systemd-analyze
+rm .nvidia-settings-rc
+sudo tailscale up
+tailscale status\
+
+sudo resolvectl status\
+
+nvim docker-compose.yml
+ss -tuln | grep 2283
+cd nextjs
+man ln
+rm Music/music
+rm /data/music/Music
+rm -r /data/music
+ln -s ~/Music /data/music/
+ln -s ~/Music /data/music
+rm /data/music
+ln -s ~/Music /data/musicc
+cp Music /data/music
+cp Music /data/music -r
+sudo cp Music /data/music -r
+rm musicc
+ls Music
+rm -rf /data/music
+sudo rm -rf /data/music
+sudo cp -r ~/Music /data/music
+ls /data/music
+ln -s /data/music ~/Music
+ls ~/Music
+cd Music
+pwd
+mkdir -p Organized && \\
+find . -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.flac' \) \\
+! -path './Recordings/*' ! -path './whatsapp/*' \\
+| while read -r file; do\
+  artist=$(basename "$file" | cut -d '-' -f1 | sed 's/^[ \t]*//;s/[ \t]*$//;s/ /_/g')\
+  mkdir -p "Organized/$artist"\
+  mv "$file" "Organized/$artist/"\
+done\
+
+sudo mkdir -p Organized && \\
+find . -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.flac' \) \\
+! -path './Recordings/*' ! -path './whatsapp/*' \\
+| while read -r file; do\
+  artist=$(basename "$file" | cut -d '-' -f1 | sed 's/^[ \t]*//;s/[ \t]*$//;s/ /_/g')\
+  mkdir -p "Organized/$artist"\
+  mv "$file" "Organized/$artist/"\
+done\
+
+nvim script.sh
+sudo -e script.s
+sudo -e script.sh
+chmod +x script.sh
+sudo chmod +x script.sh
+sudo ./script.sh
+ls Organized
+mv Organized/* ./
+sudo mv Organized/* ./
+fzf
+tree | grep .flac
+rm -rf 33/
+sudo rm -rf 33/
+rm Brain_Dead_Ringtone.mp3/Brain_Dead_Ringtone.mp3
+sudo rm Brain_Dead_Ringtone.mp3/Brain_Dead_Ringtone.mp3
+rm -rf Brain_Dead_Ringtone.mp3
+sudo rm -rf Brain_Dead_Ringtone.mp3
+cd /data/music
+sudo rm -rf Kousalya_Krishnamurthy/
+sudo rm -rf Loud_Alarm.mp3/
+sudo rm -rf Tu_tu_tu_tudu_Max_Vestapen.mp3
+sudo rm -rf youtube_MwpMEbgC7DA_audio.mp3
+npm run build
+tmux.sh
+nvim package.json
+nau
+cd Code/NextJS-Portal\ \(2\)
+rm -rf .next
+cd app
+cd NextJS-Portal
+ga actions/complain.tsx
+ga actions/complain.tsx app/student/complaints/complainHistory.tsx app/student/complaints/page.tsx components/dashboard-layout.tsx lib/jwt.ts
+git commit -m "Made better Server components and avoided serevr actions for data fetch"
+git pull origin main
+git push origin main\
+
+gs
+man yt-dlp
+GTK_THEME=Adwaita:dark gnome-help
+sudo pacman -R nautilus
+sudo pacman -S naut
+sudo pacman -S nautilus
+GTK_THEME=Adwaita:dark nautilus
+GTK_THEME=Adwaita:dark gnome-calculator
+GTK_THEME=Adwaita:dark transmission-gtk
+GTK_THEME=Adwaita:dark lutris
+export ADW_DISABLE_PORTAL=1
+lutris
+htop
+cd Immich
+sudo tailscale up --accept-dns=true\
+
+tailscale status
+ping google-pixel-7
+cd Downloads
+chmod +x Logseq-linux-x64-0.10.12.AppImage
+./Logseq-linux-x64-0.10.12.AppImage
+rm Logseq-linux-x64-0.10.12.AppImage
+yay -S logseq-desktop-bin
+adb devices
+adb install Downloads/Logseq-android-0.10.12.apk
+logseq
+yay -R logseq-desktop-bin
+sudo tailscale down
+curl -X GET https://tasks.googleapis.com/tasks/v1/users/@me/lists
+obsidian --version
+anki
+printf '\e]66;s=5;Heading 1\a\n\n\n\n'
+ls build
+./build/bin/nvim
+qq
+ls Test
+cd Test && npm run dev
+rm -rf Test
+make api/keysets\
+
+ninja -C build api/keysets\
+
+rm -f build/include/keysets_defs.generated.h\
+
+rm -rf build/include\
+
+ninja -C build\
+
+grep font_scale build/include/keycodes.h.generated.h
+grep font_scale build/include/keycodes.h.inline.generated.h
+yc
+rm -f build/src/nvim/auto/keysets_defs.generated.*\
+rm -f build/include/keysets_defs.generated.h\
+
+touch src/nvim/api/keysets_defs.h\
+
+make clean\
+make\
+
+grep font_scale build/include/keysets_defs.generated.h\
+
+find build -name '*keysets_defs*'\
+
+grep font_scale build/src/nvim/auto/keysets_defs.generated.h\
+
+cp build/src/nvim/auto/keysets_defs.generated.h build/include/\
+
+grep -r "Illegal argument" src/
+grep -r "E423" src/
+grep -r "hlattrs.*=" src/nvim/ | head -10\
+grep -r "hl_blend.*=" src/nvim/
+grep -r "hlattrs.*=" src/nvim/\
+grep -r "hl_blend.*=" src/nvim/
+grep -r "sg_blend" src/nvim/ | grep -v "\.sg_blend"
+grep -n "hl_attr" src/nvim/tui/tui.c\
+grep -n "highlight" src/nvim/tui/tui.c
+grep -n "033\|\\e\|ESC" src/nvim/tui/tui.c
+grep -n "033\|\e\|ESC" src/nvim/tui/tui.c
+grep -n "033\|e\|ESC" src/nvim/tui/tui.c
+grep -n "033\|\\e\|ESC" src/nvim/tui/tui.c\
+grep -n "blend" src/nvim/tui/tui.c
+# Fix the escape sequence search:\
+grep -n "033\|ESC" src/nvim/tui/tui.c\
+# Or search for escape sequences this way:\
+grep -n "\\033" src/nvim/tui/tui.c\
+# Look for where colors/attributes are output:\
+grep -n "attr\|color" src/nvim/tui/tui.c
+# Fix the escape sequence search:\
+grep -n "033\|ESC" src/nvim/tui/tui.c\
+# Or search for escape sequences this way:\
+grep -n "\\033" src/nvim/tui/tui.c
+# Find functions that take HlAttrs as parameter:\
+grep -n "HlAttrs" src/nvim/tui/tui.c\
+\
+# Find where hl_blend is processed:\
+grep -n -A 5 -B 5 "hl_blend" src/nvim/tui/tui.c\
+\
+# Find highlight-related functions:\
+grep -n "static.*hl\|void.*hl" src/nvim/tui/tui.c
+git diff
+grep -n -A 5 -B 5 "unibi_out.*\\\\x1b\|ESC\|escape" src/nvim/tui/tui.c
+# Find where highlight attributes are applied to text\
+grep -n -A 10 -B 5 "rgb_fg_color\|rgb_bg_color" src/nvim/tui/tui.c
+# Find text output functions\
+grep -n -A 5 -B 5 "tui_put\|tui_grid_cursor_goto\|print.*attr" src/nvim/tui/tui.c
+nvim -c "highlight TestScale gui=bold font_scale=0.8" -c "echo 'Testing font scale'"
+./build/bin/nvim -c "highlight TestScale gui=bold font_scale=0.8" -c "echo 'Testing font scale'"
+tmux copy-mode 
+make
+la
+sudo pacman -S typst
+time zsh --interactive -c exit
+./build/bin/nvim -u NONE
+nmcli device wifi connect Yagnarao --ask
+1
+docker iamges
+docker images | sed $5
+docker images | echo sed $5
+docker images | awk print($5)
+docker images | awk printf($5)
+docker images | awk '{sum += $5} END {print sum}'
+docker images | awk {print$5}
+docker images | awk '{print$5}'
+docker images | awk '\
+/^[0-9]/ {\
+  size=$7\
+  unit=substr(size, length(size)-1)\
+  val=substr(size, 1, length(size)-2)\
+  if (unit == "GB") val *= 1024\
+  sum += val\
+}\
+END {printf "Total Size: %.2f MB\n", sum}'\
+
+docker images | awk '{print$7}'
+docker images | awk '{print$7}' > test
+nvim test
+echo (( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ))
+echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ))
+ls Downloads
+feh Downloads/20250620_2140_Dark\ Mesh\ Wallpaper_remix_01jy71hs2dejjvhmdkwnvm51n2.png
+fastfetch
+yay -S i3-gnome
+i3-gnome
+i3-gnome --help
+man i3-gnome
+tldr i3-gnome
+sudo -e /usr/lib/gsd-xsettings
+nvim 
+nautilus
+sudo pacman -S sxiv
+sxiv
+sxiv Pictures/Wallpapers-Desktop/Wallpaper-Blue-Black-Gradient.png
+sudo pacman -R sxiv
+cd dockr
+cd jellyfin
+cd ../qbittorrent
+cd docker
+cd pg
+docker compose down
+docker ps
+docker image rm 1e75b7decac0 80ddf6739412 2e2cb40c55b8 db55a640ade9 73ae1f971ef9 338815d8a172 2e20633e534b 89fe570ced05 cb83f1d1e529 761ca5c58b65 bb8553ab0efe 462af32a3a63 65d5e2520e55 5e52a577824b 
+docker images rm 0509e2cf7271
+docker image rm 0509e2cf7271
+docker images
+git diff --no-prefix --unified=0\
+
+iatest=$1(expr index "$-" i)
+if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
+sudo pacman -S bind
+if [[ "$-" == *i* ]]; then\
+    bind "set bell-style visible"\
+fi\
+
+sudo pacman -R bind
+history
+history --help
+man history
+history | grep systemctl
+\ls
+\ls -la
+echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ));alert
+alert
+sleep 10; alert
+sleep 5; alert\
+
+alert ls
+alert sleep 5
+webcam
+sudo pacman -S trash-cli
+trash
+trash --help
+man trash
+rm test
+ls .local/share/Trash
+w
+disk
+folders
+folder
+df -h
+df
+curl -fsSL christitus.com/linux
+curl -fsSL christitus.com/linux > chrishtitus.sh
+nvim /tmp/nvim.yagna/AP4c9S/1
+nvim chrishtitus.sh
+rm chrishtitus.sh
+cd neovim
+...
+cd code 
+tree -CAhF --dirsfirst
+cd zsh
+nvim alias
+r
+rg
+rg hot
+mkdir Sahithi\\
+
+cd Sahithi/\\
+
+gcc hello-world.c
+./a.out
+gcc hello-world.c -o rakshasi
+./rakshasi
+sudo rm -rf /usr/lib/firmware/nvidia/ad10{3,4,5,6}
+sudo rm -rf /usr/lib/firmware/nvidia/ad10{2,7}
+df -hT
+ls Thunderbolts-\ \(2025\)/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
+ls Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG/Thunderbolts.2025.1080p.WEBRip.x264.Dual\ YG.trickplay/320\ -\ 10x10
+ls Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG
+cd Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG
+cd Thunderbolts.2025.1080p.WEBRip.x264.Dual\ YG.trickplay
+cd 320\ -\ 10x10
+y
+....
+cd Thunderbolts-\ \(2025\)
+mpv Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
+celluloid Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
+cd
+cd /data
+ls movies
+cd movies
+rm -rf ./*
+cd downloads
+tree
+sudo rm -rf ./*
+cd shows
+cd Squid\ Game
+cd Season\ 02/'\
+
+cd Season\ 02
+sudo pacman -S vlc
+vlc
+dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
+sudo pacman -S mitmproxy\
+
+[200~adb devices
+adb devices\
+
+mitmproxy --listen-port 8080\
+
+adb reverse tcp:8080 tcp:8080
+gcl https://github.com/yashtank86/Applocker-Android.git
+nvim README.md
+nvim .travis.yml
+cd Applocker-Android
+..
+rm -rf Applocker-Android
+rm .zcompdump
+rm .zsh_history
+npm install
+npm install --legacy-peer-deps\
+
+cd NextJS-
+du -h --max-depth=1 ./ | sort -hr
+cp .env.local env
+npm run dev
+code .
+cd MLibC
+code . && exit
+cd nvim
+fg
+;q
+l
+obs
+blender
+nvim
+yay -S opencode-ai-bin
+cd .dotfiles
+cd .config
+cd opencode
+opencode -d
+nvim opencode/.opencode.json
+opencode
+nvim test.c
+gcc test.c
+mv test.c main.c
+nvim main
+nvim main.c
+gcc main.c -o main -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
+./main
+sudo pacman -S raylib
+rm main.c
+rm main
+cd .local/share/Trash
+cd files
+sudo pacman -S python-pillow
+nvim Downloads/sample1.bmp
+mv Downloads/logo.bmp
+mv Downloads/logo.bmp ./
+nvim logo_array.h
+mv Downloads/stlogo.h ./
+nvim stlogo.h
+ls | grep logo
+nvim logo.h
+diff -u logo.h stlogo.h
+ls
+mv Downloads/logo.jpg logo.jpg
+nvim main.py
+mv Downloads/logo.bmp logo.bmp
+c
+python main.py
+sudo pacman -Syu
+yay -Syu
+./gpu.py
+cd code
+cls
+q
+: 1750937979:0;cd .dotfiles
+: 1750937981:0;gs
+: 1750938011:0;lg
+: 1750938014:0;lazygit
+: 1750938015:0;c
+: 1750938020:0;git hunk'\
+\
+'
+: 1750938023:0;git hunk
+: 1750938030:0;tldr git
+: 1750938050:0;git --help
+: 1750938066:0;c
+: 1750938067:0;gs
+: 1750938082:0;nvim
+: 1750938177:0;git add .

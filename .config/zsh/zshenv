@@ -78,6 +78,7 @@ export GTK_CURSOR_THEME="macOS"
 export GTK_CURSOR_SIZE=40
 export GTK_THEME=Adwaita:dark
 export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export ADW_DISABLE_PORTAL=1
 export QT_STYLE_OVERRIDE=Adwaita-Dark
 
 # VS CODE

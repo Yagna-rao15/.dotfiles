@@ -12,20 +12,31 @@ return {
       },
       render = function(props)
         local bufname = vim.api.nvim_buf_get_name(props.buf)
-        local path = vim.fn.fnamemodify(bufname, ":~")
-        -- local filename = vim.fn.fnamemodify(bufname, ":t")
-        if path == "" then
-          path = "[No Name]"
+        local ext = vim.fn.fnamemodify(bufname, ":e")
+
+        -- If unnamed buffer
+        if bufname == "" then
+          local icon, icon_color = devicon.get_icon("txt", "txt", { default = true })
+          return {
+            { " ", icon, " ", guifg = icon_color },
+            { "[No Name]", guifg = "#888888", gui = "italic" },
+            " ",
+          }
         end
 
-        local ext = vim.fn.fnamemodify(bufname, ":e")
-        local icon, icon_color = devicon.get_icon(path, ext, { default = true })
+        -- Otherwise, show grandparent/parent/filename
+        local parts = vim.split(bufname, "/")
+        local filename = parts[#parts] or ""
+        local parent = parts[#parts - 1] or ""
+        local grandparent = parts[#parts - 2] or ""
 
+        local short_path = string.format("%s/%s", grandparent, parent)
+        local icon, icon_color = devicon.get_icon(filename, ext, { default = true })
         local modified = vim.bo[props.buf].modified
 
         return {
           { " ", icon, " ", guifg = icon_color },
-          { path, guifg = "#696969", gui = "italic" },
+          { short_path .. "/" .. filename, guifg = "#aaaaaa", gui = "italic" },
           modified and { " [+]", guifg = "#ff9e64" } or "",
           " ",
         }

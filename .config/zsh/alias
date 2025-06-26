@@ -8,8 +8,11 @@ alias c='clear'
 alias cls='c && ls'
 alias mkdir='mkdir -pv'
 alias mv='mv -i'
-alias rm='rm -i'
+alias rm='trash -v'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias q='exit'
 alias cat='bat'
 alias pp='ping google.com'
@@ -18,8 +21,10 @@ alias bm='blueman-manager'
 alias h="history | grep "
 alias nano="-e"
 alias cd='z'
+alias df='df -hT'
+alias tree='tree -CAhF --dirsfirst'
 alias fuck='$(thefuck $(fc -ln -1))'
-
+# This is bash Version: alias alert='notify-send --urgency=low -i "$([ $? =0 ] && echo terminal || echo error )" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[:&|]\s*alert$//'\'')"'
 
 # Git
 alias gs='git status --short'
@@ -31,6 +36,19 @@ alias gi='git init'
 alias gcl='git clone'
 alias log="git log --all --graph --pretty=format:'%C(magenta)%h %C(white)%an %C(cyan)%ar %C(yellow)%d%n  %C(white)%s%C(reset)'"
 
+alias folder='du -h --max-depth=1 | sort -hr'
+alias nvimm='nvim $(fzf)'
+alias IPP='curl https://icanhazip.com'
+alias du='du --human-readable'
+alias free='free --human'
+alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
+alias rg='rg --hidden --smart-case --glob="!.git/" --no-search-zip --trim \
+          --colors=line:fg:black \
+          --colors=line:style:bold \
+          --colors=path:fg:cyan \
+          --colors=match:fg:yellow \
+          --colors=match:style:bold'
+
 # Nvim App Switcher Aliases
 # Im proud of myself
 for var in ~/.config/nvim-*; do
@@ -39,34 +57,34 @@ for var in ~/.config/nvim-*; do
   alias "$name"="NVIM_APPNAME=$name nvim"
 done
 
-# alias nvim-own='NVIM_APPNAME=nvim-own nvim'
-# alias nvim-test='NVIM_APPNAME=nvim-test nvim'
-alias nvimm='nvim $(fzf)'
+# Alert for zsh
+alert() {
+  local start=$(date +%s)
+  "$@"
+  local exit_code=$?
+  local end=$(date +%s)
+  local duration=$((end - start))
+  local icon=$([[ $exit_code -eq 0 ]] && echo terminal || echo error)
+  local command="$*"
+  notify-send --urgency=low -i "$icon" "$command (took ${duration}s)"
+}
 
-# Get IP
-alias IPP='curl https://icanhazip.com'
-
-# Human Readable
-alias du='du --human-readable'
-alias free='free --human'
-
-# Ripgrep
-alias rg="rg --hidden --smart-case --glob='!.git/' --no-search-zip --trim \
---colors=line:fg:black \
---colors=line:style:bold \
---colors=path:fg:cyan \
---colors=match:fg:yellow \
---colors=match:style:bold"
-
-# Webcam Test
-alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
-
-# Always work in a tmux session if Tmux is installed
-# if [[ -n "$SSH_TTY" || "$TERM" == "xterm"* ]]; then
-#   echo "This is an interactive terminal or SSH session"
-#   if which tmux 2>&1 >/dev/null; then
-#     if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#       tmux attach -t Default || tmux new -s Deault; exit
-#     fi
-#   fi
-# fi
+# Copy file with a progress bar
+cpp() {
+    set -e
+    strace -q -ewrite cp -- "${1}" "${2}" 2>&1 |
+    awk '{
+        count += $NF
+        if (count % 10 == 0) {
+            percent = count / total_size * 100
+            printf "%3d%% [", percent
+            for (i=0;i<=percent;i++)
+                printf "="
+            printf ">"
+            for (i=percent;i<100;i++)
+                printf " "
+            printf "]\r"
+        }
+    }
+    END { print "" }' total_size="$(stat -c '%s' "${1}")" count=0
+}

@@ -110,4 +110,24 @@ return {
   --   dependencies = "nvzone/volt",
   --   opts = {},
   -- },
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      window = {
+        width = 80,
+        backdrop = 0,
+        options = {
+          number = false,
+          relativenumber = false,
+        },
+      },
+      plugins = {
+        options = {
+          enabled = true,
+          ruler = false,
+          showcmd = false,
+        },
+      },
+    },
+  },
 }

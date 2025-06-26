@@ -1,0 +1,33 @@
+{
+  "data": {
+    "directory": ".opencode"
+  },
+  "providers": {
+    "google": {
+      "apiKey": "AIzaSyAwAFEuRuDn7E9dJ-SDLk1IV0otJK0iCic",  // <-- Your actual Gemini API key
+      "disabled": false
+    }
+  },
+  "agents": {
+    "coder": {
+      "model": "google:gemini-1.5-flash-latest",
+      "maxTokens": 8192
+    },
+    "task": {
+      "model": "google:gemini-1.5-flash-latest",
+      "maxTokens": 8192
+    },
+    "title": {
+      "model": "google:gemini-1.5-flash-latest",
+      "maxTokens": 80
+    }
+  },
+  "shell": {
+    "path": "/bin/bash",
+    "args": ["-l"]
+  },
+  "debug": false,
+  "debugLSP": false,
+  "autoCompact": true
+}
+
