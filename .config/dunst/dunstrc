@@ -1,0 +1,10 @@
+[global]
+font = JetBrainsMono 10
+corner_radius = 8
+padding = 16
+frame_width = 2
+transparency = 10
+timeout = 2
+icon_position = left
+geometry = "300x80-20+20"
+

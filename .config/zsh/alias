@@ -8,7 +8,7 @@ alias c='clear'
 alias cls='c && ls'
 alias mkdir='mkdir -pv'
 alias mv='mv -i'
-alias rm='trash -v'
+rm() {trash -v "$@"}
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

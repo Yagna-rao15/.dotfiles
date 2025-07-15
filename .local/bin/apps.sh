@@ -6,7 +6,7 @@ GTK_DARK_THEME="Adwaita:dark"
 declare -A apps=(
   ["Firefox"]="firefox"
   ["Zen Browser"]="zen-browser"
-  ["Brave"]="brave"
+  ["Thorium"]='thorium-browser'
   ["Alacritty"]="alacritty"
   ["VS Code"]="env XDG_CACHE_HOME=$HOME/.cache XDG_DATA_HOME=$HOME/.local/share code"
   ["File Manager"]="env GTK_THEME=$GTK_DARK_THEME nautilus"

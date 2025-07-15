@@ -97,7 +97,6 @@ nvim .vimrc
 rm .vimrc
 rm -rf .vim
 rm -rf recovery
-rm downloads
 rm -rf downloads
 ls .config/zsh/
 git commit -m "Checkup Commit"
@@ -351,7 +350,6 @@ gcc -o main LR-BH.c csv.c
 cd Code/PPA/
 mkdir lab_4
 cd lab_4
-firefox
 cd Code/PPA/lab_3
 mpirun -np 1 ./1
 mpirun -np 2\ ./1
@@ -1122,7 +1120,6 @@ exec zsh
 oh-my-posh print primary --config sample.json --shell uni
 start
 dc
-time
 zsh
 shjdjh
 skbd
@@ -1466,7 +1463,6 @@ cd Code/ML/
 mkdir lab-6
 mv Downloads/Untitled.ipynb Code/ML/lab-6/KNN.ipynb
 git clone https://github.com/sarrost/dotfiles.git /tmp/
-ls /tmp
 git clone https://github.com/sarrost/dotfiles.git /tmp/Dots
 mv /tmp/Dots/dotfiles/neovim ~/.dotfiles/.config/nvim-test
 mv ~/.dotfiles/.config/nvim-test ~/.config/nvim-test-1
@@ -3068,7 +3064,6 @@ i3-msg reload\
 
 xprop | grep WM_CLASS\
 
-nvim 1.cc
 docker imagegs
 rm ~/.config
 mkdir .config
@@ -3179,7 +3174,6 @@ sudo chroot /mnt /bin/bash
 fdisk
 fdisk --help
 fdisk /dev/sda
-sudo mkfs.exfat /dev/sda1
 clang Code/AdventOfCode/2024-CC/1.cc
 g++ 10.cc -o 10
 ./10
@@ -4043,8 +4037,6 @@ nmcli device connect wlp4s0\
 
 nmcli device connect wlp4s0\
 
-nmcli connection show\
-
 nmcli connection delete YagnaRao
 nmcli connection delete YagnaRao 1
 nmcli connection modify Hotspot ipv4.addresses 192.168.8.1/24\
@@ -4093,8 +4085,6 @@ cd FabricGTK/\\
 pip install setproctitle
 python Dotfiles/dots/.config/fabric/main.py
 rm -rf Dotfiles FabricGTK
-cd  /home/yagna/.zen/8ogoku33.Default (alpha)
-cd  /home/yagna/.zen/8ogoku33.Default\ \(alpha\)
 ls | grep user
 test.sh
 mv Backup/Code/Downloads/rickMortyLock.png Pictures
@@ -4121,7 +4111,6 @@ cd ~/Do
 unzip apache-maven-3.9.9-bin.zip
 mv apache-maven-3.9.9 ~/Code
 cd ~/Code
-mkdir Java
 mv apache-maven-3.9.9 Java
 git clo
 git clone https://github.com/Cloudslab/cloudsim.git
@@ -4210,9 +4199,6 @@ ls /usr/share/icons/ /usr/local/share/icons/ ~/.icons/\
 xrandr --dpi 140 --rate 240\
 
 cat .dotfiles/.x11/xinitrc
-sudo pacman -S firefox
-sudo pacman -R firefox
-yay -S brave-bin
 sudo pacman -S python-scipy
 sudo pacman -S python-statsmodels
 sudo pacman -S python-pandas
@@ -4706,7 +4692,6 @@ touch .vamshi.txt
 . ~/.config/zsh/.alias
 yazi /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/Immich/library/library/admin/2025/January
 cd Code/Cloud/cloudsim-7.0;q
-cd Java
 mkdir 951-Div-2
 nvim 951-Div-2
 sudo nano /etc/systemd/logind.conf\
@@ -5233,13 +5218,11 @@ mv Code/SNA/web-Stanford\ \(2\).txt Code/SNA/web-Stanford.txt
 sudo pacman -S python-responses
 sudo pacman -S python-beautifulsoup4
 mv Downloads/web-Google.txt.gz Code/SNA
-nix-shell
 cd Code/CodeForces
 mkdir 1004-Div-2
 cd 1004-Div-2
 cd Code/CodeForces/1004-Div-2
 nmcli device wifi rescan
-g++ 1.cc -o 1
 2
 2 1
 1 1 4 4
@@ -5254,7 +5237,6 @@ g++ 1.cc -o 1
 10
 9 9 9 10 10 10 10 10 10 10
 g++ 2.cc -o 2
-./2
 g++ 3.cc -o 3
 ./3
 cmatrix
@@ -5340,7 +5322,6 @@ co
 man git remote
 z ~/Code/NextJS-BusApp
 z nextjs-bu
-yay -S android-studio
 ls Android
 z Backup
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -5740,7 +5721,6 @@ python3 DataScience/lab-6/test.py
 ollama run qwen2.5-coder:1.5b-base
 ollama rm qwen2.5-coder:1.5b-base
 ping 10.129.149.29
-brave
 ollama run deepseek-coder-v2
 man smbclient
 ssh yagnarao15@htb-hdhvzplfry.htb-cloud.com
@@ -5862,7 +5842,6 @@ sudo systemctl start gdm\
 xrand
 curl https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4
 curl "https://www.youtube.com/watch?v=DB-0H8Q4d1U&list=WL&index=4"
-yay -R brave-bin
 ps aux | grep pacman\
 
 sudo killall pacman\
@@ -6642,8 +6621,6 @@ xsettingsd &\
 xset s off -dpms
 xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
 
-xrandr --output DP-2 --mode 2560x1440 --rate 240\
-
 xrdb -merge "$HOME/.dotfiles/.x11/Xresources"\
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
 xrandr --dpi 140\
@@ -6672,7 +6649,6 @@ echo -->
 echo --> ll
 echo "-->"
 yay -S davinci-resolve
-cd /tmp
 git clone https://aur.archlinux.org/davinci-resolve.git\
 cd davinci-resolve\
 
@@ -6701,7 +6677,6 @@ rm -rf ~/Temp/davinci-resolve  # Or wherever you cloned the AUR repo\
 du -sh
 export PATH="${PATH:+${PATH}:}$HOME/.local/bin"\
 
-syncthing
 ls Obsidian
 printf "\e]66;s=2;Double sized text\a\n\n"
 kitty
@@ -6744,7 +6719,6 @@ rm -rf .gallery
 rm 20250311.kine
 rm .emulator_console_auth_token
 LC_ALL=C pacman -V|sed -r "s#[0-9]+#$(date -u +%m)#g"|base32|head -1
-lsusb
 mount /dev/sda1 /mnt/backup-ssd
 umount -R /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
 sudo umount -R /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
@@ -6951,8 +6925,6 @@ obsidian --disable-gpu --enable-features=UseOzonePlatform --ozone-platform=x11\
 
 xdg-settings set default-url-scheme-handler file kde-open5\
 
-systemctl --user restart xdg-desktop-portal\
-
 rm ~/.config/obsidian/obsidian.json\
 obsidian\
 
@@ -6996,7 +6968,6 @@ rm ./chromedriver\
 chromium --version\
 google-chrome-stable --version\
 
-sudo pacman -S chromium
 sudo pacman -R chromedriver\
 sudo pacman -S chromium\
 
@@ -7159,7 +7130,6 @@ sudo systemctl enable vsftpd\
 sudo systemctl start vsftpd\
 sudo systemctl status vsftpd
 yay -S gnome-disk-utility
-gnome-disks
 nmap -sS 172.21.1.0/24
 nmap -sn 192.168.1.0/24\
 
@@ -7185,7 +7155,6 @@ nmap -sn 172.21.1.0/20
 sudo nmap -sP 172.21.0.0/16 | grep -B 2 "Virtual"\
 
 touch pass.txt
-nvim pass
 nvim pass.txt
 nmap -sS -sV 172.21.3.106
 sudo nmap -sS -sV 172.21.3.106
@@ -7202,7 +7171,6 @@ yay -R google-chrome
 google-chrome-stable
 google-oauthlib-tool
 google-oauthlib-tool --help
-chromium
 printf "\e]66;s=2;Double sized text\a\n\n"\
 printf "\e]66;s=3;Triple sized text\a\n\n\n"\
 printf "\e]66;n=1:d=2;Half sized text\a\n"
@@ -7712,7 +7680,6 @@ rm -rf Observable
 nvim hotspot.sh
 fatsfetch
 nmcli radio wifi offq
-nmcli device wifi show-password
 nq
 cd nvimm
 cd /home/yagna/Obsidian/.obsidian/
@@ -7925,7 +7892,6 @@ df -h /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
 df -h /home/yagna/Immich
 df -h ~/Immich
 man df
-backup-immich.sh
 du -sh /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452/Immich
 du -sh Immich
 rm keyboard.xkb caps.xkb
@@ -8058,7 +8024,6 @@ sudo pacman -S emacs
 emac
 emaca
 emacs -nw
-polybar
 wget https://raw.githubusercontent.com/IreneKnapp/direct-sqlite/a74cc50c735053c7c49c487a66e7756b524db883/cbits/sqlite3.c
 nvim sqlite3.c
 vim sqlite3.c
@@ -8509,7 +8474,6 @@ rm Downloads/jp-free-16.protonvpn.udp.ovpn
 p
 hard
 rm /var/lib/pacman/db.lck
-sudo rm /var/lib/pacman/db.lck
 nmcli device wifi connect "bhAAi" password "raviteja"
 unzip balenaEtcher-linux-x64-2.1.0.zip
 cd balenaEtcher-linux-x64
@@ -8674,7 +8638,6 @@ nvim lag_report_2025-04-25_02-35-36.log
 lspci -k | grep -EA3 'VGA|3D'\
 
 nvim xinitrc
-xrandr
 sudo fallocate -l 16G /swapfile
 [200~sudo chmod 600 /swapfile
 sudo chmod 600 /swapfile
@@ -8706,7 +8669,6 @@ echo '/var/swap/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab\
 free -h\
 cat /proc/swaps\
 
-;w
 nvim lag.sh
 top
 top -b -n 1
@@ -8741,7 +8703,6 @@ nvim bloom_filter_assignment.py
 cd ../lab-11
 cd ../lab-8
 libreoffice
-git commit -m "Regular Backup"
 git push origin main
 vim marimo.py
 jupytext --help
@@ -8821,7 +8782,6 @@ camera
 snapshot
 ls Documents\ and\ Settings
 cd Documents\ and\ Settings
-cd Windows
 cd Cities\ -\ Skylines\ II
 cd rog
 ./target/release/rog-control-center
@@ -8847,7 +8807,6 @@ lsblk\
 swapon -s
 systemd-analyze plot
 systemd-analyze plot > boot.svg
-zen-browser -v
 sudo swapoff /var/swap/swapfile\
 
 sudo rm /var/swap/swapfile\
@@ -8876,7 +8835,6 @@ sudo mkinitcpio -P\
 systemctl hybrid-sleep
 ls | awk '{print $9}'
 sls
-killall polybar
 lspci | grep -i nvme
 lspci -s 02:00.0 -vv | grep -iE 'LnkCap|LnkSta'
 lspci -s 02:00.0 -vv 
@@ -8916,7 +8874,6 @@ cd ../scripts
 cd create-next-app-nodejs
 nvim config.json
 rm ~/.dotfiles/.config/create-next-app-nodejs -r
-ld
 rm create-next-app-nodejs
 hatt
 sf
@@ -8924,7 +8881,6 @@ nvim config
 gs --short
 fh
 which ls
-bash
 nvim .config/git/config
 gd 0c6039c
 gd --output-indicator-new=' ' --output-indicator-old=' ' 0c6039c
@@ -8972,7 +8928,6 @@ sudo pacman -S texlive-core texlive-bin texlive-latexextra texlive-fontsextra\
 
 ollama run codegemma:latest --verbose
 ollama run deepseek-coder-v2:latest --verbose
-nmcli dev wifi
 mkdir Lab-Exam
 nvim passwords
 man openssl
@@ -9122,7 +9077,6 @@ ls .config | grep nvim
 la .config | grep nvim
 la .config | grep nvim-
 mv .config/nvim-test2 .config/nvim-Test
-nvim-Test
 cd .config/nvim-Test
 cd nvim-test
 xdotool type --delay 75 "cat /dev/ttyACM3"
@@ -9280,7 +9234,6 @@ rm boot.svg
 rm .zsh_history .zcompdump .yarnrc .vim .tlauncher .texlive -r
 rm .zsh_history .zcompdump .yarnrc .vim .tlauncher .texlive -rf
 xinput list
-xprop
 nvim modules.ini
 ./bluetooth_status.sh
 cd polybar
@@ -9384,9 +9337,6 @@ cd yazi
 touch keymap.toml yazi.toml theme.toml
 rm config.yml
 z
-nmcli device wifi\\
-
-cmatrix -C cyan
 unzip tabula-jar-1.2.1.zip
 nvim README.txt
 mv README.txt README.md
@@ -9482,10 +9432,8 @@ sudo modprobe ntfs3\
 sudo pacman -S ntfs-3g\
 sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/windows\
 
-cd /mnt/windows
 sudo systemctl restart NetworkManager
 man fg
-nvi
 ping 10.0.2.15
 curl https://bayfiles.com/d2O28ejbzd/Midnight_Fight_Express_fitgirl_repacks_site_part1_rar
 sudo mkdir /Games
@@ -9545,8 +9493,6 @@ y gruvbox-wallpapers
 sudo mount -t ntfs3 -o rw,windows_names,uid=$(id -u),gid=$(id -g) /dev/nvme0n1p3 /mnt/windows\
 
 vni 
-sudo mount -t ntfs3 /dev/nvme0n1p3 /mnt/windows\
-
 lablk
 yay 
 neofetch
@@ -9613,7 +9559,6 @@ cd LazyVim
 rg LazyVim.lsp
 rg LazyVim.lsp.on_attach
 c gs
-cd Obsidian
 asusctl
 asusctl -s
 supergfxctl
@@ -9657,7 +9602,6 @@ chmod +x lock.sh
 sudo pacman -S i3lock-color scrot imagemagick\
 
 yay -s i3lock-color
-yay -S i3lock-color
 sudo -e /etc/systemd/logind.conf\
 
 sudo systemctl restart systemd-logind\
@@ -9775,13 +9719,11 @@ mkdir Hostel
 mv hostel-management.zip Hostel
 nmcli 
 fc
-cal
 cal -2m
 cal -2
 help cal
 cal --help
 cal -3
-cal -y
 rm stream\(1\).ts
 nvim stream.ts
 vlc 
@@ -9844,7 +9786,6 @@ which tailscaled\
 sudo tailscaled -verbose=1\
 
 transmission-gtk
-sudo pacman Syu
 ruff --version
 cd .zen
 cd 8ogoku33.Default\ \(alpha\)
@@ -9874,8 +9815,6 @@ sudo swapoff -v /var/swap/swapfile
 sudo rm /var/swap/swapfile
 sudo nano /etc/fstab\
 
-sudo gparted
-lsblk -f
 sudo mkswap /dev/nvme0n1p8
 sudo swapon /dev/nvme0n1p8
 sudo -e /etc/fstab\
@@ -10044,7 +9983,6 @@ sudo pacman -S protobuf
 sudo pacman -S python-protobuf
 nvim gpu.py
 python3 gpu.py
-cd NeoVim
 nvim BUILD.md
 chmod +x gpu.py
 mv NextJS-Portal Archive
@@ -10076,7 +10014,6 @@ sudo pacman -S fd
 fd .sh
 bat .xinitrc
 bat
-du
 sudo pacman -S dust
 dust
 yay -S fselect
@@ -10089,7 +10026,6 @@ docker info\
 
 sudo docker run -it --rm archlinux bash -c "echo hello world"
 cat .config/zsh/zshistory | grep docker
-cd immich
 rm dvdrental.tar dvdrental.zip
 pnpm install bcrypt jsonwebtoken
 cp ../Archive/NextJS-Portal/app/\(auth\) ./app
@@ -10215,7 +10151,6 @@ cd MiniAirways
 cd MFE
 mv MFE Midnight-Fight-Express
 ls Prefixes/RDR2
-cd games
 xrandr --verbose\
 
 cp .dotfiles Code/Dots -r
@@ -10238,7 +10173,6 @@ llama-3.1.sh how to set ctab to cycle through tabs in nvim map("n", "<leader>tab
 
 llama-3.1.sh
 vim
-tmux
 nvim-own
 haskel
 cat init.lua
@@ -10360,7 +10294,6 @@ cd AnythingLLMDesktop
 rm -rf AnythingLLMDesktop
 docker exec -it pg-postgres-1 psql -U postgres
 docker exec -it pg-postgres-1
-docker exec -it pg-postgres-1 bash
 docker cp pg-postgres-1:/dump.sql ./dump.sql
 sudo pacman -S pgcli
 psql "postgres://neondb_owner:GxZtVn9yD8hi@ep-blue-lab-a1je7zcr-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require" < dump.sql
@@ -10443,7 +10376,6 @@ sudo systemctl enable --now docker.socket
 npm install js-cookie\
 
 pnpm dlx shadcn@latest add skeleton
-git add .
 git commit -m "Added Complain support"
 git push -u origin feature/auth-improvements
 npm i --save-dev @types/pg
@@ -10483,7 +10415,6 @@ bat .zshenv
 cat .zshenv
 cd Code-Forces/968-Div-2
 clang 1.c -o 1
-./1
 nmcli device wifi connect Yagnarao password micromx
 nmcli device wifi connect Yagnarao password micromax
 nmcli device wifi connect Yagnarao password "micromax"
@@ -10491,7 +10422,6 @@ nmcli device wifi connect KAVITHA password naninani
 df -Th /\
 
 cq
-hotspot.sh
 nvim P
 nvim Page.tsx
 rm Page.tsx
@@ -10508,10 +10438,8 @@ gcl https://github.com/Rahuletto/ClassPro.git --depth=1 Test
 cd Test
 cat package.json
 V
-nmcli radio wifi off
 sudo pa
 fs
-cd coe
 ls ../
 sudo pacman -Sy ninja ccache
 cd build
@@ -10584,7 +10512,6 @@ docker-compose up -d\
 
 wget -q0- https://ipinfo.io
 wget -qO- https://ipinfo.io
-ls /data
 mkdir -p /data/downloads/qbittorrent/{completed,incomplete,torrents} 
 mkdir -p /data/downloads/nzbget/{completed,intermediate,nzb,queue,tmp}\
 \
@@ -10610,7 +10537,6 @@ sudo modprobe cfg80211\
 sudo -e /etc/hostapd/hostapd.conf
 nvim -e /etc/dnsmasq.conf
 sudo -e /etc/dnsmasq.conf
-nmcli radio wifi on
 sudo iw dev wlan0 interface add uap0 type __ap\
 
 sudo iw dev wlp4s0 interface add uap0 type __ap\
@@ -10654,7 +10580,6 @@ sudo mkdir /data/movies/Thunderbolts-\ \(2025\)
 cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4 /data/movies/Thunderbolts-\ \(2025\)/
 sudo cp Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4 /data/movies/Thunderbolts-\ \(2025\)/
 rm Downloads/Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
-ls downloads
 rm nzbget
 rm nzbget -rf
 mkdir /data/shows/Squid\ Game/Season \02/
@@ -10759,7 +10684,6 @@ ks
 ls\\
 
 sl
-lazygit
 sudo pacman -R lazygit
 sudo pacman -S libinput-gestures xdotool wmctrl\
 
@@ -10767,18 +10691,15 @@ sudo pacman -S libinput xdotool wmctrl
 man wmctrl
 yay -S libinput-gestures
 nvim .dotfiles/.config/libinput-gestures.conf
-stow .
 libinput-gestures-setup autostart\
 libinput-gestures-setup start\
 
 oq
 opencode -v
 opencode -p "Hello"
-ls ~
 nvim ~/.opencode.json
 cd ls /data/shows/Squid\ Game/Season\ 02
 cd cd 
-ls /data/shows/Squid\ Game/Season\ 02
 mkdir -p converted\
 \
 for f in *.mkv; do\
@@ -10821,7 +10742,6 @@ cd /data/shows/Squid\ Game/Season\ 02
 ls converted
 mpv converted/Squid.Game.S02E01.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.1080p.x264-TVCompatible.mkv
 celluloid converted/Squid.Game.S02E01.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.1080p.x264-TVCompatible.mkv
-cd cdoe
 cp .vscode Code/.vscode -r
 ls ~/.vscode
 ls .vscode/.vscode
@@ -10833,14 +10753,11 @@ cd .vscode
 code --list-extensions > extensions.txt
 nvim extensions.txt
 rm extensions.txt
-rm .opencode.json
 ls .android
 ls .config/Android\ Open\ Source\ Project
 ls .config
 code
-ls .vscode
 cd 
-cd Movie-Recommendation
 docker run --rm georift/install-jellyfin-tizen 10.145.229.81
 xq
 chmod +x web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
@@ -11159,9 +11076,7 @@ sdb
 yay -S tizen-sdb
 sdb devices 
 sdb push jellyfin-tizen.wgt /tmp/
-lsblk
 cp jellyfin-tizen.wgt /run/media/yagna/7CCD-1A0B
-ls /run/media/yagna/7CCD-1A0B
 sdb shell cat /etc/config/model-config.xml | grep -i "developerMode\|sideload"
 yay -S tizen-studio-certificate-manager
 sdb kill-server
@@ -11275,7 +11190,6 @@ rm dlna_8.0.0.0.zip
 cd plugins
 docker compose restart jellyfin\
 
-cd ~/Downloads
 rm -rf Jellyfin.wgt jellyfin-tizen jellyfin-web tizen-studio-arch 683ae117f0c6c_HackOn_-_Season_5 683ae117f0c6c_HackOn_-_Season_5.zip Arch_Linux-JP-FREE-11.conf Architechture.png art\ of\ rally\ \[FitGirl\ Repack\] author.p12 dlna_8.0.0.0.zip unstopsmarthire-1.0.17.deb
 ip aq
 rm -rf .package-manager .sdb .swt .tizen .tlauncher SamsungCertificate tizen-studio tizen-studio-data workspace .bashrc DUID
@@ -11303,39 +11217,29 @@ journalctl --disk-usage
 df -h /tmp
 df -h / 
 docker exec -it jellyfin usermod -a -G video jellyfin
-docker compose pull && docker compose up -d
 docker s
 nvim compose.yaml
-nvim docker-compose.yaml
-nvim .env
 docker exec -it immich_server
 docker exec -it immich_server bash
-docker compose up -d
-cd Games
 nmcli con --help
 nmcli con delete c7b9753a-8400-4b7a-97db-80651d048e1e e600b3bb-a481-40a6-9933-05733324d2ff a31a9487-bb2b-4492-8034-d74ec1650d7f 989a62b6-6c6c-4bd9-b7f7-025db5c42a5a 945e583b-6fa8-3a28-96ab-783d438dbedc cf3861f5-ca08-4bf9-9bb7-05b711a0e07d cbea545c-0407-4720-9f87-60921161acfc 138d2c51-4cc6-4a28-9a37-5572f510dde4 bb31ee6a-b660-4a7c-aa7b-86c71a64ccb4 3f27fa1e-6eb4-4581-9fef-10203ef69e4b bef87cae-64a1-4b31-85d0-8db013db1e70 a41b112d-320e-47d3-934e-7cfe70af6e90
 nmcli con show
 su
 nvim /etc/resolv.conf
-exit
 sudo -e /etc/resolv.conf.bak
 sudo -e /etc/resolv.conf
 /etc/init.d/networking restart
-sudo systemctl restart NetworkManager.service
 ip route show
 docke rps
-nmcli device wifi
 npm install\
 npm run build
 cd nvim && nvim\\
 
-cd -
 rm -rf .opencode
 rm \;w
 git stash push -m "my progress"\
 
 git log --online
-git log
 curl -X POST http://localhost:3000/student/complaints \\
   -H "Content-Type: text/plain;charset=UTF-8" \\
   -H "Accept: text/x-component" \\
@@ -11370,20 +11274,14 @@ sudo pacman -S lib32-gtk2 lib32-libpng lib32-libjpeg6-turbo lib32-nss lib32-open
 
 STEAM_FORCE_DESKTOPUI=1 steam\
 
-sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
-
 ip
 tldr ip
-ip a
-systemd-analyze blame
-systemd-analyze
 rm .nvidia-settings-rc
 sudo tailscale up
 tailscale status\
 
 sudo resolvectl status\
 
-nvim docker-compose.yml
 ss -tuln | grep 2283
 cd nextjs
 man ln
@@ -11406,7 +11304,6 @@ ls /data/music
 ln -s /data/music ~/Music
 ls ~/Music
 cd Music
-pwd
 mkdir -p Organized && \\
 find . -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.flac' \) \\
 ! -path './Recordings/*' ! -path './whatsapp/*' \\
@@ -11434,7 +11331,6 @@ sudo ./script.sh
 ls Organized
 mv Organized/* ./
 sudo mv Organized/* ./
-fzf
 tree | grep .flac
 rm -rf 33/
 sudo rm -rf 33/
@@ -11448,7 +11344,6 @@ sudo rm -rf Loud_Alarm.mp3/
 sudo rm -rf Tu_tu_tu_tudu_Max_Vestapen.mp3
 sudo rm -rf youtube_MwpMEbgC7DA_audio.mp3
 npm run build
-tmux.sh
 nvim package.json
 nau
 cd Code/NextJS-Portal\ \(2\)
@@ -11458,10 +11353,6 @@ cd NextJS-Portal
 ga actions/complain.tsx
 ga actions/complain.tsx app/student/complaints/complainHistory.tsx app/student/complaints/page.tsx components/dashboard-layout.tsx lib/jwt.ts
 git commit -m "Made better Server components and avoided serevr actions for data fetch"
-git pull origin main
-git push origin main\
-
-gs
 man yt-dlp
 GTK_THEME=Adwaita:dark gnome-help
 sudo pacman -R nautilus
@@ -11474,12 +11365,10 @@ GTK_THEME=Adwaita:dark lutris
 export ADW_DISABLE_PORTAL=1
 lutris
 htop
-cd Immich
 sudo tailscale up --accept-dns=true\
 
 tailscale status
 ping google-pixel-7
-cd Downloads
 chmod +x Logseq-linux-x64-0.10.12.AppImage
 ./Logseq-linux-x64-0.10.12.AppImage
 rm Logseq-linux-x64-0.10.12.AppImage
@@ -11495,7 +11384,6 @@ anki
 printf '\e]66;s=5;Heading 1\a\n\n\n\n'
 ls build
 ./build/bin/nvim
-qq
 ls Test
 cd Test && npm run dev
 rm -rf Test
@@ -11569,13 +11457,8 @@ grep -n -A 5 -B 5 "tui_put\|tui_grid_cursor_goto\|print.*attr" src/nvim/tui/tui.
 nvim -c "highlight TestScale gui=bold font_scale=0.8" -c "echo 'Testing font scale'"
 ./build/bin/nvim -c "highlight TestScale gui=bold font_scale=0.8" -c "echo 'Testing font scale'"
 tmux copy-mode 
-make
-la
 sudo pacman -S typst
-time zsh --interactive -c exit
 ./build/bin/nvim -u NONE
-nmcli device wifi connect Yagnarao --ask
-1
 docker iamges
 docker images | sed $5
 docker images | echo sed $5
@@ -11601,26 +11484,19 @@ echo (( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 5
 echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ))
 ls Downloads
 feh Downloads/20250620_2140_Dark\ Mesh\ Wallpaper_remix_01jy71hs2dejjvhmdkwnvm51n2.png
-fastfetch
 yay -S i3-gnome
 i3-gnome
 i3-gnome --help
 man i3-gnome
 tldr i3-gnome
 sudo -e /usr/lib/gsd-xsettings
-nvim 
 nautilus
 sudo pacman -S sxiv
 sxiv
 sxiv Pictures/Wallpapers-Desktop/Wallpaper-Blue-Black-Gradient.png
 sudo pacman -R sxiv
 cd dockr
-cd jellyfin
 cd ../qbittorrent
-cd docker
-cd pg
-docker compose down
-docker ps
 docker image rm 1e75b7decac0 80ddf6739412 2e2cb40c55b8 db55a640ade9 73ae1f971ef9 338815d8a172 2e20633e534b 89fe570ced05 cb83f1d1e529 761ca5c58b65 bb8553ab0efe 462af32a3a63 65d5e2520e55 5e52a577824b 
 docker images rm 0509e2cf7271
 docker image rm 0509e2cf7271
@@ -11644,15 +11520,10 @@ history | grep systemctl
 echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ));alert
 alert
 sleep 10; alert
-sleep 5; alert\
-
 alert ls
 alert sleep 5
 webcam
 sudo pacman -S trash-cli
-trash
-trash --help
-man trash
 rm test
 ls .local/share/Trash
 w
@@ -11660,7 +11531,6 @@ disk
 folders
 folder
 df -h
-df
 curl -fsSL christitus.com/linux
 curl -fsSL christitus.com/linux > chrishtitus.sh
 nvim /tmp/nvim.yagna/AP4c9S/1
@@ -11692,26 +11562,18 @@ ls Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG
 cd Thunderbolts.2025.1080p.WEBRip.x264.Dual.YG
 cd Thunderbolts.2025.1080p.WEBRip.x264.Dual\ YG.trickplay
 cd 320\ -\ 10x10
-y
 ....
 cd Thunderbolts-\ \(2025\)
 mpv Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
 celluloid Thunderbolts\ \(2025\)\ 1080p\ SDRip\ x264\ AC3\ Re-Encoded\ \[700MB\]\ -\ OneHack.mp4
-cd
-cd /data
-ls movies
 cd movies
-rm -rf ./*
 cd downloads
-tree
 sudo rm -rf ./*
-cd shows
 cd Squid\ Game
 cd Season\ 02/'\
 
 cd Season\ 02
 sudo pacman -S vlc
-vlc
 dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
 sudo pacman -S mitmproxy\
 
@@ -11722,37 +11584,22 @@ mitmproxy --listen-port 8080\
 
 adb reverse tcp:8080 tcp:8080
 gcl https://github.com/yashtank86/Applocker-Android.git
-nvim README.md
 nvim .travis.yml
 cd Applocker-Android
-..
 rm -rf Applocker-Android
-rm .zcompdump
 rm .zsh_history
 npm install
 npm install --legacy-peer-deps\
 
 cd NextJS-
-du -h --max-depth=1 ./ | sort -hr
 cp .env.local env
-npm run dev
-code .
 cd MLibC
-code . && exit
-cd nvim
-fg
-;q
-l
 obs
 blender
-nvim
 yay -S opencode-ai-bin
-cd .dotfiles
-cd .config
 cd opencode
 opencode -d
 nvim opencode/.opencode.json
-opencode
 nvim test.c
 gcc test.c
 mv test.c main.c
@@ -11775,30 +11622,584 @@ nvim stlogo.h
 ls | grep logo
 nvim logo.h
 diff -u logo.h stlogo.h
-ls
 mv Downloads/logo.jpg logo.jpg
-nvim main.py
 mv Downloads/logo.bmp logo.bmp
-c
-python main.py
-sudo pacman -Syu
-yay -Syu
 ./gpu.py
-cd code
-cls
-q
-: 1750937979:0;cd .dotfiles
-: 1750937981:0;gs
-: 1750938011:0;lg
-: 1750938014:0;lazygit
-: 1750938015:0;c
-: 1750938020:0;git hunk'\
+lg
+lazygit
+git hunk'\
 \
 '
-: 1750938023:0;git hunk
-: 1750938030:0;tldr git
-: 1750938050:0;git --help
-: 1750938066:0;c
-: 1750938067:0;gs
-: 1750938082:0;nvim
-: 1750938177:0;git add .
+git hunk
+tldr git
+git --help
+git add .
+git commit -m "Regular Backup"
+git push origin main\
+
+yay -R opencode-ai-bin opencode-ai-bin-debug
+yay -S opencode-bin
+ls /data/shows/Squid\ Game/Season\ 02
+sudo pacman -S rygel\
+
+nano ~/.config/rygel.conf\
+
+nvim ~/.config/rygel.conf
+rygel\
+
+cd jellyfin
+ls music
+ls movies
+ls downloads
+rm downloads
+hotspot.sh
+sudo pacman -S ufw
+sudo ufw allow 1900/udp
+sudo ufw allow 8200/tcp 
+sudo ufw allow 5353/udp
+nmcli connection show\
+
+nmcli connection modify Yagnarao connection.zone home
+cal
+cal -y
+cp Code/NeoVim Neovim
+cp Code/NeoVim Neovim -r
+nvim .env
+npx https://github.com/google-gemini/gemini-cli
+rm \;
+gs\\
+
+git log
+git pull origin main
+git pull origin master
+gs
+make
+cd Code/NeoVim
+cd Movie-Recommendation
+ls mrs_take_2_3
+python mrs_take_2_3/main.py
+cd movie_recommendation_system
+rm -rf movie_recommendation_system
+rm -rf movie_recommendation_system_1
+rm -rf mrs_take_2_3
+cd coe
+cd NeoVim
+opencode
+Can
+tmux
+mkdir STM32
+cd St
+mv ~/Downloads/BACKUP.zip ./
+unzip BACKUP.zip
+cd CAN_BSP
+tree
+git clone https://github.com/STMicroelectronics/STM32CubeL4.git
+mv ../../../../CAN_BSP ./
+mv ../../../../CANTRY ./
+sudo mv ../../../../CANTRY ./
+cd STM32CubeL4
+mkdir manynotes
+cd manynotes
+mv manynotes many-notes
+nvim docker-compose.yml
+cd many-notes
+docker compose down
+code .
+cd stm
+cd STM32
+rm -rf STM32
+xrandr --output HDMI --mode 1920x1080
+xrandr --output HDMI-0 --auto
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+
+xrandr --output HDMI-0 --mode 1680x1050 --pos 0x0 --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 1680x0\
+
+xrandr --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 0x0 --output HDMI-0 --mode 1680x1050 --pos 2560x0\
+
+xrandr
+cd /data/shows/Squid\ Game/Season\ 02/converted
+rm -rf Squid\ Game\ S03\ 2160p\ 10Bit\ NF\ WEB-DL\ Multi-Audio\ DDP5.1\ x265-TBMovies
+rm -rf Zero.Day.2025.S01.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA
+rm sample1.bmp
+rm WindowsXP_1551719014755.jpg
+rm Logseq-android-0.10.12.apk
+yay -Syyu
+mv Downloads/STOP.bmp ./
+nvim main.py
+python main.py
+nvim STOP.h
+nmcli device v wifi
+time
+time zsh --interactive -c exit
+sudo pacman Syu
+ps aux | grep pacman
+sudo rm /var/lib/pacman/db.lck
+yay -S devtoolbox
+devtoolbox
+yay -S planify
+planify
+yay -S iotas
+iotas
+du
+cd Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\]
+ls Games/Jurassic-World-Evolution-2
+pkill -9 25094
+pkill -9 25113 25399 26107 29075
+pkill 25113 25399 26107 29075
+pkill 25113
+pkill 29075
+pkill 26107
+pkill 25399
+sudo pkill 25399
+sudo kill -9 25094 25113 25399 26107\
+
+ps aux | grep wine
+cd Gam
+mkdir Jurassic-World-Evolution-II
+cd -
+WINEPREFIX=~/Games/Jurassic-World-Evolution-2 wine setup.exe
+sudo pacman -S dxvk\
+
+sudo pacman -S p7zip\
+
+WINEPREFIX=~/Games/jurassic_wine winecfg\
+
+WINEPREFIX=~/Games/jurassic_wine wine setup.exe\
+
+sudo WINEPREFIX=~/Games/jurassic_wine wine setup.exe\
+
+sudo WINEPREFIX=/home/yagna/Games/jurassic_wine wine setup.exe\
+
+rm Jurassic-World-Evolution-2
+rm Jurassic-World-Evolution-II
+rm jurassic_wine
+rm Jurassic\ World\ Evolution\ 2
+cd MD5
+nvim QuickSFV.
+nvim QuickSFV.EXE
+nvim QuickSFV.ini
+nvim fitgirl-bins.md5
+sudo pacman -Syu wine-staging winetricks wine-gecko wine-mono\
+
+rm -rf ~/.wine\
+WINEARCH=win64 WINEPREFIX=~/.wine wineboot\
+
+winetricks -q vcrun2019 dotnet48 dxvk\
+
+wine cmd
+cd Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\]
+wine setup.exe
+sudo wine setup.exe
+cp ~/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\] ./Users/ASUS/Downloads
+cp ~/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\] ./Users/ASUS/Downloads -r
+sudo cp ~/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\] ./Users/ASUS/Downloads -r
+ls Users/ASUS/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\]
+rm Jurassic\ World\ Evolution\ 2.desktop
+clsq
+systemd-analyze
+systemd-analyze blame
+zen-browser -v
+sudo pacman -R brave-bin
+sudo pacman -S gpick\
+
+gpick
+sudo pacman -R gpick\
+
+sudo pacman -S xcolor
+yay -S ttf-inter ttf-fira-code\
+
+nvim .obsidian/snippets/notion.css
+qq
+#e4af0b\
+q
+notify-send -e -h string:x-cananoical-private-synchronus-brightness-notif -h int:value:1 -u low "Screen" "Brightness: 1%"
+notify-send -e -h string:x-canonical-private-synchronous:brightness -h int:value:1 -u low "Screen" "Brightness: 1%"\
+
+notify-send -e -h string:x-canonical-private-synchronous:brightness -h int:value:2 -u low "Screen" "Brightness: 2%"\
+
+notify-send -e -h string:x-canonical-private-synchronous:brightness -h int:value:2 -u critical "Screen" "Brightness: 2%"\
+
+cd ~/.dotfiles/.config
+sleep 5; alert\
+
+kill polybar
+killall polybar
+notify-send -u low "ðƒ¿ƒ³ƒª System Status" "$(printf 'ðƒ¿ƒµƒ² Time: %s\nðƒ¿ƒ´ƒª Volume: %s\nðƒ¿ƒ´ƒ« Battery: %s\nðƒ¿ƒ³¶ Wi-Fi: %s\nðƒ¿ƒ¬ƒ° Ethernet: %s\nðƒ¿ƒ´µ Bluetooth: %s\nâƒºƒ Power Profile: %s' \\
+"$(date '+%Y-%m-%d %H:%M:%S')" \\
+"$(pamixer --get-volume-human 2>/dev/null || echo 'N/A')" \\
+"$(acpi -b | awk -F': |, ' '{print $2 \" (\" $3 \")\"}' 2>/dev/null || echo 'N/A')" \\
+"$(nmcli -t -f WIFI,STATE dev | grep '^wifi:' | cut -d: -f2 | sed 's/connected/Connected/' || echo 'N/A')" \\
+"$(nmcli -t -f DEVICE,STATE,TYPE dev | awk -F: '/ethernet/ && $2=="connected" {print "Connected"}' || echo 'Disconnected')" \\
+"$(bluetoothctl show | awk -F ': ' '/Powered/ {print $2}' || echo 'N/A')" \\
+"$(powerprofilesctl get 2>/dev/null || echo 'N/A')"\
+)"\
+
+yay -S xob
+cd .do
+notify-send -h int:value:"$(pamixer --get-volume)" -h string:x-canonical-private-synchronous:volume "Volume" "$(pamixer --get-volume)%"
+notify-send -h int:value:$v -h string:x-canonical-private-synchronous:volume -u low "Volume" "$v%"
+notify-send -h int:value:10 -h string:x-canonical-private-synchronous:volume -u low "Volume" "10%"
+notify-send -h int:value:10 -h string:x-canonical-private-synchronous:volume -u low "Volume" "1000%"
+notify-send -h int:value:1000 -h string:x-canonical-private-synchronous:volume -u low "Volume" "1000%"
+mv ~/.config/dunst .config/dunst
+nvim ~/.config/dunst/dunstrc
+nvim .dotfiles/.config/dunst/dunstrc
+pkill dunst && dunst &\
+
+cd cdoe
+rm -rf Code-Forces 
+lsusb
+sudo gparted
+dmesg | tail -n 20\
+
+lsusb -v -d 13fe:4300\
+
+sudo fdisk -l\
+
+sudo udevadm trigger\
+
+sudo modprobe -r usb_storage\
+sudo modprobe usb_storage\
+
+sudo sg_map\
+sudo sg_inq /dev/sgX\
+
+xcolor
+xcolor | xclip -selection clipboard
+ls /run/media/yagna/7CCD-1A0B
+ls /run/media
+sudo dmesg | tail -n 20\
+
+systemctl enable --now syncthing@.service
+sudo systemctl enable --now syncthing@.service
+nvim .dotfiles/.config/syncthing/config.xml
+cd .dotfiles
+stow .
+rm .config/syncthing -rf
+rm ~/.config/syncthing
+systemctl --user restart syncthing\
+
+systemctl --user enable syncthing\
+systemctl --user start syncthing\
+
+syncthing
+brave
+yay -S brave-bin
+cd kitty
+cd ../kitty
+cd ../polybar
+rm First-Payment.jpg
+rm First_payment.jpg
+rm Second-Payment.jpg
+trash
+trash-list
+nvim-Test
+pwd
+cd ~/.dotfiles/.config\\
+
+cd nvim
+cd mjdgk-zw6a5
+rm mjdgk-zw6a5
+./Sahithi/a.out
+;q
+rm .opencode.json
+rm .zcompdump
+trash .zcompdump .zsh_history
+touch 1 2 3
+rm 1 2 3
+touch 1.ttsdj 2.sdfj 3.sdfhb
+rm 1.ttsdj 2.sdfj 3.sdfhb
+man trash
+trash --help
+rm -rf ./*
+rm Hello
+rm -rf .Trash-1000
+lsblk -o NAME,MODEL,SIZE,TYPE,MOUNTPOINT\
+
+lsblk -f
+sudo pacman -S gnome-disk-utility
+gnome-disks
+sudo mkfs.exfat /dev/sdb1
+cd /run/media/yagna/7CCD-1A0B
+sudo mkfs.exfat /dev/sda1
+cd /run/media/yagna/B3F6-1C0A
+la
+ls /run/media/yagna/259F-0617
+nvi
+pactl list sources short\
+
+pactl set-source-mute @DEFAULT_SOURCE@ 0\
+pactl set-source-volume @DEFAULT_SOURCE@ 100%\
+
+pactl set-source-mute @DEFAULT_SOURCE@ 0\
+pactl set-source-volume @DEFAULT_SOURCE@ 50%\
+
+pactl set-default-source alsa_input.pci-0000_06_00.6.analog-stereo
+pactl set-default-source alsa_input.pci-0000_06_00.6.analog-stereo.monitor
+pactl set-source-mute @DEFAULT_SOURCE@ 0\
+pactl set-source-volume @DEFAULT_SOURCE@ 50%
+cd noevim
+nmcli dev wifi
+nmcli dev wifi connect Sada_5G --ask
+nmcli dev wifi connect Yagnarao --ask
+nmcli device wifi\\
+
+g++ -v
+;w
+bash
+exxit
+exit
+yay -S android-studio
+cd .config
+cd ../.dotfiles/.config
+rg i3lock
+yay -S i3lock-color
+i3lock
+ls Pictures/Wallpapers-Desktop
+y
+i3lock \\
+  --inside-color=373445ff \\
+  --ring-color=ffffffff \\
+  --line-color=00000000 \\
+  --keyhl-color=d23c3dff \\
+  --bshl-color=d23c3dff \\
+  --separator-color=00000000 \\
+  --insidever-color=00000000 \\
+  --ringver-color=ffffffff \\
+  --insidewrong-color=00000000 \\
+  --ringwrong-color=d23c3dff \\
+  --time-color=ffffffff \\
+  --date-color=ffffffff \\
+  --layout-color=ffffffff \\
+  --verif-text="Verified" \\
+  --wrong-text="Wrong" \\
+  --noinput-text="No Input" \\
+  --image=~/Pictures/Wallpapers-Desktop/rickMortyLock.png \\
+  --radius=180 \\
+  --blur=5\
+
+i3lock \\
+  --inside-color=373445ff \\
+  --ring-color=ffffffff \\
+  --line-color=00000000 \\
+  --keyhl-color=d23c3dff \\
+  --bshl-color=d23c3dff \\
+  --separator-color=00000000 \\
+  --insidever-color=00000000 \\
+  --ringver-color=ffffffff \\
+  --insidewrong-color=00000000 \\
+  --ringwrong-color=d23c3dff \\
+  --time-color=ffffffff \\
+  --date-color=ffffffff \\
+  --layout-color=ffffffff \\
+  --verif-text="Verified" \\
+  --wrong-text="Wrong" \\
+  --noinput-text="No Input" \\
+  --image=/home/yagna/Pictures/Wallpapers-Desktop/rickMortyLock.png \\
+  --radius=180 \\
+  --blur=5\
+
+i3lock \\
+  --inside-color=00000088 \\
+  --ring-color=88c0d0ff \\
+  --line-color=00000000 \\
+  --keyhl-color=a3be8cff \\
+  --bshl-color=bf616aff \\
+  --image=/path/to/background.jpg \\
+  --blur=10 \\
+  --clock --time-str="%H:%M:%S" --date-str="%A, %d %B" \\
+  --radius=180 \\
+  --ind-pos="x+1300:y+800"\
+
+i3lock \\
+  --inside-color=00000088 \\
+  --ring-color=88c0d0ff \\
+  --line-color=00000000 \\
+  --keyhl-color=a3be8cff \\
+  --bshl-color=bf616aff \\
+  --image=/home/yagna/Pictures/Wallpapers-Desktop/rickMortyLock.png \\
+  --blur=10 \\
+  --clock --time-str="%H:%M:%S" --date-str="%A, %d %B" \\
+  --radius=180 \\
+  --ind-pos="x+1300:y+800"\
+
+fzf
+LS
+touch sqlite3.db
+mv sqlite3.db yagna.db
+sqlite3 yagna.db
+sudo pacman -S firefox
+firefox
+yay -S thorium-browser-bin
+thorium-browser
+yay -R brave-bin
+tmux.sh
+npm run dev
+sudo systemctl restart NetworkManager.service
+cd /tmp
+gcl https://github.com/simeononsecurity/FireFox-Privacy-Script.git
+cd FireFox-Privacy-Script
+nvim 1.cc
+g++ 1.cc -o 1
+mkdir Biometric-FYP
+cd Biometric-FYP
+nvim README.md
+nvim 2.cc
+./2
+cmatrix -C cyan
+g++ 2.cc -o 1
+./1
+pico
+rm 1 1.cc 2.cc
+rm -rf Java
+cd java
+mkdir Java
+cd Java
+nvim HelloWorld.java
+javac HelloWorld.java
+java HelloWorld
+cd tmp
+ld
+ls yagna-code-zsh
+cd Archive
+mkdir Postgres
+cd Postgres
+cd Obsidian
+cd 03-Resources
+cd docker
+cd pg
+docker compose up -d
+nvim docker-compose.yaml
+xprop
+xprop | grep WM_WINDOW_ROLE\
+
+fg
+ls  .vscode
+cd
+mv Downloads/all_folders.zip Code/Archive/Postgres
+unzip Code/Archive/Postgres
+unzip Code/Archive/Postgres/all_folders.zip
+docker exec -it pg-postgres-1 bash
+docker exec -it pg-postgres-1 bash\
+
+psql -U postgres -h localhost -p 5432 -d postgres\
+
+code . && exit
+cd Code/Archive/Postgres/
+rm -rf Postgres
+sudo pacman -S chromium
+cd  /home/yagna/.zen/8ogoku33.Default (alpha)
+cd  /home/yagna/.zen/8ogoku33.Default\ \(alpha\)
+cd chrome
+nvim url.css
+nvim pass
+1
+ls /data
+cd shows
+cd /run/media/yagna/259F-0617
+mv Squid\ Game /run/media/yagna/259F-0617
+ls Squid\ Game
+cd Squid\ Game/Season\ 02/Squid.Game.S02E0
+cd Squid\ Game/Season\ 02
+cd ~/Windows
+cd /data
+ls ~/Windows
+cd /mnt/windows
+cd ~/Downloads
+cd Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
+nmcli device wifi connect Vinay204 password Devansh29
+nmcli device wifi show-password
+cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games
+alert cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
+sudo alert cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
+alert sudo cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
+cd Windows
+cd Games
+rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
+/bin/rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
+sudo /bin/rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
+trash-empty
+nmcli radio wifi off
+nmcli radio wifi on
+nmcli device wifi connect Naveen\ 5G password nkysnkysn
+nmcli device wifi connect Naveen\ 5G --ask
+cd Downloads
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
+
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-kde\
+
+systemctl --user restart xdg-desktop-portal\
+
+ps -e | grep xdg-desktop-portal\
+
+/usr/lib/xdg-desktop-portal-gtk &\
+
+chromium
+echo IT works
+echo (( 34 * 200 ))
+echo $(( 34 * 200 ))
+echo $(( 6800 / 3 ))
+alert cp Downloads/Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] /run/media/yagna/259F-0617/ -r
+vlc
+vlc /run/media/yagna/259F-0617/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
+celluloid /run/media/yagna/259F-0617/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
+fastfetch
+cd code
+ls ~
+ls /tmp
+gcl https://github.com/simeononsecurity/FireFox-Privacy-Script.git Firefox-Piracy
+cd Firefox-Piracy
+sudo chmod +x ./sos-firefoxprivacy.sh\
+sudo bash ./sos-firefoxprivacy.sh
+sudo chmod +x ./sos-firefoxprivacy.sh
+sudo bash ./sos-firefoxprivacy.sh --uninstall
+nmcli device wifi connect Yagnarao --ask
+sudo pacman -Syu
+nix-shell
+sudo pacman -R firefox
+polybar
+yay -Syu
+nvim
+lsblk
+backup-immich.sh
+cd /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
+l
+cls
+df
+docker ps
+cd immich
+docker compose pull && docker compose up -d
+ip a
+sudo pacman -S rdfind\
+
+cd Immich
+cd library/library/admin
+rdfind --help
+..
+rdfind ./
+nvim results.txt
+pacman -Qqe > pkglist.txt\
+
+nvim pkglist.txt
+yay -23 <(pacman -Qqm | sort) <(pacman -Qq | sort) > aur-packages.txt\
+
+comm --help
+c
+comm -23 <(pacman -Qqm | sort) <(pacman -Qq | sort) > aur-packages.txt\
+
+nvim aur-packages.txt
+nvim 
+sudo mount -t ntfs3 /dev/nvme0n1p3 /mnt/windows\
+
+cp Games/* Windows/Games -r
+sudo cp Games/* Windows/Games -r
+nmcli device wifi
+ls
+ls Windows/Games
+cd Windows/Games
+du -h --max-depth=1 ./ | sort -hr
+cd games
+q
+: 1752585767:0;cd .dotfiles
+: 1752585773:0;gs
+: 1752585794:0;git add .

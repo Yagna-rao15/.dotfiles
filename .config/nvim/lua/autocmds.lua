@@ -2,10 +2,12 @@
 -- AUTOCOMMANDS
 -- ============================================================================
 
+local augroup = vim.api.nvim_create_augroup("UserConfig", {})
+
 -- Highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking text block",
-  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+  group = augroup,
   callback = function()
     vim.highlight.on_yank()
   end,
@@ -14,6 +16,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- Don't list quickfix buffers
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "qf",
+  group = augroup,
   callback = function()
     vim.opt_local.buflisted = false
   end,
@@ -66,15 +69,15 @@ vim.api.nvim_create_autocmd({ "UIEnter", "BufReadPost", "BufNewFile" }, {
 -- Auto-format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*",
+  group = augroup,
   callback = function(args)
     require("conform").format { bufnr = args.buf }
   end,
 })
 
 -- Create directories when saving files
-vim.api.nvim_create_augroup("CreateDirs", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePre", {
-  group = "CreateDirs",
+  group = augroup,
   pattern = "*",
   callback = function()
     local file_path = vim.fn.expand "<afile>:p:h"
@@ -85,9 +88,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 -- Text wrapping and spell check for specific file types
-vim.api.nvim_create_augroup("WrapShell", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
-  group = "WrapShell",
+  group = augroup,
   pattern = { "text", "plaintex", "typst", "gitcommit", "markdown" },
   callback = function()
     vim.opt_local.wrap = true
@@ -96,12 +98,20 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Fix conceallevel for JSON files
-vim.api.nvim_create_augroup("JSON", { clear = true })
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  group = "JSON",
+  group = augroup,
   pattern = { "json", "jsonc", "json5" },
   callback = function()
     vim.opt_local.conceallevel = 0
+  end,
+})
+
+vim.api.nvim_create_autocmd("TermClose", {
+  group = augroup,
+  callback = function()
+    if vim.v.event.state == 0 then
+      vim.api.nvim_buf_delete(0, {})
+    end
   end,
 })
 
