@@ -275,7 +275,6 @@ node index.js
 npm i express
 npm start
 git commit -m "Tweaked Tmux, an Minor nvim fixes"
-ls .zen
 cd Code/ML/\\
 ls
 cp Self/pictures/Wallpapers_Desktop/bg.png
@@ -413,9 +412,7 @@ cd Code/Code-Forces/969-Div-2
 man 1
 g++ 5.cpp -o 5
 cd Code/ML/Amazon
-unzip archive.zip
 lspci | grep Nvdia
-lspci | grep VGA
 sudo pacman -Syu nvidia cuda
 sudo pacman -Sy nvidia cuda
 man cal
@@ -891,15 +888,11 @@ conda install anaconda::keras-ocr
 pip install keras-ocr\
 
 cat /home/yagna/.keras-ocr/craft_mlt_25k.h5
-lsmod | grep nvidia\
-
 nvidia-settings --version
 sudo pacman -Syu\
 sudo pacman -S nvidia nvidia-utils nvidia-settings\
 
 sudo dkms status\
-
-uname -r\
 
 conda install pandas numpy matplotlib nlyk sklearn
 conda install pandas numpy matplotlib
@@ -1091,9 +1084,6 @@ sudo pacman -S protobuf\
 yay -S android-tools\
 
 sudo pacman -S python-protobuf\
-
-sudo udevadm control --reload-rules\
-sudo udevadm trigger\
 
 adb push ~/Movie.mp4 /storage/emulated/0/Download/Movie.mp4
 rm Movie.mp4
@@ -1395,8 +1385,6 @@ chmod +x $(fzf)
 nano ~/.local/share/applications/nautilus-dark.desktop\
 \
 
-update-desktop-database ~/.local/share/applications\
-
 GTK_THEME="Adwaita:dark" nautilus
 chmod +x ~/Downloads/i3lock-fancy.sh
 ./Downloads/i3lock-fancy.sh
@@ -1474,7 +1462,6 @@ rm nvim-test/.config
 ls nvim-test/nvim
 mv nvim-test/nvim/ nvim-test/
 mv nvim-test/nvim/ nvim-test
-uname
 echo $COLOR
 export COLOR="#FF5733"  # A bright orange\
 polybar toph &\
@@ -1620,9 +1607,7 @@ curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvchad/stl/
 cd lua
 curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config
 curl https://raw.githubusercontent.com/NvChad/ui/refs/heads/v3.0/lua/nvconfig.lua -o ~/.config/nvim-own/lua/nvconfig.lua
-cd .config/nvim-nv
 cd Code/CI-CD/lab-6/app2
-date
 base64
 man base64
 base64 "Hello World"
@@ -1753,7 +1738,6 @@ ctags -R .
 rm tags
 cd .vim
 cd .config/nvim-own
-nvim-nv
 mv nvim nvimmm\\
 
 mv nvim-own nvim
@@ -1913,7 +1897,6 @@ sudo pacman -Sy feh
 pacman -Qs libinput\
 
 nvim /etc/X11/xorg.conf.d/40-libinput.conf
-sudo -e /etc/X11/xorg.conf.d/40-libinput.conf
 sudo pacman -S libinput-tools\
 sudo libinput list-devices\
 
@@ -2300,7 +2283,6 @@ echo $$
 sudo vim /etc/bluetooth/main.conf
 sudo systemctl start bluetooth.service\
 
-sudo systemctl enable bluetooth.service
 sudo pacman -S pulseaudio-bluetooth
 sudo pacman -S pulseaudio
 sudo pacman -S pulseaudio\
@@ -2320,7 +2302,6 @@ cd Coq
 mkdir AoC-2023
 ./1\\
 
-gcc 1.c -o 1
 ./1.1
 nvim AoC-2023
 cp 1.1.c 1.2.c
@@ -2343,7 +2324,6 @@ man startx
 ls .cargo
 mv .ipython ~/.dotfiles/.config/ipython
 mv .jupyter .dotfiles/.config/jupyter
-ls .mozilla
 mv ~/.cargo ~/.jupyter ~/.vscode-oss ~/.config/
 mv ~/.cargo ~/.vscode-oss ~/.config/
 mkdir -p ~/.local/state
@@ -2391,20 +2371,14 @@ sudo vim /etc/default/grub
 sudo pacman -S pulseaudio pulseaudio-bluetooth bluez bluez-utils\
 
 sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-yay -S apple_cursor
 zen
 sudo pacman -Sy ttf-jetbrains-mono
 sudo pacman -S fzf
 cd ~/.dotfiles/.local/bin
 chmod +x apps.sh
 yay -S oh-my-posh
-sudo pacman -S brightnessctl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ezit
-rm -rf yay
-rm .bash_logout .bashrc .bash_profile
 rm .config .local
 git clone git://git.suckless.org/dmenu
 sudo make clean install\
@@ -2445,8 +2419,6 @@ sudo mount /dev/sda2 /mnt/boot && sudo mount /dev/sda1 /mnt/boot/efi
 sudo chroot /mnt /bin/zsh
 cd Code/AdventOfCode
 sudo pacman -Sy python
-nvm --help
-nvm install --lts
 cd AdventOfCode
 chmod +x keyboard_backlight.sh
 ./keyboard_backlight.sh
@@ -2475,13 +2447,9 @@ xinput list\
 
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled" 1\
 
-xinput list-props "ASUE120D:00 04F3:31FB Touchpad"\
-
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Tapping Enabled Default" 1\
 
 xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Natural Scrolling Enabled" 1\
-
-sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
 
 systemctl enable --now networkmanager
 systemctl enable --now NetworkManager
@@ -2999,7 +2967,6 @@ dmenu_run -fn "JetBrainsMono-12" -h 24
 dmenu_run -fn "JetBrainsMono:12"
 sudo dmenu_run -fn "JetBrainsMono Nerd Font"[A
 sudo pacman -Sy nvidia
-suspend
 rm a.out test.cc testgpt.cc
 nvim day06.cpp
 g++ day06.cpp
@@ -3013,7 +2980,6 @@ sudo mv android-studio-2024.2.1.12-linux /usr/local
 sudo pacman -S jdk-openjdk android-studio android-tools
 man du
 sudo pacman -Sy code
-sudo pacman -R code
 sudo pacman -Sy docker
 sudo systemctl enable docker.socket
 sudo docker info
@@ -3049,7 +3015,6 @@ ollama os
 rm -rf .java
 nvim .gtkrc-2.0
 xdg-mime query default inode/directory
-npm -v
 sudo pacman -Sy typescript
 man tsc
 tsc
@@ -3076,7 +3041,6 @@ cat .config/user-dirs.locale
 cat .config/user-dirs.dirs
 nvim .config/pulse
 gs add .
-gh
 sudo pacman -Sy github-cli
 gh auth status
 compinit
@@ -3159,7 +3123,6 @@ nvim ls /usr/share/icons/default/index.theme
 sudo systemctl enable --now preload.service
 ls /usr/share/icons
 sudo -e /usr/share/icons/default/index.theme
-sudo pacman -S papirus-icon-theme
 sudo pacman -Sy yazi
 cd Self/Pictures/Wallpapers_Desktop/Gruvebox
 ls .git/branches
@@ -3177,7 +3140,6 @@ fdisk /dev/sda
 clang Code/AdventOfCode/2024-CC/1.cc
 g++ 10.cc -o 10
 ./10
-sudo pacman -S htop
 g++ 11.cc -o 11
 ./11
 mv Code-Forces CodeForces
@@ -3284,7 +3246,6 @@ hererocks /home/yagna/.local/share/nvim/lazy-rocks --lua=5.1\
 sudo g[200~git add . ':!**/nvim/**'
 git add . ':!**/nvim/**'
 git commit -m "Changes before Changing nvim"
-nviim
 nvim 1.ipynb
 ls dockerfile_example
 cd dockerfile_example
@@ -3332,7 +3293,6 @@ mv lua/core/keymaps.lua lua/
 rm -rf core
 rm -rf lua/core
 ls lua
-cd ~/.config/nvim
 nvim lua/options.lua
 nmcli device show
 docker info
@@ -3712,7 +3672,6 @@ pnpm add next-auth@beta
 npx auth secret
 git remote add origin https://github.com/Yagna-rao15/nextjs-portal.git
 git branch -M main
-npm
 git commit -m "Added OAuth and Mannual Authentication Support"
 pnpm add bcrypt
 npm install @vercel/postgres\
@@ -3900,7 +3859,6 @@ nvim TODO
 mv TODO.md ~/Obsidian
 nvim Code/nextjs-portal/
 oh-my-posh
-sudo oh-my-posh upgrade
 cat /etc/modprobe.d/nvidia.conf
 echo "Iam using ASUS Zephyrus G15 Laptop with 3070Ti Graphic Card,I am not using external monitor, just the inbuilt laptop monitor, I have a keymap in i3 set to suspend it and it gtting stck while using that and closing lid, Not when i leave it untouched for 5 min"
 echo "bindsym $mod+Escape exec systemctl suspend"
@@ -3934,7 +3892,6 @@ sudo vim /etc/udev/rules.d
 sudo vim  /etc/systemd
 \:q
 sudo nvim /etc/default/grub
-zen-browser
 i3 -C
 i3 -V > ~/i3-log.txt 2>&1
 nvim i3-log.txt
@@ -3945,22 +3902,17 @@ sudo reboot
 picom --experimental-backends &
 picom --experimental-backends --config /dev/null
 killall picom
-sudo pacman -S nvidia nvidia-utils\
-
 sudo mkinitcpio -P\
 sudo modprobe nvidia\
 
 [200~sudo pacman -Syu nvidia nvidia-lts
 sudo pacman -Syu nvidia nvidia-lts\
 
-sudo modprobe nvidia\
-
 rm i3-log.txt
 rm -rf .nv .ruff_cache .mypy_cache
 ls .gk
 rm .gk
 rm -rf .gk
-sudo pacman -S picom
 nvicm
 llll
 pgrep -x "zen" > /dev/null
@@ -4005,7 +3957,6 @@ sudo pacman -S xorg-xrandr
 nvim ~/.dotfiles/README.md
 echo "$((0x56))"
 date "+%Y-%m-%d %A %T %Z"
-cd .dotfiles/.local
 nvim llama-3.1.sh
 tar x st-0.9.2.tar.gz
 tar -xf st-0.9.2.tar.gz
@@ -4210,7 +4161,6 @@ pactree -r python-jupyter-client\
 pactree -r python-jupyter-core\
 
 sudo pacman -S jupyter-notebook
-pip
 pip install pipes
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
@@ -4370,7 +4320,6 @@ cd Notes/\\
 c
 rm -rf Notes
 mkdir Docker
-cd Docker
 cd dozzle
 ln -s ~/.dotfiles/README.md Obsidian/Wiki/Dotfiles.md
 sudo pacman -S john 1.9.0.jumbo1-11
@@ -4522,7 +4471,6 @@ echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  
 echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  - 150 - 30 - 937 - 25 - 2600 + 48000 - 62000 + 62000 + 250 - 50 - 19500 - 100 - 366 - 60 - 250 ))
 echo $(( 268 - 20 - 200 + 4000 - 250 - 292 - 205 - 517 - 40 - 353 + 2000 + 780  - 150 - 30 - 937 - 25 - 26000 + 48000 - 62000 + 62000 + 250 - 50 - 19500 - 100 - 366 - 60 - 250 ))
 ping -c 10 google.com
-sudo pacman -S syncthing
 sync\\
 
 rm -rf Sync
@@ -4536,7 +4484,6 @@ sudo pacman -S fbida
 sudo pacman -R fbida
 sudo pacman -S loupe
 sudo pacman -R loupe
-sudo pacman -S celluloid
 rm -rf .trash .stfolder .stfolder\ \(1\) .stversions
 find ~/Obsidian -type f -name "*.md" -exec chmod 644 {} \;\
 
@@ -4597,10 +4544,6 @@ dunstify -h string:x-dunst-stack-tag:test Test -A 'tested,default'
 sudo systemctl status dbus
 netstat -tlnp | grep 5566
 sudo netstat -tlnp | grep 5566
-sudo pacman -S dunst
-sudo systemctl enable dunst
-dunst &\
-
 mkdir -p ~/.config/dunst\
 cp /usr/share/dunst/dunstrc ~/.config/dunst/\
 
@@ -4642,7 +4585,6 @@ systemctl --user disable --now network-check.timer\
 nvim ~/.config/systemd/user/network-check.service\
 
 sudo -e /etc/NetworkManager/dispatcher.d/99-device-connect
-alias nano='-e'
 sudo nano /etc/udev/rules.d/99-hotspot-connect.rules
 chmod +x hotspot-handler.sh
 sudo udevadm control --reload-rules \
@@ -4696,7 +4638,6 @@ mkdir 951-Div-2
 nvim 951-Div-2
 sudo nano /etc/systemd/logind.conf\
 
-nano
 sudo systemctl restart systemd-logind.service\
 
 sudo pacman -S nvidia nvidia-utils nvidia-settings\
@@ -4710,14 +4651,11 @@ sudo systemctl enable xorg-suspend-resume.service\
 
 sudo nvidia-xconfig  # For NVIDIA\
 
-sudo nvidia-xconfig
 sudo pacman -S i3lock\
 
 nvim ~/.config/i3/lock_and_suspend.sh\
 
 chmod +x ~/.config/i3/lock_and_suspend.sh\
-
-lspci -k | grep -A 2 -E "(VGA|3D)"\
 
 journalctl -xe | grep ACPI\
 
@@ -4731,8 +4669,6 @@ nvim ~/.config/systemd/user/redraw-display.service\
 
 systemctl --user enable redraw-display.service\
 
-xrandr --listmonitors\
-
 cat ~/.local/share/xorg/Xorg.0.log | grep EE\
 
 journalctl -b -1 | grep i3\
@@ -4743,10 +4679,6 @@ sudo nvim /etc/systemd/system/redraw-display.service\
 
 sudo systemctl daemon-reload\
 sudo systemctl enable redraw-display.service\
-
-sudo pacman -S xf86-input-libinput\
-sudo mkdir -p /etc/X11/xorg.conf.d\
-sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
 
 nvim ~/.config/systemd/user/restart-i3.service\
 
@@ -4823,8 +4755,6 @@ mem\
 sudo tee /sys/power/state <<!\
 mem\
 !
-cat /sys/power/state\
-
 journalctl -xe | grep suspend\
 
 lsmod | grep -i suspend\
@@ -4854,8 +4784,6 @@ sudo systemctl disable nvidia-suspend.service\
 sudo systemctl suspend --test\
 
 loginctl inhibit\
-
-systemctl suspend\
 
 llama-3.1.sh Is DWM an xorg or wayland
 as
@@ -4988,7 +4916,6 @@ if [ -d "/etc/nix" ]; then\
 fi
 du- sh
 du -sh Code/Arrow
-cd Code/Arrow
 /usr/sbin/python /home/yagna/Code/Arrow/src/main.py
 oll
 cd Code/CodeForces/951-Div-2
@@ -5000,7 +4927,6 @@ git checkout 77b6dcf
 git branch -a --contains @77b6dcf\
 
 git branch main
-cd ~/.dotfiles
 mv .config/BraveSoftware ~/.config/
 mv .config/Code ~/.config
 rm -rf .bash_history .nix-channels .ipython .python_history .venv
@@ -5042,9 +4968,7 @@ cd ~/Code/SNA
 unzip facebook.tar.gz
 tar -xf facebook.tar.gz
 cat facebook.tar.gz
-python venv list
 python -m venv venv
-source venv/bin/activate
 mkdir -p Test
 git clone git@github.com:snap-stanford/snap-python.git\
  git clone git@github.com:snap-stanford/snap.git
@@ -5258,7 +5182,6 @@ ga
 sudo apt-get remove --purge blueman\
 sudo apt-get install blueman\
 
-sudo pacman -R blueman
 sudo pacman -S dnsmasq iproute2 networkmanager pulseaudio-bluetooth\
 
 journalctl -xe | grep blueman\
@@ -5297,7 +5220,6 @@ mkdir ../lab-6
 cd ../lab-6
 mv ~/Downloads/data1\ -\ data1.csv ./data.csv
 python3 1.py data.csv > output.json
-sudo pacman -S zoxide
 z add .dotfiles
 z add ./.\dotfiles
 z add ./.dotfiles
@@ -5457,7 +5379,6 @@ Distribution. Journal of Functional Programming 25. https://doi.org/10.1007/978-
 In Proceedings of the Fifth ACM SIGPLAN International Conference on Functional Programming (ICFP â€ƒ¹00). Association
 for Computing Machinery, New York, NY, USA, 268â€ƒ³279. https://doi.org/10.1145/351240.351266
 python3 data-cleanign.py
-node
 unzip ecommerce_customer_data_large.csv.zip
 npm install expo
 npx expo install react-native-background-geolocation
@@ -5622,7 +5543,6 @@ git remote -v
 git remote add origin https://github.com/Yagna-rao15/nextjs-busapp.git\
 git branch -M main\
 git push -u origin main
-cd Code/Android
 android-studio
 android-studio\\
 
@@ -5655,10 +5575,8 @@ yay -S eclipse-platform\\
 
 ping google.com
 yay -R eclipse-java-bin
-adb install app-debug.apk
 vlc Downloads/Silicon.Valley.S01E02.720p.BRRip.MkvCage.mkv
 pip install numpu
-cd Code/BusApp
 cd app/build
 cd outputs
 adb install app-release-1.apk
@@ -5699,7 +5617,6 @@ unzip stopwords.zip -d ./nltk-data/corpora
 NLTK_DATA=/home/yagna/Code/ML/DataScience/lab-6/nltk_data python3 1.py\
 
 pyhton3
-cd .dotfiles/.local/bin
 echo PATH
 wget https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/ngrams.zip\
 
@@ -5797,7 +5714,6 @@ cd Test-Vite-Leaflet
 pnpm install leaflet react-leaflet\
 
 git clone https://github.com/Koushik2906ajet/client-bus.git
-gh auth login
 mv Downloads/client-bus-main.zip Code/
 unzip client-bus-main.zip
 cd client-bus-main
@@ -5925,8 +5841,6 @@ sudo pacman -S alsa-ucm-conf pulseaudio-alsa\
 alsamixer\
 
 pactl info
-pactl info\
-
 vlc Downloads/@CC.Silicon.Valley.S01E03.720p.BRRip.x265.mkv
 mv Downloads/IIT_Dhanbad.ipynb Code/SNA/Sitaion-Netwrok-SNA.ipynb
 sudo pacman -S python-seaborn
@@ -5963,7 +5877,6 @@ du -sh .cache/yay
 rm -rf .config/yay
 pacman -Suy
 sudo pacman -Suy
-sudo pacman -S asusctl power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon.service
 pacman -S supergfxctl switcheroo-control
 sudo pacman -S supergfxctl switcheroo-control
@@ -5972,8 +5885,6 @@ systemctl enable --now switcheroo-control
 pacman -S rog-control-center
 sudo pacman -S rog-control-center
 export RUST_BACKTRACE=1
-echo $XDG_SESSION_TYPE\
-
 export DISPLAY=:0\
 rog-control-center\
 
@@ -5986,7 +5897,6 @@ rog-control-center\
 nvim .dotfiles/.x11/xinitrc
 dbus-launch rog-control-center\
 
-echo $XDG_SESSION_TYPE
 export RUST_BACKTRACE=full
 sudo pacman -S xorg-xrandr xorg-xinput libxkbcommon-x11\
 
@@ -6052,11 +5962,8 @@ asusctl mux --integrated\
 
 ollama run llama3.1:8b
 adb install art-of-rally-v1.0.7b200-unlocked-apkvision.apk
-yay -S visual-studio-code-bin
 sudo 
-node -v
 nvm -v
-nvm list
 git clone https://github.com/Yagna-rao15/backup.git
 cd Dotfiles
 notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e \
@@ -6143,7 +6050,6 @@ cod
 nvim \\
 
 git clone https://github.com/Yagna-rao15/movie_recommendation.git
-cd movie_recommendation
 ln -s ~/Code/movie-recommendation/README.md ~/Obsidian/Wiki/MRS.md
 du -sh sna
 du -sh SNA
@@ -6227,19 +6133,16 @@ mv startpage Startpage
 mv Startpage Start-Page
 nmcli device wifi connect "CHETAN1" password "chetanteja"
 nmcli device wifi connect "CHETAN"
-sudo pacman -R blueberry
 rfkill list\
 
 blueman-applet --loglevel debug\
 
-sudo pacman -S blueman
 blueman-applet &\
 
 sudo nmcli radio bluetooth off\
 
 sudo usermod -aG bluetooth $USER\
 
-sudo pacman -S bluez
 sudo pacman -S bluez-utils bluez-deprecated-tools
 btusb
 lsmod
@@ -6310,7 +6213,6 @@ gtk-menu-popup-delay = 0
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 paccache -r
 du -sh 
-cd .config/nvim
 sudo pacman -S pacman-contrib
 spr
 cp .config/alacritty ala
@@ -6332,7 +6234,6 @@ killall kitty && kitty\
 '
 systemctl --user restart pipewire pipewire-pulse wireplumber\
 
-sudo pacman -Syu 
 vlc Downloads/Wicked.Minds.2003.1080p.WEBRip.x264-RARBG.mp4
 nmcli radio all off
 nmcli radio all on
@@ -6340,7 +6241,6 @@ nmcli radio off
 sudo pacman -S gnome
 rm Downloads/Wicked.Minds.2003.1080p.WEBRip.x264-RARBG.mp4
 cd .con
-cd nvim-own
 cvfwwdwd
 1212
 mv Downloads/EN-Ethical\ Hacking.zip ./
@@ -6375,7 +6275,6 @@ mpv Downloads/@CS_Files\ -Squid\ Game\ S02E07\ Friend\ or\ Foe\ 1080p\ HQ\ NF\ W
 git clone https://github.com/jdpedersen1/fzfm.git ./FZFM
 cd FZFM
 chmod +x *.sh
-sudo pacman -S bat
 ./fzfm.sh
 rm -rf FZFM
 GDK_BACKEND=x11 rog-control-center
@@ -6473,7 +6372,6 @@ polybar-msg cmd restart\
 
 ~/.config/polybar/hotspot.sh\
 
-nivm
 sudo pacman -S podman
 podman ls
 man podman
@@ -6551,7 +6449,6 @@ adb connect 10.42.0.105:33631
 adb connect 10.42.0.105:41867
 adb install Downloads/whatsapp-cleaner-v1.0.3.apk
 feh Downloads/my-notion-face-transparent.png
-ls code
 ls Code/Start-Page
 xrdb ~/.dotfiles/.x11/Xresources\
 
@@ -6599,14 +6496,12 @@ ls .zshenv
 hyprctl dispatch exit
 systemctl --user disable --now xinit.service
 rm .config/systemd/user/xinit.service
-sudo systemctl enable gdm.service
 chmod +x ~/.xprofile\
 
 nvim .local/share/xorg/Xorg.0.log
 mv .xprofile xprofileee
 mv xprofileee .xprofile
 nvim .xprofile
-xrandr --output DP-2 --mode 2560x1440 --rate 240
 rm .xprofile
 xrandr --output DP-2 --mode 2560x1440 --rate 240\
 xrandr --dpi 140\
@@ -6632,7 +6527,6 @@ gnome-shell-extension-tool
 source .zshenv
 ./.dotfiles/.local/bin/hotspot.sh
 cd SNA/sitation-network
-alacritty
 echo $((96 * 1.25)) 
 sudo echo $((96 * 1.25)) [200~exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"
 exec --no-startup-id xrdb -merge <<< "Xft.dpi: 120"\
@@ -6679,7 +6573,6 @@ export PATH="${PATH:+${PATH}:}$HOME/.local/bin"\
 
 ls Obsidian
 printf "\e]66;s=2;Double sized text\a\n\n"
-kitty
 sudo pacman -S figlet
 man figlet
 echo "Big Text" | figlet\
@@ -6708,7 +6601,6 @@ figlet "Big Text"\
 toilet -f mono12 "Huge"\
 
 sudo pacman -S kitty-shell-integration
-sudo systemctl disable gdm.service
 rm script.sh
 rm BlackmagicDesign
 rm BlackmagicDesign -rf
@@ -6809,12 +6701,7 @@ mv .x11/Xresources ./
 rm -rf .x11
 xrandr --dpi 140\
 
-xrandr\\
-
 xrandr --dpi
-xrandr --help
-xrandr --current
-xrandr --dpi 140
 ./.local/bin/hotspot.sh
 ls .dotfiles/.x11/xinitrc
 xrandr --dpi 144\
@@ -6830,7 +6717,6 @@ mv docker-compose.yaml ./penpot
 docker compose -p penpot -f docker-compose.yaml up -d
 cd Code/Docker
 cd penpot
-oh-my-posh upgrade
 xrdb -merge ~/.dotfiles/.x11/Xresources\
 
 xrdb -merge ~/.dotfiles/.x11/Xresources\
@@ -6870,7 +6756,6 @@ diff msg1 msg1
 diff msg2 msg2
 nvim mine.py
 python3 mine.py
-cd yagna
 obsidian -v
 yay -S obsidian 1.8.8
 yay -R obsidian
@@ -6902,7 +6787,6 @@ sudo pacman -Rns obsidian\
 yay -Rns obsidian\
 flatpak uninstall md.obsidian.Obsidian\
 
-sudo pacman -S obsidian
 touch ~/.config/obsidian/obsidian.json\
 
 systemctl --user status xdg-desktop-portal\
@@ -7010,7 +6894,6 @@ mvn clean compile\
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.HeterogeneousCloudSimulation"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample13"
 mvn exec:java -Dexec.mainClass="org.cloudbus.cloudsim.examples.CloudSimExample10"
-yay
 openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
 sudo openvpn Downloads/starting_point_yagnarao15\(1\).ovpn
 nmap https://sappy-web.2024.ctfcompetition.com/
@@ -7065,7 +6948,6 @@ sudo chown ftpuser /home/ftpuser/upload
 sudo -e /etc/vsftpd.conf\
 
 sudo systemctl restart vsftpd
-startx
 nmap -sn 10.42.0.1/24
 ping 172.32.3.45
 nmap -sS 172.32.3.45
@@ -7175,7 +7057,6 @@ printf "\e]66;s=2;Double sized text\a\n\n"\
 printf "\e]66;s=3;Triple sized text\a\n\n\n"\
 printf "\e]66;n=1:d=2;Half sized text\a\n"
 sudo pacman -S kitty
-kitty --version
 rog-control-center
 code ancient.txt
 sudo pacman 0Syu
@@ -7195,7 +7076,6 @@ sudo journalctl --vacuum-time=7d\
 
 cd Code/ISC
 openssl dgst --help
-man man
 nvim 9_1.py
 python3 9_1.py input encrypt decrypt 3
 echo "Test" >> input
@@ -7205,7 +7085,6 @@ python3 9_2.py input encrypt decrypt "[2,0,1]" 3
 python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,7]" 7
 python3 9_2.py input encrypt decrypt "[5,3,1,4,2,6,0]" 7
 g++ test.cc
-yay -S marimo
 /usr/sbin/python -m marimo --yes edit /home/yagna/Code/ISC --host=localhost --port=2818 --headless --no-token --watch
 /usr/sbin/python
 sudo pacman -S neovim
@@ -7320,7 +7199,6 @@ cat output.txt
 yay -S gcc
 yay -S gcc12
 yay -R python-google-generativeai python-google-ai-generativelanguage
-yay -S hadoop
 nvim .dotfiles/.local/bin
 sudo sysctl -w net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE \
@@ -7371,7 +7249,6 @@ sudo docker run \\
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \\
 ghcr.io/nextcloud-releases/all-in-one:latest
 sudo pacman -S tailscale\ 
-sudo pacman -S tailscale
 docker stop nextcloud-aio-domaincheck nextcloud-aio-mastercontainer
 docker rm nextcloud-aio-domaincheck nextcloud-aio-mastercontainer
 tailscale
@@ -7533,12 +7410,10 @@ flatpak run com.mojang.Minecraft
 flatpak --help
 flatpak uninstall com.mojang.Minecraft org.freedesktop.Platform org.freedesktop.Platform.GL.nvidia-570-133-07 org.freedesktop.Platform.GL.default org.freedesktop.Platform.openh264 org.gtk.Gtk3theme.Adwaita-dark
 flatpak list
-sudo -e /etc/pacman.conf
 sudo pacman -Sy
 pacman -Sl multilib
 sudo pacman -S steam
 sudo pacman -S ttf-liberation
-ls .local/share
 cd sn
 nvim Lab_2
 nvim Lab_2_U22CS104_SNA.ipynb
@@ -7666,11 +7541,9 @@ nmcli device wifi | grep "*" | awk -F: '{print $2}'
 nmcli device wifi | grep "*" | awk -F: '{print $7}'
 nmcli device wifi | grep "*" | awk -F: '{print $6}'
 nmcli device wifi | grep "*" | awk '{print $6}'
-nmcli connection show --active
 nmcli device wifi | grep "*" 
 cd .config/polybar
 marimo tutorial --help
-marimo tutorial intro
 rm -rf .vscode
 jupyter notebook
 mkdir Observable
@@ -7905,9 +7778,6 @@ ls -al ~/.var
 ls .var/app
 rm .var
 rm .var -rf
-bluetoothctl
-sudo pacman -S blueberry
-blueberry
 yay -S sklauncher-bin
 sklauncher
 yay -R sklauncher-bin
@@ -7920,7 +7790,6 @@ nbt2json level.dat | jq -r '.Data.RandomSeed'
 yay -S nbtexplorer
 nbtexplorer --help
 java -jar LegacyLauncher_legacy.jarq
-sudo pacman -S ntfs-3g
 sudo mkdir /mnt/windows
 sudo mount -t ntfs-3g /dev/nvme0n1p3 /mnt/windows
 umount -R /mnt/windows
@@ -7935,8 +7804,6 @@ git commit
 sudo pacman -S python-altair
 /sbin/python -m marimo --yes run TestNotebook.py --host=localhost --port=2828 --headless --no-token
 yay -S motheme
-pip install marimo
-motheme
 cd Code/ML/DataScience
 marimo edit TestNotebook.py
 git clone https://github.com/SylvanFranklin/.config.git .conf
@@ -7982,7 +7849,6 @@ nvim ~/.config/transmission-daemon/settings.json
 transmission-daemon
 stig add Mini\ Airways\ \[FitGirl\ Repack\].torrent
 stig
-sudo pacman -S transmission-gtk
 yay -R stig
 nmcli device wifi connect "Yagnarao" password "micromax"
 nmcli device wifi connect "Yagnarao" passwonmcli device wifi connect "Yagnarao" password "micromax" key-mgmt wpa-pskrd "micromax"
@@ -8094,14 +7960,11 @@ cd Client-Bus-Main
 nvim LocationTracker.js
 cd WebUI
 rm -rf WebUI
-cd NextJS-BusApp
 ls data
 rm -rf .git
 cd data
 cd train
 cd Rover
-cd BusApp
-cd ../BusApp
 cd .next
 rm -rf cache
 cd DataScience
@@ -8134,7 +7997,6 @@ rm -rf .jupyter .swt __pycache__ .p2 .mono .minikube .kube .ivy2 .app-store
 cd nv
 cd .nv
 rm ECE.html ece.txt
-rm .python_history
 rm test.py marimo.py .pulse-cookie screen_combined.png C1.pdf C2_username_file.pdf passphrase.pdf
 rm a.out .observablehq \#ls\# \#\*message\*-20250413-042340\# \#sqlite3.c\#
 rm app-debug.apk app-release-1.apk app-release-2.apk app-release-3.apk app-release-4.apk app-release-5.apk app-release.apk
@@ -8184,9 +8046,6 @@ sudo pacman -S mesa mesa-utils
 sudo pacman -S tlp\
 sudo systemctl enable --now tlp.service
 sudo dmidecode -t bios
-sudo pacman -S nvidia nvidia-utils
-sudo pacman -S xf86-input-libinput
-sudo -e /etc/X11/xorg.conf.d/30-touchpad.conf
 sudo pacman -S tlp\
 sudo systemctl enable tlp\
 sudo systemctl start tlp\\
@@ -8209,18 +8068,15 @@ sudo dmesg | grep -i 'error\|warn\|fail'
 ip q
 ./steam.desktop
 nvim steam.desktop
-sudo pacman -S kdeconnect
 sudo systemctl enable --now kde
 sudo pacman -S kdeconnect\\
 
 ls ~/.config/systemd/user/kdeconnectd.service\
 ls /usr/lib/systemd/user/kdeconnectd.service
-systemctl --user daemon-reload
 systemctl --user enable --now kdeconnectd.service
 systemctl --user list-units --all | grep kdeconnect
 sudo ls /usr/lib/systemd/system/kdeconnectd.service
 kdeconnect-handler
-kdeconnectd
 sudo pacman -S hostapd
 iw list
 iw list | grep HT40
@@ -8379,10 +8235,6 @@ nvim --version | grep python\
 
 pip install --user pynvim\
 
-/usr/bin/python3 -m pip show pynvim\
-
-sudo pacman -S luarocks\
-
 luarocks install molten\
 
 rm ~/.local/share/nvim/rplugin.vim\
@@ -8392,8 +8244,6 @@ printf "HELLO"
 nvim --headless -c ":UpdateRemotePlugins" -c ":q"\
 
 nvim --headless -c ":lua require("molten")" -c ":q"
-nvim\\
-
 pip install --user 'jupyter-client>=7.0.0'\
 pip install --user ipykernel
 sudo pacman -S python-pynvim python-jupyter-client python-pillow python-cairosvg python-plotly
@@ -8413,7 +8263,6 @@ nvim -V3logfile\
 cat ~/.local/share/nvim/rplugin.vim | grep molten
 nvim --version
 cat .config/nvim/lua/plugins/misc.lua
-nvm
 vim Code/ML/gpu.ipynb
 nvim Code/ML/gpu.ipynb
 yay -S jupytext
@@ -8437,8 +8286,6 @@ yay -Rns python-jupytext\
 yay -Scc
 cd python-jupytext
 cd src/jupytext-1.16.4b/jupyterlab
-makepkg -Csi\
-
 sudo reflector --country India --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist\
 
 pip install jupytext\
@@ -8458,7 +8305,6 @@ cat lua/plugins/treesitter.lua
 cat lua/plugins/mini.lua
 gamemoded -t
 sudo pacman -S wireguard-tools systemd-resolvconf
-sudo pacman -S proton-vpn-gtk-app
 openvpn jp-free-16.protonvpn.udp.ovpn
 openvpn /etc/openvpn/client/client_config_file.ovpn
 sudo openvpn /etc/openvpn/client/client_config_file.ovpn
@@ -8476,8 +8322,6 @@ hard
 rm /var/lib/pacman/db.lck
 nmcli device wifi connect "bhAAi" password "raviteja"
 unzip balenaEtcher-linux-x64-2.1.0.zip
-cd balenaEtcher-linux-x64
-./balena-etcher
 sudo dd if=ubuntu-24.04.2-desktop-amd64.iso of=/dev/sda bs=4M status=progress oflag=sync
 nmcli dev wifi connect "iQOO Z9 5G" password "123456789"
 nmcli device wifi connect "Yagnarao" password "micromax" key-mgmt wpa-psk
@@ -8670,11 +8514,8 @@ free -h\
 cat /proc/swaps\
 
 nvim lag.sh
-top
 top -b -n 1
 cd lag_logs
-cat /var/log/Xorg.0.log | grep -iE "(EE|error|fail)"\
-
 journalctl -b -p err | grep -iE 'nvidia|amdgpu|mesa|gpu|xorg'\
 
 glxinfo | grep -i vendor\
@@ -8945,7 +8786,6 @@ cat hashed_passwords.txt
 nvim 2.py
 python3 2.py
 echo $((460 * 8))
-picom
 unzip Word_Template_Seminar_2023.zip
 cd Word_Template_Seminar_2023
 mkdir Ltex
@@ -9020,7 +8860,6 @@ cd /usr/bin/
 ls python
 ls python3
 ls python3.13
-cd .dotfiles/.config
 mkdir matplotlib
 nvim matplotlib/matplotlibrc
 mpv Ferrari-Live-Wallpaper.mp4
@@ -9048,7 +8887,6 @@ mv .alias alias
 mv .zshenv zshenv
 mv .zprofile zprofile
 nvim zshrc
-clear
 nvim ~/.zshenv
 mv .zshrc zshrc
 kiiii
@@ -9091,7 +8929,6 @@ mv Vmalloc.java ~/Code/Cloud/cloudsim-7.0/modules/cloudsim-examples
 ls | grep Vmalloc
 sudo pacman -S pavucontrol   # for Arch\
 
-sudo pacman -S pavucontrol
 mpv Downloads/Tom\ Odell\ -\ Another\ Love.flac
 mpv Downloads/youtube_MwpMEbgC7DA_audio.mp3
 pavucontrol
@@ -9119,8 +8956,6 @@ sudo adb devices\
 
 sudo pacman -S android-udev\
 
-sudo pacman -S android-tools\
-
 adb
 adb shell
 ed
@@ -9139,14 +8974,12 @@ python -m site\
 find ~/.local/pipx/venvs/flwr/ -name site-packages
 find ~/.local/pipx/venvs/flwr/ -type d -name "site-packages"
 python -m venv ~/venvs/flwr-env
-pip install --upgrade pip
 pip install flwr flwr-datasets torch torchvision
 pip install flwr flwr-datasets torch torchvision --resume-retries
 pip --resume-retries --help
 pip --resume-retries true
 pip --resume-retries 1
 pip install flwr flwr-datasets torch torchvision --resume-retries 1
-sudo pacman -S python-uv
 uv
 uv init --help
 uv init
@@ -9177,7 +9010,6 @@ cd flower
 ls .venv
 cat .venv/pyvenv.cfg
 cd flo
-source .venv/bin/activate
 which python
 python -m pip install <your-package>\
 
@@ -9233,7 +9065,6 @@ echo $((384+249+287+310+150+400+180+120))
 rm boot.svg
 rm .zsh_history .zcompdump .yarnrc .vim .tlauncher .texlive -r
 rm .zsh_history .zcompdump .yarnrc .vim .tlauncher .texlive -rf
-xinput list
 nvim modules.ini
 ./bluetooth_status.sh
 cd polybar
@@ -9272,8 +9103,6 @@ ls Trash
 rm -rf Games/GTA\ -\ The\ Trilogy\ -\ DE
 rm Games
 rm Games -r
-prime-run glxinfo | grep "OpenGL renderer"\
-
 sudo pacman -S nvidia-prime
 prime-run glxinfo | grep "OpenGL renderer"
 sudo nano /etc/X11/xorg.conf.d/10-amd-nvidia.conf\
@@ -9292,7 +9121,6 @@ rm -rf .pki .nv .emacs.d .dotnet .flwr venvs .keras .m2 .marimo
 rm -rf .java .gradle __pycache__ .cargo 
 man sort
 cat Windows
-ls Windows
 sudo ls Windows
 fq
 cd Screenshots
@@ -9306,8 +9134,6 @@ mnm
 yay -S protonup-qt
 nvim on.sh
 hotspot.sh wifih
-ls Documents
-cd Documents
 lf
 q\\
 
@@ -9319,7 +9145,6 @@ find . -type d -exec chmod +x {} \;\
 
 sudo ls
 sudo -e Inbox.md
-sudo nvim
 sudo chown -R yagna:yagna Obsidian\
 
 find Obsidian -type d -exec chmod 755 {} \;\
@@ -9331,7 +9156,6 @@ cd 0-Monthly-Notes
 find . -type f -name "*.md" -exec chmod 644 {} \;\
 
 cd Documents/Documents/Dump
-sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick
 yay -S resvg
 cd yazi
 touch keymap.toml yazi.toml theme.toml
@@ -9414,7 +9238,6 @@ rg supermarket
 cd Super-Market-Analyzer/app/src/main/res/drawable
 cp ~/Downloads/market\ analysis.zip
 cp ~/Downloads/market\ analysis.zip ./
-s
 unzip market\ analysis.zip
 cd market\ analysis
 cd Big_Bazaar_sales
@@ -9446,8 +9269,6 @@ sudo pacman -S bitwarden
 bitwarden
 bitwarden-desktop
 ayzi
-yazi
-a
 ./Mini\ Airways.desktop
 rm Midnight\ Fight\ Express.desktop Mini\ Airways.desktop
 rm -rf Rockstar\ Games
@@ -9461,10 +9282,8 @@ ls Share | awk '{print $0 | "sort -k9"}'
 la Share
 ll
 rm test.html
-rm app-debug.apk
 rm Dadar-Nizamabad.pdf .zsh_history .zcompdump .pulse-cookie .bitwarden-ssh-agent.sock lag.sh
 rm -rf lag_logs
-ls Share
 chmod drwxr-xr-x Pictures/Wallpapers
 ollama list
 chmod 777 Pictures/Wallpapers
@@ -9483,7 +9302,6 @@ ls Pictures
 y Pictures
 ls .git
 ls _.git
-git status
 cd wallpapers
 git clone https://github.com/AngelJumbo/gruvbox-wallpapers.git
 cd Pictures
@@ -9516,7 +9334,6 @@ rm -rf .minecraft
 rm -rf .mozilla
 cd $XDG_DATA_HOME
 ls Co
-ls Code
 mv ~/.android ~/.dotfiles/.config/android
 rm -rf .android
 mkdir $XDG_DATA_HOME/Code
@@ -9552,7 +9369,6 @@ vim Inbox.md
 nvim Inbox.md
 nvim --startuptime
 nvim --startuptime .zshenv
-nvim .zshenv
 nvim Obsidian/Inbox.md
 git clone https://github.com/LazyVim/LazyVim.git
 cd LazyVim
@@ -9560,7 +9376,6 @@ rg LazyVim.lsp
 rg LazyVim.lsp.on_attach
 c gs
 asusctl
-asusctl -s
 supergfxctl
 supergfxctl -h
 supergfxctl -g
@@ -9577,19 +9392,13 @@ sudo supergfxctl -m AsusMuxDgpu
 sudo supergfxctl -s
 sudo supergfxctl -h
 sudo -e /etc/supergfxd.conf
-systemctl suspend
 systemctl sleep
 findmnt -no UUID -T /var/swap/swapfile\
 
 sudo btrfs inspect-internal map-swapfile -r /var/swap/swapfile\
 
 sudo -e /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg\
-
 sudo -e /etc/mkinitcpio.conf
-sudo mkinitcpio -P\
-
-reboot
 journalctl -b | grep -i resume\
 
 echo $((2500/4))
@@ -9717,7 +9526,6 @@ rm -rf NextJS-FileSystem
 unzip hostel-management.zip Hostel
 mkdir Hostel
 mv hostel-management.zip Hostel
-nmcli 
 fc
 cal -2m
 cal -2
@@ -9739,12 +9547,9 @@ cd cache
 sudo paccache -r\
 
 paccache --help
-sudo pacman -Qdtq\
-
 sudo pacman -R texlive-fontsextra python-pyspark mariadb eclipse-platform python-sympy
 sudo pacman -R texlive-fontsextra python-pyspark mariadb eclipse-platform
 yay -R scala scala-docs scala-sources nix-docs nix nix-busybox python-selenium ulauncher python-fake-useragent
-sudo pacman -Qtdq | sudo pacman -Rns -
 sudo pacman -Rns $(pacman -Qdtq)\\
 
 rm -rf ~/.cache/*\
@@ -9762,14 +9567,12 @@ rm caches/* -r
 rm caches/* -rf
 mount /dev/sda /mnt/windows
 sudo mount /dev/sda /mnt/windows
-help
 sudo systemctl enable tailscaled.service
 pkill 255769
 pkill 256840
 sudo systemctl disable tailscaled.service
 sudo systemctl start tailscaled
 tailscale --help
-sudo systemctl enable --now tailscaled.service
 tailscale ip
 tailscale up
 sudo systemctl status tailscaled.service\
@@ -9785,19 +9588,15 @@ which tailscaled\
 
 sudo tailscaled -verbose=1\
 
-transmission-gtk
 ruff --version
 cd .zen
 cd 8ogoku33.Default\ \(alpha\)
 cd storage
 cd default
-cd .local
 rm -rf nvim-test nvim-lazy nvim-own nvim-Test
 cd Steam
 cd steamapps
 cd common
-cd share
-cd /
 sudo pacman -Rns $(pacman -Qdtq)
 swapon --show\
 free -h\
@@ -9850,8 +9649,6 @@ cd Games/Red-Dead-Redemption\ 2
 WINEPREFIX=~/Games/rdr2prefix wine RDR2.exe\
 
 WINEPREFIX=~/Games/rdr2prefix wine Launcher.exe
-pavucontrol\
-
 music
 chmod 644 Recordings .thumbnails
 bash <(curl -sL https://mierak.github.io/rmpc/run-rmpc)
@@ -9882,13 +9679,10 @@ rm wine_log.txt
 rm Red\ Dead\ Redemption\ 2.desktop
 ls Rockstar\ Games
 cd Hostel-Portal
-nvim main.go
 mv main.go _.go
 mv _main.go main.go
 go run ./_main.go
-go run ./main.go
 cd Start-Page
-cd Arrow
 mv README.md Prompt.md
 ls Docker
 ls Hostel
@@ -9946,7 +9740,6 @@ nvim .local/bin/tmux-sessionizer.sh
 tmu
 cd "/home/yagna/.config"
 cd "/home/yagna/Obsidian/"
-cd "/home/yagna/Code/"
 rm tsconfig.json package.json pnpm-lock.yaml
 ls ML
 rm -rf .metals .scala-build .scalafmt.conf
@@ -9965,7 +9758,6 @@ mv ML/c ML-C
 mv ML/gpu.py ./
 rm -rf ML
 lc
-ls Archive
 mv ML-C/ MLibC
 printf '\e]66;s=5;Heading 1\a\n\n\n'
 printf '\e]66;s=5;Heading 1\a\n\n\nHello'
@@ -10054,7 +9846,6 @@ pnpm add -D eslint-plugin-react-hooks\
 
 cat package
 mv NextJS-Portal/NextJS-Portal Portal
-cd Portal
 pnpm install
 pnpm add @vercel/postgres\
 
@@ -10139,7 +9930,6 @@ cd .dotfiles-main
 rm .dotfiles-main
 rm .dotfiles-main -rf
 sudo cd MFE
-whoami
 cd GoldenLap
 cd ../MFE
 chmod +x MFE
@@ -10151,14 +9941,11 @@ cd MiniAirways
 cd MFE
 mv MFE Midnight-Fight-Express
 ls Prefixes/RDR2
-xrandr --verbose\
-
 cp .dotfiles Code/Dots -r
 cd cargo
 mv cargo ~/.config/cargo
 mv maven ~/.config/maven
 mv gradle ~/.config/gradle
-cd ~/.config
 ls Android\ Open\ Source\ Project
 rm gradle maven 
 rm cargo
@@ -10172,11 +9959,8 @@ rm -rf Dots
 llama-3.1.sh how to set ctab to cycle through tabs in nvim map("n", "<leader>tab", "<cmd>bNext<CR>", { desc = "buffer goto next" })\
 
 llama-3.1.sh
-vim
-nvim-own
 haskel
 cat init.lua
-nvim init.lua
 cat ~/.zshenv
 tmux previous-layout
 tmux next-layout
@@ -10212,7 +9996,6 @@ wine "C:/Program Files(x86)/Cosmic Byte/Sentinel/CosmicByteSentinel.exe"\
 wine ~/Games/Prefixes/Default/drive_c/Program\ Files\ \(x86\)/Cosmic\ Byte/Sentinel/CosmicByteSentinel.exe
 rm -rf .wine
 rm -rf .ssh .ollama 
-cd Code
 cd .dotfiles/.config/tmux
 awk '/[a-zA-z]/{++t}END{print 100 - t}' tmux.conf
 nvim tmux.conf
@@ -10269,7 +10052,6 @@ notify-send "Hello World" --urgency critical
 notify-send "Hello World" --urgency normal
 notify-send "Hello World" --urgency low
 sudo pacman -Syu bc
-sudo pacman -S bc
 bc
 pactl
 pactl list cards\
@@ -10437,10 +10219,8 @@ echo $(( 17158440/20 ))
 gcl https://github.com/Rahuletto/ClassPro.git --depth=1 Test
 cd Test
 cat package.json
-V
 sudo pa
 fs
-ls ../
 sudo pacman -Sy ninja ccache
 cd build
 ls bin
@@ -10448,7 +10228,6 @@ ls bin
 git pull origin main\
 
 git
-tmux ls
 git stash push -m "partial change" app/student/complaints/page.tsx
 git stash show -p stash@{0} -- path/to/file > /tmp/stash.diff\
 
@@ -10676,14 +10455,12 @@ docker container stop nextcloud-aio-calcardbackup nextcloud-aio-facerecognition 
 docker container rm nextcloud-aio-calcardbackup nextcloud-aio-domaincheck nextcloud-aio-facerecognition nextcloud-aio-jellyfin
 docker exec jellyfin ffmpeg -encoders | grep nvenc
 lsa
-pp
 yay -S lmstudio
 rm -rf .config/cargo
 git clean -fd
 ks
 ls\\
 
-sl
 sudo pacman -R lazygit
 sudo pacman -S libinput-gestures xdotool wmctrl\
 
@@ -10745,8 +10522,6 @@ celluloid converted/Squid.Game.S02E01.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBR
 cp .vscode Code/.vscode -r
 ls ~/.vscode
 ls .vscode/.vscode
-rm .vscode
-rm .vscode -rf
 ls .vscode/extensions
 ls .config/Code
 cd .vscode
@@ -10755,9 +10530,6 @@ nvim extensions.txt
 rm extensions.txt
 ls .android
 ls .config/Android\ Open\ Source\ Project
-ls .config
-code
-cd 
 docker run --rm georift/install-jellyfin-tizen 10.145.229.81
 xq
 chmod +x web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
@@ -10771,7 +10543,6 @@ cd package-manager
 ./package-manager.bin
 qcc
 rm ~/Downloads/web-cli_Tizen_Studio_6.1_singapore_ubuntu-64.bin
-ls ~/Downloads
 chmod +x ~/Downloads/web-ide_Tizen_Studio_6.1_singapore_ubuntu-64.bin
 yay -S rpmextract
 yay -S cpio
@@ -10926,12 +10697,10 @@ export PATH="$HOME/tizen-studio/tools/ide/bin:$PATH"\
 tizen cli-config "default.profiles.path=$HOME/tizen-studio-data/profile/profiles.xml"\
 tizen cli-config "default.profile.name=Yagna"\
 
-btop
 kill -9 12463
 kill -9 7602 13899 7084
 kill -9 7602 7084
 kill -9 7602
-1q
 unset _JAVA_OPTIONS\
 
 free -h\
@@ -10997,7 +10766,6 @@ jps -l\
 cd ~/Downloads/jellyfin-tizen
 ls .buildResult
 nvim .buildResult/README.md
-ls 
 ls www
 ls -la .buildResult/
 tizen build-web -e ".*" -e gulpfile.babel.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"\
@@ -11072,7 +10840,6 @@ zip -r ../dist/jellyfin-tizen.wgt .\
 cd ..
 cd .buildResult
 cd dist
-sdb
 yay -S tizen-sdb
 sdb devices 
 sdb push jellyfin-tizen.wgt /tmp/
@@ -11085,7 +10852,6 @@ sdb shell "uname -a"
 sdb shell "cat /etc/config/model-config.xml" | grep -i "developerMode\|sideload"
 sdb shell 'cat /etc/config/model-config.xml | grep -i "developerMode\|sideload"'
 telnet 10.145.229.81 23
-sudo pacman -S inetutils
 curl -I http://10.145.229.81:8001/api/v2/
 ls ~/SamsungCertificate/Yagna
 # Create security profile using your existing certificate\
@@ -11193,21 +10959,13 @@ docker compose restart jellyfin\
 rm -rf Jellyfin.wgt jellyfin-tizen jellyfin-web tizen-studio-arch 683ae117f0c6c_HackOn_-_Season_5 683ae117f0c6c_HackOn_-_Season_5.zip Arch_Linux-JP-FREE-11.conf Architechture.png art\ of\ rally\ \[FitGirl\ Repack\] author.p12 dlna_8.0.0.0.zip unstopsmarthire-1.0.17.deb
 ip aq
 rm -rf .package-manager .sdb .swt .tizen .tlauncher SamsungCertificate tizen-studio tizen-studio-data workspace .bashrc DUID
-sudo ls /var/cache/pacman/pkg/ | wc -l
-du -sh /var/cache/pacman/pkg/
 sudo pacman -Sy pacman-contrib
-sudo paccache -r
 sudo paccache -r --keep 1\
 
 sudo paccache -r --keep 1
 sudo pacman -Qdtq
-sudo pacman -Qtdq | sudo pacman -Rns -\
-
 pacman -Qei | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
 pacman -Qim | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
-sudo pacman -Rns $(pacman -Qdtq)\
-\
-
 sudo du -sh ~/.cache
 rm -rf .cache
 cd .cache
@@ -11249,7 +11007,6 @@ curl -X POST http://localhost:3000/student/complaints \\
 git checkout e04b2a2
 git checkout main
 git stash apply stash@\{0\}
-ga .
 git stash clear\
 
 git stash list
@@ -11259,16 +11016,12 @@ nvidia-smi
 uname -r
 lspci | grep -E "VGA|3D"\
 
-nvidia-smi\
-
 nvidia-settings\
 
 sudo -e /etc/X11/xorg.conf
 sudo nvidia-settings\
 
 __GL_SYNC_TO_VBLANK=1 glxgears\
-
-xrandr --props\
 
 sudo pacman -S lib32-gtk2 lib32-libpng lib32-libjpeg6-turbo lib32-nss lib32-openal lib32-vulkan-icd-loader\
 
@@ -11277,7 +11030,6 @@ STEAM_FORCE_DESKTOPUI=1 steam\
 ip
 tldr ip
 rm .nvidia-settings-rc
-sudo tailscale up
 tailscale status\
 
 sudo resolvectl status\
@@ -11349,7 +11101,6 @@ nau
 cd Code/NextJS-Portal\ \(2\)
 rm -rf .next
 cd app
-cd NextJS-Portal
 ga actions/complain.tsx
 ga actions/complain.tsx app/student/complaints/complainHistory.tsx app/student/complaints/page.tsx components/dashboard-layout.tsx lib/jwt.ts
 git commit -m "Made better Server components and avoided serevr actions for data fetch"
@@ -11357,14 +11108,12 @@ man yt-dlp
 GTK_THEME=Adwaita:dark gnome-help
 sudo pacman -R nautilus
 sudo pacman -S naut
-sudo pacman -S nautilus
 GTK_THEME=Adwaita:dark nautilus
 GTK_THEME=Adwaita:dark gnome-calculator
 GTK_THEME=Adwaita:dark transmission-gtk
 GTK_THEME=Adwaita:dark lutris
 export ADW_DISABLE_PORTAL=1
 lutris
-htop
 sudo tailscale up --accept-dns=true\
 
 tailscale status
@@ -11372,10 +11121,7 @@ ping google-pixel-7
 chmod +x Logseq-linux-x64-0.10.12.AppImage
 ./Logseq-linux-x64-0.10.12.AppImage
 rm Logseq-linux-x64-0.10.12.AppImage
-yay -S logseq-desktop-bin
-adb devices
 adb install Downloads/Logseq-android-0.10.12.apk
-logseq
 yay -R logseq-desktop-bin
 sudo tailscale down
 curl -X GET https://tasks.googleapis.com/tasks/v1/users/@me/lists
@@ -11404,9 +11150,6 @@ rm -f build/src/nvim/auto/keysets_defs.generated.*\
 rm -f build/include/keysets_defs.generated.h\
 
 touch src/nvim/api/keysets_defs.h\
-
-make clean\
-make\
 
 grep font_scale build/include/keysets_defs.generated.h\
 
@@ -11479,10 +11222,8 @@ END {printf "Total Size: %.2f MB\n", sum}'\
 
 docker images | awk '{print$7}'
 docker images | awk '{print$7}' > test
-nvim test
 echo (( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ))
 echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 524 + 12500 + 21300 + 4700 + 94.7 + 35.5 + 676 + 284 + 239 ))
-ls Downloads
 feh Downloads/20250620_2140_Dark\ Mesh\ Wallpaper_remix_01jy71hs2dejjvhmdkwnvm51n2.png
 yay -S i3-gnome
 i3-gnome
@@ -11490,7 +11231,6 @@ i3-gnome --help
 man i3-gnome
 tldr i3-gnome
 sudo -e /usr/lib/gsd-xsettings
-nautilus
 sudo pacman -S sxiv
 sxiv
 sxiv Pictures/Wallpapers-Desktop/Wallpaper-Blue-Black-Gradient.png
@@ -11521,10 +11261,7 @@ echo $(( 89.6 + 629 + 197 + 629 + 81.4 + 251 + 14.2 + 2130 + 187 + 438 + 4800 + 
 alert
 sleep 10; alert
 alert ls
-alert sleep 5
-webcam
 sudo pacman -S trash-cli
-rm test
 ls .local/share/Trash
 w
 disk
@@ -11537,12 +11274,10 @@ nvim /tmp/nvim.yagna/AP4c9S/1
 nvim chrishtitus.sh
 rm chrishtitus.sh
 cd neovim
-...
 cd code 
 tree -CAhF --dirsfirst
 cd zsh
 nvim alias
-r
 rg
 rg hot
 mkdir Sahithi\\
@@ -11573,7 +11308,6 @@ cd Squid\ Game
 cd Season\ 02/'\
 
 cd Season\ 02
-sudo pacman -S vlc
 dmenu_run -fn "JetBrainsMono Nerd Font" -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i
 sudo pacman -S mitmproxy\
 
@@ -11587,10 +11321,6 @@ gcl https://github.com/yashtank86/Applocker-Android.git
 nvim .travis.yml
 cd Applocker-Android
 rm -rf Applocker-Android
-rm .zsh_history
-npm install
-npm install --legacy-peer-deps\
-
 cd NextJS-
 cp .env.local env
 cd MLibC
@@ -11606,7 +11336,6 @@ mv test.c main.c
 nvim main
 nvim main.c
 gcc main.c -o main -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
-./main
 sudo pacman -S raylib
 rm main.c
 rm main
@@ -11633,7 +11362,6 @@ git hunk'\
 git hunk
 tldr git
 git --help
-git add .
 git commit -m "Regular Backup"
 git push origin main\
 
@@ -11652,7 +11380,6 @@ ls music
 ls movies
 ls downloads
 rm downloads
-hotspot.sh
 sudo pacman -S ufw
 sudo ufw allow 1900/udp
 sudo ufw allow 8200/tcp 
@@ -11669,16 +11396,12 @@ npx https://github.com/google-gemini/gemini-cli
 rm \;
 gs\\
 
-git log
 git pull origin main
 git pull origin master
-gs
 make
 cd Code/NeoVim
-cd Movie-Recommendation
 ls mrs_take_2_3
 python mrs_take_2_3/main.py
-cd movie_recommendation_system
 rm -rf movie_recommendation_system
 rm -rf movie_recommendation_system_1
 rm -rf mrs_take_2_3
@@ -11686,13 +11409,11 @@ cd coe
 cd NeoVim
 opencode
 Can
-tmux
 mkdir STM32
 cd St
 mv ~/Downloads/BACKUP.zip ./
 unzip BACKUP.zip
 cd CAN_BSP
-tree
 git clone https://github.com/STMicroelectronics/STM32CubeL4.git
 mv ../../../../CAN_BSP ./
 mv ../../../../CANTRY ./
@@ -11710,13 +11431,6 @@ cd STM32
 rm -rf STM32
 xrandr --output HDMI --mode 1920x1080
 xrandr --output HDMI-0 --auto
-xrandr --output DP-2 --mode 2560x1440 --rate 240\
-
-xrandr --output HDMI-0 --mode 1680x1050 --pos 0x0 --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 1680x0\
-
-xrandr --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 0x0 --output HDMI-0 --mode 1680x1050 --pos 2560x0\
-
-xrandr
 cd /data/shows/Squid\ Game/Season\ 02/converted
 rm -rf Squid\ Game\ S03\ 2160p\ 10Bit\ NF\ WEB-DL\ Multi-Audio\ DDP5.1\ x265-TBMovies
 rm -rf Zero.Day.2025.S01.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA
@@ -11725,22 +11439,17 @@ rm WindowsXP_1551719014755.jpg
 rm Logseq-android-0.10.12.apk
 yay -Syyu
 mv Downloads/STOP.bmp ./
-nvim main.py
-python main.py
 nvim STOP.h
 nmcli device v wifi
 time
-time zsh --interactive -c exit
 sudo pacman Syu
 ps aux | grep pacman
-sudo rm /var/lib/pacman/db.lck
 yay -S devtoolbox
 devtoolbox
 yay -S planify
 planify
 yay -S iotas
 iotas
-du
 cd Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\]
 ls Games/Jurassic-World-Evolution-2
 pkill -9 25094
@@ -11756,7 +11465,6 @@ sudo kill -9 25094 25113 25399 26107\
 ps aux | grep wine
 cd Gam
 mkdir Jurassic-World-Evolution-II
-cd -
 WINEPREFIX=~/Games/Jurassic-World-Evolution-2 wine setup.exe
 sudo pacman -S dxvk\
 
@@ -11796,8 +11504,6 @@ sudo cp ~/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\] ./Users/A
 ls Users/ASUS/Downloads/Jurassic\ World\ Evolution\ 2\ \[FitGirl\ Repack\]
 rm Jurassic\ World\ Evolution\ 2.desktop
 clsq
-systemd-analyze
-systemd-analyze blame
 zen-browser -v
 sudo pacman -R brave-bin
 sudo pacman -S gpick\
@@ -11809,7 +11515,6 @@ sudo pacman -S xcolor
 yay -S ttf-inter ttf-fira-code\
 
 nvim .obsidian/snippets/notion.css
-qq
 #e4af0b\
 q
 notify-send -e -h string:x-cananoical-private-synchronus-brightness-notif -h int:value:1 -u low "Screen" "Brightness: 1%"
@@ -11846,7 +11551,6 @@ nvim ~/.config/dunst/dunstrc
 nvim .dotfiles/.config/dunst/dunstrc
 pkill dunst && dunst &\
 
-cd cdoe
 rm -rf Code-Forces 
 lsusb
 sudo gparted
@@ -11873,8 +11577,6 @@ sudo dmesg | tail -n 20\
 systemctl enable --now syncthing@.service
 sudo systemctl enable --now syncthing@.service
 nvim .dotfiles/.config/syncthing/config.xml
-cd .dotfiles
-stow .
 rm .config/syncthing -rf
 rm ~/.config/syncthing
 systemctl --user restart syncthing\
@@ -11882,7 +11584,6 @@ systemctl --user restart syncthing\
 systemctl --user enable syncthing\
 systemctl --user start syncthing\
 
-syncthing
 brave
 yay -S brave-bin
 cd kitty
@@ -11894,16 +11595,12 @@ rm Second-Payment.jpg
 trash
 trash-list
 nvim-Test
-pwd
 cd ~/.dotfiles/.config\\
 
-cd nvim
 cd mjdgk-zw6a5
 rm mjdgk-zw6a5
 ./Sahithi/a.out
-;q
 rm .opencode.json
-rm .zcompdump
 trash .zcompdump .zsh_history
 touch 1 2 3
 rm 1 2 3
@@ -11916,7 +11613,6 @@ rm Hello
 rm -rf .Trash-1000
 lsblk -o NAME,MODEL,SIZE,TYPE,MOUNTPOINT\
 
-lsblk -f
 sudo pacman -S gnome-disk-utility
 gnome-disks
 sudo mkfs.exfat /dev/sdb1
@@ -11925,9 +11621,6 @@ sudo mkfs.exfat /dev/sda1
 cd /run/media/yagna/B3F6-1C0A
 la
 ls /run/media/yagna/259F-0617
-nvi
-pactl list sources short\
-
 pactl set-source-mute @DEFAULT_SOURCE@ 0\
 pactl set-source-volume @DEFAULT_SOURCE@ 100%\
 
@@ -11946,17 +11639,12 @@ nmcli device wifi\\
 
 g++ -v
 ;w
-bash
 exxit
-exit
-yay -S android-studio
-cd .config
 cd ../.dotfiles/.config
 rg i3lock
 yay -S i3lock-color
 i3lock
 ls Pictures/Wallpapers-Desktop
-y
 i3lock \\
   --inside-color=373445ff \\
   --ring-color=ffffffff \\
@@ -12028,27 +11716,21 @@ LS
 touch sqlite3.db
 mv sqlite3.db yagna.db
 sqlite3 yagna.db
-sudo pacman -S firefox
 firefox
 yay -S thorium-browser-bin
 thorium-browser
 yay -R brave-bin
 tmux.sh
-npm run dev
-sudo systemctl restart NetworkManager.service
-cd /tmp
 gcl https://github.com/simeononsecurity/FireFox-Privacy-Script.git
 cd FireFox-Privacy-Script
 nvim 1.cc
 g++ 1.cc -o 1
 mkdir Biometric-FYP
 cd Biometric-FYP
-nvim README.md
 nvim 2.cc
 ./2
 cmatrix -C cyan
 g++ 2.cc -o 1
-./1
 pico
 rm 1 1.cc 2.cc
 rm -rf Java
@@ -12061,7 +11743,6 @@ java HelloWorld
 cd tmp
 ld
 ls yagna-code-zsh
-cd Archive
 mkdir Postgres
 cd Postgres
 cd Obsidian
@@ -12073,9 +11754,6 @@ nvim docker-compose.yaml
 xprop
 xprop | grep WM_WINDOW_ROLE\
 
-fg
-ls  .vscode
-cd
 mv Downloads/all_folders.zip Code/Archive/Postgres
 unzip Code/Archive/Postgres
 unzip Code/Archive/Postgres/all_folders.zip
@@ -12084,8 +11762,6 @@ docker exec -it pg-postgres-1 bash\
 
 psql -U postgres -h localhost -p 5432 -d postgres\
 
-code . && exit
-cd Code/Archive/Postgres/
 rm -rf Postgres
 sudo pacman -S chromium
 cd  /home/yagna/.zen/8ogoku33.Default (alpha)
@@ -12093,10 +11769,8 @@ cd  /home/yagna/.zen/8ogoku33.Default\ \(alpha\)
 cd chrome
 nvim url.css
 nvim pass
-1
 ls /data
 cd shows
-cd /run/media/yagna/259F-0617
 mv Squid\ Game /run/media/yagna/259F-0617
 ls Squid\ Game
 cd Squid\ Game/Season\ 02/Squid.Game.S02E0
@@ -12105,25 +11779,18 @@ cd ~/Windows
 cd /data
 ls ~/Windows
 cd /mnt/windows
-cd ~/Downloads
 cd Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
-nmcli device wifi connect Vinay204 password Devansh29
 nmcli device wifi show-password
 cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games
 alert cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
 sudo alert cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
 alert sudo cp Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] ../Windows/Games -r
-cd Windows
-cd Games
 rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
 /bin/rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
 sudo /bin/rm -rf Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\]
-trash-empty
 nmcli radio wifi off
 nmcli radio wifi on
 nmcli device wifi connect Naveen\ 5G password nkysnkysn
-nmcli device wifi connect Naveen\ 5G --ask
-cd Downloads
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk\
 
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-kde\
@@ -12143,9 +11810,6 @@ alert cp Downloads/Assetto\ Corsa\ Competizione\ \[FitGirl\ Repack\] /run/media/
 vlc
 vlc /run/media/yagna/259F-0617/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
 celluloid /run/media/yagna/259F-0617/Squid\ Game/Season\ 02/Squid.Game.S02E02.DUAL-AUDIO.KOR-ENG.2160p.10bit.HDR.DV.WEBRip.6CH.x265.HEVC-PSA.mkv
-fastfetch
-cd code
-ls ~
 ls /tmp
 gcl https://github.com/simeononsecurity/FireFox-Privacy-Script.git Firefox-Piracy
 cd Firefox-Piracy
@@ -12153,29 +11817,19 @@ sudo chmod +x ./sos-firefoxprivacy.sh\
 sudo bash ./sos-firefoxprivacy.sh
 sudo chmod +x ./sos-firefoxprivacy.sh
 sudo bash ./sos-firefoxprivacy.sh --uninstall
-nmcli device wifi connect Yagnarao --ask
-sudo pacman -Syu
 nix-shell
 sudo pacman -R firefox
 polybar
-yay -Syu
-nvim
-lsblk
 backup-immich.sh
 cd /run/media/yagna/7c49c171-357e-43f1-8cf7-4f68a0d0d452
-l
-cls
-df
 docker ps
 cd immich
 docker compose pull && docker compose up -d
-ip a
 sudo pacman -S rdfind\
 
 cd Immich
 cd library/library/admin
 rdfind --help
-..
 rdfind ./
 nvim results.txt
 pacman -Qqe > pkglist.txt\
@@ -12184,22 +11838,1440 @@ nvim pkglist.txt
 yay -23 <(pacman -Qqm | sort) <(pacman -Qq | sort) > aur-packages.txt\
 
 comm --help
-c
 comm -23 <(pacman -Qqm | sort) <(pacman -Qq | sort) > aur-packages.txt\
 
 nvim aur-packages.txt
-nvim 
 sudo mount -t ntfs3 /dev/nvme0n1p3 /mnt/windows\
 
 cp Games/* Windows/Games -r
 sudo cp Games/* Windows/Games -r
-nmcli device wifi
-ls
 ls Windows/Games
 cd Windows/Games
-du -h --max-depth=1 ./ | sort -hr
 cd games
+git add .
+sudo pacman -S go
+/bin/cd 
+/bin/cd  yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -Csi\
+
+yay -S zen-browser-bin oh-my-posh
+sudo pacman -S polybar nvm
+yay -S ttf-jetbrains-mono-nerd
+sudo pacman -S bluez-tools
+sudo pacman -S bluez
+sudo systemctl enable bluetooth.service
+bluetoothctl
+sudo pacman -S bluez-utils
+sudo pacman -S blueman
+sudo pacman -R blueberry
+sudo systemctl start bluetooth.service
+sudo pacman -S asusctl power-profiles-daemon
+yay -S asusctl power-profiles-daemon
+yay -S dmenu-run
+sudo pacman -S coreutils
+sudo pacman -S bat
+sudo pacman -S dmenu
+nvim .zcompdump
+sudo pacman -S xf86-input-libinput\
+
+sudo pacman -S xf86-input-libinput
+sudo pacman -S xf86-input-libinput\
+sudo mkdir -p /etc/X11/xorg.conf.d\
+sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
+
+sdb
+yay -S asusctl-git
+pactl info\
+
+blueberry
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber\
+
+systemctl --user enable pipewire pipewire-pulse wireplumber\
+systemctl --user start pipewire pipewire-pulse wireplumber\
+
+yay -S apple_cursor
+sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf\
+
+sudo pacman -S blueberry
+sudo pacman -R blueman
+pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+
+sudo nvim /etc/pacman.d/gnupg/gpg.conf
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35\
+
+sudo -e /etc/pacman.conf
+pacman -S asusctl power-profiles-daemon\
+
+sudo pacman -S asusctl power-profiles-daemon\
+
+systemctl enable --now power-profiles-daemon.service
+pacman -S supergfxctl switcheroo-control\
+
+sudo pacman -S supergfxctl switcheroo-control\
+
+systemctl enable --now supergfxd\
+systemctl enable --now switcheroo-control\
+
+asusctl -s
+asusctl -help
+asusctl --help
+alacritty
+alias nano='-e'
+sudo nano /etc/X11/xorg.conf.d/30-touchpad.conf\
+
+ls code
+rm -rf yay
+sudo -e /etc/X11/xorg.conf.d/30-touchpad.conf
+yay -S libinput-gestures\
+
+nvim ~/.dotfiles/.config/libinput-gestures.conf\
+
+xrandr\\
+
+xrandr --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 0x0 --output HDMI-0 --mode 1680x1050 --pos 2560x0\
+
+xrandr --output eDP-2 --primary --mode 2560x1440 --rate 240 --pos 0x0 --output HDMI-0 --mode 1680x1050 --pos 2560x0\
+
+xrandr --output DP-2 --mode 2560x1440 --rate 240\
+
+xrandr --output eDP-2 --mode 2560x1440 --rate 240\
+
+cd /
+cd /home
+cd yagna
+sudo pacman -S htop
+htop
+cd ~
+rm .config
+rm .local
+mkdir .config .local
+rm ~/.local/share/zoxide/db.zo && stow .
+cd ~/.local/share
+rm nvim xorg zinit mime
+mv .dotfiles/.local/share/* .local/share
+mv ~/.dotfiles/.local/share/* .local/share
+mv ~/.dotfiles/.local/share/* ~/.local/share
+cd share
+rm ~/.local/share/zoxide/db.zo && mv ~/.dotfiles/.local/share/zoxide/db.zo
+rm ~/.local/share/zoxide/db.zo && mv ~/.dotfiles/.local/share/zoxide/db.zo ~/.local/share/zoxide
+ls .local/share
+ls .local/share/zinit
+cd .dotfiles/.local
+rm ~/.local/state && mv state ~/.local/state
+rm -rf share
+cd .local
+ls state
+ls share
+rm .config/zsh/zcompdump
+autoload -Uz compinit \\
+compinit -d "$ZSH_COMPDUMP"
+autoload -Uz compinit\
+compinit\
+
+compinit -i\
+
+zinit self-update\
+zinit update --all\
+
+zinit cd clear\
+
+nano ~/.zshrc\
+
+rm ~/.zcompdump*\
+autoload -Uz compinit\
+compinit -i\
+zinit update --all\
+
+ls local
+ls .local
+rm .cache .local/share .local/state -rf
+sudo pacman -S nvm
+man nvm
+node
+nvm --help
+sudo pacman -R nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+nvm
+nvm install --lts
+nvm list
+node -v
+sudo pacman -S viu chafa ueberzugpp python unzip tar wget ripgrep xclip
+npm
+npm -v
+mkdir Windows
+xrandr --help
+xrandr --verbose\
+
+xrandr --props\
+
+xrandr --current
+xrandr --output eDP-2 --mode 2560x1440 --rate 60
+xrandr --output eDP-2 --mode 2560x1440 --rate 240
+xrandr --dpi 144
+xrandr --dpi 200
+xrandr --dpi 140
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber helvum qpwgraph\
+
+systemctl --user enable pipewire wireplumber pipewire-pulse\
+systemctl --user start pipewire wireplumber pipewire-pulse\
+
+sudo -e /etc/pipewire/pipewire.conf\
+
+cp Windows/Games/Backup.zip ./
+rm Backup.zip
+cp Backup.zip ~/
+nmcli device wifi connect Vinay204 password Devansh29
+sudo pacman -S transmission-gtk
+sudo pacman -S brightnessctl
+ls Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/
+watch ls
+watch ls -lA
+sudo pacman -S mpv
+mpv Zero.Day.S01E01.Episode.1.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv
+celluloid Zero.Day.S01E01.Episode.1.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv
+mpv Zero.Day.S01E01.Episode.1.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+sudo pacman -S mpv libass ffmpeg\
+
+nvim ~/.config/mpv/mpv.conf\
+
+mpv Zero.Day.S01E02.Episode.2.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+mpv Zero.Day.S01E03.Episode.3.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+sudo pacman -S picom
+cd Windows
+cd Games
+ls Share
+sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide imagemagick
+yazi
+diff Backup.zip Backup_1.zip
+rm Backup_1.zip
+unzip Backup.zip
+file Backup.zip\
+
+sudo pacman -S p7zip\
+7z x Backup.zip\
+
+mv Backup.zip Code
+ls Code_1
+rm -rf Code_1
+7z x Backup.zip\
+
+unzip -t Backup.zip\
+
+ls -l\
+mv Backup.zip backup.zip\
+unzip backup.zip
+rm backup.zip
+mv Documents ../
+mv Downloads ../
+ls ~/Downloads
+mv Downloads/* ~/Downloads
+rm Downloads
+rm Downloads -r
+mv Minecraft ../
+mv Music ../
+mv Code/Go Code/go
+mv Code/* ./
+diff Go go
+diff Go/ go/
+ls Go
+ls go
+ls Go/pkg
+ls go/pkg
+rm -rf Go
+sudo rm -rf Go
+mv go Go
+ls .zen
+mkdir -p ~/.zen/8f4kgsbm.Default\ \(release\)/chrome\
+
+chmod 666 Windows
+sudo chmod 666 Windows
+sudo umount -R ~/Windows
+ls Windows
+sudo chown -R yagna:yagna ~/Windows\
+
+sudo pacman -R celluloid
+mpv ~/Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E04.Episode.4.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv -v=x11
+mpv ~/Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E04.Episode.4.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv -v0=x11
+mpv ~/Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E04.Episode.4.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --v0=x11
+cd Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL
+mpv Zero.Day.S01E04.Episode.4.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+sudo pacman -S feh
+picom
+kitty --version
+lsls
+ps aux | grep picom\
+
+picom --config ~/.config/picom/picom.conf --experimental-backends --log-level=info --log-file=/tmp/picom.log\
+
+picom --config ~/.config/picom/picom.conf --backend glx --vsync --log-level=info --log-file=/tmp/picom.log\
+
+picom --config ~/.config/picom/picom.conf --backend xrender --vsync --log-level=info --log-file=/tmp/picom.log\
+
+cat /tmp/picom.log\
+
+picom --config ~/.config/picom/picom.conf --backend glx --log-level=info --log-file=/tmp/picom.log --no-vsync\
+
+picom --config ~/.config/picom/picom.conf --backend xrender --no-vsync\
+
+sudo pacman -S mesa\
+
+cat .config/picom/picom.conf
+picom --config ~/.config/picom/picom.conf --log-level=info --log-file=/tmp/picom.log\
+
+lspci | grep -i vga\
+
+sudo pacman -S nvidia nvidia-utils\
+
+picom --config ~/.config/picom/picom.conf --log-file=/tmp/picom.log --log-level=info\
+
+killall picom\
+
+nvidia-xconfig\
+
+sudo pacman -S nvidia nvidia-prime
+echo $XDG_SESSION_TYPE\
+
+killall picom\
+picom --config ~/.config/picom/picom.conf --log-level=debug --log-file=/tmp/picom.log\
+
+picom --config ~/.config/picom/picom.conf --backend xrender\
+
+lspci | grep -E 'VGA|3D'\
+
+sudo pacman -Syu\
+sudo pacman -S nvidia nvidia-utils nvidia-prime linux-headers\
+
+sudo pacman -S libglvnd\
+
+yay -S nvidia-inst nvidia-settings\
+
+sudo mkinitcpio -P\
+
+sudo modprobe nvidia\
+
+sudo nvidia-xconfig\
+
+sudo pacman -S nvidia nvidia-utils nvidia-prime libglvnd mesa vulkan-icd-loader\
+
+sudo pacman -S vulkan-tools  # for vulkaninfo (optional)\
+sudo pacman -S mesa-utils    # for glxinfo\
+
+sudo pacman -S vulkan-tools\sudo pacman -S mesa-utils
+sudo pacman -S vulkan-tools mesa-utils
+prime-run glxinfo | grep "OpenGL renderer"\
+
+sudo nvim /etc/X11/xorg.conf.d/10-nvidia.conf\
+
+mpv Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E03.Episode.3.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+mv ~/Downloads/font24.c ./
+nvim .lesshst
+rm .lesshst
+nvim .bashrc
+nvim .bash_profile
+nvim .bash_logout
+ls .config/bash
+cd .config/bash
+cat bash_history
+rm bash_history
+rm .bash_logout .bashrc .bash_profile
+rm .ipython
+echo $XCURSOR_THEME
+gsettings get org.gnome.desktop.interface cursor-theme\
+
+cat .dotfiles/.config/x11/Xresources
+less .dotfiles/.config/x11/Xresources
+less .dotfiles/.config/x11/Xresources -10
+nvim .dotfiles/.config/x11/Xresources
+Xcursor.theme: macOS\
+Xcursor.size: 40\
+Xft.dpi: 140
+xrdb -merge ~/.config/x11/Xresources\
+
+xprop -root | grep XCURSOR\
+
+echo $XCURSOR_THEME        # should show macOS\
+xprop -root | grep XCURSOR # should show XCURSOR_THEME\
+
+sudo pacman -S xterm
+xterm
+ping goolgle.com
+ping https://goolgle.com
+ping google
+cp /usr/share/applications/zen.desktop ~/.local/share/applications/zen.desktop\
+nvim ~/.local/share/applications/zen.desktop\
+
+echo $XCURSOR_THEME\
+xprop -root | grep XCURSOR\
+
+mkdir -p ~/.local/share/applications\
+
+cp /usr/share/applications/zen.desktop ~/.local/share/applications/zen.desktop\
+
+nvim ~/.local/share/applications/zen.desktop\
+
+update-desktop-database ~/.local/share/applications\
+
+xsetroot -cursor_name left_ptr\
+
+nvim ~/.config/gtk-3.0/settings.ini\
+
+mkdir -p ~/.config/gtk-4.0\
+nvim ~/.config/gtk-4.0/settings.ini\
+
+export GTK_CURSOR_THEME=macOS\
+
+env | grep CURSOR\
+
+xrdb ~/.dotfiles/.config/x11/Xresources\
+
+export XCURSOR_THEME=macOS\
+export XCURSOR_SIZE=24
+zen-browser
+env XCURSOR_THEME=macOS XCURSOR_SIZE=24 zen-browser
+echo NO USE
+find ~/.zen -name "*.default*" -type d
+mkdir -p ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/userChrome.css
+ls ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/userChrome.css
+ls ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/
+ls /usr/share/icons/macOS/cursors/
+lsof -p $(pgrep zen-browser) | grep cursor
+pgrep -f zen-browser
+ps aux | grep firefox
+# Try with a different method\
+gsettings set org.gnome.desktop.interface cursor-theme 'macOS'\
+gsettings set org.gnome.desktop.interface cursor-size 40
+gsettings set org.gnome.desktop.interface cursor-theme 'macOS'\
+gsettings set org.gnome.desktop.interface cursor-size 40
+pgrep -f zen\
+lsof -p 10314 | grep -i cursor
+pgrep -f zen
+echo $XDG_SESSION_TYPE
+XCURSOR_THEME=macOS XCURSOR_SIZE=40 zen-browser 2>&1 | grep -i cursor
+mkdir -p ~/.icons/default\
+echo '[Icon Theme]\
+Inherits=macOS' > ~/.icons/default/index.theme
+cat > /tmp/cursor_test.html << 'EOF'\
+<!DOCTYPE html>\
+<html>\
+<head>\
+    <style>\
+        body { cursor: crosshair !important; }\
+        .test { cursor: pointer !important; }\
+    </style>\
+</head>\
+<body>\
+    <h1>Cursor Test</h1>\
+    <p class="test">Hover over this text - should show pointer cursor</p>\
+    <p>This should show crosshair cursor</p>\
+</body>\
+</html>\
+EOF\
+\
+zen-browser file:///tmp/cursor_test.html
+NO USE SAME SURSOR
+Now after a relauch its working
+i think its because .icons
+# Create the XDG data directory for icons\
+mkdir -p ~/.local/share/icons/default\
+\
+# Move the index.theme file\
+mv ~/.icons/default/index.theme ~/.local/share/icons/default/\
+\
+# Remove the old .icons directory\
+rm -rf ~/.icons
+# System-wide location (requires sudo)\
+sudo mkdir -p /usr/share/icons/default\
+sudo cp ~/.local/share/icons/default/index.theme /usr/share/icons/default/
+nvim ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/userContent.css
+nvim ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/userChrome.css
+sudo -e /etc/dhcpcd.conf
+ip --help
+cl
+rm test
+nviim
+sudo pacman -S maim
+mkdir Pictures/Screenshots
+nvim ~/.zen/8f4kgsbm.Default\ \(release\)/chrome/userChrome.css\
+
+mpv Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E04.Episode.4.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+asusctl -k off
+mpv Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E05.Episode.5.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+ls Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL
+mpv Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL/Zero.Day.S01E06.Episode.6.1080p.WEBRip.10bit.AAC5.1.x265-HODL.mkv --vo=x11
+asusctl -k high
+brightnessctl set -20%
+brightnessctl -n
+man brightnessctl
+brightnessctl i
+brightnessctl g
+brightnessctl m
+brightnessctl s 20
+brightnessctl s -20
+brightnessctl s +20
+brightnessctl s 20-
+suspend
+systemctl suspend\
+
+sudo nvim /etc/systemd/sleep.conf\
+
+sudo nvim /etc/default/grub\
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg\
+
+journalctl -b -1 | grep -iE "suspend|resume|acpi|freeze|fail"\
+
+cat /proc/acpi/wakeup\
+
+echo XHC > /proc/acpi/wakeup\
+
+echo deep | sudo tee /sys/power/mem_sleep\
+systemctl suspend\
+
+echo deep | sudo tee /sys/power/mem_sleep
+cat /sys/power/mem_sleep
+journalctl -b -1 | grep -i suspend\
+
+journalctl -b -1\
+
+cat /sys/power/mem_sleep\
+
+uname -a\
+
+grep upgraded /var/log/pacman.log | tail -n 20\
+
+dmesg | grep -i sleep\
+
+cat /sys/power/state\
+
+sudo bash -c 'echo mem > /sys/power/state'\
+
+sudo bash -c 'echo freeze > /sys/power/state'\
+
+sudo systemctl mask nvidia-suspend.service\
+
+sudo systemctl suspend\
+
+sudo systemctl unmask nvidia-suspend.service\
+
+mv Downloads/font24.c ./
+mv font34.c font36.c
+mv font34.c font37.c
+nvim font34.c
+mv font34.c font38.c
+python main.py
+mv font34.c font39.c
+rm font24.c font36.c font37.c font38.c font39.c 
+systemd-analyze
+systemd-analyze blame
+sudo pacman -S obsidian
+sudo pacman -S gvfs-mtp jmtpfs libmtp mtpfs\
+
+yay -S gvfs-mtp jmtpfs libmtp mtpfs\
+
+mkdir Share
+mv Windows Share/
+mkdir Share/Android
+jmtpfs Share/Android
+ls Share/Android
+cp Share/Android/Internal\ shared\ storage/Obsidian Obsidian
+cp Share/Android/Internal\ shared\ storage/Obsidian Obsidian -r
+time zsh --interactive -c exit
+vim
+cd ~/.local/share/nvim
+rg ayu
+rg ayu_dark
+cd --
+git clone https://github.com/NvChad/tinyvim ~/.config/nvim-tiny
+nvim-tiny
+rm .config/nvim-tiny
+rm .config/nvim-tiny -rf
+sudo pacman -S udiskie udisks2\
+
+udiskie &\
+
+mv Downloads/Zero.Day.S01.1080p.WEBRip.10bit.AAC5.1.x265-HODL /run/media/yagna/259F-0617
+cd /run/media/yagna/259F-0617
+rm main.py
+ls Documents
+sudo pacman -S zoxide
+ls | grep nvim
+nvim-own
+cd nvim-own
+.. 
+rm nvim-own
+rm -rf ~/.local/share/zoxide/db.zo
+rm .config/nvim-own
+rm .config/nvim-own -rf
+gcl https://github.com/SylvanFranklin/.config.git SF
+cd SF
+mv nvim
+mv nvim ~/.config/nvim-SF
+rm SF -rf
+sudo pacman -S deno
+cd .config/nvim-SF
+nvi
+cd nvi
+cd ../nvim
+nvim-SF
+tree
+rm ~/.local/share/zoxide/db.zo
+cd ~/.config/nvim
+/bin/cd-drive --h
+mount | grep cdrom\
+mount | grep /media\
+
+zsh --no-rcs\
+
+cd .config/nvim
+cd .dotfiles/.config/nvim
+V
+sudo pacman -S strace
+time cd .dotfiles/.config/nvim
+strace -T -e trace=stat cd /some/folder\
+
+strace -T -e trace=stat zsh\
+
+cd ~/.dotfiles/.config/nvim\
+
+cd Code/Archive/Postgres/
+ls Code
+ls Code/Archive
+cd 
+cd -
+cd Arrow
+cd Code/Arrow
+cd arrow
+d nvim
+nvim ../ohmyposh
+nvim\\
+
+r --help
+r
+r -h
+rm .config/nvim-SF
+rm .config/nvim-SF -rf
+cd .dotfiles/.config
+mv nvim nvim-nv
+rm ~/.config/nvim
+mkdir nvim
+cd nvim.do
+nvim mimeapps.list
+nvim .config/mimeapps.list
+rm .config/mimeapps.list
+rm init.l
+nvim init.lua
+mkdir lua
+touch lua/keymaps.lua
+nvim-nv
+mv ../nvim-nv/ftplugin ./
+cat .config/nvim-nv/lua/autocmds.lua
+sudo pacman -S code
+code .config/nvim-nv/lua/options.lua
+code .config/nvim-nv/lua/autocmds.lua
+cp ../nvim-nv/lua/config/lazy.lua ./lua/lazy.lua
+mkdir config
+cp ../nvim-nv/.stylua.toml ./
+code .config/nvim-nv/lua/plugins/init.lua
+code .config/nvim-nv
+sudo pacman -S luarocks\
+
+cd .config/nvim-nv
+sudo pacman -S luacheck\
+
+sudo pacman -R luacheck lua-argparse lua-filesystem
+cp .config/nvim-nv/lua/config/window.lua .config/nvim/lua/config
+cp .config/nvim-nv/lua/config/window.lua .config/nvim/lua/config/
+cp ~/.config/nvim-nv/lua/config/window.lua ~/.config/nvim/lua/config/
+ql
+nvim-nv 
+cd ../nvim-nv
+sudo pacman -S kde
+sudo pacman -S kdeconnect
+sudo pacman -S dunst
+sudo systemctl enable dunst
+systemctl --user enable dunst.service\
+systemctl --user start dunst.service\
+
+systemctl --user status dunst.service\
+
+dunst &\
+
+code -v
+code -h
+sudo pacman -R code
+rm -rf .vscode-oss
+yay -S visual-studio-code-bin
+mv .vscode Code
+ccd
+cd
+rm .vscode
+rm .vscode -rf
+rm .vscode .pki 
+rm .vscode .pki  -rf
+yay -S kanata-bin
+nvim .dotfiles/kanata.kbd
+nvim 
+sudo kanata -c kanata.kbd
+nvim kanata.kbd
+nvim .config/systemd/user/kanata.service
+mkdir kanata
+mv ../kanata.kbd ./kanata/config.kbd
+nvim kanata/config.kbd
+sudo kanata -c ~/.dotfiles/.config/kanata/config.kbd
+systemctl --user enable kanata.service\
+systemctl --user start kanata.service\
+systemctl --user status kanata.service
+systemctl --user enable kanata.service\
+systemctl --user stop kanata.service\
+systemctl --user status kanata.service
+systemctl --user daemon-reload
+systemctl --user start kanata.service
+systemctl --user daemon-reload\
+systemctl --user enable kanata.service\
+systemctl --user start kanata.service\
+systemctl --user status kanata.service   # check whether the service is running
+systemctl --user status kanata.service
+ls -l /dev/uinput
+sudo nano /etc/udev/rules.d/99-uinput.rules\
+
+sudo nvim /etc/udev/rules.d/99-uinput.rules\
+
+sudo udevadm control --reload-rules\
+sudo udevadm trigger\
+
+sudo usermod -aG input $USER\
+
+groups\
+
+ls -l /dev/uinput\
+
+systemctl --user start kanata.service\
+
+[200~chmod +x ~/.config/i3/volume-notify.sh
+chmod +x ~/.config/i3/volume-notify.sh\
+
+chmod +x ~/.local/bin/volume-notify.sh\
+
+sudo pacman -S pamixer
+ffffffffffffg
+./.local/bin/volume-notify.sh
+fg
+clw
+btop
+nmcli device wifi connect Naveen\ 5G --ask
+sudo pacman -Syyu\
+
+sudo pacman -S android-tools\
+
+adb version\
+fastboot --version\
+
+git clone https://github.com/naveensingh/vivo_fastboot.git\
+cd vivo_fastboot\
+# Optionally install a suitable toolchain or rely on your system GCC.\
+make\
+
+sudo pacman -Syu base-devel git android-tools\
+
+sudo pacman -S gcc
+make clean\
+make CC=gcc\
+
+git clone https://android.googlesource.com/platform/system/core -b android-4.4_r1\
+
+ls core
+cd ~/Code/Archive/vivo_fastboot\
+ln -s ../core/libsparse libsparse\
+
+ln -s ../core/libsparse libsparse
+ls libsparse/include/sparse/sparse.h
+nvim makefile
+make clean\
+make\
+
+cd libsparse
+find . -name make_ext4fs.h\
+
+rm -rf ./core ./vivo_fastboot 
+yay
+sudo pacman -S tailscale
+sudo systemctl enable --now tailscaled.service
+sudo tailscale up
+unzip piwigo-15.5.0.zip
+cd piwigo
+rm -rf piwigo piwigo-15.5.0.zip
+cd Docker
+python gpu.py
+cd ~/Documents
+sudo pacman -S power-profiles-daemon
+powerprofilesctl list
+ssh terminal.shop
+yay -S android-studio
+$ LC_ALL=C.UTF-8 lscpu | grep Virtualization
+LC_ALL=C.UTF-8 lscpu | grep Virtualization
+grep -E --color=auto 'vmx|svm|0xc0f' /proc/cpuinfo
+zgrep CONFIG_KVM= /proc/config.gz
+lsmod | grep kvm
+sudo pacman -S qemu-base
+cd Code/Android
+./emulator/emulator -accel-check
+ls .vscode
+nvim .vscode/extensions/extensions.json
+cd movie_recommendation_system
+cd Code/Movie-Recommendation
+marimo --yes edit /home/yagna/Code/Movie-Recommendation --host=localhost --port=2818 --headless --no-token --watch
+python venv list
+sudo pacman -S python-pip
+./.venv/bin/activate
+pip install marimo
+rm -rf .venv
+python -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install marimo\
+
+rm -rf __marimo__
+rm Resume_u22ec088@eced.svnit.ac.in.pdf
+rm .python_history
+rm .zsh_history
+rm -rf .marimo
+rm -rf .java .gradle .ssh 
+mv Sahithi-Allotment-Order.pdf Documents
+mv Sahithi-Fee-Payment.pdf Documents
+mv Sahithi-Joining-Report.pdf Documents
+marimo new main.py
+nvim main.marimo.py
+marimo run main.marimo.py\
+
+sudo pacman -Syu 
+sudo ls /var/cache/pacman/pkg/ | wc -l
+sudo pacman -Sy pacman-contrib\
+
+sudo paccache -r
+sudo pacman -Qdtq\
+
+sudo pacman -Qtdq | sudo pacman -Rns -
+watch nmcli device wifi
+watch nmcli device wifi connect Yagnarao --ask
+nmcli connection show --active
+nvim main.py
+mv main.py main.cpp
+nvim main.cpp
+g++ main.cpp -o main
+./main
+rm main.cpp main
+rm .zsh_history .zcompdump
+pkill zen
+ps aux | grep zen
+sudo pacman -S proton-vpn-gtk-app
+sudo pacman -S openvpn wireguard-tools systemd-resolvconf network-manager-applet
+yay -Syu 
+sudo pacman -S tmux
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ -t 1 ]]; then\
+    exec tmux\
+fi\
+
+git clone https://github.com/ruundii/hid-mouse-keyboard
+sudo pacman -S gh
+sudo pacman -S github-cli
+gh
+ls ../
+rm ../.ssh -rf
+gh auth login
+sudo pacman -S blender
+yay -S albert
+man locale
+albert
+albert-dbug
+albert-debug
+yay -Ss kanata
+asusctl profile -l
+asusctl -v\
+
+sudo asusctl -c 80\
+
+sudo nvim
+nmcli device wifi connect KAVITHA password 12000021
+sudo pacman -S vlc
+sudo pacman -S celluloid
+celluloid Inglourious\ Basterds\ \(2009\)\ \(2160p\ BluRay\ x265\ HEVC\ 10bit\ HDR\ AAC\ 5.1\ Tigole\)/Inglourious\ Basterds\ \(2009\)\ \(2160p\ BluRay\ x265\ 10bit\ HDR\ Tigole\).mkv
+celluloid Inglourious.Basterds\ 2009.4K.HDR.2160p.WEBDL\ Ita\ Eng\ x265-NAHOM/Inglourious.Basterds\ 2009.4K.HDR.2160p.WEBDL\ Ita\ Eng\ x265-NAHOM.mkv
+celluloid Inglourious\ Basterds\ \(2009\)\ \(2160p\ BluRay\ x265\ 10bit\ HDR\ Tigole\).mkv
+nmcli device wifi connect 30:CB:C7:30:AF:C0
+sudo pacman -yu
+sudo rm /var/lib/pacman/db.lck
+rm main.marimo.py main.py
+cd Portal
+ls ..
+1q
+alert  sleep 5
+tmux ls
+tmux attach-session 0
+yay -S zoom
+zoom
+yay -R zoom
+tar -xf ventoy-1.1.05-linux.tar.gz
+cd ventoy-1.1.05
+sudo bash VentoyWeb.sh
+cd /run/media/yagna/ARCH_202507
+cd /run/media/yagna
+cd Ventoy
+s
+cat .local/share/xorg/Xorg.0.log | grep EE
+cat /var/log/Xorg.0.log | grep -iE "(EE|error|fail)"\
+
+cat /var/log/Xorg.0.log
+lspci -k | grep -A 2 -E "(VGA|3D)"\
+
+lsmod | grep nvidia\
+
+sudo systemctl status lightdm
+sudo systemctl enable light
+sudo pacman -S idia nvidia-utils
+sudo pacman -S nidia nvidia-utils
+sudo pacman -S nvidia nvidia-utils
+sudo pacman -Syu xorg-server
+brightnessctl +5%
+brightnessctl +50%
+brightnessctl +100
+brightnessctl 100
+brightnessctl -s 100
+brightnessctl -S 100
+brightnessctl s 100
+nvidia-smi\
+
+clear
+DISPLAY=:0 xrandr --output eDP-1 --auto
+DISPLAY=:0 xrandr
+DISPLAY=:0 xrandr --output eDP-1 --primary --auto
+DISPLAY=:0 xrandr --dpi 96
+cvt 1920 1080
+exec i3 > ~/i3log.txt 2>&1
+pgrep -a i3
+cat i3log.txt
+nano
+nano .dotfiles/.config/x11
+sudo pacman -S nano
+/bin/nano .dotfiles/.config/x11/xinitrc
+touch ~/.Xauthority
+chown yagna:yagna ~/.Xauthority
+ps aux | grep x
+sudo killall xorg
+sudo pacman -S xorg-setxkbmap
+echo -e '\a'
+sudo pacman -S xfce4
+startx xfce4-session
+lspci | grep VGA
+sudo rm /etc/X11/xorg.conf.d/*\\
+
+sudo X -configure
+sudo modprobe asus-wmi
+sudo modprobe asus-nb-wmi
+nvim .dotfiles/.config/x11/xinitrc
+sudo X -config /root/xorg.conf.new :1
+sudo rm /etc/X11/xorg.conf*
+sudo nvidia-xconfig
+sudo pacman -S xorg-server xorg-xinit xf86-video-nvidia
+sudo pacman -S xorg-server xorg-xinit xf86-video-amdgpu
+sudo rm /etc/X11/xorg.conf
+sudo pacman -S lightdm
+sudo systemctl restart lightdm
+sudo systemctl restart lightdm.service
+sudo systemctl enable lightdm
+sudo systemctl enable --now lightdm
+systemctl status lightdm.service
+echo "exec i3" > ~/.xinitrc
+cat > .xinitrc << 'EOF'\
+#!/bin/sh\
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then\
+for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do\
+[-x "$f" ] && . "$f"\
+done\
+unset f\
+fi\
+exec i3\
+EOF
+chmod +x .xinitrc
+sudo pacman -S xorg-xauth 
+locale
+i3 --version
+journalctl --user -u i3
+i3 --shmlog-size=26214400
+sudo pacman -S gnome gnome-extra
+sudo systemctl disable lightdm.service
+sudo systemctl enable gdm.service
+sudo nano /etc/gdm/custom.conf
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.25 # For 125% font scale
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.50
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
+sudo pacman -Syu libreoffice-fresh
+yay -S mongodb
+yay -S mongodb-bin
+sudo systemctl enable --now mongodb.service
+mongo
+mongosh
+sudo pacman -R i3-wm
+sudo pacman -S i3-wm
+mv .dotfiles/.config/i3/config .dotfiles/.config/i3/config.bak
+i3-config-wizard
+nvim .config/i3
+sudo pacman -S papirus-icon-theme
+sudo pacman -S gnome-tweaks
+sudo q
+sudo pacman -R libxfce4ui xfce4-notifyd
+sudo pacman -Rs xfce4 xfce4-goodies
+sudo pacman -R xfce4
+sudo pacman -S i3-wm i3status i3lock dmenu
+ls /usr/share/xsessions/
+startx /usr/bin/i3
+cat ~/.i3/debuglog\
+# or\
+cat ~/.config/i3/debuglog
+cat ~/.local/share/xorg/Xorg.0.log\
+# or\
+cat /var/log/Xorg.0.log
+/bin/cat ~/.local/share/xorg/Xorg.0.log\
+# or\
+/bin/cat /var/log/Xorg.0.log
+/bin/cat ~/.local/share/xorg/Xorg.0.log
+/bin/cat /var/log/Xorg.0.log
+sudo rm /root/xorg.conf.new
+# Remove any custom xorg.conf files\
+sudo rm /etc/X11/xorg.conf 2>/dev/null\
+sudo rm /etc/X11/xorg.conf.d/* 2>/dev/null
+sudo pacman -S ttf-liberation ttf-dejavu xorg-fonts-misc
+pacman -Qs i3
+ps aux | grep -i xorg
+pgrep -f X
+nvim i3log.txt
+# For xsettingsd (if missing)\
+sudo pacman -S xsettingsd\
+\
+# For cursor theme (if missing)\
+sudo pacman -S xcursor-themes
+lsblk -f
+cd NextJS-Portal
+cd ~/Dwo
+cd ~/Downloads
+unzip balenaEtcher-linux-x64-2.1.4.zip
+cd balenaEtcher-linux-x64
+./balena-etcher
+sudo pacman -R gnome
+sudo mkdir -p /etc/X11/xorg.conf.d\
+sudo nano /etc/X11/xorg.conf.d/40-libinput.conf\
+
+du -sh /var/cache/pacman/pkg/
+du -h --max-depth=1 ./ | sort -hr
+xinput list
+xinput list-props "ASUE120D:00 04F3:31FB Touchpad"\
+
+xinput set-prop ""ASUE120D:00 04F3:31FB Touchpad" "libinput Accel Speed" 0.5
+xinput set-prop "ASUE120D:00 04F3:31FB Touchpad" "libinput Accel Speed" 0.5
+systemctl suspend
+gsettings set org.gnome.desktop.interface text-scaling-factor 1
+gsettings set org.gnome.desktop.interface text-scaling-factor 2
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+sudo systemctl disable gdm.service
+sudo systemctl stop gdm.service
+sudo pacman -Rns gdm gnome gnome-extra gnome-shell gnome-control-center gnome-session gnome-terminal\
+
+sudo pacman -Rns gdm gnome gnome-extra gnome-shell gnome-control-center gnome-session\
+
+pacman -Q | grep gnome\
+
+sudo pacman -Rns gnome-disk-utility gnome-keyring gnome-online-accounts gnome-screenshot gnome-themes-extra\
+
+rm -rf ~/.config/gnome*\
+rm -rf ~/.local/share/gnome*\
+rm -rf ~/.cache/gnome*\
+
+sudo pacman -Rns $(pacman -Qdtq)\
+
+sudo pacman -Sc\
+
+reboot\
+
+pactl list sinks short
+sudo nano /etc/X11/xorg.conf.d/40-libinput.conf
+sudo nvim /etc/X11/xorg.conf.d/40-libinput.conf
+sudo -e /etc/X11/xorg.conf.d/40-libinput.conf
+sudo ntfsfix /dev/nvme0n1p3\
+
+ls Downloads
+ls Downloads/ventoy-1.1.05
+./VentoyWeb.sh
+sudo ./VentoyWeb.sh
+nvim VentoyWeb.sh
+cd Downloads/ventoy-1.1.05
+sudo ./VentoyWeb.sh -H 127.0.0.1 -p 24580
+sudo pacman -S ntfs-3g
+lsblk
+sudo ./Ventoy2Disk.sh -i /dev/sda
+sudo ./Ventoy2Disk.sh -u /dev/sda
+cp ~/Downloads/archlinux-2025.07.01-x86_64.iso /run/media/yagna/Ventoy/\
+
+sudo ntfsfix /dev/nvme0n1p3
+sudo mount -t ntfs3 /dev/nvme0n1p3 ~/Windows
+uname -r\
+
+sudo mount -t ntfs -o rw,auto,nofail,users,uid=1000,gid=1000,umask=022 /dev/nvme0n1p3 ~/Windows\
+
+sudo mount -t ntfs -o rw,auto,nofail,users,uid=1000,gid=1000,umask=022 /dev/nvme0n1p3 ~/Share/Windows\
+
+ls Share/Windows
+touch ~/.config/Code/User/keybindings.json
+ls ~/.config/Code/User/\
+
+code .config/Code/User/settings.json
+gcl https://github.com/pkp2207/HTMLites.git temp
+rm app-debug.apk
+unzip app-debug.apk.zip
+rm __MACOSX
+rm __MACOSX -rf
+cd /tmp
+cd BusApp
+git status
+git log
+cd NextJS-BusApp
+npm run dev
+npm install
+npm install --legacy-peer-deps\
+
+cd Code/BusApp
+cd ../BusApp
+cd app/build/outputs/apk/debug
+adb devices
+adb install app-debug.apk
+sudo systemctl restart NetworkManager.service
+vnim
+gcc 1.c -o 1
+./1 Madda Gudu
+./1
+nmcli device wifi connect EWS
+sl
+zed
+sudo pacman -Qtdq | sudo pacman -Rns -\
+
+yay -S logseq-desktop-bin
+logseq
+cd LogSeq
+ls journals
+ls pages
+cd pages
+nvim contents.md
+ls logseq
+kdeconnectd
+pactl set-default-sink bluez_output.0E_2D_C6_43_CA_3D.1
+pactl list sources short
+pactl set-default-sink bluez_output.D9_93_49_3E_0C_80.1.monitor
+pactl set-default-sink bluez_output.D9_93_49_3E_0C_80.1
+mv Lab-1-U22CS104-BT.pdf NEELAGIRI-YAGNA-U22CS104-LAB-1.pdf
+mv Lab-2-U22CS104-BT.odt NEELAGIRI-YAGNA-U22CS104-LAB-2.odt
+sudo pacman -S nautilus
+mv Resume_u22ec088@eced.svnit.ac.in.pdf U22EC088_Core.pdf
+nautilus
+pactl list sources short  
+pactl set-default-source bluez_output.90_A0_BE_D5_F9_02.1
+pactl set-default-source bluez_output.90_A0_BE_D5_F9_02
+pactl set-default-source bluez_output.90_A0_BE_D5_F9_02.1.monitor
+pactl set-default-sink bluez_output.90_A0_BE_D5_F9_02.1
+sudo pacman -S firefox
+cd Big-Data-Analysis
+yay -S hadoop
+'systemctl --user restart kanata\
+'
+systemctl --user restart kanata
+nvim .xinitrc
+rm .xinitrc
+trash-empty
+ls Camera
+rm Camera
+rm Camera -rf
+ls Minecraft
+ls Projects
+rm -rf Projects
+rm 1 1.c .ICEauthority .Xauthority .zcompdump
+mv AntiraggingAffidavitForm.pdf Documents
+mv Sahithi-Options-Round-2.pdf Documents
+mv Sahithi-Options-Round-3.pdf Documents
+rm U22EC088_Core.pdf Vivek_Resume.pdf Yaswanth\ _Kolli_Resume.pdf i3log.txt
+rm .zoom .purple .mongodb .marimo .java .gradle .gnupg .dotnet 
+rm .zoom .purple .mongodb .marimo .java .gradle .gnupg .dotnet  -rf
+rboot
+reboot
+startx
+startc
+nvim .zshenv
+whereami
+i3
+kitty
+xrandr --output DP-2 --mode 2560x1440 --rate 240
+export LANG="en_US.UTF-8"\
+export LC_ALL="en_US.UTF-8"
+manpath
+sudo nano /etc/locale.gen
+sudo nvim /etc/locale.gen
+sudo locale-gen
+sudo nvim /etc/locale.conf
+sudo pacman -S pavucontrol
+pavucontrol\
+
+tar
+man tar
+yay -S apple-fonts
+fc-cache -fv
+fc-list | grep "SF Pro"
+ls /usr/local/share/fonts/
+ls /usr/share/fonts/apple-fonts/SF-Mono-LightItalic.otf
+nvim ls /usr/share/fonts/apple-fonts/SF-Mono-LightItalic.otf
+nvim /usr/share/fonts/apple-fonts/SF-Mono-LightItalic.otf
+a
+cd Downloads/True.Detective.S01.1080p.Bluray.AV1.Opus.5.1-heTOrico
+mpv True.Detective.S01E01.The.Long.Bright.Dark.1080p.Bluray.AV1.Opus.5.1-heTOrico.mkv
+cd ../Wednesday.S02.P01.2022.2160p.NF.WEB-DL.DDP5.1.Atmos.H.265.\[Multi\ Subs\]-AZO
+mpv Wednesday.S02.P01.E01.2022.2160p.NF.WEB-DL.DDP5.1.Atmos.H.265.\[Multi\ Subs\]-AZO.mkv
+nivm
+sudo pacman -S syncthing
+syncthing
+daet
+cd Code
+mkdir Distributed-Systems
+bash
+man bash
+date
+info
+man man
+who
+pwd
+/bin/cat ~/.zshenv
+more ~/.zshenv
+ls 
+rm te	
+mv test Test
+rm Test
+touch test
+chmod +x test
+whoami
+nvim test
+wc test
+cat
+cat test
+cat test | wc
+/bin/cat test| wc
+/bin/cat test | grep Yagna
+/bin/cat test | sort
+tail test
+cp test Test
+echo "Distributed" > Test
+diff test Test
+cmp test Test
+df
+du
+uname
+wget https://fileaxa.com/l5p3z6jlxsid
+find test
+help
+exit
+netstat
+sar
+sudo chown root:root test
+top
+ps aux
+pkill top
+sleep 5 &
+rm test Test
+qq
+top -bn1 | grep "Cpu(s)"\
+
+CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}')\
+echo "CPU Usage: $CPU_USAGE%"\
+
+if (( $(echo "$CPU_USAGE > 70" | bc -l) )); then\
+    echo "Machine is OVERLOADED"\
+elif (( $(echo "$CPU_USAGE >= 30" | bc -l) && $(echo "$CPU_USAGE <= 70" | bc -l) )); then\
+    echo "Machine is MODERATELY LOADED"\
+else\
+    echo "Machine is LIGHTLY LOADED"\
+fi\
+
+sudo pacman -S bc
+CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}')\
+echo "CPU Usage: $CPU_USAGE%"\
+if (( $(echo "$CPU_USAGE > 70" | bc -l) )); then\
+    echo "OVERLOADED"\
+elif (( $(echo "$CPU_USAGE >= 30" | bc -l) && $(echo "$CPU_USAGE <= 70" | bc -l) )); then\
+    echo "MODERATELY LOADED"\
+else\
+    echo "LIGHTLY LOADED"\
+fi\
+
+chmod +x CPU.sh
+./CPU.sh
+nvim CPU.sh
+cd Distributed-Systems
+nvim server.cc
+g++ server.cc -o server
+nvim client.cc
+g++ client.cc -o client
+server
+./server
+./server 69143
+./client
+./client 69143
+ip a
+./client 127.0.0.1 69143
+cd ~/.dotfiles
+cd "/home/yagna/Code/"
+transmission-gtk
+tmux
+marimo tutorial intro
+code
+cd movie_recommendation
+l
+yay -S marimo
+marimo --yes edit  --host=localhost --port=2818 --headless --no-token --watch
+pip
+/usr/bin/python3 -m pip show pynvim\
+
+pip install motheme
+python -m venv .venv\
+source .venv/bin/activate\
+pip install motheme
+motheme
+motheme ls
+motheme update
+rm .venv
+rm .venv -rd
+rm .venv -rf
+rm __marimo__ __pycache__
+rm .ropeproject -rf
+rm __marimo__ __pycache__ -rf
+nvim custom.css
+yay -R marimo
+cd Documents
+gcl https://github.com/hongleizhang/RSPapers.git
+cd ~/Code/Movie-Recommendation
+cd Downloads
+mv archive.zip ~/Code/Movie-Recommendation
+unzip archive.zip
+rm archive.zip
+marimo --yes edit  --host=localhost --port=2819 --headless --no-token --watch
+sudo pacman -S python-uv
+nvim Data-Preprocessing.py
+marimo --yes edit  --host=localhost --port=2819 --headless --no-token --watch Data-Preprocessing.py
+code . && exit
+source venv/bin/activate
+marimo --yes edit  --host=localhost --port=2810 --headless --no-token --watch Data-Preprocessing.py
+ls ~
+nvim ../kitty/kitty.conf
+sudo pacman -S ttf-fira-code
+sudo pacman -S ttf-firacode-nerd
+cd nvim
+cd ../zsh
+webcam
+...
+gs
+ga .
+ls .config
+cd .config
+csl
+rm -rf .opencode cargo dotnet gradle maven 
+cd ~/.config
+rm -rf .dotnet Sync .Xauthority .zcompdump .zsh_history Vivek.pdf
+mv Allotment\ Order.pdf Documents
+mv Fee_Payment.pdf Documents
+mv Joining_Report.pdf Documents
+ls .logseq
+ls .logseq/preferences.json
+ls .logseq/config
+ls .marimo/recent_files.toml
+ls .mozilla
+;q
+rm .zcompdump
+..
+rm bin
+mv Bin bin
+cd .dotfiles/.local/bin
+mv binn ~/.dotfiles/.local/bin
+nvim README.md
+xrandr --output HDMI-0 --mode 1680x1050 --pos 0x0 --output DP-2 --primary --mode 2560x1440 --rate 240 --pos 1680x0\
+
+man xrandr
+xrandr --listmonitors\
+
+xrandr
+xrandr --output HDMI-0 --auto --top-of DP-2\
+
+xrandr --output HDMI-0 --auto --right-of DP-2\
+
+stow .
+cd .local/bin 
+hotspot.sh
+cd .dotfiles
+cd cdoe
+ls Archive
+cd Archive
+mkdir HTTP-TCP
+nvim HTTP-TCP/messages.txt
+go mod init Http
+nvim main.go
+cd HTTP-TCP
+go run ./main.go
+cls
+rm .zcompdump .zsh_history
+nmcli device wifi connect Yagnarao --ask
+nmcli 
+nmcli device wifi
+1
+fastfetch
+oh-my-posh upgrade
+sudo oh-my-posh upgrade
+sudo pacman -S inetutils
+telnet 45.146.253.5:6969
+telnet 45.146.253.5 6969
+cd q
+docker 
+cd code
+rm __marimo__
+rm __marimo__-rf
+rm __marimo__ -rf
+rm venv
+rm venv -rf
+c
+y
+python -m venv .venv
+pip install --upgrade pip
+sudo pacman -Syu
+yay -Syu
+nvim
+pp
+sudo pacman -S zed
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gnome
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk
+systemctl --user status dbus
+cd Movie-Recommendation
+zeditor
+zeditor . && exit
+source /home/yagna/Code/Movie-Recommendation/.venv/bin/activate ; clear
+source .venv/bin/activate
+sudo pacman -S python-pandas python-numpy python-scikit-learn
+sudo pacman -R zed
+ls
+rm -rf .marimo 
 q
-: 1752585767:0;cd .dotfiles
-: 1752585773:0;gs
-: 1752585794:0;git add .
+: 1755412307:0;cd .dotfiles
+: 1755412308:0;ls
+: 1755412351:0;ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggs
+: 1755412352:0;gs
+: 1755412384:0;ga .

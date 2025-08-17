@@ -1,133 +1,137 @@
 return {
-  { "mbbill/undotree" },
-  { "tpope/vim-fugitive" },
-  { "windwp/nvim-ts-autotag", event = "User FilePost", opts = {} },
   {
-    "mistweaverco/kulala.nvim",
+    "nvim-lua/plenary.nvim",
+    {
+      "nvchad/base46",
+      lazy = true,
+      build = function()
+        -- require("base46").load_all_highlights()
+      end,
+    },
+  },
+
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     keys = {
-      { "<leader>Rs", desc = "Send request" },
-      { "<leader>Ra", desc = "Send all requests" },
-      { "<leader>Rb", desc = "Open scratchpad" },
+      -- File finding
+      { "<leader>ff", "<cmd>FzfLua files<cr>", { desc = "Find files" } },
+      { "<leader>fa", "<cmd>FzfLua files cwd=~<cr>", { desc = "Find files (home)" } },
+      { "<leader>fo", "<cmd>FzfLua oldfiles<CR>", { desc = "Find recent files" } },
+      { "<leader>fn", "<cmd>FzfLua files cwd=~/Obsidian/<CR>", { desc = "Find notes" } },
+
+      -- Search and grep
+      { "<leader>fw", "<cmd>FzfLua live_grep<CR>", { desc = "Live grep" } },
+      { "<leader>fg", "<cmd>FzfLua grep_cword<CR>", { desc = "Grep word under cursor" } },
+
+      -- Buffer and navigation
+      { "<leader>fb", "<cmd>FzfLua buffers<CR>", { desc = "Find buffers" } },
+      { "<leader>fm", "<cmd>FzfLua marks<CR>", { desc = "Find marks" } },
+      { "<leader>fj", "<cmd>FzfLua jumps<CR>", { desc = "Find jumps" } },
+      { "<leader>fr", "<cmd>FzfLua registers<CR>", { desc = "Find registers" } },
+
+      -- Help and documentation
+      { "<leader>fh", "<cmd>FzfLua help_tags<CR>", { desc = "Find help" } },
+      { "<leader>fk", "<cmd>FzfLua keymaps<CR>", { desc = "Find keymaps" } },
+      { "<leader>fc", "<cmd>FzfLua commands<CR>", { desc = "Find commands" } },
+
+      -- Git integration
+      { "<leader>gc", "<cmd>FzfLua git_commits<CR>", { desc = "Git commits" } },
+      { "<leader>gs", "<cmd>FzfLua git_status<CR>", { desc = "Git status" } },
+      { "<leader>gb", "<cmd>FzfLua git_branches<CR>", { desc = "Git branches" } },
     },
-    ft = { "http", "rest" },
+
     opts = {
-      -- your configuration comes here
-      global_keymaps = true,
-    },
-  },
-  -- {
-  --   "numToStr/Comment.nvim",
-  --   keys = {
-  --     { "gcc", mode = "n", desc = "Comment toggle current line" },
-  --     { "gc", mode = { "n", "o" }, desc = "Comment toggle linewise" },
-  --     { "gc", mode = "x", desc = "Comment toggle linewise (visual)" },
-  --     { "gbc", mode = "n", desc = "Comment toggle current block" },
-  --     { "gb", mode = { "n", "o" }, desc = "Comment toggle blockwise" },
-  --     { "gb", mode = "x", desc = "Comment toggle blockwise (visual)" },
-  --   },
-  --   config = function(_, opts)
-  --     require("Comment").setup(opts)
-  --
-  --     vim.api.nvim_create_autocmd("BufEnter", {
-  --       callback = function()
-  --         vim.opt.formatoptions:remove { "c", "r" }
-  --       end,
-  --     })
-  --   end,
-  -- },
-
-  {
-    "ThePrimeagen/vim-be-good",
-    config = function(_, opts) end,
-  },
-  {
-    "NvChad/nvim-colorizer.lua",
-    event = "User FilePost",
-    config = function(_, opts)
-      require("colorizer").setup(opts)
-
-      -- execute colorizer as soon as possible
-      vim.defer_fn(function()
-        require("colorizer").attach_to_buffer(0)
-      end, 0)
-    end,
-  },
-
-  {
-    "nvim-tree/nvim-web-devicons",
-    config = function(_, opts)
-      if NvChad then
-        dofile(vim.g.base46_cache .. "devicons")
-      end
-      require("nvim-web-devicons").setup(opts)
-    end,
-  },
-  -- {
-  --   "folke/ts-comments.nvim",
-  --   event = "VeryLazy",
-  --   opts = {},
-  -- },
-
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    version = "2.20.7",
-    event = "User FilePost",
-    opts = {
-      indentLine_enabled = 1,
-      filetype_exclude = {
-        "help",
-        "terminal",
-        "lazy",
-        "lspinfo",
-        "TelescopePrompt",
-        "TelescopeResults",
-        "mason",
-        "nvdash",
-        "nvcheatsheet",
+      winopts = {
+        preview = {
+          border = "single",
+          title = true,
+          scrollbar = false,
+        },
+        height = 0.85,
+        width = 0.80,
+        row = 0.35,
+        col = 0.50,
+        border = "none",
+        fullscreen = false,
       },
-      buftype_exclude = { "terminal" },
-      show_trailing_blankline_indent = true,
-      show_first_indent_level = true,
-      show_current_context = false,
-      show_current_context_start = false,
     },
+    config = function(_, opts)
+      require("fzf-lua").setup(opts)
+    end,
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "User FilePost",
+    opts = function()
+      return {
+        signs = {
+          add = { text = "│" },
+          change = { text = "│" },
+          delete = { text = "󰍵" },
+          topdelete = { text = "‾" },
+          changedelete = { text = "~" },
+          untracked = { text = "│" },
+        },
+        signs_staged = {
+          add = { text = "│" },
+          change = { text = "│" },
+          delete = { text = "󰍵" },
+          topdelete = { text = "‾" },
+          changedelete = { text = "~" },
+          untracked = { text = "│" },
+        },
+      }
+    end,
     config = function(_, opts)
       if Nvchad then
-        dofile(vim.g.base46_cache .. "blankline")
+        dofile(vim.g.base46_cache .. "git")
       end
-      require("indent_blankline").setup(opts)
+      require("gitsigns").setup(opts)
     end,
   },
-
-  -- {
-  --   "alexghergh/nvim-tmux-navigation",
-  --   lazy = false,
-  -- },
-
-  -- {
-  --   "nvzone/typr",
-  --   cmd = "TyprStats",
-  --   dependencies = "nvzone/volt",
-  --   opts = {},
-  -- },
   {
-    "folke/zen-mode.nvim",
-    opts = {
-      window = {
-        width = 80,
-        backdrop = 0,
-        options = {
-          number = false,
-          relativenumber = false,
+    "norcalli/nvim-colorizer.lua",
+    event = "VeryLazy",
+    config = function()
+      -- Attaches to every FileType mode
+      require("colorizer").setup()
+
+      -- Attach to certain Filetypes, add special configuration for `html`
+      -- Use `background` for everything else.
+      require("colorizer").setup {
+        "css",
+        "javascript",
+        html = {
+          mode = "foreground",
         },
-      },
-      plugins = {
-        options = {
-          enabled = true,
-          ruler = false,
-          showcmd = false,
-        },
-      },
-    },
+      }
+
+      -- Use the `default_options` as the second parameter, which uses
+      -- `foreground` for every mode. This is the inverse of the previous
+      -- setup configuration.
+      require("colorizer").setup({
+        "css",
+        "javascript",
+        html = { mode = "background" },
+      }, { mode = "foreground" })
+
+      -- Use the `default_options` as the second parameter, which uses
+      -- `foreground` for every mode. This is the inverse of the previous
+      -- setup configuration.
+      require("colorizer").setup {
+        "*", -- Highlight all files, but customize some others.
+        css = { rgb_fn = true }, -- Enable parsing rgb(...) functions in css.
+        html = { names = false }, -- Disable parsing "names" like Blue or Gray
+      }
+
+      -- Exclude some filetypes from highlighting by using `!`
+      require("colorizer").setup {
+        "*", -- Highlight all files, but customize some others.
+        "!vim", -- Exclude vim from highlighting.
+        -- Exclusion Only makes sense if '*' is specified!
+      }
+    end,
   },
 }

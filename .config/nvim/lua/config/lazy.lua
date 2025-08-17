@@ -15,12 +15,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- Setup lazy.nvim
 require("lazy").setup {
   spec = {
@@ -28,11 +22,38 @@ require("lazy").setup {
     {
       "folke/tokyonight.nvim",
       config = function()
-        if not Nvchad then
-          vim.cmd.colorscheme "tokyonight-night"
-        end
+        require("tokyonight").setup { transparent = true }
+        vim.cmd.colorscheme "tokyonight-night"
+        vim.cmd [[
+          highlight Normal guibg=NONE ctermbg=NONE
+          highlight NormalNC guibg=NONE ctermbg=NONE
+          highlight SignColumn guibg=NONE ctermbg=NONE
+          highlight VertSplit guibg=NONE ctermbg=NONE
+          highlight StatusLine guibg=NONE ctermbg=NONE
+          highlight LineNr guibg=NONE ctermbg=NONE
+          highlight Folded guibg=NONE ctermbg=NONE
+          highlight EndOfBuffer guibg=NONE ctermbg=NONE
+        ]]
       end,
     },
+
+    -- {
+    --   "blazkowolf/gruber-darker.nvim",
+    --   config = function()
+    --     vim.cmd.colorscheme "gruber-darker"
+    --     vim.cmd [[
+    --       highlight Normal guibg=NONE ctermbg=NONE
+    --       highlight NormalNC guibg=NONE ctermbg=NONE
+    --       highlight SignColumn guibg=NONE ctermbg=NONE
+    --       highlight VertSplit guibg=NONE ctermbg=NONE
+    --       highlight StatusLine guibg=NONE ctermbg=NONE
+    --       highlight LineNr guibg=NONE ctermbg=NONE
+    --       highlight Folded guibg=NONE ctermbg=NONE
+    --       highlight EndOfBuffer guibg=NONE ctermbg=NONE
+    --     ]]
+    --   end,
+    -- },
+
     { import = "plugins" },
   },
   -- automatically check for plugin updates

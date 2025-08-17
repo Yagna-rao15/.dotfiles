@@ -1,6 +1,0 @@
-echo $PATH
-go
-fzf
-;q
-q
-exit

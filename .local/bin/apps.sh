@@ -27,6 +27,9 @@ declare -A apps=(
   ["Anki"]='anki'
   ["Transmission"]="env GTK_THEME=$GTK_DARK_THEME transmission-gtk"
   ["Lutris"]="lutris"
+  ["Logseq"]="logseq"
+  ["Audio"]='pavucontrol'
+  ["Webcam"]='webcam'
 )
 
 selected=$(printf "%s\n" "${!apps[@]}" | dmenu -nb '#000000' -nf '#ffffff' -sb '#74c7ec' -sf '#000000' -p "Applications: " -i -fn 'JetBrainsMono')

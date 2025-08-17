@@ -16,6 +16,7 @@ return {
       "dockerfile-language-server",
       "docker-compose-language-service",
       "cmakelang",
+      "luacheck",
 
       -- Go
       "gopls",
@@ -46,6 +47,7 @@ return {
     PATH = "skip",
 
     ui = {
+      border = "none",
       icons = {
         package_pending = " ",
         package_installed = "󰄳 ",
@@ -67,6 +69,7 @@ return {
     max_concurrent_installers = 10,
   },
   config = function(_, opts)
+    vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE" })
     if Nvchad then
       dofile(vim.g.base46_cache .. "mason")
     end

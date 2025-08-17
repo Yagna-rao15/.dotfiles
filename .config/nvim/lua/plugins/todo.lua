@@ -4,6 +4,22 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
+  keys = {
+    {
+      "]t",
+      function()
+        require("todo-comments").jump_next()
+      end,
+      { desc = "Jump to next todo" },
+    },
+    {
+      "[t",
+      function()
+        require("todo-comments").jump_prev()
+      end,
+      { desc = "Jump to prev todo" },
+    },
+  },
   opts = {
     signs = false,
     highlight = {

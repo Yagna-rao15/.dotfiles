@@ -6,8 +6,6 @@ source $HOME/.config/zsh/zprofile
 source $HOME/.config/zsh/zshenv
 source $HOME/.config/zsh/zshrc
 
-# bun completions
-[ -s "/home/yagna/.bun/_bun" ] && source "/home/yagna/.bun/_bun"
 export XDG_CURRENT_DESKTOP=i3
 export XDG_DATA_DIRS=/usr/share:/usr/local/share
 export GTK_ICON_THEME="Papirus-Dark"

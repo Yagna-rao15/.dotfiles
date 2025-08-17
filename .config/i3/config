@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 set $shutdown shutdown now
 set $reboot reboot
@@ -13,7 +13,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+# bindsym Mod1+Return exec [ -x "$(command -v kitty)" ] && kitty || i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 bindsym $mod+q kill
 bindsym $mod+x exec --no-startup-id ~/Code/test.sh
@@ -22,7 +23,7 @@ bindsym $mod+Shift+Delete exec $reboot
 
 # Letter Key Bindings
 # split in horizontal orientation
-bindsym $mod+c split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -115,13 +116,20 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600, move position center
 for_window [class="Blueberry"] floating enable, resize set 500 800, move position center
-for_window [class="python3"] floating enable, move position center, resize set 800 600
+for_window [class="python3"] floating enable, resize set 800 600, move position center
+for_window [title="webcam"] floating enable, resize set 1280 720, move position center
 # for_window [class="protonvpn-app"] floating enable; move position center; resize set 600 800
 
 assign [class="zen"] 1
 
 # Launch ZEN-BROWSER
 exec_always --no-startup-id ~/.dotfiles/.local/bin/launch_zen.sh
+
+# Launch Webcam
+bindsym $mod+c exec --no-startup-id mpv av://v4l2:/dev/video0 --profile=low-latency --untimed --title=webcam
+
+# Launch Obsidian
+bindsym $mod+o exec obsidian
 
 # Polybar Kill prev instances and create new
 exec_always killall polybar
@@ -136,6 +144,11 @@ exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-flashback
 exec --no-startup-id /usr/bin/gnome-screensaver
+
+exec --no-startup-id xrdb -merge ~/.config/x11/Xresources
+exec --no-startup-id xsetroot -cursor_name left_ptr
+exec --no-startup-id export XCURSOR_THEME=macOS
+
 
 # reload the configuration file
 # bindsym $mod+Shift+c reload
@@ -180,8 +193,9 @@ bindsym $mod+r mode "resize"
 
 # Setting Wallpaper
 # exec_always feh --bg-scale $HOME/Downloads/rick-and-morty-rick-5120x2880-9494.png --no-fehbg
+exec_always feh --bg-scale $HOME/Downloads/miles-morales-spider-man-into-the-spider-verse-5k-8k-black-8000x5200-672.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Random/Black-Venom.jpg --no-fehbg
-exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Blue-Scenery.png --no-fehbg
+# exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Blue-Scenery.png --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Earth-Wallpaper.jpg --no-fehbg
 # exec_always feh --bg-scale $HOME/Pictures/Wallpapers-Desktop/Wallpaper-Blue-Black-Gradient.png --no-fehbg
 
@@ -190,7 +204,7 @@ exec --no-startup-id dex --autostart --environment i3
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id xss-lock -- i3lock -n
 exec --no-startup-id nm-applet
-exec --no-startup-id picom --experimental-backends --backend glx --vsync
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id xmodmap ~/.dotfiles/.config/x11/Xmodmap
 # exec_always --no-startup-id xcape -e 'Control_L=Escape'
 exec_always --no-startup-id xcape -e 'Control_L=Control_L'

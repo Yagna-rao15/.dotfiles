@@ -28,3 +28,8 @@ This is my personal Dotfiles Repo
 # Notification
 
 This command for persistan eplacinf Notification notify-send -e -h string:x-canonical-private-synchronous:brightness -h int:value:1 -u low "Screen" "Brightness: 1%"
+
+# Stow Warning
+
+Always use stow from ~/.dotfiles/ directory and create .local/bin and .config
+prior

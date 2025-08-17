@@ -4,13 +4,13 @@ Xcursor.size: 40
 Xft.dpi: 140
 
 ! Font settings
-Xft.antialias: true
-Xft.hinting: true
-Xft.hintstyle: hintmedium
-Xft.rgba: rgb
-Xft.lcdfilter: lcddefault
-Xft.autohint: false
-Xft.embolden: true
+! Xft.antialias: true
+! Xft.hinting: true
+! Xft.hintstyle: hintmedium
+! Xft.rgba: rgb
+! Xft.lcdfilter: lcddefault
+! Xft.autohint: false
+! Xft.embolden: true
 
 ! JetBrains Mono font
 st.font: JetBrainsMonoNL Nerd Font:pixelsize=22:antialias=true:autohint=true

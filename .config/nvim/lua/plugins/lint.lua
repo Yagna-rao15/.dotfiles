@@ -4,8 +4,8 @@ return {
   opts = {
     events = { "BufWritePost", "BufReadPost", "InsertLeave" },
     linters_by_ft = {
-      -- lua = { "luacheck" },
-      -- python = { "flake8", "ruff", "mypy" },
+      lua = { "luacheck" },
+      python = { "flake8", "ruff", "mypy" },
       javascript = { "eslint_d" },
       cmake = { "cmakelint" },
       typescript = { "eslint_d" },

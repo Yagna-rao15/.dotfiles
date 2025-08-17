@@ -1,20 +1,16 @@
 local opt = vim.opt
 local g = vim.g
 
--- ============================================================================
--- UI/APPEARANCE OPTIONS
--- ============================================================================
-
 -- Status and mode display
 opt.laststatus = 3 -- global statusline
-opt.showmode = false -- don't show mode in command line
-opt.ruler = false -- don't show ruler which is line and col no. in bottom right
+opt.showmode = true -- show mode in command line
+opt.ruler = true -- don't show ruler which is line and col no. in bottom right
 opt.cmdheight = 1 -- command line height: 0- hide command line when not used
 g.netrw_banner = 0 -- netrw banner mode
 
 -- Cursor and visual elements
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
-opt.cursorline = true -- highlight current line
+opt.cursorline = false -- highlight current line
 opt.cursorcolumn = false -- highlight current column
 -- opt.colorcolumn = "80" -- highlight column at 80 chars
 opt.signcolumn = "yes" -- always show sign column
@@ -22,7 +18,7 @@ opt.termguicolors = true -- enable 24-bit RGB colors
 
 -- Line numbers
 opt.number = true -- show line numbers
-opt.relativenumber = false -- use relative line numbers
+opt.relativenumber = true -- use relative line numbers
 opt.numberwidth = 2 -- width of number column
 
 -- Visual whitespace and special characters
@@ -49,13 +45,9 @@ opt.listchars = {
 -- opt.concealcursor = "niv" -- conceal in normal, insert, visual modes
 
 -- Popup menu
--- opt.completeopt = "menu,menuone,noselect"
--- opt.pumheight = 10 -- maximum items in popup menu
--- opt.pumblend = 10 -- popup menu transparency
-
--- ============================================================================
--- EDITING AND INDENTATION
--- ============================================================================
+opt.completeopt = "menu,menuone,noselect"
+opt.pumheight = 10 -- maximum items in popup menu
+opt.pumblend = 10 -- popup menu transparency
 
 -- Indentation settings
 opt.expandtab = true -- use spaces instead of tabs
@@ -68,7 +60,7 @@ opt.breakindent = true -- wrapped lines continue visually indented
 opt.shiftround = true -- round indent to multiple of shiftwidth
 
 -- Text wrapping and formatting
-opt.wrap = false -- don't wrap lines by default
+opt.wrap = true -- don't wrap lines by default
 opt.linebreak = true -- wrap at word boundaries
 opt.showbreak = "↪ " -- string to show at start of wrapped lines
 opt.virtualedit = "block" -- allow cursor beyond end of line in visual block
@@ -76,10 +68,6 @@ opt.virtualedit = "block" -- allow cursor beyond end of line in visual block
 -- Text width and formatting
 opt.textwidth = 80 -- maximum line length
 opt.formatoptions = "jcroqlnt" -- format options
-
--- ============================================================================
--- SEARCH AND NAVIGATION
--- ============================================================================
 
 -- Search behavior
 opt.ignorecase = true -- ignore case in search
@@ -97,24 +85,17 @@ opt.smoothscroll = true -- smooth scrolling (nvim 0.10+)
 opt.whichwrap:append "<>[]hl" -- allow h,l,arrows to move across lines
 opt.backspace = { "start", "eol", "indent" } -- backspace behavior
 
--- ============================================================================
--- WINDOW AND BUFFER MANAGEMENT
--- ============================================================================
-
 -- Window splitting
 opt.splitbelow = true -- horizontal splits below current
 opt.splitright = true -- vertical splits to the right
 opt.equalalways = false -- don't resize windows automatically
+opt.winborder = "rounded"
 
 -- Buffer behavior
 opt.hidden = true -- allow hidden buffers
 -- opt.confirm = true -- ask for confirmation instead of failing
 opt.autoread = true -- automatically read file changes
 opt.autowrite = true -- automatically write file before commands
-
--- ============================================================================
--- FILE HANDLING AND PERSISTENCE
--- ============================================================================
 
 -- Backup and swap files
 opt.backup = false -- don't create backup files
@@ -126,10 +107,6 @@ opt.undolevels = 10000 -- maximum number of undos
 -- opt.fileencoding = "utf-8" -- file encoding
 -- opt.fileformats = "unix,dos,mac" -- file format detection order
 
--- ============================================================================
--- PERFORMANCE AND TIMING
--- ============================================================================
-
 -- Timing settings
 opt.updatetime = 50 -- faster completion and diagnostics
 opt.timeoutlen = 400 -- time to wait for mapped sequence
@@ -140,16 +117,8 @@ opt.lazyredraw = true -- don't redraw during macros
 opt.synmaxcol = 300 -- max column for syntax highlighting
 -- opt.regexpengine = 1 -- use old regex engine (sometimes faster)
 
--- ============================================================================
--- MOUSE AND CLIPBOARD
--- ============================================================================
-
 opt.mouse = "a" -- enable mouse in all modes
 opt.clipboard:append "unnamedplus" -- use system clipboard
-
--- ============================================================================
--- MISC OPTINS
--- ============================================================================
 
 -- Plugin and feature flags
 g.have_nerd_font = true -- indicate nerd font is available

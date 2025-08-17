@@ -8,7 +8,7 @@ alias c='clear'
 alias cls='c && ls'
 alias mkdir='mkdir -pv'
 alias mv='mv -i'
-rm() {trash -v "$@"}
+# rm() {trash -v "$@"}
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -19,11 +19,12 @@ alias pp='ping google.com'
 alias ba='blueman-applet'
 alias bm='blueman-manager'
 alias h="history | grep "
-alias nano="-e"
+alias nano="nvim"
 alias cd='z'
 alias df='df -hT'
 alias tree='tree -CAhF --dirsfirst'
 alias fuck='$(thefuck $(fc -ln -1))'
+alias venv="source .venv/bin/activate"
 # This is bash Version: alias alert='notify-send --urgency=low -i "$([ $? =0 ] && echo terminal || echo error )" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[:&|]\s*alert$//'\'')"'
 
 # Git
@@ -41,7 +42,7 @@ alias nvimm='nvim $(fzf)'
 alias IPP='curl https://icanhazip.com'
 alias du='du --human-readable'
 alias free='free --human'
-alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
+alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed --no-border --title=webcam && exit'
 alias rg='rg --hidden --smart-case --glob="!.git/" --no-search-zip --trim \
           --colors=line:fg:black \
           --colors=line:style:bold \
@@ -51,11 +52,14 @@ alias rg='rg --hidden --smart-case --glob="!.git/" --no-search-zip --trim \
 
 # Nvim App Switcher Aliases
 # Im proud of myself
+setopt +o nomatch
 for var in ~/.config/nvim-*; do
   [ -d "$var" ] || continue
+  [ "$var" = "~/.config/nvim-*" ] && break
   name=$(basename "$var")
   alias "$name"="NVIM_APPNAME=$name nvim"
 done
+setopt nomatch
 
 # Alert for zsh
 alert() {

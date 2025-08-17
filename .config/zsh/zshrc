@@ -1,3 +1,14 @@
+# Load Completions
+mkdir -p "$(dirname "$ZSH_COMPDUMP")"
+autoload -Uz compinit
+compinit -d "$ZSH_COMPDUMP"
+_comp_options+=(globdots)
+
+# Tmux in interactive shells
+# if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ -n "$DISPLAY" ]] && [[ -z "$SSH_CONNECTION" ]] && [[ $- == *i* ]]; then
+#   exec tmux
+# fi
+
 # Source zshenv and alias
 source "$HOME/.config/zsh/alias"
 
@@ -12,12 +23,6 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Load Completions
-export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"
-autoload -Uz compinit
-compinit -d "$ZSH_COMPDUMP"
-_comp_options+=(globdots)
-
 # Adding zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -30,7 +35,6 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::aws
 zinit snippet OMZP::command-not-found
-
 zinit cdreplay -q
 
 # Keybinds

@@ -1,8 +1,11 @@
 xrandr --output DP-2 --mode 2560x1440 --rate 240
-xrdb -merge ~/.dotfiles/.config/x11/Xresources
-xsettingsd &
+# xsettingsd &
 xset s off -dpms
 export DISPLAY=:0
 export XDG_SESSION_TYPE=x11
+export XCURSOR_THEME=macOS
+export XCURSOR_SIZE=40
+xsetroot -cursor_name left_ptr
+xrdb -merge ~/.dotfiles/.config/x11/Xresources
 kdeconnectd &
 exec i3

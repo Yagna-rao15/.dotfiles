@@ -32,10 +32,10 @@ return {
       cmp.setup {
         enabled = function()
           local disabled = false
-          disabled = disabled or (vim.api.nvim_get_option_value("buftype", { buf = 0 }) == "prompt")
-          disabled = disabled or (vim.fn.reg_recording() ~= "")
-          disabled = disabled or (vim.fn.reg_executing() ~= "")
-          disabled = disabled or require("cmp.config.context").in_treesitter_capture "comment"
+          disabled = disabled or (vim.api.nvim_get_option_value("buftype", { buf = 0 }) == "prompt") -- Disable in prompt window
+          disabled = disabled or (vim.fn.reg_recording() ~= "") -- Disable in macro recordings
+          disabled = disabled or (vim.fn.reg_executing() ~= "") -- Disable in macro executions
+          disabled = disabled or require("cmp.config.context").in_treesitter_capture "comment" -- Disable in treesitter context
           return not disabled
         end,
         experimental = {
@@ -69,7 +69,7 @@ return {
           -- { name = "nvim_lsp_signature_help" },
           { name = "nvim_lua" },
           { name = "luasnip" },
-          { name = "lazydev" },
+          -- { name = "lazydev" },
           { name = "buffer" },
           { name = "path" },
           { name = "calc" },
@@ -197,13 +197,27 @@ return {
   {
     "L3MON4D3/LuaSnip",
     dependencies = "rafamadriz/friendly-snippets",
+    build = "make install_jsregexp",
     opts = {
+      enable_autosnippets = true,
+      region_check_events = "InsertEnter",
+      delete_check_events = "InsertLeave",
       history = true,
       updateevents = "TextChanged,TextChangedI",
     },
     config = function(_, opts)
+      require("luasnip.loaders.from_lua").load { paths = "~/.config/nvim/snippets/" }
       local luasnip = require "luasnip"
       luasnip.config.set_config(opts)
+      vim.keymap.set({ "i" }, "<C-e>", function()
+        luasnip.expand()
+      end, { silent = true })
+      vim.keymap.set({ "i", "s" }, "<C-J>", function()
+        luasnip.jump(1)
+      end, { silent = true })
+      vim.keymap.set({ "i", "s" }, "<C-K>", function()
+        luasnip.jump(-1)
+      end, { silent = true })
 
       -- Load VSCode style snippets
       require("luasnip.loaders.from_vscode").lazy_load()
